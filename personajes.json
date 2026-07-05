@@ -1,0 +1,257 @@
+[
+  {
+    "id": "teseo",
+    "nombre": "Teseo",
+    "mitologia": "griega",
+    "titulo": "El héroe del laberinto",
+    "dones": ["Ingenio para resolver laberintos", "Coraje frente a lo desconocido"],
+    "historia": "Teseo era un príncipe de Atenas que se ofreció a viajar a Creta para enfrentar al Minotauro, la criatura que vivía en un laberinto del que nadie sabía salir. Antes de entrar, la princesa Ariadna le dio un ovillo de hilo para que lo fuera desenrollando por el camino. Teseo derrotó al Minotauro y, siguiendo el hilo, encontró la salida del laberinto. Volvió a Atenas convertido en héroe, gracias a su coraje... y a un buen plan.",
+    "porque": "La inteligencia y la preparación valen tanto como la fuerza. El hilo de Ariadna es el plan que conviene tener antes de cualquier aventura: los griegos sabían que el coraje solo no alcanza.",
+    "atributos": { "fuerza": 6, "astucia": 9, "valentia": 9, "magia": 1 },
+    "colorCarta": "#4A7C59",
+    "icono": "laberinto",
+    "pregunta": {
+      "texto": "¿Quién le dio el hilo a Teseo para salir del laberinto?",
+      "opciones": ["Ariadna", "Atenea", "Penélope"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "heracles",
+    "nombre": "Heracles",
+    "mitologia": "griega",
+    "titulo": "El héroe de los doce trabajos",
+    "dones": ["Fuerza sobrehumana", "Resistencia infinita"],
+    "historia": "Heracles fue el héroe más fuerte de toda Grecia, y le encargaron doce trabajos que parecían imposibles. Venció a la Hidra, una serpiente de muchas cabezas que se volvía más difícil con cada intento. Capturó al enorme león de Nemea, cuya piel nada podía atravesar. Y limpió en un solo día los establos de Augías desviando un río entero para que el agua hiciera el trabajo. Uno por uno, completó los doce desafíos que nadie creía posibles.",
+    "porque": "Cada trabajo era «imposible» y Heracles siempre encontró la manera: a veces con fuerza, a veces con ingenio. El mito enseña a perseverar cuando la tarea parece más grande que uno.",
+    "atributos": { "fuerza": 10, "astucia": 6, "valentia": 10, "magia": 2 },
+    "colorCarta": "#C97B2D",
+    "icono": "leon",
+    "pregunta": {
+      "texto": "¿Cómo limpió Heracles los establos de Augías en un solo día?",
+      "opciones": ["Desviando un río entero", "Con una escoba gigante", "Pidiéndole lluvia a Zeus"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "penelope",
+    "nombre": "Penélope",
+    "mitologia": "griega",
+    "titulo": "La reina del telar",
+    "dones": ["Paciencia estratégica", "Astucia del telar"],
+    "historia": "Mientras su esposo Odiseo tardaba años en volver de Troya, Penélope gobernaba en Ítaca rodeada de pretendientes que querían quedarse con el trono. Ella prometió que elegiría a uno cuando terminara de tejer un gran manto. Pero cada noche, en secreto, destejía lo que había tejido durante el día. Así ganó tiempo durante años, sin espadas y sin gritos, hasta que Odiseo por fin volvió a casa.",
+    "porque": "Penélope es la heroína que gana sin pelear: sus poderes son la constancia y la inteligencia. El mito muestra que la paciencia bien usada puede ser más fuerte que cualquier ejército.",
+    "atributos": { "fuerza": 2, "astucia": 10, "valentia": 8, "magia": 1 },
+    "colorCarta": "#8E5A8E",
+    "icono": "telar",
+    "pregunta": {
+      "texto": "¿Qué hacía Penélope cada noche con su tejido?",
+      "opciones": ["Lo destejía en secreto", "Lo regalaba a los pretendientes", "Lo escondía en el mar"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "atlas",
+    "nombre": "Atlas",
+    "mitologia": "griega",
+    "titulo": "El titán que sostiene el cielo",
+    "dones": ["Fuerza titánica", "Sostiene el cielo entero"],
+    "historia": "Atlas era un titán que participó en la gran guerra entre los titanes y los dioses del Olimpo. Cuando la guerra terminó, recibió una tarea única en el mundo: sostener la bóveda celeste sobre sus hombros para siempre. Desde entonces carga el cielo entero, con sus estrellas, sus nubes y sus atardeceres, sin soltarlo jamás. Por eso, cuando los griegos miraban hacia arriba, sabían quién estaba haciendo el trabajo más pesado del universo.",
+    "porque": "Los griegos usaban este mito para explicar por qué el cielo no se cae: alguien tenía que estar sosteniéndolo. Los mitos eran su manera de entender el mundo antes de que existiera la ciencia.",
+    "atributos": { "fuerza": 10, "astucia": 4, "valentia": 7, "magia": 3 },
+    "colorCarta": "#3E5C76",
+    "icono": "cielo",
+    "pregunta": {
+      "texto": "¿Qué sostiene Atlas sobre sus hombros?",
+      "opciones": ["La bóveda celeste", "Una montaña gigante", "El mar entero"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "odiseo",
+    "nombre": "Odiseo",
+    "mitologia": "griega",
+    "titulo": "El más astuto de los griegos",
+    "dones": ["Maestro de los planes", "Un truco nuevo para cada problema"],
+    "historia": "Odiseo fue el más astuto de todos los griegos: a él se le ocurrió el famoso caballo de madera con el que entraron a Troya. Después de la guerra tardó diez años en volver a su casa en Ítaca, sorteando cíclopes, sirenas y tormentas. Cuando el cíclope Polifemo los encerró en su cueva, Odiseo lo engañó con un truco ingenioso y escaparon escondidos entre las ovejas. Siempre pensaba primero y actuaba después, y así llegó a casa donde otros no lo habían logrado.",
+    "porque": "Odiseo es el héroe que gana con la cabeza donde otros pierden con la espada. Los griegos admiraban tanto la astucia que le dedicaron un héroe entero y un viaje de diez años.",
+    "atributos": { "fuerza": 5, "astucia": 10, "valentia": 8, "magia": 1 },
+    "colorCarta": "#2E7D8C",
+    "icono": "barco",
+    "pregunta": {
+      "texto": "¿Qué inventó Odiseo para entrar a Troya?",
+      "opciones": ["El caballo de madera", "Una catapulta gigante", "Un túnel secreto"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "atenea",
+    "nombre": "Atenea",
+    "mitologia": "griega",
+    "titulo": "La diosa de la sabiduría",
+    "dones": ["Sabiduría y estrategia", "Protectora de héroes"],
+    "historia": "Atenea nació de una manera única: salió de la cabeza de Zeus, ya con su armadura puesta. Es la diosa de la sabiduría y la estrategia, y protegió a héroes como Odiseo y Perseo en sus aventuras. Una vez compitió con Poseidón por una ciudad griega: él ofreció una fuente de agua y ella ofreció el olivo, un árbol que daba comida, aceite y sombra. La ciudad la eligió a ella, y por eso hoy se llama Atenas.",
+    "porque": "Para los griegos, la sabiduría era el poder más alto del Olimpo: más que la fuerza y más que el rayo. Su ciudad más famosa eligió llamarse como la diosa que pensaba antes de actuar.",
+    "atributos": { "fuerza": 7, "astucia": 10, "valentia": 9, "magia": 9 },
+    "colorCarta": "#7A8B3D",
+    "icono": "lechuza",
+    "pregunta": {
+      "texto": "¿De dónde nació Atenea?",
+      "opciones": ["De la cabeza de Zeus", "De la espuma del mar", "De un rayo del cielo"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "perseo",
+    "nombre": "Perseo",
+    "mitologia": "griega",
+    "titulo": "El héroe del escudo espejo",
+    "dones": ["Sandalias voladoras", "Escudo espejo", "Casco de invisibilidad"],
+    "historia": "A Perseo le encargaron una misión que parecía imposible: vencer a Medusa, cuya mirada convertía en piedra a cualquiera que la mirara de frente. Los dioses lo ayudaron con regalos mágicos: sandalias voladoras, un casco de invisibilidad y un escudo brillante como un espejo. Perseo la venció sin mirarla directo ni una sola vez: se guió únicamente por el reflejo en su escudo. Así resolvió el desafío que nadie más había podido resolver.",
+    "porque": "A veces un problema no se enfrenta de frente, sino desde otro ángulo. Perseo ganó porque encontró una manera distinta de mirar.",
+    "atributos": { "fuerza": 7, "astucia": 8, "valentia": 9, "magia": 6 },
+    "colorCarta": "#5B6EAE",
+    "icono": "escudo",
+    "pregunta": {
+      "texto": "¿Cómo hizo Perseo para mirar a Medusa sin convertirse en piedra?",
+      "opciones": ["La miró por el reflejo de su escudo", "Cerró los ojos todo el tiempo", "Usó anteojos mágicos"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "dedalo",
+    "nombre": "Dédalo",
+    "mitologia": "griega",
+    "titulo": "El gran inventor",
+    "dones": ["El inventor más grande de Grecia", "Constructor del laberinto y de las alas"],
+    "historia": "Dédalo era el inventor más grande de Grecia: él mismo construyó el famoso laberinto de Creta. Cuando el rey no lo dejó irse de la isla, fabricó alas de plumas y cera para él y para su hijo Ícaro. Antes de despegar le advirtió: «No vueles demasiado alto, porque el sol derrite la cera». Ícaro se entusiasmó tanto que subió más y más, sus alas se deshicieron y cayó al mar, que desde entonces lleva su nombre. Dédalo, que voló a la altura justa, llegó a salvo al otro lado.",
+    "porque": "El mito habla de escuchar los consejos de quien sabe, y del equilibrio entre volar alto y volar seguro. Inventar es un poder enorme... y usarlo bien, todavía más.",
+    "atributos": { "fuerza": 3, "astucia": 10, "valentia": 6, "magia": 4 },
+    "colorCarta": "#B0803A",
+    "icono": "alas",
+    "pregunta": {
+      "texto": "¿Con qué materiales fabricó Dédalo las alas?",
+      "opciones": ["Plumas y cera", "Madera y tela", "Bronce y cuero"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "thor",
+    "nombre": "Thor",
+    "mitologia": "nordica",
+    "titulo": "El dios del trueno",
+    "dones": ["El martillo Mjölnir que siempre vuelve a su mano", "Controla truenos y rayos"],
+    "historia": "Thor es el protector de los dioses y de los humanos, el más fuerte de todo Asgard. Su martillo Mjölnir tiene un poder especial: por más lejos que lo lance, siempre vuelve a su mano. Con él controla los truenos y los rayos. Cruza el cielo en un carro tirado por dos cabras y, cuando pasa a toda velocidad, el cielo entero retumba.",
+    "porque": "Los nórdicos explicaban las tormentas como Thor cruzando el cielo: los truenos eran las ruedas de su carro y los rayos, los golpes de su martillo. Cada cultura inventó una historia para el mismo misterio del cielo.",
+    "atributos": { "fuerza": 10, "astucia": 4, "valentia": 10, "magia": 6 },
+    "colorCarta": "#4A6FA5",
+    "icono": "martillo",
+    "pregunta": {
+      "texto": "¿Qué hace Mjölnir, el martillo de Thor, después de ser lanzado?",
+      "opciones": ["Vuelve solo a su mano", "Se convierte en rayo", "Se hace gigante"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "loki",
+    "nombre": "Loki",
+    "mitologia": "nordica",
+    "titulo": "El tramposo de Asgard",
+    "dones": ["Cambia de forma", "Ingenio sin límites (a veces para bien, a veces para lío)"],
+    "historia": "Loki es el tramposo de Asgard: puede cambiar de forma y transformarse en halcón, en mosca o en lo que necesite. Su ingenio no tiene límites, pero lo usa a veces para ayudar y a veces para meterse en líos enormes. Muchas de las mejores historias nórdicas empiezan con un problema que causó Loki... y terminan con una solución que también encontró él. Los dioses nunca sabían si agradecerle o retarlo.",
+    "porque": "Loki muestra que la astucia sin cuidado trae consecuencias. Los nórdicos contaban sus travesuras para reírse, pero también para pensar qué pasa cuando alguien muy inteligente no mide lo que hace.",
+    "atributos": { "fuerza": 4, "astucia": 10, "valentia": 5, "magia": 9 },
+    "colorCarta": "#2F8F6B",
+    "icono": "zorro",
+    "pregunta": {
+      "texto": "¿Cuál es el gran talento de Loki?",
+      "opciones": ["Cambiar de forma", "Volar más rápido que todos", "Ver el futuro"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "odin",
+    "nombre": "Odín",
+    "mitologia": "nordica",
+    "titulo": "El Padre de Todos",
+    "dones": ["Sabiduría total", "Hugin y Munin, sus dos cuervos, le cuentan todo lo que pasa en el mundo"],
+    "historia": "Odín es el Padre de Todos, el más sabio de los dioses nórdicos. Tiene dos cuervos, Hugin y Munin, que vuelan por el mundo entero y vuelven cada noche a contarle todo lo que vieron. Quería tanto la sabiduría que viajó hasta el pozo de Mimir, donde estaba el agua del conocimiento más profundo. El guardián le pidió algo muy valioso a cambio: uno de sus ojos. Odín aceptó el intercambio sin dudarlo, y desde entonces ve menos con los ojos... pero entiende mucho más con la mente.",
+    "porque": "El conocimiento tiene un precio: tiempo, esfuerzo, a veces algo que nos importa mucho. Para los nórdicos la sabiduría valía más que cualquier tesoro, y Odín lo demostró.",
+    "atributos": { "fuerza": 7, "astucia": 10, "valentia": 9, "magia": 10 },
+    "colorCarta": "#55608F",
+    "icono": "cuervos",
+    "pregunta": {
+      "texto": "¿Qué hacen Hugin y Munin, los cuervos de Odín?",
+      "opciones": ["Le cuentan todo lo que pasa en el mundo", "Le traen comida del bosque", "Cantan para despertarlo"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "freya",
+    "nombre": "Freya",
+    "mitologia": "nordica",
+    "titulo": "La diosa de la magia",
+    "dones": ["Diosa del amor y la magia seidr", "Capa de halcón para volar"],
+    "historia": "Freya es la diosa nórdica del amor y de la magia seidr, la más poderosa de todas las magias. Viaja en un carro tirado por dos gatos y tiene una capa de plumas de halcón que le permite volar por los nueve mundos. Fue ella quien les enseñó magia a los propios dioses: hasta Odín, el más sabio, aprendió de ella.",
+    "porque": "En los mitos nórdicos, la magia más poderosa la maneja una diosa. Y Freya muestra algo más: enseñar lo que uno sabe también es una forma de poder.",
+    "atributos": { "fuerza": 5, "astucia": 8, "valentia": 8, "magia": 10 },
+    "colorCarta": "#B25E7E",
+    "icono": "gato",
+    "pregunta": {
+      "texto": "¿Qué animales tiran del carro de Freya?",
+      "opciones": ["Dos gatos", "Dos cabras", "Dos lobos"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "heimdall",
+    "nombre": "Heimdall",
+    "mitologia": "nordica",
+    "titulo": "El guardián del arcoíris",
+    "dones": ["Ve y oye todo", "Guardián del puente arcoíris Bifröst"],
+    "historia": "Heimdall es el guardián de Asgard: vigila el Bifröst, el puente arcoíris que conecta el mundo de los dioses con el nuestro. Sus sentidos son increíbles: ve a cientos de kilómetros de distancia, escucha crecer el pasto y no duerme jamás. Si algún peligro se acerca, hace sonar su cuerno Gjallarhorn, tan potente que se escucha en los nueve mundos a la vez.",
+    "porque": "Para los nórdicos, el arcoíris era un puente entre el mundo de los dioses y el nuestro. Cuando aparecía uno después de la lluvia, era la puerta de Asgard dejándose ver un ratito.",
+    "atributos": { "fuerza": 7, "astucia": 7, "valentia": 9, "magia": 7 },
+    "colorCarta": "#3D8FA8",
+    "icono": "arcoiris",
+    "pregunta": {
+      "texto": "¿Qué puente cuida Heimdall?",
+      "opciones": ["El Bifröst, el puente arcoíris", "Un puente de hielo eterno", "Un puente de oro macizo"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "sif",
+    "nombre": "Sif",
+    "mitologia": "nordica",
+    "titulo": "La diosa del cabello de oro",
+    "dones": ["Cabellos de oro verdadero, forjados por los enanos"],
+    "historia": "Sif es una diosa de Asgard famosa por su hermoso cabello dorado. Una vez, Loki se lo cortó como broma... y la broma le salió carísima. Para arreglar el lío, Loki tuvo que viajar hasta los enanos, los mejores herreros de los nueve mundos, y conseguir que forjaran para Sif un cabello nuevo de oro puro. Los enanos hicieron algo increíble: un cabello de oro verdadero que brilla al sol y crece como pelo real.",
+    "porque": "Los nórdicos asociaban el cabello dorado de Sif con los campos de trigo maduro que brillan al sol. Y la historia enseña que las bromas sin cuidado traen consecuencias... aunque a veces terminen en algo hermoso.",
+    "atributos": { "fuerza": 5, "astucia": 6, "valentia": 7, "magia": 5 },
+    "colorCarta": "#C9A227",
+    "icono": "trigo",
+    "pregunta": {
+      "texto": "¿Quiénes forjaron el cabello nuevo de Sif?",
+      "opciones": ["Los enanos herreros", "Los gigantes de hielo", "Las valquirias"],
+      "correcta": 0
+    }
+  },
+  {
+    "id": "tyr",
+    "nombre": "Tyr",
+    "mitologia": "nordica",
+    "titulo": "El más valiente de los dioses",
+    "dones": ["Coraje que nadie más tiene", "Puso su mano para encadenar al lobo Fenrir"],
+    "historia": "Los dioses necesitaban sujetar a Fenrir, un lobo gigante que crecía sin parar, con una cinta mágica hecha por los enanos. Pero el lobo desconfiaba y solo aceptaba si un dios ponía la mano cerca de su boca como prenda de confianza mientras lo ataban. Nadie se animaba... excepto Tyr. Fenrir quedó sujeto con la cinta mágica, y Tyr perdió la mano en el trato. Sabía que podía pasar, y lo hizo igual, porque era lo necesario para proteger a todos.",
+    "porque": "Valentía no es no tener miedo: es hacer lo necesario aun sabiendo lo que puede costar. Por eso los nórdicos decían que Tyr era el más valiente de todos los dioses.",
+    "atributos": { "fuerza": 8, "astucia": 6, "valentia": 10, "magia": 3 },
+    "colorCarta": "#8A4B3B",
+    "icono": "lobo",
+    "pregunta": {
+      "texto": "¿Qué se animó a hacer Tyr que ningún otro dios se animaba?",
+      "opciones": ["Acercarse al lobo Fenrir para que pudieran atarlo", "Cruzar un anillo de fuego", "Robar las manzanas de la juventud"],
+      "correcta": 0
+    }
+  }
+]

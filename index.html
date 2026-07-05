@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#241c4d">
+  <title>Héroes y Dioses — Cartas de Mitología</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="encabezado-titulo">
+      <h1>Héroes y Dioses</h1>
+      <p class="subtitulo">Tu colección de mitología</p>
+    </div>
+    <p class="contador" id="contador" aria-live="polite"></p>
+  </header>
+
+  <nav class="controles" aria-label="Filtros de la colección">
+    <div class="filtros" role="group" aria-label="Filtrar por mitología">
+      <button class="chip activo" data-filtro="todas">Todas</button>
+      <button class="chip" data-filtro="griega">🏛️ Griega</button>
+      <button class="chip" data-filtro="nordica">⚡ Nórdica</button>
+    </div>
+    <input type="search" id="buscador" class="buscador" placeholder="Buscar un héroe..."
+      aria-label="Buscar por nombre (solo encuentra cartas desbloqueadas)">
+  </nav>
+
+  <main>
+    <p class="mensaje-vacio oculto" id="mensaje-vacio">No encontré ningún héroe con ese nombre... ¿será que todavía no lo desbloqueaste? 🔍</p>
+    <section class="galeria" id="galeria" aria-label="Galería de cartas"></section>
+  </main>
+
+  <footer class="pie">
+    <button class="boton-config" id="boton-config" aria-label="Opciones" title="Opciones">⚙️</button>
+  </footer>
+
+  <!-- Vista de detalle de carta -->
+  <div class="detalle-fondo oculto" id="detalle" role="dialog" aria-modal="true" aria-labelledby="detalle-nombre">
+    <article class="detalle-carta" id="detalle-carta">
+      <button class="boton-volver" id="boton-volver">← Volver</button>
+      <div class="detalle-contenido" id="detalle-contenido"></div>
+    </article>
+  </div>
+
+  <!-- Modal de pregunta para desbloquear -->
+  <div class="detalle-fondo oculto" id="modal-pregunta" role="dialog" aria-modal="true" aria-labelledby="pregunta-titulo">
+    <div class="pregunta-caja" id="pregunta-caja">
+      <h2 id="pregunta-titulo">🗝️ Carta misteriosa</h2>
+      <div id="pregunta-contenido"></div>
+    </div>
+  </div>
+
+  <!-- Menú de opciones (para Willy) -->
+  <div class="detalle-fondo oculto" id="modal-config" role="dialog" aria-modal="true">
+    <div class="pregunta-caja config-caja">
+      <h2>Opciones</h2>
+      <p class="config-nota">Zona para personas grandes 🧑‍🔧</p>
+      <button class="boton-secundario" id="boton-reset">Reiniciar la colección</button>
+      <button class="boton-principal" id="boton-cerrar-config">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="iconos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
