@@ -1,6 +1,6 @@
 # Héroes y Dioses — Cartas de Mitología para Feli
 
-Juego web de colección de cartas de héroes y dioses de la mitología griega y nórdica.
+Juego web de colección de cartas de héroes y dioses de la mitología griega, nórdica y romana.
 Sin backend, sin build, sin dependencias: HTML, CSS y JavaScript puros.
 
 ## Cómo jugarlo

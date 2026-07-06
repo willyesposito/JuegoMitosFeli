@@ -553,6 +553,153 @@ const ICONOS = {
     <path d="M50 20 h20 v46 l24 8 q8 4 8 14 v6 H40 v-40 Z" fill="#6B5040"/>
     <path d="M40 94 h62 v8 h-62 Z" fill="#4A3830"/>
     <path d="M56 30 h8" stroke="rgba(255,255,255,.3)" stroke-width="4" stroke-linecap="round"/>`,
+
+  reloj_arena: `
+    <path d="M34 20 H86 L64 60 L86 100 H34 L56 60 Z" fill="#FFF4DE"/>
+    <path d="M34 20 H86 V28 H34 Z" fill="rgba(255,255,255,.75)"/>
+    <path d="M34 92 H86 V100 H34 Z" fill="rgba(255,255,255,.75)"/>
+    <path d="M44 30 L76 30 L60 55 Z" fill="#5C4A6B" opacity=".55"/>
+    <path d="M60 65 L52 90 H68 Z" fill="#FFD867"/>`,
+
+  pocion: `
+    <path d="M50 22 h20 v18 l18 34 c6 12 -3 26 -17 26 H49 c-14 0 -23 -14 -17 -26 l18 -34 Z" fill="#FFF4DE"/>
+    <path d="M46 74 h28 l4 8 c4 8 -2 16 -10 16 H52 c-8 0 -14 -8 -10 -16 Z" fill="#3D5C4A"/>
+    <rect x="48" y="18" width="24" height="8" rx="3" fill="#FFD867"/>
+    <circle cx="60" cy="60" r="4" fill="#FFD867"/>
+    <circle cx="52" cy="68" r="3" fill="#FFD867"/>`,
+
+  sombras: `
+    <path d="M60 18 a42 42 0 1 0 42 42 A34 34 0 0 1 60 18 Z" fill="#FFF4DE"/>
+    <circle cx="80" cy="36" r="3" fill="#FFF4DE"/>
+    <circle cx="92" cy="52" r="2" fill="#FFF4DE"/>
+    <path d="M40 78 h40" stroke="rgba(255,255,255,.4)" stroke-width="4" stroke-linecap="round"/>`,
+
+  padre_hombros: `
+    <circle cx="46" cy="34" r="12" fill="#FFF4DE"/>
+    <path d="M28 96 q0 -30 18 -34 q18 4 18 34 Z" fill="#FFF4DE"/>
+    <circle cx="80" cy="52" r="9" fill="rgba(255,255,255,.85)"/>
+    <path d="M62 60 q12 -4 18 6 q4 10 -4 30 h-20 q-4 -20 6 -36 Z" fill="rgba(255,255,255,.85)"/>
+    <path d="M50 66 q8 -6 16 -2" stroke="#8C4A3D" stroke-width="3" fill="none" stroke-linecap="round"/>`,
+
+  llave_acertijo: `
+    <circle cx="42" cy="42" r="20" fill="none" stroke="#FFF4DE" stroke-width="8"/>
+    <rect x="58" y="55" width="9" height="42" rx="3" fill="#FFF4DE" transform="rotate(45 62 76)"/>
+    <path d="M78 72 l10 10 M84 78 l8 8" stroke="#FFF4DE" stroke-width="7" stroke-linecap="round"/>
+    <text x="42" y="49" text-anchor="middle" font-size="20" font-weight="800" fill="#6B5C3D">?</text>`,
+
+  espejo: `
+    <ellipse cx="60" cy="52" rx="30" ry="36" fill="none" stroke="#FFF4DE" stroke-width="7"/>
+    <ellipse cx="60" cy="52" rx="30" ry="36" fill="rgba(255,255,255,.2)"/>
+    <rect x="53" y="86" width="14" height="22" rx="4" fill="#FFF4DE"/>
+    <path d="M40 96 h40" stroke="#FFF4DE" stroke-width="6" stroke-linecap="round"/>
+    <path d="M46 36 q14 -10 28 0" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".7"/>`,
+
+  vision: `
+    <path d="M18 60 q42 -34 84 0 q-42 34 -84 0 Z" fill="#FFF4DE"/>
+    <circle cx="60" cy="60" r="16" fill="#5C3D5C"/>
+    <circle cx="60" cy="60" r="7" fill="#FFD867"/>
+    <path d="M30 30 l6 8 M90 30 l-6 8" stroke="#FFD867" stroke-width="3.5" fill="none" stroke-linecap="round"/>`,
+
+  vara_magica: `
+    <rect x="55" y="30" width="10" height="70" rx="4" fill="#FFF4DE" transform="rotate(20 60 65)"/>
+    <path d="M78 26 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z" fill="#FFD867"/>
+    <circle cx="38" cy="80" r="3" fill="#FFD867"/>
+    <circle cx="30" cy="66" r="2.5" fill="#FFD867"/>
+    <circle cx="46" cy="92" r="2.5" fill="#FFD867"/>`,
+
+  loba_capitolina: `
+    <ellipse cx="60" cy="66" rx="34" ry="20" fill="#FFF4DE"/>
+    <path d="M34 54 L26 32 L46 46 Z" fill="#FFF4DE"/>
+    <path d="M86 54 L94 32 L74 46 Z" fill="#FFF4DE"/>
+    <circle cx="48" cy="58" r="4" fill="#4A2E22"/>
+    <circle cx="72" cy="58" r="4" fill="#4A2E22"/>
+    <circle cx="44" cy="82" r="7" fill="rgba(255,255,255,.7)"/>
+    <circle cx="60" cy="86" r="7" fill="rgba(255,255,255,.7)"/>
+    <circle cx="76" cy="82" r="7" fill="rgba(255,255,255,.7)"/>`,
+
+  cetro: `
+    <rect x="55" y="30" width="10" height="72" rx="4" fill="#FFF4DE"/>
+    <circle cx="60" cy="24" r="14" fill="#FFD867"/>
+    <path d="M60 14 v20 M50 24 h20" stroke="#6B4A4A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M45 100 h30" stroke="rgba(255,255,255,.5)" stroke-width="5" stroke-linecap="round"/>`,
+
+  flecha_amor: `
+    <path d="M60 60 m-34 0 a34 34 0 1 0 68 0 a34 34 0 1 0 -68 0" fill="none" stroke="#C97B9E" stroke-width="5" opacity=".4"/>
+    <path d="M26 60 H86" stroke="#FFF4DE" stroke-width="5" stroke-linecap="round"/>
+    <path d="M86 60 L72 50 M86 60 L72 70" stroke="#FFF4DE" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M26 60 L38 52 L38 68 Z" fill="#FFD867"/>`,
+
+  muralla_cartago: `
+    <rect x="22" y="58" width="76" height="42" fill="#FFF4DE"/>
+    <rect x="22" y="46" width="14" height="14" fill="#FFF4DE"/>
+    <rect x="44" y="46" width="14" height="14" fill="#FFF4DE"/>
+    <rect x="66" y="46" width="14" height="14" fill="#FFF4DE"/>
+    <rect x="88" y="46" width="10" height="14" fill="#FFF4DE"/>
+    <rect x="50" y="76" width="20" height="24" fill="#8C5C3D"/>
+    <path d="M22 58 h76" stroke="rgba(140,92,61,.4)" stroke-width="3"/>`,
+
+  estrella_cadena: `
+    <g fill="#FFD867">
+      <circle cx="30" cy="30" r="4"/><circle cx="52" cy="44" r="4"/><circle cx="70" cy="30" r="4"/>
+      <circle cx="90" cy="50" r="4"/><circle cx="60" cy="70" r="4"/><circle cx="40" cy="90" r="4"/><circle cx="80" cy="90" r="4"/>
+    </g>
+    <path d="M30 30 L52 44 L70 30 M52 44 L60 70 L40 90 M60 70 L80 90" stroke="rgba(255,255,255,.55)" stroke-width="2.5" fill="none"/>`,
+
+  vasija_agua: `
+    <path d="M42 30 h36 l-4 14 c14 8 20 24 14 40 c-4 12 -16 18 -32 18 s-28 -6 -32 -18 c-6 -16 0 -32 14 -40 Z" fill="#FFF4DE"/>
+    <path d="M42 30 h36" stroke="#4A8C8C" stroke-width="4"/>
+    <path d="M34 74 q26 12 52 0" stroke="rgba(74,140,140,.4)" stroke-width="4" fill="none"/>`,
+
+  isla_lejana: `
+    <path d="M20 76 q40 -18 80 0 q-8 20 -40 20 t-40 -20 Z" fill="#FFF4DE"/>
+    <path d="M50 76 q4 -30 10 -48 q10 18 10 48 Z" fill="#3D6B6B"/>
+    <circle cx="60" cy="24" r="8" fill="#FFD867"/>
+    <path d="M14 84 q46 14 92 0" stroke="rgba(255,255,255,.4)" stroke-width="4" fill="none" stroke-linecap="round"/>`,
+
+  mariposa_alma: `
+    <path d="M60 40 C46 18 20 24 22 46 C24 62 44 62 60 46 Z" fill="#FFF4DE"/>
+    <path d="M60 40 C74 18 100 24 98 46 C96 62 76 62 60 46 Z" fill="#FFF4DE"/>
+    <path d="M60 46 C48 62 26 66 26 82 C42 82 56 70 60 58 Z" fill="rgba(255,255,255,.75)"/>
+    <path d="M60 46 C72 62 94 66 94 82 C78 82 64 70 60 58 Z" fill="rgba(255,255,255,.75)"/>
+    <rect x="58" y="38" width="4" height="46" rx="2" fill="#4A3D2E"/>`,
+
+  hojas_laurel: `
+    <path d="M60 16 V104" stroke="#FFF4DE" stroke-width="5" stroke-linecap="round"/>
+    <g fill="#FFF4DE">
+      <ellipse cx="46" cy="32" rx="10" ry="5" transform="rotate(-30 46 32)"/>
+      <ellipse cx="74" cy="32" rx="10" ry="5" transform="rotate(30 74 32)"/>
+      <ellipse cx="42" cy="54" rx="10" ry="5" transform="rotate(-30 42 54)"/>
+      <ellipse cx="78" cy="54" rx="10" ry="5" transform="rotate(30 78 54)"/>
+      <ellipse cx="46" cy="76" rx="10" ry="5" transform="rotate(-30 46 76)"/>
+      <ellipse cx="74" cy="76" rx="10" ry="5" transform="rotate(30 74 76)"/>
+    </g>`,
+
+  ondas_sonido: `
+    <circle cx="60" cy="60" r="8" fill="#FFF4DE"/>
+    <path d="M76 44 a24 24 0 0 1 0 32" fill="none" stroke="#FFF4DE" stroke-width="5" stroke-linecap="round"/>
+    <path d="M86 32 a40 40 0 0 1 0 56" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M44 44 a24 24 0 0 0 0 32" fill="none" stroke="#FFF4DE" stroke-width="5" stroke-linecap="round"/>
+    <path d="M34 32 a40 40 0 0 0 0 56" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="5" stroke-linecap="round"/>`,
+
+  flor_narciso: `
+    <circle cx="60" cy="60" r="10" fill="#FFD867"/>
+    <g fill="#FFF4DE">
+      <ellipse cx="60" cy="38" rx="10" ry="16"/>
+      <ellipse cx="60" cy="82" rx="10" ry="16"/>
+      <ellipse cx="38" cy="60" rx="16" ry="10"/>
+      <ellipse cx="82" cy="60" rx="16" ry="10"/>
+    </g>
+    <path d="M60 92 V108" stroke="#6B9E8C" stroke-width="5" stroke-linecap="round"/>`,
+
+  escudo_amazona: `
+    <path d="M60 16 L94 28 V58 C94 82 78 98 60 106 C42 98 26 82 26 58 V28 Z" fill="#FFF4DE"/>
+    <path d="M60 16 L94 28 V58 C94 82 78 98 60 106 Z" fill="rgba(0,0,0,.12)"/>
+    <path d="M60 32 V90 M40 50 L80 70 M80 50 L40 70" stroke="#8C3D5C" stroke-width="4.5" stroke-linecap="round"/>`,
+
+  manzana_discordia: `
+    <path d="M60 42 C42 36 30 50 30 68 a30 26 0 0 0 60 0 C90 50 78 36 60 42 Z" fill="#FFD867"/>
+    <path d="M58 42 q0 -12 -8 -18" stroke="#9E6B4A" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="60" y="80" text-anchor="middle" font-size="26" font-weight="800" fill="#9E6B4A">?</text>`,
 };
 
 /* Silueta para cartas todavía no desbloqueadas */

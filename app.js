@@ -4,7 +4,7 @@
 const CLAVE_GUARDADO = "feli-cartas-v1";
 const DESBLOQUEADAS_INICIALES = ["teseo", "heracles", "thor"];
 
-const NOMBRE_MITO = { griega: "🏛️ Griega", nordica: "⚡ Nórdica" };
+const NOMBRE_MITO = { griega: "🏛️ Griega", nordica: "⚡ Nórdica", romana: "🦅 Romana" };
 const ATRIBUTOS = [
   { clave: "fuerza",   icono: "⚔️", nombre: "Fuerza" },
   { clave: "astucia",  icono: "🧠", nombre: "Astucia" },
@@ -76,6 +76,15 @@ function porId(id) {
   return personajes.find(p => p.id === id);
 }
 
+/* Insignia de tier: distintivo estático de cuán central es el personaje en su mitología.
+   Estático, no es un logro; el progreso por capítulos llega en el modo historia. */
+const NOMBRE_TIER = { dorado: "⭐ Dorado", plateado: "✦ Plateado" };
+
+function chipTier(p) {
+  const etiqueta = NOMBRE_TIER[p.tier];
+  return etiqueta ? `<span class="chip-tier tier-${p.tier}">${etiqueta}</span>` : "";
+}
+
 /* ---------- Galería ---------- */
 
 function renderContador() {
@@ -114,7 +123,8 @@ function renderGaleria() {
     carta.innerHTML = `
       <span class="ilustracion">${svgIcono(p.icono, !desbloqueada)}</span>
       <span class="nombre">${desbloqueada ? p.nombre : "???"}</span>
-      <span class="chip-mito">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>`;
+      <span class="chip-mito">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
+      ${desbloqueada ? chipTier(p) : ""}`;
     carta.addEventListener("click", () => {
       if (estaDesbloqueada(p.id)) abrirDetalle(p.id);
       else abrirPregunta(p.id);
@@ -149,6 +159,7 @@ function abrirDetalle(id, recienRevelada = false) {
     <h2 id="detalle-nombre">${p.nombre}</h2>
     <p class="detalle-titulo">${p.titulo}</p>
     <span class="detalle-chip">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
+    ${chipTier(p)}
     <div class="dones">${p.dones.map(d => `<span class="don">${d}</span>`).join("")}</div>
     <div class="atributos">${barras}</div>
     <div class="bloque-texto">

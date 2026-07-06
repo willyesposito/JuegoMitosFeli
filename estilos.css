@@ -161,6 +161,27 @@ button { font-family: inherit; cursor: pointer; }
   padding: 3px 10px;
 }
 
+/* Insignia de tier: distintivo estático de qué tan central es el personaje en su mitología.
+   No es un logro ni un estado de progreso (eso llega con el modo historia, más adelante). */
+.chip-tier {
+  font-size: .72rem;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 3px 10px;
+  letter-spacing: .2px;
+  white-space: nowrap;
+}
+
+.chip-tier.tier-dorado {
+  background: linear-gradient(120deg, rgba(255, 216, 103, .95), rgba(255, 236, 170, .9));
+  color: #4a3200;
+}
+
+.chip-tier.tier-plateado {
+  background: linear-gradient(120deg, rgba(224, 230, 240, .95), rgba(255, 255, 255, .9));
+  color: #2b323c;
+}
+
 .carta.velada {
   background: linear-gradient(160deg, #3a3654, #26233b) !important;
   color: rgba(253, 251, 255, .6);
@@ -198,6 +219,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .detalle-carta {
+  position: relative;
   width: 100%;
   max-width: 560px;
   max-height: calc(100vh - 32px);
@@ -207,6 +229,20 @@ button { font-family: inherit; cursor: pointer; }
   padding: 16px 18px 26px;
   animation: aparecer .3s ease-out;
 }
+
+/* Esquinas doradas: marco decorativo de la carta de detalle */
+.esquina {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-color: rgba(255, 216, 103, .65);
+  pointer-events: none;
+}
+
+.esquina-tl { top: 10px; left: 10px; border-top: 2px solid; border-left: 2px solid; border-top-left-radius: 8px; }
+.esquina-tr { top: 10px; right: 10px; border-top: 2px solid; border-right: 2px solid; border-top-right-radius: 8px; }
+.esquina-bl { bottom: 10px; left: 10px; border-bottom: 2px solid; border-left: 2px solid; border-bottom-left-radius: 8px; }
+.esquina-br { bottom: 10px; right: 10px; border-bottom: 2px solid; border-right: 2px solid; border-bottom-right-radius: 8px; }
 
 @keyframes aparecer {
   from { opacity: 0; transform: translateY(24px); }

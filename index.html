@@ -23,6 +23,7 @@
       <button class="chip activo" data-filtro="todas">Todas</button>
       <button class="chip" data-filtro="griega">🏛️ Griega</button>
       <button class="chip" data-filtro="nordica">⚡ Nórdica</button>
+      <button class="chip" data-filtro="romana">🦅 Romana</button>
     </div>
     <input type="search" id="buscador" class="buscador" placeholder="Buscar un héroe..."
       aria-label="Buscar por nombre (solo encuentra cartas desbloqueadas)">
@@ -40,6 +41,10 @@
   <!-- Vista de detalle de carta -->
   <div class="detalle-fondo oculto" id="detalle" role="dialog" aria-modal="true" aria-labelledby="detalle-nombre">
     <article class="detalle-carta" id="detalle-carta">
+      <i class="esquina esquina-tl" aria-hidden="true"></i>
+      <i class="esquina esquina-tr" aria-hidden="true"></i>
+      <i class="esquina esquina-bl" aria-hidden="true"></i>
+      <i class="esquina esquina-br" aria-hidden="true"></i>
       <button class="boton-volver" id="boton-volver">← Volver</button>
       <div class="detalle-contenido" id="detalle-contenido"></div>
     </article>
