@@ -162,13 +162,23 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* Insignia de tier: distintivo estático de qué tan central es el personaje en su mitología.
-   No es un logro ni un estado de progreso (eso llega con el modo historia, más adelante). */
+   Define el marco/holo máximo que la carta puede alcanzar (ver capítulos más abajo),
+   no es en sí mismo un logro. */
 .chip-tier {
   font-size: .72rem;
   font-weight: 800;
   border-radius: 999px;
   padding: 3px 10px;
   letter-spacing: .2px;
+  white-space: nowrap;
+}
+
+.chip-capitulos {
+  font-size: .7rem;
+  font-weight: 700;
+  background: rgba(0, 0, 0, .22);
+  border-radius: 999px;
+  padding: 3px 10px;
   white-space: nowrap;
 }
 
@@ -196,14 +206,60 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 1.05rem;
 }
 
-/* Animación de revelado */
-@keyframes revelar {
-  0%   { transform: rotateY(90deg) scale(.8); filter: brightness(2.2); }
-  60%  { transform: rotateY(-12deg) scale(1.05); filter: brightness(1.4); }
-  100% { transform: rotateY(0) scale(1); filter: brightness(1); }
+/* Revelado — "Niebla del Oráculo" (ver Handoff de tiers, sección 7): la carta
+   brota con un destello mientras la niebla alrededor se dispersa hacia afuera. */
+@keyframes carta-brotar {
+  0%   { opacity: 0; transform: scale(.86); filter: brightness(2.4) saturate(.6); }
+  40%  { opacity: 1; filter: brightness(1.35) saturate(.85); }
+  100% { opacity: 1; transform: scale(1); filter: brightness(1) saturate(1); }
 }
 
-.carta.recien-revelada { animation: revelar .8s ease-out; }
+.carta.recien-revelada { animation: carta-brotar .95s ease-out both; }
+
+@keyframes niebla-dispersa {
+  0%   { opacity: .6; transform: translate(0, 0) scale(1); }
+  100% { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(1.6); }
+}
+
+.niebla-dispersa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56px;
+  height: 56px;
+  margin: -28px 0 0 -28px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 3;
+  background: radial-gradient(circle, rgba(190, 165, 255, .55), transparent 70%);
+  filter: blur(7px);
+  animation: niebla-dispersa .9s ease-out both;
+}
+
+@keyframes toast-aparece {
+  0%   { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+  12%  { opacity: 1; transform: translateX(-50%) translateY(0); }
+  85%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.toast-aparicion {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(120deg, #3b2f75, #241c4d);
+  color: #fff4de;
+  border: 1.5px solid rgba(255, 216, 103, .5);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: .92rem;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .4);
+  z-index: 999;
+  pointer-events: none;
+  animation: toast-aparece 3s ease-out both;
+}
 
 /* ============ Detalle ============ */
 .detalle-fondo {
@@ -249,7 +305,7 @@ button { font-family: inherit; cursor: pointer; }
   to   { opacity: 1; transform: none; }
 }
 
-.detalle-carta.revelando { animation: revelar .9s ease-out; }
+.detalle-carta.revelando { animation: carta-brotar .95s ease-out both; }
 
 .boton-volver {
   border: none;
@@ -428,10 +484,11 @@ button { font-family: inherit; cursor: pointer; }
 
 .config-caja .config-nota { color: var(--texto-suave); margin-bottom: 16px; }
 
-/* ============ Progreso de historia: plateada y dorada ============
-   No confundir con .chip-tier (rareza estática del personaje, ver app.js).
-   Esto es el avance del jugador con esa carta: terminó de leer su historia
-   (plateada) y después acertó la Pregunta del Sabio (dorada). */
+/* ============ Marco de material: plateado y dorado ============
+   Se activa cuando historiaCompleta(p) da true Y el tier estático del
+   personaje (ver .chip-tier / app.js) es dorado o plateado. No es un paso
+   dentro de la colección: los capítulos que faltan los encienden otros
+   módulos (ver .capitulo--velado más abajo). */
 
 .carta--plateada,
 .carta--dorada,
@@ -489,6 +546,8 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* Sello de historia completa / mito dominado */
+/* Un solo estilo de sello para toda carta completada, sin importar el tier
+   (el tier ya se distingue con el marco de material, no hace falta repetirlo acá). */
 .sello-historia {
   position: relative;
   z-index: 2;
@@ -502,141 +561,70 @@ button { font-family: inherit; cursor: pointer; }
   letter-spacing: .3px;
   white-space: nowrap;
   margin: 8px 0 2px;
+  background: linear-gradient(120deg, rgba(255,255,255,.92), rgba(224,216,255,.85));
+  color: #2b2350;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.18);
   animation: estampar .6s ease-out both;
 }
 
-.sello-historia.sello-plateada {
-  background: linear-gradient(120deg, rgba(224,230,240,.95), rgba(255,255,255,.9));
-  color: #2b323c;
-  box-shadow: 0 0 0 3px rgba(180,190,205,.3);
-}
+/* Capítulos dentro del detalle: encendido (leíble) o velado (con la pista de
+   dónde se gana, ver pistaCapituloVelado en app.js). */
+.capitulos { text-align: left; margin-bottom: 14px; }
 
-.sello-historia.sello-dorada {
-  background: linear-gradient(120deg, rgba(255,216,103,.95), rgba(255,236,170,.9));
-  color: #4a3200;
-  box-shadow: 0 0 0 3px rgba(255,216,103,.3);
-}
-
-/* Botón "Terminé de leer" y Pregunta del Sabio */
-.boton-terminar-lectura {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--acento);
-  color: #4a3200;
-  border-radius: 999px;
-  padding: 11px 22px;
-  font-size: .95rem;
-  font-weight: 800;
-  margin-top: 4px;
+.capitulos-progreso {
   position: relative;
   z-index: 2;
-}
-
-.pregunta-sabio {
-  position: relative;
-  z-index: 2;
-  margin-top: 14px;
-  text-align: left;
-  background: rgba(0, 0, 0, .26);
-  border: 1.5px solid rgba(217, 166, 255, .4);
-  border-radius: 16px;
-  padding: 14px 16px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.pregunta-sabio .pregunta-sabio-titulo {
-  font-size: .85rem;
+  justify-content: space-between;
   font-weight: 800;
-  color: #e3c1ff;
+  font-size: .92rem;
+  margin-bottom: 10px;
+  color: var(--texto-suave);
 }
 
-.pregunta-sabio .pregunta-sabio-texto { margin: 0; font-size: .95rem; line-height: 1.5; }
-
-.pregunta-sabio .opciones { display: flex; flex-direction: column; gap: 8px; }
-
-.pregunta-sabio .opcion {
-  border: 1.5px solid rgba(255, 255, 255, .22);
-  background: rgba(255, 255, 255, .08);
-  color: var(--texto);
-  border-radius: 12px;
-  padding: 10px 14px;
-  font-size: .9rem;
-  font-weight: 700;
-  text-align: left;
+.capitulo {
+  position: relative;
+  z-index: 2;
+  border-radius: var(--radio);
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  line-height: 1.55;
+  font-size: .98rem;
 }
 
-.pregunta-sabio .opcion.incorrecta { background: rgba(255, 120, 120, .25); }
+.capitulo--encendido { background: rgba(0, 0, 0, .22); }
+.capitulo--encendido h3 { font-size: 1.02rem; margin-bottom: 6px; }
 
-.pregunta-sabio .pregunta-sabio-error { font-size: .82rem; font-weight: 700; color: #ffb2b2; }
+.capitulo--encendido .bloque-porque--capitulo {
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+}
 
-/* Ceremonias de ascenso (fase 4): se agregan solo en la transición dentro del detalle */
-@keyframes aparece-oro { from { opacity: 0; } to { opacity: 1; } }
-@keyframes onda-oro { 0% { transform: scale(.15); opacity: .9; } 100% { transform: scale(4.4); opacity: 0; } }
+.capitulo--velado {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: repeating-linear-gradient(135deg, rgba(255,255,255,.05) 0 10px, rgba(255,255,255,.02) 10px 20px);
+  border: 1.5px dashed rgba(255, 255, 255, .25);
+  color: rgba(253, 251, 255, .65);
+}
+
+.capitulo--velado .capitulo-candado { font-size: 1.3rem; line-height: 1; }
+.capitulo--velado .capitulo-titulo { display: block; font-size: .95rem; margin-bottom: 3px; color: var(--texto); }
+.capitulo--velado .capitulo-pista { font-size: .82rem; color: rgba(253, 251, 255, .55); }
+
+@keyframes brillo-barrido { 0% { transform: translateX(-170%) skewX(-16deg); } 38%, 100% { transform: translateX(430%) skewX(-16deg); } }
+@keyframes titila { 0%, 100% { opacity: 0; transform: scale(.5); } 50% { opacity: 1; transform: scale(1); } }
 @keyframes estampar {
   0% { transform: scale(2.3) rotate(-15deg); opacity: 0; }
   55% { transform: scale(.9) rotate(-4deg); opacity: 1; }
   75% { transform: scale(1.07) rotate(-7deg); }
   100% { transform: scale(1) rotate(-6deg); opacity: 1; }
 }
-@keyframes brillo-barrido { 0% { transform: translateX(-170%) skewX(-16deg); } 38%, 100% { transform: translateX(430%) skewX(-16deg); } }
-@keyframes titila { 0%, 100% { opacity: 0; transform: scale(.5); } 50% { opacity: 1; transform: scale(1); } }
-@keyframes flash-blanco { 0% { opacity: 0; } 18% { opacity: 1; } 100% { opacity: 0; } }
-@keyframes rayos-estalla { 0% { opacity: 0; transform: rotate(0deg) scale(.6); } 15% { opacity: 1; } 75% { opacity: .85; } 100% { opacity: 0; transform: rotate(200deg) scale(1.5); } }
-
-.ceremonia-marco {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  border-radius: inherit;
-  animation: aparece-oro 1.2s ease-out both;
-}
-
-.ceremonia-onda {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 170px;
-  height: 170px;
-  margin: -85px 0 0 -85px;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 4;
-  animation: onda-oro 1.15s ease-out both;
-}
-
-.ceremonia-onda.onda-plata { background: radial-gradient(circle, rgba(230,236,245,.8), rgba(210,220,235,0) 70%); }
-.ceremonia-onda.onda-oro { background: radial-gradient(circle, rgba(255,225,130,.75), rgba(255,216,103,0) 70%); }
-
-.ceremonia-flash {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
-  pointer-events: none;
-  border-radius: inherit;
-  background: radial-gradient(circle, #fff, rgba(255,255,255,.5) 55%, transparent 100%);
-  animation: flash-blanco .45s ease-out both;
-}
-
-.ceremonia-rayos {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 620px;
-  height: 620px;
-  margin: -310px 0 0 -310px;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 0;
-  background: repeating-conic-gradient(rgba(255,228,150,.5) 0deg 5deg, transparent 5deg 28deg);
-  animation: rayos-estalla .85s ease-out both;
-}
 
 /* Barrido de brillo diagonal y destellos: permanentes en cartas plateadas/doradas,
-   no solo durante la ceremonia de ascenso (ver sección "todos los días" del mockup). */
+   no solo en el momento en que se completan (ver sección "todos los días" del mockup). */
 .brillo-sweep {
   position: absolute;
   top: -20%;
@@ -659,18 +647,6 @@ button { font-family: inherit; cursor: pointer; }
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-fill-mode: backwards;
-}
-
-.ceremonia-sello-particula {
-  position: absolute;
-  z-index: 6;
-  pointer-events: none;
-  animation: part-vuela .9s ease-out .32s both;
-}
-
-@keyframes part-vuela {
-  0% { transform: translate(0, 0) scale(1); opacity: 1; }
-  100% { transform: translate(var(--dx), var(--dy)) scale(.15); opacity: 0; }
 }
 
 /* ============ Accesibilidad ============ */
