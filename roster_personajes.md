@@ -10,6 +10,26 @@ Atributos (fuerza, astucia, valentía, magia) de 1 a 10. Sin mecánica en el MVP
 
 ---
 
+## Modelo de capítulos (nuevo)
+
+Cada personaje tiene su historia en **capítulos**. El capítulo `base` se enciende al descubrirlo; los demás se ganan jugando módulos que lo tocan. Cuando todos están encendidos, la carta se vuelve **dorada**. Los capítulos van en el JSON como array `capitulos`, cada uno `{ id, titulo, texto, porque, fuente }`. `fuente` = `"descubrimiento"` (capítulo base) o `modulo:condicion` (ej. `"cielo:corona_boreal"`, `"ordena:regreso_itaca"`). Los capítulos marcados como bonificación solo se consiguen en un módulo puntual.
+
+Abajo, los personajes del set inicial llevan su desglose de capítulos como plantilla. El resto del pool arranca con un solo capítulo `base` (su historia actual) y se les suman capítulos a medida que se definan los mitos secuenciables y las constelaciones que los tocan.
+
+### Plantilla de capítulos — set inicial
+
+- **Teseo** (4): base · "El hilo de Ariadna" (cielo:corona_boreal) · "Dentro del laberinto" (crisis:laberinto, ola 3) · "El regreso" (ordena:teseo, bonificación) → dorada al completar los 4.
+- **Heracles** (4): base · "El león de Nemea" (cielo:leo) · "Los establos de Augías" (crisis:rio, bonificación) · "Doce trabajos" (ordena:heracles).
+- **Penélope** (3): base · "El telar" (ordena:penelope) · "El regreso de Odiseo" (crisis:pretendientes, bonificación).
+- **Atlas** (2): base · "La bóveda celeste" (cielo:generico_titan / crisis:boveda).
+- **Odiseo** (4): base · "El caballo de Troya" (ordena:troya) · "El cíclope" (ordena:ciclope, bonificación) · "La vuelta a Ítaca" (crisis:mar).
+- **Ariadna** (2): base · "La corona en el cielo" (cielo:corona_boreal).
+- **Thor** (3): base · "El martillo Mjölnir" (ordena:mjolnir) · "El viaje a Jotunheim" (crisis:gigantes, bonificación).
+- **Loki** (3): base · "El pelo de Sif" (ordena:sif) · "El lobo Fenrir" (crisis:fenrir, bonificación).
+- **Odín** (3): base · "El ojo en el pozo" (ordena:mimir, bonificación) · "Los cuervos" (cielo:generico_norse).
+
+Personajes sin constelación ni mito secuenciable asignado todavía: definir sus capítulos 2+ al construir los módulos de ola 2 y 3, siguiendo la misma estructura. Ninguno queda con historia "cerrada" de entrada salvo los de 1 capítulo, que se expanden después.
+
 # SET INICIAL
 
 ## Mitología griega
