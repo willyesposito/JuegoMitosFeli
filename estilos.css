@@ -428,6 +428,251 @@ button { font-family: inherit; cursor: pointer; }
 
 .config-caja .config-nota { color: var(--texto-suave); margin-bottom: 16px; }
 
+/* ============ Progreso de historia: plateada y dorada ============
+   No confundir con .chip-tier (rareza estática del personaje, ver app.js).
+   Esto es el avance del jugador con esa carta: terminó de leer su historia
+   (plateada) y después acertó la Pregunta del Sabio (dorada). */
+
+.carta--plateada,
+.carta--dorada,
+.detalle-carta.tier-plateada,
+.detalle-carta.tier-dorada {
+  border: 3px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.carta--plateada,
+.detalle-carta.tier-plateada {
+  background-image:
+    linear-gradient(165deg, #4a5460 0%, #39424d 48%, #262d36 100%),
+    linear-gradient(130deg, #e8ecf2, #9aa5b5 30%, #f4f7fb 50%, #77828f 72%, #d9dfe8);
+}
+
+.carta--dorada,
+.detalle-carta.tier-dorada {
+  background-image:
+    linear-gradient(165deg, #6b5015 0%, #4a3610 48%, #33250b 100%),
+    linear-gradient(130deg, #f8e08e, #c9962e 30%, #ffefb0 50%, #a87b1f 72%, #f2cf6b);
+}
+
+.holo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-size: 240% 240%;
+  border-radius: inherit;
+  animation: holo-mov 7s ease-in-out infinite alternate;
+}
+
+.carta--plateada .holo,
+.detalle-carta.tier-plateada .holo {
+  background-image: linear-gradient(115deg, rgba(180,200,255,.28) 10%, rgba(210,175,255,.26) 34%, rgba(255,255,255,.34) 56%, rgba(170,220,255,.26) 80%);
+}
+
+.carta--dorada .holo,
+.detalle-carta.tier-dorada .holo {
+  background-image: linear-gradient(115deg, rgba(255,110,196,.30) 10%, rgba(96,225,255,.30) 34%, rgba(255,230,120,.34) 56%, rgba(150,255,180,.26) 80%);
+}
+
+@keyframes holo-mov { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+
+.carta .ilustracion, .carta .nombre, .carta .chip-mito, .carta .chip-tier {
+  position: relative;
+  z-index: 1;
+}
+
+.detalle-carta > .boton-volver, .detalle-carta > .detalle-contenido {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sello de historia completa / mito dominado */
+.sello-historia {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 15px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: .78rem;
+  letter-spacing: .3px;
+  white-space: nowrap;
+  margin: 8px 0 2px;
+  animation: estampar .6s ease-out both;
+}
+
+.sello-historia.sello-plateada {
+  background: linear-gradient(120deg, rgba(224,230,240,.95), rgba(255,255,255,.9));
+  color: #2b323c;
+  box-shadow: 0 0 0 3px rgba(180,190,205,.3);
+}
+
+.sello-historia.sello-dorada {
+  background: linear-gradient(120deg, rgba(255,216,103,.95), rgba(255,236,170,.9));
+  color: #4a3200;
+  box-shadow: 0 0 0 3px rgba(255,216,103,.3);
+}
+
+/* Botón "Terminé de leer" y Pregunta del Sabio */
+.boton-terminar-lectura {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--acento);
+  color: #4a3200;
+  border-radius: 999px;
+  padding: 11px 22px;
+  font-size: .95rem;
+  font-weight: 800;
+  margin-top: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.pregunta-sabio {
+  position: relative;
+  z-index: 2;
+  margin-top: 14px;
+  text-align: left;
+  background: rgba(0, 0, 0, .26);
+  border: 1.5px solid rgba(217, 166, 255, .4);
+  border-radius: 16px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pregunta-sabio .pregunta-sabio-titulo {
+  font-size: .85rem;
+  font-weight: 800;
+  color: #e3c1ff;
+}
+
+.pregunta-sabio .pregunta-sabio-texto { margin: 0; font-size: .95rem; line-height: 1.5; }
+
+.pregunta-sabio .opciones { display: flex; flex-direction: column; gap: 8px; }
+
+.pregunta-sabio .opcion {
+  border: 1.5px solid rgba(255, 255, 255, .22);
+  background: rgba(255, 255, 255, .08);
+  color: var(--texto);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: .9rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.pregunta-sabio .opcion.incorrecta { background: rgba(255, 120, 120, .25); }
+
+.pregunta-sabio .pregunta-sabio-error { font-size: .82rem; font-weight: 700; color: #ffb2b2; }
+
+/* Ceremonias de ascenso (fase 4): se agregan solo en la transición dentro del detalle */
+@keyframes aparece-oro { from { opacity: 0; } to { opacity: 1; } }
+@keyframes onda-oro { 0% { transform: scale(.15); opacity: .9; } 100% { transform: scale(4.4); opacity: 0; } }
+@keyframes estampar {
+  0% { transform: scale(2.3) rotate(-15deg); opacity: 0; }
+  55% { transform: scale(.9) rotate(-4deg); opacity: 1; }
+  75% { transform: scale(1.07) rotate(-7deg); }
+  100% { transform: scale(1) rotate(-6deg); opacity: 1; }
+}
+@keyframes brillo-barrido { 0% { transform: translateX(-170%) skewX(-16deg); } 38%, 100% { transform: translateX(430%) skewX(-16deg); } }
+@keyframes titila { 0%, 100% { opacity: 0; transform: scale(.5); } 50% { opacity: 1; transform: scale(1); } }
+@keyframes flash-blanco { 0% { opacity: 0; } 18% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes rayos-estalla { 0% { opacity: 0; transform: rotate(0deg) scale(.6); } 15% { opacity: 1; } 75% { opacity: .85; } 100% { opacity: 0; transform: rotate(200deg) scale(1.5); } }
+
+.ceremonia-marco {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  animation: aparece-oro 1.2s ease-out both;
+}
+
+.ceremonia-onda {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 170px;
+  height: 170px;
+  margin: -85px 0 0 -85px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 4;
+  animation: onda-oro 1.15s ease-out both;
+}
+
+.ceremonia-onda.onda-plata { background: radial-gradient(circle, rgba(230,236,245,.8), rgba(210,220,235,0) 70%); }
+.ceremonia-onda.onda-oro { background: radial-gradient(circle, rgba(255,225,130,.75), rgba(255,216,103,0) 70%); }
+
+.ceremonia-flash {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(circle, #fff, rgba(255,255,255,.5) 55%, transparent 100%);
+  animation: flash-blanco .45s ease-out both;
+}
+
+.ceremonia-rayos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  height: 620px;
+  margin: -310px 0 0 -310px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  background: repeating-conic-gradient(rgba(255,228,150,.5) 0deg 5deg, transparent 5deg 28deg);
+  animation: rayos-estalla .85s ease-out both;
+}
+
+/* Barrido de brillo diagonal y destellos: permanentes en cartas plateadas/doradas,
+   no solo durante la ceremonia de ascenso (ver sección "todos los días" del mockup). */
+.brillo-sweep {
+  position: absolute;
+  top: -20%;
+  bottom: -20%;
+  left: 0;
+  width: 45%;
+  z-index: 1;
+  pointer-events: none;
+  animation: brillo-barrido 4.6s ease-in-out 1s infinite backwards;
+}
+
+.brillo-sweep--plata { background: linear-gradient(105deg, transparent, rgba(255,255,255,.28) 45%, rgba(255,255,255,.48) 50%, rgba(255,255,255,.28) 55%, transparent); }
+.brillo-sweep--oro { background: linear-gradient(105deg, transparent, rgba(255,255,255,.2) 45%, rgba(255,236,170,.35) 50%, rgba(255,255,255,.2) 55%, transparent); }
+
+.destello-permanente {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  animation-name: titila;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.ceremonia-sello-particula {
+  position: absolute;
+  z-index: 6;
+  pointer-events: none;
+  animation: part-vuela .9s ease-out .32s both;
+}
+
+@keyframes part-vuela {
+  0% { transform: translate(0, 0) scale(1); opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) scale(.15); opacity: 0; }
+}
+
 /* ============ Accesibilidad ============ */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

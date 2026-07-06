@@ -13,7 +13,7 @@ const ATRIBUTOS = [
 ];
 
 let personajes = [];
-let estado = { desbloqueadas: [] };
+let estado = { desbloqueadas: [], historiaLeida: [], preguntaAcertada: [] };
 let filtroActivo = "todas";
 let textoBusqueda = "";
 let cartaPendiente = null;   // id de la carta velada que se intenta desbloquear
@@ -28,11 +28,16 @@ function cargarEstado() {
       const datos = JSON.parse(crudo);
       if (Array.isArray(datos.desbloqueadas)) {
         estado.desbloqueadas = datos.desbloqueadas;
+        // Compatibilidad: partidas guardadas antes de que existiera el progreso de historia.
+        estado.historiaLeida = Array.isArray(datos.historiaLeida) ? datos.historiaLeida : [];
+        estado.preguntaAcertada = Array.isArray(datos.preguntaAcertada) ? datos.preguntaAcertada : [];
         return;
       }
     }
   } catch (e) { /* estado corrupto: se reinicia */ }
   estado.desbloqueadas = [...DESBLOQUEADAS_INICIALES];
+  estado.historiaLeida = [];
+  estado.preguntaAcertada = [];
   guardarEstado();
 }
 
@@ -49,6 +54,31 @@ function estaDesbloqueada(id) {
 function desbloquear(id) {
   if (!estaDesbloqueada(id)) {
     estado.desbloqueadas.push(id);
+    guardarEstado();
+  }
+}
+
+/* ---------- Progreso de historia (velada -> descubierta -> plateada -> dorada) ----------
+   No confundir con el campo "tier" de personajes.json (rareza estática del personaje):
+   esto es el avance del jugador con esa carta, y vive solo acá, en localStorage. */
+
+function tierProgreso(id) {
+  if (!estaDesbloqueada(id)) return 0;                          // velada
+  if (!estado.historiaLeida.includes(id)) return 1;              // descubierta
+  if (!estado.preguntaAcertada.includes(id)) return 2;           // plateada
+  return 3;                                                      // dorada
+}
+
+function marcarHistoriaLeida(id) {
+  if (!estado.historiaLeida.includes(id)) {
+    estado.historiaLeida.push(id);
+    guardarEstado();
+  }
+}
+
+function marcarPreguntaAcertada(id) {
+  if (!estado.preguntaAcertada.includes(id)) {
+    estado.preguntaAcertada.push(id);
     guardarEstado();
   }
 }
@@ -85,6 +115,22 @@ function chipTier(p) {
   return etiqueta ? `<span class="chip-tier tier-${p.tier}">${etiqueta}</span>` : "";
 }
 
+/* Capas visuales de una carta plateada o dorada: holo + brillo barrido + destellos.
+   Permanentes mientras la carta esté en ese progreso (no solo durante la ceremonia). */
+const DESTELLOS_PERMANENTES = [
+  { top: "16%", left: "10%", size: "11px", delay: ".4s", dur: "2.6s" },
+  { top: "30%", left: "86%", size: "13px", delay: "1.3s", dur: "3.2s" },
+  { top: "78%", left: "16%", size: "10px", delay: "2.1s", dur: "2.9s" }
+];
+
+function capasMaterialHTML(tono) {
+  const color = tono === "oro" ? "#ffe9a8" : "#eef1f6";
+  const estrellas = DESTELLOS_PERMANENTES.map(d =>
+    `<span class="destello-permanente" style="top:${d.top};left:${d.left};font-size:${d.size};color:${color};animation-delay:${d.delay};animation-duration:${d.dur}">✦</span>`
+  ).join("");
+  return `<i class="holo" aria-hidden="true"></i><i class="brillo-sweep brillo-sweep--${tono}" aria-hidden="true"></i>${estrellas}`;
+}
+
 /* ---------- Galería ---------- */
 
 function renderContador() {
@@ -111,16 +157,20 @@ function renderGaleria() {
   galeria.innerHTML = "";
   for (const p of visibles) {
     const desbloqueada = estaDesbloqueada(p.id);
+    const progreso = tierProgreso(p.id);
     const carta = document.createElement("button");
     carta.className = "carta" + (desbloqueada ? "" : " velada");
+    if (progreso === 2) carta.classList.add("carta--plateada");
+    if (progreso === 3) carta.classList.add("carta--dorada");
     carta.dataset.id = p.id;
     if (desbloqueada) {
-      carta.style.background = `linear-gradient(160deg, ${p.colorCarta}, ${p.colorCarta}cc)`;
+      if (progreso < 2) carta.style.background = `linear-gradient(160deg, ${p.colorCarta}, ${p.colorCarta}cc)`;
       carta.setAttribute("aria-label", `Ver la carta de ${p.nombre}`);
     } else {
       carta.setAttribute("aria-label", "Carta misteriosa, tocá para intentar desbloquearla");
     }
     carta.innerHTML = `
+      ${progreso >= 2 ? capasMaterialHTML(progreso === 3 ? "oro" : "plata") : ""}
       <span class="ilustracion">${svgIcono(p.icono, !desbloqueada)}</span>
       <span class="nombre">${desbloqueada ? p.nombre : "???"}</span>
       <span class="chip-mito">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
@@ -137,14 +187,67 @@ function renderGaleria() {
 
 /* ---------- Detalle ---------- */
 
+function fijarCapasMaterialDetalle(progreso) {
+  const cartaDetalle = document.getElementById("detalle-carta");
+  let capas = cartaDetalle.querySelector(":scope > .capas-material");
+  if (progreso >= 2) {
+    if (!capas) {
+      capas = document.createElement("div");
+      capas.className = "capas-material";
+      cartaDetalle.insertBefore(capas, cartaDetalle.firstChild);
+    }
+    capas.innerHTML = capasMaterialHTML(progreso === 3 ? "oro" : "plata");
+  } else if (capas) {
+    capas.remove();
+  }
+}
+
+function pintarMarcoDetalle(p, progreso) {
+  const cartaDetalle = document.getElementById("detalle-carta");
+  cartaDetalle.classList.remove("tier-plateada", "tier-dorada");
+  if (progreso < 2) {
+    cartaDetalle.style.background =
+      `linear-gradient(165deg, rgba(255,255,255,.10), rgba(0,0,0,.30)), linear-gradient(${p.colorCarta}, ${p.colorCarta})`;
+  } else {
+    cartaDetalle.style.background = "";
+    cartaDetalle.classList.add(progreso === 3 ? "tier-dorada" : "tier-plateada");
+  }
+  fijarCapasMaterialDetalle(progreso);
+}
+
+function selloProgreso(progreso) {
+  if (progreso === 2) return '<span class="sello-historia sello-plateada">✦ HISTORIA COMPLETA</span>';
+  if (progreso === 3) return '<span class="sello-historia sello-dorada">🥇 MITO DOMINADO</span>';
+  return "";
+}
+
+function bloqueAscenso(p, progreso) {
+  if (progreso === 1) {
+    return `<button class="boton-terminar-lectura" id="boton-terminar-lectura">✓ Terminé de leer</button>`;
+  }
+  if (progreso === 2) {
+    return `
+      <div class="pregunta-sabio" id="pregunta-sabio">
+        <strong class="pregunta-sabio-titulo">🔮 Pregunta del Sabio</strong>
+        <p class="pregunta-sabio-texto">${p.pregunta.texto}</p>
+        <div class="opciones">
+          ${p.pregunta.opciones.map((texto, i) =>
+            `<button class="opcion" data-indice="${i}">${texto}</button>`).join("")}
+        </div>
+        <span class="pregunta-sabio-error oculto" id="pregunta-sabio-error">Probá de nuevo ✦</span>
+      </div>`;
+  }
+  return "";
+}
+
 function abrirDetalle(id, recienRevelada = false) {
   const p = porId(id);
   if (!p) return;
 
   const detalle = document.getElementById("detalle");
   const cartaDetalle = document.getElementById("detalle-carta");
-  cartaDetalle.style.background =
-    `linear-gradient(165deg, rgba(255,255,255,.10), rgba(0,0,0,.30)), linear-gradient(${p.colorCarta}, ${p.colorCarta})`;
+  const progreso = tierProgreso(id);
+  pintarMarcoDetalle(p, progreso);
 
   const barras = ATRIBUTOS.map(a => `
     <div class="atributo">
@@ -160,6 +263,7 @@ function abrirDetalle(id, recienRevelada = false) {
     <p class="detalle-titulo">${p.titulo}</p>
     <span class="detalle-chip">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
     ${chipTier(p)}
+    ${selloProgreso(progreso)}
     <div class="dones">${p.dones.map(d => `<span class="don">${d}</span>`).join("")}</div>
     <div class="atributos">${barras}</div>
     <div class="bloque-texto">
@@ -169,7 +273,18 @@ function abrirDetalle(id, recienRevelada = false) {
     <div class="bloque-texto bloque-porque">
       <h3>💡 ¿Por qué?</h3>
       <p>${p.porque}</p>
-    </div>`;
+    </div>
+    ${bloqueAscenso(p, progreso)}`;
+
+  const botonTerminar = document.getElementById("boton-terminar-lectura");
+  if (botonTerminar) botonTerminar.addEventListener("click", () => ascenderAPlateada(id));
+
+  const preguntaSabio = document.getElementById("pregunta-sabio");
+  if (preguntaSabio) {
+    preguntaSabio.querySelectorAll(".opcion").forEach(boton => {
+      boton.addEventListener("click", () => responderSabio(id, Number(boton.dataset.indice), boton));
+    });
+  }
 
   cartaDetalle.classList.toggle("revelando", recienRevelada);
   detalle.classList.remove("oculto");
@@ -180,6 +295,90 @@ function abrirDetalle(id, recienRevelada = false) {
 function cerrarDetalle() {
   document.getElementById("detalle").classList.add("oculto");
   document.getElementById("detalle-carta").classList.remove("revelando");
+}
+
+/* ---------- Ascenso de historia: plateada y dorada ---------- */
+
+function ascenderAPlateada(id) {
+  const cartaDetalle = document.getElementById("detalle-carta");
+  cartaDetalle.style.background = "";
+  cartaDetalle.classList.add("tier-plateada");
+  fijarCapasMaterialDetalle(2);
+
+  const onda = document.createElement("i");
+  onda.className = "ceremonia-onda onda-plata";
+  cartaDetalle.appendChild(onda);
+
+  marcarHistoriaLeida(id);
+  renderGaleria();
+
+  setTimeout(() => {
+    onda.remove();
+    abrirDetalle(id);
+  }, 1250);
+}
+
+function responderSabio(id, indice, boton) {
+  const p = porId(id);
+  if (indice === p.pregunta.correcta) {
+    reproducirCeremoniaDorada(id);
+  } else {
+    boton.classList.add("incorrecta");
+    document.getElementById("pregunta-sabio-error").classList.remove("oculto");
+  }
+}
+
+function reproducirCeremoniaDorada(id) {
+  const cartaDetalle = document.getElementById("detalle-carta");
+
+  const flash = document.createElement("i");
+  flash.className = "ceremonia-flash";
+  cartaDetalle.appendChild(flash);
+  const onda1 = document.createElement("i");
+  onda1.className = "ceremonia-onda onda-oro";
+  cartaDetalle.appendChild(onda1);
+
+  setTimeout(() => {
+    flash.remove();
+    onda1.remove();
+    const rayos = document.createElement("i");
+    rayos.className = "ceremonia-rayos";
+    cartaDetalle.insertBefore(rayos, cartaDetalle.firstChild);
+    cartaDetalle.classList.remove("tier-plateada");
+    cartaDetalle.classList.add("tier-dorada");
+    const onda2 = document.createElement("i");
+    onda2.className = "ceremonia-onda onda-oro";
+    cartaDetalle.appendChild(onda2);
+
+    setTimeout(() => {
+      rayos.remove();
+      onda2.remove();
+      marcarPreguntaAcertada(id);
+      renderGaleria();
+      abrirDetalle(id);
+      lanzarParticulasSello();
+    }, 900);
+  }, 450);
+}
+
+function lanzarParticulasSello() {
+  const sello = document.querySelector("#detalle-contenido .sello-historia");
+  if (!sello) return;
+  const rect = sello.getBoundingClientRect();
+  const cartaRect = document.getElementById("detalle-carta").getBoundingClientRect();
+  const desplazos = [[40, -34], [-38, -20], [20, 40], [-20, 50], [60, 10]];
+  for (const [dx, dy] of desplazos) {
+    const particula = document.createElement("span");
+    particula.className = "ceremonia-sello-particula";
+    particula.textContent = "✦";
+    particula.style.left = `${rect.left - cartaRect.left + rect.width / 2}px`;
+    particula.style.top = `${rect.top - cartaRect.top}px`;
+    particula.style.color = "#ffd867";
+    particula.style.setProperty("--dx", `${dx}px`);
+    particula.style.setProperty("--dy", `${dy}px`);
+    document.getElementById("detalle-carta").appendChild(particula);
+    setTimeout(() => particula.remove(), 950);
+  }
 }
 
 /* ---------- Desbloqueo por pregunta ---------- */
