@@ -384,20 +384,21 @@ function mostrarToastAparicion(nombre) {
 /* ---------- Desbloqueo por pregunta ---------- */
 
 function abrirPregunta(idVelada) {
-  const conPregunta = personajes.filter(p => estaDesbloqueada(p.id) && p.pregunta);
-  if (conPregunta.length === 0) {
-    // Sin cartas con pregunta no hay desafío posible: se desbloquea directo.
+  const conPreguntas = personajes.filter(p => estaDesbloqueada(p.id) && p.preguntas && p.preguntas.length);
+  if (conPreguntas.length === 0) {
+    // Sin cartas con preguntas no hay desafío posible: se desbloquea directo.
     revelarCarta(idVelada);
     return;
   }
 
   cartaPendiente = idVelada;
-  const elegido = alAzar(conPregunta);
+  const elegido = alAzar(conPreguntas);
+  const pregunta = alAzar(elegido.preguntas);
   preguntaActual = {
     personajeId: elegido.id,
-    opciones: mezclar(elegido.pregunta.opciones.map((texto, i) => ({
+    opciones: mezclar(pregunta.opciones.map((texto, i) => ({
       texto,
-      esCorrecta: i === elegido.pregunta.correcta
+      esCorrecta: i === pregunta.correcta
     })))
   };
 
@@ -405,7 +406,7 @@ function abrirPregunta(idVelada) {
   contenido.innerHTML = `
     <p class="pregunta-intro">Para desbloquear esta carta, respondé una pregunta sobre
       <strong>${elegido.nombre}</strong>, que ya está en tu colección:</p>
-    <p class="pregunta-texto">${elegido.pregunta.texto}</p>
+    <p class="pregunta-texto">${pregunta.texto}</p>
     <div class="opciones">
       ${preguntaActual.opciones.map((o, i) =>
         `<button class="opcion" data-indice="${i}">${o.texto}</button>`).join("")}

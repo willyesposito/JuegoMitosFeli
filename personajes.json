@@ -18,15 +18,6 @@
     },
     "colorCarta": "#4A7C59",
     "icono": "laberinto",
-    "pregunta": {
-      "texto": "¿Quién le dio el hilo a Teseo para salir del laberinto?",
-      "opciones": [
-        "Ariadna",
-        "Atenea",
-        "Penélope"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -61,6 +52,35 @@
         "fuente": "ordena:teseo",
         "estado": "borrador"
       }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Quién le dio el hilo a Teseo para salir del laberinto?",
+        "opciones": [
+          "Ariadna",
+          "Atenea",
+          "Penélope"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué ciudad era príncipe Teseo?",
+        "opciones": [
+          "Atenas",
+          "Esparta",
+          "Tebas"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Adónde viajó Teseo para enfrentar al Minotauro?",
+        "opciones": [
+          "A Creta",
+          "A Troya",
+          "A Esparta"
+        ],
+        "correcta": 0
+      }
     ]
   },
   {
@@ -82,15 +102,6 @@
     },
     "colorCarta": "#C97B2D",
     "icono": "leon",
-    "pregunta": {
-      "texto": "¿Cómo limpió Heracles los establos de Augías en un solo día?",
-      "opciones": [
-        "Desviando un río entero",
-        "Con una escoba gigante",
-        "Pidiéndole lluvia a Zeus"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -125,6 +136,35 @@
         "fuente": "ordena:heracles",
         "estado": "borrador"
       }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Cómo limpió Heracles los establos de Augías en un solo día?",
+        "opciones": [
+          "Desviando un río entero",
+          "Con una escoba gigante",
+          "Pidiéndole lluvia a Zeus"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué pasaba con la Hidra cada vez que la atacaban?",
+        "opciones": [
+          "Se volvía más difícil de vencer",
+          "Se hacía invisible",
+          "Se dividía en peces"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué tenía de especial la piel del león de Nemea?",
+        "opciones": [
+          "Nada podía atravesarla",
+          "Brillaba de noche",
+          "Era transparente"
+        ],
+        "correcta": 0
+      }
     ]
   },
   {
@@ -146,15 +186,6 @@
     },
     "colorCarta": "#8E5A8E",
     "icono": "telar",
-    "pregunta": {
-      "texto": "¿Qué hacía Penélope cada noche con su tejido?",
-      "opciones": [
-        "Lo destejía en secreto",
-        "Lo regalaba a los pretendientes",
-        "Lo escondía en el mar"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -172,6 +203,35 @@
         "porque": "",
         "fuente": "ordena:penelope",
         "estado": "borrador"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué hacía Penélope cada noche con su tejido?",
+        "opciones": [
+          "Lo destejía en secreto",
+          "Lo regalaba a los pretendientes",
+          "Lo escondía en el mar"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué prometió Penélope a los pretendientes?",
+        "opciones": [
+          "Elegir a uno cuando terminara de tejer un manto",
+          "Casarse enseguida",
+          "Irse de Ítaca"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cuánto tiempo ganó Penélope con su plan del tejido?",
+        "opciones": [
+          "Años",
+          "Solo una noche",
+          "Un mes"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -194,15 +254,6 @@
     },
     "colorCarta": "#3E5C76",
     "icono": "cielo",
-    "pregunta": {
-      "texto": "¿Qué sostiene Atlas sobre sus hombros?",
-      "opciones": [
-        "La bóveda celeste",
-        "Una montaña gigante",
-        "El mar entero"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -220,6 +271,35 @@
         "porque": "",
         "fuente": "cielo:atlas",
         "estado": "borrador"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué sostiene Atlas sobre sus hombros?",
+        "opciones": [
+          "La bóveda celeste",
+          "Una montaña gigante",
+          "El mar entero"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿En qué guerra participó Atlas antes de su castigo?",
+        "opciones": [
+          "La guerra entre titanes y dioses del Olimpo",
+          "La guerra de Troya",
+          "La guerra contra los gigantes de hielo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Dónde carga Atlas el cielo entero?",
+        "opciones": [
+          "Sobre sus hombros",
+          "En sus manos",
+          "En la cabeza"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -242,15 +322,6 @@
     },
     "colorCarta": "#2E7D8C",
     "icono": "barco",
-    "pregunta": {
-      "texto": "¿Qué inventó Odiseo para entrar a Troya?",
-      "opciones": [
-        "El caballo de madera",
-        "Una catapulta gigante",
-        "Un túnel secreto"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -260,6 +331,35 @@
         "porque": "Odiseo es el héroe que gana con la cabeza donde otros pierden con la espada. Los griegos admiraban tanto la astucia que le dedicaron un héroe entero y un viaje de diez años.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué inventó Odiseo para entrar a Troya?",
+        "opciones": [
+          "El caballo de madera",
+          "Una catapulta gigante",
+          "Un túnel secreto"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cuánto tardó Odiseo en volver a Ítaca después de la guerra?",
+        "opciones": [
+          "Diez años",
+          "Un año",
+          "Toda su vida"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo escaparon Odiseo y sus hombres de la cueva de Polifemo?",
+        "opciones": [
+          "Escondidos entre las ovejas",
+          "Volando por una ventana",
+          "Cavando un túnel"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -282,15 +382,6 @@
     },
     "colorCarta": "#7A8B3D",
     "icono": "lechuza",
-    "pregunta": {
-      "texto": "¿De dónde nació Atenea?",
-      "opciones": [
-        "De la cabeza de Zeus",
-        "De la espuma del mar",
-        "De un rayo del cielo"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -300,6 +391,35 @@
         "porque": "Para los griegos, la sabiduría era el poder más alto del Olimpo: más que la fuerza y más que el rayo. Su ciudad más famosa eligió llamarse como la diosa que pensaba antes de actuar.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿De dónde nació Atenea?",
+        "opciones": [
+          "De la cabeza de Zeus",
+          "De la espuma del mar",
+          "De un rayo del cielo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué ofreció Atenea en su competencia con Poseidón?",
+        "opciones": [
+          "Un olivo",
+          "Un caballo",
+          "Una fuente de agua"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Con qué nació puesta Atenea?",
+        "opciones": [
+          "Con su armadura",
+          "Con una corona",
+          "Con un escudo espejado"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -323,15 +443,6 @@
     },
     "colorCarta": "#5B6EAE",
     "icono": "escudo",
-    "pregunta": {
-      "texto": "¿Cómo hizo Perseo para mirar a Medusa sin convertirse en piedra?",
-      "opciones": [
-        "La miró por el reflejo de su escudo",
-        "Cerró los ojos todo el tiempo",
-        "Usó anteojos mágicos"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -341,6 +452,35 @@
         "porque": "A veces un problema no se enfrenta de frente, sino desde otro ángulo. Perseo ganó porque encontró una manera distinta de mirar.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Cómo hizo Perseo para mirar a Medusa sin convertirse en piedra?",
+        "opciones": [
+          "La miró por el reflejo de su escudo",
+          "Cerró los ojos todo el tiempo",
+          "Usó anteojos mágicos"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué le permitía hacer el casco que le dieron los dioses a Perseo?",
+        "opciones": [
+          "Volverse invisible",
+          "Respirar bajo el agua",
+          "Ver el futuro"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué le permitían hacer las sandalias que le dieron los dioses a Perseo?",
+        "opciones": [
+          "Volar",
+          "Correr bajo el agua",
+          "Ser invisible"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -363,15 +503,6 @@
     },
     "colorCarta": "#B0803A",
     "icono": "alas",
-    "pregunta": {
-      "texto": "¿Con qué materiales fabricó Dédalo las alas?",
-      "opciones": [
-        "Plumas y cera",
-        "Madera y tela",
-        "Bronce y cuero"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -381,6 +512,35 @@
         "porque": "El mito habla de escuchar los consejos de quien sabe, y del equilibrio entre volar alto y volar seguro. Inventar es un poder enorme... y usarlo bien, todavía más.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Con qué materiales fabricó Dédalo las alas?",
+        "opciones": [
+          "Plumas y cera",
+          "Madera y tela",
+          "Bronce y cuero"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué construyó Dédalo en Creta?",
+        "opciones": [
+          "El laberinto",
+          "Un templo",
+          "Una torre"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué advertencia le hizo Dédalo a Ícaro antes de volar?",
+        "opciones": [
+          "Que no volara demasiado alto",
+          "Que no mirara hacia abajo",
+          "Que no hablara con nadie"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -403,15 +563,6 @@
     },
     "colorCarta": "#4A6FA5",
     "icono": "martillo",
-    "pregunta": {
-      "texto": "¿Qué hace Mjölnir, el martillo de Thor, después de ser lanzado?",
-      "opciones": [
-        "Vuelve solo a su mano",
-        "Se convierte en rayo",
-        "Se hace gigante"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -438,6 +589,35 @@
         "fuente": "crisis:jotunheim",
         "estado": "borrador"
       }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué hace Mjölnir, el martillo de Thor, después de ser lanzado?",
+        "opciones": [
+          "Vuelve solo a su mano",
+          "Se convierte en rayo",
+          "Se hace gigante"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué tira del carro de Thor por el cielo?",
+        "opciones": [
+          "Dos cabras",
+          "Dos lobos",
+          "Dos caballos"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué controla Thor con su martillo?",
+        "opciones": [
+          "Los truenos y los rayos",
+          "Las mareas",
+          "El viento"
+        ],
+        "correcta": 0
+      }
     ]
   },
   {
@@ -459,15 +639,6 @@
     },
     "colorCarta": "#2F8F6B",
     "icono": "zorro",
-    "pregunta": {
-      "texto": "¿Cuál es el gran talento de Loki?",
-      "opciones": [
-        "Cambiar de forma",
-        "Volar más rápido que todos",
-        "Ver el futuro"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -494,6 +665,35 @@
         "fuente": "crisis:atar_fenrir",
         "estado": "borrador"
       }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Cuál es el gran talento de Loki?",
+        "opciones": [
+          "Cambiar de forma",
+          "Volar más rápido que todos",
+          "Ver el futuro"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿En qué animales puede transformarse Loki, según su historia?",
+        "opciones": [
+          "En halcón o en mosca, entre otras formas",
+          "Solo en lobo",
+          "Solo en serpiente"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué suele pasar con los problemas que causa Loki?",
+        "opciones": [
+          "Él mismo termina encontrando la solución",
+          "Nunca se resuelven",
+          "Los resuelve Thor siempre"
+        ],
+        "correcta": 0
+      }
     ]
   },
   {
@@ -515,15 +715,6 @@
     },
     "colorCarta": "#55608F",
     "icono": "cuervos",
-    "pregunta": {
-      "texto": "¿Qué hacen Hugin y Munin, los cuervos de Odín?",
-      "opciones": [
-        "Le cuentan todo lo que pasa en el mundo",
-        "Le traen comida del bosque",
-        "Cantan para despertarlo"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -550,6 +741,35 @@
         "fuente": "cielo:cuervos",
         "estado": "borrador"
       }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué hacen Hugin y Munin, los cuervos de Odín?",
+        "opciones": [
+          "Le cuentan todo lo que pasa en el mundo",
+          "Le traen comida del bosque",
+          "Cantan para despertarlo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo se llaman los cuervos de Odín?",
+        "opciones": [
+          "Hugin y Munin",
+          "Geri y Freki",
+          "Sköll y Hati"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué le pidió el guardián del pozo de Mimir a Odín a cambio del conocimiento?",
+        "opciones": [
+          "Uno de sus ojos",
+          "Su martillo",
+          "Su capa"
+        ],
+        "correcta": 0
+      }
     ]
   },
   {
@@ -571,15 +791,6 @@
     },
     "colorCarta": "#B25E7E",
     "icono": "gato",
-    "pregunta": {
-      "texto": "¿Qué animales tiran del carro de Freya?",
-      "opciones": [
-        "Dos gatos",
-        "Dos cabras",
-        "Dos lobos"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -589,6 +800,35 @@
         "porque": "En los mitos nórdicos, la magia más poderosa la maneja una diosa. Y Freya muestra algo más: enseñar lo que uno sabe también es una forma de poder.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué animales tiran del carro de Freya?",
+        "opciones": [
+          "Dos gatos",
+          "Dos cabras",
+          "Dos lobos"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué usa Freya para volar por los nueve mundos?",
+        "opciones": [
+          "Una capa de plumas de halcón",
+          "Un carro de fuego",
+          "Alas propias"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A quién le enseñó magia Freya, según su historia?",
+        "opciones": [
+          "A los propios dioses, incluso a Odín",
+          "A los gigantes de hielo",
+          "A los enanos herreros"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -611,15 +851,6 @@
     },
     "colorCarta": "#3D8FA8",
     "icono": "arcoiris",
-    "pregunta": {
-      "texto": "¿Qué puente cuida Heimdall?",
-      "opciones": [
-        "El Bifröst, el puente arcoíris",
-        "Un puente de hielo eterno",
-        "Un puente de oro macizo"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -629,6 +860,35 @@
         "porque": "Para los nórdicos, el arcoíris era un puente entre el mundo de los dioses y el nuestro. Cuando aparecía uno después de la lluvia, era la puerta de Asgard dejándose ver un ratito.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué puente cuida Heimdall?",
+        "opciones": [
+          "El Bifröst, el puente arcoíris",
+          "Un puente de hielo eterno",
+          "Un puente de oro macizo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo se llama el cuerno de Heimdall?",
+        "opciones": [
+          "Gjallarhorn",
+          "Mjölnir",
+          "Draupnir"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué puede escuchar Heimdall, según el mito?",
+        "opciones": [
+          "Crecer el pasto",
+          "Los pensamientos de los dioses",
+          "El viento del otro lado del mundo"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -650,15 +910,6 @@
     },
     "colorCarta": "#C9A227",
     "icono": "trigo",
-    "pregunta": {
-      "texto": "¿Quiénes forjaron el cabello nuevo de Sif?",
-      "opciones": [
-        "Los enanos herreros",
-        "Los gigantes de hielo",
-        "Las valquirias"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -668,6 +919,35 @@
         "porque": "Los nórdicos asociaban el cabello dorado de Sif con los campos de trigo maduro que brillan al sol. Y la historia enseña que las bromas sin cuidado traen consecuencias... aunque a veces terminen en algo hermoso.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Quiénes forjaron el cabello nuevo de Sif?",
+        "opciones": [
+          "Los enanos herreros",
+          "Los gigantes de hielo",
+          "Las valquirias"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién le cortó el pelo a Sif como broma?",
+        "opciones": [
+          "Loki",
+          "Thor",
+          "Odín"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo era el cabello nuevo que le hicieron a Sif?",
+        "opciones": [
+          "De oro puro, pero crecía como pelo real",
+          "De plata que nunca crecía",
+          "Invisible"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -690,15 +970,6 @@
     },
     "colorCarta": "#8A4B3B",
     "icono": "lobo",
-    "pregunta": {
-      "texto": "¿Qué se animó a hacer Tyr que ningún otro dios se animaba?",
-      "opciones": [
-        "Acercarse al lobo Fenrir para que pudieran atarlo",
-        "Cruzar un anillo de fuego",
-        "Robar las manzanas de la juventud"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -708,6 +979,35 @@
         "porque": "Valentía no es no tener miedo: es hacer lo necesario aun sabiendo lo que puede costar. Por eso los nórdicos decían que Tyr era el más valiente de todos los dioses.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué se animó a hacer Tyr que ningún otro dios se animaba?",
+        "opciones": [
+          "Acercarse al lobo Fenrir para que pudieran atarlo",
+          "Cruzar un anillo de fuego",
+          "Robar las manzanas de la juventud"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué perdió Tyr al atar a Fenrir?",
+        "opciones": [
+          "Una mano",
+          "Un ojo",
+          "Su martillo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién fabricó la cinta mágica para atar a Fenrir?",
+        "opciones": [
+          "Los enanos",
+          "Las valquirias",
+          "Los gigantes"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -730,15 +1030,6 @@
     },
     "colorCarta": "#3B5E9E",
     "icono": "rayo",
-    "pregunta": {
-      "texto": "¿Con qué arma gobierna el cielo Zeus?",
-      "opciones": [
-        "El rayo",
-        "El tridente",
-        "El arco"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -748,6 +1039,35 @@
         "porque": "Los griegos explicaban los truenos y los rayos como la voz y el arma de Zeus. El mito también mostraba que hasta el rey de los dioses necesita poner límites y mantener el orden entre tantas personalidades fuertes.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Con qué arma gobierna el cielo Zeus?",
+        "opciones": [
+          "El rayo",
+          "El tridente",
+          "El arco"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Contra quiénes ganó la guerra Zeus junto a sus hermanos?",
+        "opciones": [
+          "Contra los titanes",
+          "Contra los gigantes de hielo",
+          "Contra las amazonas"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué le tocó gobernar a Zeus al repartir el mundo con sus hermanos?",
+        "opciones": [
+          "El cielo",
+          "El mar",
+          "El inframundo"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -770,15 +1090,6 @@
     },
     "colorCarta": "#5C4A7A",
     "icono": "pavorreal",
-    "pregunta": {
-      "texto": "¿Cuál es el animal sagrado de Hera?",
-      "opciones": [
-        "El pavo real",
-        "El águila",
-        "El búho"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -788,6 +1099,35 @@
         "porque": "Los griegos usaban a Hera para hablar del compromiso y la lealtad dentro de una familia. Los ojos de la cola del pavo real explicaban un dibujo real de la naturaleza a través de la historia de su guardián Argos.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Cuál es el animal sagrado de Hera?",
+        "opciones": [
+          "El pavo real",
+          "El águila",
+          "El búho"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cuántos ojos tenía Argos, el guardián leal de Hera?",
+        "opciones": [
+          "Cien",
+          "Diez",
+          "Uno"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué es diosa Hera, además de la familia?",
+        "opciones": [
+          "Del matrimonio",
+          "De la guerra",
+          "De la caza"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -811,15 +1151,6 @@
     },
     "colorCarta": "#1F6F78",
     "icono": "tridente",
-    "pregunta": {
-      "texto": "¿Qué animal creó Poseidón, según los mitos griegos?",
-      "opciones": [
-        "El caballo",
-        "El delfín",
-        "El tiburón"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -829,6 +1160,35 @@
         "porque": "En un pueblo de navegantes como el griego, tenía sentido que existiera un dios que explicara las tormentas marinas y los terremotos: bastaba con imaginar a Poseidón enojado.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué animal creó Poseidón, según los mitos griegos?",
+        "opciones": [
+          "El caballo",
+          "El delfín",
+          "El tiburón"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué pasa cuando Poseidón golpea el suelo con su tridente?",
+        "opciones": [
+          "Tiembla la tierra",
+          "Llueve fuego",
+          "Se hace de noche"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A qué hermanos les tocó repartir el mundo junto a Poseidón?",
+        "opciones": [
+          "A Zeus y a Hades",
+          "A Ares y a Apolo",
+          "A Hermes y a Hefesto"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -851,15 +1211,6 @@
     },
     "colorCarta": "#3E3552",
     "icono": "yelmo",
-    "pregunta": {
-      "texto": "¿Qué le permite hacer el casco de Hades?",
-      "opciones": [
-        "Volverse invisible",
-        "Volar",
-        "Respirar bajo el agua"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -869,6 +1220,35 @@
         "porque": "Los griegos no imaginaban a Hades como un villano, sino como el guardián estricto de un reino necesario: alguien tenía que ocuparse de esa parte del mundo, y él lo hacía con seriedad y justicia.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué le permite hacer el casco de Hades?",
+        "opciones": [
+          "Volverse invisible",
+          "Volar",
+          "Respirar bajo el agua"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué es dueño Hades bajo la tierra?",
+        "opciones": [
+          "De todas las riquezas, desde el oro hasta las piedras preciosas",
+          "Solo de las almas",
+          "Del fuego del centro de la tierra"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué reparto le tocó a Hades junto a sus hermanos?",
+        "opciones": [
+          "El reino de abajo",
+          "El cielo",
+          "El mar"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -891,15 +1271,6 @@
     },
     "colorCarta": "#8C7A2E",
     "icono": "espigas",
-    "pregunta": {
-      "texto": "¿Qué pasa con los campos cuando Deméter está triste?",
-      "opciones": [
-        "Descansan (llega el otoño y el invierno)",
-        "Se incendian",
-        "Se inundan"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -909,6 +1280,35 @@
         "porque": "Los griegos explicaban así el cambio de estaciones: la alegría y la tristeza de una diosa de la tierra, contada a través de su relación con su hija Perséfone.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué pasa con los campos cuando Deméter está triste?",
+        "opciones": [
+          "Descansan (llega el otoño y el invierno)",
+          "Se incendian",
+          "Se inundan"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué es diosa Deméter?",
+        "opciones": [
+          "De las cosechas y la tierra fértil",
+          "Del mar",
+          "De la guerra"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué pasa con los campos cuando Deméter está feliz con su hija?",
+        "opciones": [
+          "Se llenan de trigo y fruta",
+          "Se cubren de nieve",
+          "Se incendian"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -931,15 +1331,6 @@
     },
     "colorCarta": "#5C7A3D",
     "icono": "granada",
-    "pregunta": {
-      "texto": "¿Qué pasa en la superficie cuando Perséfone vuelve con su madre?",
-      "opciones": [
-        "Florece todo (primavera y verano)",
-        "Nieva sin parar",
-        "Se hace de noche todo el tiempo"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -949,6 +1340,35 @@
         "porque": "Este mito era la manera griega de explicar por qué las estaciones cambian: la alegría y la tristeza de una madre por su hija, repetida todos los años.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué pasa en la superficie cuando Perséfone vuelve con su madre?",
+        "opciones": [
+          "Florece todo (primavera y verano)",
+          "Nieva sin parar",
+          "Se hace de noche todo el tiempo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Con quién vive Perséfone la mitad del año?",
+        "opciones": [
+          "Con Hades, en su reino",
+          "Con Zeus, en el Olimpo",
+          "Con Poseidón, en el mar"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién es la madre de Perséfone?",
+        "opciones": [
+          "Deméter",
+          "Hera",
+          "Afrodita"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -971,15 +1391,6 @@
     },
     "colorCarta": "#B5652E",
     "icono": "fogon",
-    "pregunta": {
-      "texto": "¿De qué es diosa Hestia?",
-      "opciones": [
-        "Del hogar y el fuego de la casa",
-        "De la guerra",
-        "Del mar"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -989,6 +1400,35 @@
         "porque": "Para los griegos, el hogar era el centro de todo: por eso le dedicaron una diosa entera solo para representar ese calor tranquilo que sostiene a una familia.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿De qué es diosa Hestia?",
+        "opciones": [
+          "Del hogar y el fuego de la casa",
+          "De la guerra",
+          "Del mar"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué mantenían las ciudades griegas en nombre de Hestia?",
+        "opciones": [
+          "Un fuego público",
+          "Un templo de mármol",
+          "Una estatua de oro"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo es el carácter de Hestia comparado con otros dioses?",
+        "opciones": [
+          "Es la más tranquila y serena",
+          "Es la más peleadora",
+          "Es la más celosa"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1011,15 +1451,6 @@
     },
     "colorCarta": "#D4A017",
     "icono": "sol",
-    "pregunta": {
-      "texto": "¿En qué templo la gente iba a preguntarle a Apolo sobre el futuro?",
-      "opciones": [
-        "En Delfos",
-        "En Atenas",
-        "En Esparta"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1029,6 +1460,35 @@
         "porque": "Apolo junta en un solo dios dos cosas que los griegos valoraban muchísimo: el arte y el conocimiento. Para ellos, la belleza y la sabiduría iban de la mano.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿En qué templo la gente iba a preguntarle a Apolo sobre el futuro?",
+        "opciones": [
+          "En Delfos",
+          "En Atenas",
+          "En Esparta"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Con qué instrumento tocaba música Apolo?",
+        "opciones": [
+          "Con la lira",
+          "Con la flauta",
+          "Con el tambor"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién es la hermana melliza de Apolo?",
+        "opciones": [
+          "Artemisa",
+          "Atenea",
+          "Afrodita"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1052,15 +1512,6 @@
     },
     "colorCarta": "#3D5A6C",
     "icono": "arco",
-    "pregunta": {
-      "texto": "¿De qué es diosa Artemisa?",
-      "opciones": [
-        "De la caza y la luna",
-        "Del amor",
-        "Del mar"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1070,6 +1521,35 @@
         "porque": "Los griegos la admiraban como un espejo distinto de la feminidad de su época: una diosa fuerte, independiente y dueña de sus propias decisiones.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿De qué es diosa Artemisa?",
+        "opciones": [
+          "De la caza y la luna",
+          "Del amor",
+          "Del mar"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué nunca falla cuando Artemisa lo usa?",
+        "opciones": [
+          "Su arco",
+          "Su lanza",
+          "Su espada"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A qué protege especialmente Artemisa?",
+        "opciones": [
+          "A los animales salvajes del bosque",
+          "A los marineros",
+          "A los agricultores"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1092,15 +1572,6 @@
     },
     "colorCarta": "#8C2F2F",
     "icono": "espada",
-    "pregunta": {
-      "texto": "¿Qué diosa griega prefería pensar la estrategia antes de pelear, a diferencia de Ares?",
-      "opciones": [
-        "Atenea",
-        "Afrodita",
-        "Hestia"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1110,6 +1581,35 @@
         "porque": "El contraste entre Ares y Atenea le servía a los griegos para hablar de dos maneras de enfrentar un conflicto: la fuerza bruta sin pensar, contra la estrategia inteligente. Para ellos, la segunda ganaba casi siempre.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué diosa griega prefería pensar la estrategia antes de pelear, a diferencia de Ares?",
+        "opciones": [
+          "Atenea",
+          "Afrodita",
+          "Hestia"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo actúa Ares frente a un enemigo?",
+        "opciones": [
+          "Pelea sin dudar y nunca retrocede",
+          "Piensa mucho antes de actuar",
+          "Prefiere negociar"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién le tenía un poco de desconfianza a Ares?",
+        "opciones": [
+          "Los propios griegos",
+          "Los romanos",
+          "Los egipcios"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1132,15 +1632,6 @@
     },
     "colorCarta": "#C2568A",
     "icono": "concha",
-    "pregunta": {
-      "texto": "¿Cómo nació Afrodita, según el mito?",
-      "opciones": [
-        "De la espuma del mar",
-        "De un rayo",
-        "De una flor gigante"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1150,6 +1641,35 @@
         "porque": "Para los griegos, el amor era una fuerza tan poderosa e imposible de controlar que necesitaba tener su propia diosa. Afrodita mostraba que ese sentimiento merecía tanto respeto como la guerra o la sabiduría.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Cómo nació Afrodita, según el mito?",
+        "opciones": [
+          "De la espuma del mar",
+          "De un rayo",
+          "De una flor gigante"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿En qué llegó Afrodita a la orilla, según el mito?",
+        "opciones": [
+          "Flotando sobre una concha",
+          "En un carro de oro",
+          "Nadando sola"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué puede despertar Afrodita con solo proponérselo?",
+        "opciones": [
+          "El amor entre dioses y mortales",
+          "Tormentas en el mar",
+          "Guerras entre reinos"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1172,15 +1692,6 @@
     },
     "colorCarta": "#A6491E",
     "icono": "yunque",
-    "pregunta": {
-      "texto": "¿Dónde queda la fragua de Hefesto?",
-      "opciones": [
-        "Bajo los volcanes",
-        "En el fondo del mar",
-        "Arriba de las nubes"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1190,6 +1701,35 @@
         "porque": "Los griegos creían que los volcanes humeaban porque Hefesto estaba trabajando ahí abajo. Es el dios que representa el ingenio manual: la idea de que crear con las manos es también una forma de poder.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Dónde queda la fragua de Hefesto?",
+        "opciones": [
+          "Bajo los volcanes",
+          "En el fondo del mar",
+          "Arriba de las nubes"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué forjó Hefesto para Zeus?",
+        "opciones": [
+          "Su rayo",
+          "Su escudo",
+          "Su corona"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué inventó Hefesto que podía moverse solo?",
+        "opciones": [
+          "Figuras de bronce",
+          "Caballos de piedra",
+          "Barcos voladores"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1213,15 +1753,6 @@
     },
     "colorCarta": "#4F8F8C",
     "icono": "sandalias",
-    "pregunta": {
-      "texto": "¿Qué inventó Hermes para hacer las paces con Apolo?",
-      "opciones": [
-        "La lira",
-        "El arco",
-        "El escudo"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1231,6 +1762,35 @@
         "porque": "Hermes representa la rapidez de mente y de pies a la vez. Los griegos lo imaginaban como el dios que conecta todos los mundos: el de los dioses, el de los humanos y hasta el de los viajeros en el camino.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué inventó Hermes para hacer las paces con Apolo?",
+        "opciones": [
+          "La lira",
+          "El arco",
+          "El escudo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Con qué inventó Hermes la lira?",
+        "opciones": [
+          "Con el caparazón de una tortuga",
+          "Con cuernos de cabra",
+          "Con madera de laurel"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De quién escondió el ganado Hermes cuando era bebé?",
+        "opciones": [
+          "De su hermano Apolo",
+          "De su padre Zeus",
+          "De Ares"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1252,15 +1812,6 @@
     },
     "colorCarta": "#7A3D8C",
     "icono": "mascara",
-    "pregunta": {
-      "texto": "¿Qué arte nació en los festivales dedicados a Dioniso?",
-      "opciones": [
-        "El teatro",
-        "La escultura",
-        "La arquitectura"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1270,6 +1821,35 @@
         "porque": "El teatro griego nació justamente en los festivales dedicados a Dioniso. Él representa la alegría de contar historias en comunidad, algo que los griegos valoraban tanto como cualquier otra forma de arte.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué arte nació en los festivales dedicados a Dioniso?",
+        "opciones": [
+          "El teatro",
+          "La escultura",
+          "La arquitectura"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué organizaban los griegos en honor a Dioniso?",
+        "opciones": [
+          "Grandes festivales con obras de teatro",
+          "Carreras de carros",
+          "Torneos de lucha"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué le gusta hacer a Dioniso?",
+        "opciones": [
+          "Reunir a la gente para celebrar juntos",
+          "Vigilar el Olimpo en silencio",
+          "Cazar en el bosque"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1292,15 +1872,6 @@
     },
     "colorCarta": "#C9902A",
     "icono": "laurel",
-    "pregunta": {
-      "texto": "¿Qué marca de zapatillas se llama igual que la diosa griega de la victoria?",
-      "opciones": [
-        "Nike",
-        "Adidas",
-        "Puma"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1310,6 +1881,35 @@
         "porque": "Nike encarna ese instante exacto del triunfo: los griegos la ponían en todos lados donde querían celebrar un logro, desde templos hasta monedas.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué marca de zapatillas se llama igual que la diosa griega de la victoria?",
+        "opciones": [
+          "Nike",
+          "Adidas",
+          "Puma"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo se representa siempre a Nike?",
+        "opciones": [
+          "Con alas",
+          "Con un casco dorado",
+          "Con una lanza"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Dónde esculpían los griegos a Nike como símbolo de triunfo?",
+        "opciones": [
+          "En templos y monedas",
+          "Solo en anillos",
+          "Solo en escudos"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1331,15 +1931,6 @@
     },
     "colorCarta": "#4E9E8C",
     "icono": "iris",
-    "pregunta": {
-      "texto": "¿Qué camino usa Iris para viajar entre el cielo y la tierra?",
-      "opciones": [
-        "El arcoíris",
-        "Un río de estrellas",
-        "Una escalera de nubes"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1349,6 +1940,35 @@
         "porque": "El arcoíris era, para los griegos, el camino que usaba Iris para moverse entre los mundos. Comparar su historia con la de Heimdall muestra cómo culturas distintas pueden explicar el mismo fenómeno natural con historias diferentes.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué camino usa Iris para viajar entre el cielo y la tierra?",
+        "opciones": [
+          "El arcoíris",
+          "Un río de estrellas",
+          "Una escalera de nubes"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A qué dios nórdico se parece Iris en su función?",
+        "opciones": [
+          "A Heimdall",
+          "A Thor",
+          "A Odín"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué lleva Iris de un lado a otro?",
+        "opciones": [
+          "Noticias",
+          "Tesoros",
+          "Armas"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1370,15 +1990,6 @@
     },
     "colorCarta": "#D97B29",
     "icono": "carrosolar",
-    "pregunta": {
-      "texto": "¿Qué conduce Helios todos los días por el cielo?",
-      "opciones": [
-        "El carro del sol",
-        "Un barco de nubes",
-        "Un caballo alado"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1388,6 +1999,35 @@
         "porque": "Los griegos explicaban el amanecer y el atardecer como el viaje diario de Helios cruzando el cielo con su carro de fuego.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué conduce Helios todos los días por el cielo?",
+        "opciones": [
+          "El carro del sol",
+          "Un barco de nubes",
+          "Un caballo alado"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Por dónde empieza su recorrido diario el carro de Helios?",
+        "opciones": [
+          "Por el este",
+          "Por el norte",
+          "Por el sur"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Por qué nadie más puede conducir el carro de Helios?",
+        "opciones": [
+          "Porque se quemaría",
+          "Porque es demasiado pesado",
+          "Porque solo él conoce el camino"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1409,15 +2049,6 @@
     },
     "colorCarta": "#4A5A8C",
     "icono": "carrolunar",
-    "pregunta": {
-      "texto": "¿Qué conduce Selene por el cielo nocturno?",
-      "opciones": [
-        "El carro plateado de la luna",
-        "Un trineo de nubes",
-        "Un búho gigante"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1427,6 +2058,35 @@
         "porque": "El recorrido de la luna cada noche, cambiando de forma poco a poco, se explicaba con la historia de Selene cruzando el cielo en su carro.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué conduce Selene por el cielo nocturno?",
+        "opciones": [
+          "El carro plateado de la luna",
+          "Un trineo de nubes",
+          "Un búho gigante"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué color es el carro de Selene?",
+        "opciones": [
+          "Plateado",
+          "Dorado",
+          "Negro"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cuándo hace su recorrido Selene?",
+        "opciones": [
+          "De noche",
+          "Al mediodía",
+          "Al amanecer"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1449,15 +2109,6 @@
     },
     "colorCarta": "#6B8C3D",
     "icono": "flauta",
-    "pregunta": {
-      "texto": "¿Qué palabra viene del grito sorpresivo de Pan en el bosque?",
-      "opciones": [
-        "Pánico",
-        "Eco",
-        "Sinfonía"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1467,6 +2118,35 @@
         "porque": "Cuando Pan gritaba de repente en el bosque, sorprendía tanto a viajeros y animales que de ahí surgió la palabra «pánico», el miedo repentino que aparece de la nada.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué palabra viene del grito sorpresivo de Pan en el bosque?",
+        "opciones": [
+          "Pánico",
+          "Eco",
+          "Sinfonía"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Con qué inventó Pan la flauta?",
+        "opciones": [
+          "Con cañas del río",
+          "Con hueso de ciervo",
+          "Con cuernos de toro"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo es el cuerpo de Pan?",
+        "opciones": [
+          "Mitad hombre y mitad cabra",
+          "Mitad hombre y mitad caballo",
+          "Mitad hombre y mitad águila"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1489,15 +2169,6 @@
     },
     "colorCarta": "#B5451E",
     "icono": "antorcha",
-    "pregunta": {
-      "texto": "¿Quién liberó a Prometeo de su castigo?",
-      "opciones": [
-        "Heracles",
-        "Zeus",
-        "Perseo"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1507,6 +2178,35 @@
         "porque": "Prometeo representa a quien se sacrifica para que otros progresen. Con el fuego llegaron la cocina, la luz para las noches y las herramientas: un regalo que cambió la vida de la humanidad entera.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Quién liberó a Prometeo de su castigo?",
+        "opciones": [
+          "Heracles",
+          "Zeus",
+          "Perseo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Dónde escondió Prometeo el fuego para robarlo?",
+        "opciones": [
+          "Dentro de una caña hueca",
+          "En su capa",
+          "Bajo tierra"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo vivían los humanos antes de recibir el fuego de Prometeo?",
+        "opciones": [
+          "A oscuras y con frío",
+          "En guerra constante",
+          "Bajo el mar"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1529,15 +2229,6 @@
     },
     "colorCarta": "#8C6B3D",
     "icono": "talon",
-    "pregunta": {
-      "texto": "¿Qué parte del cuerpo de Aquiles quedó sin protección?",
-      "opciones": [
-        "El talón",
-        "La mano",
-        "La oreja"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -1547,6 +2238,35 @@
         "porque": "El mito enseña que hasta el más fuerte tiene un punto débil. Esa idea quedó tan marcada que la usamos todavía hoy como una expresión de la vida diaria.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué parte del cuerpo de Aquiles quedó sin protección?",
+        "opciones": [
+          "El talón",
+          "La mano",
+          "La oreja"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Para qué sumergió la madre de Aquiles a su hijo en las aguas mágicas?",
+        "opciones": [
+          "Para volverlo invulnerable",
+          "Para curarlo de una enfermedad",
+          "Para que aprendiera a nadar"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿En qué guerra peleó Aquiles?",
+        "opciones": [
+          "En la guerra de Troya",
+          "En la guerra de los titanes",
+          "En la guerra de Micenas"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1569,15 +2289,6 @@
     },
     "colorCarta": "#6B4A2E",
     "icono": "lanza",
-    "pregunta": {
-      "texto": "¿Por qué peleaba Héctor, sobre todo?",
-      "opciones": [
-        "Para proteger a su familia y su ciudad",
-        "Para conseguir tesoros",
-        "Para viajar por el mundo"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1587,6 +2298,35 @@
         "porque": "Héctor representa el héroe del deber: alguien que no busca fama, sino cuidar lo que le importa. Es el rival y el espejo de Aquiles: dos formas distintas de entender el coraje.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Por qué peleaba Héctor, sobre todo?",
+        "opciones": [
+          "Para proteger a su familia y su ciudad",
+          "Para conseguir tesoros",
+          "Para viajar por el mundo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A qué ciudad defendió Héctor?",
+        "opciones": [
+          "A Troya",
+          "A Esparta",
+          "A Ítaca"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién es considerado el rival y el espejo de Héctor?",
+        "opciones": [
+          "Aquiles",
+          "Odiseo",
+          "Agamenón"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1609,15 +2349,6 @@
     },
     "colorCarta": "#B58A2A",
     "icono": "vellocino",
-    "pregunta": {
-      "texto": "¿Qué buscaban Jasón y los Argonautas en su viaje?",
-      "opciones": [
-        "El vellocino de oro",
-        "La lanza dorada",
-        "El escudo invencible"
-      ],
-      "correcta": 0
-    },
     "tier": "dorado",
     "capitulos": [
       {
@@ -1627,6 +2358,35 @@
         "porque": "La historia de Jasón y los Argonautas es uno de los primeros grandes relatos de trabajo en equipo de la mitología: la idea de que cada persona suma algo distinto para lograr una meta común.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué buscaban Jasón y los Argonautas en su viaje?",
+        "opciones": [
+          "El vellocino de oro",
+          "La lanza dorada",
+          "El escudo invencible"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo se llamaba el barco de Jasón y los Argonautas?",
+        "opciones": [
+          "El Argo",
+          "El Titán",
+          "El Halcón"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué aportaba cada Argonauta al grupo?",
+        "opciones": [
+          "Un talento distinto",
+          "La misma fuerza que todos",
+          "Solo dinero"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1648,15 +2408,6 @@
     },
     "colorCarta": "#5C3D6B",
     "icono": "lira",
-    "pregunta": {
-      "texto": "¿Con qué instrumento encantaba Orfeo a todo el mundo?",
-      "opciones": [
-        "La lira",
-        "El tambor",
-        "La flauta"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1666,6 +2417,35 @@
         "porque": "Orfeo demuestra que el arte puede ser el poder más raro de todos: no vence con fuerza, convence con belleza. A veces la música llega a lugares donde ni las armas ni los ejércitos pueden entrar.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Con qué instrumento encantaba Orfeo a todo el mundo?",
+        "opciones": [
+          "La lira",
+          "El tambor",
+          "La flauta"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A quién fue a buscar Orfeo al mundo subterráneo?",
+        "opciones": [
+          "A su amada Eurídice",
+          "A su padre",
+          "A su hermano"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A quién logró conmover Orfeo con su música en el inframundo?",
+        "opciones": [
+          "Al mismísimo Hades",
+          "A Cerbero solamente",
+          "A nadie, fracasó enseguida"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1688,15 +2468,6 @@
     },
     "colorCarta": "#A85C7A",
     "icono": "ovillo",
-    "pregunta": {
-      "texto": "¿Qué le dio Ariadna a Teseo para ayudarlo?",
-      "opciones": [
-        "Un ovillo de hilo",
-        "Un mapa secreto",
-        "Una espada mágica"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1706,6 +2477,35 @@
         "porque": "El verdadero plan del laberinto fue de Ariadna: sin ella no existe la hazaña de Teseo. Su historia conecta directo con esa carta y muestra que detrás de cada gran hazaña suele haber alguien que pensó el plan.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué le dio Ariadna a Teseo para ayudarlo?",
+        "opciones": [
+          "Un ovillo de hilo",
+          "Un mapa secreto",
+          "Una espada mágica"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué ciudad era princesa Ariadna?",
+        "opciones": [
+          "De Creta",
+          "De Atenas",
+          "De Esparta"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué le hubiera pasado a Teseo sin el plan de Ariadna, según su historia?",
+        "opciones": [
+          "Nunca hubiera encontrado la salida",
+          "Hubiera vencido más rápido",
+          "No hubiera pasado nada distinto"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1728,15 +2528,6 @@
     },
     "colorCarta": "#3D8C5C",
     "icono": "manzana",
-    "pregunta": {
-      "texto": "¿Cómo lograron ganarle una carrera a Atalanta?",
-      "opciones": [
-        "Distrayéndola con manzanas de oro",
-        "Haciéndola tropezar",
-        "Empezando antes que ella"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1746,6 +2537,35 @@
         "porque": "Atalanta es una heroína en un mundo lleno de héroes varones: corrió, cazó y navegó al mismo nivel que cualquiera de ellos, algo poco común en los mitos griegos de la época.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Cómo lograron ganarle una carrera a Atalanta?",
+        "opciones": [
+          "Distrayéndola con manzanas de oro",
+          "Haciéndola tropezar",
+          "Empezando antes que ella"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Con qué grupo de héroes navegó Atalanta, además de correr y cazar?",
+        "opciones": [
+          "Con los Argonautas",
+          "Con los troyanos",
+          "Con las valquirias"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué exigía Atalanta para casarse con alguien?",
+        "opciones": [
+          "Ganarle una carrera",
+          "Vencerla en un duelo de arco",
+          "Resolver un acertijo"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1767,15 +2587,6 @@
     },
     "colorCarta": "#5C8CA6",
     "icono": "brida",
-    "pregunta": {
-      "texto": "¿Qué le regaló Atenea a Belerofonte para domar a Pegaso?",
-      "opciones": [
-        "Una brida de oro",
-        "Una espada mágica",
-        "Un escudo espejo"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -1785,6 +2596,35 @@
         "porque": "Belerofonte enseña que a veces conviene cambiar el terreno del problema: algo imposible de resolver de frente puede volverse simple si se lo mira desde otro ángulo, incluso desde arriba.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué le regaló Atenea a Belerofonte para domar a Pegaso?",
+        "opciones": [
+          "Una brida de oro",
+          "Una espada mágica",
+          "Un escudo espejo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A qué criatura enfrentó Belerofonte montado en Pegaso?",
+        "opciones": [
+          "A la Quimera",
+          "Al Minotauro",
+          "A Cerbero"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Desde dónde atacó Belerofonte a la Quimera?",
+        "opciones": [
+          "Desde el aire, volando",
+          "Desde el mar",
+          "Desde una cueva"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1807,15 +2647,6 @@
     },
     "colorCarta": "#8C6B8C",
     "icono": "jarra",
-    "pregunta": {
-      "texto": "¿Qué quedó en el fondo de la jarra de Pandora?",
-      "opciones": [
-        "La esperanza",
-        "El coraje",
-        "La riqueza"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1825,6 +2656,35 @@
         "porque": "El mito explicaba de dónde vienen los problemas del mundo, y por qué, por más difícil que se ponga todo, la esperanza nunca se va del todo.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué quedó en el fondo de la jarra de Pandora?",
+        "opciones": [
+          "La esperanza",
+          "El coraje",
+          "La riqueza"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué orden le dieron a Pandora sobre la jarra?",
+        "opciones": [
+          "Nunca abrirla",
+          "Abrirla enseguida",
+          "Dársela a otra persona"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién hizo a Pandora, según el mito?",
+        "opciones": [
+          "Los dioses, cada uno con un regalo distinto",
+          "Solo Zeus",
+          "Solo Afrodita"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1846,15 +2706,6 @@
     },
     "colorCarta": "#5C4A3D",
     "icono": "telarana",
-    "pregunta": {
-      "texto": "¿En qué transformó Atenea a Aracne?",
-      "opciones": [
-        "En una araña",
-        "En un búho",
-        "En una serpiente"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1864,6 +2715,35 @@
         "porque": "El mito explicaba por qué las arañas tejen telas tan perfectas, y de paso dejaba una lección sobre los límites de presumir frente a quien tiene mucho más poder.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿En qué transformó Atenea a Aracne?",
+        "opciones": [
+          "En una araña",
+          "En un búho",
+          "En una serpiente"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A quién desafió Aracne a una competencia de tejido?",
+        "opciones": [
+          "A Atenea",
+          "A Afrodita",
+          "A Hera"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué presumía Aracne?",
+        "opciones": [
+          "De tejer mejor que la propia Atenea",
+          "De correr más rápido que nadie",
+          "De cantar mejor que las musas"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1885,15 +2765,6 @@
     },
     "colorCarta": "#B8952A",
     "icono": "corona",
-    "pregunta": {
-      "texto": "¿Qué pasaba cuando el rey Midas tocaba su comida?",
-      "opciones": [
-        "Se convertía en oro",
-        "Desaparecía",
-        "Se volvía piedra"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1903,6 +2774,35 @@
         "porque": "El mito de Midas es una advertencia clásica: hay que tener cuidado con lo que se desea, porque hasta el deseo más perfecto puede convertirse en el peor problema.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué pasaba cuando el rey Midas tocaba su comida?",
+        "opciones": [
+          "Se convertía en oro",
+          "Desaparecía",
+          "Se volvía piedra"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué deseo pidió el rey Midas?",
+        "opciones": [
+          "Que todo lo que tocara se convirtiera en oro",
+          "Que todo lo que tocara se convirtiera en piedra",
+          "Ser el hombre más fuerte del mundo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Por qué tuvo que pedir que le quitaran el deseo?",
+        "opciones": [
+          "Porque no podía comer ni beber",
+          "Porque se quedó ciego",
+          "Porque nadie quería acercarse a él"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1925,15 +2825,6 @@
     },
     "colorCarta": "#5C7A9E",
     "icono": "pegaso",
-    "pregunta": {
-      "texto": "¿Qué brotó de una patada del casco de Pegaso, según la leyenda?",
-      "opciones": [
-        "La fuente de las musas",
-        "Un río de oro",
-        "Una montaña nueva"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1943,6 +2834,35 @@
         "porque": "Pegaso es el símbolo griego de la inspiración: por eso su imagen sigue apareciendo en logos, cuentos y películas hasta el día de hoy.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué brotó de una patada del casco de Pegaso, según la leyenda?",
+        "opciones": [
+          "La fuente de las musas",
+          "Un río de oro",
+          "Una montaña nueva"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A quiénes inspira la fuente que creó Pegaso de una patada?",
+        "opciones": [
+          "A poetas y artistas",
+          "A guerreros",
+          "A navegantes"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué héroe voló junto a Pegaso en sus aventuras más importantes?",
+        "opciones": [
+          "Belerofonte",
+          "Teseo",
+          "Jasón"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -1965,15 +2885,6 @@
     },
     "colorCarta": "#6B8C5C",
     "icono": "centauro",
-    "pregunta": {
-      "texto": "¿A qué héroes entrenó Quirón?",
-      "opciones": [
-        "A Aquiles y a Jasón, entre otros",
-        "Solo a Heracles",
-        "A ningún héroe, solo a dioses"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -1983,6 +2894,35 @@
         "porque": "La historia de Quirón recuerda que detrás de cada héroe suele haber un maestro. Saber enseñar lo que uno sabe es, para los griegos, una forma de poder tan valiosa como cualquier otra.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿A qué héroes entrenó Quirón?",
+        "opciones": [
+          "A Aquiles y a Jasón, entre otros",
+          "Solo a Heracles",
+          "A ningún héroe, solo a dioses"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿En qué se diferenciaba Quirón de la mayoría de los centauros?",
+        "opciones": [
+          "Era paciente, culto y sabio",
+          "Era más veloz que todos",
+          "Vivía bajo el mar"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué materias enseñaba Quirón?",
+        "opciones": [
+          "Medicina, música, arquería y estrategia",
+          "Solo lucha cuerpo a cuerpo",
+          "Solo navegación"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2004,15 +2944,6 @@
     },
     "colorCarta": "#C9502A",
     "icono": "fenix",
-    "pregunta": {
-      "texto": "¿Qué hace el Fénix cuando su vida llega al final?",
-      "opciones": [
-        "Renace de sus propias cenizas",
-        "Se convierte en piedra",
-        "Se esconde para siempre"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -2022,6 +2953,35 @@
         "porque": "El Fénix es el símbolo de volver a empezar después de cualquier caída. Los mitos usan esta ave para hablar de la esperanza de recuperarse, sin importar cuán difícil parezca el momento.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué hace el Fénix cuando su vida llega al final?",
+        "opciones": [
+          "Renace de sus propias cenizas",
+          "Se convierte en piedra",
+          "Se esconde para siempre"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo quedan las plumas del Fénix después de renacer?",
+        "opciones": [
+          "Más brillantes que antes",
+          "Grises y opacas",
+          "Iguales que antes"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué está hecho el Fénix?",
+        "opciones": [
+          "De fuego",
+          "De hielo",
+          "De piedra"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2044,15 +3004,6 @@
     },
     "colorCarta": "#5C4A4A",
     "icono": "cerbero",
-    "pregunta": {
-      "texto": "¿Qué hizo Orfeo para calmar a Cerbero?",
-      "opciones": [
-        "Tocarle música con su lira",
-        "Darle de comer carne",
-        "Pelear contra sus tres cabezas"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -2062,6 +3013,35 @@
         "porque": "Hasta el guardián más temible tiene su punto débil: en este caso, una buena canción. El mito enseña que la fuerza no siempre es la única manera de resolver un desafío.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué hizo Orfeo para calmar a Cerbero?",
+        "opciones": [
+          "Tocarle música con su lira",
+          "Darle de comer carne",
+          "Pelear contra sus tres cabezas"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cuántas cabezas tiene Cerbero?",
+        "opciones": [
+          "Tres",
+          "Dos",
+          "Cinco"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo trató Heracles a Cerbero cuando lo llevó consigo?",
+        "opciones": [
+          "Sin lastimarlo",
+          "Encadenándolo con fuerza",
+          "Peleando contra sus tres cabezas"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2084,15 +3064,6 @@
     },
     "colorCarta": "#4A6B4A",
     "icono": "serpientes",
-    "pregunta": {
-      "texto": "¿Cómo venció Perseo a Medusa sin mirarla directo?",
-      "opciones": [
-        "Usando el reflejo de su escudo",
-        "Con los ojos cerrados",
-        "Atacándola de noche"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -2102,6 +3073,35 @@
         "porque": "La historia de Medusa es el desafío que no se puede mirar de frente, y conecta directo con la carta de Perseo: dos formas distintas de contar la misma hazaña.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Cómo venció Perseo a Medusa sin mirarla directo?",
+        "opciones": [
+          "Usando el reflejo de su escudo",
+          "Con los ojos cerrados",
+          "Atacándola de noche"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Dónde vivía Medusa?",
+        "opciones": [
+          "En una isla lejana",
+          "En un laberinto",
+          "En una cueva bajo el mar"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué pasaba con quien miraba a Medusa de frente?",
+        "opciones": [
+          "Se convertía en piedra",
+          "Se quedaba ciego",
+          "Se dormía para siempre"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2124,15 +3124,6 @@
     },
     "colorCarta": "#B58A5C",
     "icono": "esfinge",
-    "pregunta": {
-      "texto": "¿Quién resolvió el acertijo más famoso de la Esfinge?",
-      "opciones": [
-        "Edipo",
-        "Teseo",
-        "Heracles"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -2142,6 +3133,35 @@
         "porque": "La Esfinge muestra el poder de las preguntas: a veces un buen acertijo puede ser un desafío tan grande como cualquier batalla.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Quién resolvió el acertijo más famoso de la Esfinge?",
+        "opciones": [
+          "Edipo",
+          "Teseo",
+          "Heracles"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué pasaba con quien no resolvía el acertijo de la Esfinge?",
+        "opciones": [
+          "No podía pasar",
+          "Se convertía en piedra",
+          "Perdía la memoria"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cuál es la respuesta al acertijo más famoso de la Esfinge?",
+        "opciones": [
+          "El ser humano",
+          "Un caracol",
+          "El tiempo"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2164,15 +3184,6 @@
     },
     "colorCarta": "#6B4A3D",
     "icono": "toro",
-    "pregunta": {
-      "texto": "¿Quién construyó el laberinto donde vivía el Minotauro?",
-      "opciones": [
-        "Dédalo",
-        "Hefesto",
-        "Perseo"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -2182,6 +3193,35 @@
         "porque": "El Minotauro cierra el círculo de una misma historia junto a Teseo, Ariadna y Dédalo: cuatro cartas distintas que cuentan una sola aventura desde ángulos diferentes.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Quién construyó el laberinto donde vivía el Minotauro?",
+        "opciones": [
+          "Dédalo",
+          "Hefesto",
+          "Perseo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo es el cuerpo del Minotauro?",
+        "opciones": [
+          "Mitad hombre y mitad toro",
+          "Mitad hombre y mitad león",
+          "Mitad hombre y mitad serpiente"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué conocía el Minotauro mejor que nadie?",
+        "opciones": [
+          "Cada rincón del laberinto",
+          "El camino a Troya",
+          "El fondo del mar"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2204,15 +3244,6 @@
     },
     "colorCarta": "#5C6B8C",
     "icono": "rueca",
-    "pregunta": {
-      "texto": "¿Qué día de la semana en inglés viene del nombre de Frigg?",
-      "opciones": [
-        "Friday (viernes)",
-        "Monday (lunes)",
-        "Sunday (domingo)"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2222,6 +3253,35 @@
         "porque": "Frigg representa el poder de saber algo importante y elegir quedarse callada. De su nombre en inglés antiguo viene la palabra «Friday» (viernes), el día dedicado a ella.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué día de la semana en inglés viene del nombre de Frigg?",
+        "opciones": [
+          "Friday (viernes)",
+          "Monday (lunes)",
+          "Sunday (domingo)"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué conoce Frigg de todos los dioses y humanos?",
+        "opciones": [
+          "Su destino",
+          "Su nombre secreto",
+          "Su edad exacta"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Con quién está casada Frigg?",
+        "opciones": [
+          "Con Odín",
+          "Con Thor",
+          "Con Balder"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2244,15 +3304,6 @@
     },
     "colorCarta": "#B5A048",
     "icono": "muerdago",
-    "pregunta": {
-      "texto": "¿Qué planta quedó afuera del juramento que protegía a Balder?",
-      "opciones": [
-        "El muérdago",
-        "La rosa",
-        "El trigo"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2262,6 +3313,35 @@
         "porque": "El mito enseña que por más que uno se proteja de todo, siempre puede quedar un detalle sin cubrir. Es, en cierto sentido, el «talón de Aquiles» nórdico: dos culturas distintas contando la misma idea.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué planta quedó afuera del juramento que protegía a Balder?",
+        "opciones": [
+          "El muérdago",
+          "La rosa",
+          "El trigo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A quién le pidió Frigg el juramento de no dañar a Balder?",
+        "opciones": [
+          "A cada cosa del mundo: animales, plantas, piedras, metales",
+          "Solo a los dioses",
+          "Solo a los enanos"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo era Balder, según su historia?",
+        "opciones": [
+          "Brillaba con luz propia",
+          "Era invisible",
+          "Tenía tres cabezas"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2284,15 +3364,6 @@
     },
     "colorCarta": "#2E6B7A",
     "icono": "ola",
-    "pregunta": {
-      "texto": "¿Qué tipo de mar prefiere Njörd?",
-      "opciones": [
-        "El mar calmo",
-        "El mar tormentoso",
-        "El mar congelado"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2302,6 +3373,35 @@
         "porque": "Njörd es el espejo nórdico de Poseidón, pero con un carácter opuesto: mientras uno agita el mar cuando se enoja, el otro lo calma para cuidar a los navegantes.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué tipo de mar prefiere Njörd?",
+        "opciones": [
+          "El mar calmo",
+          "El mar tormentoso",
+          "El mar congelado"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A qué protege Njörd?",
+        "opciones": [
+          "A quienes navegan",
+          "A los animales del bosque",
+          "A los guerreros en batalla"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo prefiere el mar Njörd, a diferencia de otros dioses marinos?",
+        "opciones": [
+          "Calmo",
+          "Congelado",
+          "Agitado con tormentas"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2324,15 +3424,6 @@
     },
     "colorCarta": "#7A8C9E",
     "icono": "esquis",
-    "pregunta": {
-      "texto": "¿En qué es experta Skadi?",
-      "opciones": [
-        "Esquiar y cazar en la nieve",
-        "Nadar en el mar",
-        "Volar entre nubes"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2342,6 +3433,35 @@
         "porque": "Skadi es la diosa nórdica del invierno que eligió su propio camino sin depender de nadie. Para los nórdicos, deslizarse sobre esquís por la nieve era casi una habilidad digna de los dioses.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿En qué es experta Skadi?",
+        "opciones": [
+          "Esquiar y cazar en la nieve",
+          "Nadar en el mar",
+          "Volar entre nubes"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Adónde viajó sola Skadi para reclamar justicia?",
+        "opciones": [
+          "A Asgard",
+          "Al pozo de Mimir",
+          "Al Valhalla"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De dónde es giganta Skadi?",
+        "opciones": [
+          "De las montañas",
+          "Del mar",
+          "Del fuego"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2364,15 +3484,6 @@
     },
     "colorCarta": "#5C6B3D",
     "icono": "dragon",
-    "pregunta": {
-      "texto": "¿A qué dragón venció Sigurd?",
-      "opciones": [
-        "A Fafnir",
-        "A Fenrir",
-        "A Jörmundgander"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2382,6 +3493,35 @@
         "porque": "Sigurd es el héroe original que enfrenta dragones: muchas historias posteriores de caballeros y dragones que conocemos hoy tienen su origen en su leyenda.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿A qué dragón venció Sigurd?",
+        "opciones": [
+          "A Fafnir",
+          "A Fenrir",
+          "A Jörmundgander"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué pudo entender Sigurd después de vencer al dragón?",
+        "opciones": [
+          "El idioma de los pájaros",
+          "El idioma de los peces",
+          "El idioma de los enanos"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué le advirtieron los pájaros a Sigurd?",
+        "opciones": [
+          "Una traición que se preparaba en su contra",
+          "Una tormenta que se acercaba",
+          "Un tesoro escondido"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2404,15 +3544,6 @@
     },
     "colorCarta": "#4A6B9E",
     "icono": "valquiria",
-    "pregunta": {
-      "texto": "¿A dónde llevan las Valquirias a los guerreros más valientes?",
-      "opciones": [
-        "Al Valhalla",
-        "Al pozo de Mimir",
-        "A Asgard entero"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -2422,6 +3553,35 @@
         "porque": "Algunos nórdicos creían que las auroras boreales eran, en realidad, el brillo de las armaduras de las Valquirias cruzando el cielo.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿A dónde llevan las Valquirias a los guerreros más valientes?",
+        "opciones": [
+          "Al Valhalla",
+          "Al pozo de Mimir",
+          "A Asgard entero"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué creían algunos nórdicos que eran las auroras boreales?",
+        "opciones": [
+          "El brillo de las armaduras de las Valquirias",
+          "El aliento de un dragón",
+          "La luz del Bifröst"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A quiénes eligen las Valquirias en las batallas?",
+        "opciones": [
+          "A los guerreros más valientes",
+          "A los reyes más ricos",
+          "A los magos más sabios"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2444,15 +3604,6 @@
     },
     "colorCarta": "#8C6B4A",
     "icono": "ardilla",
-    "pregunta": {
-      "texto": "¿Entre quiénes lleva mensajes Ratatosk?",
-      "opciones": [
-        "Entre un águila y un dragón",
-        "Entre Odín y Thor",
-        "Entre dos gigantes"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -2462,6 +3613,35 @@
         "porque": "Hasta en la mitología nórdica hay un personaje que muestra qué pasa cuando los mensajes se distorsionan al pasar de boca en boca.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Entre quiénes lleva mensajes Ratatosk?",
+        "opciones": [
+          "Entre un águila y un dragón",
+          "Entre Odín y Thor",
+          "Entre dos gigantes"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Por dónde se mueve todo el día Ratatosk?",
+        "opciones": [
+          "Por el árbol Yggdrasil",
+          "Por el puente Bifröst",
+          "Por el pozo de Mimir"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué efecto tienen los mensajes que lleva Ratatosk?",
+        "opciones": [
+          "Mantiene peleados al águila y al dragón",
+          "Los hace amigos",
+          "No tienen ningún efecto"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2484,15 +3664,6 @@
     },
     "colorCarta": "#4A5045",
     "icono": "fenrir",
-    "pregunta": {
-      "texto": "¿Quién se animó a acercarse a Fenrir para poder atarlo?",
-      "opciones": [
-        "Tyr",
-        "Thor",
-        "Loki"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -2502,6 +3673,35 @@
         "porque": "Fenrir enseña que lo aparentemente frágil —una cinta hecha de cosas invisibles— puede terminar siendo lo más fuerte de todo. Su historia cierra junto con la carta de Tyr.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Quién se animó a acercarse a Fenrir para poder atarlo?",
+        "opciones": [
+          "Tyr",
+          "Thor",
+          "Loki"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué estaba hecha la cinta mágica que ataba a Fenrir?",
+        "opciones": [
+          "De cosas imposibles, como el sonido de los pasos de un gato",
+          "De hierro forjado por enanos",
+          "De oro macizo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Por qué ninguna cadena común podía sujetar a Fenrir?",
+        "opciones": [
+          "Porque era demasiado fuerte",
+          "Porque era invisible",
+          "Porque podía volar"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2524,15 +3724,6 @@
     },
     "colorCarta": "#5C4A6B",
     "icono": "reloj_arena",
-    "pregunta": {
-      "texto": "¿Qué profecía perseguía a Cronos?",
-      "opciones": [
-        "Que uno de sus hijos lo reemplazaría",
-        "Que perdería el mar",
-        "Que se quedaría sin fuerza"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2542,6 +3733,35 @@
         "porque": "El mito de Cronos habla del miedo a ser reemplazado y de cómo ese miedo, cuando maneja las decisiones de alguien, termina provocando exactamente lo que se quería evitar. Los griegos también lo usaban para explicar el paso de una generación de dioses a la siguiente.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué profecía perseguía a Cronos?",
+        "opciones": [
+          "Que uno de sus hijos lo reemplazaría",
+          "Que perdería el mar",
+          "Que se quedaría sin fuerza"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién gobernaba el mundo antes que los dioses del Olimpo?",
+        "opciones": [
+          "Cronos y los titanes",
+          "Zeus y sus hermanos",
+          "Los gigantes de hielo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cómo creció el hijo que finalmente reemplazó a Cronos?",
+        "opciones": [
+          "Escondido",
+          "En el propio palacio de Cronos",
+          "En el fondo del mar"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2564,15 +3784,6 @@
     },
     "colorCarta": "#3D5C4A",
     "icono": "pocion",
-    "pregunta": {
-      "texto": "¿Qué aportó Medea a la aventura de los Argonautas?",
-      "opciones": [
-        "Su inteligencia y su magia para superar las pruebas",
-        "Un barco más veloz",
-        "Un ejército propio"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2582,6 +3793,35 @@
         "porque": "Medea muestra que las grandes hazañas de los mitos rara vez dependen de una sola persona: detrás de Jasón, la verdadera estratega era ella. Los griegos reconocían su inteligencia, aunque su historia después se volviera más compleja.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué aportó Medea a la aventura de los Argonautas?",
+        "opciones": [
+          "Su inteligencia y su magia para superar las pruebas",
+          "Un barco más veloz",
+          "Un ejército propio"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De dónde era Medea?",
+        "opciones": [
+          "De una lejana ciudad a la que llegó Jasón",
+          "De Ítaca",
+          "De Troya"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Sin qué jamás hubieran vuelto a casa los Argonautas, según su historia?",
+        "opciones": [
+          "Sin la mente táctica de Medea",
+          "Sin el barco Argo",
+          "Sin las armas de Heracles"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2604,15 +3844,6 @@
     },
     "colorCarta": "#3D3D52",
     "icono": "sombras",
-    "pregunta": {
-      "texto": "¿Qué reino administra Hel en la mitología nórdica?",
-      "opciones": [
-        "El de los muertos que no caen en batalla",
-        "El de los gigantes de hielo",
-        "El de los enanos herreros"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2622,6 +3853,35 @@
         "porque": "Hel es el espejo nórdico de Hades: los nórdicos tampoco la imaginaban como una villana, sino como la guardiana ordenada de un reino que tenía que existir. Cada mitología necesitaba a alguien a cargo de ese territorio.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué reino administra Hel en la mitología nórdica?",
+        "opciones": [
+          "El de los muertos que no caen en batalla",
+          "El de los gigantes de hielo",
+          "El de los enanos herreros"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A quiénes reciben en el reino de Hel?",
+        "opciones": [
+          "A quienes no caen en batalla",
+          "A todos los guerreros valientes",
+          "Solo a los reyes"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A qué dios griego se parece Hel en su función?",
+        "opciones": [
+          "A Hades",
+          "A Zeus",
+          "A Poseidón"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2644,15 +3904,6 @@
     },
     "colorCarta": "#8C4A3D",
     "icono": "padre_hombros",
-    "pregunta": {
-      "texto": "¿Qué hizo Eneas al escapar de Troya en llamas?",
-      "opciones": [
-        "Cargó a su padre sobre los hombros",
-        "Se escondió en un caballo de madera",
-        "Voló con alas de cera"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2662,6 +3913,35 @@
         "porque": "Eneas es el puente entre dos mitologías: empieza como héroe troyano y termina como el antepasado legendario de los romanos. Su historia explica cómo un pueblo entero podía sentirse heredero directo de los héroes griegos.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué hizo Eneas al escapar de Troya en llamas?",
+        "opciones": [
+          "Cargó a su padre sobre los hombros",
+          "Se escondió en un caballo de madera",
+          "Voló con alas de cera"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A qué costas llegó Eneas después de su largo viaje?",
+        "opciones": [
+          "A las costas de Italia",
+          "A las costas de España",
+          "A las costas de Egipto"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué ciudad fundarían con el tiempo los descendientes de Eneas?",
+        "opciones": [
+          "Roma",
+          "Cartago",
+          "Atenas"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2684,15 +3964,6 @@
     },
     "colorCarta": "#6B5C3D",
     "icono": "llave_acertijo",
-    "pregunta": {
-      "texto": "¿Qué resolvió Edipo para poder entrar a Tebas?",
-      "opciones": [
-        "El acertijo de la Esfinge",
-        "Un laberinto secreto",
-        "Una prueba de fuerza"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2702,6 +3973,35 @@
         "porque": "La historia de Edipo, en esta parte del mito, celebra el poder de una mente que no se rinde ante un problema difícil. Los griegos lo recordaban como el hombre cuyo ingenio abrió las puertas de una ciudad entera.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué resolvió Edipo para poder entrar a Tebas?",
+        "opciones": [
+          "El acertijo de la Esfinge",
+          "Un laberinto secreto",
+          "Una prueba de fuerza"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué ciudad estaba bloqueada por la Esfinge cuando llegó Edipo?",
+        "opciones": [
+          "Tebas",
+          "Atenas",
+          "Esparta"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué recibió Edipo por resolver el acertijo?",
+        "opciones": [
+          "Fue coronado rey de Tebas",
+          "Recibió un caballo alado",
+          "Recibió una espada mágica"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2724,15 +4024,6 @@
     },
     "colorCarta": "#B25E7E",
     "icono": "espejo",
-    "pregunta": {
-      "texto": "¿Qué expresión usamos hoy en referencia a Helena?",
-      "opciones": [
-        "«El rostro que lanzó mil barcos»",
-        "«El talón de Aquiles»",
-        "«El hilo de Ariadna»"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2742,6 +4033,35 @@
         "porque": "La frase «el rostro que lanzó mil barcos» resume cómo los griegos usaban a Helena para hablar de causas y consecuencias: un solo hecho, ampliado por el orgullo de los reyes, pudo desatar una guerra de diez años.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué expresión usamos hoy en referencia a Helena?",
+        "opciones": [
+          "«El rostro que lanzó mil barcos»",
+          "«El talón de Aquiles»",
+          "«El hilo de Ariadna»"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué ciudad era Helena antes de terminar en Troya?",
+        "opciones": [
+          "De Esparta",
+          "De Atenas",
+          "De Ítaca"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cuántos barcos dice la expresión que se reunieron por Helena?",
+        "opciones": [
+          "Mil",
+          "Cien",
+          "Diez"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2764,15 +4084,6 @@
     },
     "colorCarta": "#5C3D5C",
     "icono": "vision",
-    "pregunta": {
-      "texto": "¿Cuál era la maldición que acompañaba el don de Casandra?",
-      "opciones": [
-        "Que nadie le creería aunque tuviera razón",
-        "Que solo podía hablar de noche",
-        "Que olvidaba sus propias profecías"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2782,6 +4093,35 @@
         "porque": "Casandra es uno de los símbolos más potentes de la mitología griega: la experiencia de decir la verdad y que nadie la escuche. Hoy todavía se usa su nombre para hablar de advertencias reales que la gente prefiere no creer.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Cuál era la maldición que acompañaba el don de Casandra?",
+        "opciones": [
+          "Que nadie le creería aunque tuviera razón",
+          "Que solo podía hablar de noche",
+          "Que olvidaba sus propias profecías"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién le dio a Casandra el don de ver el futuro?",
+        "opciones": [
+          "Apolo",
+          "Zeus",
+          "Hera"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Sobre qué advirtió Casandra una y otra vez?",
+        "opciones": [
+          "Sobre el peligro que se acercaba a Troya",
+          "Sobre una inundación",
+          "Sobre un terremoto"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2804,15 +4144,6 @@
     },
     "colorCarta": "#4A6B5C",
     "icono": "vara_magica",
-    "pregunta": {
-      "texto": "¿Qué hacía Circe con su magia a quienes llegaban a su isla?",
-      "opciones": [
-        "Los transformaba",
-        "Los volvía invisibles",
-        "Los hacía dormir para siempre"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2822,6 +4153,35 @@
         "porque": "Circe muestra que en los mitos griegos la magia no es solo un peligro: también puede ser sabiduría, si se sabe cómo acercarse a ella con respeto e inteligencia.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué hacía Circe con su magia a quienes llegaban a su isla?",
+        "opciones": [
+          "Los transformaba",
+          "Los volvía invisibles",
+          "Los hacía dormir para siempre"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Dónde vive Circe?",
+        "opciones": [
+          "En una isla remota",
+          "En un palacio bajo el mar",
+          "En una montaña nevada"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué hizo Circe después de devolver a los marineros a su forma original?",
+        "opciones": [
+          "Ayudó a Odiseo a seguir su camino",
+          "Los encerró para siempre",
+          "Los envió de regreso a Troya"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2844,15 +4204,6 @@
     },
     "colorCarta": "#A64B2E",
     "icono": "loba_capitolina",
-    "pregunta": {
-      "texto": "¿Qué animal crió a Rómulo y Remo de bebés, según la leyenda?",
-      "opciones": [
-        "Una loba",
-        "Una águila",
-        "Un ciervo"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2862,6 +4213,35 @@
         "porque": "La imagen de los gemelos amamantados por una loba se convirtió en el símbolo más famoso del origen de Roma: una ciudad que, según su propio mito fundador, nació de la supervivencia y no de la comodidad.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué animal crió a Rómulo y Remo de bebés, según la leyenda?",
+        "opciones": [
+          "Una loba",
+          "Una águila",
+          "Un ciervo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Dónde fueron abandonados de bebés Rómulo y Remo?",
+        "opciones": [
+          "Cerca de un río",
+          "En un bosque",
+          "En una montaña"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién le dio nombre y forma final a la ciudad?",
+        "opciones": [
+          "Rómulo",
+          "Remo",
+          "Los dos juntos por igual"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2884,15 +4264,6 @@
     },
     "colorCarta": "#6B4A4A",
     "icono": "cetro",
-    "pregunta": {
-      "texto": "¿Qué logró Agamenón que nadie había hecho antes?",
-      "opciones": [
-        "Reunir a todos los reyes griegos bajo un solo mando",
-        "Construir el caballo de Troya",
-        "Domar a Pegaso"
-      ],
-      "correcta": 0
-    },
     "tier": "plateado",
     "capitulos": [
       {
@@ -2902,6 +4273,35 @@
         "porque": "Agamenón muestra el costo del orgullo en el liderazgo: reunir a tantos héroes bajo un mismo mando fue una hazaña enorme, pero mantenerlos unidos costó mucho más de lo que él esperaba.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué logró Agamenón que nadie había hecho antes?",
+        "opciones": [
+          "Reunir a todos los reyes griegos bajo un solo mando",
+          "Construir el caballo de Troya",
+          "Domar a Pegaso"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Con qué héroe chocó varias veces el orgullo de Agamenón?",
+        "opciones": [
+          "Con Aquiles",
+          "Con Héctor",
+          "Con Odiseo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Cuánto duró la guerra que puso a prueba el liderazgo de Agamenón?",
+        "opciones": [
+          "Diez años",
+          "Un año",
+          "Cien años"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2924,15 +4324,6 @@
     },
     "colorCarta": "#C97B9E",
     "icono": "flecha_amor",
-    "pregunta": {
-      "texto": "¿Cómo se llama a Eros en la mitología romana?",
-      "opciones": [
-        "Cupido",
-        "Marte",
-        "Baco"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -2942,6 +4333,35 @@
         "porque": "Eros representa el amor como una fuerza que puede llegar de golpe, sin aviso, con solo una flecha. Los romanos lo conocían con otro nombre, Cupido, y así llegó hasta los símbolos que usamos hoy.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Cómo se llama a Eros en la mitología romana?",
+        "opciones": [
+          "Cupido",
+          "Marte",
+          "Baco"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién es la madre de Eros?",
+        "opciones": [
+          "Afrodita",
+          "Hera",
+          "Deméter"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De quién se enamoró Eros en secreto?",
+        "opciones": [
+          "De Psique, una joven mortal",
+          "De una diosa",
+          "De una ninfa del bosque"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -2964,15 +4384,6 @@
     },
     "colorCarta": "#8C5C3D",
     "icono": "muralla_cartago",
-    "pregunta": {
-      "texto": "¿Qué ciudad fundó Dido?",
-      "opciones": [
-        "Cartago",
-        "Roma",
-        "Troya"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -2982,6 +4393,35 @@
         "porque": "Dido representa a la fundadora que construye algo grande partiendo de cero, después de perderlo casi todo. Su encuentro con Eneas conecta, en la leyenda, el origen de Cartago con el de Roma.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué ciudad fundó Dido?",
+        "opciones": [
+          "Cartago",
+          "Roma",
+          "Troya"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A qué costas llegó Dido después de escapar de su tierra?",
+        "opciones": [
+          "A las costas del norte de África",
+          "A las costas de Grecia",
+          "A las costas de Italia"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién descansó en el reino de Dido antes de seguir su viaje?",
+        "opciones": [
+          "Eneas",
+          "Odiseo",
+          "Jasón"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -3004,15 +4444,6 @@
     },
     "colorCarta": "#5C6B9E",
     "icono": "estrella_cadena",
-    "pregunta": {
-      "texto": "¿Quién ayudó a Andrómeda en su momento más difícil?",
-      "opciones": [
-        "Perseo",
-        "Teseo",
-        "Heracles"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -3022,6 +4453,35 @@
         "porque": "Andrómeda conecta directo con la carta de Perseo, y muestra cómo los griegos convertían a sus personajes favoritos en constelaciones: una forma de decir que esa historia iba a poder leerse en el cielo para siempre.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Quién ayudó a Andrómeda en su momento más difícil?",
+        "opciones": [
+          "Perseo",
+          "Teseo",
+          "Heracles"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿En qué se convirtió la historia de Andrómeda, según el mito?",
+        "opciones": [
+          "En una constelación",
+          "En una flor",
+          "En un río"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué volvía Perseo cuando encontró a Andrómeda?",
+        "opciones": [
+          "De su hazaña contra Medusa",
+          "De la guerra de Troya",
+          "De domar a Pegaso"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -3044,15 +4504,6 @@
     },
     "colorCarta": "#4A8C8C",
     "icono": "vasija_agua",
-    "pregunta": {
-      "texto": "¿A quién encontró Nausícaa junto al mar?",
-      "opciones": [
-        "A Odiseo, náufrago",
-        "A Jasón, perdido",
-        "A Teseo, herido"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -3062,6 +4513,35 @@
         "porque": "Nausícaa representa un valor que los griegos consideraban sagrado: la hospitalidad hacia el extranjero necesitado. Un gesto simple de ayuda pudo cambiar el rumbo del regreso de un héroe.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿A quién encontró Nausícaa junto al mar?",
+        "opciones": [
+          "A Odiseo, náufrago",
+          "A Jasón, perdido",
+          "A Teseo, herido"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué estaba haciendo Nausícaa cuando encontró a Odiseo?",
+        "opciones": [
+          "Lavando ropa junto al mar",
+          "Cazando en el bosque",
+          "Navegando en un barco"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Adónde llevó Nausícaa a Odiseo?",
+        "opciones": [
+          "Al palacio de su padre",
+          "A una cueva escondida",
+          "A un templo"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -3084,15 +4564,6 @@
     },
     "colorCarta": "#3D6B6B",
     "icono": "isla_lejana",
-    "pregunta": {
-      "texto": "¿Qué héroe llegó náufrago a la isla de Calipso?",
-      "opciones": [
-        "Odiseo",
-        "Jasón",
-        "Perseo"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -3102,6 +4573,35 @@
         "porque": "Calipso forma parte del ciclo de aventuras de Odiseo: cada isla de su viaje representa una prueba distinta, y la de ella es la de quedarse cómodo demasiado tiempo lejos del objetivo final.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué héroe llegó náufrago a la isla de Calipso?",
+        "opciones": [
+          "Odiseo",
+          "Jasón",
+          "Perseo"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué es Calipso?",
+        "opciones": [
+          "Una ninfa",
+          "Una diosa del mar",
+          "Una hechicera"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quiénes ayudaron a que Odiseo retomara su camino desde la isla de Calipso?",
+        "opciones": [
+          "Los propios dioses",
+          "Los Argonautas",
+          "Los troyanos"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -3124,15 +4624,6 @@
     },
     "colorCarta": "#8C6B9E",
     "icono": "mariposa_alma",
-    "pregunta": {
-      "texto": "¿Qué significa el nombre de Psique en griego?",
-      "opciones": [
-        "Alma",
-        "Estrella",
-        "Flor"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -3142,6 +4633,35 @@
         "porque": "El nombre de Psique significa «alma» en griego, y su historia se lee como el camino del alma hacia el amor verdadero, superando pruebas y dudas en el camino. De ahí viene también la palabra «psicología».",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué significa el nombre de Psique en griego?",
+        "opciones": [
+          "Alma",
+          "Estrella",
+          "Flor"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Quién sintió celos de la belleza de Psique?",
+        "opciones": [
+          "Afrodita",
+          "Hera",
+          "Atenea"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué le pidió Eros a Psique que nunca hiciera?",
+        "opciones": [
+          "Que nunca intentara verlo",
+          "Que nunca hablara de él",
+          "Que nunca saliera de su casa"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -3164,15 +4684,6 @@
     },
     "colorCarta": "#4A6B3D",
     "icono": "hojas_laurel",
-    "pregunta": {
-      "texto": "¿En qué árbol se transformó Dafne?",
-      "opciones": [
-        "Laurel",
-        "Olivo",
-        "Roble"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -3182,6 +4693,35 @@
         "porque": "El mito de Dafne explica por qué el laurel fue desde entonces el árbol sagrado de Apolo, y por qué las coronas de laurel —como las que reciben ganadores y poetas— vienen de esta historia.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿En qué árbol se transformó Dafne?",
+        "opciones": [
+          "Laurel",
+          "Olivo",
+          "Roble"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A quién le pidió ayuda Dafne para escapar de Apolo?",
+        "opciones": [
+          "A su padre, un dios del río",
+          "A Zeus",
+          "A Artemisa"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿En qué se transformaron los brazos de Dafne?",
+        "opciones": [
+          "En ramas",
+          "En alas",
+          "En raíces"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -3204,15 +4744,6 @@
     },
     "colorCarta": "#5C8C6B",
     "icono": "ondas_sonido",
-    "pregunta": {
-      "texto": "¿Qué podía hacer Eco después de su condena?",
-      "opciones": [
-        "Solo repetir las últimas palabras que escuchaba",
-        "Solo cantar de noche",
-        "Solo hablar con animales"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -3222,6 +4753,35 @@
         "porque": "El mito de Eco explica un fenómeno real: cuando gritamos en un valle o una montaña y escuchamos nuestra propia voz de vuelta, para los griegos esa era ella respondiendo.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué podía hacer Eco después de su condena?",
+        "opciones": [
+          "Solo repetir las últimas palabras que escuchaba",
+          "Solo cantar de noche",
+          "Solo hablar con animales"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Por qué fue condenada Eco?",
+        "opciones": [
+          "Por ser muy conversadora",
+          "Por robar un tesoro",
+          "Por desafiar a un dios en batalla"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De quién se enamoró Eco sin poder decírselo?",
+        "opciones": [
+          "De Narciso",
+          "De Apolo",
+          "De Pan"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -3244,15 +4804,6 @@
     },
     "colorCarta": "#6B9E8C",
     "icono": "flor_narciso",
-    "pregunta": {
-      "texto": "¿Qué palabra que usamos hoy viene del mito de Narciso?",
-      "opciones": [
-        "Narcisismo",
-        "Eco",
-        "Pánico"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -3262,6 +4813,35 @@
         "porque": "De Narciso viene la palabra «narcisismo», que usamos hoy para hablar de quien está demasiado enfocado en sí mismo. El mito advierte sobre quedarse atrapado mirando solo el propio reflejo.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué palabra que usamos hoy viene del mito de Narciso?",
+        "opciones": [
+          "Narcisismo",
+          "Eco",
+          "Pánico"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Dónde se quedó mirando Narciso su propio reflejo?",
+        "opciones": [
+          "En un estanque de agua tranquila",
+          "En un espejo de metal",
+          "En el mar"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿A quién no correspondió Narciso, según su historia?",
+        "opciones": [
+          "A la ninfa Eco",
+          "A la ninfa Dafne",
+          "A la diosa Afrodita"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -3284,15 +4864,6 @@
     },
     "colorCarta": "#8C3D5C",
     "icono": "escudo_amazona",
-    "pregunta": {
-      "texto": "¿De qué pueblo era reina Pentesilea?",
-      "opciones": [
-        "De las amazonas",
-        "De los troyanos",
-        "De los feacios"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -3302,6 +4873,35 @@
         "porque": "Pentesilea representa a las amazonas como un pueblo de guerreras poderosas, en un mundo de mitos donde casi todos los grandes guerreros eran varones. Su coraje la volvió leyenda propia.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿De qué pueblo era reina Pentesilea?",
+        "opciones": [
+          "De las amazonas",
+          "De los troyanos",
+          "De los feacios"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué lado peleó Pentesilea en la guerra de Troya?",
+        "opciones": [
+          "Del lado de los troyanos",
+          "Del lado de los griegos",
+          "No participó en la guerra"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Qué se ganó Pentesilea gracias a su valentía?",
+        "opciones": [
+          "El respeto de amigos y enemigos",
+          "El trono de Troya",
+          "La amistad de Aquiles"
+        ],
+        "correcta": 0
       }
     ]
   },
@@ -3324,15 +4924,6 @@
     },
     "colorCarta": "#9E6B4A",
     "icono": "manzana_discordia",
-    "pregunta": {
-      "texto": "¿Qué tuvo que hacer Paris en el mito de las tres diosas?",
-      "opciones": [
-        "Elegir a la más hermosa entre Hera, Atenea y Afrodita",
-        "Resolver un acertijo",
-        "Domar un caballo alado"
-      ],
-      "correcta": 0
-    },
     "tier": "normal",
     "capitulos": [
       {
@@ -3342,6 +4933,35 @@
         "porque": "El «juicio de Paris» es el ejemplo griego de cómo una sola decisión, tomada en un momento tranquilo, puede desatar consecuencias enormes tiempo después. Los griegos lo usaban para pensar en el peso oculto de elegir.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué tuvo que hacer Paris en el mito de las tres diosas?",
+        "opciones": [
+          "Elegir a la más hermosa entre Hera, Atenea y Afrodita",
+          "Resolver un acertijo",
+          "Domar un caballo alado"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿Entre qué tres diosas tuvo que elegir Paris?",
+        "opciones": [
+          "Hera, Atenea y Afrodita",
+          "Deméter, Perséfone y Hera",
+          "Artemisa, Selene e Iris"
+        ],
+        "correcta": 0
+      },
+      {
+        "texto": "¿De qué ciudad era príncipe Paris?",
+        "opciones": [
+          "De Troya",
+          "De Esparta",
+          "De Ítaca"
+        ],
+        "correcta": 0
       }
     ]
   }
