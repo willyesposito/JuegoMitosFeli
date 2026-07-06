@@ -26,9 +26,13 @@ Vanilla JS + HTML + CSS, como está el repo. No migrar a React: el MVP funciona 
 - Cada juego es un **módulo autocontenido**: su carpeta/archivo, su UI, y un objeto de registro (`id`, `nombre`, `icono`, `descripcion`, `progreso()`) que el hub consume. Agregar un juego = agregar un módulo y registrarlo, sin tocar los demás.
 - Los módulos no dan solo cartas: dan **capítulos de historia** a personajes concretos (ver contrato de datos).
 - **Fuente de datos única:** `personajes.json` (más datos propios de cada módulo, como `constelaciones.json`).
-- **Estado único versionado en localStorage:** key `feli-mitos-v2`, un objeto con namespace por módulo más un `global` (personajes descubiertos, capítulos encendidos, cartas doradas, logros). Lo que se gana en cualquier juego se refleja en la colección.
-- **Migración obligatoria:** al primer arranque, si existe `feli-cartas-v1`, importar su progreso. Feli no pierde nada.
+- **Estado único versionado en localStorage:** key `feli-mitos-v2`, con soporte de hasta 5 perfiles de partida (ver spec funcional). Lo que se gana en cualquier juego se refleja en la colección del perfil activo.
+- **Migración obligatoria:** al primer arranque, si existe `feli-cartas-v1`, importar su progreso al primer perfil. Feli no pierde nada.
 - Botón de reset y utilidades de Willy en un menú discreto (ya existe).
+
+## Regla de despliegue de contenido nuevo (misiones, módulos, capítulos)
+
+Todo contenido nuevo lleva un campo `"estado": "borrador"` o `"publicado"`. El hub y los módulos **filtran y solo muestran lo publicado**. Regla para cualquier sesión de Claude Code sobre este repo: **nunca registrar un módulo nuevo en el hub, ni cambiar un `estado` a `"publicado"`, sin instrucción textual de Willy en esa conversación.** Se puede construir, commitear y dejar listo contenido en borrador; visible solo cuando Willy lo publica.
 
 ## Modelo de historia por capas (corazón del proyecto)
 
@@ -37,21 +41,31 @@ Cada personaje tiene su historia dividida en **capítulos**. Uno viene con el de
 - **Capítulo 1 — base:** se enciende al descubrir la carta (Oráculo o constelación). Es la historia corta que ya existe hoy.
 - **Capítulos 2+:** cada uno se gana resolviendo un módulo específico que toca a ese personaje. Ejemplo: Teseo tiene 4 capítulos — base (descubrimiento), "el hilo de Ariadna" (trazar la Corona Boreal), "el laberinto" (crisis del laberinto, ola 3), "después de Creta" (secuenciar su mito, ola 2).
 - La carta muestra los capítulos velados con la pista de dónde se ganan ("Trazá la Corona Boreal para encender este capítulo"). Ese "me falta el capítulo 3" es el mismo gancho que "me faltan cartas", pero dentro del personaje.
-- **Carta dorada:** cuando un personaje tiene TODOS sus capítulos encendidos, la carta entera se vuelve dorada con efecto holográfico CSS. Dorada = historia completa. No es azar ni compra: es el cierre de haberlo jugado todo.
-- **Bonificaciones especiales:** algunos capítulos (marcados) solo se consiguen en un módulo puntual. Son el gancho para que explore un juego que capaz no elegiría sola: si quiere completar a su favorito, el juego la lleva a probar un módulo nuevo. La bonificación es un pedazo de historia, nunca un número de combate.
+- **Bonificaciones especiales:** algunos capítulos (marcados) solo se consiguen en un módulo puntual. Son el gancho para que explore un juego que capaz no elegiría sola. La bonificación es un pedazo de historia, nunca un número de combate.
+
+### Sistema de tiers (reemplaza a la "carta dorada" binaria)
+
+Cada personaje tiene un `tier` estático en el JSON: `"dorado"`, `"plateado"` o `"normal"`, según su peso mitológico y la densidad de su historia. El tier define el tratamiento visual máximo que la carta alcanza al completar TODOS sus capítulos:
+
+- **Dorado:** marco metálico dorado + efecto holográfico CSS animado.
+- **Plateado:** marco metálico plateado (efecto propio, menor intensidad que el dorado).
+- **Normal:** sin marco de material; solo el sello de "Historia completa".
+
+El sello de **"Historia completa"** aparece en TODA carta completada, sin importar el tier. Completar siempre se reconoce; el material es jerarquía, no premio exclusivo. Nada de esto es azar ni compra: se gana jugando.
 
 Los capítulos los aporta el juego, no la usuaria. La escritura propia (que ella escriba capítulos) queda fuera de alcance por ahora; vuelve como fase muy posterior si se decide.
 
 ## Descubrimiento de cartas — Oráculo fácil + modo difícil
 
 - **Oráculo (por defecto, fácil):** carta del día casi regalada. Una pista, un tap, la tenés. Objetivo: que junte un mazo grande en pocos días y pase rápido a enriquecer historias.
-- **Oráculo Difícil (modo opcional):** el rompecabezas deductivo completo tipo Mastermind/Cryptid que a Feli le gustó. Adivinar sin fallar da la **versión especial** del capítulo base (más largo / dorado de entrada). Preserva el desafío intelectual para cuando ELLA lo elige, sin volverlo peaje diario obligatorio.
+- **Oráculo Difícil (modo opcional):** el rompecabezas deductivo completo tipo Mastermind/Cryptid que a Feli le gustó. Adivinar sin fallar da la **versión especial** del capítulo base (más largo / con bonificación de entrada). Preserva el desafío intelectual para cuando ELLA lo elige, sin volverlo peaje diario obligatorio.
 
 ## Contrato de datos — campos en personajes.json
 
 Además de los existentes (id, nombre, mitologia, titulo, dones, historia, porque, atributos, colorCarta, icono):
 
-- `capitulos` (array de objetos): cada uno `{ id, titulo, texto, porque, fuente }`. `fuente` indica cómo se enciende: `"descubrimiento"` para el capítulo 1, o el id del módulo + condición para los demás (ej. `"cielo:corona_boreal"`). El primer capítulo del array es siempre el base.
+- `tier` (string): `"dorado"`, `"plateado"` o `"normal"`. Estático en Ola 1. Define el tratamiento visual al completar la historia (ver sistema de tiers). La asignación por personaje vive en `roster_personajes_v3.md`.
+- `capitulos` (array de objetos): cada uno `{ id, titulo, texto, porque, fuente, estado }`. `fuente` indica cómo se enciende: `"descubrimiento"` para el capítulo 1, o el id del módulo + condición para los demás (ej. `"cielo:corona_boreal"`). El primer capítulo del array es siempre el base. `estado` = `"borrador"` | `"publicado"` (ver regla de despliegue).
 - `tags_secretos` (array): clasificadores latentes para sets temáticos. No se muestran como texto plano.
 - `pistas_deduccion` (array de 3 strings): pistas del Oráculo Difícil, de lo amplio a lo singular.
 - `constelacion` (opcional): id de la constelación asociada.
@@ -63,13 +77,22 @@ Además de los existentes (id, nombre, mitologia, titulo, dones, historia, porqu
 2. Prohibido sin excepción: contenido ofensivo, sexual, violento explícito o no apto para una menor.
 3. Registro cálido, visual, creativo. No subestimar.
 4. La sección "¿Por qué?" es obligatoria en cada capítulo que revele contenido.
-5. Cronos, Medea y Hel entran al universo con versión suavizada aprobada por Willy (ver `roster_personajes_v3.md`): Cronos con foco en el miedo a ser reemplazado, sin devorar hijos; Medea como la mente táctica de los Argonautas, con final acotado; Hel como administradora seria del inframundo, en línea con Hades.
+5. **Cronos, Medea y Hel están incluidos con versión suavizada aprobada por Willy** (decisión julio 2026, revierte la exclusión original):
+   - Cronos: encuadre en el miedo al reemplazo como motor causal; sin el mito de devorar a sus hijos.
+   - Medea: la mente táctica de los Argonautas; final acotado, sin el desenlace trágico con sus hijos.
+   - Hel: equilibrio y administración del inframundo, misma línea de encuadre que Hades; sin tono tenebroso.
+   Ninguna ficha ni capítulo de estos tres lleva detalle crudo del mito original. Sus fichas completas las valida Willy antes de entrar al JSON.
+6. **Cantidad de capítulos por tier:** dorado 3-4, plateado 2-3, normal 1-2. Un personaje no se considera terminado en su tier hasta tener sus capítulos diseñados dentro del rango. Cualquier ascenso de tier futuro exige primero completar los capítulos del rango nuevo.
 
 ## Roadmap por olas
 
-**Ola 1 (este ciclo):** Hub shell + Colección (refactor, ahora muestra capítulos y cartas doradas) + Oráculo de Delfos (fácil + modo difícil) + El Cielo de los Mitos (constelaciones, encienden capítulos) + Sets temáticos latentes de fondo.
+**Ola 1 (este ciclo):** Hub shell + Colección (refactor, ahora muestra capítulos y tiers dorado/plateado/normal) + Oráculo de Delfos (fácil + modo difícil) + El Cielo de los Mitos (constelaciones, encienden capítulos) + Sets temáticos latentes de fondo + Perfiles de partida (5 slots).
 
 **Ola 2:** Ordená el Mito (secuenciador causal — enciende capítulos) + Laboratorio de Mitos en **modo lector** (arma combinaciones y lee la historia resultante; sin escritura propia todavía).
+
+**Anotado para Ola 2+ (decidido, no implementar antes):**
+- **Absorción de mitos menores:** personajes grandes incorporan mitos satélite como capítulos propios (Odiseo ← Cíclope/Lotófagos/Sirenas, Zeus ← Filemón y Baucis, Prometeo ← Deucalión y Pirra). No requiere campo nuevo en el JSON: se resuelve redefiniendo el contenido de capítulos existentes cuando el Laboratorio de Mitos (modo lector) lo necesite. No tocar el contrato de datos por esto en Ola 1.
+- **Rutas de ascensión de tier:** Minotauro y Fenrir a plateado vía expansiones temáticas; Pegaso y Medusa vía sinergia de set (Perseo+Andrómeda+Medusa+Pegaso). Cuando se implemente, agregar `tier_base` y `tier_maximo_posible` al JSON. En Ola 1 el tier es estático.
 
 **Ola 3:** Crisis del Mundo Antiguo (duelo paramétrico pacífico — enciende capítulos) + ¿Quién es quién? (deducción invertida) + Memoria de Espejos + Acertijos de la Esfinge.
 
@@ -81,5 +104,5 @@ Cada ola está terminada cuando Feli la usó sola, entendió las reglas sin que 
 
 ## Archivos del proyecto
 
-- `roster_personajes.md`: 68 personajes con fichas y capítulos.
-- `spec_funcional.md`: spec del hub, formato de carta y módulos de la ola 1 y 2.
+- `roster_personajes_v3.md`: master de 80 personajes con tiers, estado de fichas y capítulos. Gobierna la composición del roster. Las fichas individuales heredadas siguen vigentes en `roster_personajes.md` hasta consolidarlas.
+- `spec_funcional.md`: spec del hub, formato de carta, perfiles de partida y módulos de la ola 1 y 2.
