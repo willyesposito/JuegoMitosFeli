@@ -27,7 +27,41 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El héroe del laberinto",
+        "texto": "Teseo era un príncipe de Atenas que se ofreció a viajar a Creta para enfrentar al Minotauro, la criatura que vivía en un laberinto del que nadie sabía salir. Antes de entrar, la princesa Ariadna le dio un ovillo de hilo para que lo fuera desenrollando por el camino. Teseo derrotó al Minotauro y, siguiendo el hilo, encontró la salida del laberinto. Volvió a Atenas convertido en héroe, gracias a su coraje... y a un buen plan.",
+        "porque": "La inteligencia y la preparación valen tanto como la fuerza. El hilo de Ariadna es el plan que conviene tener antes de cualquier aventura: los griegos sabían que el coraje solo no alcanza.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "hilo_ariadna",
+        "titulo": "El hilo de Ariadna",
+        "texto": "",
+        "porque": "",
+        "fuente": "cielo:corona_boreal",
+        "estado": "borrador"
+      },
+      {
+        "id": "laberinto",
+        "titulo": "El laberinto",
+        "texto": "",
+        "porque": "",
+        "fuente": "crisis:laberinto",
+        "estado": "borrador"
+      },
+      {
+        "id": "despues_creta",
+        "titulo": "Después de Creta",
+        "texto": "",
+        "porque": "",
+        "fuente": "ordena:teseo",
+        "estado": "borrador"
+      }
+    ]
   },
   {
     "id": "heracles",
@@ -57,7 +91,41 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El héroe de los doce trabajos",
+        "texto": "Heracles fue el héroe más fuerte de toda Grecia, y le encargaron doce trabajos que parecían imposibles. Venció a la Hidra, una serpiente de muchas cabezas que se volvía más difícil con cada intento. Capturó al enorme león de Nemea, cuya piel nada podía atravesar. Y limpió en un solo día los establos de Augías desviando un río entero para que el agua hiciera el trabajo. Uno por uno, completó los doce desafíos que nadie creía posibles.",
+        "porque": "Cada trabajo era «imposible» y Heracles siempre encontró la manera: a veces con fuerza, a veces con ingenio. El mito enseña a perseverar cuando la tarea parece más grande que uno.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "leon_nemea",
+        "titulo": "El león de Nemea",
+        "texto": "",
+        "porque": "",
+        "fuente": "cielo:leo",
+        "estado": "borrador"
+      },
+      {
+        "id": "establos_augias",
+        "titulo": "Los establos de Augías",
+        "texto": "",
+        "porque": "",
+        "fuente": "crisis:establos_augias",
+        "estado": "borrador"
+      },
+      {
+        "id": "doce_trabajos",
+        "titulo": "Los doce trabajos",
+        "texto": "",
+        "porque": "",
+        "fuente": "ordena:heracles",
+        "estado": "borrador"
+      }
+    ]
   },
   {
     "id": "penelope",
@@ -87,7 +155,25 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La reina del telar",
+        "texto": "Mientras su esposo Odiseo tardaba años en volver de Troya, Penélope gobernaba en Ítaca rodeada de pretendientes que querían quedarse con el trono. Ella prometió que elegiría a uno cuando terminara de tejer un gran manto. Pero cada noche, en secreto, destejía lo que había tejido durante el día. Así ganó tiempo durante años, sin espadas y sin gritos, hasta que Odiseo por fin volvió a casa.",
+        "porque": "Penélope es la heroína que gana sin pelear: sus poderes son la constancia y la inteligencia. El mito muestra que la paciencia bien usada puede ser más fuerte que cualquier ejército.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "regreso_odiseo",
+        "titulo": "El regreso de Odiseo",
+        "texto": "",
+        "porque": "",
+        "fuente": "ordena:penelope",
+        "estado": "borrador"
+      }
+    ]
   },
   {
     "id": "atlas",
@@ -117,7 +203,25 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El titán que sostiene el cielo",
+        "texto": "Atlas era un titán que participó en la gran guerra entre los titanes y los dioses del Olimpo. Cuando la guerra terminó, recibió una tarea única en el mundo: sostener la bóveda celeste sobre sus hombros para siempre. Desde entonces carga el cielo entero, con sus estrellas, sus nubes y sus atardeceres, sin soltarlo jamás. Por eso, cuando los griegos miraban hacia arriba, sabían quién estaba haciendo el trabajo más pesado del universo.",
+        "porque": "Los griegos usaban este mito para explicar por qué el cielo no se cae: alguien tenía que estar sosteniéndolo. Los mitos eran su manera de entender el mundo antes de que existiera la ciencia.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "boveda_celeste",
+        "titulo": "La bóveda celeste",
+        "texto": "",
+        "porque": "",
+        "fuente": "cielo:atlas",
+        "estado": "borrador"
+      }
+    ]
   },
   {
     "id": "odiseo",
@@ -147,7 +251,17 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El más astuto de los griegos",
+        "texto": "Odiseo fue el más astuto de todos los griegos: a él se le ocurrió el famoso caballo de madera con el que entraron a Troya. Después de la guerra tardó diez años en volver a su casa en Ítaca, sorteando cíclopes, sirenas y tormentas. Cuando el cíclope Polifemo los encerró en su cueva, Odiseo lo engañó con un truco ingenioso y escaparon escondidos entre las ovejas. Siempre pensaba primero y actuaba después, y así llegó a casa donde otros no lo habían logrado.",
+        "porque": "Odiseo es el héroe que gana con la cabeza donde otros pierden con la espada. Los griegos admiraban tanto la astucia que le dedicaron un héroe entero y un viaje de diez años.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "atenea",
@@ -177,7 +291,17 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La diosa de la sabiduría",
+        "texto": "Atenea nació de una manera única: salió de la cabeza de Zeus, ya con su armadura puesta. Es la diosa de la sabiduría y la estrategia, y protegió a héroes como Odiseo y Perseo en sus aventuras. Una vez compitió con Poseidón por una ciudad griega: él ofreció una fuente de agua y ella ofreció el olivo, un árbol que daba comida, aceite y sombra. La ciudad la eligió a ella, y por eso hoy se llama Atenas.",
+        "porque": "Para los griegos, la sabiduría era el poder más alto del Olimpo: más que la fuerza y más que el rayo. Su ciudad más famosa eligió llamarse como la diosa que pensaba antes de actuar.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "perseo",
@@ -208,7 +332,17 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El héroe del escudo espejo",
+        "texto": "A Perseo le encargaron una misión que parecía imposible: vencer a Medusa, cuya mirada convertía en piedra a cualquiera que la mirara de frente. Los dioses lo ayudaron con regalos mágicos: sandalias voladoras, un casco de invisibilidad y un escudo brillante como un espejo. Perseo la venció sin mirarla directo ni una sola vez: se guió únicamente por el reflejo en su escudo. Así resolvió el desafío que nadie más había podido resolver.",
+        "porque": "A veces un problema no se enfrenta de frente, sino desde otro ángulo. Perseo ganó porque encontró una manera distinta de mirar.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "dedalo",
@@ -238,7 +372,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El gran inventor",
+        "texto": "Dédalo era el inventor más grande de Grecia: él mismo construyó el famoso laberinto de Creta. Cuando el rey no lo dejó irse de la isla, fabricó alas de plumas y cera para él y para su hijo Ícaro. Antes de despegar le advirtió: «No vueles demasiado alto, porque el sol derrite la cera». Ícaro se entusiasmó tanto que subió más y más, sus alas se deshicieron y cayó al mar, que desde entonces lleva su nombre. Dédalo, que voló a la altura justa, llegó a salvo al otro lado.",
+        "porque": "El mito habla de escuchar los consejos de quien sabe, y del equilibrio entre volar alto y volar seguro. Inventar es un poder enorme... y usarlo bien, todavía más.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "thor",
@@ -268,7 +412,33 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El dios del trueno",
+        "texto": "Thor es el protector de los dioses y de los humanos, el más fuerte de todo Asgard. Su martillo Mjölnir tiene un poder especial: por más lejos que lo lance, siempre vuelve a su mano. Con él controla los truenos y los rayos. Cruza el cielo en un carro tirado por dos cabras y, cuando pasa a toda velocidad, el cielo entero retumba.",
+        "porque": "Los nórdicos explicaban las tormentas como Thor cruzando el cielo: los truenos eran las ruedas de su carro y los rayos, los golpes de su martillo. Cada cultura inventó una historia para el mismo misterio del cielo.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "mjolnir",
+        "titulo": "Mjölnir",
+        "texto": "",
+        "porque": "",
+        "fuente": "ordena:thor",
+        "estado": "borrador"
+      },
+      {
+        "id": "jotunheim",
+        "titulo": "Jotunheim",
+        "texto": "",
+        "porque": "",
+        "fuente": "crisis:jotunheim",
+        "estado": "borrador"
+      }
+    ]
   },
   {
     "id": "loki",
@@ -298,7 +468,33 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El tramposo de Asgard",
+        "texto": "Loki es el tramposo de Asgard: puede cambiar de forma y transformarse en halcón, en mosca o en lo que necesite. Su ingenio no tiene límites, pero lo usa a veces para ayudar y a veces para meterse en líos enormes. Muchas de las mejores historias nórdicas empiezan con un problema que causó Loki... y terminan con una solución que también encontró él. Los dioses nunca sabían si agradecerle o retarlo.",
+        "porque": "Loki muestra que la astucia sin cuidado trae consecuencias. Los nórdicos contaban sus travesuras para reírse, pero también para pensar qué pasa cuando alguien muy inteligente no mide lo que hace.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "pelo_sif",
+        "titulo": "El pelo de Sif",
+        "texto": "",
+        "porque": "",
+        "fuente": "crisis:pelo_sif",
+        "estado": "borrador"
+      },
+      {
+        "id": "atar_fenrir",
+        "titulo": "Fenrir",
+        "texto": "",
+        "porque": "",
+        "fuente": "crisis:atar_fenrir",
+        "estado": "borrador"
+      }
+    ]
   },
   {
     "id": "odin",
@@ -328,7 +524,33 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El Padre de Todos",
+        "texto": "Odín es el Padre de Todos, el más sabio de los dioses nórdicos. Tiene dos cuervos, Hugin y Munin, que vuelan por el mundo entero y vuelven cada noche a contarle todo lo que vieron. Quería tanto la sabiduría que viajó hasta el pozo de Mimir, donde estaba el agua del conocimiento más profundo. El guardián le pidió algo muy valioso a cambio: uno de sus ojos. Odín aceptó el intercambio sin dudarlo, y desde entonces ve menos con los ojos... pero entiende mucho más con la mente.",
+        "porque": "El conocimiento tiene un precio: tiempo, esfuerzo, a veces algo que nos importa mucho. Para los nórdicos la sabiduría valía más que cualquier tesoro, y Odín lo demostró.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "ojo_pozo",
+        "titulo": "El ojo en el pozo",
+        "texto": "",
+        "porque": "",
+        "fuente": "crisis:pozo_mimir",
+        "estado": "borrador"
+      },
+      {
+        "id": "cuervos",
+        "titulo": "Los cuervos",
+        "texto": "",
+        "porque": "",
+        "fuente": "cielo:cuervos",
+        "estado": "borrador"
+      }
+    ]
   },
   {
     "id": "freya",
@@ -358,7 +580,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La diosa de la magia",
+        "texto": "Freya es la diosa nórdica del amor y de la magia seidr, la más poderosa de todas las magias. Viaja en un carro tirado por dos gatos y tiene una capa de plumas de halcón que le permite volar por los nueve mundos. Fue ella quien les enseñó magia a los propios dioses: hasta Odín, el más sabio, aprendió de ella.",
+        "porque": "En los mitos nórdicos, la magia más poderosa la maneja una diosa. Y Freya muestra algo más: enseñar lo que uno sabe también es una forma de poder.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "heimdall",
@@ -388,7 +620,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El guardián del arcoíris",
+        "texto": "Heimdall es el guardián de Asgard: vigila el Bifröst, el puente arcoíris que conecta el mundo de los dioses con el nuestro. Sus sentidos son increíbles: ve a cientos de kilómetros de distancia, escucha crecer el pasto y no duerme jamás. Si algún peligro se acerca, hace sonar su cuerno Gjallarhorn, tan potente que se escucha en los nueve mundos a la vez.",
+        "porque": "Para los nórdicos, el arcoíris era un puente entre el mundo de los dioses y el nuestro. Cuando aparecía uno después de la lluvia, era la puerta de Asgard dejándose ver un ratito.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "sif",
@@ -417,7 +659,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La diosa del cabello de oro",
+        "texto": "Sif es una diosa de Asgard famosa por su hermoso cabello dorado. Una vez, Loki se lo cortó como broma... y la broma le salió carísima. Para arreglar el lío, Loki tuvo que viajar hasta los enanos, los mejores herreros de los nueve mundos, y conseguir que forjaran para Sif un cabello nuevo de oro puro. Los enanos hicieron algo increíble: un cabello de oro verdadero que brilla al sol y crece como pelo real.",
+        "porque": "Los nórdicos asociaban el cabello dorado de Sif con los campos de trigo maduro que brillan al sol. Y la historia enseña que las bromas sin cuidado traen consecuencias... aunque a veces terminen en algo hermoso.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "tyr",
@@ -447,7 +699,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El más valiente de los dioses",
+        "texto": "Los dioses necesitaban sujetar a Fenrir, un lobo gigante que crecía sin parar, con una cinta mágica hecha por los enanos. Pero el lobo desconfiaba y solo aceptaba si un dios ponía la mano cerca de su boca como prenda de confianza mientras lo ataban. Nadie se animaba... excepto Tyr. Fenrir quedó sujeto con la cinta mágica, y Tyr perdió la mano en el trato. Sabía que podía pasar, y lo hizo igual, porque era lo necesario para proteger a todos.",
+        "porque": "Valentía no es no tener miedo: es hacer lo necesario aun sabiendo lo que puede costar. Por eso los nórdicos decían que Tyr era el más valiente de todos los dioses.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "zeus",
@@ -477,7 +739,17 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El rey del Olimpo",
+        "texto": "Zeus lideró a los dioses del Olimpo en la gran guerra contra los titanes, y ganaron. Cuando repartieron el mundo con sus hermanos, a él le tocó gobernar el cielo. Desde ahí lanza el rayo, su arma más temida, y pone orden cuando dioses o mortales se pelean demasiado. Es el rey del Olimpo, pero no gobierna solo: escucha consejos, se enoja, y a veces también se equivoca.",
+        "porque": "Los griegos explicaban los truenos y los rayos como la voz y el arma de Zeus. El mito también mostraba que hasta el rey de los dioses necesita poner límites y mantener el orden entre tantas personalidades fuertes.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "hera",
@@ -507,7 +779,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La reina del Olimpo",
+        "texto": "Hera es la reina de los dioses del Olimpo y la esposa de Zeus. Es la diosa del matrimonio y la familia, y protege especialmente a quienes cumplen sus promesas. Su animal sagrado es el pavo real, cuya cola tiene cien ojos: son un recuerdo de Argos, un guardián leal de cien ojos que ella tenía a su servicio. Defiende lo suyo con firmeza y no perdona fácil una traición.",
+        "porque": "Los griegos usaban a Hera para hablar del compromiso y la lealtad dentro de una familia. Los ojos de la cola del pavo real explicaban un dibujo real de la naturaleza a través de la historia de su guardián Argos.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "poseidon",
@@ -538,7 +820,17 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El señor del mar",
+        "texto": "Poseidón es el señor de todos los mares, ríos y aguas del mundo griego. Cuando reparte el mundo con sus hermanos Zeus y Hades, a él le toca gobernar el océano entero. Lleva un tridente que puede agitar las olas o calmarlas, y golpear el suelo con él hace temblar la tierra. Los griegos también le atribuían la creación del caballo, un animal tan veloz y fuerte como importante para ellos.",
+        "porque": "En un pueblo de navegantes como el griego, tenía sentido que existiera un dios que explicara las tormentas marinas y los terremotos: bastaba con imaginar a Poseidón enojado.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "hades",
@@ -568,7 +860,17 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El guardián del mundo subterráneo",
+        "texto": "Cuando los tres hermanos —Zeus, Poseidón y Hades— repartieron el mundo después de la guerra contra los titanes, a Hades le tocó gobernar el reino de abajo. No es el «malo» de la mitología griega: es serio, cumple las reglas al pie de la letra y cuida que todo esté en su lugar. Tiene un casco que lo vuelve invisible y es dueño de todas las riquezas que hay bajo tierra, desde el oro hasta las piedras preciosas.",
+        "porque": "Los griegos no imaginaban a Hades como un villano, sino como el guardián estricto de un reino necesario: alguien tenía que ocuparse de esa parte del mundo, y él lo hacía con seriedad y justicia.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "demeter",
@@ -598,7 +900,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La diosa de las cosechas",
+        "texto": "Deméter es la diosa griega de las cosechas y de la tierra fértil: donde ella pone atención, los campos se llenan de trigo y fruta. Su hija Perséfone pasa parte del año con ella y parte en el mundo subterráneo, y el ánimo de Deméter cambia según eso. Cuando están juntas, la tierra florece; cuando se separan, Deméter se entristece y los campos descansan.",
+        "porque": "Los griegos explicaban así el cambio de estaciones: la alegría y la tristeza de una diosa de la tierra, contada a través de su relación con su hija Perséfone.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "persefone",
@@ -628,7 +940,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La reina de las dos estaciones",
+        "texto": "Perséfone es la hija de Deméter y vive una vida repartida entre dos mundos: la mitad del año la pasa en el reino de Hades y la otra mitad en la superficie, junto a su madre. Cuando está arriba, la tierra florece de alegría con la primavera y el verano; cuando baja, Deméter se entristece y llega el otoño, después el invierno. Así lo acordaron los dos mundos, para que Perséfone pudiera pertenecer a ambos.",
+        "porque": "Este mito era la manera griega de explicar por qué las estaciones cambian: la alegría y la tristeza de una madre por su hija, repetida todos los años.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "hestia",
@@ -658,7 +980,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La guardiana del hogar",
+        "texto": "Hestia es la diosa griega del hogar y del fuego que arde en cada casa. Es la más tranquila y serena de todos los dioses del Olimpo: no participa en peleas ni en aventuras ruidosas, prefiere cuidar que el fuego de cada familia siga encendido. Cada casa griega tenía un fuego dedicado a ella, y también las ciudades mantenían uno público en su nombre.",
+        "porque": "Para los griegos, el hogar era el centro de todo: por eso le dedicaron una diosa entera solo para representar ese calor tranquilo que sostiene a una familia.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "apolo",
@@ -688,7 +1020,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El dios del sol y la música",
+        "texto": "Apolo es el dios griego del sol, la música y la poesía. Con su lira tocaba la música más hermosa que se había escuchado, capaz de calmar a cualquiera. En su templo de Delfos, la gente viajaba desde lugares lejanos para hacerle preguntas sobre el futuro a través de su oráculo. Es hermano mellizo de Artemisa: él representa el día, ella la noche.",
+        "porque": "Apolo junta en un solo dios dos cosas que los griegos valoraban muchísimo: el arte y el conocimiento. Para ellos, la belleza y la sabiduría iban de la mano.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "artemisa",
@@ -719,7 +1061,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La diosa de la caza y la luna",
+        "texto": "Artemisa es la diosa griega de la caza y de la luna, y hermana melliza de Apolo: mientras él representa el sol, ella representa la noche. Lleva siempre su arco, con el que nunca falla un tiro, y protege a los animales salvajes del bosque. A diferencia de otras diosas, eligió vivir libre e independiente, sin atarse a nadie.",
+        "porque": "Los griegos la admiraban como un espejo distinto de la feminidad de su época: una diosa fuerte, independiente y dueña de sus propias decisiones.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "ares",
@@ -749,7 +1101,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El dios de la guerra",
+        "texto": "Ares es el dios griego de la guerra: pelea sin dudar y nunca retrocede frente a un enemigo. A diferencia de Atenea, que piensa la estrategia antes de actuar, Ares se lanza directo a la acción. Los propios griegos le tenían un poco de desconfianza, y muchas veces preferían el lado prudente de Atenea antes que el impulso de Ares.",
+        "porque": "El contraste entre Ares y Atenea le servía a los griegos para hablar de dos maneras de enfrentar un conflicto: la fuerza bruta sin pensar, contra la estrategia inteligente. Para ellos, la segunda ganaba casi siempre.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "afrodita",
@@ -779,7 +1141,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La diosa del amor y la belleza",
+        "texto": "Afrodita es la diosa griega del amor y la belleza. Los mitos cuentan que nació de la espuma del mar y llegó a la orilla flotando sobre una concha. Es capaz de despertar el amor entre dioses y mortales con solo proponérselo, y su sola presencia hace más bello todo lo que la rodea.",
+        "porque": "Para los griegos, el amor era una fuerza tan poderosa e imposible de controlar que necesitaba tener su propia diosa. Afrodita mostraba que ese sentimiento merecía tanto respeto como la guerra o la sabiduría.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "hefesto",
@@ -809,7 +1181,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El herrero de los dioses",
+        "texto": "Hefesto es el herrero de los dioses griegos: en su fragua, escondida bajo los volcanes, inventa cosas que nadie más había imaginado. Forjó el rayo de Zeus, armaduras que ningún arma podía atravesar, y hasta figuras de bronce capaces de moverse solas. Trabaja incansablemente mientras los demás dioses discuten o festejan, y ningún encargo le resulta demasiado difícil.",
+        "porque": "Los griegos creían que los volcanes humeaban porque Hefesto estaba trabajando ahí abajo. Es el dios que representa el ingenio manual: la idea de que crear con las manos es también una forma de poder.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "hermes",
@@ -840,7 +1222,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El mensajero de los dioses",
+        "texto": "Hermes es el mensajero de los dioses griegos: con sus sandalias aladas, es el más rápido de todo el Olimpo. Cuenta la leyenda que de bebé, recién nacido, se escapó de su cuna y escondió el ganado de su hermano Apolo como travesura. Cuando lo descubrieron, inventó la lira con el caparazón de una tortuga y se la regaló a Apolo para hacer las paces, y así lo perdonaron por su ingenio.",
+        "porque": "Hermes representa la rapidez de mente y de pies a la vez. Los griegos lo imaginaban como el dios que conecta todos los mundos: el de los dioses, el de los humanos y hasta el de los viajeros en el camino.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "dioniso",
@@ -869,7 +1261,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El dios del teatro y las fiestas",
+        "texto": "Dioniso es el dios griego del teatro y de las fiestas compartidas. En su honor, los griegos organizaban grandes festivales donde se representaban obras de teatro frente a todo el pueblo: así nació el teatro tal como lo conocemos hoy. Le gusta reunir a la gente para celebrar juntos, contar historias actuadas y disfrutar de la compañía de otros.",
+        "porque": "El teatro griego nació justamente en los festivales dedicados a Dioniso. Él representa la alegría de contar historias en comunidad, algo que los griegos valoraban tanto como cualquier otra forma de arte.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "nike",
@@ -899,7 +1301,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La victoria alada",
+        "texto": "Nike es la diosa griega de la victoria, y siempre se la representa con alas, lista para volar junto a quien está por ganar una competencia o una batalla. Los griegos la esculpían en templos y en monedas como símbolo de triunfo. Su nombre sigue tan presente hoy que una marca de zapatillas muy famosa se llama igual que ella.",
+        "porque": "Nike encarna ese instante exacto del triunfo: los griegos la ponían en todos lados donde querían celebrar un logro, desde templos hasta monedas.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "iris",
@@ -928,7 +1340,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La mensajera del arcoíris",
+        "texto": "Iris es la mensajera de los dioses griegos, y su camino para viajar entre el cielo y la tierra es el arcoíris. Lleva noticias de un lado a otro tan rápido como aparece un arcoíris después de la lluvia. Es el espejo griego de Heimdall en la mitología nórdica: dos culturas distintas que imaginaron guardianes o mensajeros del mismo puente de colores.",
+        "porque": "El arcoíris era, para los griegos, el camino que usaba Iris para moverse entre los mundos. Comparar su historia con la de Heimdall muestra cómo culturas distintas pueden explicar el mismo fenómeno natural con historias diferentes.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "helios",
@@ -957,7 +1379,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El dios que conduce el sol",
+        "texto": "Helios es el dios griego que conduce el carro del sol a través del cielo todos los días, desde que amanece por el este hasta que se esconde por el oeste. Nadie más puede sostener las riendas de ese carro brillante sin quemarse. Gracias a su recorrido diario, el mundo tiene luz durante el día.",
+        "porque": "Los griegos explicaban el amanecer y el atardecer como el viaje diario de Helios cruzando el cielo con su carro de fuego.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "selene",
@@ -986,7 +1418,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La diosa que conduce la luna",
+        "texto": "Selene es la diosa griega que conduce el carro plateado de la luna a través del cielo nocturno. Mientras Helios cruza el cielo de día, ella hace su propio recorrido de noche, iluminando el mundo con una luz mucho más suave. Es la pareja natural de Helios: uno ilumina el día, la otra la noche.",
+        "porque": "El recorrido de la luna cada noche, cambiando de forma poco a poco, se explicaba con la historia de Selene cruzando el cielo en su carro.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "pan",
@@ -1016,7 +1458,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El dios de los pastores y los bosques",
+        "texto": "Pan es el dios griego de los pastores y de los bosques, mitad hombre y mitad cabra. Le encanta la música y fue él quien inventó la flauta hecha con cañas del río, un instrumento que todavía lleva su nombre en algunas culturas. Vive entre montañas y arboledas, y cuando algo lo sorprende, su grito es tan fuerte que asusta a cualquiera.",
+        "porque": "Cuando Pan gritaba de repente en el bosque, sorprendía tanto a viajeros y animales que de ahí surgió la palabra «pánico», el miedo repentino que aparece de la nada.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "prometeo",
@@ -1046,7 +1498,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El titán que regaló el fuego",
+        "texto": "Prometeo es un titán conocido por su ingenio y, sobre todo, por un regalo enorme: le llevó el fuego a los humanos, que hasta entonces vivían a oscuras y con frío. Lo robó del Olimpo escondido dentro de una caña hueca y se lo entregó a las personas sin pedir nada a cambio. Zeus se enojó muchísimo por esa decisión y lo castigó con dureza, hasta que mucho tiempo después Heracles lo liberó.",
+        "porque": "Prometeo representa a quien se sacrifica para que otros progresen. Con el fuego llegaron la cocina, la luz para las noches y las herramientas: un regalo que cambió la vida de la humanidad entera.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "aquiles",
@@ -1076,7 +1538,17 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El guerrero casi invencible",
+        "texto": "Aquiles fue el guerrero más veloz y fuerte que peleó en la guerra de Troya. De bebé, su madre lo sumergió en unas aguas mágicas que volvían invulnerable cualquier parte del cuerpo que tocaran. Pero lo sostuvo del talón para no soltarlo, y ese fue el único lugar que quedó sin protección. Por eso, hoy en día, cuando hablamos del punto débil de alguien, decimos que es «su talón de Aquiles».",
+        "porque": "El mito enseña que hasta el más fuerte tiene un punto débil. Esa idea quedó tan marcada que la usamos todavía hoy como una expresión de la vida diaria.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "hector",
@@ -1106,7 +1578,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El defensor de Troya",
+        "texto": "Héctor fue el gran defensor de la ciudad de Troya durante la guerra más famosa de la mitología griega. A diferencia de otros guerreros, no peleaba por conseguir gloria personal, sino por proteger a su familia y a su gente. Era considerado el corazón de la defensa troyana, y hasta sus enemigos respetaban su valentía.",
+        "porque": "Héctor representa el héroe del deber: alguien que no busca fama, sino cuidar lo que le importa. Es el rival y el espejo de Aquiles: dos formas distintas de entender el coraje.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "jason",
@@ -1136,7 +1618,17 @@
       ],
       "correcta": 0
     },
-    "tier": "dorado"
+    "tier": "dorado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El capitán de los Argonautas",
+        "texto": "Jasón fue el capitán de los Argonautas, un grupo con los mejores héroes de toda Grecia reunidos en un solo barco, el Argo. Navegaron hasta el fin del mundo conocido para conseguir el vellocino de oro, la piel dorada de un carnero mágico. Cada Argonauta aportaba un talento distinto —fuerza, música, velocidad— y juntos lograron lo que ninguno hubiera podido solo.",
+        "porque": "La historia de Jasón y los Argonautas es uno de los primeros grandes relatos de trabajo en equipo de la mitología: la idea de que cada persona suma algo distinto para lograr una meta común.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "orfeo",
@@ -1165,7 +1657,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El músico que encantaba al mundo",
+        "texto": "Orfeo tocaba la lira tan bien que su música encantaba a personas, animales, piedras y hasta a los propios dioses. Cuando perdió a su amada Eurídice, bajó al mundo subterráneo armado solo con su instrumento para pedir que se la devolvieran. Su música conmovió tanto al mismísimo Hades que casi lo logra, aunque una condición del trato terminó complicando el final.",
+        "porque": "Orfeo demuestra que el arte puede ser el poder más raro de todos: no vence con fuerza, convence con belleza. A veces la música llega a lugares donde ni las armas ni los ejércitos pueden entrar.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "ariadna",
@@ -1195,7 +1697,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La princesa del hilo",
+        "texto": "Ariadna era una princesa de Creta y la verdadera artífice del plan que le permitió a Teseo salir con vida del laberinto. Antes de que él entrara a enfrentar al Minotauro, ella le dio un ovillo de hilo para que lo fuera desenrollando por el camino. Sin esa idea, Teseo jamás hubiera encontrado la salida, por más coraje que tuviera.",
+        "porque": "El verdadero plan del laberinto fue de Ariadna: sin ella no existe la hazaña de Teseo. Su historia conecta directo con esa carta y muestra que detrás de cada gran hazaña suele haber alguien que pensó el plan.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "atalanta",
@@ -1225,7 +1737,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La corredora más veloz de Grecia",
+        "texto": "Atalanta era la corredora más veloz y la cazadora más experta de toda Grecia. Solo aceptaba casarse con quien pudiera ganarle una carrera, y durante mucho tiempo nadie lo logró. Un pretendiente finalmente ganó dejando caer tres manzanas de oro en el camino para distraerla, ya que ella no podía resistirse a juntarlas. Además de correr y cazar, Atalanta también navegó junto a los Argonautas, de igual a igual con los mejores héroes de Grecia.",
+        "porque": "Atalanta es una heroína en un mundo lleno de héroes varones: corrió, cazó y navegó al mismo nivel que cualquiera de ellos, algo poco común en los mitos griegos de la época.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "belerofonte",
@@ -1254,7 +1776,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El jinete de Pegaso",
+        "texto": "Belerofonte logró domar a Pegaso, el caballo alado, gracias a una brida de oro que le regaló la propia Atenea. Con Pegaso como compañero, se enfrentó a la Quimera, un monstruo que combinaba varias criaturas en una. En vez de pelear de frente, Belerofonte la atacó volando desde el aire, un lugar al que el monstruo no podía llegar.",
+        "porque": "Belerofonte enseña que a veces conviene cambiar el terreno del problema: algo imposible de resolver de frente puede volverse simple si se lo mira desde otro ángulo, incluso desde arriba.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "pandora",
@@ -1284,7 +1816,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La primera mujer de la mitología griega",
+        "texto": "Pandora fue la primera mujer creada por los dioses griegos, y cada uno le hizo un regalo distinto para formarla. Le entregaron una jarra con una sola orden: nunca abrirla. La curiosidad pudo más, y cuando finalmente la abrió, salieron volando todos los problemas del mundo. Pero en el fondo de la jarra quedó algo más: la esperanza, que nunca terminó de escaparse.",
+        "porque": "El mito explicaba de dónde vienen los problemas del mundo, y por qué, por más difícil que se ponga todo, la esperanza nunca se va del todo.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "aracne",
@@ -1313,7 +1855,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La mejor tejedora del mundo",
+        "texto": "Aracne era, según ella misma, la mejor tejedora de todo el mundo mortal. Tanto se enorgullecía de su talento que un día presumió que tejía mejor que la propia Atenea, y la desafió a una competencia. La diosa aceptó, y al final del desafío la transformó en araña, condenada a tejer telas para siempre.",
+        "porque": "El mito explicaba por qué las arañas tejen telas tan perfectas, y de paso dejaba una lección sobre los límites de presumir frente a quien tiene mucho más poder.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "midas",
@@ -1342,7 +1894,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El rey del toque de oro",
+        "texto": "El rey Midas pidió un deseo que parecía perfecto: que todo lo que tocara se convirtiera en oro. Al principio fue maravilloso, hasta que se dio cuenta de que también su comida y su agua se transformaban en oro apenas las rozaba. Sin poder comer ni beber, tuvo que pedir con urgencia que le quitaran el deseo que él mismo había pedido.",
+        "porque": "El mito de Midas es una advertencia clásica: hay que tener cuidado con lo que se desea, porque hasta el deseo más perfecto puede convertirse en el peor problema.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "pegaso",
@@ -1372,7 +1934,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El caballo alado",
+        "texto": "Pegaso es un caballo alado capaz de volar más alto que cualquier ave. Cuenta la leyenda que de una patada de su casco brotó una fuente mágica, la fuente de las musas, que desde entonces inspira a poetas y artistas. Varios héroes, como Belerofonte, lograron volar junto a él en sus aventuras más importantes.",
+        "porque": "Pegaso es el símbolo griego de la inspiración: por eso su imagen sigue apareciendo en logos, cuentos y películas hasta el día de hoy.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "quiron",
@@ -1402,7 +1974,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El centauro sabio",
+        "texto": "Quirón era un centauro muy distinto a los demás: paciente, culto y sabio, cuando la mayoría de los centauros eran conocidos por su carácter salvaje. Se convirtió en maestro de medicina, música, arquería y estrategia, y entrenó a algunos de los héroes más importantes de Grecia, como Aquiles y Jasón. Detrás de casi cada gran héroe griego había pasado, en algún momento, por sus enseñanzas.",
+        "porque": "La historia de Quirón recuerda que detrás de cada héroe suele haber un maestro. Saber enseñar lo que uno sabe es, para los griegos, una forma de poder tan valiosa como cualquier otra.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "fenix",
@@ -1431,7 +2013,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El ave que siempre renace",
+        "texto": "El Fénix es un ave de fuego capaz de renacer de sus propias cenizas cada vez que su vida llega al final. Ningún final es realmente definitivo para ella: siempre encuentra la manera de volver a empezar, con las plumas todavía más brillantes que antes.",
+        "porque": "El Fénix es el símbolo de volver a empezar después de cualquier caída. Los mitos usan esta ave para hablar de la esperanza de recuperarse, sin importar cuán difícil parezca el momento.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "cerbero",
@@ -1461,7 +2053,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El guardián de tres cabezas",
+        "texto": "Cerbero es el perro guardián de tres cabezas que cuida la entrada al reino de Hades: nadie puede pasar sin su permiso. A pesar de lo imponente que resulta, tiene un punto flojo: la música lo calma. Orfeo logró que se durmiera tocando su lira, y Heracles lo llevó consigo, sin lastimarlo, como parte de uno de sus doce trabajos.",
+        "porque": "Hasta el guardián más temible tiene su punto débil: en este caso, una buena canción. El mito enseña que la fuerza no siempre es la única manera de resolver un desafío.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "medusa",
@@ -1491,7 +2093,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El desafío del espejo",
+        "texto": "Medusa vivía en una isla lejana, y su mirada tenía un poder tan fuerte que convertía en piedra a cualquiera que la mirara de frente. Nadie se animaba a acercarse a ella. Perseo fue quien finalmente logró vencerla, y lo hizo sin mirarla ni una sola vez: se guió solamente por su reflejo en un escudo brillante.",
+        "porque": "La historia de Medusa es el desafío que no se puede mirar de frente, y conecta directo con la carta de Perseo: dos formas distintas de contar la misma hazaña.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "esfinge",
@@ -1521,7 +2133,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La guardiana de los acertijos",
+        "texto": "La Esfinge es una criatura guardiana que solo deja pasar a quien responde bien su acertijo. El más famoso de todos decía: «¿Qué camina en cuatro patas a la mañana, en dos al mediodía y en tres a la tarde?». Edipo fue quien encontró la respuesta correcta: el ser humano, que gatea de bebé, camina de adulto y usa un bastón de anciano.",
+        "porque": "La Esfinge muestra el poder de las preguntas: a veces un buen acertijo puede ser un desafío tan grande como cualquier batalla.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "minotauro",
@@ -1551,7 +2173,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El habitante del laberinto",
+        "texto": "El Minotauro es una criatura mitad hombre y mitad toro que vivía en el laberinto de Creta, construido especialmente para él por el inventor Dédalo. Conocía cada rincón de ese laberinto como nadie más, y su fuerza era descomunal. Teseo fue quien finalmente logró enfrentarlo, gracias al plan que le dio Ariadna con su ovillo de hilo.",
+        "porque": "El Minotauro cierra el círculo de una misma historia junto a Teseo, Ariadna y Dédalo: cuatro cartas distintas que cuentan una sola aventura desde ángulos diferentes.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "frigg",
@@ -1581,7 +2213,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La reina de Asgard",
+        "texto": "Frigg es la reina de Asgard y la esposa de Odín. Conoce el destino de todos los dioses y de todos los humanos, pero jamás lo revela, ni siquiera cuando eso podría evitar una desgracia. Guarda ese conocimiento con una discreción total, como parte de su forma tranquila de ejercer el poder.",
+        "porque": "Frigg representa el poder de saber algo importante y elegir quedarse callada. De su nombre en inglés antiguo viene la palabra «Friday» (viernes), el día dedicado a ella.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "balder",
@@ -1611,7 +2253,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El dios más querido de Asgard",
+        "texto": "Balder era el dios nórdico más querido y luminoso de todo Asgard: literalmente brillaba con luz propia. Era tan amado que su madre Frigg le pidió a cada cosa del mundo —animales, plantas, piedras, metales— que jurara nunca hacerle daño. Solo una plantita pequeña quedó afuera de ese juramento: el muérdago, que a nadie le pareció lo suficientemente importante como para pedirle nada.",
+        "porque": "El mito enseña que por más que uno se proteja de todo, siempre puede quedar un detalle sin cubrir. Es, en cierto sentido, el «talón de Aquiles» nórdico: dos culturas distintas contando la misma idea.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "njord",
@@ -1641,7 +2293,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El dios del mar calmo",
+        "texto": "Njörd es el dios nórdico del mar calmo y de los vientos favorables, y protege a quienes navegan. A diferencia de otros dioses del mar, no le gusta agitar las olas: prefiere que los barcos lleguen tranquilos a destino.",
+        "porque": "Njörd es el espejo nórdico de Poseidón, pero con un carácter opuesto: mientras uno agita el mar cuando se enoja, el otro lo calma para cuidar a los navegantes.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "skadi",
@@ -1671,7 +2333,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La giganta de las montañas",
+        "texto": "Skadi es una giganta de las montañas, experta esquiadora y cazadora en la nieve. Cuando quiso reclamar justicia después de un conflicto con los dioses, llegó sola hasta Asgard a exigir lo que le correspondía, y los dioses la escucharon y la respetaron.",
+        "porque": "Skadi es la diosa nórdica del invierno que eligió su propio camino sin depender de nadie. Para los nórdicos, deslizarse sobre esquís por la nieve era casi una habilidad digna de los dioses.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "sigurd",
@@ -1701,7 +2373,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El héroe que venció al dragón",
+        "texto": "Sigurd es el gran héroe de la mitología nórdica, conocido sobre todo por vencer al dragón Fafnir. Después de esa hazaña, descubrió que podía entender el idioma de los pájaros, que le advirtieron sobre una traición que se estaba preparando en su contra y así le salvaron la vida.",
+        "porque": "Sigurd es el héroe original que enfrenta dragones: muchas historias posteriores de caballeros y dragones que conocemos hoy tienen su origen en su leyenda.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "valquirias",
@@ -1731,7 +2413,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "Las jinetes del cielo",
+        "texto": "Las Valquirias son jinetes del cielo con armaduras brillantes que cabalgan sobre las batallas, eligiendo a los guerreros más valientes. A quienes eligen, los llevan al Valhalla, el gran salón de Odín reservado para los héroes.",
+        "porque": "Algunos nórdicos creían que las auroras boreales eran, en realidad, el brillo de las armaduras de las Valquirias cruzando el cielo.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "ratatosk",
@@ -1761,7 +2453,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La ardilla mensajera",
+        "texto": "Ratatosk es una ardilla que vive subiendo y bajando el gran árbol Yggdrasil todo el día, llevando mensajes de un extremo a otro. Lleva comentarios entre un águila que vive en la copa del árbol y un dragón que vive entre sus raíces, y los mantiene peleados con lo que les cuenta de cada uno.",
+        "porque": "Hasta en la mitología nórdica hay un personaje que muestra qué pasa cuando los mensajes se distorsionan al pasar de boca en boca.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "fenrir",
@@ -1791,7 +2493,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El lobo gigante",
+        "texto": "Fenrir es un lobo gigante tan fuerte que ninguna cadena común lograba sujetarlo. Los dioses, preocupados por su tamaño y su fuerza, le pidieron a los enanos que fabricaran una cinta mágica hecha de cosas imposibles: el sonido de los pasos de un gato, la barba de una mujer, las raíces de una montaña. Solo Tyr se animó a acercarse lo suficiente para que pudieran atarlo con ella.",
+        "porque": "Fenrir enseña que lo aparentemente frágil —una cinta hecha de cosas invisibles— puede terminar siendo lo más fuerte de todo. Su historia cierra junto con la carta de Tyr.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "cronos",
@@ -1821,7 +2533,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El titán que temía ser reemplazado",
+        "texto": "Cronos era el rey de los titanes y gobernó el mundo en una época muy anterior a los dioses del Olimpo. Una profecía le advirtió que algún día uno de sus propios hijos lo reemplazaría en el trono, y ese miedo lo acompañó todo el tiempo que gobernó. Por más que intentó evitarlo, no pudo escapar de lo que estaba destinado: con el tiempo, su hijo menor, Zeus, creció escondido y finalmente lo desafió y ocupó su lugar.",
+        "porque": "El mito de Cronos habla del miedo a ser reemplazado y de cómo ese miedo, cuando maneja las decisiones de alguien, termina provocando exactamente lo que se quería evitar. Los griegos también lo usaban para explicar el paso de una generación de dioses a la siguiente.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "medea",
@@ -1851,7 +2573,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La mente táctica de los Argonautas",
+        "texto": "Medea era una hechicera de una lejana ciudad a la que llegó Jasón junto a los Argonautas en busca del vellocino de oro. Fue su inteligencia y su conocimiento de la magia lo que hizo posible la hazaña: ideó las pruebas que había que superar y ayudó a Jasón a resolver cada obstáculo del rey que guardaba el vellocino. Sin su mente táctica, los Argonautas jamás hubieran vuelto a casa con el trofeo.",
+        "porque": "Medea muestra que las grandes hazañas de los mitos rara vez dependen de una sola persona: detrás de Jasón, la verdadera estratega era ella. Los griegos reconocían su inteligencia, aunque su historia después se volviera más compleja.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "hel",
@@ -1881,7 +2613,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La administradora del inframundo",
+        "texto": "Hel es quien administra uno de los reinos de los muertos en la mitología nórdica, destinado a quienes no caen en batalla. A diferencia de lo que se podría pensar, no es un ser cruel: gobierna su territorio con reglas claras y cuida que cada uno tenga su lugar, muy parecido a como Hades organiza el suyo en la mitología griega. Vive en un salón propio, lejos de Asgard, y cumple su tarea con seriedad.",
+        "porque": "Hel es el espejo nórdico de Hades: los nórdicos tampoco la imaginaban como una villana, sino como la guardiana ordenada de un reino que tenía que existir. Cada mitología necesitaba a alguien a cargo de ese territorio.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "eneas",
@@ -1911,7 +2653,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El puente entre Troya y Roma",
+        "texto": "Eneas era un príncipe troyano que logró escapar de su ciudad cuando esta cayó, cargando a su padre anciano sobre los hombros y llevando de la mano a su hijo pequeño. Después de un largo viaje por el mar, lleno de pruebas y desvíos, llegó a las costas de Italia. Ahí sentó las bases de un nuevo pueblo, cuyos descendientes con el tiempo fundarían la ciudad de Roma.",
+        "porque": "Eneas es el puente entre dos mitologías: empieza como héroe troyano y termina como el antepasado legendario de los romanos. Su historia explica cómo un pueblo entero podía sentirse heredero directo de los héroes griegos.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "edipo",
@@ -1941,7 +2693,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El que resolvió el acertijo de la Esfinge",
+        "texto": "Edipo es recordado sobre todo por un desafío: llegó a las puertas de Tebas cuando la ciudad estaba bloqueada por la Esfinge, una criatura que no dejaba pasar a nadie que no resolviera su acertijo. Muchos lo habían intentado antes y habían fallado. Edipo escuchó la pregunta —qué camina en cuatro patas de mañana, en dos al mediodía y en tres a la tarde— y respondió sin dudar: el ser humano. La Esfinge, vencida por primera vez, dejó libre el camino, y Edipo fue coronado rey de Tebas por haber resuelto lo que nadie más pudo.",
+        "porque": "La historia de Edipo, en esta parte del mito, celebra el poder de una mente que no se rinde ante un problema difícil. Los griegos lo recordaban como el hombre cuyo ingenio abrió las puertas de una ciudad entera.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "helena",
@@ -1971,7 +2733,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La mujer por la que zarparon mil barcos",
+        "texto": "Helena era conocida en toda Grecia por una belleza que se convirtió en leyenda. Cuando terminó viviendo en Troya, lejos de Esparta, los reyes griegos reunieron una flota enorme —«mil barcos», dice la expresión— para ir a buscarla, y así comenzó la guerra de Troya. Ella quedó, para siempre, como el nombre que la historia asocia al inicio de ese conflicto, aunque las razones reales de una guerra siempre fueron más complicadas que una sola persona.",
+        "porque": "La frase «el rostro que lanzó mil barcos» resume cómo los griegos usaban a Helena para hablar de causas y consecuencias: un solo hecho, ampliado por el orgullo de los reyes, pudo desatar una guerra de diez años.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "casandra",
@@ -2001,7 +2773,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La que decía la verdad y nadie le creía",
+        "texto": "Casandra recibió de Apolo el don de ver el futuro con total claridad. Pero ese regalo llegó con una condición cruel: nadie jamás le creería, sin importar cuánta razón tuviera. Advirtió sobre el peligro que se acercaba a Troya una y otra vez, y una y otra vez la ignoraron, hasta que todo lo que había predicho se cumplió.",
+        "porque": "Casandra es uno de los símbolos más potentes de la mitología griega: la experiencia de decir la verdad y que nadie la escuche. Hoy todavía se usa su nombre para hablar de advertencias reales que la gente prefiere no creer.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "circe",
@@ -2031,7 +2813,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La maga de la isla",
+        "texto": "Circe vive sola en una isla remota, donde domina la magia como pocas figuras de la mitología griega. Cuando Odiseo y su tripulación llegaron a su isla en medio de su largo regreso a casa, ella usó sus hechizos para transformarlos, hasta que Odiseo, con ayuda e ingenio, logró que los devolviera a su forma original. Después de ese comienzo tenso, Circe terminó ayudando a Odiseo a seguir su camino, compartiendo con él consejos que le sirvieron para el resto del viaje.",
+        "porque": "Circe muestra que en los mitos griegos la magia no es solo un peligro: también puede ser sabiduría, si se sabe cómo acercarse a ella con respeto e inteligencia.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "romulo_remo",
@@ -2061,7 +2853,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "Los hermanos fundadores de Roma",
+        "texto": "Rómulo y Remo eran hermanos gemelos que, según la leyenda, fueron abandonados de bebés cerca de un río y criados por una loba que los encontró y los cuidó como si fueran suyos. Cuando crecieron, decidieron fundar una ciudad nueva en el lugar donde habían sido rescatados. Tuvieron una diferencia muy fuerte sobre cómo debía ser esa ciudad, y finalmente fue Rómulo quien le dio forma y nombre: Roma.",
+        "porque": "La imagen de los gemelos amamantados por una loba se convirtió en el símbolo más famoso del origen de Roma: una ciudad que, según su propio mito fundador, nació de la supervivencia y no de la comodidad.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "agamenon",
@@ -2091,7 +2893,17 @@
       ],
       "correcta": 0
     },
-    "tier": "plateado"
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El líder de la gran flota",
+        "texto": "Agamenón fue el rey que logró algo que nadie más había conseguido antes: reunir a todos los reyes y héroes de Grecia bajo un solo mando para navegar juntos hacia Troya. Ser el líder de una flota tan enorme le dio un poder inmenso, pero también un orgullo que varias veces lo enfrentó con sus propios aliados, incluso con Aquiles, su guerrero más valioso. Diez años de guerra pusieron a prueba ese liderazgo una y otra vez.",
+        "porque": "Agamenón muestra el costo del orgullo en el liderazgo: reunir a tantos héroes bajo un mismo mando fue una hazaña enorme, pero mantenerlos unidos costó mucho más de lo que él esperaba.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "eros",
@@ -2121,7 +2933,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El dios de las flechas del amor",
+        "texto": "Eros es el dios griego del amor, hijo de Afrodita, y lleva siempre un arco con flechas capaces de despertar el amor en quien tocan. Se enamoró en secreto de una joven mortal llamada Psique, y su historia juntos es una de las más recordadas de la mitología: llena de pruebas, curiosidad y, al final, un reencuentro.",
+        "porque": "Eros representa el amor como una fuerza que puede llegar de golpe, sin aviso, con solo una flecha. Los romanos lo conocían con otro nombre, Cupido, y así llegó hasta los símbolos que usamos hoy.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "dido",
@@ -2151,7 +2973,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La reina fundadora de Cartago",
+        "texto": "Dido escapó de su tierra natal después de un conflicto familiar y llegó a las costas del norte de África con un grupo de seguidores leales. Ahí, con astucia, consiguió el terreno para fundar una nueva ciudad: Cartago, que con el tiempo se convertiría en una potencia del Mediterráneo. Cuenta la leyenda que Eneas, en su viaje hacia Italia, llegó a descansar en su reino antes de continuar su camino.",
+        "porque": "Dido representa a la fundadora que construye algo grande partiendo de cero, después de perderlo casi todo. Su encuentro con Eneas conecta, en la leyenda, el origen de Cartago con el de Roma.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "andromeda",
@@ -2181,7 +3013,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La princesa que llegó a las estrellas",
+        "texto": "Andrómeda era una princesa cuyo destino parecía sellado frente a un peligro enorme que amenazaba su reino. Perseo, que volvía de su hazaña contra Medusa, la encontró justo a tiempo y la ayudó a salir de esa situación imposible. Su historia terminó tan bien recordada que los griegos la imaginaron para siempre entre las estrellas, formando su propia constelación.",
+        "porque": "Andrómeda conecta directo con la carta de Perseo, y muestra cómo los griegos convertían a sus personajes favoritos en constelaciones: una forma de decir que esa historia iba a poder leerse en el cielo para siempre.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "nausicaa",
@@ -2211,7 +3053,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La princesa que ayudó a un náufrago",
+        "texto": "Nausícaa era una princesa que, mientras lavaba ropa junto al mar con sus sirvientas, encontró a un náufrago agotado y sin nada: era Odiseo, que llevaba años intentando volver a su hogar. En lugar de tenerle miedo, le dio ropa, comida y lo guió hasta el palacio de su padre, donde lo recibieron con hospitalidad y lo ayudaron a continuar su viaje.",
+        "porque": "Nausícaa representa un valor que los griegos consideraban sagrado: la hospitalidad hacia el extranjero necesitado. Un gesto simple de ayuda pudo cambiar el rumbo del regreso de un héroe.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "calipso",
@@ -2241,7 +3093,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La ninfa de la isla lejana",
+        "texto": "Calipso es una ninfa que vive en una isla remota y hermosa, escondida en medio del mar. Cuando Odiseo naufragó cerca de su costa, ella lo recibió y lo cuidó durante un largo tiempo en su viaje de regreso a casa. Con el paso de los años, y con ayuda de los propios dioses, Odiseo finalmente pudo retomar su camino hacia Ítaca.",
+        "porque": "Calipso forma parte del ciclo de aventuras de Odiseo: cada isla de su viaje representa una prueba distinta, y la de ella es la de quedarse cómodo demasiado tiempo lejos del objetivo final.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "psique",
@@ -2271,7 +3133,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El alma que buscó a su amor",
+        "texto": "Psique era una joven tan hermosa que despertó los celos de la propia Afrodita. Se enamoró de Eros, el hijo de la diosa, aunque durante un tiempo no supo quién era en realidad, porque él solo la visitaba de noche y le pidió que nunca intentara verlo. La curiosidad pudo más, y cuando por fin lo vio, tuvo que superar varias pruebas difíciles para poder reencontrarse con él para siempre.",
+        "porque": "El nombre de Psique significa «alma» en griego, y su historia se lee como el camino del alma hacia el amor verdadero, superando pruebas y dudas en el camino. De ahí viene también la palabra «psicología».",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "dafne",
@@ -2301,7 +3173,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La ninfa que se volvió laurel",
+        "texto": "Dafne era una ninfa que quería vivir libre, sin atarse a nadie. Cuando Apolo, prendado de ella, la persiguió sin darle descanso, Dafne pidió ayuda a su padre, un dios del río, justo antes de que la alcanzara. Su pedido se cumplió de una manera inesperada: sus pies echaron raíces, su piel se cubrió de corteza y sus brazos se volvieron ramas, hasta convertirse en el primer árbol de laurel.",
+        "porque": "El mito de Dafne explica por qué el laurel fue desde entonces el árbol sagrado de Apolo, y por qué las coronas de laurel —como las que reciben ganadores y poetas— vienen de esta historia.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "eco",
@@ -2331,7 +3213,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La ninfa que solo podía repetir palabras",
+        "texto": "Eco era una ninfa muy conversadora, hasta que una diosa, cansada de sus interminables charlas, la condenó a solo poder repetir las últimas palabras que escuchaba. Desde entonces, Eco vive escondida en montañas y valles, respondiendo con las palabras de otros. Cuando conoció a Narciso y se enamoró de él, solo pudo repetir lo que él mismo decía, sin poder expresarle nada propio.",
+        "porque": "El mito de Eco explica un fenómeno real: cuando gritamos en un valle o una montaña y escuchamos nuestra propia voz de vuelta, para los griegos esa era ella respondiendo.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "narciso",
@@ -2361,7 +3253,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El joven que no podía dejar de mirar su reflejo",
+        "texto": "Narciso era un joven tan hermoso que muchos se enamoraban de él con solo verlo, pero él no correspondía a nadie, ni siquiera a la ninfa Eco. Un día se detuvo junto a un estanque de agua tranquila y se quedó mirando su propio reflejo, fascinado, sin poder apartar la vista. Se quedó ahí tanto tiempo que, según cuenta el mito, en ese mismo lugar nació una flor que lleva su nombre.",
+        "porque": "De Narciso viene la palabra «narcisismo», que usamos hoy para hablar de quien está demasiado enfocado en sí mismo. El mito advierte sobre quedarse atrapado mirando solo el propio reflejo.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "pentesilea",
@@ -2391,7 +3293,17 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La reina guerrera de las amazonas",
+        "texto": "Pentesilea era la reina de las amazonas, un pueblo legendario de guerreras extraordinarias. Cuando llegó a Troya para pelear del lado de los troyanos, se ganó el respeto de amigos y enemigos por igual gracias a su valentía y su destreza en la batalla. Su nombre quedó como uno de los símbolos más fuertes de coraje femenino en toda la mitología griega.",
+        "porque": "Pentesilea representa a las amazonas como un pueblo de guerreras poderosas, en un mundo de mitos donde casi todos los grandes guerreros eran varones. Su coraje la volvió leyenda propia.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   },
   {
     "id": "paris",
@@ -2421,6 +3333,16 @@
       ],
       "correcta": 0
     },
-    "tier": "normal"
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El juez de las tres diosas",
+        "texto": "Paris, príncipe de Troya, fue elegido para resolver una disputa entre tres diosas —Hera, Atenea y Afrodita— sobre quién era la más hermosa. Cada una le ofreció un regalo distinto a cambio de su voto, y Paris eligió el que le ofrecía Afrodita. Esa decisión, aparentemente pequeña, terminó encadenando los hechos que llevaron a la guerra de Troya.",
+        "porque": "El «juicio de Paris» es el ejemplo griego de cómo una sola decisión, tomada en un momento tranquilo, puede desatar consecuencias enormes tiempo después. Los griegos lo usaban para pensar en el peso oculto de elegir.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ]
   }
 ]
