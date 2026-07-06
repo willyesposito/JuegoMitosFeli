@@ -63,7 +63,7 @@ Además de los existentes (id, nombre, mitologia, titulo, dones, historia, porqu
 2. Prohibido sin excepción: contenido ofensivo, sexual, violento explícito o no apto para una menor.
 3. Registro cálido, visual, creativo. No subestimar.
 4. La sección "¿Por qué?" es obligatoria en cada capítulo que revele contenido.
-5. Personajes excluidos deliberadamente del universo: Cronos, Medea, Hel (ver roster).
+5. Cronos, Medea y Hel entran al universo con versión suavizada aprobada por Willy (ver `roster_personajes_v3.md`): Cronos con foco en el miedo a ser reemplazado, sin devorar hijos; Medea como la mente táctica de los Argonautas, con final acotado; Hel como administradora seria del inframundo, en línea con Hades.
 
 ## Roadmap por olas
 

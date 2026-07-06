@@ -469,4 +469,4 @@ Personajes sin constelación ni mito secuenciable asignado todavía: definir sus
 
 Cuando Feli pida un personaje nuevo, se agrega al JSON siguiendo la misma ficha: dones, historia suavizada, sección "¿Por qué?", atributos, y nota de suavizado si el mito original lo necesita. Registrar qué personajes pidió ella (dato de interés para el documento de contexto del proyecto padre).
 
-Personajes deliberadamente excluidos por no tener versión suavizable digna: Cronos (el mito central es demasiado crudo), Medea, Hel. Si alguno aparece en una pregunta de Feli, aplicar la regla 3 del documento de contexto: esencia suavizada + aviso a Willy por separado.
+Cronos, Medea y Hel, antes excluidos por no tener versión suavizable digna, entraron al roster (ver `roster_personajes_v3.md`) con versión suavizada aprobada por Willy: Cronos con foco en el miedo a ser reemplazado (sin devorar hijos), Medea como la mente táctica de los Argonautas (final acotado), Hel como administradora seria del inframundo (línea Hades).
