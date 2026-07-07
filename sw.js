@@ -1,7 +1,7 @@
 /* Service worker: deja el juego disponible offline una vez cargado.
    Al cambiar cualquier archivo, subir la versión para que se actualice la caché. */
 
-const VERSION = "feli-cartas-v1.8.0";
+const VERSION = "feli-cartas-v2.0.0";
 const ARCHIVOS = [
   "./",
   "index.html",
@@ -19,8 +19,16 @@ const ARCHIVOS = [
 ];
 
 self.addEventListener("install", evento => {
+  // cache.addAll(ARCHIVOS) por sí solo puede traer bytes viejos: el fetch
+  // interno respeta el caché HTTP del navegador, y el server no manda
+  // cache-control. { cache: "reload" } fuerza a ir siempre a la red en
+  // cada instalación, así una versión nueva de verdad trae contenido nuevo.
   evento.waitUntil(
-    caches.open(VERSION).then(cache => cache.addAll(ARCHIVOS)).then(() => self.skipWaiting())
+    caches.open(VERSION)
+      .then(cache => Promise.all(
+        ARCHIVOS.map(url => fetch(new Request(url, { cache: "reload" })).then(respuesta => cache.put(url, respuesta)))
+      ))
+      .then(() => self.skipWaiting())
   );
 });
 

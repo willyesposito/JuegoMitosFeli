@@ -6,10 +6,12 @@
 const NOMBRE_MITO = { griega: "🏛️ Griega", nordica: "⚡ Nórdica", romana: "🦅 Romana" };
 const NOMBRE_MITO_CORTO = { griega: "GRIEGA", nordica: "NÓRDICA", romana: "ROMANA" };
 const ATRIBUTOS = [
-  { clave: "fuerza",   icono: "⚔️", nombre: "Fuerza" },
-  { clave: "astucia",  icono: "🧠", nombre: "Astucia" },
-  { clave: "valentia", icono: "🦁", nombre: "Valentía" },
-  { clave: "magia",    icono: "✨", nombre: "Magia" }
+  { clave: "fuerza",    icono: "⚔️", nombre: "Fuerza" },
+  { clave: "astucia",   icono: "🧠", nombre: "Astucia" },
+  { clave: "valentia",  icono: "🦁", nombre: "Valentía" },
+  { clave: "magia",     icono: "✨", nombre: "Magia" },
+  { clave: "liderazgo", icono: "👑", nombre: "Liderazgo" },
+  { clave: "bondad",    icono: "❤️", nombre: "Bondad" }
 ];
 
 let filtroActivo = "todas";
@@ -42,6 +44,15 @@ function medallonTier(p) {
 function divisorMito(p) {
   const nombre = NOMBRE_MITO_CORTO[p.mitologia] || p.mitologia.toUpperCase();
   return `<span class="divisor-mito"><i></i><span>${nombre}</span><i></i></span>`;
+}
+
+/* Habilidades del personaje en la carta de la grilla: sus dones principales,
+   como placas pequeñas. Antes solo se veían al abrir el detalle. */
+function donesCartaHTML(p, cantidad = 2) {
+  const dones = (p.dones || []).slice(0, cantidad);
+  if (!dones.length) return "";
+  const placas = dones.map(d => `<span class="don-carta">✦ ${d}</span>`).join("");
+  return `<span class="dones-carta">${placas}</span>`;
 }
 
 /* Capítulos reales (no los "pendiente de diseño") que ya se pueden leer:
@@ -181,6 +192,7 @@ function renderGaleria() {
       <span class="nombre">${p.nombre}</span>
       <span class="subtitulo-mito">${p.titulo}</span>
       ${divisorMito(p)}
+      ${donesCartaHTML(p)}
       ${barraCapitulosMini(p)}`;
     carta.addEventListener("click", () => abrirDetalleConTransicion(p.id));
     galeria.appendChild(carta);
@@ -278,9 +290,12 @@ function abrirDetalle(id, recienRevelada = false) {
   const completa = historiaCompleta(p);
   pintarMarcoDetalle(p, completa);
 
-  const barras = ATRIBUTOS.map(a => `
+  const barras = ATRIBUTOS
+    .filter(a => typeof p.atributos[a.clave] === "number")
+    .map(a => `
     <div class="atributo">
-      <span class="icono-attr" title="${a.nombre}">${a.icono}</span>
+      <span class="icono-attr" aria-hidden="true">${a.icono}</span>
+      <span class="nombre-attr">${a.nombre}</span>
       <div class="barra" role="img" aria-label="${a.nombre}: ${p.atributos[a.clave]} de 10">
         <span style="width:${p.atributos[a.clave] * 10}%"></span>
       </div>

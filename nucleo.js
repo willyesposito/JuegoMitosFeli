@@ -5,7 +5,18 @@
    "Fuente de datos única... Estado único versionado en localStorage". */
 
 const CLAVE_GUARDADO = "feli-cartas-v1";
-const DESBLOQUEADAS_INICIALES = ["teseo", "heracles", "thor"];
+
+/* Arranque = el progreso real de Feli al momento de este deploy (ver
+   sesion_actual.md, 32 de 81 héroes), no el mazo inicial original de 3. Así
+   un perfil nuevo (dispositivo nuevo, localStorage limpio, o "Reiniciar la
+   colección" en Opciones) no le hace perder lo que ya tiene. */
+const DESBLOQUEADAS_INICIALES = [
+  "teseo", "heracles", "penelope", "atlas", "odiseo", "atenea", "perseo", "dedalo",
+  "zeus", "hera", "poseidon", "hades", "demeter", "persefone", "hestia", "apolo",
+  "artemisa", "ares", "afrodita", "pandora", "fenix", "psique", "paris",
+  "thor", "loki", "odin", "freya", "heimdall", "sif", "tyr", "valquirias",
+  "romulo_remo"
+];
 
 /* Cuántos capítulos le corresponden como mínimo a cada tier (regla 6 de
    CLAUDE.md: dorado 3-4, plateado 2-3, normal 1-2). Se usa para no dar por
