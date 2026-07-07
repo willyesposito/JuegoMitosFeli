@@ -1,8 +1,7 @@
 /* Héroes y Dioses — lógica del modo colección.
-   Los datos viven en personajes.json; este archivo no conoce ningún personaje. */
-
-const CLAVE_GUARDADO = "feli-cartas-v1";
-const DESBLOQUEADAS_INICIALES = ["teseo", "heracles", "thor"];
+   El estado, los personajes y los capítulos viven en nucleo.js (compartido
+   con los demás módulos del hub). Este archivo solo arma la UI de la
+   Colección: grilla, detalle de carta y desbloqueo por pregunta. */
 
 const NOMBRE_MITO = { griega: "🏛️ Griega", nordica: "⚡ Nórdica", romana: "🦅 Romana" };
 const ATRIBUTOS = [
@@ -12,150 +11,13 @@ const ATRIBUTOS = [
   { clave: "magia",    icono: "✨", nombre: "Magia" }
 ];
 
-/* Cuántos capítulos le corresponden como mínimo a cada tier (regla 6 de
-   CLAUDE.md: dorado 3-4, plateado 2-3, normal 1-2). Se usa para no dar por
-   completa una historia que todavía no tiene todos sus capítulos diseñados. */
-const TIER_MINIMO = { dorado: 3, plateado: 2, normal: 1 };
-
-/* Nombre amigable del módulo que enciende cada capítulo, a partir del campo
-   "fuente" (formato "modulo:condicion"). Ninguno de estos módulos existe
-   todavía en este repo: por eso la pista siempre aclara "todavía no disponible". */
-const NOMBRE_MODULO_FUENTE = {
-  cielo: "El Cielo de los Mitos",
-  crisis: "Crisis del Mundo Antiguo",
-  ordena: "Ordená el Mito",
-  oraculo: "el Oráculo en modo difícil"
-};
-
-let personajes = [];
-let estado = { desbloqueadas: [], capitulosEncendidos: {} };
 let filtroActivo = "todas";
 let textoBusqueda = "";
 let cartaPendiente = null;   // id de la carta velada que se intenta desbloquear
 let preguntaActual = null;   // { personajeId, opciones: [{texto, esCorrecta}] }
 
-/* ---------- Persistencia ---------- */
-
-function cargarEstado() {
-  try {
-    const crudo = localStorage.getItem(CLAVE_GUARDADO);
-    if (crudo) {
-      const datos = JSON.parse(crudo);
-      if (Array.isArray(datos.desbloqueadas)) {
-        estado.desbloqueadas = datos.desbloqueadas;
-        estado.capitulosEncendidos = (datos.capitulosEncendidos && typeof datos.capitulosEncendidos === "object")
-          ? datos.capitulosEncendidos : {};
-        // Compatibilidad: partidas guardadas antes de que existiera este concepto
-        // (o con el viejo historiaLeida/preguntaAcertada) igual tienen su capítulo
-        // base encendido en toda carta ya descubierta. Nadie pierde progreso.
-        for (const id of estado.desbloqueadas) {
-          if (!estado.capitulosEncendidos[id]) estado.capitulosEncendidos[id] = ["base"];
-        }
-        guardarEstado();
-        return;
-      }
-    }
-  } catch (e) { /* estado corrupto: se reinicia */ }
-  estado.desbloqueadas = [...DESBLOQUEADAS_INICIALES];
-  estado.capitulosEncendidos = {};
-  for (const id of estado.desbloqueadas) estado.capitulosEncendidos[id] = ["base"];
-  guardarEstado();
-}
-
-function guardarEstado() {
-  try {
-    localStorage.setItem(CLAVE_GUARDADO, JSON.stringify(estado));
-  } catch (e) { /* sin localStorage (modo incógnito): el juego sigue, sin persistir */ }
-}
-
-function estaDesbloqueada(id) {
-  return estado.desbloqueadas.includes(id);
-}
-
-function desbloquear(id) {
-  if (!estaDesbloqueada(id)) {
-    estado.desbloqueadas.push(id);
-    encenderCapitulo(id, "base");
-  }
-}
-
-/* ---------- Capítulos e historia por capas ----------
-   No confundir con el campo "tier" de personajes.json (rareza estática del
-   personaje, ver chipTier): acá se resuelve cuántos capítulos ya encendió el
-   jugador y si eso alcanza para dar la historia por completa en su tier.
-   Los capítulos los encienden los módulos del juego, nunca una acción dentro
-   de la colección misma — hoy el único módulo que existe es el descubrimiento
-   (capítulo "base"), así que ninguna carta puede llegar a completa todavía. */
-
-function capitulosEncendidosDe(id) {
-  return estado.capitulosEncendidos[id] || [];
-}
-
-function encenderCapitulo(personajeId, capituloId) {
-  const encendidos = estado.capitulosEncendidos[personajeId] || (estado.capitulosEncendidos[personajeId] = []);
-  if (!encendidos.includes(capituloId)) {
-    encendidos.push(capituloId);
-    guardarEstado();
-  }
-}
-
-function capitulosDe(p) {
-  return p.capitulos || [];
-}
-
-/* Capítulos a mostrar en pantalla: los reales, más lugares vacíos hasta llegar
-   al mínimo de su tier, para los que todavía no se diseñaron (ver roster_v3). */
-function capitulosParaMostrar(p) {
-  const reales = capitulosDe(p);
-  const minimo = TIER_MINIMO[p.tier] || 1;
-  const faltan = Math.max(0, minimo - reales.length);
-  const pendientesDeDiseno = Array.from({ length: faltan }, (_, i) => ({
-    id: `pendiente-${i}`,
-    pendienteDeDiseno: true
-  }));
-  return [...reales, ...pendientesDeDiseno];
-}
-
-function historiaCompleta(p) {
-  const reales = capitulosDe(p);
-  const minimo = TIER_MINIMO[p.tier] || 1;
-  if (reales.length < minimo) return false;
-  const encendidos = capitulosEncendidosDe(p.id);
-  return reales.every(c => encendidos.includes(c.id));
-}
-
-function pistaCapituloVelado(fuente) {
-  const modulo = fuente ? fuente.split(":")[0] : null;
-  const nombre = NOMBRE_MODULO_FUENTE[modulo];
-  return nombre
-    ? `Se enciende jugando ${nombre} (todavía no disponible)`
-    : "Se enciende jugando otro módulo (todavía no disponible)";
-}
-
-/* ---------- Utilidades ---------- */
-
-function normalizar(texto) {
-  return texto.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
-}
-
-function alAzar(lista) {
-  return lista[Math.floor(Math.random() * lista.length)];
-}
-
-function mezclar(lista) {
-  const copia = [...lista];
-  for (let i = copia.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copia[i], copia[j]] = [copia[j], copia[i]];
-  }
-  return copia;
-}
-
-function porId(id) {
-  return personajes.find(p => p.id === id);
-}
-
-/* Insignia de tier: distintivo estático de cuán central es el personaje en su
+/* ---------- Insignias de tier y capítulos ----------
+   Insignia de tier: distintivo estático de cuán central es el personaje en su
    mitología. Define el marco/holo máximo que puede alcanzar (ver historiaCompleta),
    no un logro en sí mismo. */
 const NOMBRE_TIER = { dorado: "⭐ Dorado", plateado: "✦ Plateado" };
@@ -165,10 +27,44 @@ function chipTier(p) {
   return etiqueta ? `<span class="chip-tier tier-${p.tier}">${etiqueta}</span>` : "";
 }
 
-function chipCapitulos(p) {
-  const total = capitulosParaMostrar(p).length;
-  const encendidos = capitulosEncendidosDe(p.id).length;
-  return `<span class="chip-capitulos">📖 ${encendidos} de ${total}</span>`;
+/* Medalla chica de tier, solo el símbolo (grilla — Handoff v2 §8, opción 1a). */
+function chipTierCompacto(p) {
+  if (p.tier !== "dorado" && p.tier !== "plateado") return "";
+  const simbolo = p.tier === "dorado" ? "⭐" : "✦";
+  return `<span class="chip-tier tier-${p.tier}" style="padding:3px 8px">${simbolo}</span>`;
+}
+
+/* Capítulos reales (no los "pendiente de diseño") que ya se pueden leer:
+   encendidos por el juego Y publicados por Willy. Es el número que se
+   muestra en todos lados para que la cuenta sea consistente. */
+function capitulosGanadosDe(p) {
+  const encendidos = capitulosEncendidosDe(p.id);
+  return capitulosDe(p).filter(c => capituloListoParaMostrar(c, encendidos.includes(c.id)));
+}
+
+function segmentosCapitulos(p) {
+  const caps = capitulosParaMostrar(p);
+  const ganadosIds = capitulosGanadosDe(p).map(c => c.id);
+  return caps.map(c => `<i class="${!c.pendienteDeDiseno && ganadosIds.includes(c.id) ? "lleno" : ""}"></i>`).join("");
+}
+
+function barraCapitulosMini(p) {
+  return `<span class="barra-capitulos-mini">${segmentosCapitulos(p)}</span>`;
+}
+
+function barraCapitulos(p) {
+  return `<div class="barra-capitulos">${segmentosCapitulos(p)}</div>`;
+}
+
+/* Le falta un solo capítulo para completar su tier: la carta pulsa suave
+   para invitar a terminarla (Handoff v2 §6.3). */
+function casiCompleta(p) {
+  const reales = capitulosDe(p);
+  const minimo = TIER_MINIMO[p.tier] || 1;
+  if (reales.length < minimo) return false;
+  const ganadosIds = capitulosGanadosDe(p).map(c => c.id);
+  const faltan = reales.filter(c => !ganadosIds.includes(c.id)).length;
+  return faltan === 1;
 }
 
 /* Capas visuales de una carta con la historia completa: holo + brillo barrido + destellos.
@@ -187,12 +83,50 @@ function capasMaterialHTML(tono) {
   return `<i class="holo" aria-hidden="true"></i><i class="brillo-sweep brillo-sweep--${tono}" aria-hidden="true"></i>${estrellas}`;
 }
 
+/* ---------- Banner de "El Cielo de los Mitos" ----------
+   Progreso propio del módulo, igual que pediría el hub (spec_funcional §0):
+   "X de Y constelaciones trazadas". Si constelaciones.json no está (o el
+   módulo todavía no tiene nada publicado), el banner se queda con el texto
+   genérico en vez de romper. */
+async function actualizarBannerCielo() {
+  const texto = document.getElementById("banner-cielo-progreso");
+  if (!texto) return;
+  try {
+    const todas = await (await fetch("constelaciones.json")).json();
+    const publicadas = todas.filter(c => c.estado === "publicado");
+    if (!publicadas.length) return;
+    const completadas = (estado.cielo && Array.isArray(estado.cielo.completadas))
+      ? estado.cielo.completadas.filter(id => publicadas.some(c => c.id === id)).length : 0;
+    texto.textContent = `${completadas} de ${publicadas.length} constelaciones trazadas`;
+  } catch (e) { /* sin conexión al archivo: se queda el texto por defecto */ }
+}
+
+/* ---------- Ambiente de página (Handoff v2 §8, opción 1c) ---------- */
+
+function sembrarEstrellas() {
+  const capa = document.createElement("div");
+  capa.style.cssText = "position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden";
+  const pos = [[12, 8, 3, 4, .4], [24, 88, 2, 4.8, 1.2], [60, 5, 2, 5.2, 2], [78, 92, 3, 4.4, .9], [8, 55, 2, 4.6, 1.6], [40, 70, 2, 5, .6]];
+  capa.innerHTML = pos.map(([t, l, s, d, dl]) =>
+    `<span style="position:absolute;top:${t}%;left:${l}%;width:${s}px;height:${s}px;border-radius:50%;background:#fff;animation:titila ${d}s ease-in-out ${dl}s infinite backwards"></span>`).join("");
+  document.body.appendChild(capa);
+}
+
 /* ---------- Galería ---------- */
 
 function renderContador() {
   const total = personajes.length;
   const tengo = personajes.filter(p => estaDesbloqueada(p.id)).length;
-  document.getElementById("contador").textContent = `Tenés ${tengo} de ${total} héroes`;
+  const pct = total ? Math.round((tengo / total) * 100) : 0;
+  const contador = document.getElementById("contador");
+  const subioDesdeUltimoRender = Number(contador.dataset.tengo || 0) < tengo;
+  contador.innerHTML = `<span class="contador-barra"><i style="width:${pct}%"></i></span> Tenés ${tengo} de ${total} héroes`;
+  contador.dataset.tengo = tengo;
+  if (subioDesdeUltimoRender) {
+    contador.classList.remove("contador--pop");
+    void contador.offsetWidth;
+    contador.classList.add("contador--pop");
+  }
 }
 
 function renderGaleria() {
@@ -217,22 +151,28 @@ function renderGaleria() {
     const carta = document.createElement("button");
     carta.className = "carta" + (desbloqueada ? "" : " velada");
     if (tieneMaterial) carta.classList.add(p.tier === "dorado" ? "carta--dorada" : "carta--plateada");
+    if (desbloqueada && !tieneMaterial && casiCompleta(p)) carta.classList.add("carta--casi-completa");
     carta.dataset.id = p.id;
     if (desbloqueada) {
-      if (!tieneMaterial) carta.style.background = `linear-gradient(160deg, ${p.colorCarta}, ${p.colorCarta}cc)`;
+      if (!tieneMaterial) carta.style.background = fondoCarta(p.colorCarta);
       carta.setAttribute("aria-label", `Ver la carta de ${p.nombre}`);
     } else {
       carta.setAttribute("aria-label", "Carta misteriosa, tocá para intentar desbloquearla");
     }
     carta.innerHTML = `
       ${tieneMaterial ? capasMaterialHTML(p.tier === "dorado" ? "oro" : "plata") : ""}
+      ${desbloqueada && !tieneMaterial ? '<i class="esquina esquina-tl"></i><i class="esquina esquina-tr"></i><i class="esquina esquina-bl"></i><i class="esquina esquina-br"></i>' : ""}
       <span class="ilustracion">${svgIcono(p.icono, !desbloqueada)}</span>
       <span class="nombre">${desbloqueada ? p.nombre : "???"}</span>
-      <span class="chip-mito">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
-      ${desbloqueada ? chipTier(p) : ""}
-      ${desbloqueada ? chipCapitulos(p) : ""}`;
+      ${desbloqueada ? `
+        <span class="chips-fila">
+          <span class="chip-mito">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
+          ${chipTierCompacto(p)}
+        </span>
+        ${barraCapitulosMini(p)}
+      ` : `<span class="chip-mito">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>`}`;
     carta.addEventListener("click", () => {
-      if (estaDesbloqueada(p.id)) abrirDetalle(p.id);
+      if (estaDesbloqueada(p.id)) abrirDetalleConTransicion(p.id);
       else abrirPregunta(p.id);
     });
     galeria.appendChild(carta);
@@ -248,8 +188,7 @@ function pintarMarcoDetalle(p, completa) {
   const tieneMaterial = completa && (p.tier === "dorado" || p.tier === "plateado");
   cartaDetalle.classList.remove("tier-plateada", "tier-dorada");
   if (!tieneMaterial) {
-    cartaDetalle.style.background =
-      `linear-gradient(165deg, rgba(255,255,255,.10), rgba(0,0,0,.30)), linear-gradient(${p.colorCarta}, ${p.colorCarta})`;
+    cartaDetalle.style.background = fondoCarta(p.colorCarta);
   } else {
     cartaDetalle.style.background = "";
     cartaDetalle.classList.add(p.tier === "dorado" ? "tier-dorada" : "tier-plateada");
@@ -283,18 +222,18 @@ function bloqueCapitulo(capitulo, encendido) {
         </div>
       </div>`;
   }
-  if (!encendido) {
+  if (!capituloListoParaMostrar(capitulo, encendido)) {
     return `
-      <div class="capitulo capitulo--velado">
+      <div class="capitulo capitulo--velado" data-capitulo-id="${capitulo.id}">
         <span class="capitulo-candado" aria-hidden="true">🔒</span>
         <div>
           <strong class="capitulo-titulo">${capitulo.titulo}</strong>
-          <p class="capitulo-pista">${pistaCapituloVelado(capitulo.fuente)}</p>
+          <p class="capitulo-pista">${pistaCapituloVelado(capitulo, encendido)}</p>
         </div>
       </div>`;
   }
   return `
-    <div class="capitulo capitulo--encendido">
+    <div class="capitulo capitulo--encendido" data-capitulo-id="${capitulo.id}">
       <h3>📜 ${capitulo.titulo}</h3>
       <p>${capitulo.texto}</p>
       ${capitulo.porque ? `
@@ -338,19 +277,35 @@ function abrirDetalle(id, recienRevelada = false) {
     <div class="capitulos">
       <div class="capitulos-progreso">
         <span>📖 Su historia</span>
-        <span>${encendidos.length} de ${capitulos.length} capítulos</span>
+        <span>${capitulosGanadosDe(p).length} de ${capitulos.length} capítulos</span>
       </div>
+      ${barraCapitulos(p)}
       ${listaCapitulos}
     </div>`;
 
+  detalle.dataset.personajeId = id;
   cartaDetalle.classList.toggle("revelando", recienRevelada);
   detalle.classList.remove("oculto");
   cartaDetalle.scrollTop = 0;
   document.getElementById("boton-volver").focus();
 }
 
+/* Progressive enhancement: transición carta → detalle con View Transitions
+   API cuando el navegador la soporta (Handoff v2 §6.6); si no, abre directo. */
+function abrirDetalleConTransicion(id) {
+  if (!document.startViewTransition) { abrirDetalle(id); return; }
+  const carta = document.querySelector(`.carta[data-id="${id}"]`);
+  if (carta) carta.style.viewTransitionName = "carta-activa";
+  document.startViewTransition(() => {
+    abrirDetalle(id);
+    document.getElementById("detalle-carta").style.viewTransitionName = "carta-activa";
+    if (carta) carta.style.viewTransitionName = "";
+  });
+}
+
 function cerrarDetalle() {
   document.getElementById("detalle").classList.add("oculto");
+  document.getElementById("detalle").dataset.personajeId = "";
   document.getElementById("detalle-carta").classList.remove("revelando");
 }
 
@@ -373,12 +328,16 @@ function lanzarNieblaDispersa(carta) {
   }
 }
 
-function mostrarToastAparicion(nombre) {
+function mostrarToast(texto) {
   const toast = document.createElement("div");
   toast.className = "toast-aparicion";
-  toast.textContent = `✨ ¡Apareció ${nombre}!`;
+  toast.textContent = texto;
   document.body.appendChild(toast);
   setTimeout(() => toast.remove(), 3000);
+}
+
+function mostrarToastAparicion(nombre) {
+  mostrarToast(`✨ ¡Apareció ${nombre}!`);
 }
 
 /* ---------- Desbloqueo por pregunta ---------- */
@@ -429,6 +388,8 @@ function responder(boton) {
   if (opcion.esCorrecta) {
     boton.classList.add("correcta");
     resultado.textContent = "¡Correcto! ✨";
+    sonar("correcto");
+    lanzarParticulasSello(boton.parentElement, 8);
     document.querySelectorAll("#pregunta-contenido .opcion").forEach(b => b.disabled = true);
     const idGanada = cartaPendiente;
     setTimeout(() => {
@@ -450,6 +411,8 @@ function revelarCarta(id) {
     carta.classList.add("recien-revelada");
     lanzarNieblaDispersa(carta);
   }
+  sonar("arpegio");
+  vibrar(30);
   mostrarToastAparicion(porId(id).nombre);
   setTimeout(() => abrirDetalle(id, true), 950);
 }
@@ -460,19 +423,164 @@ function cerrarPregunta() {
   preguntaActual = null;
 }
 
+/* ---------- Ceremonias de material ----------
+   Se disparan cuando un capítulo recién publicado completa la historia de
+   un personaje dorado/plateado. Los capítulos los encienden otros módulos
+   (El Cielo de los Mitos y los que sigan) — acá solo vive la celebración. */
+
+let tokenCeremonia = 0;
+
+function lanzarParticulasSello(contenedor, cantidad) {
+  const centro = { top: "50%", left: "50%" };
+  for (let i = 0; i < cantidad; i++) {
+    const ang = (i / cantidad) * Math.PI * 2;
+    const dist = 60 + Math.random() * 30;
+    const part = document.createElement("span");
+    part.className = "particula-sello";
+    part.textContent = "✦";
+    part.style.top = centro.top;
+    part.style.left = centro.left;
+    part.style.setProperty("--dx", `${Math.cos(ang) * dist}px`);
+    part.style.setProperty("--dy", `${Math.sin(ang) * dist}px`);
+    contenedor.appendChild(part);
+    setTimeout(() => part.remove(), 900);
+  }
+}
+
+function agregarEfimero(contenedor, clase, duracionMs) {
+  const el = document.createElement("i");
+  el.className = clase;
+  contenedor.appendChild(el);
+  setTimeout(() => el.remove(), duracionMs);
+  return el;
+}
+
+/* Ceremonia plateada (~2.5s). `carta` = nodo .carta ya visible con el
+   personaje, ANTES de aplicar el marco. */
+function ceremoniaPlateada(carta, alTerminar) {
+  const token = ++tokenCeremonia;
+  sonar("arpegio");
+  setTimeout(() => {
+    if (token !== tokenCeremonia) return;
+    carta.classList.add("carta--plateada");
+    carta.style.background = "";
+    carta.insertAdjacentHTML("afterbegin", capasMaterialHTML("plata"));
+    agregarEfimero(carta, "onda-ceremonia onda-ceremonia--plata", 1000);
+    vibrar([20, 40, 20]);
+  }, 1250);
+  setTimeout(() => {
+    if (token !== tokenCeremonia) return;
+    sonar("sello");
+    if (alTerminar) alTerminar();
+  }, 2450);
+}
+
+/* Ceremonia dorada mayor (~2.8s). */
+function ceremoniaDorada(carta, alTerminar) {
+  const token = ++tokenCeremonia;
+  sonar("carga");
+  carta.classList.add("ceremonia-resplandor");
+  setTimeout(() => {
+    if (token !== tokenCeremonia) return;
+    sonar("impacto");
+    agregarEfimero(carta, "flash-ceremonia", 500);
+    agregarEfimero(carta, "onda-ceremonia", 1000);
+  }, 450);
+  setTimeout(() => {
+    if (token !== tokenCeremonia) return;
+    sonar("fanfarria");
+    carta.classList.remove("ceremonia-resplandor");
+    carta.classList.add("carta--dorada");
+    carta.style.background = "";
+    carta.insertAdjacentHTML("afterbegin", capasMaterialHTML("oro"));
+    agregarEfimero(carta, "onda-ceremonia", 1100).style.transform = "scale(1.2)";
+    agregarEfimero(carta, "rayos-ceremonia", 1500);
+    vibrar([30, 50, 30, 50, 60]);
+  }, 850);
+  setTimeout(() => {
+    if (token !== tokenCeremonia) return;
+    sonar("sello");
+    lanzarParticulasSello(carta, 6);
+    if (alTerminar) alTerminar();
+  }, 1750);
+}
+
+/* Celebra a un personaje si su historia acaba de completarse y todavía no
+   se festejó (estado.celebrados evita repetir la animación en cada carga). */
+function celebrarSiCorresponde(personajeId) {
+  const p = porId(personajeId);
+  if (!p || !historiaCompleta(p) || estado.celebrados.includes(personajeId)) return;
+  estado.celebrados.push(personajeId);
+  guardarEstado();
+  if (p.tier !== "dorado" && p.tier !== "plateado") return;
+  renderGaleria();
+  const carta = document.querySelector(`.carta[data-id="${personajeId}"]`);
+  if (!carta) return;
+  carta.classList.remove("carta--dorada", "carta--plateada");
+  carta.querySelectorAll(".holo, .brillo-sweep, .destello-permanente").forEach(n => n.remove());
+  carta.style.background = fondoCarta(p.colorCarta);
+  (p.tier === "dorado" ? ceremoniaDorada : ceremoniaPlateada)(carta, renderGaleria);
+}
+
+/* Recorre a todos los descubiertos por si alguno quedó completo mientras
+   jugaba otro módulo (se llama al iniciar y al volver de otra pestaña). */
+function revisarCeremoniasPendientes() {
+  personajes.forEach(p => { if (estaDesbloqueada(p.id)) celebrarSiCorresponde(p.id); });
+}
+
+/* Hook público para pruebas manuales (Handoff v2 §7): enciende un capítulo
+   y celebra si corresponde, sin depender de que exista el módulo real.
+   Ej. en consola: encenderCapituloConCeremonia("teseo", "hilo_ariadna") */
+function encenderCapituloConCeremonia(personajeId, capituloId) {
+  encenderCapitulo(personajeId, capituloId);
+  celebrarSiCorresponde(personajeId);
+  renderGaleria();
+}
+
+/* ---------- Encendido de capítulo con el detalle ya abierto ----------
+   Si otro módulo (u otra pestaña) enciende un capítulo de la carta que la
+   jugadora tiene abierta en este momento, se lo mostramos con ceremonia en
+   vez de dejar que se pierda hasta el próximo tap. */
+
+function toastCapitulo(titulo) {
+  mostrarToast(`✨ Nuevo capítulo: ${titulo}`);
+}
+
+function animarCapituloEncendido(personajeId, capituloId) {
+  sonar("dosNotas");
+  const p = porId(personajeId);
+  const capitulo = p && capitulosDe(p).find(c => c.id === capituloId);
+  if (capitulo && capitulo.estado === "publicado") toastCapitulo(capitulo.titulo);
+  const detalle = document.getElementById("detalle");
+  const detalleAbierto = !detalle.classList.contains("oculto") && detalle.dataset.personajeId === personajeId;
+  if (!detalleAbierto) return;
+  setTimeout(() => {
+    abrirDetalle(personajeId);
+    const nuevo = document.querySelector(`#detalle-contenido .capitulo[data-capitulo-id="${capituloId}"]`);
+    if (nuevo) nuevo.classList.add("capitulo--recien-encendido");
+  }, 950);
+}
+
 /* ---------- Opciones (para Willy) ---------- */
+
+function actualizarTextoBotonSonido() {
+  const boton = document.getElementById("boton-sonido");
+  if (boton) boton.textContent = sonidoActivo ? "🔊 Sonido activado" : "🔇 Sonido silenciado";
+}
 
 function configurarOpciones() {
   const modal = document.getElementById("modal-config");
   document.getElementById("boton-config").addEventListener("click", () => modal.classList.remove("oculto"));
   document.getElementById("boton-cerrar-config").addEventListener("click", () => modal.classList.add("oculto"));
+  document.getElementById("boton-sonido").addEventListener("click", () => {
+    alternarSonido();
+    actualizarTextoBotonSonido();
+  });
+  actualizarTextoBotonSonido();
   document.getElementById("boton-reset").addEventListener("click", () => {
     if (confirm("¿Seguro? Se pierde todo el progreso de la colección.")) {
       localStorage.removeItem(CLAVE_GUARDADO);
-      estado.desbloqueadas = [...DESBLOQUEADAS_INICIALES];
-      estado.capitulosEncendidos = {};
-      for (const id of estado.desbloqueadas) estado.capitulosEncendidos[id] = ["base"];
-      guardarEstado();
+      cargarEstado();
       modal.classList.add("oculto");
       renderGaleria();
     }
@@ -508,12 +616,25 @@ function configurarControles() {
       document.getElementById("modal-config").classList.add("oculto");
     }
   });
+
+  // Si otro módulo (u otra pestaña) cambia el progreso guardado, reflejarlo
+  // acá sin esperar a recargar: es el "volver a la colección" del Handoff v2 §1.
+  window.addEventListener("storage", e => {
+    if (e.key !== CLAVE_GUARDADO) return;
+    const antes = JSON.parse(JSON.stringify(estado.capitulosEncendidos));
+    cargarEstado();
+    renderGaleria();
+    Object.keys(estado.capitulosEncendidos).forEach(personajeId => {
+      const nuevos = estado.capitulosEncendidos[personajeId].filter(cid => !(antes[personajeId] || []).includes(cid));
+      nuevos.forEach(capituloId => animarCapituloEncendido(personajeId, capituloId));
+    });
+    revisarCeremoniasPendientes();
+  });
 }
 
 async function iniciar() {
   try {
-    const respuesta = await fetch("personajes.json");
-    personajes = await respuesta.json();
+    await cargarPersonajes();
   } catch (e) {
     document.getElementById("galeria").innerHTML =
       `<p class="mensaje-vacio">No pude cargar las cartas. Si abriste el archivo directo,
@@ -522,9 +643,17 @@ async function iniciar() {
   }
 
   cargarEstado();
+  sembrarEstrellas();
   configurarControles();
   configurarOpciones();
   renderGaleria();
+  revisarCeremoniasPendientes();
+  actualizarBannerCielo();
+
+  // Enlace de vuelta desde otro módulo (ej. "Ver la carta de X" en El Cielo
+  // de los Mitos): index.html?ver=teseo abre esa carta directo.
+  const idAVer = new URLSearchParams(location.search).get("ver");
+  if (idAVer && estaDesbloqueada(idAVer)) abrirDetalle(idAVer);
 
   // Offline real una vez cargado (solo cuando se sirve por http/https)
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {

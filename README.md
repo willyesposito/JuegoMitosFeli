@@ -50,14 +50,19 @@ obligatorio, sección "¿Por qué?" obligatoria, registro cálido sin infantiliz
 | Archivo | Qué es |
 |---|---|
 | `index.html` | Estructura de la app (galería, detalle, modales) |
-| `estilos.css` | Estilos mobile-first |
-| `app.js` | Lógica: galería, filtros, búsqueda, desbloqueo, persistencia |
+| `estilos.css` | Estilos mobile-first de la Colección |
+| `app.js` | Lógica de la Colección: galería, filtros, búsqueda, desbloqueo, ceremonias |
+| `nucleo.js` | Estado y persistencia compartidos por todos los módulos (progreso, personajes, audio) |
 | `iconos.js` | Ilustraciones SVG generadas en código, una por personaje |
 | `personajes.json` | **Los datos.** Agregar héroes = editar solo este archivo |
+| `constelaciones.json` | Datos del módulo El Cielo de los Mitos (coordenadas, dificultad, qué capítulo enciende cada una) |
+| `cielo.html` / `cielo.css` / `cielo.js` | Módulo "El Cielo de los Mitos" (constelaciones). Todavía no está linkeado desde `index.html`: se construye y se deja listo, se publica cuando Willy lo decida (ver regla de despliegue en `CLAUDE.md`) |
+| `fonts/` | Cinzel (700/800) en `.woff2`, servida en forma local para no depender de red en runtime |
 | `sw.js` | Service worker para que funcione offline |
 | `CLAUDE.md` | Contexto del proyecto y reglas de contenido (no negociables) |
-| `roster_personajes.md` | Roster completo con fichas y pool de expansión |
-| `spec_funcional.md` | Spec funcional del MVP |
+| `roster_personajes.md` | Fichas heredadas (v1) de cada personaje |
+| `roster_personajes_v3.md` | Roster vigente: composición, tiers y estado de capítulos |
+| `spec_funcional.md` | Spec funcional del hub y los módulos de Ola 1 y 2 |
 
 ## Roadmap (post-MVP, no construido)
 

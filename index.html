@@ -13,10 +13,20 @@
   <header class="encabezado">
     <div class="encabezado-titulo">
       <h1>Héroes y Dioses</h1>
+      <span class="ornamento-header" aria-hidden="true"><i></i><span>⚡</span><i></i></span>
       <p class="subtitulo">Tu colección de mitología</p>
     </div>
     <p class="contador" id="contador" aria-live="polite"></p>
   </header>
+
+  <a class="banner-modulo" id="banner-cielo" href="cielo.html">
+    <span class="banner-modulo-icono" aria-hidden="true">🌌</span>
+    <span class="banner-modulo-texto">
+      <strong>El Cielo de los Mitos</strong>
+      <span id="banner-cielo-progreso">Uní constelaciones y encendé historias</span>
+    </span>
+    <span class="banner-modulo-flecha" aria-hidden="true">›</span>
+  </a>
 
   <nav class="controles" aria-label="Filtros de la colección">
     <div class="filtros" role="group" aria-label="Filtrar por mitología">
@@ -63,12 +73,14 @@
     <div class="pregunta-caja config-caja">
       <h2>Opciones</h2>
       <p class="config-nota">Zona para personas grandes 🧑‍🔧</p>
+      <button class="boton-secundario" id="boton-sonido">🔊 Sonido activado</button>
       <button class="boton-secundario" id="boton-reset">Reiniciar la colección</button>
       <button class="boton-principal" id="boton-cerrar-config">Cerrar</button>
     </div>
   </div>
 
   <script src="iconos.js"></script>
+  <script src="nucleo.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

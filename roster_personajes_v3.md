@@ -16,9 +16,13 @@
 | | Griega | Nórdica | Total |
 |---|---|---|---|
 | Dorado | 10 | 3 | 13 |
-| Plateado | 26 | 10 | 36 |
-| Normal | 29 | 3 | 32 |
-| **Total** | **65** | **16** | **81** |
+| Plateado | 27 | 10 | 37 |
+| Normal | 32 | 3 | 35 |
+| **Total** | **69** | **16** | **85** |
+
+(No incluye a Eneas/Dido/Rómulo y Remo, con `mitologia: "romana"` — ver nota más abajo sobre el chip romano.)
+
+Suma de El Cielo de los Mitos (ver Handoff, Ola 1): Orión (plateado, 2 capítulos: base · escorpión) y Calisto, Casiopea, Cástor y Pólux (normal, 1 capítulo: base) — los cuatro personajes que faltaban para completar el catálogo de 10 constelaciones.
 
 Proporción nórdica: 19,75% (target v2: ~20%). Sube un punto por la reincorporación de Ratatosk.
 
@@ -49,9 +53,9 @@ Proporción nórdica: 19,75% (target v2: ~20%). Sube un punto por la reincorpora
 | Thor | Nórdica | OK | OK (3) | base · Mjölnir · Jotunheim |
 | Loki | Nórdica | OK | OK (3) | base · pelo de Sif · Fenrir |
 
-# TIER PLATEADO (36) — 2 a 3 capítulos
+# TIER PLATEADO (37) — 2 a 3 capítulos
 
-## Griega (26)
+## Griega (27)
 
 | Personaje | Ficha | Capítulos | Nota |
 |---|---|---|---|
@@ -81,6 +85,7 @@ Proporción nórdica: 19,75% (target v2: ~20%). Sube un punto por la reincorpora
 | Héctor | OK | PENDIENTE | |
 | Atlas | OK | OK (2) | base · bóveda celeste. Recuperado de v1; libro confirmado de Feli |
 | Dédalo | OK | PENDIENTE | Recuperado de v1. Ancla el triángulo del laberinto (Teseo, Ariadna, Minotauro) |
+| Orión | OK | OK (2) | base · escorpión. Nuevo (Ola 1, El Cielo de los Mitos): completa Orión + Escorpio del catálogo de 10 |
 
 ## Nórdica (10)
 
@@ -97,13 +102,15 @@ Proporción nórdica: 19,75% (target v2: ~20%). Sube un punto por la reincorpora
 | Sif | OK | PENDIENTE | |
 | Hel | **PENDIENTE** | PENDIENTE | Suavizado aprobado: administración del inframundo, línea Hades |
 
-# TIER NORMAL (31) — 1 a 2 capítulos
+# TIER NORMAL (35) — 1 a 2 capítulos
 
 Todos cumplen el mínimo del tier con su capítulo base. Sin urgencia de diseño de capítulos; los segundos capítulos se suman cuando un módulo los toque.
 
-## Griega (29)
+## Griega (32)
 
-**Con ficha OK (v1):** Hestia, Helios, Ariadna (2 capítulos: base · corona en el cielo), Pandora, Aracne, Atalanta, Minotauro, Medusa, Pegaso, Cerbero, Esfinge, Nike, Iris, Selene, Pan, Midas, Quirón, Fénix.
+**Con ficha OK (v1):** Hestia, Helios, Ariadna (2 capítulos: base · corona en el cielo), Pandora, Aracne, Atalanta, Minotauro, Medusa, Pegaso (2 capítulos: base · el caballo alado), Cerbero, Esfinge, Nike, Iris, Selene, Pan, Midas, Quirón, Fénix, Andrómeda (2 capítulos: base · el rescate).
+
+**Nuevas (Ola 1, El Cielo de los Mitos):** Calisto (base · "La osa del cielo", completa Osa Mayor), Casiopea (base · "La reina en su trono", completa Casiopea) y Cástor y Pólux (base, carta dual, completa Géminis) — capítulo único hasta que otro módulo los toque.
 
 **Con ficha PENDIENTE (nuevos de v2):**
 
@@ -111,7 +118,6 @@ Todos cumplen el mínimo del tier con su capítulo base. Sin urgencia de diseño
 |---|---|
 | Eros (Cupido) | Flechas del amor; conecta con Psique |
 | Dido | Reina fundadora de Cartago. Mitología: romana (confirmado). Suavizado obligatorio: sin su final |
-| Andrómeda | Conecta con Perseo y su constelación (ya en el catálogo del Cielo) |
 | Nausícaa | La princesa que ayudó a Odiseo náufrago |
 | Calipso | La ninfa de la isla; capítulo natural del ciclo de Odiseo |
 | Psique | "Alma" en griego; conecta con Eros. Etimología para el dorso de carta futuro |
@@ -143,9 +149,9 @@ Eneas, Dido y Rómulo y Remo llevan `mitologia: "romana"`. Falta el tratamiento 
 
 ## Trabajo de producción pendiente (resumen)
 
-1. **21 fichas nuevas:** Cronos, Medea, Hel, Eneas, Edipo, Helena, Casandra, Circe, Rómulo y Remo, Agamenón, Eros, Dido, Andrómeda, Nausícaa, Calipso, Psique, Dafne, Eco, Narciso, Pentesilea, Paris. Las de suavizado obligatorio (marcadas arriba) las valida Willy antes de entrar al JSON.
-2. **Capítulos de dorados (7 personajes):** Zeus, Poseidón, Hades, Atenea, Aquiles, Jasón, Perseo — 3 a 4 capítulos cada uno con su fuente de módulo.
-3. **Capítulos de plateados (34 personajes):** todos salvo Penélope y Atlas — 2 a 3 capítulos cada uno.
+1. **20 fichas nuevas:** Cronos, Medea, Hel, Eneas, Edipo, Helena, Casandra, Circe, Rómulo y Remo, Agamenón, Eros, Dido, Nausícaa, Calipso, Psique, Dafne, Eco, Narciso, Pentesilea, Paris. Las de suavizado obligatorio (marcadas arriba) las valida Willy antes de entrar al JSON. (Andrómeda ya tenía ficha OK; sumó su segundo capítulo en Ola 1 vía El Cielo de los Mitos.)
+2. **Capítulos de dorados (7 personajes):** Zeus, Poseidón, Hades, Atenea, Aquiles, Jasón, Perseo — 3 a 4 capítulos cada uno con su fuente de módulo. Perseo ya tiene 2 (base · el héroe en las estrellas, vía El Cielo de los Mitos); le faltan 1-2 más para su mínimo de dorado.
+3. **Capítulos de plateados (33 personajes):** todos salvo Penélope, Atlas y Orión — 2 a 3 capítulos cada uno.
 4. **Normales:** nada urgente.
 
 ## Regla de crecimiento del roster

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#191142">
+  <title>El Cielo de los Mitos — Mundo de Mitos</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+  <link rel="stylesheet" href="cielo.css">
+</head>
+<body>
+
+  <div class="cielo-pantalla">
+
+    <header class="cielo-header">
+      <a class="cielo-volver" href="index.html" aria-label="Volver a la colección">‹</a>
+      <div class="cielo-titulo-grupo">
+        <span class="cielo-titulo">El Cielo de los Mitos</span>
+        <span class="cielo-subtitulo">Uní las estrellas y encendé historias</span>
+      </div>
+      <span class="cielo-contador" id="cielo-contador" aria-live="polite"></span>
+    </header>
+
+    <p class="cielo-instruccion" id="cielo-instruccion" aria-live="polite"></p>
+
+    <div class="cielo-cielo oculto" id="cielo-area">
+      <svg id="cielo-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Cielo nocturno con estrellas para trazar la constelación">
+        <circle cx="8" cy="10" r=".7" fill="#fff" style="animation: titila 4.2s ease-in-out .4s infinite backwards;"></circle>
+        <circle cx="30" cy="6" r=".5" fill="#fff" style="animation: titila 5s ease-in-out 1.4s infinite backwards;"></circle>
+        <circle cx="55" cy="12" r=".6" fill="#fff" style="animation: titila 4.6s ease-in-out 2.1s infinite backwards;"></circle>
+        <circle cx="78" cy="8" r=".5" fill="#fff" style="animation: titila 5.2s ease-in-out .9s infinite backwards;"></circle>
+        <circle cx="92" cy="22" r=".7" fill="#fff" style="animation: titila 4.4s ease-in-out 1.8s infinite backwards;"></circle>
+        <circle cx="6" cy="38" r=".5" fill="#fff" style="animation: titila 4.8s ease-in-out 2.6s infinite backwards;"></circle>
+        <circle cx="94" cy="46" r=".5" fill="#fff" style="animation: titila 5.4s ease-in-out .6s infinite backwards;"></circle>
+        <circle cx="12" cy="84" r=".6" fill="#fff" style="animation: titila 4.3s ease-in-out 1.1s infinite backwards;"></circle>
+        <circle cx="46" cy="90" r=".5" fill="#fff" style="animation: titila 5.1s ease-in-out 2.4s infinite backwards;"></circle>
+        <circle cx="86" cy="88" r=".6" fill="#fff" style="animation: titila 4.7s ease-in-out 1.7s infinite backwards;"></circle>
+        <circle cx="68" cy="74" r=".4" fill="#fff" style="animation: titila 5.3s ease-in-out .3s infinite backwards;"></circle>
+        <circle cx="24" cy="70" r=".4" fill="#fff" style="animation: titila 4.9s ease-in-out 2.9s infinite backwards;"></circle>
+        <g id="cielo-dinamico"></g>
+      </svg>
+
+      <div class="cielo-nombre-const oculto" id="cielo-nombre-const">
+        <span id="cielo-nombre-const-texto"></span>
+        <p id="cielo-sub-const"></p>
+      </div>
+
+      <button class="cielo-reiniciar" id="boton-reiniciar-cielo" aria-label="Reiniciar trazado">↺</button>
+    </div>
+
+    <p class="cielo-vacio oculto" id="cielo-vacio">
+      Todavía no hay constelaciones para trazar acá — Willy está terminando de escribir sus historias.
+      <br><br>
+      <a href="index.html" style="color:#ffd867">← Volver a la colección</a>
+    </p>
+
+    <div class="cielo-catalogo oculto" id="cielo-catalogo"></div>
+
+    <div class="cielo-hoja oculto" id="cielo-hoja"></div>
+
+  </div>
+
+  <script src="nucleo.js"></script>
+  <script src="cielo.js"></script>
+</body>
+</html>

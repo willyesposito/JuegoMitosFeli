@@ -1,0 +1,367 @@
+/* El Cielo de los Mitos — estilos propios del módulo.
+   Autocontenido a propósito (no importa estilos.css): visualmente es un
+   juego muy distinto a la grilla de cartas, y así se evitan choques de
+   nombres de animación (ej. "titila" tiene otro timing acá que en la
+   Colección). El estado y los personajes sí se comparten via nucleo.js. */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@font-face {
+  font-family: "Cinzel";
+  src: url("fonts/cinzel-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("fonts/cinzel-800.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+html, body { height: 100%; }
+
+body {
+  background: #120d33;
+  color: #fdfbff;
+  font-family: ui-rounded, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+button { font-family: inherit; cursor: pointer; }
+.oculto { display: none !important; }
+
+.cielo-pantalla {
+  position: relative;
+  max-width: 430px;
+  margin: 0 auto;
+  height: 100dvh;
+  min-height: 640px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at 50% 24%, #2c2260 0%, #191142 58%, #120d33 100%);
+}
+
+/* ---------- Encabezado ---------- */
+.cielo-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 14px 6px;
+}
+
+.cielo-volver {
+  border: none;
+  background: rgba(0, 0, 0, .28);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+  border-radius: 999px;
+  width: 44px;
+  height: 44px;
+  flex: none;
+}
+
+.cielo-titulo-grupo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  min-width: 0;
+}
+
+.cielo-titulo {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: .5px;
+  color: #ffe9a8;
+}
+
+.cielo-subtitulo { font-size: 11px; color: rgba(253, 251, 255, .6); }
+
+.cielo-contador {
+  flex: none;
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 216, 103, .35);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.cielo-instruccion {
+  position: relative;
+  z-index: 2;
+  margin: 6px 16px 0;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: rgba(255, 233, 168, .9);
+  min-height: 1.4em;
+}
+
+/* ---------- Cielo (SVG) ---------- */
+.cielo-cielo {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+.cielo-cielo svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: manipulation;
+}
+
+.cielo-nombre-const {
+  position: absolute;
+  top: 8%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  pointer-events: none;
+  animation: brota-nombre .7s ease-out both;
+}
+
+.cielo-nombre-const span {
+  font-family: "Cinzel", serif;
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ffd867, #fff3d0, #ffd867);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cielo-nombre-const p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: rgba(255, 233, 168, .85);
+  font-weight: 700;
+}
+
+.cielo-reiniciar {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  z-index: 3;
+  border: none;
+  background: rgba(255, 255, 255, .1);
+  color: rgba(253, 251, 255, .7);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 17px;
+}
+
+/* ---------- Catálogo de constelaciones ---------- */
+.cielo-catalogo {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.cielo-catalogo::-webkit-scrollbar { display: none; }
+
+.cielo-chip {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, .07);
+  border: 1px solid rgba(255, 255, 255, .16);
+  color: rgba(253, 251, 255, .65);
+  border-radius: 999px;
+  padding: 9px 15px;
+  font-size: 12.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cielo-chip.hecho { color: rgba(255, 233, 168, .8); }
+
+.cielo-chip.activo {
+  background: rgba(255, 216, 103, .16);
+  border: 1.5px solid rgba(255, 216, 103, .6);
+  color: #ffe9a8;
+  font-weight: 800;
+}
+
+/* ---------- Hoja de capítulo revelado ---------- */
+.cielo-hoja {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  max-height: 72%;
+  overflow-y: auto;
+  background: linear-gradient(175deg, #352a68, #241c4d 70%);
+  border-radius: 22px 22px 0 0;
+  box-shadow: 0 -12px 40px rgba(0, 0, 0, .5);
+  padding: 18px 18px 22px;
+  animation: sube-sheet .5s cubic-bezier(.2, .9, .3, 1) both;
+}
+
+.cielo-hoja-agarre {
+  width: 42px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .25);
+  margin: 0 auto 14px;
+}
+
+.cielo-hoja-encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.cielo-hoja-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(20, 14, 50, .9);
+  border: 1.5px solid rgba(255, 216, 103, .6);
+  color: #ffe9a8;
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: 13.5px;
+  font-weight: 800;
+  animation: aparece .45s ease-out both;
+}
+
+.cielo-hoja-modulo {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  color: rgba(255, 216, 103, .75);
+  animation: tinta .6s ease-out .35s both;
+}
+
+.cielo-hoja-cuerpo {
+  background: rgba(0, 0, 0, .22);
+  border-radius: 16px;
+  padding: 14px 16px;
+  text-align: left;
+  animation: tinta .8s ease-out .45s both;
+}
+
+.cielo-hoja-titulo-fila {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.cielo-hoja-numero {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid rgba(255, 216, 103, .65);
+  color: #ffd867;
+  font-family: "Cinzel", serif;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.cielo-hoja-titulo-fila strong { font-size: 15.5px; }
+.cielo-hoja-personaje { color: rgba(255, 233, 168, .9); }
+
+.cielo-hoja-texto { margin: 0; font-size: 14px; line-height: 1.6; color: rgba(253, 251, 255, .95); }
+
+.cielo-hoja-porque {
+  margin-top: 10px;
+  background: rgba(255, 216, 103, .14);
+  border: 1.5px solid rgba(255, 216, 103, .5);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.cielo-hoja-porque strong { color: #ffd867; font-size: 12.5px; display: block; margin-bottom: 4px; }
+.cielo-hoja-porque p { margin: 0; font-size: 13px; line-height: 1.55; color: rgba(253, 251, 255, .92); }
+
+.cielo-hoja-tambien {
+  margin: 12px 4px 2px;
+  font-size: 12.5px;
+  color: rgba(253, 251, 255, .7);
+  text-align: center;
+  animation: tinta .6s ease-out .6s both;
+}
+
+.cielo-hoja-botones {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.cielo-boton-primario, .cielo-boton-secundario {
+  border: none;
+  border-radius: 999px;
+  padding: 14px 22px;
+  font-size: 14.5px;
+  font-weight: 800;
+  font-family: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+.cielo-boton-primario { background: #ffd867; color: #4a3200; box-shadow: 0 4px 14px rgba(255, 216, 103, .3); }
+.cielo-boton-secundario { background: rgba(255, 255, 255, .14); color: #fdfbff; }
+
+/* ---------- Estado sin constelaciones publicadas ---------- */
+.cielo-vacio {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  text-align: center;
+  padding: 0 30px;
+  color: rgba(253, 251, 255, .75);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ---------- Animaciones ---------- */
+@keyframes titila { 0%, 100% { opacity: .15; } 50% { opacity: 1; } }
+@keyframes pulso-halo { 0% { transform: scale(.7); opacity: .9; } 70% { transform: scale(1.5); opacity: 0; } 100% { transform: scale(1.5); opacity: 0; } }
+@keyframes trazar-linea { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes onda-svg { 0% { transform: scale(.15); opacity: .9; } 100% { transform: scale(1.8); opacity: 0; } }
+@keyframes aparece { from { opacity: 0; } to { opacity: 1; } }
+@keyframes brota-nombre { 0% { opacity: 0; transform: translateY(10px) scale(.92); } 60% { opacity: 1; transform: translateY(0) scale(1.04); } 100% { opacity: 1; transform: none; } }
+@keyframes sube-sheet { from { transform: translateY(105%); } to { transform: none; } }
+@keyframes tinta { from { clip-path: inset(0 0 100% 0); opacity: 0; } to { clip-path: inset(0 0 0 0); opacity: 1; } }
+@keyframes sacudir-suave { 0%, 100% { transform: translateX(0); } 30% { transform: translateX(-4px); } 70% { transform: translateX(4px); } }
+@keyframes brillo-estrella { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+
+.halo-guia { transform-box: fill-box; transform-origin: center; animation: pulso-halo 1.6s ease-out infinite backwards; }
+.linea-trazada { stroke-dasharray: 1; animation: trazar-linea .45s ease-out both; }
+.onda-final { transform-box: fill-box; transform-origin: center; animation: onda-svg 1.1s ease-out both; }
+.destello-final { transform-box: fill-box; transform-origin: center; animation: brillo-estrella 2.4s ease-in-out infinite backwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

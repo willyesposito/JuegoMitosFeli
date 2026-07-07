@@ -1,0 +1,404 @@
+[
+  {
+    "id": "corona_boreal",
+    "nombre": "Corona Boreal",
+    "sub": "La corona de Ariadna",
+    "emoji": "👑",
+    "dificultad": 1,
+    "estrellaInicio": 0,
+    "estrellas": [
+      [
+        17,
+        62
+      ],
+      [
+        25,
+        47
+      ],
+      [
+        37,
+        38
+      ],
+      [
+        51,
+        36
+      ],
+      [
+        64,
+        40
+      ],
+      [
+        75,
+        49
+      ],
+      [
+        82,
+        62
+      ]
+    ],
+    "brillante": 3,
+    "personajeId": "teseo",
+    "capituloId": "hilo_ariadna",
+    "tambienEnciende": [
+      {
+        "personajeId": "ariadna",
+        "capituloTitulo": "La corona en el cielo"
+      }
+    ],
+    "estado": "publicado"
+  },
+  {
+    "id": "osa_mayor",
+    "nombre": "Osa Mayor",
+    "sub": "La osa que nunca se esconde",
+    "emoji": "🐻",
+    "dificultad": 1,
+    "estrellaInicio": 0,
+    "estrellas": [
+      [
+        14,
+        36
+      ],
+      [
+        26,
+        40
+      ],
+      [
+        37,
+        45
+      ],
+      [
+        47,
+        50
+      ],
+      [
+        62,
+        48
+      ],
+      [
+        66,
+        63
+      ],
+      [
+        50,
+        64
+      ]
+    ],
+    "brillante": 0,
+    "personajeId": "calisto",
+    "capituloId": "base",
+    "estado": "publicado"
+  },
+  {
+    "id": "casiopea",
+    "nombre": "Casiopea",
+    "sub": "La reina en su trono",
+    "emoji": "👸",
+    "dificultad": 1,
+    "estrellaInicio": 0,
+    "estrellas": [
+      [
+        16,
+        44
+      ],
+      [
+        32,
+        58
+      ],
+      [
+        48,
+        42
+      ],
+      [
+        64,
+        58
+      ],
+      [
+        80,
+        44
+      ]
+    ],
+    "brillante": 2,
+    "personajeId": "casiopea",
+    "capituloId": "base",
+    "estado": "publicado"
+  },
+  {
+    "id": "leo",
+    "nombre": "Leo",
+    "sub": "El león de Nemea",
+    "emoji": "🦁",
+    "dificultad": 2,
+    "estrellaInicio": 0,
+    "estrellas": [
+      [
+        24,
+        66
+      ],
+      [
+        21,
+        52
+      ],
+      [
+        28,
+        42
+      ],
+      [
+        39,
+        37
+      ],
+      [
+        50,
+        41
+      ],
+      [
+        62,
+        46
+      ],
+      [
+        76,
+        52
+      ],
+      [
+        70,
+        64
+      ]
+    ],
+    "brillante": 0,
+    "personajeId": "heracles",
+    "capituloId": "leon_nemea",
+    "estado": "publicado"
+  },
+  {
+    "id": "andromeda",
+    "nombre": "Andrómeda",
+    "sub": "La princesa rescatada",
+    "emoji": "🌊",
+    "dificultad": 2,
+    "estrellaInicio": 0,
+    "estrellas": [
+      [
+        14,
+        68
+      ],
+      [
+        30,
+        57
+      ],
+      [
+        47,
+        48
+      ],
+      [
+        64,
+        40
+      ],
+      [
+        81,
+        31
+      ]
+    ],
+    "brillante": 0,
+    "personajeId": "andromeda",
+    "capituloId": "rescate",
+    "estado": "publicado"
+  },
+  {
+    "id": "orion",
+    "nombre": "Orión",
+    "sub": "El cazador del cielo",
+    "emoji": "🏹",
+    "dificultad": 2,
+    "estrellaInicio": 0,
+    "estrellas": [
+      [
+        58,
+        28
+      ],
+      [
+        36,
+        26
+      ],
+      [
+        42,
+        48
+      ],
+      [
+        48,
+        51
+      ],
+      [
+        54,
+        54
+      ],
+      [
+        64,
+        76
+      ],
+      [
+        40,
+        74
+      ]
+    ],
+    "brillante": 0,
+    "personajeId": "orion",
+    "capituloId": "base",
+    "estado": "publicado"
+  },
+  {
+    "id": "geminis",
+    "nombre": "Géminis",
+    "sub": "Los gemelos inseparables",
+    "emoji": "👬",
+    "dificultad": 2,
+    "estrellaInicio": 0,
+    "estrellas": [
+      [
+        28,
+        26
+      ],
+      [
+        33,
+        46
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        58,
+        66
+      ],
+      [
+        65,
+        46
+      ],
+      [
+        68,
+        26
+      ]
+    ],
+    "brillante": 5,
+    "personajeId": "castor_polux",
+    "capituloId": "base",
+    "estado": "publicado"
+  },
+  {
+    "id": "pegaso",
+    "nombre": "Pegaso",
+    "sub": "El caballo alado",
+    "emoji": "🐴",
+    "dificultad": 3,
+    "estrellaInicio": 0,
+    "estrellas": [
+      [
+        30,
+        38
+      ],
+      [
+        56,
+        33
+      ],
+      [
+        62,
+        58
+      ],
+      [
+        36,
+        63
+      ],
+      [
+        20,
+        74
+      ]
+    ],
+    "brillante": 1,
+    "personajeId": "pegaso",
+    "capituloId": "caballo_alado",
+    "estado": "publicado"
+  },
+  {
+    "id": "perseo",
+    "nombre": "Perseo",
+    "sub": "El héroe del escudo espejo",
+    "emoji": "🛡️",
+    "dificultad": 3,
+    "estrellaInicio": 0,
+    "estrellas": [
+      [
+        52,
+        14
+      ],
+      [
+        46,
+        28
+      ],
+      [
+        40,
+        42
+      ],
+      [
+        33,
+        56
+      ],
+      [
+        28,
+        70
+      ],
+      [
+        44,
+        76
+      ]
+    ],
+    "brillante": 1,
+    "personajeId": "perseo",
+    "capituloId": "heroe_estrellas",
+    "estado": "publicado"
+  },
+  {
+    "id": "escorpio",
+    "nombre": "Escorpio",
+    "sub": "El escorpión del cielo",
+    "emoji": "🦂",
+    "dificultad": 3,
+    "estrellaInicio": 0,
+    "estrellas": [
+      [
+        24,
+        28
+      ],
+      [
+        31,
+        39
+      ],
+      [
+        35,
+        51
+      ],
+      [
+        41,
+        61
+      ],
+      [
+        51,
+        68
+      ],
+      [
+        62,
+        70
+      ],
+      [
+        72,
+        65
+      ],
+      [
+        77,
+        54
+      ]
+    ],
+    "brillante": 2,
+    "personajeId": "orion",
+    "capituloId": "escorpion",
+    "estado": "publicado"
+  }
+]

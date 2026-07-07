@@ -31,10 +31,10 @@
       {
         "id": "hilo_ariadna",
         "titulo": "El hilo de Ariadna",
-        "texto": "",
-        "porque": "",
+        "texto": "Ariadna conocía el secreto del laberinto: no hacía falta un mapa, sino una forma de volver. Le dio a Teseo un ovillo de hilo para que lo desenrollara al entrar. Cuando venció al Minotauro, Teseo siguió el hilo en la oscuridad, paso a paso, hasta ver otra vez la luz.",
+        "porque": "Los griegos guardaron esta idea en el cielo: la Corona Boreal es la corona de Ariadna. Un plan simple, pensado antes de la aventura, puede brillar más que cualquier espada.",
         "fuente": "cielo:corona_boreal",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "laberinto",
@@ -115,10 +115,10 @@
       {
         "id": "leon_nemea",
         "titulo": "El león de Nemea",
-        "texto": "",
-        "porque": "",
+        "texto": "El primer trabajo de Heracles fue vencer al león de Nemea, una fiera cuya piel no podía atravesar ninguna arma. Heracles lo venció con su fuerza y su ingenio, y desde entonces llevó esa piel como armadura.",
+        "porque": "Los griegos pusieron al león en el cielo: la constelación de Leo recuerda el primero de los doce trabajos.",
         "fuente": "cielo:leo",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "establos_augias",
@@ -451,6 +451,14 @@
         "texto": "A Perseo le encargaron una misión que parecía imposible: vencer a Medusa, cuya mirada convertía en piedra a cualquiera que la mirara de frente. Los dioses lo ayudaron con regalos mágicos: sandalias voladoras, un casco de invisibilidad y un escudo brillante como un espejo. Perseo la venció sin mirarla directo ni una sola vez: se guió únicamente por el reflejo en su escudo. Así resolvió el desafío que nadie más había podido resolver.",
         "porque": "A veces un problema no se enfrenta de frente, sino desde otro ángulo. Perseo ganó porque encontró una manera distinta de mirar.",
         "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "heroe_estrellas",
+        "titulo": "El héroe en las estrellas",
+        "texto": "Perseo venció a Medusa sin mirarla de frente ni una sola vez: se guió por el reflejo de su escudo. Su figura quedó en el cielo cerca de Andrómeda, Casiopea y Pegaso: su ciclo completo, dibujado en estrellas.",
+        "porque": "Cuatro constelaciones de este cielo cuentan la historia de Perseo. Era tan querida que los griegos le dedicaron una región entera del cielo.",
+        "fuente": "cielo:perseo",
         "estado": "publicado"
       }
     ],
@@ -2477,6 +2485,14 @@
         "porque": "El verdadero plan del laberinto fue de Ariadna: sin ella no existe la hazaña de Teseo. Su historia conecta directo con esa carta y muestra que detrás de cada gran hazaña suele haber alguien que pensó el plan.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "corona_cielo",
+        "titulo": "La corona en el cielo",
+        "texto": "Después de ayudar a Teseo, la historia de Ariadna no terminó ahí: el dios Dioniso le regaló una corona brillante. Cuando esa corona subió al cielo, se transformó en las siete estrellas que hoy se conocen como la Corona Boreal.",
+        "porque": "La Corona Boreal lleva el nombre real de su corona en varias culturas. Los griegos guardaban en el cielo a los personajes que más querían — y a Ariadna la recordaron dos veces: por el hilo, y por la corona.",
+        "fuente": "cielo:corona_boreal",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -2833,6 +2849,14 @@
         "texto": "Pegaso es un caballo alado capaz de volar más alto que cualquier ave. Cuenta la leyenda que de una patada de su casco brotó una fuente mágica, la fuente de las musas, que desde entonces inspira a poetas y artistas. Varios héroes, como Belerofonte, lograron volar junto a él en sus aventuras más importantes.",
         "porque": "Pegaso es el símbolo griego de la inspiración: por eso su imagen sigue apareciendo en logos, cuentos y películas hasta el día de hoy.",
         "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "caballo_alado",
+        "titulo": "El caballo alado",
+        "texto": "Pegaso es el caballo alado que nació de la historia de Perseo y Medusa. Voló libre por el mundo y ayudó a más de un héroe, hasta ganarse un lugar entre las estrellas.",
+        "porque": "El Gran Cuadrado de Pegaso es una de las figuras más grandes del cielo: cuatro estrellas que dibujan el cuerpo de un caballo que nadie pudo encerrar.",
+        "fuente": "cielo:pegaso",
         "estado": "publicado"
       }
     ],
@@ -4453,6 +4477,14 @@
         "porque": "Andrómeda conecta directo con la carta de Perseo, y muestra cómo los griegos convertían a sus personajes favoritos en constelaciones: una forma de decir que esa historia iba a poder leerse en el cielo para siempre.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "rescate",
+        "titulo": "El rescate",
+        "texto": "Andrómeda estaba encadenada a una roca frente al mar cuando Perseo pasó volando de regreso de su misión. La rescató del monstruo marino, y sus historias quedaron unidas para siempre.",
+        "porque": "Este capítulo trae el detalle que la versión corta se guarda: la roca, las cadenas, el monstruo. Los griegos no bajaban el riesgo real del peligro — lo subían al cielo entero, para que el rescate se viera todavía más grande.",
+        "fuente": "cielo:andromeda",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4960,6 +4992,182 @@
           "De Troya",
           "De Esparta",
           "De Ítaca"
+        ],
+        "correcta": 0
+      }
+    ]
+  },
+  {
+    "id": "calisto",
+    "nombre": "Calisto",
+    "mitologia": "griega",
+    "titulo": "La osa del cielo",
+    "dones": [
+      "Guardiana que nunca se esconde",
+      "Ninfa cazadora de Ártemis"
+    ],
+    "historia": "Calisto fue transformada en osa por un hechizo injusto. Para protegerla para siempre, Zeus la subió al cielo convertida en estrellas: la Osa Mayor, que nunca baja del horizonte.",
+    "porque": "La Osa Mayor se ve todas las noches del año. Los griegos explicaban esa presencia constante con una guardiana que nunca deja de cuidar.",
+    "atributos": {
+      "fuerza": 5,
+      "astucia": 6,
+      "valentia": 8,
+      "magia": 4
+    },
+    "colorCarta": "#4C6B7A",
+    "icono": "cielo",
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La osa del cielo",
+        "texto": "Calisto fue transformada en osa por un hechizo injusto. Para protegerla para siempre, Zeus la subió al cielo convertida en estrellas: la Osa Mayor, que nunca baja del horizonte.",
+        "porque": "La Osa Mayor se ve todas las noches del año. Los griegos explicaban esa presencia constante con una guardiana que nunca deja de cuidar.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿En qué animal fue transformada Calisto?",
+        "opciones": [
+          "Una osa",
+          "Una loba",
+          "Un ciervo"
+        ],
+        "correcta": 0
+      }
+    ]
+  },
+  {
+    "id": "casiopea",
+    "nombre": "Casiopea",
+    "mitologia": "griega",
+    "titulo": "La reina en su trono",
+    "dones": [
+      "Reina de Etiopía",
+      "Su trono quedó en el cielo"
+    ],
+    "historia": "Casiopea era una reina tan orgullosa que se comparaba con las diosas del mar. Como recuerdo, quedó en el cielo sentada en su trono, girando alrededor de la estrella polar para siempre.",
+    "porque": "Su forma de W se ve todo el año. Los griegos la usaban para contar que presumir demasiado también deja marca… hasta en el cielo.",
+    "atributos": {
+      "fuerza": 3,
+      "astucia": 6,
+      "valentia": 5,
+      "magia": 5
+    },
+    "colorCarta": "#8A5A6E",
+    "icono": "cielo",
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "La reina en su trono",
+        "texto": "Casiopea era una reina tan orgullosa que se comparaba con las diosas del mar. Como recuerdo, quedó en el cielo sentada en su trono, girando alrededor de la estrella polar para siempre.",
+        "porque": "Su forma de W se ve todo el año. Los griegos la usaban para contar que presumir demasiado también deja marca… hasta en el cielo.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué quedó de Casiopea en el cielo?",
+        "opciones": [
+          "Su trono",
+          "Su corona",
+          "Su espejo"
+        ],
+        "correcta": 0
+      }
+    ]
+  },
+  {
+    "id": "orion",
+    "nombre": "Orión",
+    "mitologia": "griega",
+    "titulo": "El cazador del cielo",
+    "dones": [
+      "Cazador gigante",
+      "Cinturón de tres estrellas"
+    ],
+    "historia": "Orión era un cazador gigante, tan hábil que presumía de poder vencer a cualquier animal del mundo. Su figura quedó en el cielo con un cinturón de tres estrellas, y todavía hoy es la constelación más fácil de encontrar.",
+    "porque": "Las tres estrellas del cinturón se alinean casi perfecto. Culturas de todo el mundo las usaron para orientarse: los griegos les pusieron la historia de su cazador más famoso.",
+    "atributos": {
+      "fuerza": 8,
+      "astucia": 5,
+      "valentia": 8,
+      "magia": 2
+    },
+    "colorCarta": "#3C5A8A",
+    "icono": "cielo",
+    "tier": "plateado",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "El cazador del cielo",
+        "texto": "Orión era un cazador gigante, tan hábil que presumía de poder vencer a cualquier animal del mundo. Su figura quedó en el cielo con un cinturón de tres estrellas, y todavía hoy es la constelación más fácil de encontrar.",
+        "porque": "Las tres estrellas del cinturón se alinean casi perfecto. Culturas de todo el mundo las usaron para orientarse: los griegos les pusieron la historia de su cazador más famoso.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "escorpion",
+        "titulo": "El escorpión que lo persigue",
+        "texto": "Un escorpión gigante fue enviado a detener a Orión cuando el cazador presumió demasiado. Los dos quedaron en el cielo, pero en lados opuestos: cuando Escorpio sale, Orión se esconde.",
+        "porque": "Escorpio y Orión nunca se ven juntos en el cielo. Los griegos explicaron ese turno perfecto como una persecución que sigue todavía.",
+        "fuente": "cielo:escorpio",
+        "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Cuántas estrellas tiene el cinturón de Orión?",
+        "opciones": [
+          "Tres",
+          "Cinco",
+          "Siete"
+        ],
+        "correcta": 0
+      }
+    ]
+  },
+  {
+    "id": "castor_polux",
+    "nombre": "Cástor y Pólux",
+    "mitologia": "griega",
+    "titulo": "Los gemelos inseparables",
+    "dones": [
+      "Hermanos inseparables",
+      "Comparten una misma inmortalidad"
+    ],
+    "historia": "Cástor y Pólux eran gemelos, pero uno era mortal y el otro inmortal. Cuando Cástor murió, Pólux pidió compartir su inmortalidad con su hermano. Zeus los puso juntos en el cielo, para que no se separaran nunca.",
+    "porque": "Géminis son dos hileras de estrellas casi iguales, una al lado de la otra: dos hermanos que eligieron estar juntos por sobre todas las cosas.",
+    "atributos": {
+      "fuerza": 6,
+      "astucia": 6,
+      "valentia": 8,
+      "magia": 4
+    },
+    "colorCarta": "#5B6EAE",
+    "icono": "cielo",
+    "tier": "normal",
+    "capitulos": [
+      {
+        "id": "base",
+        "titulo": "Los gemelos inseparables",
+        "texto": "Cástor y Pólux eran gemelos, pero uno era mortal y el otro inmortal. Cuando Cástor murió, Pólux pidió compartir su inmortalidad con su hermano. Zeus los puso juntos en el cielo, para que no se separaran nunca.",
+        "porque": "Géminis son dos hileras de estrellas casi iguales, una al lado de la otra: dos hermanos que eligieron estar juntos por sobre todas las cosas.",
+        "fuente": "descubrimiento",
+        "estado": "publicado"
+      }
+    ],
+    "preguntas": [
+      {
+        "texto": "¿Qué pidió Pólux cuando murió su hermano Cástor?",
+        "opciones": [
+          "Compartir su inmortalidad con él",
+          "Vengarlo",
+          "Quedarse solo en el cielo"
         ],
         "correcta": 0
       }
