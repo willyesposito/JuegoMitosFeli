@@ -14,7 +14,9 @@
       "fuerza": 6,
       "astucia": 9,
       "valentia": 9,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 8,
+      "bondad": 7
     },
     "colorCarta": "#4A7C59",
     "icono": "laberinto",
@@ -98,7 +100,9 @@
       "fuerza": 10,
       "astucia": 6,
       "valentia": 10,
-      "magia": 2
+      "magia": 2,
+      "liderazgo": 6,
+      "bondad": 7
     },
     "colorCarta": "#C97B2D",
     "icono": "leon",
@@ -182,7 +186,9 @@
       "fuerza": 2,
       "astucia": 10,
       "valentia": 8,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 6,
+      "bondad": 9
     },
     "colorCarta": "#8E5A8E",
     "icono": "telar",
@@ -250,7 +256,9 @@
       "fuerza": 10,
       "astucia": 4,
       "valentia": 7,
-      "magia": 3
+      "magia": 3,
+      "liderazgo": 3,
+      "bondad": 5
     },
     "colorCarta": "#3E5C76",
     "icono": "cielo",
@@ -318,7 +326,9 @@
       "fuerza": 5,
       "astucia": 10,
       "valentia": 8,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 8,
+      "bondad": 6
     },
     "colorCarta": "#2E7D8C",
     "icono": "barco",
@@ -378,7 +388,9 @@
       "fuerza": 7,
       "astucia": 10,
       "valentia": 9,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 8,
+      "bondad": 8
     },
     "colorCarta": "#7A8B3D",
     "icono": "lechuza",
@@ -439,7 +451,9 @@
       "fuerza": 7,
       "astucia": 8,
       "valentia": 9,
-      "magia": 6
+      "magia": 6,
+      "liderazgo": 7,
+      "bondad": 8
     },
     "colorCarta": "#5B6EAE",
     "icono": "escudo",
@@ -507,7 +521,9 @@
       "fuerza": 3,
       "astucia": 10,
       "valentia": 6,
-      "magia": 4
+      "magia": 4,
+      "liderazgo": 4,
+      "bondad": 6
     },
     "colorCarta": "#B0803A",
     "icono": "alas",
@@ -567,7 +583,9 @@
       "fuerza": 10,
       "astucia": 4,
       "valentia": 10,
-      "magia": 6
+      "magia": 6,
+      "liderazgo": 7,
+      "bondad": 7
     },
     "colorCarta": "#4A6FA5",
     "icono": "martillo",
@@ -643,7 +661,9 @@
       "fuerza": 4,
       "astucia": 10,
       "valentia": 5,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 4,
+      "bondad": 3
     },
     "colorCarta": "#2F8F6B",
     "icono": "zorro",
@@ -719,7 +739,9 @@
       "fuerza": 7,
       "astucia": 10,
       "valentia": 9,
-      "magia": 10
+      "magia": 10,
+      "liderazgo": 10,
+      "bondad": 5
     },
     "colorCarta": "#55608F",
     "icono": "cuervos",
@@ -795,7 +817,9 @@
       "fuerza": 5,
       "astucia": 8,
       "valentia": 8,
-      "magia": 10
+      "magia": 10,
+      "liderazgo": 6,
+      "bondad": 7
     },
     "colorCarta": "#B25E7E",
     "icono": "gato",
@@ -855,7 +879,9 @@
       "fuerza": 7,
       "astucia": 7,
       "valentia": 9,
-      "magia": 7
+      "magia": 7,
+      "liderazgo": 5,
+      "bondad": 7
     },
     "colorCarta": "#3D8FA8",
     "icono": "arcoiris",
@@ -914,7 +940,9 @@
       "fuerza": 5,
       "astucia": 6,
       "valentia": 7,
-      "magia": 5
+      "magia": 5,
+      "liderazgo": 4,
+      "bondad": 7
     },
     "colorCarta": "#C9A227",
     "icono": "trigo",
@@ -974,7 +1002,9 @@
       "fuerza": 8,
       "astucia": 6,
       "valentia": 10,
-      "magia": 3
+      "magia": 3,
+      "liderazgo": 6,
+      "bondad": 8
     },
     "colorCarta": "#8A4B3B",
     "icono": "lobo",
@@ -1034,7 +1064,9 @@
       "fuerza": 8,
       "astucia": 7,
       "valentia": 8,
-      "magia": 10
+      "magia": 10,
+      "liderazgo": 10,
+      "bondad": 5
     },
     "colorCarta": "#3B5E9E",
     "icono": "rayo",
@@ -1094,7 +1126,9 @@
       "fuerza": 6,
       "astucia": 8,
       "valentia": 7,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 8,
+      "bondad": 4
     },
     "colorCarta": "#5C4A7A",
     "icono": "pavorreal",
@@ -1155,7 +1189,9 @@
       "fuerza": 9,
       "astucia": 6,
       "valentia": 8,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 8,
+      "bondad": 4
     },
     "colorCarta": "#1F6F78",
     "icono": "tridente",
@@ -1215,7 +1251,9 @@
       "fuerza": 8,
       "astucia": 8,
       "valentia": 7,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 7,
+      "bondad": 6
     },
     "colorCarta": "#3E3552",
     "icono": "yelmo",
@@ -1275,7 +1313,9 @@
       "fuerza": 4,
       "astucia": 6,
       "valentia": 6,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 6,
+      "bondad": 8
     },
     "colorCarta": "#8C7A2E",
     "icono": "espigas",
@@ -1335,7 +1375,9 @@
       "fuerza": 3,
       "astucia": 7,
       "valentia": 7,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 6,
+      "bondad": 7
     },
     "colorCarta": "#5C7A3D",
     "icono": "granada",
@@ -1395,7 +1437,9 @@
       "fuerza": 3,
       "astucia": 6,
       "valentia": 6,
-      "magia": 7
+      "magia": 7,
+      "liderazgo": 4,
+      "bondad": 10
     },
     "colorCarta": "#B5652E",
     "icono": "fogon",
@@ -1455,7 +1499,9 @@
       "fuerza": 6,
       "astucia": 8,
       "valentia": 7,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 6,
+      "bondad": 6
     },
     "colorCarta": "#D4A017",
     "icono": "sol",
@@ -1516,7 +1562,9 @@
       "fuerza": 7,
       "astucia": 8,
       "valentia": 9,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 6,
+      "bondad": 6
     },
     "colorCarta": "#3D5A6C",
     "icono": "arco",
@@ -1576,7 +1624,9 @@
       "fuerza": 9,
       "astucia": 4,
       "valentia": 9,
-      "magia": 5
+      "magia": 5,
+      "liderazgo": 6,
+      "bondad": 3
     },
     "colorCarta": "#8C2F2F",
     "icono": "espada",
@@ -1636,7 +1686,9 @@
       "fuerza": 3,
       "astucia": 8,
       "valentia": 6,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 5,
+      "bondad": 6
     },
     "colorCarta": "#C2568A",
     "icono": "concha",
@@ -1696,7 +1748,9 @@
       "fuerza": 8,
       "astucia": 9,
       "valentia": 7,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 4,
+      "bondad": 7
     },
     "colorCarta": "#A6491E",
     "icono": "yunque",
@@ -1757,7 +1811,9 @@
       "fuerza": 5,
       "astucia": 10,
       "valentia": 7,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 5,
+      "bondad": 6
     },
     "colorCarta": "#4F8F8C",
     "icono": "sandalias",
@@ -1816,7 +1872,9 @@
       "fuerza": 4,
       "astucia": 7,
       "valentia": 6,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 5,
+      "bondad": 6
     },
     "colorCarta": "#7A3D8C",
     "icono": "mascara",
@@ -1876,7 +1934,9 @@
       "fuerza": 4,
       "astucia": 6,
       "valentia": 8,
-      "magia": 6
+      "magia": 6,
+      "liderazgo": 4,
+      "bondad": 6
     },
     "colorCarta": "#C9902A",
     "icono": "laurel",
@@ -1935,7 +1995,9 @@
       "fuerza": 3,
       "astucia": 6,
       "valentia": 6,
-      "magia": 7
+      "magia": 7,
+      "liderazgo": 3,
+      "bondad": 8
     },
     "colorCarta": "#4E9E8C",
     "icono": "iris",
@@ -1994,7 +2056,9 @@
       "fuerza": 6,
       "astucia": 5,
       "valentia": 7,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 4,
+      "bondad": 6
     },
     "colorCarta": "#D97B29",
     "icono": "carrosolar",
@@ -2053,7 +2117,9 @@
       "fuerza": 4,
       "astucia": 5,
       "valentia": 6,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 3,
+      "bondad": 6
     },
     "colorCarta": "#4A5A8C",
     "icono": "carrolunar",
@@ -2113,7 +2179,9 @@
       "fuerza": 5,
       "astucia": 7,
       "valentia": 5,
-      "magia": 6
+      "magia": 6,
+      "liderazgo": 4,
+      "bondad": 6
     },
     "colorCarta": "#6B8C3D",
     "icono": "flauta",
@@ -2173,7 +2241,9 @@
       "fuerza": 7,
       "astucia": 10,
       "valentia": 9,
-      "magia": 6
+      "magia": 6,
+      "liderazgo": 6,
+      "bondad": 9
     },
     "colorCarta": "#B5451E",
     "icono": "antorcha",
@@ -2233,7 +2303,9 @@
       "fuerza": 10,
       "astucia": 5,
       "valentia": 10,
-      "magia": 2
+      "magia": 2,
+      "liderazgo": 7,
+      "bondad": 5
     },
     "colorCarta": "#8C6B3D",
     "icono": "talon",
@@ -2293,7 +2365,9 @@
       "fuerza": 9,
       "astucia": 7,
       "valentia": 10,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 8,
+      "bondad": 8
     },
     "colorCarta": "#6B4A2E",
     "icono": "lanza",
@@ -2353,7 +2427,9 @@
       "fuerza": 7,
       "astucia": 8,
       "valentia": 9,
-      "magia": 2
+      "magia": 2,
+      "liderazgo": 9,
+      "bondad": 6
     },
     "colorCarta": "#B58A2A",
     "icono": "vellocino",
@@ -2412,7 +2488,9 @@
       "fuerza": 3,
       "astucia": 7,
       "valentia": 9,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 4,
+      "bondad": 8
     },
     "colorCarta": "#5C3D6B",
     "icono": "lira",
@@ -2472,7 +2550,9 @@
       "fuerza": 3,
       "astucia": 10,
       "valentia": 8,
-      "magia": 2
+      "magia": 2,
+      "liderazgo": 4,
+      "bondad": 8
     },
     "colorCarta": "#A85C7A",
     "icono": "ovillo",
@@ -2540,7 +2620,9 @@
       "fuerza": 7,
       "astucia": 8,
       "valentia": 9,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 4,
+      "bondad": 6
     },
     "colorCarta": "#3D8C5C",
     "icono": "manzana",
@@ -2599,7 +2681,9 @@
       "fuerza": 7,
       "astucia": 8,
       "valentia": 9,
-      "magia": 3
+      "magia": 3,
+      "liderazgo": 5,
+      "bondad": 6
     },
     "colorCarta": "#5C8CA6",
     "icono": "brida",
@@ -2659,7 +2743,9 @@
       "fuerza": 3,
       "astucia": 7,
       "valentia": 6,
-      "magia": 4
+      "magia": 4,
+      "liderazgo": 3,
+      "bondad": 6
     },
     "colorCarta": "#8C6B8C",
     "icono": "jarra",
@@ -2718,7 +2804,9 @@
       "fuerza": 2,
       "astucia": 9,
       "valentia": 6,
-      "magia": 3
+      "magia": 3,
+      "liderazgo": 3,
+      "bondad": 5
     },
     "colorCarta": "#5C4A3D",
     "icono": "telarana",
@@ -2777,7 +2865,9 @@
       "fuerza": 4,
       "astucia": 5,
       "valentia": 4,
-      "magia": 6
+      "magia": 6,
+      "liderazgo": 4,
+      "bondad": 4
     },
     "colorCarta": "#B8952A",
     "icono": "corona",
@@ -2837,7 +2927,9 @@
       "fuerza": 7,
       "astucia": 5,
       "valentia": 8,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 2,
+      "bondad": 7
     },
     "colorCarta": "#5C7A9E",
     "icono": "pegaso",
@@ -2905,7 +2997,9 @@
       "fuerza": 7,
       "astucia": 10,
       "valentia": 7,
-      "magia": 7
+      "magia": 7,
+      "liderazgo": 5,
+      "bondad": 9
     },
     "colorCarta": "#6B8C5C",
     "icono": "centauro",
@@ -2964,7 +3058,9 @@
       "fuerza": 4,
       "astucia": 6,
       "valentia": 7,
-      "magia": 10
+      "magia": 10,
+      "liderazgo": 2,
+      "bondad": 7
     },
     "colorCarta": "#C9502A",
     "icono": "fenix",
@@ -3024,7 +3120,9 @@
       "fuerza": 9,
       "astucia": 4,
       "valentia": 8,
-      "magia": 5
+      "magia": 5,
+      "liderazgo": 2,
+      "bondad": 4
     },
     "colorCarta": "#5C4A4A",
     "icono": "cerbero",
@@ -3084,7 +3182,9 @@
       "fuerza": 5,
       "astucia": 6,
       "valentia": 6,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 2,
+      "bondad": 4
     },
     "colorCarta": "#4A6B4A",
     "icono": "serpientes",
@@ -3144,7 +3244,9 @@
       "fuerza": 7,
       "astucia": 10,
       "valentia": 6,
-      "magia": 7
+      "magia": 7,
+      "liderazgo": 3,
+      "bondad": 3
     },
     "colorCarta": "#B58A5C",
     "icono": "esfinge",
@@ -3204,7 +3306,9 @@
       "fuerza": 9,
       "astucia": 3,
       "valentia": 7,
-      "magia": 2
+      "magia": 2,
+      "liderazgo": 1,
+      "bondad": 3
     },
     "colorCarta": "#6B4A3D",
     "icono": "toro",
@@ -3264,7 +3368,9 @@
       "fuerza": 4,
       "astucia": 9,
       "valentia": 7,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 8,
+      "bondad": 8
     },
     "colorCarta": "#5C6B8C",
     "icono": "rueca",
@@ -3324,7 +3430,9 @@
       "fuerza": 6,
       "astucia": 6,
       "valentia": 7,
-      "magia": 7
+      "magia": 7,
+      "liderazgo": 5,
+      "bondad": 10
     },
     "colorCarta": "#B5A048",
     "icono": "muerdago",
@@ -3384,7 +3492,9 @@
       "fuerza": 6,
       "astucia": 6,
       "valentia": 7,
-      "magia": 7
+      "magia": 7,
+      "liderazgo": 5,
+      "bondad": 7
     },
     "colorCarta": "#2E6B7A",
     "icono": "ola",
@@ -3444,7 +3554,9 @@
       "fuerza": 7,
       "astucia": 7,
       "valentia": 9,
-      "magia": 6
+      "magia": 6,
+      "liderazgo": 5,
+      "bondad": 5
     },
     "colorCarta": "#7A8C9E",
     "icono": "esquis",
@@ -3504,7 +3616,9 @@
       "fuerza": 9,
       "astucia": 7,
       "valentia": 10,
-      "magia": 4
+      "magia": 4,
+      "liderazgo": 6,
+      "bondad": 7
     },
     "colorCarta": "#5C6B3D",
     "icono": "dragon",
@@ -3564,7 +3678,9 @@
       "fuerza": 8,
       "astucia": 7,
       "valentia": 9,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 6,
+      "bondad": 6
     },
     "colorCarta": "#4A6B9E",
     "icono": "valquiria",
@@ -3624,7 +3740,9 @@
       "fuerza": 1,
       "astucia": 9,
       "valentia": 5,
-      "magia": 4
+      "magia": 4,
+      "liderazgo": 2,
+      "bondad": 4
     },
     "colorCarta": "#8C6B4A",
     "icono": "ardilla",
@@ -3684,7 +3802,9 @@
       "fuerza": 10,
       "astucia": 6,
       "valentia": 8,
-      "magia": 5
+      "magia": 5,
+      "liderazgo": 2,
+      "bondad": 3
     },
     "colorCarta": "#4A5045",
     "icono": "fenrir",
@@ -3744,7 +3864,9 @@
       "fuerza": 9,
       "astucia": 6,
       "valentia": 6,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 7,
+      "bondad": 3
     },
     "colorCarta": "#5C4A6B",
     "icono": "reloj_arena",
@@ -3804,7 +3926,9 @@
       "fuerza": 2,
       "astucia": 10,
       "valentia": 7,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 5,
+      "bondad": 4
     },
     "colorCarta": "#3D5C4A",
     "icono": "pocion",
@@ -3864,7 +3988,9 @@
       "fuerza": 5,
       "astucia": 8,
       "valentia": 6,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 6,
+      "bondad": 5
     },
     "colorCarta": "#3D3D52",
     "icono": "sombras",
@@ -3924,7 +4050,9 @@
       "fuerza": 8,
       "astucia": 7,
       "valentia": 9,
-      "magia": 2
+      "magia": 2,
+      "liderazgo": 9,
+      "bondad": 8
     },
     "colorCarta": "#8C4A3D",
     "icono": "padre_hombros",
@@ -3984,7 +4112,9 @@
       "fuerza": 5,
       "astucia": 10,
       "valentia": 7,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 6,
+      "bondad": 6
     },
     "colorCarta": "#6B5C3D",
     "icono": "llave_acertijo",
@@ -4044,7 +4174,9 @@
       "fuerza": 1,
       "astucia": 6,
       "valentia": 5,
-      "magia": 3
+      "magia": 3,
+      "liderazgo": 3,
+      "bondad": 5
     },
     "colorCarta": "#B25E7E",
     "icono": "espejo",
@@ -4104,7 +4236,9 @@
       "fuerza": 2,
       "astucia": 8,
       "valentia": 8,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 3,
+      "bondad": 7
     },
     "colorCarta": "#5C3D5C",
     "icono": "vision",
@@ -4164,7 +4298,9 @@
       "fuerza": 3,
       "astucia": 8,
       "valentia": 6,
-      "magia": 10
+      "magia": 10,
+      "liderazgo": 4,
+      "bondad": 4
     },
     "colorCarta": "#4A6B5C",
     "icono": "vara_magica",
@@ -4224,7 +4360,9 @@
       "fuerza": 8,
       "astucia": 6,
       "valentia": 9,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 9,
+      "bondad": 5
     },
     "colorCarta": "#A64B2E",
     "icono": "loba_capitolina",
@@ -4284,7 +4422,9 @@
       "fuerza": 7,
       "astucia": 6,
       "valentia": 8,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 9,
+      "bondad": 4
     },
     "colorCarta": "#6B4A4A",
     "icono": "cetro",
@@ -4344,7 +4484,9 @@
       "fuerza": 2,
       "astucia": 6,
       "valentia": 5,
-      "magia": 9
+      "magia": 9,
+      "liderazgo": 3,
+      "bondad": 6
     },
     "colorCarta": "#C97B9E",
     "icono": "flecha_amor",
@@ -4404,7 +4546,9 @@
       "fuerza": 4,
       "astucia": 9,
       "valentia": 8,
-      "magia": 2
+      "magia": 2,
+      "liderazgo": 8,
+      "bondad": 6
     },
     "colorCarta": "#8C5C3D",
     "icono": "muralla_cartago",
@@ -4464,7 +4608,9 @@
       "fuerza": 3,
       "astucia": 6,
       "valentia": 9,
-      "magia": 3
+      "magia": 3,
+      "liderazgo": 4,
+      "bondad": 9
     },
     "colorCarta": "#5C6B9E",
     "icono": "estrella_cadena",
@@ -4532,7 +4678,9 @@
       "fuerza": 3,
       "astucia": 7,
       "valentia": 6,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 4,
+      "bondad": 9
     },
     "colorCarta": "#4A8C8C",
     "icono": "vasija_agua",
@@ -4592,7 +4740,9 @@
       "fuerza": 2,
       "astucia": 6,
       "valentia": 4,
-      "magia": 8
+      "magia": 8,
+      "liderazgo": 3,
+      "bondad": 5
     },
     "colorCarta": "#3D6B6B",
     "icono": "isla_lejana",
@@ -4652,7 +4802,9 @@
       "fuerza": 2,
       "astucia": 6,
       "valentia": 8,
-      "magia": 5
+      "magia": 5,
+      "liderazgo": 3,
+      "bondad": 8
     },
     "colorCarta": "#8C6B9E",
     "icono": "mariposa_alma",
@@ -4712,7 +4864,9 @@
       "fuerza": 2,
       "astucia": 5,
       "valentia": 7,
-      "magia": 6
+      "magia": 6,
+      "liderazgo": 2,
+      "bondad": 7
     },
     "colorCarta": "#4A6B3D",
     "icono": "hojas_laurel",
@@ -4772,7 +4926,9 @@
       "fuerza": 1,
       "astucia": 5,
       "valentia": 4,
-      "magia": 7
+      "magia": 7,
+      "liderazgo": 2,
+      "bondad": 6
     },
     "colorCarta": "#5C8C6B",
     "icono": "ondas_sonido",
@@ -4832,7 +4988,9 @@
       "fuerza": 3,
       "astucia": 4,
       "valentia": 3,
-      "magia": 4
+      "magia": 4,
+      "liderazgo": 2,
+      "bondad": 2
     },
     "colorCarta": "#6B9E8C",
     "icono": "flor_narciso",
@@ -4892,7 +5050,9 @@
       "fuerza": 9,
       "astucia": 6,
       "valentia": 10,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 8,
+      "bondad": 6
     },
     "colorCarta": "#8C3D5C",
     "icono": "escudo_amazona",
@@ -4952,7 +5112,9 @@
       "fuerza": 5,
       "astucia": 6,
       "valentia": 5,
-      "magia": 1
+      "magia": 1,
+      "liderazgo": 4,
+      "bondad": 4
     },
     "colorCarta": "#9E6B4A",
     "icono": "manzana_discordia",
@@ -5012,7 +5174,9 @@
       "fuerza": 5,
       "astucia": 6,
       "valentia": 8,
-      "magia": 4
+      "magia": 4,
+      "liderazgo": 3,
+      "bondad": 7
     },
     "colorCarta": "#4C6B7A",
     "icono": "cielo",
@@ -5054,7 +5218,9 @@
       "fuerza": 3,
       "astucia": 6,
       "valentia": 5,
-      "magia": 5
+      "magia": 5,
+      "liderazgo": 6,
+      "bondad": 4
     },
     "colorCarta": "#8A5A6E",
     "icono": "cielo",
@@ -5096,7 +5262,9 @@
       "fuerza": 8,
       "astucia": 5,
       "valentia": 8,
-      "magia": 2
+      "magia": 2,
+      "liderazgo": 5,
+      "bondad": 5
     },
     "colorCarta": "#3C5A8A",
     "icono": "cielo",
@@ -5146,7 +5314,9 @@
       "fuerza": 6,
       "astucia": 6,
       "valentia": 8,
-      "magia": 4
+      "magia": 4,
+      "liderazgo": 5,
+      "bondad": 8
     },
     "colorCarta": "#5B6EAE",
     "icono": "cielo",

@@ -297,7 +297,31 @@ button { font-family: inherit; cursor: pointer; }
 
 .carta .esquina { width: 11px; height: 11px; top: 8px; bottom: 8px; left: 8px; right: 8px; }
 
-.barra-capitulos-mini { position: relative; z-index: 3; display: flex; gap: 4px; width: 72%; height: 6px; margin-top: 2px; }
+.dones-carta {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  margin-top: 2px;
+}
+.don-carta {
+  font-size: .62rem;
+  line-height: 1.25;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255, 255, 255, .92);
+  background: rgba(0, 0, 0, .24);
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 9px;
+  padding: 4px 9px;
+  max-width: 96%;
+  text-wrap: balance;
+}
+
+.barra-capitulos-mini { position: relative; z-index: 3; display: flex; gap: 4px; width: 72%; height: 6px; margin-top: 4px; }
 .barra-capitulos-mini i { flex: 1; border-radius: 999px; background: rgba(255, 255, 255, .16); }
 .barra-capitulos-mini i.lleno { background: linear-gradient(90deg, #ffd867, #ff9e6b); }
 
@@ -413,7 +437,12 @@ button { font-family: inherit; cursor: pointer; }
   width: 100%;
   max-width: 560px;
   max-height: calc(100vh - 32px);
-  overflow-y: auto;
+  /* El marco (esquinas + capas de material) vive en esta caja, que NO scrollea:
+     así los brackets quedan pegados al borde visible en vez de perderse a media
+     altura del contenido. El scroll ocurre dentro de .detalle-contenido. */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   border-radius: 24px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, .5);
   padding: 16px 18px 26px;
@@ -458,9 +487,23 @@ button { font-family: inherit; cursor: pointer; }
   border-radius: 999px;
   padding: 11px 22px;
   margin-bottom: 10px;
+  flex: none;
+  align-self: flex-start;
 }
 
-.detalle-contenido { text-align: center; }
+.detalle-contenido {
+  text-align: center;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-bottom: 6px;
+  /* deja respirar el contenido para que las esquinas inferiores no lo tapen */
+  scrollbar-width: thin;
+  /* reserva el canal de la barra de scroll para que no tape los números de la
+     derecha (valores de atributo, "X de Y capítulos"). */
+  scrollbar-gutter: stable;
+  padding-right: 6px;
+}
 
 .detalle-ilustracion {
   width: 150px;
@@ -507,9 +550,16 @@ button { font-family: inherit; cursor: pointer; }
 
 .atributos { display: grid; gap: 8px; margin-bottom: 18px; text-align: left; }
 
-.atributo { display: grid; grid-template-columns: 34px 1fr 26px; align-items: center; gap: 10px; }
+.atributo { display: grid; grid-template-columns: 26px 76px 1fr 24px; align-items: center; gap: 8px; }
 
 .atributo .icono-attr { font-size: 1.2rem; text-align: center; }
+
+.atributo .nombre-attr {
+  font-size: .82rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .9);
+  white-space: nowrap;
+}
 
 .atributo .valor-attr {
   text-align: right;
@@ -958,17 +1008,18 @@ button { font-family: inherit; cursor: pointer; }
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
-  filter: blur(24px);
+  filter: blur(22px);
+  mix-blend-mode: screen;
 }
-.oraculo-niebla--1 { top: 14%; left: 2%;  width: 180px; height: 150px; background: radial-gradient(circle, rgba(190,170,255,.42), transparent 70%); animation: deriva 9s ease-in-out infinite; }
-.oraculo-niebla--2 { top: 8%;  right: 0;  width: 165px; height: 140px; background: radial-gradient(circle, rgba(160,190,255,.4),  transparent 70%); animation: deriva 11s ease-in-out 1s infinite reverse; }
-.oraculo-niebla--3 { bottom: 22%; left: 4%; width: 175px; height: 150px; background: radial-gradient(circle, rgba(210,180,255,.38), transparent 70%); animation: deriva 10s ease-in-out 2s infinite; }
-.oraculo-niebla--4 { bottom: 16%; right: 3%; width: 190px; height: 155px; background: radial-gradient(circle, rgba(180,170,255,.42), transparent 70%); animation: deriva 12s ease-in-out .5s infinite reverse; }
+.oraculo-niebla--1 { top: 10%; left: -4%;  width: 210px; height: 180px; background: radial-gradient(circle, rgba(226,220,255,.85), rgba(190,175,255,.35) 55%, transparent 72%); animation: deriva 9s ease-in-out infinite; }
+.oraculo-niebla--2 { top: 4%;  right: -6%; width: 200px; height: 170px; background: radial-gradient(circle, rgba(214,228,255,.82), rgba(165,195,255,.34) 55%, transparent 72%); animation: deriva 11s ease-in-out 1s infinite reverse; }
+.oraculo-niebla--3 { bottom: 16%; left: -4%; width: 205px; height: 178px; background: radial-gradient(circle, rgba(232,222,255,.8),  rgba(205,180,255,.33) 55%, transparent 72%); animation: deriva 10s ease-in-out 2s infinite; }
+.oraculo-niebla--4 { bottom: 8%; right: -5%; width: 220px; height: 185px; background: radial-gradient(circle, rgba(220,214,255,.85), rgba(180,170,255,.34) 55%, transparent 72%); animation: deriva 12s ease-in-out .5s infinite reverse; }
 
-.oraculo-niebla--parte-a { top: 14%; left: 2%;  width: 180px; height: 150px; background: radial-gradient(circle, rgba(190,170,255,.42), transparent 70%); animation: niebla-parte-a 1s ease-out both; }
-.oraculo-niebla--parte-b { top: 8%;  right: 0;  width: 165px; height: 140px; background: radial-gradient(circle, rgba(160,190,255,.4),  transparent 70%); animation: niebla-parte-b 1s ease-out both; }
-.oraculo-niebla--parte-c { bottom: 22%; left: 4%; width: 175px; height: 150px; background: radial-gradient(circle, rgba(210,180,255,.38), transparent 70%); animation: niebla-parte-c 1s ease-out both; }
-.oraculo-niebla--parte-d { bottom: 16%; right: 3%; width: 190px; height: 155px; background: radial-gradient(circle, rgba(180,170,255,.42), transparent 70%); animation: niebla-parte-d 1s ease-out both; }
+.oraculo-niebla--parte-a { top: 14%; left: 2%;  width: 200px; height: 170px; background: radial-gradient(circle, rgba(226,220,255,.85), transparent 70%); mix-blend-mode: screen; animation: niebla-parte-a 1s ease-out both; }
+.oraculo-niebla--parte-b { top: 8%;  right: 0;  width: 190px; height: 160px; background: radial-gradient(circle, rgba(214,228,255,.82), transparent 70%); mix-blend-mode: screen; animation: niebla-parte-b 1s ease-out both; }
+.oraculo-niebla--parte-c { bottom: 22%; left: 4%; width: 200px; height: 170px; background: radial-gradient(circle, rgba(232,222,255,.8), transparent 70%); mix-blend-mode: screen; animation: niebla-parte-c 1s ease-out both; }
+.oraculo-niebla--parte-d { bottom: 16%; right: 3%; width: 215px; height: 178px; background: radial-gradient(circle, rgba(220,214,255,.85), transparent 70%); mix-blend-mode: screen; animation: niebla-parte-d 1s ease-out both; }
 
 @keyframes deriva { 0%, 100% { transform: translate(-14px, 8px); } 50% { transform: translate(16px, -10px); } }
 @keyframes niebla-parte-a { to { transform: translate(-140px, -70px) scale(1.5); opacity: 0; } }
