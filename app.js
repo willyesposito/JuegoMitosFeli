@@ -4,6 +4,7 @@
    Colección: grilla, detalle de carta y desbloqueo por pregunta. */
 
 const NOMBRE_MITO = { griega: "🏛️ Griega", nordica: "⚡ Nórdica", romana: "🦅 Romana" };
+const NOMBRE_MITO_CORTO = { griega: "GRIEGA", nordica: "NÓRDICA", romana: "ROMANA" };
 const ATRIBUTOS = [
   { clave: "fuerza",   icono: "⚔️", nombre: "Fuerza" },
   { clave: "astucia",  icono: "🧠", nombre: "Astucia" },
@@ -13,8 +14,9 @@ const ATRIBUTOS = [
 
 let filtroActivo = "todas";
 let textoBusqueda = "";
-let cartaPendiente = null;   // id de la carta velada que se intenta desbloquear
+let cartaPendiente = null;   // id de la carta que se intenta desbloquear
 let preguntaActual = null;   // { personajeId, opciones: [{texto, esCorrecta}] }
+let oraculoPendiente = null; // id del héroe que el Oráculo va a revelar
 
 /* ---------- Insignias de tier y capítulos ----------
    Insignia de tier: distintivo estático de cuán central es el personaje en su
@@ -27,11 +29,19 @@ function chipTier(p) {
   return etiqueta ? `<span class="chip-tier tier-${p.tier}">${etiqueta}</span>` : "";
 }
 
-/* Medalla chica de tier, solo el símbolo (grilla — Handoff v2 §8, opción 1a). */
-function chipTierCompacto(p) {
+/* Medallón de tier en la esquina del naipe (grilla — Handoff v2 §8, opción 1b).
+   Solo dorado/plateado llevan medallón; normal no lo necesita. */
+function medallonTier(p) {
   if (p.tier !== "dorado" && p.tier !== "plateado") return "";
   const simbolo = p.tier === "dorado" ? "⭐" : "✦";
-  return `<span class="chip-tier tier-${p.tier}" style="padding:3px 8px">${simbolo}</span>`;
+  return `<span class="medallon-tier tier-${p.tier}" title="${NOMBRE_TIER[p.tier]}">${simbolo}</span>`;
+}
+
+/* Divisor ornamental con el nombre de la mitología, en vez del chip suelto
+   (grilla — Handoff v2 §8, opción 1b). */
+function divisorMito(p) {
+  const nombre = NOMBRE_MITO_CORTO[p.mitologia] || p.mitologia.toUpperCase();
+  return `<span class="divisor-mito"><i></i><span>${nombre}</span><i></i></span>`;
 }
 
 /* Capítulos reales (no los "pendiente de diseño") que ya se pueden leer:
@@ -129,56 +139,71 @@ function renderContador() {
   }
 }
 
+/* La grilla ya no muestra las cartas veladas (eran mucho ruido "???"): solo
+   las descubiertas, más un único lanzador para abrir una carta nueva por el
+   Oráculo. Así el álbum se ve como una colección, no como una lista de
+   candados. */
 function renderGaleria() {
   const galeria = document.getElementById("galeria");
   const busqueda = normalizar(textoBusqueda.trim());
 
   const visibles = personajes.filter(p => {
+    if (!estaDesbloqueada(p.id)) return false;
     if (filtroActivo !== "todas" && p.mitologia !== filtroActivo) return false;
-    if (busqueda) {
-      // El buscador solo encuentra cartas desbloqueadas: las veladas siguen siendo un misterio.
-      return estaDesbloqueada(p.id) && normalizar(p.nombre).includes(busqueda);
-    }
+    if (busqueda) return normalizar(p.nombre).includes(busqueda);
     return true;
   });
 
-  document.getElementById("mensaje-vacio").classList.toggle("oculto", visibles.length > 0);
+  // El lanzador del Oráculo aparece solo en la vista limpia (sin filtro ni
+  // búsqueda) y mientras queden héroes por descubrir.
+  const quedanPorDescubrir = personajes.some(p => !estaDesbloqueada(p.id));
+  const mostrarLanzador = quedanPorDescubrir && !busqueda && filtroActivo === "todas";
+
+  document.getElementById("mensaje-vacio").classList.toggle("oculto", visibles.length > 0 || mostrarLanzador);
 
   galeria.innerHTML = "";
+
+  if (mostrarLanzador) galeria.appendChild(crearLanzadorOraculo());
+
   for (const p of visibles) {
-    const desbloqueada = estaDesbloqueada(p.id);
-    const tieneMaterial = desbloqueada && historiaCompleta(p) && (p.tier === "dorado" || p.tier === "plateado");
+    const tieneMaterial = historiaCompleta(p) && (p.tier === "dorado" || p.tier === "plateado");
     const carta = document.createElement("button");
-    carta.className = "carta" + (desbloqueada ? "" : " velada");
+    carta.className = "carta";
     if (tieneMaterial) carta.classList.add(p.tier === "dorado" ? "carta--dorada" : "carta--plateada");
-    if (desbloqueada && !tieneMaterial && casiCompleta(p)) carta.classList.add("carta--casi-completa");
+    if (!tieneMaterial && casiCompleta(p)) carta.classList.add("carta--casi-completa");
     carta.dataset.id = p.id;
-    if (desbloqueada) {
-      if (!tieneMaterial) carta.style.background = fondoCarta(p.colorCarta);
-      carta.setAttribute("aria-label", `Ver la carta de ${p.nombre}`);
-    } else {
-      carta.setAttribute("aria-label", "Carta misteriosa, tocá para intentar desbloquearla");
-    }
+    if (!tieneMaterial) carta.style.background = fondoCarta(p.colorCarta);
+    carta.setAttribute("aria-label", `Ver la carta de ${p.nombre}`);
     carta.innerHTML = `
       ${tieneMaterial ? capasMaterialHTML(p.tier === "dorado" ? "oro" : "plata") : ""}
-      ${desbloqueada && !tieneMaterial ? '<i class="esquina esquina-tl"></i><i class="esquina esquina-tr"></i><i class="esquina esquina-bl"></i><i class="esquina esquina-br"></i>' : ""}
-      <span class="ilustracion">${svgIcono(p.icono, !desbloqueada)}</span>
-      <span class="nombre">${desbloqueada ? p.nombre : "???"}</span>
-      ${desbloqueada ? `
-        <span class="chips-fila">
-          <span class="chip-mito">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
-          ${chipTierCompacto(p)}
-        </span>
-        ${barraCapitulosMini(p)}
-      ` : `<span class="chip-mito">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>`}`;
-    carta.addEventListener("click", () => {
-      if (estaDesbloqueada(p.id)) abrirDetalleConTransicion(p.id);
-      else abrirPregunta(p.id);
-    });
+      ${medallonTier(p)}
+      <span class="ilustracion">${svgIcono(p.icono)}</span>
+      <span class="nombre">${p.nombre}</span>
+      <span class="subtitulo-mito">${p.titulo}</span>
+      ${divisorMito(p)}
+      ${barraCapitulosMini(p)}`;
+    carta.addEventListener("click", () => abrirDetalleConTransicion(p.id));
     galeria.appendChild(carta);
   }
 
   renderContador();
+}
+
+/* Tarjeta-botón que reemplaza a todas las "???": una sola puerta de entrada
+   al descubrimiento por el Oráculo. */
+function crearLanzadorOraculo() {
+  const boton = document.createElement("button");
+  boton.className = "carta carta-lanzador";
+  boton.id = "carta-lanzador";
+  boton.setAttribute("aria-label", "Abrir una carta nueva consultando al Oráculo");
+  const total = personajes.length;
+  const faltan = personajes.filter(p => !estaDesbloqueada(p.id)).length;
+  boton.innerHTML = `
+    <span class="lanzador-icono" aria-hidden="true">🔮</span>
+    <span class="lanzador-titulo">Abrir una carta nueva</span>
+    <span class="lanzador-sub">Te faltan ${faltan} de ${total} héroes</span>`;
+  boton.addEventListener("click", abrirOraculo);
+  return boton;
 }
 
 /* ---------- Detalle ---------- */
@@ -259,6 +284,7 @@ function abrirDetalle(id, recienRevelada = false) {
       <div class="barra" role="img" aria-label="${a.nombre}: ${p.atributos[a.clave]} de 10">
         <span style="width:${p.atributos[a.clave] * 10}%"></span>
       </div>
+      <strong class="valor-attr" aria-hidden="true">${p.atributos[a.clave]}</strong>
     </div>`).join("");
 
   const capitulos = capitulosParaMostrar(p);
@@ -309,24 +335,7 @@ function cerrarDetalle() {
   document.getElementById("detalle-carta").classList.remove("revelando");
 }
 
-/* ---------- Revelado — "Niebla del Oráculo" ----------
-   Al aparecer una carta nueva: la niebla alrededor se dispersa mientras la
-   carta brota con un destello, y un toast confirma quién apareció. */
-
-function lanzarNieblaDispersa(carta) {
-  const desplazos = [
-    { dx: "-64px", dy: "-38px" }, { dx: "64px", dy: "-38px" },
-    { dx: "-56px", dy: "46px" },  { dx: "56px", dy: "46px" }
-  ];
-  for (const d of desplazos) {
-    const niebla = document.createElement("i");
-    niebla.className = "niebla-dispersa";
-    niebla.style.setProperty("--dx", d.dx);
-    niebla.style.setProperty("--dy", d.dy);
-    carta.appendChild(niebla);
-    setTimeout(() => niebla.remove(), 1000);
-  }
-}
+/* ---------- Toast ---------- */
 
 function mostrarToast(texto) {
   const toast = document.createElement("div");
@@ -336,17 +345,119 @@ function mostrarToast(texto) {
   setTimeout(() => toast.remove(), 3000);
 }
 
-function mostrarToastAparicion(nombre) {
-  mostrarToast(`✨ ¡Apareció ${nombre}!`);
+/* ---------- Descubrimiento — Niebla del Oráculo (spec_funcional §3) ----------
+   La grilla ya no tiene cartas "???": el único camino a una carta nueva es
+   este overlay. Muestra el dorso "Mundo de Mitos" envuelto en niebla; al
+   consultar al Oráculo aparece una pregunta sobre una carta ya conocida, y
+   al acertar la niebla se dispersa y la carta nueva brota. */
+
+function nieblaFlotanteHTML() {
+  return `
+    <i class="oraculo-niebla oraculo-niebla--1"></i>
+    <i class="oraculo-niebla oraculo-niebla--2"></i>
+    <i class="oraculo-niebla oraculo-niebla--3"></i>
+    <i class="oraculo-niebla oraculo-niebla--4"></i>`;
 }
 
-/* ---------- Desbloqueo por pregunta ---------- */
+function nieblaDispersaHTML() {
+  return `
+    <i class="oraculo-niebla oraculo-niebla--parte-a"></i>
+    <i class="oraculo-niebla oraculo-niebla--parte-b"></i>
+    <i class="oraculo-niebla oraculo-niebla--parte-c"></i>
+    <i class="oraculo-niebla oraculo-niebla--parte-d"></i>`;
+}
+
+function dorsoOraculoHTML() {
+  return `
+    <div class="oraculo-dorso">
+      <i class="oraculo-dorso-marco" aria-hidden="true"></i>
+      <span class="oraculo-dorso-esq" style="top:14px;left:14px">✦</span>
+      <span class="oraculo-dorso-esq" style="top:14px;right:14px">✦</span>
+      <span class="oraculo-dorso-esq" style="bottom:26px;left:14px">✦</span>
+      <span class="oraculo-dorso-esq" style="bottom:26px;right:14px">✦</span>
+      <span class="oraculo-emblema" aria-hidden="true">
+        <i class="rombo"></i><i class="marco"></i><i class="nucleo"></i>
+      </span>
+      <span class="oraculo-dorso-nombre">MUNDO DE MITOS</span>
+    </div>`;
+}
+
+function caraOraculoHTML(p) {
+  return `
+    <div class="oraculo-cara" style="background:${fondoCarta(p.colorCarta)}">
+      <i class="esquina esquina-tl" aria-hidden="true"></i>
+      <i class="esquina esquina-tr" aria-hidden="true"></i>
+      <i class="esquina esquina-bl" aria-hidden="true"></i>
+      <i class="esquina esquina-br" aria-hidden="true"></i>
+      <span class="ilustracion">${svgIcono(p.icono)}</span>
+      <strong class="oraculo-cara-nombre">${p.nombre}</strong>
+      <em class="oraculo-cara-titulo">${p.titulo}</em>
+      <span class="chip-mito">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
+    </div>`;
+}
+
+function abrirOraculo() {
+  const candidatos = personajes.filter(p => !estaDesbloqueada(p.id));
+  if (!candidatos.length) {
+    mostrarToast("✨ ¡Ya descubriste a todos los héroes!");
+    return;
+  }
+  oraculoPendiente = alAzar(candidatos).id;
+  renderOraculoDorso();
+  document.getElementById("oraculo").classList.remove("oculto");
+}
+
+function renderOraculoDorso() {
+  const escena = document.getElementById("oraculo-escena");
+  escena.className = "oraculo-escena estado-dorso";
+  escena.innerHTML = `
+    ${nieblaFlotanteHTML()}
+    <div class="oraculo-carta">${dorsoOraculoHTML()}</div>
+    <div class="oraculo-acciones">
+      <button class="boton-principal" id="oraculo-consultar">🔮 Consultar al Oráculo</button>
+      <button class="boton-secundario" id="oraculo-cerrar">Mejor después</button>
+    </div>`;
+  document.getElementById("oraculo-consultar").addEventListener("click", () => abrirPregunta(oraculoPendiente));
+  document.getElementById("oraculo-cerrar").addEventListener("click", cerrarOraculo);
+}
+
+function revelarConOraculo(id) {
+  cerrarPregunta();
+  desbloquear(id);
+  sonar("arpegio");
+  vibrar([30, 50, 30]);
+  renderGaleria();
+
+  const p = porId(id);
+  const escena = document.getElementById("oraculo-escena");
+  escena.className = "oraculo-escena estado-revelada";
+  escena.innerHTML = `
+    ${nieblaDispersaHTML()}
+    <div class="oraculo-toast">✨ ¡Apareció ${p.nombre}!</div>
+    <div class="oraculo-carta oraculo-carta--revelada">${caraOraculoHTML(p)}</div>
+    <div class="oraculo-acciones">
+      <button class="boton-principal" id="oraculo-ver">Ver su carta</button>
+      <button class="boton-secundario" id="oraculo-otra">Abrir otra</button>
+    </div>`;
+  document.getElementById("oraculo-ver").addEventListener("click", () => {
+    cerrarOraculo();
+    abrirDetalle(id, true);
+  });
+  document.getElementById("oraculo-otra").addEventListener("click", abrirOraculo);
+}
+
+function cerrarOraculo() {
+  document.getElementById("oraculo").classList.add("oculto");
+  oraculoPendiente = null;
+}
+
+/* ---------- Pregunta de desbloqueo ---------- */
 
 function abrirPregunta(idVelada) {
   const conPreguntas = personajes.filter(p => estaDesbloqueada(p.id) && p.preguntas && p.preguntas.length);
   if (conPreguntas.length === 0) {
-    // Sin cartas con preguntas no hay desafío posible: se desbloquea directo.
-    revelarCarta(idVelada);
+    // Sin cartas con preguntas no hay desafío posible: se revela directo.
+    revelarConOraculo(idVelada);
     return;
   }
 
@@ -392,10 +503,7 @@ function responder(boton) {
     lanzarParticulasSello(boton.parentElement, 8);
     document.querySelectorAll("#pregunta-contenido .opcion").forEach(b => b.disabled = true);
     const idGanada = cartaPendiente;
-    setTimeout(() => {
-      cerrarPregunta();
-      revelarCarta(idGanada);
-    }, 700);
+    setTimeout(() => revelarConOraculo(idGanada), 700);
   } else {
     boton.classList.add("incorrecta");
     boton.disabled = true;
@@ -403,20 +511,8 @@ function responder(boton) {
   }
 }
 
-function revelarCarta(id) {
-  desbloquear(id);
-  renderGaleria();
-  const carta = document.querySelector(`.carta[data-id="${id}"]`);
-  if (carta) {
-    carta.classList.add("recien-revelada");
-    lanzarNieblaDispersa(carta);
-  }
-  sonar("arpegio");
-  vibrar(30);
-  mostrarToastAparicion(porId(id).nombre);
-  setTimeout(() => abrirDetalle(id, true), 950);
-}
-
+/* Cierra el modal de la pregunta. No toca el overlay del Oráculo que está
+   detrás: si la jugadora cancela, vuelve al dorso para reintentar. */
 function cerrarPregunta() {
   document.getElementById("modal-pregunta").classList.add("oculto");
   cartaPendiente = null;
@@ -608,11 +704,18 @@ function configurarControles() {
   document.getElementById("detalle").addEventListener("click", e => {
     if (e.target.id === "detalle") cerrarDetalle();
   });
+  document.getElementById("oraculo").addEventListener("click", e => {
+    if (e.target.id === "oraculo") cerrarOraculo();
+  });
 
   document.addEventListener("keydown", e => {
     if (e.key === "Escape") {
+      // Si la pregunta está abierta, Escape solo la cancela (vuelve al dorso);
+      // si no, cierra lo que haya abierto.
+      const preguntaAbierta = !document.getElementById("modal-pregunta").classList.contains("oculto");
+      if (preguntaAbierta) { cerrarPregunta(); return; }
       cerrarDetalle();
-      cerrarPregunta();
+      cerrarOraculo();
       document.getElementById("modal-config").classList.add("oculto");
     }
   });

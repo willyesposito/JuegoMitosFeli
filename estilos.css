@@ -233,7 +233,7 @@ button { font-family: inherit; cursor: pointer; }
   text-shadow: 0 1px 3px rgba(0, 0, 0, .35);
 }
 
-.carta .chip-mito {
+.chip-mito {
   font-size: .72rem;
   font-weight: 700;
   background: rgba(0, 0, 0, .25);
@@ -241,11 +241,63 @@ button { font-family: inherit; cursor: pointer; }
   padding: 3px 10px;
 }
 
+/* ===== Naipe de colección (Handoff v2 §8, opciones 1a + 1b) =====
+   Marco dorado inset (pseudo-elemento, sin reestructurar el HTML) + medallón
+   de tier en la esquina + placa de nombre con subtítulo + divisor ornamental
+   con la mitología. La profundidad (sombra, glow del ícono, gradiente) viene
+   de las reglas de arriba. */
+.carta:not(.carta-lanzador)::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1.5px solid rgba(255, 216, 103, .38);
+  border-radius: 11px;
+  pointer-events: none;
+  z-index: 2;
+}
+/* En las cartas de material el marco ya lo da el borde metálico exterior. */
+.carta--dorada::before, .carta--plateada::before { display: none; }
+
+.medallon-tier {
+  position: absolute;
+  top: 8px; right: 8px;
+  z-index: 4;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
+}
+.medallon-tier.tier-dorado   { background: linear-gradient(135deg, #f8e08e, #c9962e); color: #4a3200; }
+.medallon-tier.tier-plateado { background: linear-gradient(135deg, #f4f7fb, #9aa5b5); color: #2b323c; }
+
+.carta .subtitulo-mito {
+  position: relative;
+  z-index: 3;
+  font-size: .64rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, .78);
+  text-align: center;
+  margin-top: -2px;
+  padding: 0 6px;
+}
+
+.divisor-mito {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+  width: 100%;
+}
+.divisor-mito i { flex: 1; max-width: 26px; height: 1px; background: rgba(255, 216, 103, .45); }
+.divisor-mito span { font-size: .62rem; font-weight: 700; color: rgba(255, 236, 170, .9); letter-spacing: 1px; }
+
 .carta .esquina { width: 11px; height: 11px; top: 8px; bottom: 8px; left: 8px; right: 8px; }
 
-.chips-fila { display: flex; gap: 6px; align-items: center; }
-
-.barra-capitulos-mini { display: flex; gap: 4px; width: 72%; height: 6px; margin-top: 2px; }
+.barra-capitulos-mini { position: relative; z-index: 3; display: flex; gap: 4px; width: 72%; height: 6px; margin-top: 2px; }
 .barra-capitulos-mini i { flex: 1; border-radius: 999px; background: rgba(255, 255, 255, .16); }
 .barra-capitulos-mini i.lleno { background: linear-gradient(90deg, #ffd867, #ff9e6b); }
 
@@ -254,6 +306,24 @@ button { font-family: inherit; cursor: pointer; }
   50%      { box-shadow: 0 0 18px 4px rgba(255, 216, 103, .35), inset 0 1px 0 rgba(255, 255, 255, .18); }
 }
 .carta--casi-completa { animation: pulso-casi 2.8s ease-in-out infinite; }
+
+/* Lanzador del Oráculo: la única "carta misteriosa" que queda en la grilla.
+   Reemplaza a las decenas de "???" para que el álbum se vea como colección. */
+.carta-lanzador {
+  background: linear-gradient(160deg, rgba(59, 47, 117, .95), rgba(25, 17, 66, .95));
+  border: 1.5px dashed rgba(255, 216, 103, .5);
+  justify-content: center;
+  gap: 10px;
+}
+.carta-lanzador:hover { border-color: rgba(255, 216, 103, .85); }
+.lanzador-icono {
+  font-size: 2.6rem;
+  filter: drop-shadow(0 0 12px rgba(255, 216, 103, .5));
+  animation: flotar-suave 3.4s ease-in-out infinite;
+}
+.lanzador-titulo { font-family: "Cinzel", serif; font-weight: 800; font-size: .98rem; color: #ffe9a8; text-align: center; }
+.lanzador-sub { font-size: .72rem; color: rgba(253, 251, 255, .7); text-align: center; }
+@keyframes flotar-suave { 0%, 100% { transform: translateY(-3px); } 50% { transform: translateY(3px); } }
 
 /* Insignia de tier: distintivo estático de qué tan central es el personaje en su mitología.
    Define el marco/holo máximo que la carta puede alcanzar (ver capítulos más abajo),
@@ -286,13 +356,6 @@ button { font-family: inherit; cursor: pointer; }
   color: #2b323c;
 }
 
-.carta.velada {
-  background: linear-gradient(160deg, #3a3654, #26233b) !important;
-  color: rgba(253, 251, 255, .6);
-}
-
-.carta.velada .ilustracion { background: rgba(0, 0, 0, .25); }
-
 .mensaje-vacio {
   text-align: center;
   color: var(--texto-suave);
@@ -300,34 +363,11 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 1.05rem;
 }
 
-/* Revelado — "Niebla del Oráculo" (ver Handoff de tiers, sección 7): la carta
-   brota con un destello mientras la niebla alrededor se dispersa hacia afuera. */
+/* Brote de la carta al abrir el detalle de una recién revelada. */
 @keyframes carta-brotar {
   0%   { opacity: 0; transform: scale(.86); filter: brightness(2.4) saturate(.6); }
   40%  { opacity: 1; filter: brightness(1.35) saturate(.85); }
   100% { opacity: 1; transform: scale(1); filter: brightness(1) saturate(1); }
-}
-
-.carta.recien-revelada { animation: carta-brotar .95s ease-out both; }
-
-@keyframes niebla-dispersa {
-  0%   { opacity: .6; transform: translate(0, 0) scale(1); }
-  100% { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(1.6); }
-}
-
-.niebla-dispersa {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 56px;
-  height: 56px;
-  margin: -28px 0 0 -28px;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 3;
-  background: radial-gradient(circle, rgba(190, 165, 255, .55), transparent 70%);
-  filter: blur(7px);
-  animation: niebla-dispersa .9s ease-out both;
 }
 
 @keyframes toast-aparece {
@@ -394,6 +434,14 @@ button { font-family: inherit; cursor: pointer; }
 .esquina-bl { bottom: 10px; left: 10px; border-bottom: 2px solid; border-left: 2px solid; border-bottom-left-radius: 8px; }
 .esquina-br { bottom: 10px; right: 10px; border-bottom: 2px solid; border-right: 2px solid; border-bottom-right-radius: 8px; }
 
+/* En la carta de detalle (grande) las esquinas se estiran para marcar el
+   marco: brackets más largos y gruesos, proporcionales al tamaño. */
+.detalle-carta .esquina { width: 30px; height: 30px; }
+.detalle-carta .esquina-tl { top: 12px; left: 12px; border-top-width: 3px; border-left-width: 3px; }
+.detalle-carta .esquina-tr { top: 12px; right: 12px; border-top-width: 3px; border-right-width: 3px; }
+.detalle-carta .esquina-bl { bottom: 12px; left: 12px; border-bottom-width: 3px; border-left-width: 3px; }
+.detalle-carta .esquina-br { bottom: 12px; right: 12px; border-bottom-width: 3px; border-right-width: 3px; }
+
 @keyframes aparecer {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: none; }
@@ -459,9 +507,17 @@ button { font-family: inherit; cursor: pointer; }
 
 .atributos { display: grid; gap: 8px; margin-bottom: 18px; text-align: left; }
 
-.atributo { display: grid; grid-template-columns: 34px 1fr; align-items: center; gap: 10px; }
+.atributo { display: grid; grid-template-columns: 34px 1fr 26px; align-items: center; gap: 10px; }
 
 .atributo .icono-attr { font-size: 1.2rem; text-align: center; }
+
+.atributo .valor-attr {
+  text-align: right;
+  font-weight: 800;
+  font-size: .95rem;
+  color: rgba(255, 255, 255, .92);
+  font-variant-numeric: tabular-nums;
+}
 
 .barra {
   height: 16px;
@@ -631,9 +687,11 @@ button { font-family: inherit; cursor: pointer; }
 
 @keyframes holo-mov { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
 
-.carta .ilustracion, .carta .nombre, .carta .chip-mito, .carta .chip-tier {
+.carta .ilustracion, .carta .nombre, .carta .subtitulo-mito,
+.carta .divisor-mito, .carta .chip-mito, .carta .chip-tier,
+.carta-lanzador .lanzador-icono, .carta-lanzador .lanzador-titulo, .carta-lanzador .lanzador-sub {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 .detalle-carta > .boton-volver, .detalle-carta > .detalle-contenido {
@@ -872,6 +930,146 @@ button { font-family: inherit; cursor: pointer; }
 
 /* Transición carta → detalle (progressive enhancement, sin soporte no cambia nada) */
 ::view-transition-old(carta-activa), ::view-transition-new(carta-activa) { animation-duration: .35s; }
+
+/* ============ Niebla del Oráculo (descubrir una carta) ============
+   Overlay de descubrimiento: dorso "Mundo de Mitos" envuelto en niebla que,
+   al acertar la pregunta, se dispersa y deja brotar la carta nueva
+   (referencia: Cartas y Animaciones §02, variante A elegida). */
+.oraculo-fondo {
+  background: radial-gradient(circle at 50% 28%, rgba(44,34,96,.96) 0%, rgba(25,17,66,.97) 58%, rgba(18,13,51,.98) 100%);
+  backdrop-filter: blur(4px);
+}
+
+.oraculo-escena {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  padding: 40px 20px 26px;
+}
+
+.oraculo-niebla {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(24px);
+}
+.oraculo-niebla--1 { top: 14%; left: 2%;  width: 180px; height: 150px; background: radial-gradient(circle, rgba(190,170,255,.42), transparent 70%); animation: deriva 9s ease-in-out infinite; }
+.oraculo-niebla--2 { top: 8%;  right: 0;  width: 165px; height: 140px; background: radial-gradient(circle, rgba(160,190,255,.4),  transparent 70%); animation: deriva 11s ease-in-out 1s infinite reverse; }
+.oraculo-niebla--3 { bottom: 22%; left: 4%; width: 175px; height: 150px; background: radial-gradient(circle, rgba(210,180,255,.38), transparent 70%); animation: deriva 10s ease-in-out 2s infinite; }
+.oraculo-niebla--4 { bottom: 16%; right: 3%; width: 190px; height: 155px; background: radial-gradient(circle, rgba(180,170,255,.42), transparent 70%); animation: deriva 12s ease-in-out .5s infinite reverse; }
+
+.oraculo-niebla--parte-a { top: 14%; left: 2%;  width: 180px; height: 150px; background: radial-gradient(circle, rgba(190,170,255,.42), transparent 70%); animation: niebla-parte-a 1s ease-out both; }
+.oraculo-niebla--parte-b { top: 8%;  right: 0;  width: 165px; height: 140px; background: radial-gradient(circle, rgba(160,190,255,.4),  transparent 70%); animation: niebla-parte-b 1s ease-out both; }
+.oraculo-niebla--parte-c { bottom: 22%; left: 4%; width: 175px; height: 150px; background: radial-gradient(circle, rgba(210,180,255,.38), transparent 70%); animation: niebla-parte-c 1s ease-out both; }
+.oraculo-niebla--parte-d { bottom: 16%; right: 3%; width: 190px; height: 155px; background: radial-gradient(circle, rgba(180,170,255,.42), transparent 70%); animation: niebla-parte-d 1s ease-out both; }
+
+@keyframes deriva { 0%, 100% { transform: translate(-14px, 8px); } 50% { transform: translate(16px, -10px); } }
+@keyframes niebla-parte-a { to { transform: translate(-140px, -70px) scale(1.5); opacity: 0; } }
+@keyframes niebla-parte-b { to { transform: translate(150px, -50px) scale(1.45); opacity: 0; } }
+@keyframes niebla-parte-c { to { transform: translate(-130px, 80px) scale(1.4); opacity: 0; } }
+@keyframes niebla-parte-d { to { transform: translate(140px, 90px) scale(1.55); opacity: 0; } }
+@keyframes flota { 0%, 100% { transform: translateY(-5px); } 50% { transform: translateY(5px); } }
+@keyframes brotar-carta { 0% { opacity: 0; transform: scale(.86); filter: brightness(2.4) saturate(.6); } 55% { opacity: 1; filter: brightness(1.35); } 100% { opacity: 1; transform: scale(1); filter: brightness(1); } }
+
+.oraculo-carta {
+  position: relative;
+  z-index: 1;
+  width: 220px;
+  height: 308px;
+  animation: flota 5.5s ease-in-out infinite;
+}
+.oraculo-carta--revelada { animation: brotar-carta .95s ease-out both; }
+
+/* Dorso "Mundo de Mitos" */
+.oraculo-dorso {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  background: radial-gradient(circle at 50% 40%, #3b2f75 0%, #241c4d 62%, #1a1440 100%);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, .5);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.oraculo-dorso-marco {
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(255, 216, 103, .35);
+  border-radius: 11px;
+  pointer-events: none;
+}
+.oraculo-dorso-esq { position: absolute; color: rgba(255, 216, 103, .6); font-size: 11px; }
+.oraculo-dorso-nombre {
+  position: absolute;
+  bottom: 16px; left: 0; right: 0;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: rgba(255, 216, 103, .55);
+}
+.oraculo-emblema { position: relative; width: 84px; height: 84px; }
+.oraculo-emblema .rombo  { position: absolute; inset: 0; border: 2px solid rgba(255, 216, 103, .75); transform: rotate(45deg); }
+.oraculo-emblema .marco  { position: absolute; inset: 0; border: 2px solid rgba(255, 216, 103, .4); }
+.oraculo-emblema .nucleo { position: absolute; top: 50%; left: 50%; width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50%; background: #ffd867; box-shadow: 0 0 20px rgba(255, 216, 103, .9); }
+
+/* Cara revelada del personaje */
+.oraculo-cara {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, .5), 0 0 40px rgba(255, 216, 103, .2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  overflow: hidden;
+}
+.oraculo-cara .ilustracion {
+  width: 96px; height: 96px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .22);
+  border: 1.5px solid rgba(255, 255, 255, .22);
+  display: grid; place-items: center;
+  padding: 11px;
+}
+.oraculo-cara .ilustracion svg { width: 100%; height: 100%; }
+.oraculo-cara .esquina { width: 13px; height: 13px; }
+.oraculo-cara-nombre { font-family: "Cinzel", serif; font-size: 1.35rem; letter-spacing: 1px; text-shadow: 0 2px 6px rgba(0, 0, 0, .4); }
+.oraculo-cara-titulo { font-size: .78rem; font-style: italic; color: rgba(255, 255, 255, .9); text-align: center; }
+
+.oraculo-acciones { position: relative; z-index: 2; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+
+.oraculo-toast {
+  position: absolute;
+  top: 28px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  background: rgba(20, 14, 50, .92);
+  border: 1.5px solid rgba(255, 216, 103, .6);
+  color: #ffe9a8;
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: .9rem;
+  font-weight: 800;
+  white-space: nowrap;
+  pointer-events: none;
+  animation: aparecer-toast .45s ease-out .5s both;
+}
+@keyframes aparecer-toast { from { opacity: 0; transform: translate(-50%, 14px); } to { opacity: 1; transform: translate(-50%, 0); } }
 
 /* ============ Accesibilidad ============ */
 @media (prefers-reduced-motion: reduce) {

@@ -1,7 +1,7 @@
 /* Service worker: deja el juego disponible offline una vez cargado.
    Al cambiar cualquier archivo, subir la versión para que se actualice la caché. */
 
-const VERSION = "feli-cartas-v1.7.0";
+const VERSION = "feli-cartas-v1.8.0";
 const ARCHIVOS = [
   "./",
   "index.html",
