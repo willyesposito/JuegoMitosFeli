@@ -7,7 +7,12 @@ const NS = "http://www.w3.org/2000/svg";
 
 const DECOY_POOL = [
   [10, 22], [88, 16], [10, 52], [90, 40], [8, 80], [92, 78], [52, 8], [22, 88],
-  [70, 10], [78, 88], [46, 84], [60, 16], [16, 14], [84, 64], [30, 78], [72, 34]
+  [70, 10], [78, 88], [46, 84], [60, 16], [16, 14], [84, 64], [30, 78], [72, 34],
+  [8, 15], [24, 15], [40, 15], [56, 15], [72, 15], [88, 15],
+  [16, 32], [34, 32], [50, 32], [66, 32], [84, 32],
+  [8, 50], [24, 50], [40, 50], [56, 50], [72, 50], [88, 50],
+  [16, 68], [34, 68], [50, 68], [66, 68], [84, 68],
+  [8, 85], [24, 85], [40, 85], [56, 85], [72, 85], [88, 85]
 ];
 
 let catalogo = [];
@@ -31,12 +36,15 @@ function actual() {
 }
 
 function decoysDe(c) {
-  const cant = c.dificultad === 1 ? 2 : c.dificultad === 2 ? 4 : 7;
+  const cant = c.dificultad === 1 ? 7 : c.dificultad === 2 ? 10 : 13;
   return DECOY_POOL.filter(d => c.estrellas.every(p => Math.hypot(p[0] - d[0], p[1] - d[1]) >= 10)).slice(0, cant);
 }
 
+/* La pista (halo alrededor de la próxima estrella) ya no se muestra de
+   entrada: hacía el trazado demasiado fácil. Solo se regala como salvavidas
+   después de varios errores seguidos (ver marcarError). */
 function conPista(c) {
-  return c.dificultad === 1 || (c.dificultad === 2 && paso === 0) || pistaTemporal;
+  return pistaTemporal;
 }
 
 /* ---------- Doble función: descubre o enciende un capítulo adicional ---------- */
@@ -362,11 +370,12 @@ function render() {
 /* ---------- Arranque ---------- */
 
 async function iniciar() {
+  let publicadas = [];
   try {
     await cargarPersonajes();
     const respuesta = await fetch("constelaciones.json");
     const todas = await respuesta.json();
-    catalogo = todas.filter(c => c.estado === "publicado");
+    publicadas = todas.filter(c => c.estado === "publicado");
   } catch (e) {
     document.getElementById("cielo-vacio").textContent =
       "No pude cargar el cielo. Si abriste el archivo directo, probá servirlo con un servidor local (ver README).";
@@ -375,6 +384,10 @@ async function iniciar() {
   }
 
   cargarEstado();
+
+  // Solo se ofrecen constelaciones de cartas que ya están en la colección:
+  // el Cielo enciende capítulos adicionales, no es una vía de descubrimiento.
+  catalogo = publicadas.filter(c => estaDesbloqueada(c.personajeId));
 
   if (catalogo.length === 0) {
     document.getElementById("cielo-vacio").classList.remove("oculto");

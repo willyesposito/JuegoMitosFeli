@@ -34,7 +34,7 @@ const NOMBRE_MODULO_FUENTE = {
 };
 
 let personajes = [];
-let estado = { desbloqueadas: [], capitulosEncendidos: {}, celebrados: [] };
+let estado = { desbloqueadas: [], capitulosEncendidos: {}, celebrados: [], cielo: { completadas: [] } };
 
 /* ---------- Persistencia ---------- */
 
@@ -48,6 +48,10 @@ function cargarEstado() {
         estado.capitulosEncendidos = (datos.capitulosEncendidos && typeof datos.capitulosEncendidos === "object")
           ? datos.capitulosEncendidos : {};
         estado.celebrados = Array.isArray(datos.celebrados) ? datos.celebrados : [];
+        // El progreso propio de cada módulo (por ahora solo "cielo") también
+        // vive en este mismo objeto: si no se restaura acá se pierde apenas
+        // cualquier página vuelve a guardar el estado (ver guardarEstado más abajo).
+        estado.cielo = (datos.cielo && Array.isArray(datos.cielo.completadas)) ? datos.cielo : { completadas: [] };
         // Compatibilidad: partidas guardadas antes de que existiera este concepto
         // (o con el viejo historiaLeida/preguntaAcertada) igual tienen su capítulo
         // base encendido en toda carta ya descubierta. Nadie pierde progreso.
@@ -62,6 +66,7 @@ function cargarEstado() {
   estado.desbloqueadas = [...DESBLOQUEADAS_INICIALES];
   estado.capitulosEncendidos = {};
   estado.celebrados = [];
+  estado.cielo = { completadas: [] };
   for (const id of estado.desbloqueadas) estado.capitulosEncendidos[id] = ["base"];
   guardarEstado();
 }

@@ -53,11 +53,16 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .cielo-volver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   background: rgba(0, 0, 0, .28);
   color: #fff;
-  font-size: 17px;
+  font-size: 22px;
+  line-height: 1;
   font-weight: 800;
+  text-decoration: none;
   border-radius: 999px;
   width: 44px;
   height: 44px;
