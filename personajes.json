@@ -261,7 +261,7 @@
       "bondad": 5
     },
     "colorCarta": "#3E5C76",
-    "icono": "cielo",
+    "icono": "atlas",
     "tier": "plateado",
     "capitulos": [
       {
@@ -5179,7 +5179,7 @@
       "bondad": 7
     },
     "colorCarta": "#4C6B7A",
-    "icono": "cielo",
+    "icono": "osa",
     "tier": "normal",
     "capitulos": [
       {
@@ -5223,7 +5223,7 @@
       "bondad": 4
     },
     "colorCarta": "#8A5A6E",
-    "icono": "cielo",
+    "icono": "trono",
     "tier": "normal",
     "capitulos": [
       {
@@ -5267,7 +5267,7 @@
       "bondad": 5
     },
     "colorCarta": "#3C5A8A",
-    "icono": "cielo",
+    "icono": "cazador",
     "tier": "plateado",
     "capitulos": [
       {
@@ -5319,7 +5319,7 @@
       "bondad": 8
     },
     "colorCarta": "#5B6EAE",
-    "icono": "cielo",
+    "icono": "gemelos",
     "tier": "normal",
     "capitulos": [
       {

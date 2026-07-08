@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="theme-color" content="#191142">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #120d33; }
+    a { color: #ffd867; } a:hover { color: #ffe9a8; }
+    @keyframes titila { 0%, 100% { opacity: .15; } 50% { opacity: 1; } }
+    @keyframes pulso-halo { 0% { transform: scale(.7); opacity: .9; } 70% { transform: scale(1.5); opacity: 0; } 100% { transform: scale(1.5); opacity: 0; } }
+    @keyframes trazar-linea { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+    @keyframes onda-svg { 0% { transform: scale(.15); opacity: .9; } 100% { transform: scale(1.8); opacity: 0; } }
+    @keyframes aparece { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes brota-nombre { 0% { opacity: 0; transform: translateY(10px) scale(.92); } 60% { opacity: 1; transform: translateY(0) scale(1.04); } 100% { opacity: 1; transform: none; } }
+    @keyframes sube-sheet { from { transform: translateY(105%); } to { transform: none; } }
+    @keyframes tinta { from { clip-path: inset(0 0 100% 0); opacity: 0; } to { clip-path: inset(0 0 0 0); opacity: 1; } }
+    @keyframes sacudir-suave { 0%, 100% { transform: translateX(0); } 30% { transform: translateX(-4px); } 70% { transform: translateX(4px); } }
+    @keyframes brillo-estrella { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+    .halo-guia { transform-box: fill-box; transform-origin: center; animation: pulso-halo 1.6s ease-out infinite backwards; }
+    .linea-trazada { stroke-dasharray: 1; animation: trazar-linea .45s ease-out both; }
+    .onda-final { transform-box: fill-box; transform-origin: center; animation: onda-svg 1.1s ease-out both; }
+    .destello-final { transform-box: fill-box; transform-origin: center; animation: brillo-estrella 2.4s ease-in-out infinite backwards; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</helmet>
+
+<div data-screen-label="El Cielo de los Mitos" style="position: relative; max-width: 430px; margin: 0 auto; height: 100dvh; min-height: 640px; overflow: hidden; display: flex; flex-direction: column; background: radial-gradient(circle at 50% 24%, #2c2260 0%, #191142 58%, #120d33 100%); color: #fdfbff; font-family: ui-rounded, 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;">
+
+  <!-- Encabezado -->
+  <div style="position: relative; z-index: 2; display: flex; align-items: center; gap: 10px; padding: 14px 14px 6px;">
+    <button aria-label="Volver al hub" style="border: none; background: rgba(0,0,0,.28); color: #fff; font-size: 17px; font-weight: 800; border-radius: 999px; width: 44px; height: 44px; cursor: pointer;">‹</button>
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 1px;">
+      <span style="font-family: Cinzel, serif; font-weight: 700; font-size: 17px; letter-spacing: .5px; color: #ffe9a8;">El Cielo de los Mitos</span>
+      <span style="font-size: 11px; color: rgba(253,251,255,.6);">Uní las estrellas y encendé historias</span>
+    </div>
+    <span style="background: rgba(255,255,255,.1); border: 1px solid rgba(255,216,103,.35); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 800; white-space: nowrap;">{{trazadasTexto}}</span>
+  </div>
+
+  <!-- Instrucción -->
+  <p style="position: relative; z-index: 2; margin: 6px 16px 0; text-align: center; font-size: 13.5px; font-weight: 700; color: rgba(255,233,168,.9); min-height: 1.4em;">{{instruccion}}</p>
+
+  <!-- Cielo -->
+  <div style="position: relative; flex: 1; min-height: 0;">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" style="position: absolute; inset: 0; width: 100%; height: 100%; touch-action: manipulation;">
+      <circle cx="8" cy="10" r=".7" fill="#fff" style="animation: titila 4.2s ease-in-out .4s infinite backwards;"></circle>
+      <circle cx="30" cy="6" r=".5" fill="#fff" style="animation: titila 5s ease-in-out 1.4s infinite backwards;"></circle>
+      <circle cx="55" cy="12" r=".6" fill="#fff" style="animation: titila 4.6s ease-in-out 2.1s infinite backwards;"></circle>
+      <circle cx="78" cy="8" r=".5" fill="#fff" style="animation: titila 5.2s ease-in-out .9s infinite backwards;"></circle>
+      <circle cx="92" cy="22" r=".7" fill="#fff" style="animation: titila 4.4s ease-in-out 1.8s infinite backwards;"></circle>
+      <circle cx="6" cy="38" r=".5" fill="#fff" style="animation: titila 4.8s ease-in-out 2.6s infinite backwards;"></circle>
+      <circle cx="94" cy="46" r=".5" fill="#fff" style="animation: titila 5.4s ease-in-out .6s infinite backwards;"></circle>
+      <circle cx="12" cy="84" r=".6" fill="#fff" style="animation: titila 4.3s ease-in-out 1.1s infinite backwards;"></circle>
+      <circle cx="46" cy="90" r=".5" fill="#fff" style="animation: titila 5.1s ease-in-out 2.4s infinite backwards;"></circle>
+      <circle cx="86" cy="88" r=".6" fill="#fff" style="animation: titila 4.7s ease-in-out 1.7s infinite backwards;"></circle>
+      <circle cx="68" cy="74" r=".4" fill="#fff" style="animation: titila 5.3s ease-in-out .3s infinite backwards;"></circle>
+      <circle cx="24" cy="70" r=".4" fill="#fff" style="animation: titila 4.9s ease-in-out 2.9s infinite backwards;"></circle>
+      {{cieloNodos}}
+    </svg>
+
+    <sc-if value="{{nombreVisible}}" hint-placeholder-val="{{false}}">
+      <div style="position: absolute; top: 8%; left: 0; right: 0; text-align: center; pointer-events: none; animation: brota-nombre .7s ease-out both;">
+        <span style="font-family: Cinzel, serif; font-weight: 800; font-size: 24px; letter-spacing: 2px; background: linear-gradient(90deg, #ffd867, #fff3d0, #ffd867); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">{{nombreConst}}</span>
+        <p style="margin: 2px 0 0; font-size: 12px; color: rgba(255,233,168,.85); font-weight: 700;">{{subConst}}</p>
+      </div>
+    </sc-if>
+
+    <button onClick="{{reiniciar}}" aria-label="Reiniciar trazado" style="position: absolute; bottom: 12px; right: 12px; z-index: 3; border: none; background: rgba(255,255,255,.1); color: rgba(253,251,255,.7); border-radius: 50%; width: 44px; height: 44px; font-size: 17px; cursor: pointer;">↺</button>
+  </div>
+
+  <!-- Catálogo de constelaciones -->
+  <div style="position: relative; z-index: 2; display: flex; gap: 8px; padding: 10px 14px 16px; overflow-x: auto; scrollbar-width: none;">
+    <sc-for list="{{constelaciones}}" as="c" hint-placeholder-count="5">
+      <button onClick="{{c.elegir}}" style="{{c.estilo}}">{{c.etiqueta}}</button>
+    </sc-for>
+  </div>
+
+  <!-- Hoja de capítulo revelado -->
+  <sc-if value="{{mostrandoCapitulo}}" hint-placeholder-val="{{false}}">
+    <div data-screen-label="Capítulo revelado" style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 10; max-height: 72%; overflow-y: auto; background: linear-gradient(175deg, #352a68, #241c4d 70%); border-radius: 22px 22px 0 0; box-shadow: 0 -12px 40px rgba(0,0,0,.5); padding: 18px 18px 22px; animation: sube-sheet .5s cubic-bezier(.2,.9,.3,1) both;">
+      <div style="width: 42px; height: 4px; border-radius: 999px; background: rgba(255,255,255,.25); margin: 0 auto 14px;"></div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; margin-bottom: 14px; text-align: center;">
+        <span style="display: inline-flex; align-items: center; gap: 8px; background: rgba(20,14,50,.9); border: 1.5px solid rgba(255,216,103,.6); color: #ffe9a8; border-radius: 999px; padding: 9px 18px; font-size: 13.5px; font-weight: 800; animation: aparece .45s ease-out both;">✨ Nuevo capítulo: {{capTitulo}}</span>
+        <span style="font-size: 11px; font-weight: 800; letter-spacing: .3px; color: rgba(255,216,103,.75); animation: tinta .6s ease-out .35s both;">🌌 Encendido en El Cielo de los Mitos</span>
+      </div>
+
+      <div style="background: rgba(0,0,0,.22); border-radius: 16px; padding: 14px 16px; text-align: left; animation: tinta .8s ease-out .45s both;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+          <span style="width: 30px; height: 30px; border-radius: 50%; flex: none; display: grid; place-items: center; border: 1.5px solid rgba(255,216,103,.65); color: #ffd867; font-family: Cinzel, serif; font-weight: 800; font-size: 13px;">II</span>
+          <strong style="font-size: 15.5px;">{{capTitulo}} · <span style="color: rgba(255,233,168,.9);">{{capPersonaje}}</span></strong>
+        </div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.6; color: rgba(253,251,255,.95);">{{capTexto}}</p>
+        <div style="margin-top: 10px; background: rgba(255,216,103,.14); border: 1.5px solid rgba(255,216,103,.5); border-radius: 12px; padding: 10px 12px;">
+          <strong style="color: #ffd867; font-size: 12.5px; display: block; margin-bottom: 4px;">💡 ¿Por qué?</strong>
+          <p style="margin: 0; font-size: 13px; line-height: 1.55; color: rgba(253,251,255,.92);">{{capPorque}}</p>
+        </div>
+      </div>
+
+      <sc-if value="{{hayTambien}}" hint-placeholder-val="{{false}}">
+        <p style="margin: 12px 4px 2px; font-size: 12.5px; color: rgba(253,251,255,.7); text-align: center; animation: tinta .6s ease-out .6s both;">{{capTambien}}</p>
+      </sc-if>
+
+      <div style="display: flex; gap: 10px; justify-content: center; margin-top: 12px;">
+        <button style="border: none; background: #ffd867; color: #4a3200; border-radius: 999px; padding: 14px 22px; font-size: 14.5px; font-weight: 800; font-family: inherit; cursor: pointer; box-shadow: 0 4px 14px rgba(255,216,103,.3);">Ver la carta de {{capPersonaje}}</button>
+        <button onClick="{{cerrarHoja}}" style="border: none; background: rgba(255,255,255,.14); color: #fdfbff; border-radius: 999px; padding: 14px 20px; font-size: 14.5px; font-weight: 800; font-family: inherit; cursor: pointer;">Seguir mirando el cielo</button>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 430, &quot;height&quot;: 860 },
+  &quot;pista&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Juego&quot; },
+  &quot;sonido&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Juego&quot; }
+}">
+class Component extends DCLogic {
+  state = { idx: 0, paso: 0, fase: "trazando", errorKey: null, errores: 0, pistaTemporal: false, completadas: [] };
+
+  /* Catálogo Ola 1 (spec_funcional §4). Textos de capítulo: BORRADOR para revisar.
+     Patrones reales simplificados, coordenadas 0-100, trazo lineal sin ramas. */
+  CONSTELACIONES = [
+    { id: "corona_boreal", emoji: "👑", nombre: "Corona Boreal", nombreCielo: "CORONA BOREAL", sub: "La corona de Ariadna", dificultad: 1,
+      pts: [[17, 62], [25, 47], [37, 38], [51, 36], [64, 40], [75, 49], [82, 62]], brillante: 3,
+      personaje: "Teseo", capTitulo: "El hilo de Ariadna",
+      capTexto: "Ariadna conocía el secreto del laberinto: no hacía falta un mapa, sino una forma de volver. Le dio a Teseo un ovillo de hilo para que lo desenrollara al entrar. Cuando venció al Minotauro, Teseo siguió el hilo en la oscuridad, paso a paso, hasta ver otra vez la luz.",
+      capPorque: "Los griegos guardaron esta idea en el cielo: la Corona Boreal es la corona de Ariadna. Un plan simple, pensado antes de la aventura, puede brillar más que cualquier espada.",
+      tambien: "También se encendió en la carta de Ariadna: «La corona en el cielo»" },
+    { id: "osa_mayor", emoji: "🐻", nombre: "Osa Mayor", nombreCielo: "OSA MAYOR", sub: "La osa que nunca se esconde", dificultad: 1,
+      pts: [[14, 36], [26, 40], [37, 45], [47, 50], [62, 48], [66, 63], [50, 64]], brillante: 0,
+      personaje: "Calisto", capTitulo: "La osa del cielo",
+      capTexto: "Calisto fue transformada en osa por un hechizo injusto. Para protegerla para siempre, Zeus la subió al cielo convertida en estrellas: la Osa Mayor, que nunca baja del horizonte.",
+      capPorque: "La Osa Mayor se ve todas las noches del año. Los griegos explicaban esa presencia constante con una guardiana que nunca deja de cuidar.", tambien: null },
+    { id: "casiopea", emoji: "👸", nombre: "Casiopea", nombreCielo: "CASIOPEA", sub: "La reina en su trono", dificultad: 1,
+      pts: [[16, 44], [32, 58], [48, 42], [64, 58], [80, 44]], brillante: 2,
+      personaje: "Casiopea", capTitulo: "La reina en su trono",
+      capTexto: "Casiopea era una reina tan orgullosa que se comparaba con las diosas del mar. Como recuerdo, quedó en el cielo sentada en su trono, girando alrededor de la estrella polar para siempre.",
+      capPorque: "Su forma de W se ve todo el año. Los griegos la usaban para contar que presumir demasiado también deja marca… hasta en el cielo.", tambien: null },
+    { id: "leo", emoji: "🦁", nombre: "Leo", nombreCielo: "LEO", sub: "El león de Nemea", dificultad: 2,
+      pts: [[24, 66], [21, 52], [28, 42], [39, 37], [50, 41], [62, 46], [76, 52], [70, 64]], brillante: 0,
+      personaje: "Heracles", capTitulo: "El león de Nemea",
+      capTexto: "El primer trabajo de Heracles fue vencer al león de Nemea, una fiera cuya piel no podía atravesar ninguna arma. Heracles lo venció con su fuerza y su ingenio, y desde entonces llevó esa piel como armadura.",
+      capPorque: "Los griegos pusieron al león en el cielo: la constelación de Leo recuerda el primero de los doce trabajos.", tambien: null },
+    { id: "andromeda", emoji: "🌊", nombre: "Andrómeda", nombreCielo: "ANDRÓMEDA", sub: "La princesa rescatada", dificultad: 2,
+      pts: [[14, 68], [30, 57], [47, 48], [64, 40], [81, 31]], brillante: 0,
+      personaje: "Andrómeda", capTitulo: "El rescate",
+      capTexto: "Andrómeda estaba encadenada a una roca frente al mar cuando Perseo pasó volando de regreso de su misión. La rescató del monstruo marino, y sus historias quedaron unidas para siempre.",
+      capPorque: "Andrómeda conecta directo con la carta de Perseo, y muestra cómo los griegos convertían a sus personajes favoritos en constelaciones: una forma de decir que esa historia iba a poder leerse en el cielo para siempre.", tambien: null },
+    { id: "orion", emoji: "🏹", nombre: "Orión", nombreCielo: "ORIÓN", sub: "El cazador del cielo", dificultad: 2,
+      pts: [[58, 28], [36, 26], [42, 48], [48, 51], [54, 54], [64, 76], [40, 74]], brillante: 0,
+      personaje: "Orión", capTitulo: "El cazador del cielo",
+      capTexto: "Orión era un cazador gigante, tan hábil que presumía de poder vencer a cualquier animal del mundo. Su figura quedó en el cielo con un cinturón de tres estrellas, y todavía hoy es la constelación más fácil de encontrar.",
+      capPorque: "Las tres estrellas del cinturón se alinean casi perfecto. Culturas de todo el mundo las usaron para orientarse: los griegos les pusieron la historia de su cazador más famoso.", tambien: null },
+    { id: "geminis", emoji: "👬", nombre: "Géminis", nombreCielo: "GÉMINIS", sub: "Los gemelos inseparables", dificultad: 2,
+      pts: [[28, 26], [33, 46], [42, 66], [58, 66], [65, 46], [68, 26]], brillante: 5,
+      personaje: "Cástor y Pólux", capTitulo: "Los gemelos inseparables",
+      capTexto: "Cástor y Pólux eran gemelos, pero uno era mortal y el otro inmortal. Cuando Cástor murió, Pólux pidió compartir su inmortalidad con su hermano. Zeus los puso juntos en el cielo, para que no se separaran nunca.",
+      capPorque: "Géminis son dos hileras de estrellas casi iguales, una al lado de la otra: dos hermanos que eligieron estar juntos por sobre todas las cosas.", tambien: null },
+    { id: "pegaso", emoji: "🐴", nombre: "Pegaso", nombreCielo: "PEGASO", sub: "El caballo alado", dificultad: 3,
+      pts: [[30, 38], [56, 33], [62, 58], [36, 63], [20, 74]], brillante: 1,
+      personaje: "Pegaso", capTitulo: "El caballo alado",
+      capTexto: "Pegaso es el caballo alado que nació de la historia de Perseo y Medusa. Voló libre por el mundo y ayudó a más de un héroe, hasta ganarse un lugar entre las estrellas.",
+      capPorque: "El Gran Cuadrado de Pegaso es una de las figuras más grandes del cielo: cuatro estrellas que dibujan el cuerpo de un caballo que nadie pudo encerrar.", tambien: null },
+    { id: "perseo", emoji: "🛡️", nombre: "Perseo", nombreCielo: "PERSEO", sub: "El héroe del escudo espejo", dificultad: 3,
+      pts: [[52, 14], [46, 28], [40, 42], [33, 56], [28, 70], [44, 76]], brillante: 1,
+      personaje: "Perseo", capTitulo: "El héroe en las estrellas",
+      capTexto: "Perseo venció a Medusa sin mirarla de frente ni una sola vez: se guió por el reflejo de su escudo. Su figura quedó en el cielo cerca de Andrómeda, Casiopea y Pegaso: su ciclo completo, dibujado en estrellas.",
+      capPorque: "Cuatro constelaciones de este cielo cuentan la historia de Perseo. Era tan querida que los griegos le dedicaron una región entera del cielo.", tambien: null },
+    { id: "escorpio", emoji: "🦂", nombre: "Escorpio", nombreCielo: "ESCORPIO", sub: "El escorpión del cielo", dificultad: 3,
+      pts: [[24, 28], [31, 39], [35, 51], [41, 61], [51, 68], [62, 70], [72, 65], [77, 54]], brillante: 2,
+      personaje: "Orión", capTitulo: "El escorpión que persigue al cazador",
+      capTexto: "Un escorpión gigante fue enviado a detener a Orión cuando el cazador presumió demasiado. Los dos quedaron en el cielo, pero en lados opuestos: cuando Escorpio sale, Orión se esconde.",
+      capPorque: "Escorpio y Orión nunca se ven juntos en el cielo. Los griegos explicaron ese turno perfecto como una persecución que sigue todavía.", tambien: null }
+  ];
+
+  DECOY_POOL = [[10, 22], [88, 16], [10, 52], [90, 40], [8, 80], [92, 78], [52, 8], [22, 88], [70, 10], [78, 88], [46, 84], [60, 16], [16, 14], [84, 64], [30, 78], [72, 34]];
+  CLAVE_DEMO = "cielo-mitos-demo-v1";
+
+  tokenSecuencia = 0;
+  ctxAudio = null;
+
+  componentDidMount() {
+    try {
+      const crudo = localStorage.getItem(this.CLAVE_DEMO);
+      if (crudo) {
+        const datos = JSON.parse(crudo);
+        if (Array.isArray(datos.completadas)) this.setState({ completadas: datos.completadas });
+      }
+    } catch (e) { /* sin persistencia */ }
+  }
+
+  guardar(completadas) {
+    try { localStorage.setItem(this.CLAVE_DEMO, JSON.stringify({ completadas })); } catch (e) { /* */ }
+  }
+
+  actual() { return this.CONSTELACIONES[this.state.idx]; }
+
+  decoysDe(c) {
+    const lejos = (d) => c.pts.every(p => Math.hypot(p[0] - d[0], p[1] - d[1]) >= 10);
+    const cant = c.dificultad === 1 ? 2 : c.dificultad === 2 ? 4 : 7;
+    return this.DECOY_POOL.filter(lejos).slice(0, cant);
+  }
+
+  sonar(tipo, extra) {
+    if (!(this.props.sonido ?? true)) return;
+    try {
+      if (!this.ctxAudio) this.ctxAudio = new (window.AudioContext || window.webkitAudioContext)();
+      const ctx = this.ctxAudio;
+      if (ctx.state === "suspended") ctx.resume();
+      const nota = (freq, t0, dur, tipo2 = "sine", vol = .16) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = tipo2;
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(vol, ctx.currentTime + t0);
+        gain.gain.exponentialRampToValueAtTime(.001, ctx.currentTime + t0 + dur);
+        osc.connect(gain).connect(ctx.destination);
+        osc.start(ctx.currentTime + t0);
+        osc.stop(ctx.currentTime + t0 + dur);
+      };
+      if (tipo === "estrella") nota(440 + extra * 55, 0, .3, "triangle");
+      if (tipo === "error") nota(200, 0, .2, "sine", .1);
+      if (tipo === "fanfarria") [523, 659, 784, 1047].forEach((f, i) => nota(f, i * .11, .4, "triangle"));
+      if (tipo === "sello") { nota(880, 0, .25, "triangle", .2); nota(1320, .05, .2, "sine", .1); }
+    } catch (e) { /* sin audio */ }
+  }
+
+  marcarError(clave) {
+    this.sonar("error");
+    const errores = this.state.errores + 1;
+    this.setState({ errorKey: clave, errores, pistaTemporal: errores >= 3 });
+    const token = ++this.tokenSecuencia;
+    setTimeout(() => { if (token === this.tokenSecuencia && this.state.errorKey === clave) this.setState({ errorKey: null }); }, 700);
+  }
+
+  tocarEstrella(i) {
+    if (this.state.fase !== "trazando") return;
+    const c = this.actual();
+    if (i === this.state.paso) {
+      const paso = this.state.paso + 1;
+      this.sonar("estrella", paso);
+      if (paso === c.pts.length) {
+        const completadas = this.state.completadas.includes(c.id) ? this.state.completadas : [...this.state.completadas, c.id];
+        this.guardar(completadas);
+        this.setState({ paso, fase: "ceremonia", errorKey: null, pistaTemporal: false, completadas });
+        if (navigator.vibrate) navigator.vibrate([30, 50, 30]);
+        const token = ++this.tokenSecuencia;
+        setTimeout(() => { if (token === this.tokenSecuencia) this.sonar("fanfarria"); }, 250);
+        setTimeout(() => {
+          if (token !== this.tokenSecuencia) return;
+          this.sonar("sello");
+          this.setState({ fase: "capitulo" });
+        }, 1900);
+      } else {
+        this.setState({ paso, errorKey: null, pistaTemporal: false });
+      }
+    } else if (i > this.state.paso) {
+      this.marcarError("e" + i);
+    }
+  }
+
+  elegir(i) {
+    this.tokenSecuencia++;
+    const c = this.CONSTELACIONES[i];
+    const hecha = this.state.completadas.includes(c.id);
+    this.setState({ idx: i, paso: hecha ? c.pts.length : 0, fase: hecha ? "completada" : "trazando", errorKey: null, errores: 0, pistaTemporal: false });
+  }
+
+  reiniciar() {
+    this.tokenSecuencia++;
+    this.setState({ paso: 0, fase: "trazando", errorKey: null, errores: 0, pistaTemporal: false });
+  }
+
+  nodosCielo() {
+    const e = React.createElement;
+    const c = this.actual();
+    const PTS = c.pts;
+    const { paso, fase, errorKey, pistaTemporal } = this.state;
+    const completa = fase !== "trazando";
+    const conPista = (this.props.pista ?? false) || c.dificultad === 1 || (c.dificultad === 2 && paso === 0) || pistaTemporal;
+    const els = [];
+
+    if (completa) {
+      const xs = PTS.map(p => p[0]), ys = PTS.map(p => p[1]);
+      const cx = (Math.min(...xs) + Math.max(...xs)) / 2;
+      const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
+      const rx = (Math.max(...xs) - Math.min(...xs)) / 2 + 10;
+      const ry = (Math.max(...ys) - Math.min(...ys)) / 2 + 10;
+      els.push(e("ellipse", { key: c.id + "figura", cx, cy, rx, ry, fill: "rgba(255,216,103,.14)", style: { filter: "blur(6px)", animation: "aparece .8s ease-out both" } }));
+      els.push(e("circle", { key: c.id + "onda", cx, cy, r: Math.max(rx, ry), fill: "none", stroke: "rgba(255,216,103,.8)", strokeWidth: .7, className: "onda-final" }));
+    }
+
+    for (let i = 1; i < Math.min(paso, PTS.length); i++) {
+      els.push(e("line", {
+        key: c.id + "linea" + i,
+        x1: PTS[i - 1][0], y1: PTS[i - 1][1], x2: PTS[i][0], y2: PTS[i][1],
+        stroke: completa ? "#ffd867" : "rgba(255,216,103,.85)",
+        strokeWidth: completa ? 1 : .7,
+        strokeLinecap: "round",
+        pathLength: 1,
+        className: "linea-trazada",
+        style: completa ? { filter: "drop-shadow(0 0 2px rgba(255,216,103,.9))" } : null
+      }));
+    }
+
+    if (fase === "trazando" && conPista && paso < PTS.length) {
+      const [hx, hy] = PTS[paso];
+      els.push(e("circle", { key: c.id + "halo", cx: hx, cy: hy, r: 5, fill: "none", stroke: "rgba(255,233,168,.9)", strokeWidth: .6, className: "halo-guia" }));
+    }
+
+    this.decoysDe(c).forEach((d, j) => {
+      const esError = errorKey === "d" + j;
+      els.push(e("circle", {
+        key: c.id + "decoy" + j,
+        cx: d[0], cy: d[1],
+        r: c.dificultad === 3 ? 1.4 : 1.1,
+        fill: esError ? "#ff9e8a" : "#fff",
+        opacity: c.dificultad === 3 ? .9 : .65,
+        style: { animation: esError ? "sacudir-suave .4s" : "brillo-estrella 4.4s ease-in-out " + (j * .7) + "s infinite backwards", transformBox: "fill-box", transformOrigin: "center" }
+      }));
+      els.push(e("circle", {
+        key: c.id + "tapd" + j,
+        cx: d[0], cy: d[1], r: 6,
+        fill: "rgba(0,0,0,0)",
+        style: { cursor: "pointer" },
+        onClick: () => { if (this.state.fase === "trazando") this.marcarError("d" + j); }
+      }));
+    });
+
+    PTS.forEach((p, i) => {
+      const tocada = i < paso;
+      const esError = errorKey === "e" + i;
+      const base = i === c.brillante ? 2 : (i === 0 ? 1.8 : 1.6);
+      if (tocada) {
+        els.push(e("circle", { key: c.id + "glow" + i, cx: p[0], cy: p[1], r: 4, fill: "rgba(255,216,103,.22)", className: completa ? "destello-final" : null, style: completa ? { animationDelay: (i * .3) + "s" } : null }));
+      }
+      els.push(e("circle", {
+        key: c.id + "estrella" + i,
+        cx: p[0], cy: p[1],
+        r: tocada ? base + .4 : base,
+        fill: tocada ? "#ffd867" : (esError ? "#ff9e8a" : "#fff"),
+        style: { transition: "fill .25s, r .25s", animation: esError ? "sacudir-suave .4s" : (!tocada ? "brillo-estrella 3.4s ease-in-out " + (i * .5) + "s infinite backwards" : "none"), transformBox: "fill-box", transformOrigin: "center" }
+      }));
+      els.push(e("circle", {
+        key: c.id + "tap" + i,
+        cx: p[0], cy: p[1], r: 7,
+        fill: "rgba(0,0,0,0)",
+        style: { cursor: "pointer" },
+        onClick: () => this.tocarEstrella(i)
+      }));
+    });
+
+    return els;
+  }
+
+  renderVals() {
+    const { idx, paso, fase, errorKey, errores, pistaTemporal, completadas } = this.state;
+    const c = this.actual();
+    const estrellitas = "★".repeat(c.dificultad) + "☆".repeat(3 - c.dificultad);
+
+    let instruccion = c.dificultad === 1
+      ? `Tocá la estrella que brilla y uní ${c.nombre} ✨ · ${estrellitas}`
+      : c.dificultad === 2
+        ? `Empezá por la estrella que brilla y seguí el patrón · ${estrellitas}`
+        : `Sin pistas: buscá la estrella más grande y trazá ${c.nombre} · ${estrellitas}`;
+    if (errorKey !== null) instruccion = pistaTemporal ? "El cielo te regala una pista ✨" : "Mmm, esa no es… mirá bien el patrón";
+    else if (pistaTemporal && fase === "trazando") instruccion = "El cielo te regala una pista ✨";
+    else if (fase === "ceremonia") instruccion = `¡${c.nombre} se enciende! ${c.emoji}`;
+    else if (fase === "capitulo") instruccion = "";
+    else if (fase === "completada") instruccion = `${c.nombre} trazada ✓ · Elegí otra constelación`;
+    else if (paso > 0) instruccion = `Seguí el trazo · ${paso} de ${c.pts.length} estrellas`;
+
+    const constelaciones = this.CONSTELACIONES.map((k, i) => {
+      const activa = i === idx;
+      const hecha = completadas.includes(k.id);
+      return {
+        etiqueta: `${k.emoji} ${k.nombre}${hecha ? " ✓" : ""}`,
+        elegir: () => this.elegir(i),
+        estilo: activa
+          ? { flex: "none", display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,216,103,.16)", border: "1.5px solid rgba(255,216,103,.6)", color: "#ffe9a8", borderRadius: 999, padding: "9px 15px", fontSize: 12.5, fontWeight: 800, whiteSpace: "nowrap", fontFamily: "inherit", cursor: "pointer" }
+          : { flex: "none", display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,.07)", border: "1px solid rgba(255,255,255,.16)", color: hecha ? "rgba(255,233,168,.8)" : "rgba(253,251,255,.65)", borderRadius: 999, padding: "9px 15px", fontSize: 12.5, fontWeight: 700, whiteSpace: "nowrap", fontFamily: "inherit", cursor: "pointer" }
+      };
+    });
+
+    return {
+      cieloNodos: this.nodosCielo(),
+      instruccion,
+      constelaciones,
+      trazadasTexto: `${completadas.length} de ${this.CONSTELACIONES.length} ✦`,
+      nombreVisible: fase !== "trazando",
+      nombreConst: c.nombreCielo,
+      subConst: c.sub,
+      mostrandoCapitulo: fase === "capitulo",
+      capTitulo: c.capTitulo,
+      capPersonaje: c.personaje,
+      capTexto: c.capTexto,
+      capPorque: c.capPorque,
+      hayTambien: !!c.tambien,
+      capTambien: c.tambien || "",
+      cerrarHoja: () => { this.tokenSecuencia++; this.setState({ fase: "completada" }); },
+      reiniciar: () => this.reiniciar()
+    };
+  }
+}
+</script>
+</body>
+</html>

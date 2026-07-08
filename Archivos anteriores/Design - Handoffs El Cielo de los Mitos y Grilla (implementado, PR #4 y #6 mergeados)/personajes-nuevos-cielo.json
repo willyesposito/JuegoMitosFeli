@@ -1,0 +1,117 @@
+[
+  {
+    "id": "calisto",
+    "nombre": "Calisto",
+    "mitologia": "griega",
+    "titulo": "La osa del cielo",
+    "dones": ["Guardiana que nunca se esconde", "Ninfa cazadora de Ártemis"],
+    "historia": "Calisto fue transformada en osa por un hechizo injusto. Para protegerla para siempre, Zeus la subió al cielo convertida en estrellas: la Osa Mayor, que nunca baja del horizonte.",
+    "porque": "La Osa Mayor se ve todas las noches del año. Los griegos explicaban esa presencia constante con una guardiana que nunca deja de cuidar.",
+    "atributos": { "fuerza": 5, "astucia": 6, "valentia": 8, "magia": 4 },
+    "colorCarta": "#4C6B7A",
+    "icono": "cielo",
+    "tier": "normal",
+    "capitulos": [
+      { "id": "base", "titulo": "La osa del cielo", "texto": "Calisto fue transformada en osa por un hechizo injusto. Para protegerla para siempre, Zeus la subió al cielo convertida en estrellas: la Osa Mayor, que nunca baja del horizonte.", "porque": "La Osa Mayor se ve todas las noches del año. Los griegos explicaban esa presencia constante con una guardiana que nunca deja de cuidar.", "fuente": "descubrimiento", "estado": "borrador" }
+    ],
+    "preguntas": [
+      { "texto": "¿En qué animal fue transformada Calisto?", "opciones": ["Una osa", "Una loba", "Un ciervo"], "correcta": 0 }
+    ]
+  },
+  {
+    "id": "casiopea",
+    "nombre": "Casiopea",
+    "mitologia": "griega",
+    "titulo": "La reina en su trono",
+    "dones": ["Reina de Etiopía", "Su trono quedó en el cielo"],
+    "historia": "Casiopea era una reina tan orgullosa que se comparaba con las diosas del mar. Como recuerdo, quedó en el cielo sentada en su trono, girando alrededor de la estrella polar para siempre.",
+    "porque": "Su forma de W se ve todo el año. Los griegos la usaban para contar que presumir demasiado también deja marca… hasta en el cielo.",
+    "atributos": { "fuerza": 3, "astucia": 6, "valentia": 5, "magia": 5 },
+    "colorCarta": "#8A5A6E",
+    "icono": "cielo",
+    "tier": "normal",
+    "capitulos": [
+      { "id": "base", "titulo": "La reina en su trono", "texto": "Casiopea era una reina tan orgullosa que se comparaba con las diosas del mar. Como recuerdo, quedó en el cielo sentada en su trono, girando alrededor de la estrella polar para siempre.", "porque": "Su forma de W se ve todo el año. Los griegos la usaban para contar que presumir demasiado también deja marca… hasta en el cielo.", "fuente": "descubrimiento", "estado": "borrador" }
+    ],
+    "preguntas": [
+      { "texto": "¿Qué quedó de Casiopea en el cielo?", "opciones": ["Su trono", "Su corona", "Su espejo"], "correcta": 0 }
+    ]
+  },
+  {
+    "id": "andromeda",
+    "nombre": "Andrómeda",
+    "mitologia": "griega",
+    "titulo": "La princesa rescatada",
+    "dones": ["Valentía ante el monstruo marino", "Su historia quedó unida a la de Perseo"],
+    "historia": "Andrómeda estaba encadenada a una roca frente al mar cuando Perseo pasó volando de regreso de su misión. La rescató del monstruo marino, y sus historias quedaron unidas para siempre.",
+    "porque": "Andrómeda conecta directo con la carta de Perseo, y muestra cómo los griegos convertían a sus personajes favoritos en constelaciones: una forma de decir que esa historia iba a poder leerse en el cielo para siempre.",
+    "atributos": { "fuerza": 3, "astucia": 6, "valentia": 9, "magia": 3 },
+    "colorCarta": "#3F6E8C",
+    "icono": "cielo",
+    "tier": "normal",
+    "capitulos": [
+      { "id": "base", "titulo": "La princesa rescatada", "texto": "Andrómeda estaba encadenada a una roca frente al mar cuando Perseo pasó volando de regreso de su misión. La rescató del monstruo marino, y sus historias quedaron unidas para siempre.", "porque": "Andrómeda conecta directo con la carta de Perseo, y muestra cómo los griegos convertían a sus personajes favoritos en constelaciones: una forma de decir que esa historia iba a poder leerse en el cielo para siempre.", "fuente": "descubrimiento", "estado": "borrador" }
+    ],
+    "preguntas": [
+      { "texto": "¿Quién rescató a Andrómeda del monstruo marino?", "opciones": ["Perseo", "Heracles", "Teseo"], "correcta": 0 }
+    ]
+  },
+  {
+    "id": "orion",
+    "nombre": "Orión",
+    "mitologia": "griega",
+    "titulo": "El cazador del cielo",
+    "dones": ["Cazador gigante", "Cinturón de tres estrellas"],
+    "historia": "Orión era un cazador gigante, tan hábil que presumía de poder vencer a cualquier animal del mundo. Su figura quedó en el cielo con un cinturón de tres estrellas, y todavía hoy es la constelación más fácil de encontrar.",
+    "porque": "Las tres estrellas del cinturón se alinean casi perfecto. Culturas de todo el mundo las usaron para orientarse: los griegos les pusieron la historia de su cazador más famoso.",
+    "atributos": { "fuerza": 8, "astucia": 5, "valentia": 8, "magia": 2 },
+    "colorCarta": "#3C5A8A",
+    "icono": "cielo",
+    "tier": "plateado",
+    "capitulos": [
+      { "id": "base", "titulo": "El cazador del cielo", "texto": "Orión era un cazador gigante, tan hábil que presumía de poder vencer a cualquier animal del mundo. Su figura quedó en el cielo con un cinturón de tres estrellas, y todavía hoy es la constelación más fácil de encontrar.", "porque": "Las tres estrellas del cinturón se alinean casi perfecto. Culturas de todo el mundo las usaron para orientarse: los griegos les pusieron la historia de su cazador más famoso.", "fuente": "descubrimiento", "estado": "borrador" },
+      { "id": "escorpion", "titulo": "El escorpión que lo persigue", "texto": "Un escorpión gigante fue enviado a detener a Orión cuando el cazador presumió demasiado. Los dos quedaron en el cielo, pero en lados opuestos: cuando Escorpio sale, Orión se esconde.", "porque": "Escorpio y Orión nunca se ven juntos en el cielo. Los griegos explicaron ese turno perfecto como una persecución que sigue todavía.", "fuente": "cielo:escorpio", "estado": "borrador" }
+    ],
+    "preguntas": [
+      { "texto": "¿Cuántas estrellas tiene el cinturón de Orión?", "opciones": ["Tres", "Cinco", "Siete"], "correcta": 0 }
+    ]
+  },
+  {
+    "id": "castor_polux",
+    "nombre": "Cástor y Pólux",
+    "mitologia": "griega",
+    "titulo": "Los gemelos inseparables",
+    "dones": ["Hermanos inseparables", "Comparten una misma inmortalidad"],
+    "historia": "Cástor y Pólux eran gemelos, pero uno era mortal y el otro inmortal. Cuando Cástor murió, Pólux pidió compartir su inmortalidad con su hermano. Zeus los puso juntos en el cielo, para que no se separaran nunca.",
+    "porque": "Géminis son dos hileras de estrellas casi iguales, una al lado de la otra: dos hermanos que eligieron estar juntos por sobre todas las cosas.",
+    "atributos": { "fuerza": 6, "astucia": 6, "valentia": 8, "magia": 4 },
+    "colorCarta": "#5B6EAE",
+    "icono": "cielo",
+    "tier": "normal",
+    "capitulos": [
+      { "id": "base", "titulo": "Los gemelos inseparables", "texto": "Cástor y Pólux eran gemelos, pero uno era mortal y el otro inmortal. Cuando Cástor murió, Pólux pidió compartir su inmortalidad con su hermano. Zeus los puso juntos en el cielo, para que no se separaran nunca.", "porque": "Géminis son dos hileras de estrellas casi iguales, una al lado de la otra: dos hermanos que eligieron estar juntos por sobre todas las cosas.", "fuente": "descubrimiento", "estado": "borrador" }
+    ],
+    "preguntas": [
+      { "texto": "¿Qué pidió Pólux cuando murió su hermano Cástor?", "opciones": ["Compartir su inmortalidad con él", "Vengarlo", "Quedarse solo en el cielo"], "correcta": 0 }
+    ]
+  },
+  {
+    "id": "pegaso",
+    "nombre": "Pegaso",
+    "mitologia": "griega",
+    "titulo": "El caballo alado",
+    "dones": ["Vuela sin cansarse", "Ayudó a más de un héroe"],
+    "historia": "Pegaso es el caballo alado que nació de la historia de Perseo y Medusa. Voló libre por el mundo y ayudó a más de un héroe, hasta ganarse un lugar entre las estrellas.",
+    "porque": "El Gran Cuadrado de Pegaso es una de las figuras más grandes del cielo: cuatro estrellas que dibujan el cuerpo de un caballo que nadie pudo encerrar.",
+    "atributos": { "fuerza": 6, "astucia": 4, "valentia": 8, "magia": 7 },
+    "colorCarta": "#5E7FA8",
+    "icono": "cielo",
+    "tier": "normal",
+    "capitulos": [
+      { "id": "base", "titulo": "El caballo alado", "texto": "Pegaso es el caballo alado que nació de la historia de Perseo y Medusa. Voló libre por el mundo y ayudó a más de un héroe, hasta ganarse un lugar entre las estrellas.", "porque": "El Gran Cuadrado de Pegaso es una de las figuras más grandes del cielo: cuatro estrellas que dibujan el cuerpo de un caballo que nadie pudo encerrar.", "fuente": "descubrimiento", "estado": "borrador" }
+    ],
+    "preguntas": [
+      { "texto": "¿De qué historia nació Pegaso?", "opciones": ["De la de Perseo y Medusa", "De la de Teseo y el Minotauro", "De la de Heracles"], "correcta": 0 }
+    ]
+  }
+]

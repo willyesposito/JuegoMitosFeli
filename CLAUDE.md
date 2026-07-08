@@ -26,8 +26,7 @@ Vanilla JS + HTML + CSS, como está el repo. No migrar a React: el MVP funciona 
 - Cada juego es un **módulo autocontenido**: su carpeta/archivo, su UI, y un objeto de registro (`id`, `nombre`, `icono`, `descripcion`, `progreso()`) que el hub consume. Agregar un juego = agregar un módulo y registrarlo, sin tocar los demás.
 - Los módulos no dan solo cartas: dan **capítulos de historia** a personajes concretos (ver contrato de datos).
 - **Fuente de datos única:** `personajes.json` (más datos propios de cada módulo, como `constelaciones.json`).
-- **Estado único versionado en localStorage:** key `feli-mitos-v2`, con soporte de hasta 5 perfiles de partida (ver spec funcional). Lo que se gana en cualquier juego se refleja en la colección del perfil activo.
-- **Migración obligatoria:** al primer arranque, si existe `feli-cartas-v1`, importar su progreso al primer perfil. Feli no pierde nada.
+- **Estado único versionado en localStorage:** target de diseño es la key `feli-mitos-v2` con soporte de hasta 5 perfiles de partida (ver spec funcional §0.1). **Estado real de la implementación (julio 2026): todavía no se construyeron los perfiles.** `nucleo.js` sigue usando la key plana `feli-cartas-v1` (un solo perfil implícito, `estado.desbloqueadas` / `estado.capitulosEncendidos` / `estado.cielo` / `estado.celebrados`). Los módulos (Colección, El Cielo de los Mitos) ya leen y escriben ese estado compartido correctamente; lo que falta es envolverlo en el sistema de perfiles cuando se construya el hub shell. Cuando eso pase, la migración de `feli-cartas-v1` a perfiles debe ser automática y sin pérdida de progreso.
 - Botón de reset y utilidades de Willy en un menú discreto (ya existe).
 
 ## Regla de despliegue de contenido nuevo (misiones, módulos, capítulos)
@@ -86,17 +85,16 @@ Además de los existentes (id, nombre, mitologia, titulo, dones, historia, porqu
 
 ## Roadmap por olas
 
-**Ola 1 (este ciclo):** Hub shell + Colección (refactor, ahora muestra capítulos y tiers dorado/plateado/normal) + Oráculo de Delfos (fácil + modo difícil) + El Cielo de los Mitos (constelaciones, encienden capítulos) + Sets temáticos latentes de fondo + Perfiles de partida (5 slots).
+**El roadmap por olas vive en `olas_y_fuentes_de_capitulos.md`.** Ese documento es la fuente de verdad: define qué módulo entra en qué ola, todos los formatos de `fuente` de capítulo (incluidos los nuevos: `vinculo:`, `mapa:`, `espejo:`, `reliquia:`, `encrucijada:`), y el presupuesto de capítulos que garantiza que cada tier pueda completarse. Léelo antes de planificar cualquier módulo nuevo — resume así (julio 2026):
 
-**Ola 2:** Ordená el Mito (secuenciador causal — enciende capítulos) + Laboratorio de Mitos en **modo lector** (arma combinaciones y lee la historia resultante; sin escritura propia todavía).
+- **Ola 1** (en curso): Hub + Perfiles + Colección + Oráculo (2 modos) + El Cielo de los Mitos (ya publicado) + Sets latentes + **Vínculos entre personajes** (nuevo, `vinculo:`).
+- **Ola 2:** Mapa del Héroe (`mapa:`) + Espejo de los Mundos (`espejo:`) + Ordená el Mito (`ordena:`).
+- **Ola 3:** Las Reliquias (`reliquia:`) + La Encrucijada (`encrucijada:`). Reemplazan a "Crisis del Mundo Antiguo" y al viejo "Desafío del Héroe" (descartado).
+- **Ola 4:** sin cambios — escritura propia de capítulos + taller de creación de personajes.
 
-**Anotado para Ola 2+ (decidido, no implementar antes):**
-- **Absorción de mitos menores:** personajes grandes incorporan mitos satélite como capítulos propios (Odiseo ← Cíclope/Lotófagos/Sirenas, Zeus ← Filemón y Baucis, Prometeo ← Deucalión y Pirra). No requiere campo nuevo en el JSON: se resuelve redefiniendo el contenido de capítulos existentes cuando el Laboratorio de Mitos (modo lector) lo necesite. No tocar el contrato de datos por esto en Ola 1.
-- **Rutas de ascensión de tier:** Minotauro y Fenrir a plateado vía expansiones temáticas; Pegaso y Medusa vía sinergia de set (Perseo+Andrómeda+Medusa+Pegaso). Cuando se implemente, agregar `tier_base` y `tier_maximo_posible` al JSON. En Ola 1 el tier es estático.
-
-**Ola 3:** Crisis del Mundo Antiguo (duelo paramétrico pacífico — enciende capítulos) + ¿Quién es quién? (deducción invertida) + Memoria de Espejos + Acertijos de la Esfinge.
-
-**Ola 4:** Escritura propia de capítulos + Taller de creación de personajes.
+**Decisiones ya tomadas para más adelante (no implementar antes de que llegue su ola):**
+- **Absorción de mitos menores:** personajes grandes incorporan mitos satélite como capítulos propios (Odiseo ← Cíclope/Lotófagos/Sirenas, Zeus ← Filemón y Baucis, Prometeo ← Deucalión y Pirra). Se resuelve redefiniendo capítulos existentes cuando el módulo que corresponda lo necesite; no requiere campo nuevo en el JSON.
+- **Rutas de ascensión de tier:** Minotauro y Fenrir a plateado vía expansiones temáticas; Pegaso y Medusa vía sinergia de set (Perseo+Andrómeda+Medusa+Pegaso). Cuando se implemente, agregar `tier_base` y `tier_maximo_posible` al JSON. Por ahora el tier es estático.
 
 ## Criterio de terminado
 
@@ -104,5 +102,27 @@ Cada ola está terminada cuando Feli la usó sola, entendió las reglas sin que 
 
 ## Archivos del proyecto
 
-- `roster_personajes_v3.md`: master de 80 personajes con tiers, estado de fichas y capítulos. Gobierna la composición del roster. Las fichas individuales heredadas siguen vigentes en `roster_personajes.md` hasta consolidarlas.
-- `spec_funcional.md`: spec del hub, formato de carta, perfiles de partida y módulos de la ola 1 y 2.
+**Código y datos en vivo** (el juego real; espejo de lo que está en GitHub):
+
+- `index.html` / `app.js` / `estilos.css`: módulo Colección (grilla naipe, detalle de carta, Niebla del Oráculo).
+- `nucleo.js`: estado y persistencia compartidos por todos los módulos (progreso, personajes, audio). Todo módulo nuevo carga este archivo.
+- `cielo.html` / `cielo.js` / `cielo.css`: módulo El Cielo de los Mitos. Construido y publicado.
+- `personajes.json`: los 85 personajes del roster activo — datos y contenido en vivo.
+- `constelaciones.json`: las 10 constelaciones de El Cielo de los Mitos.
+- `iconos.js`: ilustraciones SVG generadas en código.
+- `sw.js`: service worker (offline). Subir `VERSION` en cada deploy real.
+- `fonts/`: Cinzel en `.woff2`, servida local.
+
+Los archivos de código y datos viven en la **raíz** (así el juego corre y coincide con lo que se despliega en GitHub). Toda la documentación se movió a `Documentacion/` para que la raíz quede navegable.
+
+**`Documentacion/` — planificación y contenido (vigente):**
+
+- `Documentacion/olas_y_fuentes_de_capitulos.md`: **el roadmap.** Gana sobre esta sección de CLAUDE.md donde haya conflicto.
+- `Documentacion/roster_personajes_v3.md`: master del roster — composición, tiers, y estado de producción de cada capítulo (diseñado / escrito sin mergear / publicado). Es el mapa de qué falta hacer.
+- `Documentacion/roster_personajes.md` (v1): fichas individuales heredadas (dones, historia, ¿por qué?, atributos) — siguen siendo la fuente para los personajes que no se tocaron en v2/v3.
+- `Documentacion/spec_funcional.md`: spec del hub, formato de carta, perfiles de partida y módulos.
+- `Documentacion/sesion_actual.md`: **el mazo inicial curado por Willy** — la lista de héroes con la que arranca la colección. Se mantiene en sincronía con `DESBLOQUEADAS_INICIALES` en `nucleo.js`; crece a medida que Willy indica a quién sumar. Como hay botón de "Reiniciar la colección", esta lista se cura a mano sin miedo a perder progreso.
+- `Documentacion/contenido para mergear/`: texto de capítulos ya escrito pero todavía no volcado al JSON. `capitulos_tier_dorado.md` (8 capítulos de dorados), `capitulos_plateado_bloque3.md` (13 de plateados + tabla de relaciones `espejo`), e `Info Personajes.txt` (bloques plateado 1-2: Dédalo, Prometeo, Hermes, Artemisa, Tyr, Freya, Apolo, Perséfone, Orfeo, Sigurd, Heimdall — su bloque dorado quedó superado por `capitulos_tier_dorado.md`, no usar esa parte).
+- `Documentacion/mockups visuales/`: `Cartas y Animaciones.dc.html` y `Referencia Visual - Mundo de Mitos.html` — mockups de referencia. La mayor parte ya está implementada; quedan como referencia viva para ajustes finos.
+
+**Archivadas en `Archivos anteriores/`** (superadas, no partir de ellas): versiones viejas del roster, el `Handoff - Tiers Plateada y Dorada.md` (describía un modelo de progreso y una key de localStorage que ya no existen), `cartas_desbloqueadas.md` (su contenido pasó a `sesion_actual.md`), `fichas_suavizado_obligatorio_borrador.md` (las 7 fichas que proponía ya están escritas —con texto final distinto— y publicadas en `personajes.json`), y la carpeta `Design` con los handoffs de El Cielo de los Mitos y el rediseño de grilla (ambos ya implementados y mergeados, PR #4 y #6).

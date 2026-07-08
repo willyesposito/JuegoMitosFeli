@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="design_doc_mode" content="canvas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="iconos.js"></script>
+  <style>
+    body { margin: 0; background: #14102e; }
+    a { color: #ffd867; } a:hover { color: #ffe9a8; }
+    @keyframes holo-mov { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+    @keyframes titila { 0%, 100% { opacity: 0; transform: scale(.5); } 50% { opacity: 1; transform: scale(1); } }
+  </style>
+</helmet>
+
+<section style="padding: 40px 48px 80px; font-family: ui-rounded, 'Segoe UI', system-ui, sans-serif; color: #fdfbff;">
+  <div style="max-width: 1500px; margin: 0 auto; display: flex; flex-direction: column; gap: 26px;">
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <h1 style="margin: 0; font-family: Cinzel, serif; font-size: 26px; color: #ffd867;">Mejoras visuales de la grilla</h1>
+      <p style="margin: 0; color: rgba(253,251,255,.65); font-size: 14px; max-width: 720px;">Tres capas de mejora, acumulables. <a href="#1a">1a</a> mejora cada carta sin cambiar su estructura; <a href="#1b">1b</a> la convierte en un naipe de colección; <a href="#1c">1c</a> es el ambiente de la página (fondo, header, chips de filtro).</p>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start;">
+
+      <!-- ============ 1a ============ -->
+      <div id="1a" style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="background: #ffd867; color: #4a3200; font-weight: 800; font-size: 12px; border-radius: 999px; padding: 3px 10px;">1a</span>
+          <strong style="font-size: 15px;">Profundidad y orden</strong>
+          <span style="color: rgba(253,251,255,.55); font-size: 12.5px;">gradiente 3 stops · Cinzel · glow en el ícono · chips consolidados · esquinas</span>
+        </div>
+        <div style="background: radial-gradient(circle at 50% 20%, #241c4d, #14102e 75%); border-radius: 20px; padding: 26px; display: flex; gap: 16px;">
+
+          <!-- Carta Teseo mejorada -->
+          <div style="position: relative; width: 190px; border-radius: 18px; padding: 18px 12px 14px; display: flex; flex-direction: column; align-items: center; gap: 9px; background: linear-gradient(170deg, #4A7C59 0%, #2f4e38 55%, #233a2a 100%); box-shadow: 0 10px 24px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.18); overflow: hidden;">
+            <i style="position: absolute; top: 8px; left: 8px; width: 12px; height: 12px; border-top: 2px solid rgba(255,216,103,.65); border-left: 2px solid rgba(255,216,103,.65); border-top-left-radius: 6px;"></i>
+            <i style="position: absolute; top: 8px; right: 8px; width: 12px; height: 12px; border-top: 2px solid rgba(255,216,103,.65); border-right: 2px solid rgba(255,216,103,.65); border-top-right-radius: 6px;"></i>
+            <i style="position: absolute; bottom: 8px; left: 8px; width: 12px; height: 12px; border-bottom: 2px solid rgba(255,216,103,.65); border-left: 2px solid rgba(255,216,103,.65); border-bottom-left-radius: 6px;"></i>
+            <i style="position: absolute; bottom: 8px; right: 8px; width: 12px; height: 12px; border-bottom: 2px solid rgba(255,216,103,.65); border-right: 2px solid rgba(255,216,103,.65); border-bottom-right-radius: 6px;"></i>
+            <span style="position: relative; width: 88px; height: 88px; border-radius: 50%; background: rgba(0,0,0,.24); border: 1.5px solid rgba(255,255,255,.22); display: grid; place-items: center; padding: 9px; box-sizing: border-box; box-shadow: 0 0 26px rgba(255,216,103,.22);" data-icono="laberinto"></span>
+            <span style="font-family: Cinzel, serif; font-weight: 700; font-size: 17px; letter-spacing: .5px; text-shadow: 0 2px 4px rgba(0,0,0,.45);">Teseo</span>
+            <span style="display: flex; gap: 6px; align-items: center;">
+              <span style="font-size: 11px; font-weight: 700; background: rgba(0,0,0,.28); border-radius: 999px; padding: 3px 9px;">🏛️ Griega</span>
+              <span style="font-size: 11px; font-weight: 800; background: linear-gradient(120deg, rgba(255,216,103,.95), rgba(255,236,170,.9)); color: #4a3200; border-radius: 999px; padding: 3px 9px;">⭐</span>
+            </span>
+            <span style="display: flex; gap: 4px; width: 72%; height: 6px; margin-top: 2px;">
+              <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+              <i style="flex: 1; border-radius: 999px; background: rgba(255,255,255,.16);"></i>
+              <i style="flex: 1; border-radius: 999px; background: rgba(255,255,255,.16);"></i>
+              <i style="flex: 1; border-radius: 999px; background: rgba(255,255,255,.16);"></i>
+            </span>
+          </div>
+
+          <!-- Carta Heracles mejorada -->
+          <div style="position: relative; width: 190px; border-radius: 18px; padding: 18px 12px 14px; display: flex; flex-direction: column; align-items: center; gap: 9px; background: linear-gradient(170deg, #C97B2D 0%, #7f4d1c 55%, #5e3a15 100%); box-shadow: 0 10px 24px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.18); overflow: hidden;">
+            <i style="position: absolute; top: 8px; left: 8px; width: 12px; height: 12px; border-top: 2px solid rgba(255,216,103,.65); border-left: 2px solid rgba(255,216,103,.65); border-top-left-radius: 6px;"></i>
+            <i style="position: absolute; top: 8px; right: 8px; width: 12px; height: 12px; border-top: 2px solid rgba(255,216,103,.65); border-right: 2px solid rgba(255,216,103,.65); border-top-right-radius: 6px;"></i>
+            <i style="position: absolute; bottom: 8px; left: 8px; width: 12px; height: 12px; border-bottom: 2px solid rgba(255,216,103,.65); border-left: 2px solid rgba(255,216,103,.65); border-bottom-left-radius: 6px;"></i>
+            <i style="position: absolute; bottom: 8px; right: 8px; width: 12px; height: 12px; border-bottom: 2px solid rgba(255,216,103,.65); border-right: 2px solid rgba(255,216,103,.65); border-bottom-right-radius: 6px;"></i>
+            <span style="position: relative; width: 88px; height: 88px; border-radius: 50%; background: rgba(0,0,0,.24); border: 1.5px solid rgba(255,255,255,.22); display: grid; place-items: center; padding: 9px; box-sizing: border-box; box-shadow: 0 0 26px rgba(255,216,103,.22);" data-icono="leon"></span>
+            <span style="font-family: Cinzel, serif; font-weight: 700; font-size: 17px; letter-spacing: .5px; text-shadow: 0 2px 4px rgba(0,0,0,.45);">Heracles</span>
+            <span style="display: flex; gap: 6px; align-items: center;">
+              <span style="font-size: 11px; font-weight: 700; background: rgba(0,0,0,.28); border-radius: 999px; padding: 3px 9px;">🏛️ Griega</span>
+              <span style="font-size: 11px; font-weight: 800; background: linear-gradient(120deg, rgba(255,216,103,.95), rgba(255,236,170,.9)); color: #4a3200; border-radius: 999px; padding: 3px 9px;">⭐</span>
+            </span>
+            <span style="display: flex; gap: 4px; width: 72%; height: 6px; margin-top: 2px;">
+              <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+              <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+              <i style="flex: 1; border-radius: 999px; background: rgba(255,255,255,.16);"></i>
+              <i style="flex: 1; border-radius: 999px; background: rgba(255,255,255,.16);"></i>
+            </span>
+          </div>
+
+          <!-- Carta velada mejorada -->
+          <div style="position: relative; width: 190px; border-radius: 18px; padding: 18px 12px 14px; display: flex; flex-direction: column; align-items: center; gap: 9px; background: linear-gradient(170deg, #333052 0%, #26233b 60%, #1d1a2e 100%); box-shadow: 0 10px 24px rgba(0,0,0,.4); overflow: hidden; color: rgba(253,251,255,.6);">
+            <span style="position: absolute; inset: 0; background: repeating-linear-gradient(135deg, rgba(255,255,255,.03) 0 12px, transparent 12px 24px);"></span>
+            <span style="position: relative; width: 88px; height: 88px; border-radius: 50%; background: rgba(0,0,0,.3); border: 1.5px dashed rgba(255,255,255,.2); display: grid; place-items: center; padding: 9px; box-sizing: border-box;" data-icono="laberinto" data-velado="1"></span>
+            <span style="font-family: Cinzel, serif; font-weight: 700; font-size: 17px; letter-spacing: 3px; position: relative;">???</span>
+            <span style="position: relative; font-size: 11px; font-weight: 700; background: rgba(0,0,0,.28); border-radius: 999px; padding: 3px 9px;">🏛️ Griega</span>
+            <span style="position: relative; font-size: 10.5px; color: rgba(255,216,103,.75); font-weight: 700;">Tocá para desbloquear</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 1b ============ -->
+      <div id="1b" style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="background: #ffd867; color: #4a3200; font-weight: 800; font-size: 12px; border-radius: 999px; padding: 3px 10px;">1b</span>
+          <strong style="font-size: 15px;">Naipe de colección</strong>
+          <span style="color: rgba(253,251,255,.55); font-size: 12.5px;">marco interior · medallón de tier · placa de nombre · arco decorativo</span>
+        </div>
+        <div style="background: radial-gradient(circle at 50% 20%, #241c4d, #14102e 75%); border-radius: 20px; padding: 26px; display: flex; gap: 16px;">
+
+          <!-- Naipe Teseo -->
+          <div style="position: relative; width: 190px; border-radius: 16px; padding: 7px; background: linear-gradient(170deg, #4A7C59 0%, #2f4e38 55%, #233a2a 100%); box-shadow: 0 10px 24px rgba(0,0,0,.5);">
+            <div style="position: relative; border: 1.5px solid rgba(255,216,103,.5); border-radius: 11px; padding: 16px 10px 12px; display: flex; flex-direction: column; align-items: center; gap: 8px; overflow: hidden;">
+              <span style="position: absolute; top: -34px; left: 50%; width: 150px; height: 150px; margin-left: -75px; border-radius: 50%; background: radial-gradient(circle, rgba(255,216,103,.2), transparent 70%);"></span>
+              <span style="position: absolute; top: 6px; right: 6px; width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, #f8e08e, #c9962e); display: grid; place-items: center; font-size: 12px; box-shadow: 0 2px 6px rgba(0,0,0,.4); z-index: 2;">⭐</span>
+              <span style="position: relative; width: 84px; height: 84px; border-radius: 50%; background: rgba(0,0,0,.24); border: 1.5px solid rgba(255,255,255,.22); display: grid; place-items: center; padding: 9px; box-sizing: border-box;" data-icono="laberinto"></span>
+              <span style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; width: 100%;">
+                <span style="font-family: Cinzel, serif; font-weight: 700; font-size: 16.5px; letter-spacing: .5px; text-shadow: 0 2px 4px rgba(0,0,0,.45);">Teseo</span>
+                <span style="font-size: 10px; font-style: italic; color: rgba(255,255,255,.75);">El héroe del laberinto</span>
+              </span>
+              <span style="position: relative; display: flex; align-items: center; gap: 6px; width: 100%; justify-content: center;">
+                <i style="flex: 1; max-width: 26px; height: 1px; background: rgba(255,216,103,.45);"></i>
+                <span style="font-size: 10.5px; font-weight: 700; color: rgba(255,236,170,.9); letter-spacing: 1px;">GRIEGA</span>
+                <i style="flex: 1; max-width: 26px; height: 1px; background: rgba(255,216,103,.45);"></i>
+              </span>
+              <span style="position: relative; display: flex; gap: 4px; width: 70%; height: 5px;">
+                <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+                <i style="flex: 1; border-radius: 999px; background: rgba(255,255,255,.16);"></i>
+                <i style="flex: 1; border-radius: 999px; background: rgba(255,255,255,.16);"></i>
+                <i style="flex: 1; border-radius: 999px; background: rgba(255,255,255,.16);"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Naipe Penélope (plateado) -->
+          <div style="position: relative; width: 190px; border-radius: 16px; padding: 7px; background: linear-gradient(170deg, #8E5A8E 0%, #593959 55%, #432a43 100%); box-shadow: 0 10px 24px rgba(0,0,0,.5);">
+            <div style="position: relative; border: 1.5px solid rgba(224,230,240,.45); border-radius: 11px; padding: 16px 10px 12px; display: flex; flex-direction: column; align-items: center; gap: 8px; overflow: hidden;">
+              <span style="position: absolute; top: -34px; left: 50%; width: 150px; height: 150px; margin-left: -75px; border-radius: 50%; background: radial-gradient(circle, rgba(224,230,240,.18), transparent 70%);"></span>
+              <span style="position: absolute; top: 6px; right: 6px; width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, #f4f7fb, #9aa5b5); display: grid; place-items: center; font-size: 12px; box-shadow: 0 2px 6px rgba(0,0,0,.4); z-index: 2;">✦</span>
+              <span style="position: relative; width: 84px; height: 84px; border-radius: 50%; background: rgba(0,0,0,.24); border: 1.5px solid rgba(255,255,255,.22); display: grid; place-items: center; padding: 9px; box-sizing: border-box;" data-icono="telar"></span>
+              <span style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; width: 100%;">
+                <span style="font-family: Cinzel, serif; font-weight: 700; font-size: 16.5px; letter-spacing: .5px; text-shadow: 0 2px 4px rgba(0,0,0,.45);">Penélope</span>
+                <span style="font-size: 10px; font-style: italic; color: rgba(255,255,255,.75);">La reina del telar</span>
+              </span>
+              <span style="position: relative; display: flex; align-items: center; gap: 6px; width: 100%; justify-content: center;">
+                <i style="flex: 1; max-width: 26px; height: 1px; background: rgba(224,230,240,.4);"></i>
+                <span style="font-size: 10.5px; font-weight: 700; color: rgba(238,241,246,.85); letter-spacing: 1px;">GRIEGA</span>
+                <i style="flex: 1; max-width: 26px; height: 1px; background: rgba(224,230,240,.4);"></i>
+              </span>
+              <span style="position: relative; display: flex; gap: 4px; width: 70%; height: 5px;">
+                <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #eef1f6, #b8c2d1);"></i>
+                <i style="flex: 1; border-radius: 999px; background: rgba(255,255,255,.16);"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Naipe Heracles con historia completa (marco dorado + holo) -->
+          <div style="position: relative; width: 190px; border-radius: 16px; padding: 7px; background: linear-gradient(130deg, #f8e08e, #c9962e 30%, #ffefb0 50%, #a87b1f 72%, #f2cf6b); box-shadow: 0 10px 24px rgba(0,0,0,.5), 0 0 22px rgba(255,216,103,.3);">
+            <div style="position: relative; border-radius: 11px; padding: 16px 10px 12px; display: flex; flex-direction: column; align-items: center; gap: 8px; overflow: hidden; background: linear-gradient(165deg, #6b5015 0%, #4a3610 48%, #33250b 100%);">
+              <span style="position: absolute; inset: 0; background: linear-gradient(115deg, rgba(255,110,196,.3) 10%, rgba(96,225,255,.3) 34%, rgba(255,230,120,.34) 56%, rgba(150,255,180,.26) 80%); background-size: 240% 240%; animation: holo-mov 7s ease-in-out infinite alternate; pointer-events: none;"></span>
+              <span style="position: absolute; top: 14%; left: 12%; color: #ffe9a8; font-size: 11px; animation: titila 2.6s ease-in-out .4s infinite backwards;">✦</span>
+              <span style="position: absolute; top: 32%; left: 84%; color: #ffe9a8; font-size: 13px; animation: titila 3.2s ease-in-out 1.3s infinite backwards;">✦</span>
+              <span style="position: relative; width: 84px; height: 84px; border-radius: 50%; background: rgba(0,0,0,.28); border: 1.5px solid rgba(255,236,170,.4); display: grid; place-items: center; padding: 9px; box-sizing: border-box;" data-icono="leon"></span>
+              <span style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; width: 100%;">
+                <span style="font-family: Cinzel, serif; font-weight: 700; font-size: 16.5px; letter-spacing: .5px; color: #fff2cf; text-shadow: 0 2px 4px rgba(0,0,0,.45);">Heracles</span>
+                <span style="font-size: 10px; font-style: italic; color: rgba(255,242,207,.8);">El héroe de los doce trabajos</span>
+              </span>
+              <span style="position: relative; transform: rotate(-4deg); font-size: 10px; font-weight: 800; letter-spacing: .3px; background: linear-gradient(120deg, rgba(255,216,103,.95), rgba(255,236,170,.9)); color: #4a3200; border-radius: 999px; padding: 4px 11px;">🥇 MITO DOMINADO</span>
+              <span style="position: relative; display: flex; gap: 4px; width: 70%; height: 5px;">
+                <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+                <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+                <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+                <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 1c ============ -->
+      <div id="1c" style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="background: #ffd867; color: #4a3200; font-weight: 800; font-size: 12px; border-radius: 999px; padding: 3px 10px;">1c</span>
+          <strong style="font-size: 15px;">Ambiente de página</strong>
+          <span style="color: rgba(253,251,255,.55); font-size: 12.5px;">cielo estrellado · header Cinzel con ornamento · filtros más finos</span>
+        </div>
+        <div style="position: relative; width: 640px; border-radius: 20px; overflow: hidden; background: radial-gradient(circle at 50% 12%, #2c2260 0%, #191142 58%, #120d33 100%); padding: 34px 30px 40px; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+          <span style="position: absolute; top: 12%; left: 8%; width: 3px; height: 3px; border-radius: 50%; background: #fff; animation: titila 4s ease-in-out .4s infinite backwards;"></span>
+          <span style="position: absolute; top: 24%; left: 88%; width: 2px; height: 2px; border-radius: 50%; background: #fff; animation: titila 4.8s ease-in-out 1.2s infinite backwards;"></span>
+          <span style="position: absolute; top: 60%; left: 5%; width: 2px; height: 2px; border-radius: 50%; background: #fff; animation: titila 5.2s ease-in-out 2s infinite backwards;"></span>
+          <span style="position: absolute; top: 78%; left: 92%; width: 3px; height: 3px; border-radius: 50%; background: #fff; animation: titila 4.4s ease-in-out .9s infinite backwards;"></span>
+          <span style="position: absolute; top: 8%; left: 55%; width: 2px; height: 2px; border-radius: 50%; background: #fff; animation: titila 4.6s ease-in-out 1.6s infinite backwards;"></span>
+
+          <h2 style="margin: 0; font-family: Cinzel, serif; font-weight: 800; font-size: 30px; letter-spacing: 1px; background: linear-gradient(90deg, #ffd867, #ff9e6b, #ffd867); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Héroes y Dioses</h2>
+          <span style="display: flex; align-items: center; gap: 10px; width: 260px;">
+            <i style="flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,216,103,.6));"></i>
+            <span style="color: rgba(255,216,103,.8); font-size: 12px;">⚡</span>
+            <i style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(255,216,103,.6), transparent);"></i>
+          </span>
+          <p style="margin: 0; color: rgba(253,251,255,.7); font-size: 13.5px;">Tu colección de mitología</p>
+
+          <span style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,216,103,.35); border-radius: 999px; padding: 7px 18px; font-weight: 700; font-size: 13.5px;">
+            <span style="display: inline-block; width: 110px; height: 7px; border-radius: 999px; background: rgba(0,0,0,.35); overflow: hidden;"><i style="display: block; width: 40%; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i></span>
+            32 de 81
+          </span>
+
+          <div style="display: flex; gap: 8px; margin-top: 4px;">
+            <span style="background: #ffd867; color: #4a3200; border-radius: 999px; padding: 7px 16px; font-size: 13px; font-weight: 700; box-shadow: 0 0 12px rgba(255,216,103,.4);">Todas</span>
+            <span style="border: 1px solid rgba(255,255,255,.22); color: rgba(253,251,255,.85); border-radius: 999px; padding: 7px 16px; font-size: 13px; font-weight: 700;">🏛️ Griega</span>
+            <span style="border: 1px solid rgba(255,255,255,.22); color: rgba(253,251,255,.85); border-radius: 999px; padding: 7px 16px; font-size: 13px; font-weight: 700;">⚡ Nórdica</span>
+            <span style="border: 1px solid rgba(255,255,255,.22); color: rgba(253,251,255,.85); border-radius: 999px; padding: 7px 16px; font-size: 13px; font-weight: 700;">🦅 Romana</span>
+          </div>
+
+          <div style="display: flex; gap: 14px; margin-top: 10px;">
+            <div style="position: relative; width: 160px; border-radius: 16px; padding: 15px 10px 12px; display: flex; flex-direction: column; align-items: center; gap: 7px; background: linear-gradient(170deg, #4A7C59 0%, #2f4e38 55%, #233a2a 100%); box-shadow: 0 10px 24px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.18);">
+              <span style="width: 72px; height: 72px; border-radius: 50%; background: rgba(0,0,0,.24); border: 1.5px solid rgba(255,255,255,.22); display: grid; place-items: center; padding: 8px; box-sizing: border-box; box-shadow: 0 0 22px rgba(255,216,103,.2);" data-icono="laberinto"></span>
+              <span style="font-family: Cinzel, serif; font-weight: 700; font-size: 15px; text-shadow: 0 2px 4px rgba(0,0,0,.45);">Teseo</span>
+              <span style="font-size: 10.5px; font-weight: 700; background: rgba(0,0,0,.28); border-radius: 999px; padding: 3px 9px;">🏛️ Griega · ⭐</span>
+            </div>
+            <div style="position: relative; width: 160px; border-radius: 16px; padding: 15px 10px 12px; display: flex; flex-direction: column; align-items: center; gap: 7px; background: linear-gradient(170deg, #8E5A8E 0%, #593959 55%, #432a43 100%); box-shadow: 0 10px 24px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.18);">
+              <span style="width: 72px; height: 72px; border-radius: 50%; background: rgba(0,0,0,.24); border: 1.5px solid rgba(255,255,255,.22); display: grid; place-items: center; padding: 8px; box-sizing: border-box; box-shadow: 0 0 22px rgba(255,216,103,.2);" data-icono="telar"></span>
+              <span style="font-family: Cinzel, serif; font-weight: 700; font-size: 15px; text-shadow: 0 2px 4px rgba(0,0,0,.45);">Penélope</span>
+              <span style="font-size: 10.5px; font-weight: 700; background: rgba(0,0,0,.28); border-radius: 999px; padding: 3px 9px;">🏛️ Griega · ✦</span>
+            </div>
+            <div style="position: relative; width: 160px; border-radius: 16px; padding: 15px 10px 12px; display: flex; flex-direction: column; align-items: center; gap: 7px; background: linear-gradient(170deg, #C97B2D 0%, #7f4d1c 55%, #5e3a15 100%); box-shadow: 0 10px 24px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.18);">
+              <span style="width: 72px; height: 72px; border-radius: 50%; background: rgba(0,0,0,.24); border: 1.5px solid rgba(255,255,255,.22); display: grid; place-items: center; padding: 8px; box-sizing: border-box; box-shadow: 0 0 22px rgba(255,216,103,.2);" data-icono="leon"></span>
+              <span style="font-family: Cinzel, serif; font-weight: 700; font-size: 15px; text-shadow: 0 2px 4px rgba(0,0,0,.45);">Heracles</span>
+              <span style="font-size: 10.5px; font-weight: 700; background: rgba(0,0,0,.28); border-radius: 999px; padding: 3px 9px;">🏛️ Griega · ⭐</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    this.pintarIconos();
+  }
+  componentDidUpdate() {
+    this.pintarIconos();
+  }
+  pintarIconos() {
+    if (typeof svgIcono !== "function") { setTimeout(() => this.pintarIconos(), 150); return; }
+    document.querySelectorAll("[data-icono]").forEach(el => {
+      if (!el.querySelector("svg")) {
+        el.innerHTML = svgIcono(el.dataset.icono, el.dataset.velado === "1");
+        const svg = el.querySelector("svg");
+        if (svg) { svg.style.width = "100%"; svg.style.height = "100%"; }
+      }
+    });
+  }
+}
+</script>
+</body>
+</html>

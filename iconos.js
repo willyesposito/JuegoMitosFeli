@@ -45,6 +45,53 @@ const ICONOS = {
     <path d="M40 100 L46 66 M80 100 L74 66" stroke="#FFF4DE" stroke-width="8" stroke-linecap="round" fill="none"/>
     <path d="M46 100 h28" stroke="#FFF4DE" stroke-width="8" stroke-linecap="round"/>`,
 
+  osa: `
+    <circle cx="32" cy="36" r="13" fill="#9C7A54"/>
+    <circle cx="88" cy="36" r="13" fill="#9C7A54"/>
+    <circle cx="32" cy="36" r="6" fill="#FFF4DE"/>
+    <circle cx="88" cy="36" r="6" fill="#FFF4DE"/>
+    <circle cx="60" cy="66" r="36" fill="#9C7A54"/>
+    <circle cx="60" cy="74" r="21" fill="#FFF4DE"/>
+    <circle cx="49" cy="58" r="4.5" fill="#3B2A1A"/>
+    <circle cx="71" cy="58" r="4.5" fill="#3B2A1A"/>
+    <ellipse cx="60" cy="72" rx="6" ry="4.5" fill="#3B2A1A"/>
+    <g fill="#FFD867"><circle cx="102" cy="14" r="3"/><circle cx="16" cy="18" r="2.5"/><circle cx="106" cy="42" r="2.5"/></g>`,
+
+  trono: `
+    <path d="M44 34 L52 20 L60 30 L68 20 L76 34 Z" fill="#FFF4DE"/>
+    <rect x="38" y="34" width="44" height="50" rx="6" fill="#FFD867"/>
+    <rect x="48" y="44" width="24" height="34" rx="4" fill="rgba(59,42,26,.25)"/>
+    <rect x="30" y="82" width="60" height="12" rx="4" fill="#E8B93A"/>
+    <rect x="30" y="58" width="9" height="36" rx="3" fill="#E8B93A"/>
+    <rect x="81" y="58" width="9" height="36" rx="3" fill="#E8B93A"/>
+    <rect x="36" y="94" width="8" height="12" fill="#E8B93A"/>
+    <rect x="76" y="94" width="8" height="12" fill="#E8B93A"/>`,
+
+  cazador: `
+    <path d="M44 18 a46 46 0 0 1 0 84" fill="none" stroke="#FFD867" stroke-width="7" stroke-linecap="round"/>
+    <path d="M44 18 L44 102" stroke="#FFF4DE" stroke-width="3"/>
+    <path d="M34 60 H94" stroke="#FFF4DE" stroke-width="5" stroke-linecap="round"/>
+    <path d="M94 60 L83 53 M94 60 L83 67" stroke="#FFF4DE" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <g fill="#FFD867"><circle cx="20" cy="24" r="3"/><circle cx="26" cy="32" r="3"/><circle cx="32" cy="40" r="3"/></g>`,
+
+  gemelos: `
+    <g fill="#FFF4DE">
+      <circle cx="40" cy="42" r="13"/>
+      <path d="M24 100 a16 24 0 0 1 32 0 Z"/>
+      <circle cx="80" cy="42" r="13"/>
+      <path d="M64 100 a16 24 0 0 1 32 0 Z"/>
+    </g>
+    <g fill="#FFD867"><circle cx="40" cy="18" r="3.5"/><circle cx="80" cy="18" r="3.5"/></g>
+    <path d="M40 18 L80 18" stroke="#FFD867" stroke-width="2"/>`,
+
+  atlas: `
+    <circle cx="60" cy="30" r="22" fill="rgba(255,255,255,.22)" stroke="#FFD867" stroke-width="4"/>
+    <g fill="#FFD867"><circle cx="52" cy="26" r="2.5"/><circle cx="67" cy="22" r="2.5"/><circle cx="63" cy="35" r="2"/></g>
+    <circle cx="60" cy="64" r="9" fill="#FFF4DE"/>
+    <path d="M40 58 q20 -12 40 0" stroke="#FFF4DE" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="52" y="72" width="16" height="22" rx="4" fill="#FFF4DE"/>
+    <path d="M52 94 L46 108 M68 94 L74 108" stroke="#FFF4DE" stroke-width="8" fill="none" stroke-linecap="round"/>`,
+
   barco: `
     <path d="M26 74 H94 L80 94 H40 Z" fill="#FFF4DE"/>
     <path d="M60 74 V26" stroke="#fff" stroke-width="6" stroke-linecap="round"/>

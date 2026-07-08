@@ -6,15 +6,16 @@
 
 const CLAVE_GUARDADO = "feli-cartas-v1";
 
-/* Arranque = el progreso real de Feli al momento de este deploy (ver
-   sesion_actual.md, 32 de 81 héroes), no el mazo inicial original de 3. Así
-   un perfil nuevo (dispositivo nuevo, localStorage limpio, o "Reiniciar la
-   colección" en Opciones) no le hace perder lo que ya tiene. */
+/* Mazo inicial curado por Willy: la lista con la que arranca la colección
+   (ver sesion_actual.md, que es su versión legible). Crece a medida que Willy
+   indica a quién sumar. Un perfil nuevo (dispositivo nuevo, localStorage
+   limpio, o "Reiniciar la colección" en Opciones) arranca exactamente con
+   estos. Como siempre se puede reiniciar, la lista se cura a mano sin miedo. */
 const DESBLOQUEADAS_INICIALES = [
   "teseo", "heracles", "penelope", "atlas", "odiseo", "atenea", "perseo", "dedalo",
   "zeus", "hera", "poseidon", "hades", "demeter", "persefone", "hestia", "apolo",
-  "artemisa", "ares", "afrodita", "pandora", "fenix", "psique", "paris",
-  "thor", "loki", "odin", "freya", "heimdall", "sif", "tyr", "valquirias",
+  "artemisa", "ares", "afrodita", "pandora", "fenix", "psique", "paris", "nike",
+  "thor", "loki", "odin", "freya", "heimdall", "sif", "tyr", "sigurd", "valquirias",
   "romulo_remo"
 ];
 

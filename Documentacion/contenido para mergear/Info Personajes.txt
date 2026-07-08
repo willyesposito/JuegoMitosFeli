@@ -1,0 +1,189 @@
+# Arquitectura Narrativa: Tier Dorado (Fase de Cierre)
+
+**Objetivo Cognitivo:** Resolución de problemas mediante lógica paramétrica, física, ética de sistemas y gestión de recursos. Reducción de la violencia explícita a través del análisis antropológico y causal[cite: 2].
+
+---
+
+## 1. Zeus (Mitología Griega)
+**Enfoque:** Orden estructural vs. Caos natural.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** Líder que estableció el orden en el cosmos tras derrotar a entidades que representaban la destrucción pura.
+    *   **¿Por qué?:** Las antiguas civilizaciones utilizaban el trueno para explicar la fuerza de la naturaleza; Zeus representa la necesidad humana de encontrar un orden lógico dentro del caos ambiental.
+*   **Capítulo 2: Visión Panorámica (Fuente: `cielo:aguila`)**
+    *   **Historia:** Utiliza un águila como mensajera para vigilar el mundo desde la cima del cielo.
+    *   **¿Por qué?:** El águila simboliza la perspectiva macro. Un líder estratégico debe observar el sistema completo antes de tomar decisiones, elevándose por encima del conflicto inmediato.
+*   **Capítulo 3: La Prueba de la Xenia (Fuente: `ordena:hospitalidad`)**
+    *   **Historia:** Viaja disfrazado de mendigo para evaluar a los humanos. Solo Filemón y Baucis, una pareja de ancianos sin recursos, le ofrecen refugio y comida[cite: 6].
+    *   **¿Por qué?:** Enseña el concepto de la *xenia* (hospitalidad). La verdadera nobleza y el valor de una persona se miden por cómo trata a los vulnerables, no por su acumulación de riqueza.
+
+---
+
+## 2. Poseidón (Mitología Griega)
+**Enfoque:** Dinámica de fluidos, impacto ambiental y economía estratégica.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** El administrador de los océanos, capaz de generar sismos y tempestades con su tridente[cite: 4].
+    *   **¿Por qué?:** Explicación geológica. En un pueblo dependiente de la navegación marítima, este mito daba sentido a los desastres naturales impredecibles[cite: 4].
+*   **Capítulo 2: El Origen de Pegaso (Fuente: `cielo:pegaso`)**
+    *   **Historia:** Al impactar la roca con fuerza marina, libera fuentes de agua cristalina y es el padre biológico del caballo alado Pegaso[cite: 4].
+    *   **¿Por qué?:** El agua en movimiento es la metáfora más antigua de la inspiración libre y el flujo ininterrumpido de las ideas creativas.
+*   **Capítulo 3: El Valor del Olivo (Fuente: `crisis:atenas`)**
+    *   **Historia:** Compite por ser el protector de una ciudad ofreciendo un manantial de agua salada (poder naval). La ciudad elige a su oponente, que ofrece un árbol de olivo.
+    *   **¿Por qué?:** Economía a largo plazo. Un recurso sostenible que provee alimento, aceite y madera (el olivo) garantiza la supervivencia de una civilización de manera mucho más eficiente que la capacidad de iniciar guerras.
+
+---
+
+## 3. Atenea (Mitología Griega)
+**Enfoque:** Planificación táctica, trabajo en red y justicia civil.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** Diosa de la estrategia que nació con armadura, priorizando siempre la mente analítica sobre la fuerza bruta en la resolución de conflictos[cite: 4].
+    *   **¿Por qué?:** Demuestra que el poder más alto y respetado no es la capacidad de destruir, sino la inteligencia para evitar la destrucción[cite: 4].
+*   **Capítulo 2: La Red de Soporte (Fuente: `cielo:andromeda`)**
+    *   **Historia:** Aconseja a múltiples héroes, proveyendo herramientas tecnológicas (como el escudo espejo) y directrices tácticas exactas[cite: 4].
+    *   **¿Por qué?:** Trabajo interdisciplinario. El éxito de los grandes proyectos rara vez es un esfuerzo individual; requiere consultar a especialistas y utilizar herramientas tecnológicas precisas.
+*   **Capítulo 3: El Primer Tribunal (Fuente: `ordena:areopago`)**
+    *   **Historia:** Establece el Areópago, un consejo donde los ciudadanos deben presentar pruebas y argumentos para resolver disputas, prohibiendo la venganza personal.
+    *   **¿Por qué?:** Fundamentos del sistema judicial. Enseña que la evolución de una sociedad depende de reemplazar la violencia física con el debate estructurado y la argumentación lógica.
+
+---
+
+## 4. Jasón (Mitología Griega)
+**Enfoque:** Gestión de equipos, química elemental y cálculo predictivo.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** Líder que reunió a especialistas de distintas áreas (fuerza, velocidad, música) en la nave Argo para recuperar el Vellocino de Oro[cite: 4].
+    *   **¿Por qué?:** Delegación de tareas. Ningún individuo posee todas las habilidades necesarias para una misión de alta complejidad[cite: 4].
+*   **Capítulo 2: El Vellocino Protector (Fuente: `cielo:aries`)**
+    *   **Historia:** El objeto buscado proviene de un carnero mágico enviado previamente para rescatar a dos hermanos de una situación de opresión.
+    *   **¿Por qué?:** Significado de los artefactos. El valor real del objetivo no reside en que sea de oro, sino en que simboliza el rescate y la protección de los más débiles.
+*   **Capítulo 3: Alquimia vs. Fuerza (Fuente: `ordena:colquida`)**
+    *   **Historia:** Obligado a enfrentar toros que exhalan fuego. En lugar de atacar con armas, delega la solución química, utilizando unguentos ignífugos para neutralizar el calor.
+    *   **¿Por qué?:** Supervivencia mediante la ciencia. La fuerza es inútil frente a amenazas elementales; el conocimiento de los materiales es la defensa superior.
+*   **Capítulo 4: Las Rocas Simplégades (Fuente: `crisis:simplegades`)**
+    *   **Historia:** Utiliza una paloma como modelo de prueba para calcular los intervalos de tiempo exactos en que dos rocas colisionan, logrando cruzar con su nave en el margen de seguridad.
+    *   **¿Por qué?:** Física y predicción de patrones. La observación paramétrica y el cálculo de intervalos permiten evadir peligros que parecen insuperables de frente.
+
+---
+
+## 5. Perseo (Mitología Griega)
+**Enfoque:** Óptica geométrica, logística previa y pensamiento lateral.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** Recibe una misión extrema por parte de un rey que secretamente busca eliminarlo para tomar el control[cite: 4].
+    *   **¿Por qué?:** Evaluación de intenciones. Enseña a cuestionar el propósito detrás de tareas aparentemente imposibles impuestas por figuras de autoridad abusivas.
+*   **Capítulo 2: Inventario Crítico (Fuente: `ordena:equipamiento`)**
+    *   **Historia:** Dedica la mayor parte del tiempo a negociar recursos de alta tecnología: sandalias voladoras, escudo pulido y casco de invisibilidad[cite: 4].
+    *   **¿Por qué?:** Gestión logística. La preparación previa del equipo adecuado garantiza el 90% del éxito de una misión crítica.
+*   **Capítulo 3: El Punto Ciego (Fuente: `crisis:medusa`)**
+    *   **Historia:** Al enfrentar una amenaza que no puede mirarse de frente, camina de espaldas y utiliza el escudo pulido como espejo retrovisor[cite: 4].
+    *   **¿Por qué?:** Óptica geométrica. Solucionar un problema de visión directa mediante el cálculo de ángulos de reflexión (pensamiento lateral puro)[cite: 4].
+*   **Capítulo 4: Ventaja Aérea (Fuente: `cielo:casiopea`)**
+    *   **Historia:** Evade un ataque marino utilizando las sandalias aladas, atacando desde un eje vertical inalcanzable para la criatura.
+    *   **¿Por qué?:** Táctica espacial. Alterar el plano físico del conflicto (moverse al aire) neutraliza la ventaja biológica de un oponente terrestre o acuático.
+
+---
+
+## 6. Aquiles (Mitología Griega)
+**Enfoque:** Análisis de vulnerabilidades, regulación emocional y empatía radical.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** El guerrero más resistente, sumergido en aguas protectoras, dejando únicamente el talón expuesto[cite: 4].
+    *   **¿Por qué?:** Lógica de sistemas. Ninguna defensa es absoluta; identificar el punto de fallo único ("talón de Aquiles") es vital[cite: 4].
+*   **Capítulo 2: El Escudo Cosmológico (Fuente: `crisis:escudo`)**
+    *   **Historia:** Recibe un escudo grabado no con armas, sino con un mapa del universo: ciudades pacíficas, agricultura y danzas.
+    *   **¿Por qué?:** Perspectiva macro. El conflicto es temporal y destructivo; la verdadera base de la civilización es la paz y el trabajo colaborativo.
+*   **Capítulo 3: El Costo de la Impulsividad (Fuente: `ordena:ira`)**
+    *   **Historia:** Se retira de sus responsabilidades por una ofensa menor, permitiendo que el orgullo gane. Su negativa a actuar obliga a su círculo cercano a asumir riesgos letales.
+    *   **¿Por qué?:** Regulación emocional. La falta de control sobre el ego y la ira genera daños colaterales irreversibles en el entorno afectivo.
+*   **Capítulo 4: Ruptura del Ciclo (Fuente: `bonificacion_secreta`)**
+    *   **Historia:** Se reúne en secreto con el rey rival. Al ver el dolor del anciano, depone las armas temporalmente y devuelve lo que le pertenece.
+    *   **¿Por qué?:** Empatía pura. La única forma de desactivar un ciclo infinito de conflicto es reconocer el propio dolor reflejado en el adversario.
+
+---
+
+## 7. Hades (Mitología Griega)
+**Enfoque:** Lógica condicional, gestión administrativa y desmitificación del miedo.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** Administrador estricto del mundo subterráneo, responsable de mantener el orden y custodiar los minerales de la tierra[cite: 4].
+    *   **¿Por qué?:** Erradicación del sesgo visual. Quienes gestionan sistemas cerrados, silenciosos o invisibles no son villanos; cumplen funciones estructurales indispensables para el equilibrio[cite: 4].
+*   **Capítulo 2: El Contrato Booleano (Fuente: `ordena:orfeo`)**
+    *   **Historia:** Establece un trato con Orfeo basado en una condición única: la salida es válida SI y SOLO SI no mira hacia atrás[cite: 4].
+    *   **¿Por qué?:** Lógica de programación. Los sistemas funcionan con reglas inflexibles; el fallo humano al no seguir la instrucción colapsa la ejecución[cite: 4].
+*   **Capítulo 3: Resolución Paramétrica (Fuente: `crisis:cerbero`)**
+    *   **Historia:** Permite a Heracles llevarse temporalmente al guardián Cerbero bajo una condición estricta: dominarlo sin recurrir a las armas de acero[cite: 4].
+    *   **¿Por qué?:** Negociación diplomática. Un líder altamente competente no necesita la guerra para probar a sus oponentes; impone reglas que exigen habilidad e inteligencia en lugar de destrucción[cite: 4].
+
+# Arquitectura Narrativa: Tier Plateado (Bloque 1 - Estrategas y Especialistas)
+
+**Objetivo Cognitivo:** Análisis de sistemas cerrados, ingeniería aplicada, logística de transmisión de datos y gestión de ecosistemas[cite: 2, 6].
+
+---
+
+## 1. Dédalo (Mitología Griega)
+**Enfoque:** Ingeniería estructural, termodinámica y resolución de problemas por pensamiento lateral.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** El inventor y arquitecto supremo de Grecia, diseñador del laberinto de Creta[cite: 4]. 
+    *   **¿Por qué?:** La ingeniería como herramienta de control de la realidad. El diseño estructural puede contener amenazas que la fuerza bruta no puede destruir[cite: 4].
+*   **Capítulo 2: Límites Operativos (Fuente: `crisis:vuelo_icaro`)**
+    *   **Historia:** Diseña alas de cera y plumas para escapar de la isla, instruyendo a su hijo a volar en la franja de seguridad entre el calor del sol y la humedad del mar[cite: 4].
+    *   **¿Por qué?:** Parámetros termodinámicos. Toda tecnología tiene límites de tolerancia; ignorar el manual de usuario y los límites físicos del material produce fallos catastróficos[cite: 4].
+*   **Capítulo 3: El Hilo y la Caracola (Fuente: `ordena:desafio_minos`)**
+    *   **Historia:** Para pasar un hilo por dentro de una caracola espiral, Dédalo ata el hilo a una hormiga y pone una gota de miel en la salida, dejando que la biología resuelva la geometría.
+    *   **¿Por qué?:** Micro-mecánica y pensamiento lateral. Utilizar los instintos biológicos preexistentes de un sistema es más eficiente que forzar una solución mecánica compleja.
+
+---
+
+## 2. Prometeo (Mitología Griega)
+**Enfoque:** Innovación tecnológica, asignación de recursos y resiliencia.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** El titán del ingenio que entrega el fuego a la humanidad para sacarla de la oscuridad y el frío[cite: 4].
+    *   **¿Por qué?:** El fuego representa la tecnología basal (luz, calor, forja, cocción). El progreso tecnológico requiere sacrificio y desafiar el status quo[cite: 4].
+*   **Capítulo 2: El Engaño de Mecone (Fuente: `ordena:reparto`)**
+    *   **Historia:** Engaña a Zeus al dividir un buey, ocultando la carne nutritiva bajo la piel y los huesos bajo grasa brillante, asegurando que los humanos conserven los nutrientes.
+    *   **¿Por qué?:** Asignación eficiente de recursos. Priorizar la supervivencia biológica y la nutrición del ecosistema humano sobre la estética de los tributos divinos.
+*   **Capítulo 3: La Resiliencia (Fuente: `crisis:caucaso`)**
+    *   **Historia:** Castigado por su innovación, soporta el encierro en la montaña hasta ser liberado, sin arrepentirse de haber acelerado el progreso humano[cite: 4].
+    *   **¿Por qué?:** Costo de la innovación disruptiva. Los cambios estructurales masivos en cualquier sociedad siempre generan resistencia inicial de las autoridades establecidas[cite: 4].
+
+---
+
+## 3. Hermes (Mitología Griega)
+**Enfoque:** Logística, redes de comunicación y compensación de valor.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** El mensajero más veloz, conector de los tres mundos (Olimpo, Tierra, Inframundo) y protector de viajeros[cite: 4].
+    *   **¿Por qué?:** Transmisión de datos. La infraestructura de comunicaciones y la logística son el sistema nervioso que permite funcionar a cualquier civilización[cite: 4].
+*   **Capítulo 2: Negociación de Activos (Fuente: `ordena:robo_ganado`)**
+    *   **Historia:** Siendo un bebé, interviene en la propiedad de Apolo (el ganado) pero resuelve el conflicto inventando la lira con un caparazón de tortuga y entregándola como pago[cite: 4].
+    *   **¿Por qué?:** Resolución de conflictos por innovación. Un problema legal o territorial puede neutralizarse creando nueva tecnología que compense el valor del daño original[cite: 4].
+
+---
+
+## 4. Artemisa (Mitología Griega)
+**Enfoque:** Equilibrio de ecosistemas, autonomía e intervención sistémica.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** Diosa de la caza y la luna, guardiana estricta de la fauna y los espacios silvestres[cite: 4].
+    *   **¿Por qué?:** Sostenibilidad ambiental. La caza en la mitología no es depredación, sino gestión de población para mantener el equilibrio de los ecosistemas salvajes[cite: 4].
+*   **Capítulo 2: La Metamorfosis (Fuente: `cielo:osa_mayor`)**
+    *   **Historia:** Su compañera Calisto sufre una transformación en osa tras la intervención de terceros en el ecosistema de Artemisa[cite: 1].
+    *   **¿Por qué?:** Causalidad externa. Demuestra cómo las decisiones externas (Zeus/Hera) pueden alterar permanentemente el estado de un sistema cerrado y la vida de sus integrantes[cite: 1].
+
+---
+
+## 5. Tyr (Mitología Nórdica)
+**Enfoque:** Análisis de riesgo, sacrificio calculado y ejecución de la ley.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** El dios del valor puro y la ley; el único que se acerca al caos representado por el lobo Fenrir[cite: 4].
+    *   **¿Por qué?:** Redefinición del valor. El coraje no es la capacidad de iniciar combates, sino la disposición para hacer cumplir la ley y mantener los pactos[cite: 4].
+*   **Capítulo 2: La Paradoja de Gleipnir (Fuente: `crisis:fenrir`)**
+    *   **Historia:** Para encadenar a Fenrir con la cinta mágica (hecha de elementos imposibles), Tyr pone su mano como garantía en las fauces del lobo[cite: 4].
+    *   **¿Por qué?:** Sacrificio paramétrico. Para contener una amenaza global que colapsaría el sistema, un líder debe asumir y pagar un costo personal irreversible[cite: 4].
+
+---
+
+## 6. Freya (Nórdica)
+**Enfoque:** Manipulación de variables, economía del conocimiento.
+*   **Capítulo 1: Base (Fuente: `descubrimiento`)**
+    *   **Historia:** Diosa del amor y de la magia Seidr, usuaria de tecnología de vuelo (capa de halcón)[cite: 4].
+    *   **¿Por qué?:** La magia (Seidr) como representación del conocimiento científico avanzado capaz de alterar la percepción y el estado de la materia[cite: 4].
+*   **Capítulo 2: El Collar Brisingamen (Fuente: `ordena:forja_enana`)**
+    *   **Historia:** Gestiona la adquisición del artefacto más valioso de los nueve mundos negociando directamente con los especialistas técnicos (los enanos).
+    *   **¿Por qué?:** Economía de la tecnología. El acceso a herramientas de nivel superior requiere identificar, respetar y negociar con los constructores del hardware.
+
+Arquitectura Narrativa: Tier Plateado (Bloque 2 - Patrones, Ciclos y Redes)Objetivo Cognitivo: Análisis de sistemas cíclicos, acústica, lingüística aplicada y seguridad de la información.  1. Apolo (Mitología Griega)Enfoque: Patrones solares, predicción matemática (Oráculos) y armonía estructural.Capítulo 1: Base (Fuente: descubrimiento)Historia: Dios de la música, la medicina y la luz. En el templo de Delfos, utilizaba su conocimiento para ayudar a los humanos a tomar decisiones basadas en la previsión.  ¿Por qué?: La luz y el sonido como fuentes de información. El mito refleja la búsqueda humana de patrones en el futuro para reducir la incertidumbre.  Capítulo 2: Armonía Matemática (Fuente: cielo:lyra)Historia: Apolo perfecciona la lira, instrumento que traduce las matemáticas en sonidos placenteros.¿Por qué?: Relación entre arte y lógica. La música no es azar; es una estructura matemática que organiza la percepción humana y crea orden en el entorno.2. Perséfone (Mitología Griega)Enfoque: Sistemas de estados duales, ciclos regenerativos y equilibrio.Capítulo 1: Base (Fuente: descubrimiento)Historia: Reina del mundo subterráneo y diosa de la primavera. Gestiona dos realidades distintas simultáneamente.  ¿Por qué?: El sistema de estados cíclicos. Enseña que los ecosistemas (la tierra) necesitan fases de actividad (primavera) y fases de latencia (invierno) para funcionar correctamente.  Capítulo 2: Algoritmo de las Estaciones (Fuente: ordena:ciclo_natural)Historia: El movimiento entre mundos define el estado de la superficie; la sincronización es perfecta para que la vida no se detenga.¿Por qué?: Gestión de recursos en sistemas cerrados. La estabilidad de un sistema depende de la transición suave entre procesos opuestos, no de la eliminación de uno de ellos.3. Orfeo (Mitología Griega)Enfoque: Acústica, control de frecuencias y negociación no violenta.Capítulo 1: Base (Fuente: descubrimiento)Historia: Músico cuya capacidad para emitir frecuencias armónicas logra calmar hasta las criaturas más agresivas del inframundo.  ¿Por qué?: Persuasión vs. Coerción. La tecnología de la comunicación (música) puede desactivar amenazas que una espada solo agravaría.  Capítulo 2: Análisis de Frecuencias (Fuente: crisis:inframundo)Historia: Debe ajustar su melodía para resonar con las condiciones emocionales de Hades, logrando una respuesta favorable mediante la adaptación del tono.¿Por qué?: Teoría de la resonancia. El éxito en una negociación depende de identificar la frecuencia de interés de la otra parte y adaptar el mensaje para establecer conexión.4. Sigurd (Mitología Nórdica)Enfoque: Lingüística, interpretación de datos y mitigación de riesgos.Capítulo 1: Base (Fuente: descubrimiento)Historia: Héroe que logra entender el idioma de las aves tras enfrentar al dragón Fafnir.  ¿Por qué?: El entorno como fuente de información. Un sistema complejo (la naturaleza) contiene advertencias claras si se cuenta con la capacidad técnica (decodificador) para interpretarlas.  Capítulo 2: Parser de Advertencias (Fuente: ordena:traicion)Historia: Las aves le advierten de una traición interna. Sigurd procesa la información y altera su estrategia de seguridad a tiempo.¿Por qué?: Gestión de inteligencia. La mayoría de los riesgos críticos son detectables antes de ocurrir si se presta atención a las señales de baja intensidad en el entorno.5. Heimdall (Mitología Nórdica)Enfoque: Procesamiento de señales, vigilancia y seguridad perimetral.Capítulo 1: Base (Fuente: descubrimiento)Historia: El guardián que percibe el crecimiento de la hierba y el vellón de las ovejas desde distancias imposibles.  ¿Por qué?: Capacidad de procesamiento de datos. La seguridad perimetral efectiva depende de la sensibilidad del sensor y la capacidad de filtrar ruido relevante de irrelevante.  Capítulo 2: El Ancho de Banda (Fuente: cielo:generico_norse)Historia: Protege el puente Bifröst, monitoreando el flujo constante entre los nueve mundos.¿Por qué?: Gestión de tráfico. La estabilidad de un hub (Asgard) depende de la capacidad del guardián para gestionar el flujo de datos (viajeros/mensajes) sin colapsar el sistema.
+
