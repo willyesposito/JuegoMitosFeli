@@ -100,6 +100,7 @@ function revelar(id, sinFallar) {
   document.getElementById("oraculo-otra").addEventListener("click", () => {
     if (modo === "facil") iniciarFacil(); else iniciarDificil();
   });
+  activarIcono(main.querySelector(".ilustracion"), p);
 
   setTimeout(() => {
     if (resultado.vinculos.length) {
@@ -298,6 +299,7 @@ async function iniciar() {
 
   cargarEstado();
   reconciliarVinculos();
+  inyectarKeyframesIconos();
 
   document.getElementById("toggle-facil").addEventListener("click", () => cambiarModo("facil"));
   document.getElementById("toggle-dificil").addEventListener("click", () => cambiarModo("dificil"));
@@ -311,3 +313,29 @@ async function iniciar() {
 }
 
 iniciar();
+
+/* ============================================================
+   ÍCONOS ANIMADOS Y EVOLUTIVOS (motor en iconos.js)
+   ============================================================ */
+
+/* Inyecta los @keyframes de los íconos una sola vez. */
+function inyectarKeyframesIconos() {
+  if (document.getElementById("iconos-keyframes")) return;
+  if (typeof ICONO_KEYFRAMES === "undefined") return;
+  const style = document.createElement("style");
+  style.id = "iconos-keyframes";
+  style.textContent = ICONO_KEYFRAMES;
+  document.head.appendChild(style);
+}
+
+/* Activa el ícono dentro de un contenedor recién pintado:
+   - Si la historia del personaje todavía no está completa, quita el detalle
+     narrativo ([data-extra]) => estado "antes de leer" del ícono evolutivo.
+   - Arranca la animación sutil del ícono (gestos [data-fx] + movimiento raíz). */
+function activarIcono(contenedorEl, p) {
+  if (!contenedorEl || typeof animarIcono !== "function") return;
+  const svgIco = contenedorEl.querySelector("svg");
+  if (!svgIco) return;
+  if (!historiaCompleta(p)) iconoBase(svgIco);
+  animarIcono(svgIco, p.icono);
+}
