@@ -1,9 +1,8 @@
 /* El Cielo de los Mitos — trazar constelaciones para descubrir personajes
    y encender capítulos (spec_funcional §4, Handoff "El Cielo de los Mitos").
-   Usa el núcleo compartido de nucleo.js (estado, personajes, audio); los
-   datos propios del módulo viven en constelaciones.json. */
-
-const NS = "http://www.w3.org/2000/svg";
+   Usa el núcleo compartido de nucleo.js (estado, personajes, audio) y el
+   motor de trazado genérico de motor-trazado.js (dibuja y sigue el trazo);
+   los datos propios del módulo viven en constelaciones.json. */
 
 const DECOY_POOL = [
   [10, 22], [88, 16], [10, 52], [90, 40], [8, 80], [92, 78], [52, 8], [22, 88],
@@ -17,12 +16,13 @@ const DECOY_POOL = [
 
 let catalogo = [];
 let idx = 0;
-let paso = 0;
 let fase = "trazando"; // trazando | ceremonia | capitulo | completada
-let errorKey = null;
-let errores = 0;
-let pistaTemporal = false;
 let tokenSecuencia = 0;
+
+/* El Cielo no regala la pista de entrada — hacía el trazado demasiado
+   fácil. Recién se enciende sola después de varios errores seguidos
+   (ver crearMotorTrazado, pistaPorDefecto: false). */
+const motor = crearMotorTrazado({ pistaPorDefecto: false, umbralErroresParaPista: 3, alCambiar: () => render() });
 
 /* Namespace propio dentro del estado compartido, inicializado en forma
    perezosa: nucleo.js no necesita saber nada de constelaciones. */
@@ -35,16 +35,9 @@ function actual() {
   return catalogo[idx];
 }
 
-function decoysDe(c) {
+function decoysDeConstelacion(c) {
   const cant = c.dificultad === 1 ? 7 : c.dificultad === 2 ? 10 : 13;
-  return DECOY_POOL.filter(d => c.estrellas.every(p => Math.hypot(p[0] - d[0], p[1] - d[1]) >= 10)).slice(0, cant);
-}
-
-/* La pista (halo alrededor de la próxima estrella) ya no se muestra de
-   entrada: hacía el trazado demasiado fácil. Solo se regala como salvavidas
-   después de varios errores seguidos (ver marcarError). */
-function conPista(c) {
-  return pistaTemporal;
+  return decoysDe(c.estrellas, DECOY_POOL, cant);
 }
 
 /* ---------- Doble función: descubre o enciende un capítulo adicional ---------- */
@@ -74,40 +67,29 @@ function completarConstelacion(constelacion) {
 
 /* ---------- Interacción ---------- */
 
-function marcarError(clave) {
-  sonar("error");
-  errores++;
-  if (errores >= 3) pistaTemporal = true; // regalo de pista, sin castigo
-  errorKey = clave;
-  render();
-  const token = tokenSecuencia;
-  setTimeout(() => {
-    if (token === tokenSecuencia && errorKey === clave) { errorKey = null; render(); }
-  }, 700);
-}
-
 function tocarEstrella(i) {
   if (fase !== "trazando") return;
   const c = actual();
-  if (i === paso) {
-    paso++;
-    sonar("estrella", paso);
-    if (paso === c.estrellas.length) {
-      ceremonia(c);
-    } else {
-      errores = 0;
-      pistaTemporal = false;
-      render();
-    }
-  } else if (i > paso) {
-    marcarError("e" + i);
+  const resultado = motor.tocarPunto(i, c.estrellas.length);
+  if (resultado.avanzo) {
+    sonar("estrella", motor.paso);
+    if (resultado.completo) ceremonia(c);
+    else render();
+  } else if (resultado.error) {
+    sonar("error");
+    render();
   }
+}
+
+function tocarDecoy(j) {
+  if (fase !== "trazando") return;
+  motor.tocarDecoy(j);
+  sonar("error");
+  render();
 }
 
 function ceremonia(c) {
   fase = "ceremonia";
-  errorKey = null;
-  pistaTemporal = false;
   render();
   vibrar([30, 50, 30]);
   const token = ++tokenSecuencia;
@@ -128,21 +110,16 @@ function elegir(id) {
   idx = i;
   const c = actual();
   const hecha = estadoCielo().completadas.includes(c.id);
-  paso = hecha ? c.estrellas.length : 0;
+  if (hecha) motor.marcarCompleto(c.estrellas.length);
+  else motor.reiniciar();
   fase = hecha ? "completada" : "trazando";
-  errorKey = null;
-  errores = 0;
-  pistaTemporal = false;
   render();
 }
 
 function reiniciar() {
   tokenSecuencia++;
-  paso = 0;
+  motor.reiniciar();
   fase = "trazando";
-  errorKey = null;
-  errores = 0;
-  pistaTemporal = false;
   render();
 }
 
@@ -154,103 +131,24 @@ function cerrarHoja() {
 
 /* ---------- Dibujo del cielo ---------- */
 
-function crearEl(tag, attrs) {
-  const el = document.createElementNS(NS, tag);
-  for (const clave in attrs) el.setAttribute(clave, attrs[clave]);
-  return el;
-}
-
 function renderCielo() {
-  const grupo = document.getElementById("cielo-dinamico");
-  grupo.innerHTML = "";
   const c = actual();
-  const PTS = c.estrellas;
   const completa = fase !== "trazando";
 
-  if (completa) {
-    const xs = PTS.map(p => p[0]), ys = PTS.map(p => p[1]);
-    const cx = (Math.min(...xs) + Math.max(...xs)) / 2;
-    const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
-    const rx = (Math.max(...xs) - Math.min(...xs)) / 2 + 10;
-    const ry = (Math.max(...ys) - Math.min(...ys)) / 2 + 10;
-
-    const elipse = crearEl("ellipse", { cx, cy, rx, ry, fill: "rgba(255,216,103,.14)" });
-    elipse.style.filter = "blur(6px)";
-    elipse.style.animation = "aparece .8s ease-out both";
-    grupo.appendChild(elipse);
-
-    grupo.appendChild(crearEl("circle", {
-      cx, cy, r: Math.max(rx, ry), fill: "none",
-      stroke: "rgba(255,216,103,.8)", "stroke-width": .7, class: "onda-final"
-    }));
-  }
-
-  for (let i = 1; i < Math.min(paso, PTS.length); i++) {
-    const linea = crearEl("line", {
-      x1: PTS[i - 1][0], y1: PTS[i - 1][1], x2: PTS[i][0], y2: PTS[i][1],
-      stroke: completa ? "#ffd867" : "rgba(255,216,103,.85)",
-      "stroke-width": completa ? 1 : .7,
-      "stroke-linecap": "round",
-      pathLength: "1",
-      class: "linea-trazada"
-    });
-    if (completa) linea.style.filter = "drop-shadow(0 0 2px rgba(255,216,103,.9))";
-    grupo.appendChild(linea);
-  }
-
-  if (fase === "trazando" && conPista(c) && paso < PTS.length) {
-    const [hx, hy] = PTS[paso];
-    grupo.appendChild(crearEl("circle", {
-      cx: hx, cy: hy, r: 5, fill: "none",
-      stroke: "rgba(255,233,168,.9)", "stroke-width": .6, class: "halo-guia"
-    }));
-  }
-
-  decoysDe(c).forEach((d, j) => {
-    const esError = errorKey === "d" + j;
-    const decoy = crearEl("circle", {
-      cx: d[0], cy: d[1], r: c.dificultad === 3 ? 1.4 : 1.1,
-      fill: esError ? "#ff9e8a" : "#fff",
-      opacity: c.dificultad === 3 ? .9 : .65
-    });
-    decoy.style.transformBox = "fill-box";
-    decoy.style.transformOrigin = "center";
-    decoy.style.animation = esError ? "sacudir-suave .4s" : `brillo-estrella 4.4s ease-in-out ${j * .7}s infinite backwards`;
-    grupo.appendChild(decoy);
-
-    const tapDecoy = crearEl("circle", { cx: d[0], cy: d[1], r: 6, fill: "rgba(0,0,0,0)" });
-    tapDecoy.style.cursor = "pointer";
-    tapDecoy.addEventListener("click", () => { if (fase === "trazando") marcarError("d" + j); });
-    grupo.appendChild(tapDecoy);
-  });
-
-  PTS.forEach((p, i) => {
-    const tocada = i < paso;
-    const esError = errorKey === "e" + i;
-    const base = i === c.brillante ? 2 : (i === 0 ? 1.8 : 1.6);
-
-    if (tocada) {
-      const glow = crearEl("circle", { cx: p[0], cy: p[1], r: 4, fill: "rgba(255,216,103,.22)" });
-      if (completa) { glow.classList.add("destello-final"); glow.style.animationDelay = (i * .3) + "s"; }
-      grupo.appendChild(glow);
-    }
-
-    const estrella = crearEl("circle", {
-      cx: p[0], cy: p[1], r: tocada ? base + .4 : base,
-      fill: tocada ? "#ffd867" : (esError ? "#ff9e8a" : "#fff")
-    });
-    estrella.style.transition = "fill .25s, r .25s";
-    estrella.style.transformBox = "fill-box";
-    estrella.style.transformOrigin = "center";
-    estrella.style.animation = esError ? "sacudir-suave .4s" : (!tocada ? `brillo-estrella 3.4s ease-in-out ${i * .5}s infinite backwards` : "none");
-    grupo.appendChild(estrella);
-
-    const tap = crearEl("circle", { cx: p[0], cy: p[1], r: 7, fill: "rgba(0,0,0,0)" });
-    tap.style.cursor = "pointer";
-    tap.setAttribute("role", "button");
-    tap.setAttribute("aria-label", `Estrella ${i + 1} de ${PTS.length}`);
-    tap.addEventListener("click", () => tocarEstrella(i));
-    grupo.appendChild(tap);
+  renderTrazado({
+    grupoId: "cielo-dinamico",
+    puntos: c.estrellas,
+    decoys: decoysDeConstelacion(c),
+    paso: motor.paso,
+    completo: completa,
+    errorKey: motor.errorKey,
+    conPista: fase === "trazando" && motor.conPista(),
+    puntoBrillante: c.brillante,
+    decoyRadio: c.dificultad === 3 ? 1.4 : 1.1,
+    decoyOpacidad: c.dificultad === 3 ? .9 : .65,
+    etiquetaPunto: (i, total) => `Estrella ${i + 1} de ${total}`,
+    onTocarPunto: tocarEstrella,
+    onTocarDecoy: tocarDecoy
   });
 }
 
@@ -259,6 +157,9 @@ function renderCielo() {
 function textoInstruccion() {
   const c = actual();
   const estrellitas = "★".repeat(c.dificultad) + "☆".repeat(3 - c.dificultad);
+  const errorKey = motor.errorKey;
+  const pistaTemporal = motor.conPista();
+  const paso = motor.paso;
 
   let instruccion = c.dificultad === 1
     ? `Tocá la estrella que brilla y uní ${c.nombre} ✨ · ${estrellitas}`
@@ -402,7 +303,7 @@ async function iniciar() {
 
   idx = 0;
   const hecha = estadoCielo().completadas.includes(actual().id);
-  paso = hecha ? actual().estrellas.length : 0;
+  if (hecha) motor.marcarCompleto(actual().estrellas.length);
   fase = hecha ? "completada" : "trazando";
   render();
 
