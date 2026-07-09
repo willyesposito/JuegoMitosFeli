@@ -23,14 +23,14 @@
 
 ## 1. El presupuesto de capítulos (número que gobierna todo)
 
-Roster v3: 13 dorados (3-4 caps) + 36 plateados (2-3) + 32 normales (1-2) ≈ **180 capítulos totales** en el punto medio de los rangos.
+Roster v3: 13 dorados (3-4 caps) + 37 plateados (2-3) + 35 normales (1-2) ≈ **190 capítulos totales** en el punto medio de los rangos.
 
-- El descubrimiento cubre **81** (capítulo base de cada personaje).
-- Quedan **~100 capítulos** que deben salir de módulos. Las fuentes de este documento suman ~110: cierra con margen para bonificaciones.
+- El descubrimiento cubre **85** (capítulo base de cada personaje — número confirmado por Willy, coincide con `personajes.json` y con la tabla de Totales de `roster_personajes_v3.md`).
+- Quedan **~105 capítulos** que deben salir de módulos. Las fuentes de este documento suman ~110: cierra con margen para bonificaciones.
 
 | Fuente | Ola | Capítulos aprox. |
 |---|---|---|
-| Descubrimiento (base) | 1 | 81 |
+| Descubrimiento (base) | 1 | 85 |
 | Vínculos entre personajes | 1 | ~35 |
 | Cielo de los Mitos (10 constelaciones) | 1 | 10 |
 | Oráculo difícil (versión extendida del base) | 1 | según uso |
@@ -185,8 +185,8 @@ La completitud sigue siendo la del spec (capítulos encendidos = capítulos publ
 
 ## 8. Pendientes que bloquean (resolver antes de implementar)
 
-1. **Reconciliar el contador:** la app en producción muestra "85 héroes"; el roster v3 dice 81. El contador global debe salir del JSON filtrado por `estado: publicado`, nunca de un número hardcodeado. Verificar qué hay hoy en `personajes.json`.
-2. **Decidir el destino de la pregunta de 3 opciones** del modelo actual de apertura de carta: si sobrevive como el "modo fácil" del Oráculo o se reemplaza por el formato pista + tap del spec. El documento no puede decir dos cosas; hoy conviven.
+1. ~~Reconciliar el contador~~ — **resuelto (julio 2026):** 85 es el número confirmado por Willy. Coincide con `personajes.json` (85 entradas) y con la tabla de Totales de `roster_personajes_v3.md`. Además, `hub.js` y `app.js` ya calculan el total con `personajes.length`, no hardcodean el número — no hace falta ningún cambio de código.
+2. ~~Decidir el destino de la pregunta de 3 opciones~~ — **resuelto:** no existe rastro de esa mecánica en el código actual. El Oráculo implementado son los 2 modos spec'd (pista + tap / 3 pistas tipo Mastermind); no hay una tercera variante de "elegir entre 3 opciones" corriendo en paralelo.
 3. **Anexos de contenido a producir en este contexto (no en Claude Code):** tabla definitiva de vínculos (~35), tabla de pares espejo (~12), catálogo de viajes (4), catálogo de reliquias (~14), catálogo de encrucijadas (~13), y el mapeo capítulo-por-capítulo de los 13 dorados y 36 plateados a sus fuentes.
 
 ## 9. Roadmap consolidado (reemplaza al de CLAUDE.md)
