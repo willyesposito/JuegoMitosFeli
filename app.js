@@ -1,7 +1,8 @@
-/* Héroes y Dioses — lógica del modo colección.
+/* Héroes y Dioses — lógica del módulo Colección.
    El estado, los personajes y los capítulos viven en nucleo.js (compartido
-   con los demás módulos del hub). Este archivo solo arma la UI de la
-   Colección: grilla, detalle de carta y desbloqueo por pregunta. */
+   con los demás módulos del hub). Este archivo arma la UI de la Colección:
+   grilla, detalle de carta, sets temáticos y ceremonias de material. El
+   descubrimiento (Oráculo, ambos modos) vive en oraculo.html/oraculo.js. */
 
 const NOMBRE_MITO = { griega: "🏛️ Griega", nordica: "⚡ Nórdica", romana: "🦅 Romana" };
 const NOMBRE_MITO_CORTO = { griega: "GRIEGA", nordica: "NÓRDICA", romana: "ROMANA" };
@@ -16,9 +17,7 @@ const ATRIBUTOS = [
 
 let filtroActivo = "todas";
 let textoBusqueda = "";
-let cartaPendiente = null;   // id de la carta que se intenta desbloquear
-let preguntaActual = null;   // { personajeId, opciones: [{texto, esCorrecta}] }
-let oraculoPendiente = null; // id del héroe que el Oráculo va a revelar
+let nombresConstelaciones = {}; // id de constelación → nombre, para las pistas de capítulos velados
 
 /* ---------- Insignias de tier y capítulos ----------
    Insignia de tier: distintivo estático de cuán central es el personaje en su
@@ -104,24 +103,6 @@ function capasMaterialHTML(tono) {
   return `<i class="holo" aria-hidden="true"></i><i class="brillo-sweep brillo-sweep--${tono}" aria-hidden="true"></i>${estrellas}`;
 }
 
-/* ---------- Banner de "El Cielo de los Mitos" ----------
-   Progreso propio del módulo, igual que pediría el hub (spec_funcional §0):
-   "X de Y constelaciones trazadas". Si constelaciones.json no está (o el
-   módulo todavía no tiene nada publicado), el banner se queda con el texto
-   genérico en vez de romper. */
-async function actualizarBannerCielo() {
-  const texto = document.getElementById("banner-cielo-progreso");
-  if (!texto) return;
-  try {
-    const todas = await (await fetch("constelaciones.json")).json();
-    const publicadas = todas.filter(c => c.estado === "publicado");
-    if (!publicadas.length) return;
-    const completadas = (estado.cielo && Array.isArray(estado.cielo.completadas))
-      ? estado.cielo.completadas.filter(id => publicadas.some(c => c.id === id)).length : 0;
-    texto.textContent = `${completadas} de ${publicadas.length} constelaciones trazadas`;
-  } catch (e) { /* sin conexión al archivo: se queda el texto por defecto */ }
-}
-
 /* ---------- Ambiente de página (Handoff v2 §8, opción 1c) ---------- */
 
 function sembrarEstrellas() {
@@ -150,10 +131,8 @@ function renderContador() {
   }
 }
 
-/* La grilla ya no muestra las cartas veladas (eran mucho ruido "???"): solo
-   las descubiertas, más un único lanzador para abrir una carta nueva por el
-   Oráculo. Así el álbum se ve como una colección, no como una lista de
-   candados. */
+/* La grilla solo muestra cartas descubiertas: el camino a una carta nueva es
+   el módulo del Oráculo, accesible desde el hub o el banner de abajo. */
 function renderGaleria() {
   const galeria = document.getElementById("galeria");
   const busqueda = normalizar(textoBusqueda.trim());
@@ -165,16 +144,10 @@ function renderGaleria() {
     return true;
   });
 
-  // El lanzador del Oráculo aparece solo en la vista limpia (sin filtro ni
-  // búsqueda) y mientras queden héroes por descubrir.
-  const quedanPorDescubrir = personajes.some(p => !estaDesbloqueada(p.id));
-  const mostrarLanzador = quedanPorDescubrir && !busqueda && filtroActivo === "todas";
-
-  document.getElementById("mensaje-vacio").classList.toggle("oculto", visibles.length > 0 || mostrarLanzador);
+  const hayDescubiertos = personajes.some(p => estaDesbloqueada(p.id));
+  document.getElementById("mensaje-vacio").classList.toggle("oculto", visibles.length > 0 || !hayDescubiertos || busqueda !== "" || filtroActivo !== "todas");
 
   galeria.innerHTML = "";
-
-  if (mostrarLanzador) galeria.appendChild(crearLanzadorOraculo());
 
   for (const p of visibles) {
     const tieneMaterial = historiaCompleta(p) && (p.tier === "dorado" || p.tier === "plateado");
@@ -199,23 +172,6 @@ function renderGaleria() {
   }
 
   renderContador();
-}
-
-/* Tarjeta-botón que reemplaza a todas las "???": una sola puerta de entrada
-   al descubrimiento por el Oráculo. */
-function crearLanzadorOraculo() {
-  const boton = document.createElement("button");
-  boton.className = "carta carta-lanzador";
-  boton.id = "carta-lanzador";
-  boton.setAttribute("aria-label", "Abrir una carta nueva consultando al Oráculo");
-  const total = personajes.length;
-  const faltan = personajes.filter(p => !estaDesbloqueada(p.id)).length;
-  boton.innerHTML = `
-    <span class="lanzador-icono" aria-hidden="true">🔮</span>
-    <span class="lanzador-titulo">Abrir una carta nueva</span>
-    <span class="lanzador-sub">Te faltan ${faltan} de ${total} héroes</span>`;
-  boton.addEventListener("click", abrirOraculo);
-  return boton;
 }
 
 /* ---------- Detalle ---------- */
@@ -248,6 +204,9 @@ function selloHistoriaCompleta(completa) {
   return completa ? '<span class="sello-historia">✦ Historia completa</span>' : "";
 }
 
+/* Los capítulos velados con un destino conocido (cielo, oráculo difícil, o un
+   vínculo ya alcanzable) se muestran como <button>: un tap navega directo al
+   módulo que los enciende (doc de olas §2, regla transversal de UI). */
 function bloqueCapitulo(capitulo, encendido) {
   if (capitulo.pendienteDeDiseno) {
     return `
@@ -260,14 +219,17 @@ function bloqueCapitulo(capitulo, encendido) {
       </div>`;
   }
   if (!capituloListoParaMostrar(capitulo, encendido)) {
+    const destino = destinoCapituloVelado(capitulo);
+    const Tag = destino ? "button" : "div";
+    const atributoDestino = destino ? `data-destino="${destino}"` : "";
     return `
-      <div class="capitulo capitulo--velado" data-capitulo-id="${capitulo.id}">
-        <span class="capitulo-candado" aria-hidden="true">🔒</span>
+      <${Tag} class="capitulo capitulo--velado${destino ? " capitulo--navegable" : ""}" data-capitulo-id="${capitulo.id}" ${atributoDestino}>
+        <span class="capitulo-candado" aria-hidden="true">${destino ? "🧭" : "🔒"}</span>
         <div>
           <strong class="capitulo-titulo">${capitulo.titulo}</strong>
-          <p class="capitulo-pista">${pistaCapituloVelado(capitulo, encendido)}</p>
+          <p class="capitulo-pista">${pistaCapituloVelado(capitulo, encendido, nombresConstelaciones)}</p>
         </div>
-      </div>`;
+      </${Tag}>`;
   }
   return `
     <div class="capitulo capitulo--encendido" data-capitulo-id="${capitulo.id}">
@@ -324,6 +286,10 @@ function abrirDetalle(id, recienRevelada = false) {
       ${listaCapitulos}
     </div>`;
 
+  document.querySelectorAll("#detalle-contenido .capitulo--navegable").forEach(boton => {
+    boton.addEventListener("click", () => { location.href = boton.dataset.destino; });
+  });
+
   detalle.dataset.personajeId = id;
   cartaDetalle.classList.toggle("revelando", recienRevelada);
   detalle.classList.remove("oculto");
@@ -360,184 +326,51 @@ function mostrarToast(texto) {
   setTimeout(() => toast.remove(), 3000);
 }
 
-/* ---------- Descubrimiento — Niebla del Oráculo (spec_funcional §3) ----------
-   La grilla ya no tiene cartas "???": el único camino a una carta nueva es
-   este overlay. Muestra el dorso "Mundo de Mitos" envuelto en niebla; al
-   consultar al Oráculo aparece una pregunta sobre una carta ya conocida, y
-   al acertar la niebla se dispersa y la carta nueva brota. */
+/* ---------- Sets temáticos latentes (spec funcional §6) ----------
+   Vitrina de chips en la Colección; el logro se muestra con el Súper ¿Por
+   qué? apenas se completa un set (revisarSets / desbloquear ya lo detectan). */
 
-function nieblaFlotanteHTML() {
-  return `
-    <i class="oraculo-niebla oraculo-niebla--1"></i>
-    <i class="oraculo-niebla oraculo-niebla--2"></i>
-    <i class="oraculo-niebla oraculo-niebla--3"></i>
-    <i class="oraculo-niebla oraculo-niebla--4"></i>`;
-}
-
-function nieblaDispersaHTML() {
-  return `
-    <i class="oraculo-niebla oraculo-niebla--parte-a"></i>
-    <i class="oraculo-niebla oraculo-niebla--parte-b"></i>
-    <i class="oraculo-niebla oraculo-niebla--parte-c"></i>
-    <i class="oraculo-niebla oraculo-niebla--parte-d"></i>`;
-}
-
-function dorsoOraculoHTML() {
-  return `
-    <div class="oraculo-dorso">
-      <i class="oraculo-dorso-marco" aria-hidden="true"></i>
-      <span class="oraculo-dorso-esq" style="top:14px;left:14px">✦</span>
-      <span class="oraculo-dorso-esq" style="top:14px;right:14px">✦</span>
-      <span class="oraculo-dorso-esq" style="bottom:26px;left:14px">✦</span>
-      <span class="oraculo-dorso-esq" style="bottom:26px;right:14px">✦</span>
-      <span class="oraculo-emblema" aria-hidden="true">
-        <i class="rombo"></i><i class="marco"></i><i class="nucleo"></i>
-      </span>
-      <span class="oraculo-dorso-nombre">MUNDO DE MITOS</span>
-    </div>`;
-}
-
-function caraOraculoHTML(p) {
-  return `
-    <div class="oraculo-cara" style="background:${fondoCarta(p.colorCarta)}">
-      <i class="esquina esquina-tl" aria-hidden="true"></i>
-      <i class="esquina esquina-tr" aria-hidden="true"></i>
-      <i class="esquina esquina-bl" aria-hidden="true"></i>
-      <i class="esquina esquina-br" aria-hidden="true"></i>
-      <span class="ilustracion">${svgIcono(p.icono)}</span>
-      <strong class="oraculo-cara-nombre">${p.nombre}</strong>
-      <em class="oraculo-cara-titulo">${p.titulo}</em>
-      <span class="chip-mito">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
-    </div>`;
-}
-
-function abrirOraculo() {
-  const candidatos = personajes.filter(p => !estaDesbloqueada(p.id));
-  if (!candidatos.length) {
-    mostrarToast("✨ ¡Ya descubriste a todos los héroes!");
-    return;
-  }
-  oraculoPendiente = alAzar(candidatos).id;
-  renderOraculoDorso();
-  document.getElementById("oraculo").classList.remove("oculto");
-}
-
-function renderOraculoDorso() {
-  const escena = document.getElementById("oraculo-escena");
-  escena.className = "oraculo-escena estado-dorso";
-  escena.innerHTML = `
-    ${nieblaFlotanteHTML()}
-    <div class="oraculo-carta">${dorsoOraculoHTML()}</div>
-    <div class="oraculo-acciones">
-      <button class="boton-principal" id="oraculo-consultar">🔮 Consultar al Oráculo</button>
-      <button class="boton-secundario" id="oraculo-cerrar">Mejor después</button>
-    </div>`;
-  document.getElementById("oraculo-consultar").addEventListener("click", () => abrirPregunta(oraculoPendiente));
-  document.getElementById("oraculo-cerrar").addEventListener("click", cerrarOraculo);
-}
-
-function revelarConOraculo(id) {
-  cerrarPregunta();
-  desbloquear(id);
-  sonar("arpegio");
-  vibrar([30, 50, 30]);
-  renderGaleria();
-
-  const p = porId(id);
-  const escena = document.getElementById("oraculo-escena");
-  escena.className = "oraculo-escena estado-revelada";
-  escena.innerHTML = `
-    ${nieblaDispersaHTML()}
-    <div class="oraculo-toast">✨ ¡Apareció ${p.nombre}!</div>
-    <div class="oraculo-carta oraculo-carta--revelada">${caraOraculoHTML(p)}</div>
-    <div class="oraculo-acciones">
-      <button class="boton-principal" id="oraculo-ver">Ver su carta</button>
-      <button class="boton-secundario" id="oraculo-otra">Abrir otra</button>
-    </div>`;
-  document.getElementById("oraculo-ver").addEventListener("click", () => {
-    cerrarOraculo();
-    abrirDetalle(id, true);
+function renderVitrinaSets() {
+  const cont = document.getElementById("vitrina-sets");
+  if (!cont) return;
+  const sets = setsPublicados();
+  if (!sets.length) { cont.classList.add("oculto"); return; }
+  cont.classList.remove("oculto");
+  cont.innerHTML = sets.map(s => {
+    const revelado = estado.sets.revelados.includes(s.id);
+    return `<button class="set-chip${revelado ? " set-chip--revelado" : ""}" data-set="${s.id}" aria-label="${s.nombre}">
+      <span class="set-chip-icono" aria-hidden="true">${s.icono}</span>
+      <span class="set-chip-nombre">${s.nombre}</span>
+    </button>`;
+  }).join("");
+  cont.querySelectorAll(".set-chip--revelado").forEach(boton => {
+    boton.addEventListener("click", () => mostrarLogroSet(boton.dataset.set));
   });
-  document.getElementById("oraculo-otra").addEventListener("click", abrirOraculo);
 }
 
-function cerrarOraculo() {
-  document.getElementById("oraculo").classList.add("oculto");
-  oraculoPendiente = null;
-}
-
-/* ---------- Pregunta de desbloqueo ---------- */
-
-function abrirPregunta(idVelada) {
-  const conPreguntas = personajes.filter(p => estaDesbloqueada(p.id) && p.preguntas && p.preguntas.length);
-  if (conPreguntas.length === 0) {
-    // Sin cartas con preguntas no hay desafío posible: se revela directo.
-    revelarConOraculo(idVelada);
-    return;
-  }
-
-  cartaPendiente = idVelada;
-  const elegido = alAzar(conPreguntas);
-  const pregunta = alAzar(elegido.preguntas);
-  preguntaActual = {
-    personajeId: elegido.id,
-    opciones: mezclar(pregunta.opciones.map((texto, i) => ({
-      texto,
-      esCorrecta: i === pregunta.correcta
-    })))
-  };
-
-  const contenido = document.getElementById("pregunta-contenido");
-  contenido.innerHTML = `
-    <p class="pregunta-intro">Para desbloquear esta carta, respondé una pregunta sobre
-      <strong>${elegido.nombre}</strong>, que ya está en tu colección:</p>
-    <p class="pregunta-texto">${pregunta.texto}</p>
-    <div class="opciones">
-      ${preguntaActual.opciones.map((o, i) =>
-        `<button class="opcion" data-indice="${i}">${o.texto}</button>`).join("")}
+function mostrarLogroSet(setId) {
+  const s = setPorId(setId);
+  if (!s) return;
+  const modal = document.getElementById("modal-logro-set");
+  document.getElementById("logro-set-contenido").innerHTML = `
+    <span class="logro-set-icono" aria-hidden="true">${s.icono}</span>
+    <h2>${s.nombre}</h2>
+    <div class="logro-set-integrantes">
+      ${s.integrantes.map(id => { const p = porId(id); return p ? `<span class="logro-set-personaje">${p.nombre}</span>` : ""; }).join("")}
     </div>
-    <p class="pregunta-resultado" aria-live="assertive"></p>
-    <button class="boton-secundario" id="boton-cancelar-pregunta">Mejor después</button>`;
-
-  contenido.querySelectorAll(".opcion").forEach(boton => {
-    boton.addEventListener("click", () => responder(boton));
-  });
-  contenido.querySelector("#boton-cancelar-pregunta").addEventListener("click", cerrarPregunta);
-
-  document.getElementById("modal-pregunta").classList.remove("oculto");
-}
-
-function responder(boton) {
-  const opcion = preguntaActual.opciones[Number(boton.dataset.indice)];
-  const resultado = document.querySelector("#pregunta-contenido .pregunta-resultado");
-
-  if (opcion.esCorrecta) {
-    boton.classList.add("correcta");
-    resultado.textContent = "¡Correcto! ✨";
-    sonar("correcto");
-    lanzarParticulasSello(boton.parentElement, 8);
-    document.querySelectorAll("#pregunta-contenido .opcion").forEach(b => b.disabled = true);
-    const idGanada = cartaPendiente;
-    setTimeout(() => revelarConOraculo(idGanada), 700);
-  } else {
-    boton.classList.add("incorrecta");
-    boton.disabled = true;
-    resultado.textContent = "Mmm, esa no es... ¡probá con otra opción!";
-  }
-}
-
-/* Cierra el modal de la pregunta. No toca el overlay del Oráculo que está
-   detrás: si la jugadora cancela, vuelve al dorso para reintentar. */
-function cerrarPregunta() {
-  document.getElementById("modal-pregunta").classList.add("oculto");
-  cartaPendiente = null;
-  preguntaActual = null;
+    <div class="bloque-porque">
+      <h4>💡 El Súper ¿Por qué?</h4>
+      <p>${s.superPorque || "Encontraste un patrón que se repite entre culturas que nunca se conocieron. Eso es antropología: buscar por qué los seres humanos, sin copiarse, llegan a las mismas ideas."}</p>
+    </div>
+    <button class="boton-principal" id="logro-set-cerrar">Genial</button>`;
+  modal.classList.remove("oculto");
+  document.getElementById("logro-set-cerrar").addEventListener("click", () => modal.classList.add("oculto"));
 }
 
 /* ---------- Ceremonias de material ----------
    Se disparan cuando un capítulo recién publicado completa la historia de
    un personaje dorado/plateado. Los capítulos los encienden otros módulos
-   (El Cielo de los Mitos y los que sigan) — acá solo vive la celebración. */
+   (Oráculo difícil, vínculos, El Cielo de los Mitos) — acá solo la celebración. */
 
 let tokenCeremonia = 0;
 
@@ -616,21 +449,50 @@ function ceremoniaDorada(carta, alTerminar) {
   }, 1750);
 }
 
-/* Celebra a un personaje si su historia acaba de completarse y todavía no
-   se festejó (estado.celebrados evita repetir la animación en cada carga). */
-function celebrarSiCorresponde(personajeId) {
+/* Marca a un personaje como festejado si su historia acaba de completarse
+   (estado.global.completas evita repetir la animación en cada carga). No
+   anima: solo decide y devuelve si hace falta encolar una ceremonia. Separar
+   esto de la animación es lo que permite festejar a varios personajes a la
+   vez (posible desde que los vínculos pueden completar más de uno de un
+   saque) sin que sus ceremonias se pisen entre sí. */
+function marcarCompletaSiCorresponde(personajeId) {
   const p = porId(personajeId);
-  if (!p || !historiaCompleta(p) || estado.celebrados.includes(personajeId)) return;
-  estado.celebrados.push(personajeId);
+  if (!p || !historiaCompleta(p) || estado.global.completas.includes(personajeId)) return false;
+  estado.global.completas.push(personajeId);
   guardarEstado();
-  if (p.tier !== "dorado" && p.tier !== "plateado") return;
+  return p.tier === "dorado" || p.tier === "plateado";
+}
+
+let colaCeremonias = [];
+let procesandoCeremonias = false;
+
+function procesarColaCeremonias() {
+  if (procesandoCeremonias) return;
+  const personajeId = colaCeremonias.shift();
+  if (!personajeId) return;
+  procesandoCeremonias = true;
+
   renderGaleria();
+  const p = porId(personajeId);
   const carta = document.querySelector(`.carta[data-id="${personajeId}"]`);
-  if (!carta) return;
+  const siguiente = () => {
+    procesandoCeremonias = false;
+    renderGaleria();
+    procesarColaCeremonias();
+  };
+  if (!p || !carta) { siguiente(); return; }
+
   carta.classList.remove("carta--dorada", "carta--plateada");
   carta.querySelectorAll(".holo, .brillo-sweep, .destello-permanente").forEach(n => n.remove());
   carta.style.background = fondoCarta(p.colorCarta);
-  (p.tier === "dorado" ? ceremoniaDorada : ceremoniaPlateada)(carta, renderGaleria);
+  (p.tier === "dorado" ? ceremoniaDorada : ceremoniaPlateada)(carta, siguiente);
+}
+
+function celebrarSiCorresponde(personajeId) {
+  if (marcarCompletaSiCorresponde(personajeId)) {
+    colaCeremonias.push(personajeId);
+    procesarColaCeremonias();
+  }
 }
 
 /* Recorre a todos los descubiertos por si alguno quedó completo mientras
@@ -689,11 +551,11 @@ function configurarOpciones() {
   });
   actualizarTextoBotonSonido();
   document.getElementById("boton-reset").addEventListener("click", () => {
-    if (confirm("¿Seguro? Se pierde todo el progreso de la colección.")) {
-      localStorage.removeItem(CLAVE_GUARDADO);
-      cargarEstado();
+    if (confirm("¿Seguro? Se pierde todo el progreso de este perfil.")) {
+      reiniciarPerfilActivo();
       modal.classList.add("oculto");
       renderGaleria();
+      renderVitrinaSets();
     }
   });
 }
@@ -719,19 +581,12 @@ function configurarControles() {
   document.getElementById("detalle").addEventListener("click", e => {
     if (e.target.id === "detalle") cerrarDetalle();
   });
-  document.getElementById("oraculo").addEventListener("click", e => {
-    if (e.target.id === "oraculo") cerrarOraculo();
-  });
 
   document.addEventListener("keydown", e => {
     if (e.key === "Escape") {
-      // Si la pregunta está abierta, Escape solo la cancela (vuelve al dorso);
-      // si no, cierra lo que haya abierto.
-      const preguntaAbierta = !document.getElementById("modal-pregunta").classList.contains("oculto");
-      if (preguntaAbierta) { cerrarPregunta(); return; }
       cerrarDetalle();
-      cerrarOraculo();
       document.getElementById("modal-config").classList.add("oculto");
+      document.getElementById("modal-logro-set").classList.add("oculto");
     }
   });
 
@@ -739,15 +594,26 @@ function configurarControles() {
   // acá sin esperar a recargar: es el "volver a la colección" del Handoff v2 §1.
   window.addEventListener("storage", e => {
     if (e.key !== CLAVE_GUARDADO) return;
-    const antes = JSON.parse(JSON.stringify(estado.capitulosEncendidos));
+    const antes = JSON.parse(JSON.stringify(estado.global.capitulos));
     cargarEstado();
     renderGaleria();
-    Object.keys(estado.capitulosEncendidos).forEach(personajeId => {
-      const nuevos = estado.capitulosEncendidos[personajeId].filter(cid => !(antes[personajeId] || []).includes(cid));
+    renderVitrinaSets();
+    Object.keys(estado.global.capitulos).forEach(personajeId => {
+      const nuevos = estado.global.capitulos[personajeId].filter(cid => !(antes[personajeId] || []).includes(cid));
       nuevos.forEach(capituloId => animarCapituloEncendido(personajeId, capituloId));
     });
     revisarCeremoniasPendientes();
   });
+}
+
+/* Nombres de constelaciones para las pistas de capítulos velados con fuente
+   "cielo:<id>" (doc de olas §2: la pista tiene que decir el nombre real). */
+async function cargarNombresConstelaciones() {
+  try {
+    const todas = await (await fetch("constelaciones.json")).json();
+    nombresConstelaciones = {};
+    todas.forEach(c => { nombresConstelaciones[c.id] = c.nombre; });
+  } catch (e) { /* sin archivo: la pista genérica alcanza */ }
 }
 
 async function iniciar() {
@@ -761,15 +627,17 @@ async function iniciar() {
   }
 
   cargarEstado();
+  await cargarNombresConstelaciones();
+  reconciliarVinculos();
   sembrarEstrellas();
   configurarControles();
   configurarOpciones();
   renderGaleria();
+  renderVitrinaSets();
   revisarCeremoniasPendientes();
-  actualizarBannerCielo();
 
   // Enlace de vuelta desde otro módulo (ej. "Ver la carta de X" en El Cielo
-  // de los Mitos): index.html?ver=teseo abre esa carta directo.
+  // de los Mitos): coleccion.html?ver=teseo abre esa carta directo.
   const idAVer = new URLSearchParams(location.search).get("ver");
   if (idAVer && estaDesbloqueada(idAVer)) abrirDetalle(idAVer);
 

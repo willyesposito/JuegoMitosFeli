@@ -1,16 +1,18 @@
-/* Núcleo compartido — estado, personajes y capítulos, audio y utilidades.
-   Todo módulo del hub (Colección, El Cielo de los Mitos, y los que sigan)
-   carga este archivo antes que el suyo propio: es la única fuente de verdad
-   sobre qué desbloqueó y qué encendió la jugadora. Ver CLAUDE.md:
+/* Núcleo compartido — estado, perfiles, personajes y capítulos, audio y utilidades.
+   Todo módulo del hub (Colección, Oráculo, El Cielo de los Mitos, y los que
+   sigan) carga este archivo antes que el suyo propio: es la única fuente de
+   verdad sobre qué descubrió y qué encendió la jugadora. Ver CLAUDE.md:
    "Fuente de datos única... Estado único versionado en localStorage". */
 
-const CLAVE_GUARDADO = "feli-cartas-v1";
+const CLAVE_GUARDADO = "feli-mitos-v2";
+const CLAVE_VIEJA_V1 = "feli-cartas-v1";
+const MAX_PERFILES = 5;
 
 /* Mazo inicial curado por Willy: la lista con la que arranca la colección
-   (ver sesion_actual.md, que es su versión legible). Crece a medida que Willy
-   indica a quién sumar. Un perfil nuevo (dispositivo nuevo, localStorage
-   limpio, o "Reiniciar la colección" en Opciones) arranca exactamente con
-   estos. Como siempre se puede reiniciar, la lista se cura a mano sin miedo. */
+   (ver Documentacion/sesion_actual.md, que es su versión legible). Crece a
+   medida que Willy indica a quién sumar. Un perfil nuevo (dispositivo nuevo,
+   localStorage limpio, o "Reiniciar la colección" en Opciones) arranca
+   exactamente con estos. */
 const DESBLOQUEADAS_INICIALES = [
   "teseo", "heracles", "penelope", "atlas", "odiseo", "atenea", "perseo", "dedalo",
   "zeus", "hera", "poseidon", "hades", "demeter", "persefone", "hestia", "apolo",
@@ -25,55 +27,202 @@ const DESBLOQUEADAS_INICIALES = [
 const TIER_MINIMO = { dorado: 3, plateado: 2, normal: 1 };
 
 /* Nombre amigable del módulo que enciende cada capítulo, a partir del campo
-   "fuente" (formato "modulo:condicion"). */
+   "fuente" (formato "modulo:condicion"). Los módulos de olas futuras figuran
+   para que la pista velada diga algo real. */
 const NOMBRE_MODULO_FUENTE = {
   cielo: "El Cielo de los Mitos",
-  crisis: "Crisis del Mundo Antiguo",
+  oraculo: "el Oráculo en modo difícil",
   ordena: "Ordená el Mito",
-  oraculo: "el Oráculo en modo difícil"
+  mapa: "el Mapa del Héroe",
+  espejo: "el Espejo de los Mundos",
+  reliquia: "Las Reliquias",
+  encrucijada: "La Encrucijada"
 };
 
-let personajes = [];
-let estado = { desbloqueadas: [], capitulosEncendidos: {}, celebrados: [], cielo: { completadas: [] } };
+/* ---------- Sets temáticos latentes (spec funcional §6) ----------
+   Cada set se revela cuando todos sus integrantes están descubiertos: pantalla
+   de logro con el Súper ¿Por qué? (la explicación antropológica del patrón
+   común entre culturas). Los tags_secretos del JSON son los clasificadores
+   latentes que lo sostienen. "Los Más Valientes" queda pendiente de
+   redefinición (spec §6) y no se incluye todavía. El texto de superPorque
+   se completa desde datos_ola1.json al cargar personajes. */
+const SETS_TEMATICOS = [
+  {
+    id: "mentes_maestras", nombre: "Mentes Maestras", icono: "🧠",
+    integrantes: ["odiseo", "loki", "dedalo", "prometeo", "hermes"],
+    superPorque: "", estado: "publicado"
+  },
+  {
+    id: "senores_clima", nombre: "Señores del Clima", icono: "⛈️",
+    integrantes: ["zeus", "thor", "poseidon", "njord"],
+    superPorque: "", estado: "publicado"
+  },
+  {
+    id: "tejedoras_destino", nombre: "Tejedoras del Destino", icono: "🧵",
+    integrantes: ["penelope", "aracne", "ariadna", "frigg"],
+    superPorque: "", estado: "publicado"
+  },
+  {
+    id: "guardianes", nombre: "Guardianes", icono: "🛡️",
+    integrantes: ["heimdall", "cerbero", "atlas", "esfinge"],
+    superPorque: "", estado: "publicado"
+  },
+  {
+    id: "mensajeros", nombre: "Mensajeros", icono: "🕊️",
+    integrantes: ["hermes", "iris", "ratatosk"],
+    superPorque: "", estado: "publicado"
+  }
+];
 
-/* ---------- Persistencia ---------- */
+let personajes = [];
+let datos = null;   // el contenido completo de feli-mitos-v2 (todos los perfiles)
+let estado = null;  // atajo: datos.perfiles[datos.perfilActivo]
+
+/* ---------- Perfiles (spec funcional §0.1: hasta 5 slots) ---------- */
+
+function perfilNuevo(nombre) {
+  const global = { descubiertos: [...DESBLOQUEADAS_INICIALES], capitulos: {}, completas: [], logros: [] };
+  for (const id of global.descubiertos) global.capitulos[id] = ["base"];
+  return {
+    nombre: nombre || "Feli",
+    creado: new Date().toISOString().slice(0, 10),
+    global,
+    coleccion: { vistas: [] },
+    oraculo: { fecha: "", modo: "facil", resueltas: [] },
+    cielo: { completadas: [] },
+    sets: { revelados: [] }
+  };
+}
+
+/* Garantiza la forma interna de un perfil venga de donde venga (migración,
+   versión anterior del formato, edición manual). Nadie pierde progreso. */
+function normalizarPerfil(p) {
+  const base = perfilNuevo(p && typeof p.nombre === "string" ? p.nombre : undefined);
+  if (!p || typeof p !== "object") return base;
+  const g = p.global && typeof p.global === "object" ? p.global : {};
+  if (typeof p.creado === "string") base.creado = p.creado;
+  if (Array.isArray(g.descubiertos)) base.global.descubiertos = g.descubiertos;
+  base.global.capitulos = g.capitulos && typeof g.capitulos === "object" ? g.capitulos : {};
+  // "completas" reemplaza al viejo "doradas" (spec §0.1): personajes con
+  // historia completa ya celebrada, sin importar el tier.
+  base.global.completas = Array.isArray(g.completas) ? g.completas : (Array.isArray(g.doradas) ? g.doradas : []);
+  base.global.logros = Array.isArray(g.logros) ? g.logros : [];
+  if (p.coleccion && Array.isArray(p.coleccion.vistas)) base.coleccion = p.coleccion;
+  if (p.oraculo && typeof p.oraculo === "object") {
+    base.oraculo = {
+      fecha: typeof p.oraculo.fecha === "string" ? p.oraculo.fecha : "",
+      modo: p.oraculo.modo === "dificil" ? "dificil" : "facil",
+      resueltas: Array.isArray(p.oraculo.resueltas) ? p.oraculo.resueltas : []
+    };
+  }
+  if (p.cielo && Array.isArray(p.cielo.completadas)) base.cielo = p.cielo;
+  if (p.sets && Array.isArray(p.sets.revelados)) base.sets = p.sets;
+  for (const id of base.global.descubiertos) {
+    if (!base.global.capitulos[id]) base.global.capitulos[id] = ["base"];
+  }
+  return base;
+}
+
+function listaPerfiles() {
+  return datos.perfiles.map((p, i) => ({
+    indice: i,
+    nombre: p.nombre,
+    activo: i === datos.perfilActivo,
+    descubiertos: p.global.descubiertos.length
+  }));
+}
+
+function crearPerfil(nombre) {
+  if (datos.perfiles.length >= MAX_PERFILES) return -1;
+  datos.perfiles.push(perfilNuevo((nombre || "").trim() || `Perfil ${datos.perfiles.length + 1}`));
+  guardarEstado();
+  return datos.perfiles.length - 1;
+}
+
+function cambiarPerfil(indice) {
+  if (indice < 0 || indice >= datos.perfiles.length) return false;
+  datos.perfilActivo = indice;
+  estado = datos.perfiles[indice];
+  guardarEstado();
+  return true;
+}
+
+/* Borrar perfil: solo desde el menú de utilidades de Willy, con doble
+   confirmación a cargo de la UI. Siempre queda al menos un perfil. */
+function borrarPerfil(indice) {
+  if (datos.perfiles.length <= 1 || indice < 0 || indice >= datos.perfiles.length) return false;
+  datos.perfiles.splice(indice, 1);
+  if (datos.perfilActivo >= datos.perfiles.length) datos.perfilActivo = 0;
+  estado = datos.perfiles[datos.perfilActivo];
+  guardarEstado();
+  return true;
+}
+
+function reiniciarPerfilActivo() {
+  datos.perfiles[datos.perfilActivo] = perfilNuevo(estado.nombre);
+  estado = datos.perfiles[datos.perfilActivo];
+  guardarEstado();
+}
+
+/* ---------- Persistencia y migración ---------- */
 
 function cargarEstado() {
+  datos = null;
   try {
     const crudo = localStorage.getItem(CLAVE_GUARDADO);
     if (crudo) {
-      const datos = JSON.parse(crudo);
-      if (Array.isArray(datos.desbloqueadas)) {
-        estado.desbloqueadas = datos.desbloqueadas;
-        estado.capitulosEncendidos = (datos.capitulosEncendidos && typeof datos.capitulosEncendidos === "object")
-          ? datos.capitulosEncendidos : {};
-        estado.celebrados = Array.isArray(datos.celebrados) ? datos.celebrados : [];
-        // El progreso propio de cada módulo (por ahora solo "cielo") también
-        // vive en este mismo objeto: si no se restaura acá se pierde apenas
-        // cualquier página vuelve a guardar el estado (ver guardarEstado más abajo).
-        estado.cielo = (datos.cielo && Array.isArray(datos.cielo.completadas)) ? datos.cielo : { completadas: [] };
-        // Compatibilidad: partidas guardadas antes de que existiera este concepto
-        // (o con el viejo historiaLeida/preguntaAcertada) igual tienen su capítulo
-        // base encendido en toda carta ya descubierta. Nadie pierde progreso.
-        for (const id of estado.desbloqueadas) {
-          if (!estado.capitulosEncendidos[id]) estado.capitulosEncendidos[id] = ["base"];
-        }
-        guardarEstado();
-        return;
+      const d = JSON.parse(crudo);
+      if (d && Array.isArray(d.perfiles) && d.perfiles.length) {
+        datos = {
+          perfilActivo: Number.isInteger(d.perfilActivo) && d.perfilActivo >= 0 && d.perfilActivo < d.perfiles.length ? d.perfilActivo : 0,
+          perfiles: d.perfiles.slice(0, MAX_PERFILES).map(normalizarPerfil)
+        };
+      } else if (d && typeof d === "object") {
+        // feli-mitos-v2 con el formato anterior (objeto único sin perfiles):
+        // se envuelve como perfil 0 (spec §0.1).
+        datos = { perfilActivo: 0, perfiles: [normalizarPerfil(d)] };
       }
     }
-  } catch (e) { /* estado corrupto: se reinicia */ }
-  estado.desbloqueadas = [...DESBLOQUEADAS_INICIALES];
-  estado.capitulosEncendidos = {};
-  estado.celebrados = [];
-  estado.cielo = { completadas: [] };
-  for (const id of estado.desbloqueadas) estado.capitulosEncendidos[id] = ["base"];
+  } catch (e) { /* estado corrupto: se sigue con la migración o un perfil nuevo */ }
+
+  // Migración obligatoria desde feli-cartas-v1 (CLAUDE.md): el progreso viejo
+  // se convierte en el primer perfil. Feli no pierde nada.
+  if (!datos) {
+    try {
+      const viejo = localStorage.getItem(CLAVE_VIEJA_V1);
+      if (viejo) {
+        const v1 = JSON.parse(viejo);
+        if (v1 && Array.isArray(v1.desbloqueadas)) {
+          datos = {
+            perfilActivo: 0,
+            perfiles: [normalizarPerfil({
+              nombre: "Feli",
+              global: {
+                descubiertos: v1.desbloqueadas,
+                capitulos: v1.capitulosEncendidos && typeof v1.capitulosEncendidos === "object" ? v1.capitulosEncendidos : {},
+                completas: Array.isArray(v1.celebrados) ? v1.celebrados : []
+              },
+              cielo: v1.cielo && Array.isArray(v1.cielo.completadas) ? v1.cielo : { completadas: [] }
+            })]
+          };
+        }
+      }
+    } catch (e) { /* v1 corrupto: perfil nuevo */ }
+  }
+
+  if (!datos) datos = { perfilActivo: 0, perfiles: [perfilNuevo("Feli")] };
+  estado = datos.perfiles[datos.perfilActivo];
+
   guardarEstado();
+  // La key vieja se borra recién después de guardar la nueva con éxito.
+  try {
+    if (localStorage.getItem(CLAVE_GUARDADO)) localStorage.removeItem(CLAVE_VIEJA_V1);
+  } catch (e) { /* sin localStorage: nada que borrar */ }
 }
 
 function guardarEstado() {
   try {
-    localStorage.setItem(CLAVE_GUARDADO, JSON.stringify(estado));
+    localStorage.setItem(CLAVE_GUARDADO, JSON.stringify(datos));
   } catch (e) { /* sin localStorage (modo incógnito): el juego sigue, sin persistir */ }
 }
 
@@ -86,37 +235,126 @@ async function cargarPersonajes() {
   const respuesta = await fetch("personajes.json");
   const todos = await respuesta.json();
   personajes = todos.filter(p => (p.capitulos || []).some(c => c.estado === "publicado"));
+  cargarSuperPorques();
   return personajes;
+}
+
+/* Los Súper ¿Por qué? de los sets viven en datos_ola1.json para no inflar
+   este archivo. Si el fetch falla, los sets se revelan igual con un texto
+   genérico: nunca bloquear el juego por un texto. */
+async function cargarSuperPorques() {
+  try {
+    const r = await fetch("datos_ola1.json");
+    const d = await r.json();
+    for (const s of SETS_TEMATICOS) {
+      if (d.superPorques && d.superPorques[s.id]) s.superPorque = d.superPorques[s.id];
+    }
+  } catch (e) { /* sin archivo: texto genérico en la UI */ }
 }
 
 function porId(id) {
   return personajes.find(p => p.id === id);
 }
 
-/* ---------- Descubrimiento ---------- */
+/* ---------- Descubrimiento y vínculos ---------- */
 
 function estaDesbloqueada(id) {
-  return estado.desbloqueadas.includes(id);
+  return estado.global.descubiertos.includes(id);
 }
 
-function desbloquear(id) {
-  if (!estaDesbloqueada(id)) {
-    estado.desbloqueadas.push(id);
-    encenderCapitulo(id, "base");
+/* Capítulos con fuente "vinculo:<id>": se encienden solos cuando el personaje
+   vinculado entra a descubiertos. El chequeo es bidireccional y corre en el
+   mismo evento de descubrimiento (doc de olas §3.1): al descubrir a X se
+   revisan los capítulos de X que apunten a personajes ya descubiertos, y los
+   capítulos de los ya descubiertos que apunten a X. */
+function encenderVinculosDe(nuevoId) {
+  const encendidos = [];
+  for (const p of personajes) {
+    if (!estaDesbloqueada(p.id)) continue;
+    for (const c of capitulosDe(p)) {
+      if (!c.fuente || !c.fuente.startsWith("vinculo:")) continue;
+      const objetivo = c.fuente.slice(8);
+      const aplica = p.id === nuevoId ? estaDesbloqueada(objetivo) : objetivo === nuevoId;
+      if (aplica && !capitulosEncendidosDe(p.id).includes(c.id)) {
+        encenderCapitulo(p.id, c.id);
+        encendidos.push({ personajeId: p.id, capituloId: c.id, titulo: c.titulo, publicado: c.estado === "publicado" });
+      }
+    }
   }
+  return encendidos;
+}
+
+/* Devuelve lo que el descubrimiento disparó, para que el módulo que llamó
+   pueda contarlo: capítulos encendidos por vínculo y sets recién completados.
+   Es el momento que enseña la mecánica sin explicarla (doc de olas §3.1). */
+function desbloquear(id) {
+  if (estaDesbloqueada(id)) return { vinculos: [], setsNuevos: [] };
+  estado.global.descubiertos.push(id);
+  encenderCapitulo(id, "base");
+  const vinculos = encenderVinculosDe(id);
+  const setsNuevos = revisarSets();
+  guardarEstado();
+  return { vinculos, setsNuevos };
+}
+
+/* Pasada de reconciliación: enciende todo vínculo que corresponda al estado
+   actual (migraciones, contenido publicado cuando ambos personajes ya estaban
+   descubiertos). Se llama al iniciar cada módulo, después de
+   cargarPersonajes + cargarEstado. */
+function reconciliarVinculos() {
+  const encendidos = [];
+  for (const p of personajes) {
+    if (!estaDesbloqueada(p.id)) continue;
+    for (const c of capitulosDe(p)) {
+      if (!c.fuente || !c.fuente.startsWith("vinculo:")) continue;
+      if (estaDesbloqueada(c.fuente.slice(8)) && !capitulosEncendidosDe(p.id).includes(c.id)) {
+        encenderCapitulo(p.id, c.id);
+        encendidos.push({ personajeId: p.id, capituloId: c.id });
+      }
+    }
+  }
+  const setsNuevos = revisarSets();
+  if (encendidos.length || setsNuevos.length) guardarEstado();
+  return { vinculos: encendidos, setsNuevos };
+}
+
+/* ---------- Sets temáticos ---------- */
+
+function setsPublicados() {
+  return SETS_TEMATICOS.filter(s => s.estado === "publicado");
+}
+
+function setCompleto(s) {
+  return s.integrantes.every(id => estaDesbloqueada(id));
+}
+
+/* Sets que se acaban de completar y todavía no se festejaron. */
+function revisarSets() {
+  const nuevos = [];
+  for (const s of setsPublicados()) {
+    if (setCompleto(s) && !estado.sets.revelados.includes(s.id)) {
+      estado.sets.revelados.push(s.id);
+      nuevos.push(s.id);
+    }
+  }
+  return nuevos;
+}
+
+function setPorId(id) {
+  return SETS_TEMATICOS.find(s => s.id === id);
 }
 
 /* ---------- Capítulos e historia por capas ----------
    No confundir con el campo "tier" de personajes.json (rareza estática del
-   personaje): acá se resuelve cuántos capítulos ya encendió el jugador y si
+   personaje): acá se resuelve cuántos capítulos ya encendió la jugadora y si
    eso alcanza para dar la historia por completa en su tier. */
 
 function capitulosEncendidosDe(id) {
-  return estado.capitulosEncendidos[id] || [];
+  return estado.global.capitulos[id] || [];
 }
 
 function encenderCapitulo(personajeId, capituloId) {
-  const encendidos = estado.capitulosEncendidos[personajeId] || (estado.capitulosEncendidos[personajeId] = []);
+  const encendidos = estado.global.capitulos[personajeId] || (estado.global.capitulos[personajeId] = []);
   if (!encendidos.includes(capituloId)) {
     encendidos.push(capituloId);
     guardarEstado();
@@ -158,13 +396,53 @@ function historiaCompleta(p) {
   return reales.every(c => capituloListoParaMostrar(c, encendidos.includes(c.id)));
 }
 
-function pistaCapituloVelado(capitulo, encendido) {
-  if (encendido) return "Ya la desbloqueaste — el texto todavía se está terminando de escribir.";
-  const modulo = capitulo.fuente ? capitulo.fuente.split(":")[0] : null;
+function contarHistoriasCompletas() {
+  return personajes.filter(p => estaDesbloqueada(p.id) && historiaCompleta(p)).length;
+}
+
+/* ---------- Pistas y navegación de capítulos velados ----------
+   Regla transversal del doc de olas §2: cada capítulo velado dice en lenguaje
+   natural dónde se gana, y el tap navega directo al módulo con el contenido
+   pre-activado. `nombresConstelaciones` es un mapa opcional id → nombre que
+   la Colección arma tras leer constelaciones.json. */
+
+function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones) {
+  if (encendido) return "Ya lo desbloqueaste — el texto todavía se está terminando de escribir.";
+  const fuente = capitulo.fuente || "";
+  const [modulo, condicion] = fuente.split(":");
+
+  if (modulo === "vinculo") {
+    const otro = porId(condicion);
+    const nombre = otro ? otro.nombre : "otro personaje";
+    return `Descubrí a ${nombre} para encender este capítulo.`;
+  }
+  if (modulo === "cielo") {
+    const nombre = nombresConstelaciones && nombresConstelaciones[condicion];
+    return nombre
+      ? `Trazá ${nombre} en El Cielo de los Mitos para encender este capítulo.`
+      : "Se enciende trazando una constelación en El Cielo de los Mitos.";
+  }
+  if (modulo === "oraculo") {
+    return "Resolvé el desafío del Oráculo en modo difícil, sin fallar ni una vez.";
+  }
   const nombre = NOMBRE_MODULO_FUENTE[modulo];
   return nombre
-    ? `Se enciende jugando ${nombre} (todavía no disponible)`
-    : "Se enciende jugando otro módulo (todavía no disponible)";
+    ? `Se enciende jugando ${nombre} (llega en una próxima ola).`
+    : "Se enciende jugando otro módulo (llega en una próxima ola).";
+}
+
+/* href del módulo que enciende un capítulo velado, o null si todavía no hay
+   adónde ir (módulos de olas futuras). Para "vinculo" el destino es el
+   Oráculo: es el camino para descubrir al personaje que falta. */
+function destinoCapituloVelado(capitulo) {
+  const fuente = capitulo.fuente || "";
+  const [modulo, condicion] = fuente.split(":");
+  if (modulo === "cielo") return `cielo.html?const=${encodeURIComponent(condicion || "")}`;
+  if (modulo === "oraculo") return "oraculo.html?modo=dificil";
+  if (modulo === "vinculo") {
+    return estaDesbloqueada(condicion) ? `coleccion.html?ver=${encodeURIComponent(condicion)}` : "oraculo.html";
+  }
+  return null;
 }
 
 /* ---------- Audio (WebAudio, sin archivos) ---------- */

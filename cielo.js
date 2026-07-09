@@ -337,7 +337,7 @@ function renderHoja() {
     </div>
     ${listo && tambien ? `<p class="cielo-hoja-tambien">${tambien}</p>` : ""}
     <div class="cielo-hoja-botones">
-      <a class="cielo-boton-primario" href="index.html?ver=${encodeURIComponent(personaje.id)}">Ver la carta de ${personaje.nombre}</a>
+      <a class="cielo-boton-primario" href="coleccion.html?ver=${encodeURIComponent(personaje.id)}">Ver la carta de ${personaje.nombre}</a>
       <button class="cielo-boton-secundario" id="cielo-boton-seguir">Seguir mirando el cielo</button>
     </div>`;
 

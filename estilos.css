@@ -47,6 +47,25 @@ button { font-family: inherit; cursor: pointer; }
   text-align: center;
 }
 
+.boton-volver-hub {
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, .28);
+  color: var(--texto);
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  line-height: 1;
+}
+
 .encabezado h1 {
   font-family: "Cinzel", serif;
   font-size: 1.7rem;
@@ -655,12 +674,15 @@ button { font-family: inherit; cursor: pointer; }
 .pregunta-resultado { min-height: 1.4em; font-weight: 700; margin-bottom: 6px; }
 
 .boton-principal, .boton-secundario {
+  display: inline-block;
   border: none;
   border-radius: 999px;
   padding: 13px 26px;
   font-size: 1rem;
   font-weight: 800;
   margin: 4px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .boton-principal { background: var(--acento); color: #4a3200; }
@@ -817,6 +839,67 @@ button { font-family: inherit; cursor: pointer; }
 .capitulo--velado .capitulo-candado { font-size: 1.3rem; line-height: 1; }
 .capitulo--velado .capitulo-titulo { display: block; font-size: .95rem; margin-bottom: 3px; color: var(--texto); }
 .capitulo--velado .capitulo-pista { font-size: .82rem; color: rgba(253, 251, 255, .55); }
+
+/* Capítulo velado con destino conocido: el <button> hereda el look de
+   .capitulo--velado pero se ve tapeable (borde sólido en vez de punteado) y
+   navega directo al módulo que lo enciende (doc de olas §2). */
+button.capitulo--navegable {
+  width: 100%;
+  text-align: left;
+  border: 1.5px solid rgba(255, 216, 103, .4);
+  background: rgba(255, 216, 103, .07);
+}
+button.capitulo--navegable:active { transform: scale(.99); }
+button.capitulo--navegable .capitulo-pista { color: rgba(255, 233, 168, .75); }
+
+/* ============ Vitrina de sets temáticos (spec funcional §6) ============ */
+.vitrina-sets {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 10px 18px 2px;
+  scrollbar-width: none;
+}
+.vitrina-sets::-webkit-scrollbar { display: none; }
+
+.set-chip {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: .8rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, .16);
+  background: rgba(255, 255, 255, .06);
+  color: rgba(253, 251, 255, .4);
+}
+
+.set-chip-icono { font-size: 1rem; filter: grayscale(1); opacity: .5; }
+
+.set-chip--revelado {
+  color: var(--acento);
+  border-color: rgba(255, 216, 103, .55);
+  background: rgba(255, 216, 103, .12);
+}
+.set-chip--revelado .set-chip-icono { filter: none; opacity: 1; }
+
+.logro-set-caja { text-align: center; }
+.logro-set-icono { font-size: 2.6rem; display: block; margin-bottom: 6px; }
+.logro-set-integrantes { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 10px 0 14px; }
+.logro-set-personaje {
+  font-size: .78rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .1);
+  color: var(--texto-suave);
+}
+.logro-set-caja .bloque-porque { text-align: left; margin-bottom: 16px; }
+.logro-set-caja .boton-principal { width: 100%; }
 
 @keyframes brillo-barrido { 0% { transform: translateX(-170%) skewX(-16deg); } 38%, 100% { transform: translateX(430%) skewX(-16deg); } }
 @keyframes titila { 0%, 100% { opacity: 0; transform: scale(.5); } 50% { opacity: 1; transform: scale(1); } }

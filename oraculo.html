@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#191142">
+  <title>El Oráculo de Delfos — Mundo de Mitos</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="oraculo.css">
+</head>
+<body class="oraculo-body">
+
+  <div class="oraculo-pantalla">
+
+    <header class="oraculo-header">
+      <a class="boton-volver-hub" href="index.html" aria-label="Volver al hub">‹</a>
+      <div class="oraculo-titulo-grupo">
+        <span class="oraculo-titulo">El Oráculo de Delfos</span>
+        <span class="oraculo-subtitulo" id="oraculo-subtitulo">Consultá para descubrir un héroe nuevo</span>
+      </div>
+    </header>
+
+    <div class="oraculo-toggle" role="group" aria-label="Modo del Oráculo">
+      <button class="oraculo-toggle-boton activo" data-modo="facil" id="toggle-facil">✨ Fácil</button>
+      <button class="oraculo-toggle-boton" data-modo="dificil" id="toggle-dificil">🧩 Difícil</button>
+    </div>
+
+    <main class="oraculo-main" id="oraculo-main"></main>
+
+  </div>
+
+  <script src="iconos.js"></script>
+  <script src="nucleo.js"></script>
+  <script src="oraculo.js"></script>
+</body>
+</html>

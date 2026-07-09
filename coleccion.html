@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#241c4d">
+  <title>Colección — Mundo de Mitos</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <a class="boton-volver-hub" href="index.html" aria-label="Volver al hub">‹</a>
+    <div class="encabezado-titulo">
+      <h1>Héroes y Dioses</h1>
+      <span class="ornamento-header" aria-hidden="true"><i></i><span>⚡</span><i></i></span>
+      <p class="subtitulo">Tu colección de mitología</p>
+    </div>
+    <p class="contador" id="contador" aria-live="polite"></p>
+  </header>
+
+  <a class="banner-modulo" id="banner-oraculo" href="oraculo.html">
+    <span class="banner-modulo-icono" aria-hidden="true">🔮</span>
+    <span class="banner-modulo-texto">
+      <strong>El Oráculo de Delfos</strong>
+      <span>Consultá para abrir una carta nueva</span>
+    </span>
+    <span class="banner-modulo-flecha" aria-hidden="true">›</span>
+  </a>
+
+  <div class="vitrina-sets oculto" id="vitrina-sets" aria-label="Sets temáticos"></div>
+
+  <nav class="controles" aria-label="Filtros de la colección">
+    <div class="filtros" role="group" aria-label="Filtrar por mitología">
+      <button class="chip activo" data-filtro="todas">Todas</button>
+      <button class="chip" data-filtro="griega">🏛️ Griega</button>
+      <button class="chip" data-filtro="nordica">⚡ Nórdica</button>
+      <button class="chip" data-filtro="romana">🦅 Romana</button>
+    </div>
+    <input type="search" id="buscador" class="buscador" placeholder="Buscar un héroe..."
+      aria-label="Buscar por nombre (solo encuentra cartas desbloqueadas)">
+  </nav>
+
+  <main>
+    <p class="mensaje-vacio oculto" id="mensaje-vacio">No encontré ningún héroe con ese nombre... ¿será que todavía no lo desbloqueaste? 🔍</p>
+    <section class="galeria" id="galeria" aria-label="Galería de cartas"></section>
+  </main>
+
+  <footer class="pie">
+    <button class="boton-config" id="boton-config" aria-label="Opciones" title="Opciones">⚙️</button>
+  </footer>
+
+  <!-- Vista de detalle de carta -->
+  <div class="detalle-fondo oculto" id="detalle" role="dialog" aria-modal="true" aria-labelledby="detalle-nombre">
+    <article class="detalle-carta" id="detalle-carta">
+      <i class="esquina esquina-tl" aria-hidden="true"></i>
+      <i class="esquina esquina-tr" aria-hidden="true"></i>
+      <i class="esquina esquina-bl" aria-hidden="true"></i>
+      <i class="esquina esquina-br" aria-hidden="true"></i>
+      <button class="boton-volver" id="boton-volver">← Volver</button>
+      <div class="detalle-contenido" id="detalle-contenido"></div>
+    </article>
+  </div>
+
+  <!-- Logro de set temático -->
+  <div class="detalle-fondo oculto" id="modal-logro-set" role="dialog" aria-modal="true">
+    <div class="pregunta-caja logro-set-caja" id="logro-set-contenido"></div>
+  </div>
+
+  <!-- Menú de opciones (para Willy) -->
+  <div class="detalle-fondo oculto" id="modal-config" role="dialog" aria-modal="true">
+    <div class="pregunta-caja config-caja">
+      <h2>Opciones</h2>
+      <p class="config-nota">Zona para personas grandes 🧑‍🔧</p>
+      <button class="boton-secundario" id="boton-sonido">🔊 Sonido activado</button>
+      <button class="boton-secundario" id="boton-reset">Reiniciar la colección</button>
+      <button class="boton-principal" id="boton-cerrar-config">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="iconos.js"></script>
+  <script src="nucleo.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

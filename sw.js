@@ -1,15 +1,22 @@
 /* Service worker: deja el juego disponible offline una vez cargado.
    Al cambiar cualquier archivo, subir la versión para que se actualice la caché. */
 
-const VERSION = "feli-cartas-v2.1.1";
+const VERSION = "feli-mitos-v3.0.0";
 const ARCHIVOS = [
   "./",
   "index.html",
+  "hub.css",
+  "hub.js",
+  "coleccion.html",
   "estilos.css",
   "app.js",
   "nucleo.js",
   "iconos.js",
   "personajes.json",
+  "datos_ola1.json",
+  "oraculo.html",
+  "oraculo.css",
+  "oraculo.js",
   "cielo.html",
   "cielo.css",
   "cielo.js",

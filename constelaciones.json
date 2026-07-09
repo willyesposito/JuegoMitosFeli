@@ -87,6 +87,12 @@
     "brillante": 0,
     "personajeId": "calisto",
     "capituloId": "base",
+    "tambienEnciende": [
+      {
+        "personajeId": "artemisa",
+        "capituloTitulo": "La Metamorfosis"
+      }
+    ],
     "estado": "publicado"
   },
   {
@@ -121,6 +127,12 @@
     "brillante": 2,
     "personajeId": "casiopea",
     "capituloId": "base",
+    "tambienEnciende": [
+      {
+        "personajeId": "perseo",
+        "capituloTitulo": "Ventaja Aérea"
+      }
+    ],
     "estado": "publicado"
   },
   {
@@ -201,6 +213,12 @@
     "brillante": 0,
     "personajeId": "andromeda",
     "capituloId": "rescate",
+    "tambienEnciende": [
+      {
+        "personajeId": "atenea",
+        "capituloTitulo": "La Red de Soporte"
+      }
+    ],
     "estado": "publicado"
   },
   {
@@ -315,6 +333,12 @@
     "brillante": 1,
     "personajeId": "pegaso",
     "capituloId": "caballo_alado",
+    "tambienEnciende": [
+      {
+        "personajeId": "poseidon",
+        "capituloTitulo": "El Origen de Pegaso"
+      }
+    ],
     "estado": "publicado"
   },
   {

@@ -41,16 +41,16 @@
       {
         "id": "laberinto",
         "titulo": "El laberinto",
-        "texto": "",
-        "porque": "",
-        "fuente": "crisis:laberinto",
+        "texto": "Adentro, el laberinto era oscuridad y silencio. Teseo avanzaba desenrollando el hilo y guardando cada giro en la memoria: pasillo largo, vuelta cerrada, escalón que baja. En el centro lo esperaba el Minotauro, que conocía ese lugar mejor que nadie porque nunca había podido salir de él: el laberinto también era su encierro. Se enfrentaron en la sala más profunda, fuerza contra ingenio, y Teseo venció. Ese día terminaron dos encierros a la vez: el de la criatura que vivía atrapada en el centro, y el de Atenas, que nunca más tuvo que mandar a nadie a perderse en esos pasillos.",
+        "porque": "El laberinto es uno de los miedos más antiguos con forma de edificio: perderse y no poder volver. Puede que guarde el recuerdo del palacio de Cnosos, en Creta, tan enorme y lleno de salas que parecía no tener salida. Los griegos pusieron en el centro a una criatura que tampoco podía salir, porque sabían algo incómodo: a veces, lo que da miedo también está atrapado.",
+        "fuente": "ordena:laberinto",
         "estado": "borrador"
       },
       {
         "id": "despues_creta",
         "titulo": "Después de Creta",
-        "texto": "",
-        "porque": "",
+        "texto": "Antes de zarpar hacia Creta, Teseo le hizo una promesa a su padre, el rey Egeo: si volvía victorioso, cambiaría las velas negras del barco por velas blancas, para que desde lejos Atenas supiera la buena noticia. Teseo venció al Minotauro y emprendió el regreso, pero entre la alegría y el cansancio del viaje se olvidó de cambiar las velas. Egeo esperaba en lo alto de un acantilado, mirando el horizonte todos los días. Cuando vio aparecer el barco con las velas negras, creyó que su hijo no volvía. El dolor lo venció ahí mismo, frente a las olas. Desde entonces, ese mar lleva su nombre: el mar Egeo.",
+        "porque": "Este mito explica un nombre real del mapa: el mar Egeo, el mismo que baña las costas de Grecia hasta hoy. Y guarda una advertencia que los griegos conocían bien: en un mundo donde las noticias viajaban en señales — una vela, una fogata, una bandera —, olvidar un detalle podía pesar tanto como perder una batalla. Las promesas se cumplen enteras, hasta el final del viaje.",
         "fuente": "ordena:teseo",
         "estado": "borrador"
       }
@@ -83,6 +83,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Un joven príncipe griego se ofreció a enfrentar a una bestia que nadie había logrado vencer.",
+      "Su astucia y su valentía son iguales, y superan a su liderazgo por muy poco.",
+      "Siguió su propio hilo en la oscuridad hasta salir, tras vencer a la bestia del centro."
     ]
   },
   {
@@ -127,16 +132,16 @@
       {
         "id": "establos_augias",
         "titulo": "Los establos de Augías",
-        "texto": "",
-        "porque": "",
-        "fuente": "crisis:establos_augias",
+        "texto": "El rey Augías tenía tres mil animales, y sus establos no se habían limpiado en treinta años. A Heracles le dieron un solo día para dejarlos impecables: era una trampa, porque nadie podía lograrlo ni con mil palas. Heracles no agarró ninguna. Caminó el terreno, miró cómo bajaba el agua desde las montañas y se puso a cavar dos zanjas enormes. Después rompió una pared de los establos de cada lado y desvió el río Alfeo entero: el agua entró rugiendo por una punta, arrasó treinta años de mugre y se la llevó por la otra. Cuentan que también sumó las aguas del río Peneo, por si una corriente no alcanzaba. Antes del atardecer, el trabajo imposible estaba terminado — y Heracles casi no se ensució las manos.",
+        "porque": "Los griegos, que construían canales y desviaban agua para regar sus campos, admiraban a quien ponía a la naturaleza a trabajar a su favor. Por eso su héroe más fuerte gana este trabajo sin usar la fuerza contra nadie: la usa para cavar, que es fuerza al servicio de una idea. El mito guarda una lección de ingeniería: antes de empujar más fuerte, conviene preguntarse si el agua puede empujar por vos.",
+        "fuente": "ordena:establos_augias",
         "estado": "borrador"
       },
       {
         "id": "doce_trabajos",
         "titulo": "Los doce trabajos",
-        "texto": "",
-        "porque": "",
+        "texto": "Para reparar un gran error, Heracles aceptó cumplir doce trabajos imposibles, uno detrás del otro, sin saltarse ninguno: vencer al león de Nemea, limpiar los establos de Augías, capturar animales que nadie podía atrapar, cruzar fronteras que nadie cruzaba. Cada trabajo parecía el más difícil de todos, hasta que llegaba el siguiente. No se rindió en ninguno, aunque algunos le tomaron años enteros. Cuando por fin completó el último, no lo esperaba una fiesta ni una medalla: lo esperaba la libertad de empezar de nuevo, sin la deuda que había estado cargando.",
+        "porque": "Los griegos no creían que un error grande se reparara con una sola disculpa: se repara con trabajo sostenido en el tiempo. Doce trabajos, uno por uno, sin atajos, es la manera antigua de decir que la constancia pesa más que la fuerza — y que a veces la prueba más dura no es un monstruo, es no abandonar en el trabajo número once.",
         "fuente": "ordena:heracles",
         "estado": "borrador"
       }
@@ -169,6 +174,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Un héroe griego debió cumplir muchas tareas imposibles para reparar un error que había cometido.",
+      "Su fuerza y su valentía tocan el máximo de la escala; su astucia iguala a su liderazgo.",
+      "Cumplió doce tareas imposibles, una detrás de otra, sin abandonar ninguna."
     ]
   },
   {
@@ -205,10 +215,10 @@
       {
         "id": "regreso_odiseo",
         "titulo": "El regreso de Odiseo",
-        "texto": "",
-        "porque": "",
-        "fuente": "ordena:penelope",
-        "estado": "borrador"
+        "texto": "Después de veinte años, un mendigo llegó al palacio de Ítaca contando historias de un rey perdido. Penélope, que había esperado sin rendirse ni un solo día, no se dejó engañar por lo fácil: antes de creer que era Odiseo, le pidió a una sirvienta que moviera la cama de su cuarto fuera de la habitación. Solo Odiseo sabía que esa cama era imposible de mover: él mismo la había tallado, siglos atrás, en el tronco vivo de un olivo que todavía tenía raíces en la tierra. Cuando el mendigo respondió furioso que nadie podía mover esa cama sin destruirla, Penélope supo, por fin, que había vuelto.",
+        "porque": "Los griegos admiraban a Penélope tanto como a Odiseo, y este es el motivo exacto: ella no lo reconoció por amor ciego, lo reconoció con la misma inteligencia con la que él resolvía sus propios desafíos. Veinte años de espera terminan con una prueba, no con un abrazo automático — porque la astucia de los dos era, desde siempre, pareja.",
+        "fuente": "vinculo:odiseo",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -239,6 +249,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "La figura oculta jamás cruzó el puente Bifröst.",
+      "Su astucia es cinco veces su fuerza.",
+      "Su mayor victoria fue tejida de día y destejida de noche."
     ]
   },
   {
@@ -275,10 +290,10 @@
       {
         "id": "boveda_celeste",
         "titulo": "La bóveda celeste",
-        "texto": "",
-        "porque": "",
-        "fuente": "cielo:atlas",
-        "estado": "borrador"
+        "texto": "Heracles necesitaba unas manzanas de oro que crecían en un jardín que solo Atlas sabía encontrar. Como condena, Atlas sostenía el peso entero del cielo sobre sus hombros, sin descanso, desde hacía siglos. Heracles le propuso un trato: él sostendría el cielo un rato mientras Atlas iba a buscar las manzanas. Atlas aceptó, feliz de estirar los brazos después de tanto tiempo, y volvió con la fruta. Pero cuando quiso devolverle la carga a Heracles, este le pidió «un momentito» para acomodarse bien los hombros... y en ese momentito, agarró las manzanas y se fue, dejando a Atlas de nuevo bajo el peso del cielo.",
+        "porque": "Los griegos contaban este mito para reírse de algo serio: hasta la fuerza más enorme del mundo puede caer en un truco simple si baja la guardia. Atlas sostiene literalmente el peso del universo, y aun así el ingenio de Heracles, no su músculo, fue lo que resolvió el problema.",
+        "fuente": "vinculo:heracles",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -309,6 +324,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Un titán perdió la guerra contra los dioses del Olimpo y quedó condenado para siempre.",
+      "Su fuerza es más del triple de su liderazgo, aunque su valentía no se queda atrás.",
+      "Sostiene sobre los hombros el peso del cielo entero, sin poder soltarlo nunca."
     ]
   },
   {
@@ -341,6 +361,30 @@
         "porque": "Odiseo es el héroe que gana con la cabeza donde otros pierden con la espada. Los griegos admiraban tanto la astucia que le dedicaron un héroe entero y un viaje de diez años.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "ciclope",
+        "titulo": "Nadie y el cíclope",
+        "texto": "El cíclope Polifemo encerró a Odiseo y a sus hombres en una cueva, tapando la entrada con una roca que ni veinte hombres podían mover. Odiseo no atacó: pensó. Primero le dijo al gigante que su nombre era «Nadie». Después, mientras Polifemo dormía, se las ingeniaron para que ya no pudiera verlos. El cíclope gritó pidiendo ayuda, pero cuando los otros cíclopes preguntaron quién lo estaba atacando, respondió: «¡Nadie!»... y se fueron sin ayudarlo. A la mañana, Polifemo corrió la roca para que salieran sus ovejas, tocando el lomo de cada una. Odiseo y sus hombres pasaron delante de sus manos sin que las notara: iban colgados debajo, agarrados de la lana.",
+        "porque": "Los griegos contaban este mito para decir algo que les encantaba: las palabras también son herramientas, y a veces la más filosa de todas. Un nombre falso, dicho en el momento justo, venció a un gigante capaz de aplastar barcos. Frente a la fuerza bruta, la inteligencia no empuja: busca la rendija, y casi siempre la encuentra.",
+        "fuente": "ordena:ciclope",
+        "estado": "borrador"
+      },
+      {
+        "id": "caballo_troya",
+        "titulo": "El caballo de Troya",
+        "texto": "La guerra de Troya llevaba diez años, y las murallas de la ciudad seguían firmes: ningún ejército había podido cruzarlas. Entonces Odiseo propuso el plan más famoso de la historia. Los griegos construyeron un caballo de madera gigante, escondieron adentro a sus mejores guerreros y fingieron irse en sus barcos. Los troyanos creyeron que el caballo era una ofrenda para los dioses y lo entraron ellos mismos a la ciudad, festejando. Esa noche, mientras Troya dormía, los guerreros salieron del caballo y abrieron las puertas desde adentro. La guerra que la fuerza no había podido terminar en diez años, la terminó una idea en una sola noche.",
+        "porque": "Los griegos contaban esta historia porque les fascinaba una idea: que el pensamiento puede lograr lo que la fuerza no. Diez años de espadas no abrieron Troya; la abrió un plan. Por eso «caballo de Troya» se sigue usando hoy, miles de años después, para nombrar cualquier cosa que entra disfrazada de regalo. Un mito sobrevive tanto tiempo cuando guarda una advertencia útil: mirá bien lo que dejás entrar.",
+        "fuente": "ordena:troya",
+        "estado": "borrador"
+      },
+      {
+        "id": "vuelta_itaca",
+        "titulo": "La vuelta a Ítaca",
+        "texto": "Después de veinte años, Odiseo volvió a Ítaca disfrazado de mendigo, sin anunciarse: quería ver su reino con sus propios ojos. Cuando la verdad salió a la luz, los pretendientes que ocupaban el palacio ya no tuvieron lugar: el rey había vuelto. Pero Penélope, que había esperado tanto, no iba a abrazar a cualquiera que dijera ser su esposo. Le tendió una prueba: ordenó mover la cama del cuarto a otra parte. Odiseo protestó: esa cama no podía moverse, porque él mismo la había tallado sobre un olivo vivo, con raíces en la tierra. Solo ellos dos conocían ese secreto. Recién entonces Penélope corrió a abrazarlo: el más astuto de los griegos fue reconocido con una astucia igual a la suya.",
+        "porque": "Los griegos cerraron el viaje más largo de su mitología no con una batalla sino con una prueba de memoria compartida. Después de veinte años, ¿cómo sabés que alguien sigue siendo quien era? El mito responde: por los secretos que solo dos personas construyeron juntas. La cama con raíces en la tierra es el símbolo de un vínculo que el tiempo no pudo mover.",
+        "fuente": "vinculo:penelope",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -371,6 +415,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Un guerrero griego tardó diez años en volver a su casa después de una guerra.",
+      "Su astucia es el doble de su fuerza, y su liderazgo iguala a su valentía.",
+      "Ideó un caballo gigante de madera para entrar a una ciudad que ninguna espada pudo abrir."
     ]
   },
   {
@@ -403,6 +452,22 @@
         "porque": "Para los griegos, la sabiduría era el poder más alto del Olimpo: más que la fuerza y más que el rayo. Su ciudad más famosa eligió llamarse como la diosa que pensaba antes de actuar.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "red_soporte",
+        "titulo": "La Red de Soporte",
+        "texto": "Aconseja a múltiples héroes, proveyendo herramientas tecnológicas (como el escudo espejo) y directrices tácticas exactas.",
+        "porque": "Trabajo interdisciplinario. El éxito de los grandes proyectos rara vez es un esfuerzo individual; requiere consultar a especialistas y utilizar herramientas tecnológicas precisas.",
+        "fuente": "cielo:andromeda",
+        "estado": "publicado"
+      },
+      {
+        "id": "primer_tribunal",
+        "titulo": "El Primer Tribunal",
+        "texto": "Establece el Areópago, un consejo donde los ciudadanos deben presentar pruebas y argumentos para resolver disputas, prohibiendo la venganza personal.",
+        "porque": "Fundamentos del sistema judicial. Enseña que la evolución de una sociedad depende de reemplazar la violencia física con el debate estructurado y la argumentación lógica.",
+        "fuente": "ordena:areopago",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -433,6 +498,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Esta diosa griega vela sobre los héroes más valientes en el fragor de la batalla.",
+      "Su astucia toca el máximo de la escala, y su magia casi la alcanza.",
+      "Nació de la cabeza de un dios, ya vestida con su armadura."
     ]
   },
   {
@@ -474,6 +544,22 @@
         "porque": "Cuatro constelaciones de este cielo cuentan la historia de Perseo. Era tan querida que los griegos le dedicaron una región entera del cielo.",
         "fuente": "cielo:perseo",
         "estado": "publicado"
+      },
+      {
+        "id": "inventario_critico",
+        "titulo": "Inventario Crítico",
+        "texto": "Dedica la mayor parte del tiempo a negociar recursos de alta tecnología: sandalias voladoras, escudo pulido y casco de invisibilidad.",
+        "porque": "Gestión logística. La preparación previa del equipo adecuado garantiza el 90% del éxito de una misión crítica.",
+        "fuente": "ordena:equipamiento",
+        "estado": "borrador"
+      },
+      {
+        "id": "ventaja_aerea",
+        "titulo": "Ventaja Aérea",
+        "texto": "Evade un ataque marino utilizando las sandalias aladas, atacando desde un eje vertical inalcanzable para la criatura.",
+        "porque": "Táctica espacial. Alterar el plano físico del conflicto (moverse al aire) neutraliza la ventaja biológica de un oponente terrestre o acuático.",
+        "fuente": "cielo:casiopea",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -504,6 +590,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Un héroe griego recibió regalos mágicos de los dioses para cumplir una misión imposible.",
+      "Su valentía supera a todos sus demás atributos, aunque por muy poco margen.",
+      "Venció a una criatura cuya mirada directa convertía en piedra, mirándola solo de reflejo."
     ]
   },
   {
@@ -536,6 +627,22 @@
         "porque": "El mito habla de escuchar los consejos de quien sabe, y del equilibrio entre volar alto y volar seguro. Inventar es un poder enorme... y usarlo bien, todavía más.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "vuelo_icaro",
+        "titulo": "Límites Operativos",
+        "texto": "Diseña alas de cera y plumas para escapar de la isla, instruyendo a su hijo a volar en la franja de seguridad entre el calor del sol y la humedad del mar.",
+        "porque": "Parámetros termodinámicos. Toda tecnología tiene límites de tolerancia; ignorar el manual de usuario y los límites físicos del material produce fallos catastróficos.",
+        "fuente": "ordena:vuelo_icaro",
+        "estado": "borrador"
+      },
+      {
+        "id": "hilo_caracola",
+        "titulo": "El Hilo y la Caracola",
+        "texto": "Para pasar un hilo por dentro de una caracola espiral, Dédalo ata el hilo a una hormiga y pone una gota de miel en la salida, dejando que la biología resuelva la geometría.",
+        "porque": "Micro-mecánica y pensamiento lateral. Utilizar los instintos biológicos preexistentes de un sistema es más eficiente que forzar una solución mecánica compleja.",
+        "fuente": "ordena:desafio_minos",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -566,6 +673,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Un inventor griego fue encerrado en una isla y buscó una manera de escapar por el aire.",
+      "Su astucia toca el máximo de la escala; su fuerza es de las más bajas.",
+      "Construyó con sus propias manos el laberinto que un héroe después logró atravesar."
     ]
   },
   {
@@ -601,19 +713,27 @@
       },
       {
         "id": "mjolnir",
-        "titulo": "Mjölnir",
-        "texto": "",
-        "porque": "",
-        "fuente": "ordena:thor",
+        "titulo": "El Collar de Sif",
+        "texto": "Cuando Loki le corta el pelo a su esposa Sif en una broma, Thor lo obliga a conseguir un reemplazo. Loki termina apostando su propia cabeza para que dos hermanos enanos forjen, además del cabello de oro, el martillo Mjölnir.",
+        "porque": "Algunas de las mejores herramientas nacen como reparación de un error propio. Thor recibe el arma que lo define gracias a una travesura ajena que salió mal.",
+        "fuente": "ordena:mjolnir",
         "estado": "borrador"
       },
       {
         "id": "jotunheim",
-        "titulo": "Jotunheim",
-        "texto": "",
-        "porque": "",
-        "fuente": "crisis:jotunheim",
+        "titulo": "El Viaje a Jotunheim",
+        "texto": "Thor viaja con sus compañeros al castillo del gigante Útgarða-Loki, que los somete a una serie de pruebas humillantes. Loki pierde una competencia de comer contra un rival veloz; el sirviente de Thor pierde una carrera contra otro. Thor bebe de un cuerno gigante y apenas logra bajar su nivel; intenta levantar del piso a un gato gris y solo consigue despegarle una pata; lucha contra una anciana llamada Elli y termina de rodillas. Humillado, se retira a dormir. A la mañana siguiente, el gigante le revela la verdad completa: cada prueba escondía una fuerza imposible de vencer, disfrazada de algo cotidiano. El cuerno estaba conectado al océano entero — por eso ahora existen las mareas. El gato gris era la Serpiente que rodea el mundo, y Thor la había alzado tanto que casi tocó el cielo. Y la anciana Elli era la Vejez en persona: nadie, ni siquiera un dios, puede ganarle un pulso a la vejez.",
+        "porque": "Una derrota puede no ser lo que parece. Thor no sabía que estaba enfrentando al océano, al tiempo y a una serpiente que envuelve el mundo entero, y aun así logró moverlos un poco. Reconocer que existen fuerzas —el paso del tiempo, la naturaleza— que ni el más fuerte del panteón puede vencer no es debilidad: es la diferencia entre perder de verdad y no entender todavía contra qué se estaba peleando.",
+        "fuente": "ordena:jotunheim",
         "estado": "borrador"
+      },
+      {
+        "id": "companero_viajes",
+        "titulo": "El compañero de viajes",
+        "texto": "Una mañana, Thor despertó y Mjölnir no estaba. El gigante Thrym lo había robado y pedía un rescate imposible: casarse con la diosa Freya. A Loki se le ocurrió una idea mejor... y peor: disfrazar a Thor de novia, con velo y vestido, y acompañarlo él como dama de compañía. En pleno banquete de bodas, la «novia» se comió un buey entero y ocho salmones. Thrym desconfió, pero Loki explicaba todo: «Hace ocho días que no come, de los nervios». Cuando por fin trajeron a Mjölnir para bendecir la boda, Thor lo agarró, se arrancó el velo, y los gigantes entendieron demasiado tarde a quién habían invitado.",
+        "porque": "Los nórdicos admiraban la fuerza, pero se contaban este mito para reírse y recordar algo serio: la fuerza sola no recupera un martillo robado. Thor necesitó el ingenio de Loki, y Loki necesitó los músculos de Thor: los opuestos que se complementan hacen el mejor equipo. Y una cultura que puede reírse de su dios más fuerte es una cultura que lo quiere de verdad.",
+        "fuente": "vinculo:loki",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -644,6 +764,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Olimpo nunca fue su hogar.",
+      "Su fuerza es máxima, pero su astucia es de las más bajas.",
+      "Su arma favorita siempre vuelve a su mano."
     ]
   },
   {
@@ -679,19 +804,19 @@
       },
       {
         "id": "pelo_sif",
-        "titulo": "El pelo de Sif",
-        "texto": "",
-        "porque": "",
-        "fuente": "crisis:pelo_sif",
-        "estado": "borrador"
+        "titulo": "La travesura del pelo de oro",
+        "texto": "Una noche, Loki vio el famoso cabello dorado de Sif y no pudo resistirse: se lo cortó entero, por pura travesura. La risa le duró poco. Thor exigió que lo arreglara, y Loki tuvo que viajar hasta los enanos, los mejores herreros de los nueve mundos, para conseguir un cabello nuevo de oro verdadero, que brilla al sol y crece como pelo real. Pero ni ahí paró: presumió tanto del regalo que apostó su propia cabeza a que dos hermanos enanos no podrían forjar nada mejor. Perdió — de esa competencia salieron el martillo de Thor y la lanza de Odín —, aunque zafó con un tecnicismo digno de él: había apostado la cabeza, sí... pero el cuello no, y nadie podía tocar una sin el otro.",
+        "porque": "Los nórdicos contaban esta historia para explicar de dónde salieron los tesoros de sus dioses: hasta el martillo de Thor nació de una broma que salió mal. Y el tecnicismo final no es trampa menor: en esa cultura la palabra dada era ley, y encontrarle el borde exacto a un pacto era una forma de inteligencia tan admirada como temida.",
+        "fuente": "vinculo:sif",
+        "estado": "publicado"
       },
       {
         "id": "atar_fenrir",
-        "titulo": "Fenrir",
-        "texto": "",
-        "porque": "",
-        "fuente": "crisis:atar_fenrir",
-        "estado": "borrador"
+        "titulo": "El lobo que creció demasiado",
+        "texto": "Fenrir era hijo de Loki, y de cachorro era juguetón como cualquier lobo. Pero crecía tan rápido que cada día daba miedo un poco más: pronto fue más grande que una casa, y los dioses empezaron a temer lo que pasaría cuando terminara de crecer. Le pidieron, con juegos, que se dejara atar con cadenas cada vez más fuertes, y él las rompía todas como hilos. Cuando llegaron con una cinta suave hecha de cosas imposibles, Fenrir dudó: algo tan liviano no podía sostenerlo, a menos que fuera magia. Aceptó atarse solo si alguien ponía la mano en su boca como garantía. Tyr fue el único que se ofreció. Loki no eligió esa parte: solo pudo mirar cómo atrapaban a su hijo, sabiendo que ya no había forma de evitarlo.",
+        "porque": "Los nórdicos contaban esta historia para hablar de un miedo real: hay fuerzas que crecen tanto que ni quien las quiere puede seguir protegiéndolas. Loki no festeja este mito, lo sufre: ser padre de algo que el mundo entero decide que ya no puede andar libre es una de las partes más tristes de ser Loki, no una travesura más.",
+        "fuente": "vinculo:tyr",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -722,6 +847,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Olimpo nunca fue su morada.",
+      "Su astucia es máxima, pero su fuerza no llega ni a la mitad de eso.",
+      "Una apuesta que él mismo perdió fue el origen del martillo más famoso de Asgard."
     ]
   },
   {
@@ -758,18 +888,18 @@
       {
         "id": "ojo_pozo",
         "titulo": "El ojo en el pozo",
-        "texto": "",
-        "porque": "",
-        "fuente": "crisis:pozo_mimir",
+        "texto": "En las raíces del árbol del mundo hay un pozo que guarda la sabiduría más antigua, y lo cuida un gigante llamado Mimir. Odín, que ya sabía leer runas y hablar con los muertos, quiso beber de esa agua para ver más allá de lo que cualquier dios había visto. Mimir le puso una condición: nada se toma gratis, ni siquiera el conocimiento. Odín no dudó: se sacó su propio ojo y lo dejó caer en el pozo. Bebió, y desde ese día ve el mundo con un solo ojo — pero ve más lejos que cualquiera con dos.",
+        "porque": "Los nórdicos admiraban a Odín porque buscaba sabiduría de verdad, no la que se consigue fácil. Este mito dice algo que todavía suena cierto: el conocimiento que más vale siempre cuesta algo, y quien lo busca en serio está dispuesto a pagarlo sin poner excusas.",
+        "fuente": "ordena:pozo_mimir",
         "estado": "borrador"
       },
       {
-        "id": "cuervos",
-        "titulo": "Los cuervos",
-        "texto": "",
-        "porque": "",
-        "fuente": "cielo:cuervos",
-        "estado": "borrador"
+        "id": "vinculo_frigg",
+        "titulo": "Lo que Frigg sabe",
+        "texto": "Odín cruzó los nueve mundos buscando sabiduría: entregó un ojo en el pozo de Mimir, les hizo preguntas a gigantes, descifró secretos antiguos. Pero en su propio salón vivía alguien que no necesitaba viajar. Frigg, su esposa, conoce el destino de todos los seres — cómo empieza y cómo termina cada historia — y sin embargo no lo cuenta nunca. Odín volvía de cada viaje con respuestas nuevas y la encontraba hilando, tranquila, callada. Dicen que a veces le preguntaba, y que ella apenas sonreía. Él junta el saber pedazo por pedazo, pagando cada uno; ella lo guarda entero, en silencio. Y ninguno de los dos sabe más que el otro: saben distinto.",
+        "porque": "Para los nórdicos el destino ya estaba hilado y nadie podía cambiarlo, ni siquiera los dioses. Por eso imaginaron dos formas de sabiduría: la de Odín, que se sale a buscar y se paga cara, y la de Frigg, que se guarda porque decirla no cambiaría nada. Es la manera antigua de mostrar que saber y decir no son lo mismo — y que a veces callar también es sabiduría.",
+        "fuente": "vinculo:frigg",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -800,6 +930,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Jamás cruzó las puertas del Olimpo.",
+      "Su liderazgo es máximo, y su bondad es exactamente la mitad de eso.",
+      "Sacrificó uno de sus propios ojos para beber la sabiduría de un pozo antiguo."
     ]
   },
   {
@@ -832,6 +967,14 @@
         "porque": "En los mitos nórdicos, la magia más poderosa la maneja una diosa. Y Freya muestra algo más: enseñar lo que uno sabe también es una forma de poder.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "forja_enana",
+        "titulo": "El Collar Brisingamen",
+        "texto": "Gestiona la adquisición del artefacto más valioso de los nueve mundos negociando directamente con los especialistas técnicos (los enanos).",
+        "porque": "Economía de la tecnología. El acceso a herramientas de nivel superior requiere identificar, respetar y negociar con los constructores del hardware.",
+        "fuente": "ordena:forja_enana",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -862,6 +1005,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Olimpo no la vio nacer.",
+      "Su magia es máxima, y su fuerza es apenas la mitad de ese poder.",
+      "Un carro de dos gatos y una capa de plumas la llevan por los nueve mundos."
     ]
   },
   {
@@ -894,6 +1042,14 @@
         "porque": "Para los nórdicos, el arcoíris era un puente entre el mundo de los dioses y el nuestro. Cuando aparecía uno después de la lluvia, era la puerta de Asgard dejándose ver un ratito.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "ancho_banda",
+        "titulo": "El Ancho de Banda",
+        "texto": "Protege el puente Bifröst, monitoreando el flujo constante entre los nueve mundos.",
+        "porque": "Gestión de tráfico. La estabilidad de un hub (Asgard) depende de la capacidad del guardián para gestionar el flujo de datos (viajeros/mensajes) sin colapsar el sistema.",
+        "fuente": "ordena:heimdall",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -924,6 +1080,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Las columnas del Olimpo nunca lo conocieron.",
+      "Cuatro de sus dones valen exactamente lo mismo, y su valentía supera a todos los demás.",
+      "Su cuerno suena tan fuerte que se escucha en los nueve mundos al mismo tiempo."
     ]
   },
   {
@@ -955,6 +1116,14 @@
         "porque": "Los nórdicos asociaban el cabello dorado de Sif con los campos de trigo maduro que brillan al sol. Y la historia enseña que las bromas sin cuidado traen consecuencias... aunque a veces terminen en algo hermoso.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "apuesta_enanos",
+        "titulo": "La Apuesta de los Enanos",
+        "texto": "Después de conseguirle a Sif su nuevo cabello de oro, Loki no pudo resistirse a presumir, y terminó apostando su propia cabeza a que dos hermanos enanos no podrían forjar nada mejor. Compitiendo contra el reloj, los hermanos crearon el martillo de Thor, la lanza de Odín y otros tesoros — y ganaron la apuesta, aunque Loki logró escapar del castigo final con un tecnicismo ingenioso.",
+        "porque": "Una travesura que empieza mal puede terminar dándole a todo un panteón sus herramientas más importantes. La competencia técnica bajo presión, cuando es sana, produce resultados extraordinarios.",
+        "fuente": "ordena:apuesta_enanos",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -985,6 +1154,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Olimpo nunca fue su templo.",
+      "Su bondad y su valentía son máximas; su liderazgo, el más bajo de todos.",
+      "Su cabello fue cortado como broma y reemplazado por hebras de oro verdadero que crecen como pelo real."
     ]
   },
   {
@@ -1017,6 +1191,14 @@
         "porque": "Valentía no es no tener miedo: es hacer lo necesario aun sabiendo lo que puede costar. Por eso los nórdicos decían que Tyr era el más valiente de todos los dioses.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "fenrir_paradoja",
+        "titulo": "La Paradoja de Gleipnir",
+        "texto": "Para encadenar a Fenrir con la cinta mágica (hecha de elementos imposibles), Tyr pone su mano como garantía en las fauces del lobo.",
+        "porque": "Sacrificio paramétrico. Para contener una amenaza global que colapsaría el sistema, un líder debe asumir y pagar un costo personal irreversible.",
+        "fuente": "ordena:fenrir_paradoja",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1047,6 +1229,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No rezaron por él en el Olimpo.",
+      "Su valentía es máxima, y su magia es la más baja de todas sus virtudes.",
+      "Perdió una mano al ofrecerla como garantía para poder atar a un lobo gigante."
     ]
   },
   {
@@ -1079,6 +1266,30 @@
         "porque": "Los griegos explicaban los truenos y los rayos como la voz y el arma de Zeus. El mito también mostraba que hasta el rey de los dioses necesita poner límites y mantener el orden entre tantas personalidades fuertes.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "boda_cielo",
+        "titulo": "La boda del cielo",
+        "texto": "Cuando Zeus se casó con Hera, la fiesta fue tan enorme que hasta la Tierra trajo regalo: Gea hizo brotar un árbol de manzanas de oro que un jardín entero cuidaría para siempre. Pero lo importante no fue la fiesta, fue el trato. Zeus gobierna el cielo, y Hera se sienta a su lado en un trono propio, no atrás. Discuten seguido — él lanza truenos, ella no baja la mirada — y, sin embargo, ninguna decisión grande del Olimpo queda firme hasta que los dos la conversan. Zeus tiene el rayo, pero Hera custodia las promesas: y hasta el rey de los dioses tiene que cumplir la palabra dada.",
+        "porque": "Los griegos no imaginaron el poder máximo como un dios solitario, sino como un matrimonio: el cielo y el compromiso gobernando juntos. Era su manera de decir que ningún poder, por enorme que sea, funciona sin alguien de igual peso que lo discuta, lo frene y lo equilibre. Las chispas entre Zeus y Hera no eran un defecto del mito: eran la prueba de que ahí nadie mandaba solo.",
+        "fuente": "vinculo:hera",
+        "estado": "publicado"
+      },
+      {
+        "id": "vision_panoramica",
+        "titulo": "Visión Panorámica",
+        "texto": "Utiliza un águila como mensajera para vigilar el mundo desde la cima del cielo.",
+        "porque": "El águila simboliza la perspectiva macro. Un líder estratégico debe observar el sistema completo antes de tomar decisiones, elevándose por encima del conflicto inmediato.",
+        "fuente": "ordena:aguila",
+        "estado": "borrador"
+      },
+      {
+        "id": "prueba_xenia",
+        "titulo": "La Prueba de la Xenia",
+        "texto": "Viaja disfrazado de mendigo para evaluar a los humanos. Solo Filemón y Baucis, una pareja de ancianos sin recursos, le ofrecen refugio y comida.",
+        "porque": "Enseña el concepto de la xenia (hospitalidad). La verdadera nobleza y el valor de una persona se miden por cómo trata a los vulnerables, no por su acumulación de riqueza.",
+        "fuente": "ordena:hospitalidad",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1109,6 +1320,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Bifröst nunca lo vio cruzar.",
+      "Su magia y su liderazgo son máximos, y su bondad es apenas la mitad de esos dos.",
+      "Solo a él le tocó liderar a los dioses en la guerra contra los titanes."
     ]
   },
   {
@@ -1141,6 +1357,14 @@
         "porque": "Los griegos usaban a Hera para hablar del compromiso y la lealtad dentro de una familia. Los ojos de la cola del pavo real explicaban un dibujo real de la naturaleza a través de la historia de su guardián Argos.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "cien_ojos",
+        "titulo": "El Guardián de los Cien Ojos",
+        "texto": "Hera tenía un guardián de total confianza: un gigante con cien ojos repartidos por todo el cuerpo, que nunca dormía del todo porque siempre quedaban ojos despiertos. Vigilaba lo que ella más valoraba. Pero alguien lo venció con una melodía tan envolvente que logró dormir los cien ojos a la vez. Cuando Hera lo perdió, tomó sus ojos y los puso en la cola de su ave favorita, el pavo real, para que su guardián nunca se olvidara.",
+        "porque": "Ni el sistema de vigilancia más completo es infalible frente al enfoque correcto. Y honrar a quien cumplió su función, aunque haya fallado al final, es tan importante como el sistema mismo.",
+        "fuente": "ordena:argos",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1171,6 +1395,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Jamás pisó el puente que lleva a Asgard.",
+      "Tres de sus dones valen exactamente lo mismo, y su bondad es la mitad de ese valor.",
+      "Su ave sagrada lleva en la cola cien ojos que pertenecieron a su guardián más fiel."
     ]
   },
   {
@@ -1204,6 +1433,22 @@
         "porque": "En un pueblo de navegantes como el griego, tenía sentido que existiera un dios que explicara las tormentas marinas y los terremotos: bastaba con imaginar a Poseidón enojado.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "origen_pegaso",
+        "titulo": "El Origen de Pegaso",
+        "texto": "Al impactar la roca con fuerza marina, libera fuentes de agua cristalina y es el padre biológico del caballo alado Pegaso.",
+        "porque": "El agua en movimiento es la metáfora más antigua de la inspiración libre y el flujo ininterrumpido de las ideas creativas.",
+        "fuente": "cielo:pegaso",
+        "estado": "publicado"
+      },
+      {
+        "id": "valor_olivo",
+        "titulo": "El Valor del Olivo",
+        "texto": "Compite por ser el protector de una ciudad ofreciendo un manantial de agua salada (poder naval). La ciudad elige a su oponente, que ofrece un árbol de olivo.",
+        "porque": "Economía a largo plazo. Un recurso sostenible que provee alimento, aceite y madera (el olivo) garantiza la supervivencia de una civilización de manera mucho más eficiente que la capacidad de iniciar guerras.",
+        "fuente": "ordena:atenas_olivo",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1234,6 +1479,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Asgard nunca fue su reino.",
+      "Su fuerza es más del doble que su bondad, y su magia iguala a esa fuerza.",
+      "Los griegos decían que él inventó al caballo, el animal que más admiraban."
     ]
   },
   {
@@ -1266,6 +1516,30 @@
         "porque": "Los griegos no imaginaban a Hades como un villano, sino como el guardián estricto de un reino necesario: alguien tenía que ocuparse de esa parte del mundo, y él lo hacía con seriedad y justicia.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "acuerdo_estaciones",
+        "titulo": "El acuerdo de las estaciones",
+        "texto": "En el reino de abajo no crecían flores, y Hades gobernaba solo. Cuando Perséfone llegó a su mundo, todo cambió: él quiso que se quedara como reina. Pero arriba Deméter la extrañaba tanto que la tierra entera dejó de florecer, y ningún dios sabía cómo arreglarlo. Entonces Zeus propuso un acuerdo. Como Perséfone había probado unos granos de granada del reino subterráneo, una parte de ella ya pertenecía a ese mundo: pasaría la mitad del año abajo, como reina, y la otra mitad arriba, con su madre. Hades, que cumple las reglas al pie de la letra, respeta el acuerdo cada año sin fallar. Por eso las estaciones vuelven siempre puntuales.",
+        "porque": "Los griegos necesitaban confiar en que el invierno siempre termina, y lo explicaron con un pacto: si las estaciones vuelven puntuales cada año, es porque alguien serio lo cumple sin fallar. Este mito también guarda otra idea: cuando dos mundos quieren lo mismo, la salida no es que uno gane, sino un acuerdo donde cada uno cede una parte.",
+        "fuente": "vinculo:persefone",
+        "estado": "publicado"
+      },
+      {
+        "id": "contrato_booleano",
+        "titulo": "El Contrato Booleano",
+        "texto": "Establece un trato con Orfeo basado en una condición única: la salida es válida SI y SOLO SI no mira hacia atrás.",
+        "porque": "Lógica de programación. Los sistemas funcionan con reglas inflexibles; el fallo humano al no seguir la instrucción colapsa la ejecución.",
+        "fuente": "ordena:orfeo",
+        "estado": "borrador"
+      },
+      {
+        "id": "resolucion_parametrica",
+        "titulo": "Resolución Paramétrica",
+        "texto": "Permite a Heracles llevarse temporalmente al guardián Cerbero bajo una condición estricta: dominarlo sin recurrir a las armas de acero.",
+        "porque": "Negociación diplomática. Un líder altamente competente no necesita la guerra para probar a sus oponentes; impone reglas que exigen habilidad e inteligencia en lugar de destrucción.",
+        "fuente": "ordena:cerbero",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1296,6 +1570,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Gobierna un reino que no conoce la luz del sol, muy lejos de los salones del Olimpo.",
+      "Su fuerza iguala a su astucia, y su valentía iguala a su liderazgo.",
+      "Ni una sola alma del mundo griego escapa de cruzar su umbral alguna vez."
     ]
   },
   {
@@ -1328,6 +1607,14 @@
         "porque": "Los griegos explicaban así el cambio de estaciones: la alegría y la tristeza de una diosa de la tierra, contada a través de su relación con su hija Perséfone.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "triptolemo",
+        "titulo": "El Regalo de Triptólemo",
+        "texto": "Mientras recorría el mundo buscando a su hija Perséfone, Deméter fue recibida con generosidad por una familia de campesinos. Como agradecimiento, le enseñó a su hijo Triptólemo el secreto de sembrar y cosechar la tierra, y le entregó un carro para que recorriera el mundo llevando ese conocimiento a todos los pueblos.",
+        "porque": "El conocimiento útil se comparte, no se guarda. Toda civilización que aprendió a cultivar la tierra le debe algo a una enseñanza que en algún momento alguien decidió transmitir.",
+        "fuente": "ordena:triptolemo",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1358,6 +1645,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "De su ánimo depende que la tierra dé trigo o se quede estéril.",
+      "Su magia iguala a su bondad, y es el doble de su fuerza.",
+      "Cuando se aleja de su hija, ningún campo del mundo antiguo logra dar una sola cosecha."
     ]
   },
   {
@@ -1390,6 +1682,14 @@
         "porque": "Este mito era la manera griega de explicar por qué las estaciones cambian: la alegría y la tristeza de una madre por su hija, repetida todos los años.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "ciclo_natural",
+        "titulo": "Algoritmo de las Estaciones",
+        "texto": "El movimiento entre mundos define el estado de la superficie; la sincronización es perfecta para que la vida no se detenga.",
+        "porque": "Gestión de recursos en sistemas cerrados. La estabilidad de un sistema depende de la transición suave entre procesos opuestos, no de la eliminación de uno de ellos.",
+        "fuente": "ordena:ciclo_natural",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1420,6 +1720,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Reparte su año entre dos mundos opuestos, uno de luz y otro de sombra.",
+      "Su astucia, su valentía y su bondad son exactamente iguales entre sí.",
+      "Por comer unas semillas de una fruta roja, quedó condenada a vivir siempre entre dos mundos."
     ]
   },
   {
@@ -1482,6 +1787,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Es la más calma de todos los dioses: jamás se mete en peleas ni conquistas.",
+      "Su bondad es máxima, y su astucia iguala exactamente a su valentía.",
+      "Cada casa griega guardaba, solo para ella, un fuego que nunca debía apagarse."
     ]
   },
   {
@@ -1514,6 +1824,14 @@
         "porque": "Apolo junta en un solo dios dos cosas que los griegos valoraban muchísimo: el arte y el conocimiento. Para ellos, la belleza y la sabiduría iban de la mano.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "armonia_lyra",
+        "titulo": "Armonía Matemática",
+        "texto": "Apolo perfecciona la lira, instrumento que traduce las matemáticas en sonidos placenteros.",
+        "porque": "Relación entre arte y lógica. La música no es azar; es una estructura matemática que organiza la percepción humana y crea orden en el entorno.",
+        "fuente": "ordena:armonia_lyra",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1544,6 +1862,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Su música, dicen los relatos, es capaz de calmar a cualquiera que la escuche.",
+      "Su fuerza, su liderazgo y su bondad son exactamente iguales entre sí.",
+      "Su templo en Delfos recibía visitantes que viajaban muy lejos para conocer su futuro."
     ]
   },
   {
@@ -1577,6 +1900,14 @@
         "porque": "Los griegos la admiraban como un espejo distinto de la feminidad de su época: una diosa fuerte, independiente y dueña de sus propias decisiones.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "metamorfosis",
+        "titulo": "La Metamorfosis",
+        "texto": "Su compañera Calisto sufre una transformación en osa tras la intervención de terceros en el ecosistema de Artemisa.",
+        "porque": "Causalidad externa. Demuestra cómo las decisiones externas (Zeus/Hera) pueden alterar permanentemente el estado de un sistema cerrado y la vida de sus integrantes.",
+        "fuente": "cielo:osa_mayor",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -1607,6 +1938,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Prefiere el bosque y la noche antes que cualquier salón del Olimpo.",
+      "Su astucia iguala a su magia, y su liderazgo iguala a su bondad.",
+      "Nunca, en ningún relato, se cuenta que su flecha haya errado un tiro."
     ]
   },
   {
@@ -1639,6 +1975,14 @@
         "porque": "El contraste entre Ares y Atenea le servía a los griegos para hablar de dos maneras de enfrentar un conflicto: la fuerza bruta sin pensar, contra la estrategia inteligente. Para ellos, la segunda ganaba casi siempre.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "aloadas",
+        "titulo": "Atrapado en la Vasija de Bronce",
+        "texto": "Dos gigantes hermanos, crecidos y decididos a desafiar a los dioses, lograron vencer a Ares y encerrarlo dentro de una vasija de bronce. Ahí quedó atrapado más de un año, hasta que su madrastra reveló dónde estaba y Hermes fue a rescatarlo en secreto.",
+        "porque": "Ni el dios de la guerra se salva solo con fuerza. Cuando falta estrategia y aliados, hasta el más poderoso puede quedar atrapado — y necesitó que otro lo liberara con astucia, no con más fuerza.",
+        "fuente": "ordena:aloadas",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1669,6 +2013,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Prefiere resolver todo a los golpes, sin pensar la estrategia primero.",
+      "Su fuerza iguala a su valentía, y ambas superan el doble de su astucia.",
+      "Es, de todo el Olimpo, a quien más desconfianza le tienen los griegos que lo crearon."
     ]
   },
   {
@@ -1701,6 +2050,14 @@
         "porque": "Para los griegos, el amor era una fuerza tan poderosa e imposible de controlar que necesitaba tener su propia diosa. Afrodita mostraba que ese sentimiento merecía tanto respeto como la guerra o la sabiduría.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "manzana_dorada",
+        "titulo": "La Manzana Dorada",
+        "texto": "En una fiesta, apareció una manzana de oro con una inscripción: \"para la más hermosa\". Hera, Atenea y Afrodita se la disputaron, y un príncipe mortal llamado Paris fue elegido para decidir. Cada diosa le ofreció algo a cambio de su voto; Afrodita le prometió el amor de la mujer más bella del mundo, y ganó la manzana.",
+        "porque": "Una sola decisión, tomada en un instante, puede desatar una cadena de consecuencias mucho más grande de lo que parece. Esta historia continúa en otras cartas.",
+        "fuente": "ordena:manzana_dorada",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1731,6 +2088,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Puede encender un sentimiento entre dos corazones con solo desearlo.",
+      "Su astucia iguala a su magia, y su valentía es exactamente el doble de su fuerza.",
+      "Llegó a la orilla del mundo flotando sobre una concha, recién nacida de la espuma del mar."
     ]
   },
   {
@@ -1763,6 +2125,22 @@
         "porque": "Los griegos creían que los volcanes humeaban porque Hefesto estaba trabajando ahí abajo. Es el dios que representa el ingenio manual: la idea de que crear con las manos es también una forma de poder.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "escudo_mundo",
+        "titulo": "El escudo que cuenta el mundo",
+        "texto": "Cuando Aquiles necesitó una armadura nueva, su madre le pidió a Hefesto el mejor escudo jamás forjado. Cualquier otro herrero habría grabado batallas y monstruos. Hefesto grabó otra cosa: ciudades enteras en paz, campesinos cosechando trigo bajo el sol, jóvenes bailando en una plaza, jueces resolviendo disputas sin pelear, y arriba de todo, el cielo entero con sus estrellas y sus mareas. En el borde del escudo que iba a la guerra más famosa de la mitología, el herrero de los dioses decidió mostrar todo lo que vale la pena defender.",
+        "porque": "Hefesto, que construye en vez de destruir, entendía algo que muchos guerreros olvidaban: un escudo no es solo defensa, puede ser un recordatorio. Grabar la paz en un objeto de guerra es una forma silenciosa de decir que el conflicto es pasajero, y que lo que de verdad importa —cosechar, bailar, vivir en comunidad— es lo que cualquier batalla debería proteger.",
+        "fuente": "vinculo:aquiles",
+        "estado": "publicado"
+      },
+      {
+        "id": "talos",
+        "titulo": "Talos, el Gigante de Bronce",
+        "texto": "Hefesto forjó un guardián gigante hecho enteramente de bronce para proteger la isla de Creta. Talos recorría la costa tres veces al día, alejando barcos no deseados con enormes piedras. Todo su cuerpo era prácticamente indestructible, salvo un único punto: una vena sellada en el tobillo.",
+        "porque": "Toda gran creación, por poderosa que parezca, tiene un punto de mantenimiento o vulnerabilidad. Conocer ese punto — y protegerlo — es parte del trabajo de quien construye.",
+        "fuente": "ordena:talos",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1793,6 +2171,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Mientras los demás discuten en el Olimpo, este sigue trabajando bajo la montaña.",
+      "Su astucia iguala a su magia, y su fuerza es el doble de su liderazgo.",
+      "De su fragua bajo un volcán salió el rayo más temido de todo el Olimpo."
     ]
   },
   {
@@ -1826,6 +2209,14 @@
         "porque": "Hermes representa la rapidez de mente y de pies a la vez. Los griegos lo imaginaban como el dios que conecta todos los mundos: el de los dioses, el de los humanos y hasta el de los viajeros en el camino.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "robo_ganado",
+        "titulo": "Negociación de Activos",
+        "texto": "Siendo un bebé, interviene en la propiedad de Apolo (el ganado) pero resuelve el conflicto inventando la lira con un caparazón de tortuga y entregándola como pago.",
+        "porque": "Resolución de conflictos por innovación. Un problema legal o territorial puede neutralizarse creando nueva tecnología que compense el valor del daño original.",
+        "fuente": "ordena:robo_ganado",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1856,6 +2247,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Nunca lo verás quieto: su tarea es ir y venir entre el Olimpo y los caminos mortales.",
+      "Su astucia es máxima, y duplica exactamente a su liderazgo.",
+      "De bebé, inventó un instrumento musical con el caparazón de una tortuga."
     ]
   },
   {
@@ -1887,6 +2283,14 @@
         "porque": "El teatro griego nació justamente en los festivales dedicados a Dioniso. Él representa la alegría de contar historias en comunidad, algo que los griegos valoraban tanto como cualquier otra forma de arte.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "don_midas",
+        "titulo": "El Don de Midas",
+        "texto": "Dioniso quiso recompensar a un rey bondadoso llamado Midas por haber cuidado a su maestro Sileno. Midas pidió que todo lo que tocara se convirtiera en oro. Al principio fue maravilloso, hasta que hasta su comida y su agua se volvieron metal. Dioniso, compasivo, le explicó cómo deshacer el don bañándose en un río.",
+        "porque": "Un regalo que parece perfecto puede convertirse en un problema si no se piensan todas sus consecuencias. Y un buen diseño también incluye la manera de deshacerlo.",
+        "fuente": "ordena:midas",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1917,6 +2321,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "En la mitología griega, es quien reúne a la gente para festejar juntos y contar historias en comunidad.",
+      "Su magia es el doble exacto de su fuerza.",
+      "En sus festivales nació el arte de representar historias frente a todo un pueblo."
     ]
   },
   {
@@ -1979,6 +2388,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "En la mitología griega, revolotea junto a quien está por conquistar un triunfo.",
+      "Su valentía es exactamente el doble de su fuerza.",
+      "Hoy, una marca de zapatillas conocida en todo el mundo lleva puesto su nombre."
     ]
   },
   {
@@ -2040,6 +2454,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "En la mitología griega, cruza el cielo llevando noticias por un camino que aparece después de la lluvia.",
+      "Su valentía es el doble exacto de su fuerza, y su bondad es la más alta.",
+      "Los griegos la imaginaron como el reflejo de aquel guardián nórdico que vigila un puente de colores."
     ]
   },
   {
@@ -2101,6 +2520,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "En la mitología griega, es el motivo de que exista luz durante todo el día.",
+      "Su magia es el doble exacto de su liderazgo.",
+      "Solo él puede sostener esas riendas ardientes sin quemarse en el intento."
     ]
   },
   {
@@ -2162,6 +2586,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "En la mitología griega, ilumina el cielo mientras el resto del mundo duerme.",
+      "Su bondad duplica exactamente a su liderazgo, aunque prefiere brillar en silencio.",
+      "Su recorrido nocturno es el reflejo exacto del viaje diurno de quien enciende el amanecer."
     ]
   },
   {
@@ -2224,6 +2653,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Vive entre montañas y bosques griegos: mitad persona, mitad animal de rebaño.",
+      "Su fuerza es igual a su valentía, y su magia iguala a su bondad.",
+      "De su grito repentino en el bosque nació la palabra que usamos para el miedo súbito."
     ]
   },
   {
@@ -2256,6 +2690,22 @@
         "porque": "Prometeo representa a quien se sacrifica para que otros progresen. Con el fuego llegaron la cocina, la luz para las noches y las herramientas: un regalo que cambió la vida de la humanidad entera.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "reparto",
+        "titulo": "El Engaño de Mecone",
+        "texto": "Engaña a Zeus al dividir un buey, ocultando la carne nutritiva bajo la piel y los huesos bajo grasa brillante, asegurando que los humanos conserven los nutrientes.",
+        "porque": "Asignación eficiente de recursos. Priorizar la supervivencia biológica y la nutrición del ecosistema humano sobre la estética de los tributos divinos.",
+        "fuente": "ordena:reparto",
+        "estado": "borrador"
+      },
+      {
+        "id": "caucaso",
+        "titulo": "La Resiliencia",
+        "texto": "Castigado por su innovación, soporta el encierro en la montaña hasta ser liberado, sin arrepentirse de haber acelerado el progreso humano.",
+        "porque": "Costo de la innovación disruptiva. Los cambios estructurales masivos en cualquier sociedad siempre generan resistencia inicial de las autoridades establecidas.",
+        "fuente": "ordena:caucaso",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -2286,6 +2736,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Es un titán, no un dios del Olimpo, y le cambió la vida a la humanidad entera.",
+      "Su astucia es máxima, y su bondad iguala exactamente a su valentía.",
+      "Escondió el fuego robado dentro de una caña hueca para entregárselo a los humanos."
     ]
   },
   {
@@ -2318,6 +2773,30 @@
         "porque": "El mito enseña que hasta el más fuerte tiene un punto débil. Esa idea quedó tan marcada que la usamos todavía hoy como una expresión de la vida diaria.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "escudo_cosmologico",
+        "titulo": "El Escudo Cosmológico",
+        "texto": "Recibe un escudo grabado no con armas, sino con un mapa del universo: ciudades pacíficas, agricultura y danzas.",
+        "porque": "Perspectiva macro. El conflicto es temporal y destructivo; la verdadera base de la civilización es la paz y el trabajo colaborativo.",
+        "fuente": "ordena:escudo",
+        "estado": "borrador"
+      },
+      {
+        "id": "costo_impulsividad",
+        "titulo": "El Costo de la Impulsividad",
+        "texto": "Se retira de sus responsabilidades por una ofensa menor, permitiendo que el orgullo gane. Su negativa a actuar obliga a su círculo cercano a asumir riesgos letales.",
+        "porque": "Regulación emocional. La falta de control sobre el ego y la ira genera daños colaterales irreversibles en el entorno afectivo.",
+        "fuente": "ordena:ira",
+        "estado": "borrador"
+      },
+      {
+        "id": "ruptura_ciclo",
+        "titulo": "Ruptura del Ciclo",
+        "texto": "Se reúne en secreto con el rey rival. Al ver el dolor del anciano, depone las armas temporalmente y devuelve lo que le pertenece.",
+        "porque": "Empatía pura. La única forma de desactivar un ciclo infinito de conflicto es reconocer el propio dolor reflejado en el adversario.",
+        "fuente": "ordena:reconciliacion",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -2348,6 +2827,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Peleó en una guerra legendaria, y muy pocas armas podían siquiera rozarlo.",
+      "Su fuerza y su valentía son máximas por igual, pero su magia es de las más bajas.",
+      "Su madre lo volvió invulnerable en aguas mágicas, menos en el único lugar que sostuvo con la mano."
     ]
   },
   {
@@ -2380,6 +2864,14 @@
         "porque": "Héctor representa el héroe del deber: alguien que no busca fama, sino cuidar lo que le importa. Es el rival y el espejo de Aquiles: dos formas distintas de entender el coraje.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "despedida",
+        "titulo": "La Despedida en las Puertas Esceas",
+        "texto": "Antes de una batalla decisiva, Héctor se despidió de su esposa Andrómaca y de su bebé Astianacte en las puertas de la ciudad. El niño lloró, asustado por el penacho de crin del casco de su padre. Héctor se rió, se sacó el casco, alzó a su hijo en brazos y pidió que algún día fuera aún más valiente que él.",
+        "porque": "El guerrero más grande de Troya no peleaba por gloria: peleaba por la gente que dejaba atrás. El coraje y el amor por la familia no son opuestos, van juntos.",
+        "fuente": "ordena:despedida",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -2410,6 +2902,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es un dios del Olimpo: peleó como mortal en la guerra griega más recordada.",
+      "Su valentía es máxima, pero su magia es mínima.",
+      "Su propia leyenda lo llama 'el rival y el espejo' de otro gran guerrero."
     ]
   },
   {
@@ -2442,6 +2939,30 @@
         "porque": "La historia de Jasón y los Argonautas es uno de los primeros grandes relatos de trabajo en equipo de la mitología: la idea de que cada persona suma algo distinto para lograr una meta común.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "vellocino_protector",
+        "titulo": "El Vellocino Protector",
+        "texto": "El objeto buscado proviene de un carnero mágico enviado previamente para rescatar a dos hermanos de una situación de opresión.",
+        "porque": "Significado de los artefactos. El valor real del objetivo no reside en que sea de oro, sino en que simboliza el rescate y la protección de los más débiles.",
+        "fuente": "ordena:vellocino",
+        "estado": "borrador"
+      },
+      {
+        "id": "alquimia_fuerza",
+        "titulo": "Alquimia vs. Fuerza",
+        "texto": "Obligado a enfrentar toros que exhalan fuego. En lugar de atacar con armas, delega la solución química, utilizando ungüentos ignífugos para neutralizar el calor.",
+        "porque": "Supervivencia mediante la ciencia. La fuerza es inútil frente a amenazas elementales; el conocimiento de los materiales es la defensa superior.",
+        "fuente": "ordena:colquida",
+        "estado": "borrador"
+      },
+      {
+        "id": "rocas_simplegades",
+        "titulo": "Las Rocas Simplégades",
+        "texto": "Utiliza una paloma como modelo de prueba para calcular los intervalos de tiempo exactos en que dos rocas colisionan, logrando cruzar con su nave en el margen de seguridad.",
+        "porque": "Física y predicción de patrones. La observación paramétrica y el cálculo de intervalos permiten evadir peligros que parecen insuperables de frente.",
+        "fuente": "ordena:simplegades",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -2472,6 +2993,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No gobierna ningún reino: es un mortal que armó una tripulación para una travesía legendaria.",
+      "Su valentía y su liderazgo son idénticos, y ninguno de sus otros dones los alcanza.",
+      "Es el único que reunió a los mejores héroes de toda Grecia en un solo barco."
     ]
   },
   {
@@ -2503,6 +3029,14 @@
         "porque": "Orfeo demuestra que el arte puede ser el poder más raro de todos: no vence con fuerza, convence con belleza. A veces la música llega a lugares donde ni las armas ni los ejércitos pueden entrar.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "inframundo",
+        "titulo": "Análisis de Frecuencias",
+        "texto": "Debe ajustar su melodía para resonar con las condiciones emocionales de Hades, logrando una respuesta favorable mediante la adaptación del tono.",
+        "porque": "Teoría de la resonancia. El éxito en una negociación depende de identificar la frecuencia de interés de la otra parte y adaptar el mensaje para establecer conexión.",
+        "fuente": "ordena:inframundo",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -2533,6 +3067,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No pelea con armas: su talento es un arte que hasta los dioses del inframundo escucharon.",
+      "Su valentía es exactamente el triple de su fuerza.",
+      "Su arte fue tan grande que casi logra que el rey del inframundo revirtiera la muerte."
     ]
   },
   {
@@ -2603,6 +3142,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No empuña ninguna arma: su plan salvó a un héroe mucho más fuerte que ella.",
+      "Su astucia es máxima, pero su fuerza es de las más bajas.",
+      "Le entregó un ovillo de hilo a un héroe para que encontrara la salida de un laberinto."
     ]
   },
   {
@@ -2665,6 +3209,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No lidera reinos ni ejércitos: nadie logró alcanzarla corriendo, hasta que usaron un truco.",
+      "Su valentía es nueve veces su magia.",
+      "Solo se la pudo vencer distrayéndola con tres frutos dorados en plena carrera."
     ]
   },
   {
@@ -2696,6 +3245,14 @@
         "porque": "Belerofonte enseña que a veces conviene cambiar el terreno del problema: algo imposible de resolver de frente puede volverse simple si se lo mira desde otro ángulo, incluso desde arriba.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "limite_vuelo",
+        "titulo": "El Límite del Vuelo",
+        "texto": "Después de vencer a la Quimera, Belerofonte se sintió invencible y decidió volar con Pegaso hasta el Olimpo mismo, un lugar reservado solo para los dioses. Pegaso, sobresaltado, lo hizo caer de vuelta a la tierra y siguió solo su camino hacia el cielo, donde Zeus lo recibió como su caballo sagrado. Belerofonte nunca volvió a volar.",
+        "porque": "Hay límites que ni el héroe más grande puede cruzar. Confundir un logro con un derecho es uno de los errores más antiguos de la mitología.",
+        "fuente": "ordena:limite_vuelo",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -2726,6 +3283,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No vuela con sus propias alas, pero venció a un monstruo imposible desde las alturas.",
+      "Su valentía es tres veces su magia.",
+      "Domó a un caballo alado con una brida de oro para enfrentar a un monstruo combinado."
     ]
   },
   {
@@ -2758,6 +3320,14 @@
         "porque": "El mito explicaba de dónde vienen los problemas del mundo, y por qué, por más difícil que se ponga todo, la esperanza nunca se va del todo.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "caja_esperanza",
+        "titulo": "La caja y la esperanza",
+        "texto": "Después de que Prometeo le regalara el fuego a la humanidad, los dioses quisieron equilibrar las cosas con un regalo propio: crearon a Pandora y le entregaron una jarra cerrada, con una única instrucción — nunca abrirla. Pandora la guardó durante un tiempo, pero la curiosidad terminó ganando. Al levantar la tapa, todos los males del mundo —la enfermedad, la tristeza, el cansancio— salieron volando y se esparcieron para siempre. Asustada, cerró la jarra de golpe, justo a tiempo para que quedara adentro lo único que no había llegado a escapar: la esperanza.",
+        "porque": "Los griegos podrían haber contado un mito solo sobre males que llegaron al mundo, pero eligieron guardar la esperanza en el fondo de la misma jarra. Es su manera de decir algo que todavía consuela: por más problemas que existan, siempre queda algo que no se fue — y ese algo alcanza para seguir adelante.",
+        "fuente": "vinculo:prometeo",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -2788,6 +3358,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es inmortal, pero fue moldeada por muchas manos divinas antes de conocer el mundo.",
+      "Su fuerza y su liderazgo son iguales, los más bajos entre sus dones.",
+      "Abrió un recipiente prohibido y liberó todos los males del mundo, menos uno que quedó adentro."
     ]
   },
   {
@@ -2819,6 +3394,14 @@
         "porque": "El mito explicaba por qué las arañas tejen telas tan perfectas, y de paso dejaba una lección sobre los límites de presumir frente a quien tiene mucho más poder.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "concurso_telar",
+        "titulo": "El concurso de telar",
+        "texto": "Aracne tejía tan bien que la gente empezó a decir que nadie, ni una diosa, podía superarla. Atenea, patrona del tejido entre tantas otras cosas, aceptó el desafío para demostrar que se equivocaban. El concurso fue real: dos telares, dos artistas, y un trabajo tan bueno de cada lado que resultaba imposible decidir quién había ganado. Furiosa por no poder superarla con claridad, Atenea transformó a Aracne en el primer animal capaz de tejer para siempre: una araña. Desde ese día, Aracne sigue tejiendo telas perfectas, colgada de cualquier rincón del mundo.",
+        "porque": "Los griegos contaban este mito para hablar de un talento tan grande que hasta incomodó a una diosa, y de un castigo que —mirado con otros ojos— también se volvió un don: Aracne nunca dejó de tejer, solo cambió de forma. Es una manera antigua de decir que el talento verdadero encuentra la forma de seguir existiendo, incluso después de un castigo.",
+        "fuente": "vinculo:atenea",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -2849,6 +3432,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No lidera ejércitos ni reinos: su talento está en las manos, no en la fuerza.",
+      "Su astucia es más del cuádruple de su fuerza.",
+      "Terminó convertida en el primer animal tejedor, tras un concurso de telar contra una diosa."
     ]
   },
   {
@@ -2910,6 +3498,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Un solo deseo cambió su vida entera, casi para peor: hasta pidió que se lo quitaran.",
+      "Cuatro de sus seis atributos son exactamente iguales entre sí.",
+      "Pidió que todo lo que tocara se volviera oro, y por poco no pudo alimentarse nunca más."
     ]
   },
   {
@@ -2980,6 +3573,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Bifröst nunca lo vio pasar: su cielo es el de los mitos griegos.",
+      "Su valentía es exactamente cuatro veces su liderazgo, el don más débil que posee.",
+      "De una patada de su casco brotó la fuente que inspira a poetas y artistas."
     ]
   },
   {
@@ -3012,6 +3610,14 @@
         "porque": "La historia de Quirón recuerda que detrás de cada héroe suele haber un maestro. Saber enseñar lo que uno sabe es, para los griegos, una forma de poder tan valiosa como cualquier otra.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "maestro_heroes",
+        "titulo": "El maestro de héroes",
+        "texto": "A diferencia de otros centauros, Quirón era sabio, paciente y generoso con su conocimiento. En su cueva de la montaña enseñó medicina, música, astronomía y el arte de vivir con honor a algunos de los héroes más grandes de la mitología griega, entre ellos Aquiles cuando todavía era apenas un chico. No competía con sus alumnos para demostrar quién sabía más: los entrenaba hasta que sabían más que él en aquello para lo que estaban destinados, y los dejaba partir sin resentimiento cuando llegaba el momento.",
+        "porque": "Los griegos honraban a los maestros que preparaban a otros para superarlos, y Quirón es el ejemplo más puro de esa idea. Este mito dice algo que sigue siendo cierto: la educación real no es guardar el conocimiento para uno, es entregarlo entero, sabiendo que el alumno puede llegar más lejos que el maestro.",
+        "fuente": "vinculo:aquiles",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -3042,6 +3648,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No conoció el frío de los nueve mundos: enseña sabiduría en los mitos griegos.",
+      "Su astucia llega al máximo posible, y es el doble de su liderazgo.",
+      "Fue quien entrenó a Aquiles en su cueva de la montaña, antes de que se transformara en héroe."
     ]
   },
   {
@@ -3103,6 +3714,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No cruzó jamás el arcoíris de Asgard: vive entre las llamas de los mitos griegos.",
+      "Su magia es máxima, cinco veces mayor que su liderazgo.",
+      "Cuando su vida termina, vuelve a nacer de sus propias cenizas, con las plumas más brillantes."
     ]
   },
   {
@@ -3165,6 +3781,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Nunca hizo guardia en Asgard: vigila las puertas del inframundo griego.",
+      "Su fuerza es casi máxima, pero su liderazgo es el más bajo de sus dones.",
+      "Orfeo logró dormirlo tocando la lira, y luego Heracles lo llevó consigo sin lastimarlo."
     ]
   },
   {
@@ -3197,6 +3818,14 @@
         "porque": "La historia de Medusa es el desafío que no se puede mirar de frente, y conecta directo con la carta de Perseo: dos formas distintas de contar la misma hazaña.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "mirada_piedra",
+        "titulo": "La mirada de piedra",
+        "texto": "Medusa vivía sola en los límites del mundo conocido, guardiana de un lugar donde nadie se acercaba sin miedo: mirarla a los ojos convertía a cualquiera en piedra. No pedía visitas, y las que llegaban nunca eran amistosas. Perseo llegó con una misión imposible y una idea mejor que enfrentarla de frente: usó su escudo pulido como espejo, caminando de espaldas, para verla reflejada sin cruzar su mirada directamente. Así logró lo que ningún otro había podido. De esa historia nació algo hermoso en medio de todo lo demás: del encuentro entre los dos surgió Pegaso, el caballo alado que después ayudaría a tantos otros héroes.",
+        "porque": "Los griegos no contaban a Medusa como un monstruo sin motivo: era una guardiana solitaria que vivía apartada, y su historia también deja algo bello detrás, en Pegaso. Este mito enseña que un problema de fuerza —una mirada que nadie puede enfrentar directo— a veces se resuelve con inteligencia, no con más fuerza todavía.",
+        "fuente": "vinculo:perseo",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -3227,6 +3856,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No conoció el hielo de los nueve mundos: habita una isla apartada de los mitos griegos.",
+      "Su astucia es el triple de su liderazgo, el más débil de sus dones.",
+      "De su encuentro con quien la venció sin mirarla nació una criatura que voló hasta las estrellas."
     ]
   },
   {
@@ -3289,6 +3923,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No llegó desde los hielos del norte: desafía con ingenio en los mitos griegos.",
+      "Su astucia es máxima, y su valentía es exactamente el doble de su liderazgo.",
+      "Solo dejaba pasar a quien resolviera su acertijo sobre las tres edades del ser humano."
     ]
   },
   {
@@ -3321,6 +3960,14 @@
         "porque": "El Minotauro cierra el círculo de una misma historia junto a Teseo, Ariadna y Dédalo: cuatro cartas distintas que cuentan una sola aventura desde ángulos diferentes.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "casa_que_piensa",
+        "titulo": "La casa que piensa",
+        "texto": "El Minotauro nunca eligió vivir encerrado. El rey Minos le pidió al mejor arquitecto de Grecia, Dédalo, que construyera un lugar que pudiera contenerlo: así nació el laberinto, una obra tan compleja que ni su propio creador podía recorrerla de memoria. Pasillos que se repetían, giros que llevaban al mismo lugar, paredes pensadas exactamente a su medida. El Minotauro vivió ahí toda su vida, en la casa más ingeniosa jamás construida y, al mismo tiempo, la cárcel más perfecta que existió.",
+        "porque": "Este mito muestra las dos caras de una misma idea: el laberinto es, a la vez, la obra maestra de ingeniería de Dédalo y el encierro de alguien que no pidió estar ahí. Los griegos usaban esta historia para hablar de diseño y de contención al mismo tiempo — y para recordar que hasta el habitante de la historia más temida puede merecer una mirada compasiva.",
+        "fuente": "vinculo:dedalo",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -3351,6 +3998,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No nació entre los hielos nórdicos: vive encerrado en un rincón de los mitos griegos.",
+      "Su fuerza es casi máxima, pero su liderazgo apenas alcanza el mínimo de la escala.",
+      "Solo Teseo, guiado por un hilo que jamás se rompió, logró encontrar la salida de su encierro."
     ]
   },
   {
@@ -3383,6 +4035,14 @@
         "porque": "Frigg representa el poder de saber algo importante y elegir quedarse callada. De su nombre en inglés antiguo viene la palabra «Friday» (viernes), el día dedicado a ella.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "juramento",
+        "titulo": "El Juramento de Todas las Cosas",
+        "texto": "Preocupada por su hijo Balder, Frigg recorrió los nueve mundos pidiéndole a cada cosa que existe — el fuego, el agua, cada metal, cada piedra, cada animal, cada enfermedad — que jurara no hacerle daño jamás. Solo una plantita joven que crecía cerca de Asgard le pareció demasiado pequeña e inofensiva como para molestarse en pedirle el juramento.",
+        "porque": "Ni el plan de seguridad más completo del mundo puede cubrir absolutamente todo. Siempre puede quedar, sin querer, un detalle que parecía demasiado chico para importar.",
+        "fuente": "ordena:juramento",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -3413,6 +4073,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Olimpo nunca fue su morada: guarda los secretos de todos los mitos nórdicos.",
+      "Su liderazgo es el doble de su fuerza, y su astucia casi llega al máximo.",
+      "Recorrió los nueve mundos pidiéndole a cada cosa que existe que jurara no lastimar a su hijo."
     ]
   },
   {
@@ -3445,6 +4110,14 @@
         "porque": "El mito enseña que por más que uno se proteja de todo, siempre puede quedar un detalle sin cubrir. Es, en cierto sentido, el «talón de Aquiles» nórdico: dos culturas distintas contando la misma idea.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "breidablik",
+        "titulo": "Breidablik, el Salón sin Mancha",
+        "texto": "Balder vivía en Breidablik, \"el que brilla ampliamente\", un salón tan puro que nada deshonesto ni malintencionado podía entrar en él. Se lo describía como el más radiante de todos los salones de Asgard.",
+        "porque": "Algunos personajes representan un ideal más que una historia de acción. Balder es la luz y la bondad que el resto de los dioses protege, no por sus hazañas, sino por lo que significa para todos ellos.",
+        "fuente": "ordena:breidablik",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -3475,6 +4148,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Olimpo nunca fue su cuna: es amado por todos los dioses nórdicos.",
+      "Su bondad es máxima, el doble de su liderazgo.",
+      "El muérdago fue la única cosa en todo el mundo que nunca prometió protegerlo."
     ]
   },
   {
@@ -3507,6 +4185,14 @@
         "porque": "Njörd es el espejo nórdico de Poseidón, pero con un carácter opuesto: mientras uno agita el mar cuando se enoja, el otro lo calma para cuidar a los navegantes.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "convivencia",
+        "titulo": "Noatún y la Montaña",
+        "texto": "Después de casarse con Skadi, intentaron vivir juntos, repartiendo el tiempo entre la costa de Njörd y las montañas de Skadi. Pero ninguno soportaba el hogar del otro: él no podía dormir con los aullidos del viento y los lobos, ella no podía descansar con el griterío de las gaviotas. Decidieron vivir cada uno en su propio lugar.",
+        "porque": "Dos personas — o dos sistemas — pueden respetarse e incluso quererse sin que eso signifique que deban forzar una convivencia que no funciona. Reconocer una incompatibilidad no es un fracaso.",
+        "fuente": "ordena:convivencia",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -3537,6 +4223,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No vive en el Olimpo: reina sobre mares y vientos en las tierras heladas del norte.",
+      "Su bondad iguala a su magia, y ambas superan claramente a su liderazgo.",
+      "Nadie más calma el viento para que los barcos regresen a salvo a puerto."
     ]
   },
   {
@@ -3569,6 +4260,14 @@
         "porque": "Skadi es la diosa nórdica del invierno que eligió su propio camino sin depender de nadie. Para los nórdicos, deslizarse sobre esquís por la nieve era casi una habilidad digna de los dioses.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "eleccion_ciegas",
+        "titulo": "La Elección a Ciegas",
+        "texto": "Como compensación de los dioses, le ofrecieron a Skadi elegir marido entre ellos, pero solo podía verles los pies detrás de una cortina. Eligió el par más hermoso, segura de que era Balder... y resultó ser Njörd, el señor del mar.",
+        "porque": "Decidir con información incompleta puede llevar a un resultado distinto del esperado. Y eso no siempre es un mal resultado: solo es uno diferente al que uno tenía en la cabeza.",
+        "fuente": "ordena:eleccion_ciegas",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -3599,6 +4298,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No desciende del Olimpo: nació entre picos helados y ventiscas del norte.",
+      "Su valentía es la más alta de sus dones, muy por encima de su magia.",
+      "Eligió a su compañero mirando solo sus pies, detrás de una cortina."
     ]
   },
   {
@@ -3631,6 +4335,14 @@
         "porque": "Sigurd es el héroe original que enfrenta dragones: muchas historias posteriores de caballeros y dragones que conocemos hoy tienen su origen en su leyenda.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "traicion",
+        "titulo": "Parser de Advertencias",
+        "texto": "Las aves le advierten de una traición interna. Sigurd procesa la información y altera su estrategia de seguridad a tiempo.",
+        "porque": "Gestión de inteligencia. La mayoría de los riesgos críticos son detectables antes de ocurrir si se presta atención a las señales de baja intensidad en el entorno.",
+        "fuente": "ordena:traicion",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -3661,6 +4373,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es un héroe griego: su leyenda nació en las tierras heladas del norte.",
+      "Su valentía es máxima, y su magia es una de las más bajas.",
+      "Después de su gran hazaña, entendió el idioma de las aves, y eso le salvó la vida."
     ]
   },
   {
@@ -3723,6 +4440,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No son diosas griegas: cabalgan el cielo del norte sobre los campos de batalla.",
+      "Su liderazgo iguala a su bondad, y ambos son sus valores más bajos.",
+      "Son las únicas que eligen quién entra al gran salón de los héroes caídos."
     ]
   },
   {
@@ -3785,6 +4507,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es un dios: es una criatura pequeña que vive en un gran árbol nórdico.",
+      "Su astucia es nueve veces su fuerza.",
+      "Es la única que lleva chismes entre un águila en la copa y un dragón en las raíces."
     ]
   },
   {
@@ -3817,6 +4544,14 @@
         "porque": "Fenrir enseña que lo aparentemente frágil —una cinta hecha de cosas invisibles— puede terminar siendo lo más fuerte de todo. Su historia cierra junto con la carta de Tyr.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "cinta_imposible",
+        "titulo": "La cinta imposible",
+        "texto": "Fenrir creció más rápido y más grande de lo que cualquiera esperaba, y ese crecimiento asustó a los dioses antes de que él hiciera nada malo. Rompió cadena tras cadena como si fueran de papel, siempre jugando, sin entender del todo por qué todos empezaban a mirarlo distinto. Cuando llegó la cinta mágica —liviana, casi invisible—, algo en Fenrir dudó: pidió una garantía antes de dejarse atar. De todos los dioses que lo rodeaban con miedo, solo uno le pareció justo: Tyr, que fue el único dispuesto a poner algo propio en juego, en vez de solo pedirle confianza a cambio de nada.",
+        "porque": "Los nórdicos contaban esta historia desde el lado del miedo que Fenrir despertaba, pero también deja lugar para otra lectura: la de alguien que creció tanto que el mundo dejó de tolerarlo, sin que él hubiera hecho algo todavía. Tyr es el único que lo trata con justicia real, y esa diferencia importa tanto como la cadena misma.",
+        "fuente": "vinculo:tyr",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -3847,6 +4582,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es un dios: es una bestia legendaria del norte helado, temida por su tamaño.",
+      "Su fuerza es máxima, y su liderazgo es de los más bajos.",
+      "Solo una cinta hecha de cosas imposibles logró atarlo, y solo un dios se animó a acercarse."
     ]
   },
   {
@@ -3909,6 +4649,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es un dios del Olimpo: gobernó el mundo antes que ellos, como titán.",
+      "Su bondad es su valor más bajo, muy lejos de su fuerza y su magia.",
+      "Una profecía sobre uno de sus hijos se cumplió tal como él más temía."
     ]
   },
   {
@@ -3971,6 +4716,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El hielo del norte nunca fue su hogar: su magia nació en tierra griega.",
+      "Su astucia es máxima, y su fuerza es una de las más bajas.",
+      "Sin su ingenio, la búsqueda de un objeto dorado jamás habría tenido éxito."
     ]
   },
   {
@@ -4033,6 +4783,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No gobierna desde el Olimpo: en el norte helado, cuida a quienes ya no viven.",
+      "Su magia es su punto más alto, muy por encima de su fuerza.",
+      "Recibe a quienes mueren de enfermedad o vejez, no en batalla, y les da un lugar justo."
     ]
   },
   {
@@ -4065,6 +4820,14 @@
         "porque": "Eneas es el puente entre dos mitologías: empieza como héroe troyano y termina como el antepasado legendario de los romanos. Su historia explica cómo un pueblo entero podía sentirse heredero directo de los héroes griegos.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "reina_cartago",
+        "titulo": "La reina de Cartago",
+        "texto": "Después de escapar de Troya en llamas, Eneas y su gente llegaron náufragos y agotados a las costas de África. Ahí gobernaba Dido, una reina que estaba construyendo desde cero una ciudad nueva: Cartago. En vez de rechazarlos, los recibió con generosidad, les dio comida, refugio y un lugar en su corte. Eneas podría haberse quedado para siempre en esa ciudad que crecía tan rápido y con tanta fuerza. Pero los dioses tenían otro destino para él: no fundar una ciudad ajena, sino la suya propia, muy lejos de ahí. La despedida fue el precio de un destino que no había elegido del todo.",
+        "porque": "Los romanos contaban este mito para explicar algo incómodo: a veces el deber pide dejar atrás algo bueno, incluso a alguien que te trató con generosidad total. Eneas no se va porque Cartago esté mal — se va porque su historia todavía no había terminado de escribirse, y esa historia estaba en otro lugar.",
+        "fuente": "vinculo:dido",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4095,6 +4858,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es griego ni nórdico: su pueblo nace de la caída de una ciudad en llamas.",
+      "Su valentía iguala a su liderazgo: son, los dos, lo más alto que tiene.",
+      "Cargó a su padre anciano sobre los hombros para escapar de una ciudad que ardía."
     ]
   },
   {
@@ -4127,6 +4895,14 @@
         "porque": "La historia de Edipo, en esta parte del mito, celebra el poder de una mente que no se rinde ante un problema difícil. Los griegos lo recordaban como el hombre cuyo ingenio abrió las puertas de una ciudad entera.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "acertijo_esfinge",
+        "titulo": "El acertijo de la Esfinge",
+        "texto": "En el camino a la ciudad de Tebas vivía una criatura que no dejaba pasar a nadie sin responder su acertijo: «¿Qué ser camina en cuatro patas de mañana, en dos al mediodía y en tres al atardecer?». Quien fallaba, no podía seguir. Muchos viajeros se habían quedado ahí, sin respuesta. Edipo escuchó el acertijo con calma y pensó en algo que nadie había pensado: no hablaba de un animal distinto en cada momento del día, hablaba de una sola vida entera. «El ser humano», respondió: «gatea de bebé, camina de adulto y usa un bastón de viejo». La Esfinge, vencida por primera vez, dejó el camino libre.",
+        "porque": "Los griegos amaban los acertijos que obligaban a pensar distinto, y este es de los más famosos de toda su mitología. Enseña que la respuesta correcta muchas veces no está en lo que la pregunta parece pedir a simple vista, sino en mirarla desde un ángulo que todavía nadie probó.",
+        "fuente": "vinculo:esfinge",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4157,6 +4933,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es hijo de dioses nórdicos: toda su leyenda transcurre bajo el cielo griego.",
+      "Su astucia es diez veces su magia.",
+      "Fue el único que respondió bien al acertijo que bloqueaba las puertas de una ciudad."
     ]
   },
   {
@@ -4189,6 +4970,14 @@
         "porque": "La frase «el rostro que lanzó mil barcos» resume cómo los griegos usaban a Helena para hablar de causas y consecuencias: un solo hecho, ampliado por el orgullo de los reyes, pudo desatar una guerra de diez años.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "promesa_afrodita",
+        "titulo": "La promesa de Afrodita",
+        "texto": "Todo empezó lejos de Helena, en una fiesta donde tres diosas se disputaban una manzana de oro. Afrodita, para ganar el favor de un príncipe llamado Paris, le prometió algo enorme: el amor de la mujer más hermosa del mundo. Esa mujer era Helena. Ella nunca pidió ser parte de esa promesa, ni votó en esa disputa, pero terminó siendo el centro de una decisión que no tomó. Cuando Paris llegó a buscarla, una cadena de decisiones ajenas —una manzana, un juicio, una promesa— se convirtió en la guerra más grande que los griegos contaron jamás, con Helena en el medio, sin haber elegido estar ahí.",
+        "porque": "Este mito sigue directamente la historia de la Manzana Dorada de Afrodita: una sola decisión, tomada en un instante por otras personas, puede convertir a alguien en el centro de algo enorme sin que haya elegido nada. Los griegos usaban a Helena para hablar de un peso muy humano: cargar con las consecuencias de decisiones que otros tomaron por una.'",
+        "fuente": "vinculo:afrodita",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4219,6 +5008,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es nórdica ni romana: pertenece al mundo griego, aunque nunca peleó una batalla.",
+      "Su astucia es seis veces su fuerza.",
+      "Por ella, dicen, zarparon mil barcos hacia una guerra de diez años."
     ]
   },
   {
@@ -4251,6 +5045,14 @@
         "porque": "Casandra es uno de los símbolos más potentes de la mitología griega: la experiencia de decir la verdad y que nadie la escuche. Hoy todavía se usa su nombre para hablar de advertencias reales que la gente prefiere no creer.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "don_precio",
+        "titulo": "El don y su precio",
+        "texto": "Apolo, dios de la profecía, quiso conquistar el corazón de Casandra y le regaló algo que ningún mortal tenía: la capacidad de ver el futuro con total claridad. Pero Casandra no le correspondió, y el don que ya le había dado no se podía deshacer del todo. Apolo, dolido, le dejó una condición cruel: seguiría viendo el futuro exacto, pero nadie —nunca, por más que ella insistiera— le iba a creer una sola palabra. Desde ese día, Casandra ve con claridad lo que va a pasar y lo dice en voz alta, mientras todos a su alrededor sacuden la cabeza y siguen de largo.",
+        "porque": "Los griegos usaban a Casandra para contar algo que les daba mucho miedo: saber la verdad y no tener manera de que te crean. Es un don que se parece a un castigo porque separa el conocimiento del poder de actuar sobre él — y esa distancia, para los antiguos, era una de las tragedias más silenciosas que existían.",
+        "fuente": "vinculo:apolo",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4281,6 +5083,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es nórdica: recibió de un dios el don de conocer lo que va a pasar.",
+      "Su astucia, su valentía y su magia son exactamente iguales.",
+      "Nadie le creyó jamás, aunque todo lo que anunciaba se cumplía tal cual."
     ]
   },
   {
@@ -4313,6 +5120,14 @@
         "porque": "Circe muestra que en los mitos griegos la magia no es solo un peligro: también puede ser sabiduría, si se sabe cómo acercarse a ella con respeto e inteligencia.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "maga_isla",
+        "titulo": "La maga de la isla",
+        "texto": "En su isla, Circe recibía a los marineros perdidos con un banquete espléndido... y una copa con hierbas mágicas que los transformaba en cerdos. Cuando Odiseo llegó con su tripulación, varios de sus hombres cayeron en la misma trampa. Pero Hermes le había dado a Odiseo una hierba protectora antes de bajar a tierra, y cuando Circe intentó su magia con él, no funcionó. Sorprendida —nadie había resistido su poder antes—, Circe reconoció a un igual: alguien tan astuto como ella. Negociaron como iguales, y ella devolvió a los marineros su forma humana, dejando que Odiseo y su gente se quedaran en la isla un tiempo, como huéspedes y no como prisioneros.",
+        "porque": "Circe no es una villana en este mito: es una maga que pone a prueba a quien llega a su isla, y respeta a quien logra superar esa prueba. Los griegos contaban esto para decir que el poder de verdad no está en dominar siempre, sino en reconocer cuándo alguien merece un trato de igual a igual.",
+        "fuente": "vinculo:odiseo",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4343,6 +5158,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es nórdica ni romana: su magia nació en tierra griega, lejos de cualquier trono.",
+      "Su astucia es exactamente el doble de su liderazgo.",
+      "Convirtió en animales a los marineros que llegaron a su isla, y después los devolvió a su forma."
     ]
   },
   {
@@ -4375,6 +5195,14 @@
         "porque": "La imagen de los gemelos amamantados por una loba se convirtió en el símbolo más famoso del origen de Roma: una ciudad que, según su propio mito fundador, nació de la supervivencia y no de la comodidad.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "estirpe_troyano",
+        "titulo": "La estirpe del troyano",
+        "texto": "Cuando Troya cayó en llamas, Eneas escapó cargando a su padre en la espalda y llevando de la mano a su hijo pequeño. Cruzó el mar durante años buscando la tierra que los dioses le habían prometido, hasta fundar en Italia el linaje del que, generaciones después, nacería Roma. Rómulo y Remo son parte de esa cadena: hijos de esa misma sangre troyana que un día tuvo que huir de una ciudad destruida. La ciudad más grande que conoció el mundo antiguo no nació de la nada: nació de la semilla de otra ciudad que ya no existía.",
+        "porque": "Los romanos amaban contar que su origen venía de una tragedia convertida en comienzo: Troya cae, pero de sus cenizas sale la estirpe que fundará Roma siglos después. Es la manera antigua de decir que ninguna historia empieza sola — siempre hay una causa más vieja detrás, aunque haya que cruzar generaciones para verla.",
+        "fuente": "vinculo:eneas",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4405,6 +5233,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No son de mitología griega ni nórdica: son dos hermanos criados lejos de cualquier palacio real.",
+      "Su liderazgo es nueve veces su magia.",
+      "De bebés los abandonaron junto a un río, y una loba los crió como si fueran suyos."
     ]
   },
   {
@@ -4437,6 +5270,14 @@
         "porque": "Agamenón muestra el costo del orgullo en el liderazgo: reunir a tantos héroes bajo un mismo mando fue una hazaña enorme, pero mantenerlos unidos costó mucho más de lo que él esperaba.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "ofensa_aquiles",
+        "titulo": "La ofensa",
+        "texto": "En el décimo año de la guerra de Troya, Agamenón, el rey que comandaba a todos los griegos, tomó una decisión que cambió el curso de la guerra: le quitó a Aquiles algo que le pertenecía por derecho, solo para demostrar quién mandaba. No midió el costo. Aquiles, el mejor guerrero del ejército, se retiró ofendido a su tienda y se negó a volver a pelear. Sin él, los griegos empezaron a perder terreno, y muchos pagaron con su vida la soberbia de un líder que priorizó su orgullo por encima de su ejército entero.",
+        "porque": "Este mito es la otra cara de El Costo de la Impulsividad de Aquiles: la misma ofensa, contada desde quien la causó. Los griegos lo usaban para advertir sobre un peligro real del liderazgo: un líder que humilla a su mejor gente para probar su autoridad no gana nada — pone en riesgo a todos los que dependen de él.",
+        "fuente": "vinculo:aquiles",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4467,6 +5308,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es un dios ni un monstruo: es un rey que logró unir a todos los demás reyes.",
+      "Su liderazgo es más del doble de su bondad.",
+      "Fue el único capaz de reunir a todos los reyes y héroes de Grecia bajo un solo mando."
     ]
   },
   {
@@ -4529,6 +5375,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es nórdico: es hijo de una diosa muy poderosa y nunca pelea con espada.",
+      "Su magia es más de cuatro veces su fuerza.",
+      "Se enamoró en secreto de una mortal: su historia tiene pruebas, curiosidad y un reencuentro final."
     ]
   },
   {
@@ -4591,6 +5442,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "No es griega ni nórdica: llegó exiliada a una costa lejana y ahí empezó de nuevo.",
+      "Su valentía iguala exactamente a su liderazgo.",
+      "Fundó una ciudad en el norte de África que se convirtió en una potencia del Mediterráneo."
     ]
   },
   {
@@ -4661,6 +5517,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Entre las princesas griegas, una debe su lugar en el cielo al valor de otro, no al propio.",
+      "Su valentía y su bondad están perfectamente empatadas, y ninguna otra virtud suya las alcanza.",
+      "Estuvo encadenada a una roca junto al mar hasta que un héroe alado la salvó del monstruo marino."
     ]
   },
   {
@@ -4723,6 +5584,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Entre las princesas griegas, una se volvió leyenda por recibir a un extraño, no por pelear.",
+      "Su bondad es la más alta de sus virtudes, y su magia la más baja de todas.",
+      "Encontró a un náufrago junto al mar mientras lavaba ropa, y lo llevó al palacio de su padre."
     ]
   },
   {
@@ -4785,6 +5651,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Entre las ninfas griegas, una retuvo durante años a un héroe que solo quería volver a casa.",
+      "Su magia es exactamente cuatro veces su fuerza.",
+      "Retuvo en su isla a un náufrago durante años, hasta que los propios dioses ordenaron dejarlo partir."
     ]
   },
   {
@@ -4847,6 +5718,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Entre las historias griegas de amor, hay una mortal que amó a un dios sin poder mirarlo nunca.",
+      "Su astucia es exactamente el triple de su fuerza.",
+      "Tuvo que cumplir pruebas imposibles después de romper la única promesa que le había pedido su amor invisible."
     ]
   },
   {
@@ -4909,6 +5785,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Entre las ninfas griegas, una eligió transformarse para siempre antes que dejarse alcanzar por un dios.",
+      "Su valentía iguala a su bondad, sus dos virtudes más altas.",
+      "Sus pies se volvieron raíces y sus brazos ramas para escapar por siempre de un dios enamorado."
     ]
   },
   {
@@ -4971,6 +5852,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Entre las ninfas griegas, una perdió su propia voz por hablar de más.",
+      "Su magia es la más alta de sus virtudes, y su fuerza, la más baja de todas.",
+      "Solo puede repetir las últimas palabras que escucha, ni siquiera para hablarle a quien ama."
     ]
   },
   {
@@ -5033,6 +5919,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Entre los mitos griegos de amor, hay un joven que jamás correspondió el afecto de nadie.",
+      "Su bondad es la más baja de sus virtudes, empatada con su liderazgo.",
+      "Se quedó mirando su propio reflejo en un estanque hasta que en ese lugar nació una flor."
     ]
   },
   {
@@ -5095,6 +5986,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Entre las guerreras del mito griego, una reina lideró a un pueblo legendario de mujeres en combate.",
+      "Su valentía toca el techo de la escala, y su magia, el piso.",
+      "Cruzó el mar al mando de guerreras para pelear en Troya del lado troyano."
     ]
   },
   {
@@ -5157,6 +6053,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "Entre los mitos griegos, un joven troyano quedó en el medio de una disputa de belleza entre diosas.",
+      "Su fuerza iguala a su valentía, y su magia es la más baja de todas.",
+      "La manzana de oro que entregó desató, sin quererlo, la guerra de Troya."
     ]
   },
   {
@@ -5189,6 +6090,14 @@
         "porque": "La Osa Mayor se ve todas las noches del año. Los griegos explicaban esa presencia constante con una guardiana que nunca deja de cuidar.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "vinculo_artemisa",
+        "titulo": "La compañera de caza",
+        "texto": "Calisto era una de las compañeras más cercanas de Artemisa, parte del grupo de cazadoras que recorría los bosques sin depender de nadie más. Compartían la misma vida salvaje, la misma libertad, el mismo respeto por los animales que cazaban solo lo necesario. Cuando la vida de Calisto cambió para siempre por decisiones que no fueron suyas, fue Zeus quien la puso entre las estrellas como la Osa Mayor, para que nunca se perdiera del todo. Artemisa, arriba en el monte, y Calisto, arriba en el cielo: dos formas distintas de quedarse para siempre en lo alto.",
+        "porque": "Los griegos explicaban así por qué la Osa Mayor nunca se esconde del cielo: era su manera de decir que algunas conexiones —como la de Calisto con su grupo de caza— dejan una marca tan fuerte que ni un cambio enorme logra borrarla del todo.",
+        "fuente": "vinculo:artemisa",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -5201,6 +6110,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Bifröst nunca formó parte de su cielo.",
+      "Su astucia es el doble de su liderazgo.",
+      "Un hechizo injusto la convirtió en la osa que vigila el cielo sin ponerse nunca."
     ]
   },
   {
@@ -5245,6 +6159,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Ragnarök nunca llegó hasta su reino.",
+      "Su astucia iguala a su liderazgo, y ambos duplican su fuerza.",
+      "Su orgullo la sentó para siempre en un trono que dibuja una W en el cielo."
     ]
   },
   {
@@ -5297,6 +6216,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Valhalla nunca lo reclamó como suyo.",
+      "Su fuerza es cuatro veces su magia.",
+      "Un cinturón de tres estrellas marca su lugar exacto en el cielo."
     ]
   },
   {
@@ -5341,6 +6265,11 @@
         ],
         "correcta": 0
       }
+    ],
+    "pistas_deduccion": [
+      "El Yggdrasil nunca fue parte de su historia.",
+      "Su bondad es el doble de su magia.",
+      "Uno era mortal y el otro no, hasta que decidieron compartir la misma inmortalidad para siempre."
     ]
   }
 ]

@@ -1,0 +1,154 @@
+/* Mundo de Mitos — hub shell. Reusa fuentes, variables y componentes de
+   estilos.css (botones, modales, --acento); acá solo el layout propio del
+   hub: header, tarjetas grandes de módulo, selector de perfiles. */
+
+.hub-pantalla {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-bottom: 90px;
+}
+
+.hub-header {
+  position: relative;
+  z-index: 1;
+  padding: 34px 18px 14px;
+  text-align: center;
+}
+
+.hub-titulo {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: .5px;
+  background: linear-gradient(90deg, #ffd867, #ff9e6b, #ffd867);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hub-contador {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 216, 103, .35);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-size: .88rem;
+}
+
+.hub-modulos {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+}
+
+.hub-modulo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(44, 34, 96, .9), rgba(25, 17, 66, .9));
+  border: 1.5px solid rgba(255, 216, 103, .35);
+  color: var(--texto);
+  text-decoration: none;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .35);
+  transition: transform .15s ease;
+}
+
+.hub-modulo:active { transform: scale(.98); }
+
+.hub-modulo-icono {
+  font-size: 2.2rem;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: rgba(255, 216, 103, .14);
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+
+.hub-modulo-texto { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
+.hub-modulo-texto strong { font-family: "Cinzel", serif; font-size: 1.12rem; letter-spacing: .3px; }
+.hub-modulo-progreso { font-size: .85rem; color: var(--texto-suave); }
+.hub-modulo-flecha { font-size: 1.6rem; color: rgba(255, 216, 103, .8); flex: none; }
+
+.hub-pie {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.hub-perfil-boton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: rgba(255, 255, 255, .1);
+  color: var(--texto);
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+/* ---------- Selector / gestión de perfiles ---------- */
+.perfiles-caja { text-align: center; }
+
+.perfiles-lista { display: flex; flex-direction: column; gap: 8px; margin: 14px 0 16px; }
+
+.perfil-fila {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.perfil-elegir {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1.5px solid rgba(255, 255, 255, .16);
+  background: rgba(255, 255, 255, .06);
+  border-radius: 16px;
+  padding: 10px 14px;
+  color: var(--texto);
+  text-align: left;
+}
+
+.perfil-fila--activo .perfil-elegir {
+  border-color: rgba(255, 216, 103, .6);
+  background: rgba(255, 216, 103, .12);
+}
+
+.perfil-avatar { font-size: 1.5rem; }
+.perfil-datos { display: flex; flex-direction: column; gap: 1px; }
+.perfil-datos span { font-size: .78rem; color: var(--texto-suave); }
+
+.perfil-borrar {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, .08);
+  color: rgba(253, 251, 255, .6);
+  font-size: 1rem;
+}
+
+#boton-nuevo-perfil, #boton-cerrar-perfiles { width: 100%; margin-top: 4px; }

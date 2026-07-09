@@ -3,89 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#241c4d">
-  <title>Héroes y Dioses — Cartas de Mitología</title>
+  <meta name="theme-color" content="#191142">
+  <title>Mundo de Mitos</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
   <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="hub.css">
 </head>
-<body>
+<body class="hub-body">
 
-  <header class="encabezado">
-    <div class="encabezado-titulo">
-      <h1>Héroes y Dioses</h1>
+  <div class="hub-pantalla">
+
+    <header class="hub-header">
+      <h1 class="hub-titulo">Mundo de Mitos</h1>
       <span class="ornamento-header" aria-hidden="true"><i></i><span>⚡</span><i></i></span>
-      <p class="subtitulo">Tu colección de mitología</p>
-    </div>
-    <p class="contador" id="contador" aria-live="polite"></p>
-  </header>
+      <p class="hub-contador" id="hub-contador" aria-live="polite">Cargando tu progreso…</p>
+    </header>
 
-  <a class="banner-modulo" id="banner-cielo" href="cielo.html">
-    <span class="banner-modulo-icono" aria-hidden="true">🌌</span>
-    <span class="banner-modulo-texto">
-      <strong>El Cielo de los Mitos</strong>
-      <span id="banner-cielo-progreso">Uní constelaciones y encendé historias</span>
-    </span>
-    <span class="banner-modulo-flecha" aria-hidden="true">›</span>
-  </a>
+    <section class="hub-modulos" id="hub-modulos" aria-label="Módulos del juego"></section>
 
-  <nav class="controles" aria-label="Filtros de la colección">
-    <div class="filtros" role="group" aria-label="Filtrar por mitología">
-      <button class="chip activo" data-filtro="todas">Todas</button>
-      <button class="chip" data-filtro="griega">🏛️ Griega</button>
-      <button class="chip" data-filtro="nordica">⚡ Nórdica</button>
-      <button class="chip" data-filtro="romana">🦅 Romana</button>
-    </div>
-    <input type="search" id="buscador" class="buscador" placeholder="Buscar un héroe..."
-      aria-label="Buscar por nombre (solo encuentra cartas desbloqueadas)">
-  </nav>
+    <footer class="hub-pie">
+      <button class="hub-perfil-boton" id="hub-boton-perfil" aria-label="Cambiar de perfil">
+        <span aria-hidden="true">👤</span> <span id="hub-perfil-nombre">Feli</span>
+      </button>
+      <button class="boton-config" id="boton-config-hub" aria-label="Opciones" title="Opciones">⚙️</button>
+    </footer>
 
-  <main>
-    <p class="mensaje-vacio oculto" id="mensaje-vacio">No encontré ningún héroe con ese nombre... ¿será que todavía no lo desbloqueaste? 🔍</p>
-    <section class="galeria" id="galeria" aria-label="Galería de cartas"></section>
-  </main>
-
-  <footer class="pie">
-    <button class="boton-config" id="boton-config" aria-label="Opciones" title="Opciones">⚙️</button>
-  </footer>
-
-  <!-- Vista de detalle de carta -->
-  <div class="detalle-fondo oculto" id="detalle" role="dialog" aria-modal="true" aria-labelledby="detalle-nombre">
-    <article class="detalle-carta" id="detalle-carta">
-      <i class="esquina esquina-tl" aria-hidden="true"></i>
-      <i class="esquina esquina-tr" aria-hidden="true"></i>
-      <i class="esquina esquina-bl" aria-hidden="true"></i>
-      <i class="esquina esquina-br" aria-hidden="true"></i>
-      <button class="boton-volver" id="boton-volver">← Volver</button>
-      <div class="detalle-contenido" id="detalle-contenido"></div>
-    </article>
   </div>
 
-  <!-- Niebla del Oráculo: descubrir una carta nueva -->
-  <div class="detalle-fondo oraculo-fondo oculto" id="oraculo" role="dialog" aria-modal="true" aria-label="Consultar al Oráculo">
-    <div class="oraculo-escena" id="oraculo-escena"></div>
-  </div>
-
-  <!-- Modal de pregunta para desbloquear -->
-  <div class="detalle-fondo oculto" id="modal-pregunta" role="dialog" aria-modal="true" aria-labelledby="pregunta-titulo">
-    <div class="pregunta-caja" id="pregunta-caja">
-      <h2 id="pregunta-titulo">🗝️ Carta misteriosa</h2>
-      <div id="pregunta-contenido"></div>
+  <!-- Selector / gestión de perfiles -->
+  <div class="detalle-fondo oculto" id="modal-perfiles" role="dialog" aria-modal="true">
+    <div class="pregunta-caja perfiles-caja">
+      <h2>¿Quién juega?</h2>
+      <div class="perfiles-lista" id="perfiles-lista"></div>
+      <button class="boton-secundario" id="boton-nuevo-perfil">+ Nuevo perfil</button>
+      <button class="boton-principal oculto" id="boton-cerrar-perfiles">Listo</button>
     </div>
   </div>
 
-  <!-- Menú de opciones (para Willy) -->
+  <!-- Opciones (para Willy) -->
   <div class="detalle-fondo oculto" id="modal-config" role="dialog" aria-modal="true">
     <div class="pregunta-caja config-caja">
       <h2>Opciones</h2>
       <p class="config-nota">Zona para personas grandes 🧑‍🔧</p>
       <button class="boton-secundario" id="boton-sonido">🔊 Sonido activado</button>
-      <button class="boton-secundario" id="boton-reset">Reiniciar la colección</button>
+      <button class="boton-secundario" id="boton-perfiles-config">👤 Gestionar perfiles</button>
+      <button class="boton-secundario" id="boton-reset">Reiniciar este perfil</button>
       <button class="boton-principal" id="boton-cerrar-config">Cerrar</button>
     </div>
   </div>
 
-  <script src="iconos.js"></script>
   <script src="nucleo.js"></script>
-  <script src="app.js"></script>
+  <script src="hub.js"></script>
 </body>
 </html>
