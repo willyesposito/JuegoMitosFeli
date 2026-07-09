@@ -155,6 +155,14 @@ function configurarOpciones() {
     modal.classList.add("oculto");
     abrirModalPerfiles();
   });
+  document.getElementById("boton-mazo-curado").addEventListener("click", () => {
+    if (confirm("¿Cargar el mazo inicial curado en este perfil?")) {
+      const sumadas = cargarMazoCurado();
+      modal.classList.add("oculto");
+      actualizarTodo();
+      alert(sumadas ? `Se sumaron ${sumadas} cartas.` : "Este perfil ya tenía todo el mazo curado.");
+    }
+  });
   document.getElementById("boton-reset").addEventListener("click", () => {
     if (confirm("¿Seguro? Se pierde todo el progreso de este perfil.")) {
       reiniciarPerfilActivo();

@@ -8,11 +8,11 @@ const CLAVE_GUARDADO = "feli-mitos-v2";
 const CLAVE_VIEJA_V1 = "feli-cartas-v1";
 const MAX_PERFILES = 5;
 
-/* Mazo inicial curado por Willy: la lista con la que arranca la colección
-   (ver Documentacion/sesion_actual.md, que es su versión legible). Crece a
-   medida que Willy indica a quién sumar. Un perfil nuevo (dispositivo nuevo,
-   localStorage limpio, o "Reiniciar la colección" en Opciones) arranca
-   exactamente con estos. */
+/* Mazo inicial curado por Willy (ver Documentacion/sesion_actual.md, que es
+   su versión legible). Ya no se aplica solo: un perfil nuevo o recién
+   reiniciado arranca en 0 cartas. Esta lista se carga a mano desde Opciones
+   → "Cargar mazo inicial curado" (cargarMazoCurado), para cuando Willy
+   decida usarla. */
 const DESBLOQUEADAS_INICIALES = [
   "teseo", "heracles", "penelope", "atlas", "odiseo", "atenea", "perseo", "dedalo",
   "zeus", "hera", "poseidon", "hades", "demeter", "persefone", "hestia", "apolo",
@@ -81,8 +81,7 @@ let estado = null;  // atajo: datos.perfiles[datos.perfilActivo]
 /* ---------- Perfiles (spec funcional §0.1: hasta 5 slots) ---------- */
 
 function perfilNuevo(nombre) {
-  const global = { descubiertos: [...DESBLOQUEADAS_INICIALES], capitulos: {}, completas: [], logros: [] };
-  for (const id of global.descubiertos) global.capitulos[id] = ["base"];
+  const global = { descubiertos: [], capitulos: {}, completas: [], logros: [] };
   return {
     nombre: nombre || "Feli",
     creado: new Date().toISOString().slice(0, 10),
@@ -162,6 +161,20 @@ function reiniciarPerfilActivo() {
   datos.perfiles[datos.perfilActivo] = perfilNuevo(estado.nombre);
   estado = datos.perfiles[datos.perfilActivo];
   guardarEstado();
+}
+
+/* Acción manual desde Opciones: suma el mazo curado de Willy al perfil
+   activo sin pisar progreso existente. Devuelve cuántas cartas sumó. */
+function cargarMazoCurado() {
+  let sumadas = 0;
+  for (const id of DESBLOQUEADAS_INICIALES) {
+    if (estado.global.descubiertos.includes(id)) continue;
+    estado.global.descubiertos.push(id);
+    if (!estado.global.capitulos[id]) estado.global.capitulos[id] = ["base"];
+    sumadas++;
+  }
+  guardarEstado();
+  return sumadas;
 }
 
 /* ---------- Persistencia y migración ---------- */
