@@ -1,7 +1,7 @@
 /* Service worker: deja el juego disponible offline una vez cargado.
    Al cambiar cualquier archivo, subir la versión para que se actualice la caché. */
 
-const VERSION = "feli-mitos-v3.0.3";
+const VERSION = "feli-mitos-v3.0.4";
 const ARCHIVOS = [
   "./",
   "index.html",
@@ -20,6 +20,7 @@ const ARCHIVOS = [
   "cielo.html",
   "cielo.css",
   "cielo.js",
+  "motor-trazado.js",
   "constelaciones.json",
   "fonts/cinzel-700.woff2",
   "fonts/cinzel-800.woff2"
