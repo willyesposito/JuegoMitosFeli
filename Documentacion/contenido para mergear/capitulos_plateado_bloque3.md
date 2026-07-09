@@ -1,3 +1,5 @@
+> **Archivo histórico (julio 2026):** los capítulos de este documento ya están mergeados en `personajes.json` (ver `roster_personajes_v3.md` para el estado real de publicación de cada uno). Se conserva como referencia. La sección "Relaciones (espejo)" sigue vigente como contenido de referencia — esos pares todavía no se cargaron al campo `espejo` de `personajes.json`, es insumo pendiente para Ola 2.
+
 # Arquitectura Narrativa: Tier Plateado (Bloque 3 - Panteón y Vínculos Familiares)
 
 **Objetivo Cognitivo:** Gestión de sistemas de seguridad y sus puntos ciegos, transferencia de conocimiento, decisiones bajo información incompleta, compatibilidad de sistemas, y el límite entre logro y sobreestimación.

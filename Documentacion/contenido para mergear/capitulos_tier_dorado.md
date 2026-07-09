@@ -1,3 +1,5 @@
+> **Archivo histórico (julio 2026):** todo el contenido de este documento ya está mergeado en `personajes.json` (ver `roster_personajes_v3.md` para el estado real de publicación de cada capítulo). Se conserva como referencia de cómo se escribió el contenido, no como lista de tareas pendientes.
+
 # Arquitectura Narrativa: Tier Dorado — Consolidado
 
 **Objetivo Cognitivo:** Resolución de problemas mediante lógica paramétrica, física, ética de sistemas y gestión de recursos. Reducción de la violencia explícita a través del análisis antropológico y causal.

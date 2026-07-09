@@ -26,7 +26,7 @@ Vanilla JS + HTML + CSS, como está el repo. No migrar a React: el MVP funciona 
 - Cada juego es un **módulo autocontenido**: su carpeta/archivo, su UI, y un objeto de registro (`id`, `nombre`, `icono`, `descripcion`, `progreso()`) que el hub consume. Agregar un juego = agregar un módulo y registrarlo, sin tocar los demás.
 - Los módulos no dan solo cartas: dan **capítulos de historia** a personajes concretos (ver contrato de datos).
 - **Fuente de datos única:** `personajes.json` (más datos propios de cada módulo, como `constelaciones.json`).
-- **Estado único versionado en localStorage:** target de diseño es la key `feli-mitos-v2` con soporte de hasta 5 perfiles de partida (ver spec funcional §0.1). **Estado real de la implementación (julio 2026): todavía no se construyeron los perfiles.** `nucleo.js` sigue usando la key plana `feli-cartas-v1` (un solo perfil implícito, `estado.desbloqueadas` / `estado.capitulosEncendidos` / `estado.cielo` / `estado.celebrados`). Los módulos (Colección, El Cielo de los Mitos) ya leen y escriben ese estado compartido correctamente; lo que falta es envolverlo en el sistema de perfiles cuando se construya el hub shell. Cuando eso pase, la migración de `feli-cartas-v1` a perfiles debe ser automática y sin pérdida de progreso.
+- **Estado único versionado en localStorage:** key `feli-mitos-v2`, con soporte de hasta 5 perfiles de partida (ver spec funcional §0.1). **Estado real de la implementación (julio 2026, Ola 1 cerrada): construido.** `nucleo.js` usa `CLAVE_GUARDADO = "feli-mitos-v2"` con `MAX_PERFILES = 5` y migra automáticamente y sin pérdida de progreso desde la key vieja `feli-cartas-v1` (perfil único) y desde formatos v2 previos sin perfiles. El hub (`index.html`/`hub.js`) tiene selector de perfiles. Los módulos (Colección, Oráculo, El Cielo de los Mitos) leen y escriben ese estado compartido correctamente.
 - Botón de reset y utilidades de Willy en un menú discreto (ya existe).
 
 ## Regla de despliegue de contenido nuevo (misiones, módulos, capítulos)
@@ -87,8 +87,8 @@ Además de los existentes (id, nombre, mitologia, titulo, dones, historia, porqu
 
 **El roadmap por olas vive en `olas_y_fuentes_de_capitulos.md`.** Ese documento es la fuente de verdad: define qué módulo entra en qué ola, todos los formatos de `fuente` de capítulo (incluidos los nuevos: `vinculo:`, `mapa:`, `espejo:`, `reliquia:`, `encrucijada:`), y el presupuesto de capítulos que garantiza que cada tier pueda completarse. Léelo antes de planificar cualquier módulo nuevo — resume así (julio 2026):
 
-- **Ola 1** (en curso): Hub + Perfiles + Colección + Oráculo (2 modos) + El Cielo de los Mitos (ya publicado) + Sets latentes + **Vínculos entre personajes** (nuevo, `vinculo:`).
-- **Ola 2:** Mapa del Héroe (`mapa:`) + Espejo de los Mundos (`espejo:`) + Ordená el Mito (`ordena:`).
+- **Ola 1** (cerrada, julio 2026): Hub + Perfiles + Colección + Oráculo (2 modos) + El Cielo de los Mitos (publicado) + Sets latentes + Vínculos entre personajes (`vinculo:`). El mergeo de contenido de los 13 dorados y 37 plateados también quedó cerrado — ver `roster_personajes_v3.md` para el detalle de qué está publicado y qué está en borrador esperando revisión de Willy.
+- **Ola 2** (en construcción): Mapa del Héroe (`mapa:`) + Espejo de los Mundos (`espejo:`) + Ordená el Mito (`ordena:`). El motor de trazado SVG de El Cielo de los Mitos se está desacoplando de `cielo.js` a un módulo reutilizable para que el Mapa del Héroe lo reuse, en vez de duplicar la lógica de trazado.
 - **Ola 3:** Las Reliquias (`reliquia:`) + La Encrucijada (`encrucijada:`). Reemplazan a "Crisis del Mundo Antiguo" y al viejo "Desafío del Héroe" (descartado).
 - **Ola 4:** sin cambios — escritura propia de capítulos + taller de creación de personajes.
 
@@ -109,6 +109,7 @@ Cada ola está terminada cuando Feli la usó sola, entendió las reglas sin que 
 - `cielo.html` / `cielo.js` / `cielo.css`: módulo El Cielo de los Mitos. Construido y publicado.
 - `personajes.json`: los 85 personajes del roster activo — datos y contenido en vivo.
 - `constelaciones.json`: las 10 constelaciones de El Cielo de los Mitos.
+- `datos_ola1.json`: contenido de sets temáticos latentes (los "superPorques" que se revelan al completar un set).
 - `iconos.js`: ilustraciones SVG generadas en código.
 - `sw.js`: service worker (offline). Subir `VERSION` en cada deploy real.
 - `fonts/`: Cinzel en `.woff2`, servida local.
@@ -121,7 +122,7 @@ Los archivos de código y datos viven en la **raíz** (así el juego corre y coi
 - `Documentacion/roster_personajes_v3.md`: master del roster — composición, tiers, y estado de producción de cada capítulo (diseñado / escrito sin mergear / publicado). Es el mapa de qué falta hacer.
 - `Documentacion/roster_personajes.md` (v1): fichas individuales heredadas (dones, historia, ¿por qué?, atributos) — siguen siendo la fuente para los personajes que no se tocaron en v2/v3.
 - `Documentacion/spec_funcional.md`: spec del hub, formato de carta, perfiles de partida y módulos.
-- `Documentacion/sesion_actual.md`: **el mazo inicial curado por Willy** — la lista de héroes con la que arranca la colección. Se mantiene en sincronía con `DESBLOQUEADAS_INICIALES` en `nucleo.js`; crece a medida que Willy indica a quién sumar. Como hay botón de "Reiniciar la colección", esta lista se cura a mano sin miedo a perder progreso.
+- `Documentacion/sesion_actual.md`: **el mazo inicial curado por Willy** — la lista de héroes de referencia, sincronizada con `DESBLOQUEADAS_INICIALES` en `nucleo.js`. Desde julio 2026 (cierre de Ola 1) ya no se aplica sola: un perfil nuevo o recién reiniciado arranca en 0 cartas, y esta lista se carga a mano desde Opciones → "Cargar mazo inicial curado" (`cargarMazoCurado()`), para cuando Willy decida usarla.
 - `Documentacion/contenido para mergear/`: texto de capítulos ya escrito pero todavía no volcado al JSON. `capitulos_tier_dorado.md` (8 capítulos de dorados), `capitulos_plateado_bloque3.md` (13 de plateados + tabla de relaciones `espejo`), e `Info Personajes.txt` (bloques plateado 1-2: Dédalo, Prometeo, Hermes, Artemisa, Tyr, Freya, Apolo, Perséfone, Orfeo, Sigurd, Heimdall — su bloque dorado quedó superado por `capitulos_tier_dorado.md`, no usar esa parte).
 - `Documentacion/mockups visuales/`: `Cartas y Animaciones.dc.html` y `Referencia Visual - Mundo de Mitos.html` — mockups de referencia. La mayor parte ya está implementada; quedan como referencia viva para ajustes finos.
 
