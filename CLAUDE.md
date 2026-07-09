@@ -100,6 +100,10 @@ Además de los existentes (id, nombre, mitologia, titulo, dones, historia, porqu
 
 Cada ola está terminada cuando Feli la usó sola, entendió las reglas sin que se las expliquen dos veces, y volvió por decisión propia. No cuando compila.
 
+## Flujo de PRs con Claude Code
+
+Willy no quiere revisar cada PR a mano: cuando el trabajo de una sesión esté listo (commits hechos, sin romper la regla de despliegue de contenido de este documento), subí la rama y **mergeá el PR directo**, sin dejarlo esperando aprobación suya ni pedirle que lo revise primero. Esto no cambia la regla de publicar contenido (`estado: "borrador"` → `"publicado"` sigue necesitando instrucción textual de Willy en la conversación) ni habilita acciones destructivas (force-push, borrar ramas, etc.) — es específico a cerrar el ciclo normal de "hice cambios → PR → merge".
+
 ## Archivos del proyecto
 
 **Código y datos en vivo** (el juego real; espejo de lo que está en GitHub):
