@@ -1,8 +1,8 @@
-# 🏆 Mazo inicial de Feli — con qué arranca la colección
+# 🏆 Mazo inicial curado — para cargar a mano desde Opciones
 
-**Este archivo es la lista de héroes con la que empieza la colección.** Es lo que Willy dicta: crece a medida que él va diciendo a quién sumar. `DESBLOQUEADAS_INICIALES` en `nucleo.js` refleja exactamente esta lista, así que un dispositivo nuevo (o el botón "Reiniciar la colección" en Opciones) arranca justo con estos, no de cero ni con un mazo viejo. Como siempre se puede reiniciar, no hay problema en curar esta lista a mano.
+**Este archivo es la lista de héroes del mazo curado por Willy.** Crece a medida que él va diciendo a quién sumar, y `DESBLOQUEADAS_INICIALES` en `nucleo.js` refleja exactamente esta lista. Un perfil nuevo o recién reiniciado arranca en **0 cartas**: este mazo ya no se aplica solo — se carga a mano con el botón "Cargar mazo inicial curado" en Opciones (`cargarMazoCurado()` en `nucleo.js`), para cuando Willy decida usarlo.
 
-**Progreso inicial: 34 de 85 héroes desbloqueados**
+**Tamaño del mazo curado: 34 de 85 héroes**
 
 ## 🏛️ Mitología Griega
 - **Teseo** — ⭐ Dorado
