@@ -1,3 +1,5 @@
+> Archivo histórico (julio 2026): el bloque plateado (Dédalo, Prometeo, Hermes, Artemisa, Tyr, Freya, Apolo, Perséfone, Orfeo, Sigurd, Heimdall) ya está mergeado en personajes.json (ver roster_personajes_v3.md). El bloque dorado de este archivo está superado por capitulos_tier_dorado.md — no usar esa parte, ver nota en CLAUDE.md.
+
 # Arquitectura Narrativa: Tier Dorado (Fase de Cierre)
 
 **Objetivo Cognitivo:** Resolución de problemas mediante lógica paramétrica, física, ética de sistemas y gestión de recursos. Reducción de la violencia explícita a través del análisis antropológico y causal[cite: 2].
