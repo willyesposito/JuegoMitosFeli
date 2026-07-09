@@ -4619,6 +4619,14 @@
         "porque": "El mito de Cronos habla del miedo a ser reemplazado y de cómo ese miedo, cuando maneja las decisiones de alguien, termina provocando exactamente lo que se quería evitar. Los griegos también lo usaban para explicar el paso de una generación de dioses a la siguiente.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "titanomaquia",
+        "titulo": "La guerra que no evitó nada",
+        "texto": "Cuanto más se acercaba el momento que la profecía anunciaba, más se aferraba Cronos al trono. Reunió a los titanes y libró una guerra enorme —la Titanomaquia— contra los dioses jóvenes que crecían para reemplazarlo, un conflicto que sacudió cielo y tierra durante diez años. Puso en esa guerra toda su fuerza y toda su magia para no perder el poder. Pero al final la batalla la ganaron Zeus y sus hermanos, y Cronos perdió el trono de todas formas — exactamente lo que había querido evitar.",
+        "porque": "Cronos no cayó por sorpresa: cayó peleando con todo lo que tenía contra lo que más temía. El mito muestra que el esfuerzo puesto en evitar un cambio a la fuerza no lo detiene — muchas veces es ese mismo esfuerzo el que termina provocando la caída.",
+        "fuente": "ordena:titanomaquia",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4686,6 +4694,14 @@
         "porque": "Medea muestra que las grandes hazañas de los mitos rara vez dependen de una sola persona: detrás de Jasón, la verdadera estratega era ella. Los griegos reconocían su inteligencia, aunque su historia después se volviera más compleja.",
         "fuente": "descubrimiento",
         "estado": "publicado"
+      },
+      {
+        "id": "dragon_dormido",
+        "titulo": "El dragón que nunca dormía",
+        "texto": "El vellocino de oro colgaba de un árbol custodiado por un dragón que jamás cerraba los ojos. Ningún guerrero podía vencerlo peleando. Medea, que conocía las hierbas y sus efectos desde niña, preparó una pócima especial y se la dio a beber al dragón hasta dormirlo por primera vez en su vida. Mientras dormía, Jasón pudo acercarse y tomar el vellocino sin que nadie tuviera que pelear.",
+        "porque": "La solución de Medea no fue la fuerza, fue el conocimiento: entender cómo funciona algo —una planta, un veneno, un cuerpo— puede resolver un problema que ninguna espada resolvería. Los griegos admiraban esa clase de inteligencia tanto como el coraje en batalla.",
+        "fuente": "ordena:dragon_dormido",
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4752,6 +4768,14 @@
         "texto": "Hel es quien administra uno de los reinos de los muertos en la mitología nórdica, destinado a quienes no caen en batalla. A diferencia de lo que se podría pensar, no es un ser cruel: gobierna su territorio con reglas claras y cuida que cada uno tenga su lugar, muy parecido a como Hades organiza el suyo en la mitología griega. Vive en un salón propio, lejos de Asgard, y cumple su tarea con seriedad.",
         "porque": "Hel es el espejo nórdico de Hades: los nórdicos tampoco la imaginaban como una villana, sino como la guardiana ordenada de un reino que tenía que existir. Cada mitología necesitaba a alguien a cargo de ese territorio.",
         "fuente": "descubrimiento",
+        "estado": "publicado"
+      },
+      {
+        "id": "condicion_justa",
+        "titulo": "La única condición",
+        "texto": "Cuando Balder murió, Asgard entero quedó de luto. Hel dijo que lo dejaría volver con una sola condición: que absolutamente todo en el mundo llorara por él —cada persona, cada animal, cada piedra. Se mandaron mensajeros a comprobarlo, y casi todo el mundo lloró. Pero una sola giganta se negó a derramar una lágrima. Por esa única excepción, la condición no se cumplió del todo, y Hel, fiel a su palabra, no dejó ir a Balder.",
+        "porque": "Hel no cambió la regla ni hizo una excepción, ni siquiera para calmar el dolor de todo un mundo. Administrar un sistema con justicia significa aplicar la misma regla para todos, sin favoritismos — incluso cuando la respuesta que da duele.",
+        "fuente": "vinculo:balder",
         "estado": "publicado"
       }
     ],
