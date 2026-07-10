@@ -2,7 +2,7 @@
 
 ## Qué es
 
-Hub web de mini-juegos de mitología griega y nórdica para Felicitas (7 años, edad mental ~11, lectora fuerte, perfil AACC). Evolución del MVP de colección de cartas ya construido en este repo. La colección dejó de ser "la app": es el primer módulo de un mundo con varios juegos que comparten universo, datos y progreso.
+Hub web de mini-juegos de mitología griega y nórdica para Feli, lectora fuerte que disfruta los desafíos y entender el porqué de cada mito. La exigencia del juego se piensa en tres modos de dificultad —fácil, normal y difícil— para que los retos escalen sin cambiar el contenido. Evolución del MVP de colección de cartas ya construido en este repo. La colección dejó de ser "la app": es el primer módulo de un mundo con varios juegos que comparten universo, datos y progreso.
 
 Principio de diseño, no negociable: a Feli le gusta **leer historias** y entender el **porqué** de cada mito. Toda mecánica tiene que alimentar eso. Suavizar contenido nunca significa infantilizar: se preserva la estructura y el peso de la historia, se quita el detalle crudo.
 
@@ -54,6 +54,13 @@ El sello de **"Historia completa"** aparece en TODA carta completada, sin import
 
 Los capítulos los aporta el juego, no la usuaria. La escritura propia (que ella escriba capítulos) queda fuera de alcance por ahora; vuelve como fase muy posterior si se decide.
 
+## Dificultad por partida (fácil / normal / difícil)
+
+- Cada perfil de partida tiene un campo `dificultad` (`"facil"` | `"normal"` | `"dificil"`) que se elige **una sola vez, al crear la partida**, y **no se puede cambiar dentro de ella**: para jugar en otra dificultad se crea otro perfil. No hay UI de edición y `nucleo.js` no expone setter — eso es deliberado, no un faltante.
+- `nucleo.js` es el dueño del dato: `perfilNuevo()`/`crearPerfil()` lo reciben, `normalizarPerfil()` lo preserva (los perfiles anteriores a este sistema migran a `"normal"` sin perder nada), `reiniciarPerfilActivo()` lo conserva (reiniciar no es una puerta trasera para cambiarlo), y los módulos lo leen únicamente vía `dificultadActual()`.
+- Regla para módulos: la dificultad ajusta la **exigencia** (pistas, intentos, feedback, ayudas), nunca el contenido ni el acceso. En cualquier dificultad jugar siempre suma historia (regla de oro).
+- Mapeo vigente: **Oráculo** — partida fácil = solo modo fácil (toggle oculto); normal = los dos modos elegibles por consulta, como siempre; difícil = solo modo difícil (fallar no bloquea el descubrimiento, solo se pierde la versión especial del capítulo). Los demás módulos todavía no ajustan reglas por dificultad: cuando uno lo haga, su mapeo se documenta acá.
+
 ## Descubrimiento de cartas — Oráculo fácil + modo difícil
 
 - **Oráculo (por defecto, fácil):** carta del día casi regalada. Una pista, un tap, la tenés. Objetivo: que junte un mazo grande en pocos días y pase rápido a enriquecer historias.
@@ -82,6 +89,10 @@ Además de los existentes (id, nombre, mitologia, titulo, dones, historia, porqu
    - Hel: equilibrio y administración del inframundo, misma línea de encuadre que Hades; sin tono tenebroso.
    Ninguna ficha ni capítulo de estos tres lleva detalle crudo del mito original. Sus fichas completas las valida Willy antes de entrar al JSON.
 6. **Cantidad de capítulos por tier:** dorado 3-5, plateado 2-4, normal 1-3 (tope subido +1 en julio 2026 para que los capítulos de `mapa:` sumen sin desplazar los que ya había — el piso de cada tier no cambió, solo el techo). Un personaje no se considera terminado en su tier hasta tener sus capítulos diseñados dentro del rango. Cualquier ascenso de tier futuro exige primero completar los capítulos del rango nuevo.
+
+## Regla de privacidad (repo público, NO negociable)
+
+Este repositorio es público. Prohibido escribir en cualquier archivo, commit, PR o issue: nombres reales completos, edades, fechas de nacimiento, escuela, ubicación, o cualquier etiqueta diagnóstica / de perfil cognitivo de la usuaria o de su familia (decisión julio 2026, que además eliminó los que había). El público objetivo se describe únicamente en términos funcionales de diseño (por ejemplo "lectora fuerte") y de modos de dificultad (fácil / normal / difícil), nunca de datos personales. Si Willy pega en una conversación un dato de este tipo como contexto, usarlo para razonar está bien; volcarlo al repo, no.
 
 ## Roadmap por olas
 

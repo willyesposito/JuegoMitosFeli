@@ -40,6 +40,19 @@
     </div>
   </div>
 
+  <!-- Elección de dificultad al crear un perfil. Vale para toda la partida:
+       no hay UI para cambiarla después (CLAUDE.md "Dificultad por partida"). -->
+  <div class="detalle-fondo oculto" id="modal-dificultad" role="dialog" aria-modal="true">
+    <div class="pregunta-caja dificultad-caja">
+      <h2>¿Qué tan difícil?</h2>
+      <p class="dificultad-nota">Vale para toda la partida. Para jugar en otra dificultad, después creá otro perfil.</p>
+      <button class="boton-secundario dificultad-opcion" data-dificultad="facil">🌱 Fácil<span>Pistas generosas, desafíos suaves</span></button>
+      <button class="boton-secundario dificultad-opcion" data-dificultad="normal">⭐ Normal<span>El equilibrio de siempre: el reto se elige en cada módulo</span></button>
+      <button class="boton-secundario dificultad-opcion" data-dificultad="dificil">🔥 Difícil<span>Deducción completa y desafíos exigentes</span></button>
+      <button class="boton-principal" id="boton-cancelar-dificultad">Cancelar</button>
+    </div>
+  </div>
+
   <!-- Opciones (para Willy) -->
   <div class="detalle-fondo oculto" id="modal-config" role="dialog" aria-modal="true">
     <div class="pregunta-caja config-caja">

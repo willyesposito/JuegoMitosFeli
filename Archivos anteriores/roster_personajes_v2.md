@@ -3,14 +3,14 @@
 ## 1. Resumen Ejecutivo
 * **Total de Cartas:** 70
 * **Distribución:** 20% Nórdicos (14 cartas), 80% Griegos (56 cartas)
-* **Público Objetivo:** AACC (Altas Capacidades), 7 años. Enfoque en deducción, conexiones causales y lectura comprensiva.
+* **Público Objetivo:** lectoras fuertes, con tres modos de dificultad (fácil, normal y difícil). Enfoque en deducción, conexiones causales y lectura comprensiva.
 
 ## 2. Consideraciones para la Programación (JSON y UI)
 * **Estructura del JSON (`personajes.json`):** * Cada personaje debe ser un objeto.
   * Los personajes de Tier Dorado/Plateado que absorbieron historias de entidades menores (ej. Ulises absorbe al Cíclope y a los Lotófagos) deben contener un array `capitulos_desbloqueables`.
 * **Estado Guardado (`localStorage`):** * Guardar el progreso por `id_personaje` para persistencia local. 
   * Formato sugerido: `{"id": "ulises", "capitulos_completados": [1, 2], "tier_actual": "dorado"}`
-* **UI/UX para AACC y TDAH:** * Para evitar sobrecarga cognitiva o dispersión visual en dispositivos móviles, las cartas de Tier Dorado no deben mostrar toda la densidad textual de golpe. 
+* **UI/UX para foco y legibilidad:** * Para evitar sobrecarga cognitiva o dispersión visual en dispositivos móviles, las cartas de Tier Dorado no deben mostrar toda la densidad textual de golpe. 
   * Implementar un sistema de acordeón (HTML/CSS) o pestañas de navegación horizontal para transicionar entre capítulos.
 
 ## 3. Listado Oficial - Mitología Nórdica (14 Cartas - 20%)
