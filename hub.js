@@ -34,6 +34,19 @@ const MODULOS = [
         return publicadas.length ? `${completadas} de ${publicadas.length} constelaciones` : "Descubrí héroes para desbloquear constelaciones";
       } catch (e) { return "Uní las estrellas y encendé historias"; }
     }
+  },
+  {
+    id: "mapa", nombre: "El Mapa del Héroe", icono: "🗺️", href: "mapa.html",
+    descripcion: "Seguí el viaje y encendé historias",
+    async progreso() {
+      try {
+        const todos = await (await fetch("viajes.json")).json();
+        const publicados = todos.filter(v => v.estado === "publicado" && estaDesbloqueada(v.personajeAsociado));
+        const completados = (estado.mapa && Array.isArray(estado.mapa.completados))
+          ? estado.mapa.completados.filter(id => publicados.some(v => v.id === id)).length : 0;
+        return publicados.length ? `${completados} de ${publicados.length} viajes` : "Descubrí héroes para desbloquear viajes";
+      } catch (e) { return "Seguí el viaje y encendé historias"; }
+    }
   }
 ];
 
