@@ -44,7 +44,7 @@
         "texto": "Adentro, el laberinto era oscuridad y silencio. Teseo avanzaba desenrollando el hilo y guardando cada giro en la memoria: pasillo largo, vuelta cerrada, escalón que baja. En el centro lo esperaba el Minotauro, que conocía ese lugar mejor que nadie porque nunca había podido salir de él: el laberinto también era su encierro. Se enfrentaron en la sala más profunda, fuerza contra ingenio, y Teseo venció. Ese día terminaron dos encierros a la vez: el de la criatura que vivía atrapada en el centro, y el de Atenas, que nunca más tuvo que mandar a nadie a perderse en esos pasillos.",
         "porque": "El laberinto es uno de los miedos más antiguos con forma de edificio: perderse y no poder volver. Puede que guarde el recuerdo del palacio de Cnosos, en Creta, tan enorme y lleno de salas que parecía no tener salida. Los griegos pusieron en el centro a una criatura que tampoco podía salir, porque sabían algo incómodo: a veces, lo que da miedo también está atrapado.",
         "fuente": "ordena:laberinto",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "despues_creta",
@@ -143,7 +143,7 @@
         "texto": "El rey Augías tenía tres mil animales, y sus establos no se habían limpiado en treinta años. A Heracles le dieron un solo día para dejarlos impecables: era una trampa, porque nadie podía lograrlo ni con mil palas. Heracles no agarró ninguna. Caminó el terreno, miró cómo bajaba el agua desde las montañas y se puso a cavar dos zanjas enormes. Después rompió una pared de los establos de cada lado y desvió el río Alfeo entero: el agua entró rugiendo por una punta, arrasó treinta años de mugre y se la llevó por la otra. Cuentan que también sumó las aguas del río Peneo, por si una corriente no alcanzaba. Antes del atardecer, el trabajo imposible estaba terminado — y Heracles casi no se ensució las manos.",
         "porque": "Los griegos, que construían canales y desviaban agua para regar sus campos, admiraban a quien ponía a la naturaleza a trabajar a su favor. Por eso su héroe más fuerte gana este trabajo sin usar la fuerza contra nadie: la usa para cavar, que es fuerza al servicio de una idea. El mito guarda una lección de ingeniería: antes de empujar más fuerte, conviene preguntarse si el agua puede empujar por vos.",
         "fuente": "ordena:establos_augias",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "doce_trabajos",
@@ -392,7 +392,7 @@
         "texto": "El cíclope Polifemo encerró a Odiseo y a sus hombres en una cueva, tapando la entrada con una roca que ni veinte hombres podían mover. Odiseo no atacó: pensó. Primero le dijo al gigante que su nombre era «Nadie». Después, mientras Polifemo dormía, se las ingeniaron para que ya no pudiera verlos. El cíclope gritó pidiendo ayuda, pero cuando los otros cíclopes preguntaron quién lo estaba atacando, respondió: «¡Nadie!»... y se fueron sin ayudarlo. A la mañana, Polifemo corrió la roca para que salieran sus ovejas, tocando el lomo de cada una. Odiseo y sus hombres pasaron delante de sus manos sin que las notara: iban colgados debajo, agarrados de la lana.",
         "porque": "Los griegos contaban este mito para decir algo que les encantaba: las palabras también son herramientas, y a veces la más filosa de todas. Un nombre falso, dicho en el momento justo, venció a un gigante capaz de aplastar barcos. Frente a la fuerza bruta, la inteligencia no empuja: busca la rendija, y casi siempre la encuentra.",
         "fuente": "ordena:ciclope",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "caballo_troya",
@@ -583,7 +583,7 @@
         "texto": "Dedica la mayor parte del tiempo a negociar recursos de alta tecnología: sandalias voladoras, escudo pulido y casco de invisibilidad.",
         "porque": "Gestión logística. La preparación previa del equipo adecuado garantiza el 90% del éxito de una misión crítica.",
         "fuente": "ordena:equipamiento",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "ventaja_aerea",
@@ -682,7 +682,7 @@
         "texto": "Para pasar un hilo por dentro de una caracola espiral, Dédalo ata el hilo a una hormiga y pone una gota de miel en la salida, dejando que la biología resuelva la geometría.",
         "porque": "Micro-mecánica y pensamiento lateral. Utilizar los instintos biológicos preexistentes de un sistema es más eficiente que forzar una solución mecánica compleja.",
         "fuente": "ordena:desafio_minos",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "mapa_dedalo",
@@ -765,7 +765,7 @@
         "texto": "Cuando Loki le corta el pelo a su esposa Sif en una broma, Thor lo obliga a conseguir un reemplazo. Loki termina apostando su propia cabeza para que dos hermanos enanos forjen, además del cabello de oro, el martillo Mjölnir.",
         "porque": "Algunas de las mejores herramientas nacen como reparación de un error propio. Thor recibe el arma que lo define gracias a una travesura ajena que salió mal.",
         "fuente": "ordena:mjolnir",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "jotunheim",
@@ -773,7 +773,7 @@
         "texto": "Thor viaja con sus compañeros al castillo del gigante Útgarða-Loki, que los somete a una serie de pruebas humillantes. Loki pierde una competencia de comer contra un rival veloz; el sirviente de Thor pierde una carrera contra otro. Thor bebe de un cuerno gigante y apenas logra bajar su nivel; intenta levantar del piso a un gato gris y solo consigue despegarle una pata; lucha contra una anciana llamada Elli y termina de rodillas. Humillado, se retira a dormir. A la mañana siguiente, el gigante le revela la verdad completa: cada prueba escondía una fuerza imposible de vencer, disfrazada de algo cotidiano. El cuerno estaba conectado al océano entero — por eso ahora existen las mareas. El gato gris era la Serpiente que rodea el mundo, y Thor la había alzado tanto que casi tocó el cielo. Y la anciana Elli era la Vejez en persona: nadie, ni siquiera un dios, puede ganarle un pulso a la vejez.",
         "porque": "Una derrota puede no ser lo que parece. Thor no sabía que estaba enfrentando al océano, al tiempo y a una serpiente que envuelve el mundo entero, y aun así logró moverlos un poco. Reconocer que existen fuerzas —el paso del tiempo, la naturaleza— que ni el más fuerte del panteón puede vencer no es debilidad: es la diferencia entre perder de verdad y no entender todavía contra qué se estaba peleando.",
         "fuente": "ordena:jotunheim",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "companero_viajes",
@@ -939,7 +939,7 @@
         "texto": "En las raíces del árbol del mundo hay un pozo que guarda la sabiduría más antigua, y lo cuida un gigante llamado Mimir. Odín, que ya sabía leer runas y hablar con los muertos, quiso beber de esa agua para ver más allá de lo que cualquier dios había visto. Mimir le puso una condición: nada se toma gratis, ni siquiera el conocimiento. Odín no dudó: se sacó su propio ojo y lo dejó caer en el pozo. Bebió, y desde ese día ve el mundo con un solo ojo — pero ve más lejos que cualquiera con dos.",
         "porque": "Los nórdicos admiraban a Odín porque buscaba sabiduría de verdad, no la que se consigue fácil. Este mito dice algo que todavía suena cierto: el conocimiento que más vale siempre cuesta algo, y quien lo busca en serio está dispuesto a pagarlo sin poner excusas.",
         "fuente": "ordena:pozo_mimir",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "vinculo_frigg",
@@ -1246,7 +1246,7 @@
         "texto": "Para encadenar a Fenrir con la cinta mágica (hecha de elementos imposibles), Tyr pone su mano como garantía en las fauces del lobo.",
         "porque": "Sacrificio paramétrico. Para contener una amenaza global que colapsaría el sistema, un líder debe asumir y pagar un costo personal irreversible.",
         "fuente": "ordena:fenrir_paradoja",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -1496,7 +1496,7 @@
         "texto": "Compite por ser el protector de una ciudad ofreciendo un manantial de agua salada (poder naval). La ciudad elige a su oponente, que ofrece un árbol de olivo.",
         "porque": "Economía a largo plazo. Un recurso sostenible que provee alimento, aceite y madera (el olivo) garantiza la supervivencia de una civilización de manera mucho más eficiente que la capacidad de iniciar guerras.",
         "fuente": "ordena:atenas_olivo",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -2196,7 +2196,7 @@
         "texto": "Hefesto forjó un guardián gigante hecho enteramente de bronce para proteger la isla de Creta. Talos recorría la costa tres veces al día, alejando barcos no deseados con enormes piedras. Todo su cuerpo era prácticamente indestructible, salvo un único punto: una vena sellada en el tobillo.",
         "porque": "Toda gran creación, por poderosa que parezca, tiene un punto de mantenimiento o vulnerabilidad. Conocer ese punto — y protegerlo — es parte del trabajo de quien construye.",
         "fuente": "ordena:talos",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -2272,7 +2272,7 @@
         "texto": "Siendo un bebé, interviene en la propiedad de Apolo (el ganado) pero resuelve el conflicto inventando la lira con un caparazón de tortuga y entregándola como pago.",
         "porque": "Resolución de conflictos por innovación. Un problema legal o territorial puede neutralizarse creando nueva tecnología que compense el valor del daño original.",
         "fuente": "ordena:robo_ganado",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -2753,7 +2753,7 @@
         "texto": "Engaña a Zeus al dividir un buey, ocultando la carne nutritiva bajo la piel y los huesos bajo grasa brillante, asegurando que los humanos conserven los nutrientes.",
         "porque": "Asignación eficiente de recursos. Priorizar la supervivencia biológica y la nutrición del ecosistema humano sobre la estética de los tributos divinos.",
         "fuente": "ordena:reparto",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "caucaso",
@@ -3026,7 +3026,7 @@
         "texto": "Utiliza una paloma como modelo de prueba para calcular los intervalos de tiempo exactos en que dos rocas colisionan, logrando cruzar con su nave en el margen de seguridad.",
         "porque": "Física y predicción de patrones. La observación paramétrica y el cálculo de intervalos permiten evadir peligros que parecen insuperables de frente.",
         "fuente": "ordena:simplegades",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "mapa_argonautas",
@@ -3108,7 +3108,7 @@
         "texto": "Debe ajustar su melodía para resonar con las condiciones emocionales de Hades, logrando una respuesta favorable mediante la adaptación del tono.",
         "porque": "Teoría de la resonancia. El éxito en una negociación depende de identificar la frecuencia de interés de la otra parte y adaptar el mensaje para establecer conexión.",
         "fuente": "ordena:inframundo",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4122,7 +4122,7 @@
         "texto": "Preocupada por su hijo Balder, Frigg recorrió los nueve mundos pidiéndole a cada cosa que existe — el fuego, el agua, cada metal, cada piedra, cada animal, cada enfermedad — que jurara no hacerle daño jamás. Solo una plantita joven que crecía cerca de Asgard le pareció demasiado pequeña e inofensiva como para molestarse en pedirle el juramento.",
         "porque": "Ni el plan de seguridad más completo del mundo puede cubrir absolutamente todo. Siempre puede quedar, sin querer, un detalle que parecía demasiado chico para importar.",
         "fuente": "ordena:juramento",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4347,7 +4347,7 @@
         "texto": "Como compensación de los dioses, le ofrecieron a Skadi elegir marido entre ellos, pero solo podía verles los pies detrás de una cortina. Eligió el par más hermoso, segura de que era Balder... y resultó ser Njörd, el señor del mar.",
         "porque": "Decidir con información incompleta puede llevar a un resultado distinto del esperado. Y eso no siempre es un mal resultado: solo es uno diferente al que uno tenía en la cabeza.",
         "fuente": "ordena:eleccion_ciegas",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -4422,7 +4422,7 @@
         "texto": "Las aves le advierten de una traición interna. Sigurd procesa la información y altera su estrategia de seguridad a tiempo.",
         "porque": "Gestión de inteligencia. La mayoría de los riesgos críticos son detectables antes de ocurrir si se presta atención a las señales de baja intensidad en el entorno.",
         "fuente": "ordena:traicion",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
