@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1d3a3e">
+  <title>El Mapa del Héroe — Mundo de Mitos</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>">
+  <link rel="stylesheet" href="mapa.css">
+</head>
+<body>
+
+  <div class="mapa-pantalla">
+
+    <header class="mapa-header">
+      <a class="mapa-volver" href="index.html" aria-label="Volver al hub">‹</a>
+      <div class="mapa-titulo-grupo">
+        <span class="mapa-titulo">El Mapa del Héroe</span>
+        <span class="mapa-subtitulo">Seguí el viaje y encendé historias</span>
+      </div>
+      <span class="mapa-contador" id="mapa-contador" aria-live="polite"></span>
+    </header>
+
+    <p class="mapa-instruccion" id="mapa-instruccion" aria-live="polite"></p>
+
+    <div class="mapa-mundo oculto" id="mapa-area">
+      <svg id="mapa-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mapa estilizado del mundo antiguo para trazar el viaje del héroe">
+        <rect x="0" y="0" width="100" height="100" fill="#1b3236"></rect>
+        <g id="mapa-tierras">
+          <ellipse cx="52" cy="52" rx="16" ry="13" fill="#2f4d3f"></ellipse>
+          <ellipse cx="50" cy="60" rx="7" ry="9" fill="#2f4d3f"></ellipse>
+          <ellipse cx="26" cy="42" rx="8" ry="14" fill="#2f4d3f"></ellipse>
+          <ellipse cx="27" cy="58" rx="6" ry="5" fill="#2f4d3f"></ellipse>
+          <ellipse cx="70" cy="34" rx="16" ry="10" fill="#2f4d3f"></ellipse>
+          <ellipse cx="35" cy="78" rx="20" ry="10" fill="#2f4d3f"></ellipse>
+          <ellipse cx="6" cy="60" rx="10" ry="16" fill="#2f4d3f"></ellipse>
+          <ellipse cx="82" cy="20" rx="14" ry="9" fill="#2f4d3f"></ellipse>
+          <ellipse cx="80" cy="60" rx="7" ry="9" fill="#2f4d3f"></ellipse>
+          <ellipse cx="58" cy="68" rx="6" ry="4" fill="#2f4d3f"></ellipse>
+        </g>
+        <g id="mapa-dinamico"></g>
+      </svg>
+
+      <div class="mapa-nombre-viaje oculto" id="mapa-nombre-viaje">
+        <span id="mapa-nombre-viaje-texto"></span>
+        <p id="mapa-sub-viaje"></p>
+      </div>
+
+      <button class="mapa-reiniciar" id="boton-reiniciar-mapa" aria-label="Reiniciar recorrido">↺</button>
+    </div>
+
+    <p class="mapa-vacio oculto" id="mapa-vacio">
+      Todavía no hay viajes para recorrer acá — Willy está terminando de escribir sus historias.
+      <br><br>
+      <a href="index.html" style="color:#8fd6c4">← Volver al hub</a>
+    </p>
+
+    <div class="mapa-catalogo oculto" id="mapa-catalogo"></div>
+
+    <div class="mapa-hoja oculto" id="mapa-hoja"></div>
+
+  </div>
+
+  <script src="nucleo.js"></script>
+  <script src="motor-trazado.js"></script>
+  <script src="mapa.js"></script>
+</body>
+</html>

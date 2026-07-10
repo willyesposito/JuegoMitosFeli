@@ -48,12 +48,12 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Poseidón | base ✅ · El Origen de Pegaso (`cielo:pegaso`) ✅ · El Valor del Olivo (`ordena:atenas_olivo`) 🕓 |
 | Hades | base ✅ · El acuerdo de las estaciones (`vinculo:persefone`) ✅ · El Contrato Booleano (`ordena:orfeo`) 🕓 · Resolución Paramétrica (`ordena:cerbero`) 🕓 |
 | Atenea | base ✅ · La Red de Soporte (`cielo:andromeda`) ✅ · El Primer Tribunal (`ordena:areopago`) 🕓 |
-| Heracles | base ✅ · El león de Nemea (`cielo:leo`) ✅ · Los establos de Augías (`ordena:establos_augias`) 🕓 · Los doce trabajos (`ordena:heracles`) 🕓 |
-| Odiseo | base ✅ · Nadie y el cíclope (`ordena:ciclope`) 🕓 · El caballo de Troya (`ordena:troya`) 🕓 · La vuelta a Ítaca (`vinculo:penelope`) ✅ |
-| Teseo | base ✅ · El hilo de Ariadna (`cielo:corona_boreal`) ✅ · El laberinto (`ordena:laberinto`) 🕓 · Después de Creta (`ordena:teseo`) 🕓 |
+| Heracles | base ✅ · El león de Nemea (`cielo:leo`) ✅ · Los establos de Augías (`ordena:establos_augias`) 🕓 · Los doce trabajos (`ordena:heracles`) 🕓 · Los trabajos que dibujaron el mundo (`mapa:heracles_doce_trabajos`) 🕓 ⚠️ 5º candidato, tope 4 |
+| Odiseo | base ✅ · Nadie y el cíclope (`ordena:ciclope`) 🕓 · El caballo de Troya (`ordena:troya`) 🕓 · La vuelta a Ítaca (`vinculo:penelope`) ✅ · El mapa de los diez años (`mapa:odisea`) 🕓 ⚠️ 5º candidato, tope 4 |
+| Teseo | base ✅ · El hilo de Ariadna (`cielo:corona_boreal`) ✅ · El laberinto (`ordena:laberinto`) 🕓 · Después de Creta (`ordena:teseo`) 🕓 · El héroe que le dio nombre a un mar (`mapa:teseo`) 🕓 ⚠️ 5º candidato, tope 4 |
 | Aquiles | base ✅ · El Escudo Cosmológico (`ordena:escudo`) 🕓 · El Costo de la Impulsividad (`ordena:ira`) 🕓 · Ruptura del Ciclo (`ordena:reconciliacion`, bonificación) 🕓 |
-| Jasón | base ✅ · El Vellocino Protector (`ordena:vellocino`) 🕓 · Alquimia vs. Fuerza (`ordena:colquida`) 🕓 · Las Rocas Simplégades (`ordena:simplegades`) 🕓 |
-| Perseo | base ✅ · El héroe en las estrellas (`cielo:perseo`) ✅ · Inventario Crítico (`ordena:equipamiento`) 🕓 · Ventaja Aérea (`cielo:casiopea`) ✅ |
+| Jasón | base ✅ · El Vellocino Protector (`ordena:vellocino`) 🕓 · Alquimia vs. Fuerza (`ordena:colquida`) 🕓 · Las Rocas Simplégades (`ordena:simplegades`) 🕓 · El barco que llegó al borde del mapa (`mapa:argonautas`) 🕓 ⚠️ 5º candidato, tope 4 |
+| Perseo | base ✅ · El héroe en las estrellas (`cielo:perseo`) ✅ · Inventario Crítico (`ordena:equipamiento`) 🕓 · Ventaja Aérea (`cielo:casiopea`) ✅ · De una isla chica a los dos extremos del mundo (`mapa:perseo`) 🕓 ⚠️ 5º candidato, tope 4 |
 
 ## Nórdica (3)
 
@@ -63,7 +63,7 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Thor | base ✅ · El Collar de Sif (`ordena:mjolnir`) 🕓 · El Viaje a Jotunheim (`ordena:jotunheim`) 🕓 · El compañero de viajes (`vinculo:loki`) ✅ |
 | Loki | base ✅ · La travesura del pelo de oro (`vinculo:sif`) ✅ · El lobo que creció demasiado (`vinculo:tyr`) ✅ |
 
-**Tier dorado: los 13 tienen sus 3-4 capítulos escritos y mergeados.** Lo único pendiente por personaje es que Willy revise y publique los marcados 🕓 (18 de los 35 capítulos no-base del tier).
+**Tier dorado: los 13 tienen sus 3-4 capítulos escritos y mergeados.** Lo único pendiente por personaje es que Willy revise y publique los marcados 🕓 (23 de los 40 capítulos no-base del tier, incluidos los 5 de `mapa:` sumados en julio 2026). Odiseo, Teseo, Jasón, Perseo y Heracles tienen un candidato de más para su tope (⚠️) — ver "Trabajo pendiente" más abajo.
 
 # TIER PLATEADO (37) — 2 a 3 capítulos
 
@@ -72,7 +72,7 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Personaje | Capítulos |
 |---|---|
 | Hera | base ✅ · El Guardián de los Cien Ojos (`ordena:argos`) 🕓 |
-| Deméter | base ✅ · El Regalo de Triptólemo (`ordena:triptolemo`) 🕓 |
+| Deméter | base ✅ · El Regalo de Triptólemo (`ordena:triptolemo`) 🕓 · El mapa de las estaciones (`mapa:demeter_persefone`) 🕓 |
 | Apolo | base ✅ · Armonía Matemática (`ordena:armonia_lyra`) 🕓 |
 | Artemisa | base ✅ · La Metamorfosis (`cielo:osa_mayor`) ✅ |
 | Ares | base ✅ · Atrapado en la Vasija de Bronce (`ordena:aloadas`) 🕓 |
@@ -81,9 +81,9 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Hermes | base ✅ · Negociación de Activos (`ordena:robo_ganado`) 🕓 |
 | Dioniso | base ✅ · El Don de Midas (`ordena:midas`) 🕓 |
 | Cronos | base ✅ · La guerra que no evitó nada (`ordena:titanomaquia`) ✅ |
-| Prometeo | base ✅ · El Engaño de Mecone (`ordena:reparto`) 🕓 · La Resiliencia (`ordena:caucaso`) 🕓. Absorción futura: Deucalión y Pirra (Ola 2+) |
+| Prometeo | base ✅ · El Engaño de Mecone (`ordena:reparto`) 🕓 · La Resiliencia (`ordena:caucaso`) 🕓 · El castigo en el borde del mundo (`mapa:prometeo`) 🕓 ⚠️ 4º candidato, tope 3. Absorción futura: Deucalión y Pirra (Ola 2+) |
 | Perséfone | base ✅ · Algoritmo de las Estaciones (`ordena:ciclo_natural`) 🕓 |
-| Belerofonte | base ✅ · El Límite del Vuelo (`ordena:limite_vuelo`) 🕓 |
+| Belerofonte | base ✅ · El Límite del Vuelo (`ordena:limite_vuelo`) 🕓 · La montaña que todavía echa fuego (`mapa:belerofonte`) 🕓 |
 | Orfeo | base ✅ · Análisis de Frecuencias (`ordena:inframundo`) 🕓 |
 | Edipo | base ✅ · El acertijo de la Esfinge (`vinculo:esfinge`) ✅ |
 | Penélope | base ✅ · El regreso de Odiseo (`vinculo:odiseo`) ✅ |
@@ -93,8 +93,8 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Circe | base ✅ · La maga de la isla (`vinculo:odiseo`) ✅ |
 | Agamenón | base ✅ · La ofensa (`vinculo:aquiles`) ✅ |
 | Héctor | base ✅ · La Despedida en las Puertas Esceas (`ordena:despedida`) 🕓 |
-| Atlas | base ✅ · La bóveda celeste (`vinculo:heracles`) ✅ |
-| Dédalo | base ✅ · Límites Operativos (`ordena:vuelo_icaro`) 🕓 · El Hilo y la Caracola (`ordena:desafio_minos`) 🕓 |
+| Atlas | base ✅ · La bóveda celeste (`vinculo:heracles`) ✅ · El gigante que le dio nombre a un océano (`mapa:atlas`) 🕓 |
+| Dédalo | base ✅ · Límites Operativos (`ordena:vuelo_icaro`) 🕓 · El Hilo y la Caracola (`ordena:desafio_minos`) 🕓 · El vuelo que bautizó un mar (`mapa:dedalo`) 🕓 ⚠️ 4º candidato, tope 3 |
 | Orión | base ✅ · El escorpión que lo persigue (`cielo:escorpio`) ✅. Publicado en Ola 1, El Cielo de los Mitos |
 
 ## Nórdica (10)
@@ -116,10 +116,10 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 
 | Personaje | Capítulos |
 |---|---|
-| Eneas | base ✅ · La reina de Cartago (`vinculo:dido`) ✅ |
-| Rómulo y Remo | base ✅ · La estirpe del troyano (`vinculo:eneas`) ✅ |
+| Eneas | base ✅ · La reina de Cartago (`vinculo:dido`) ✅ · El viaje que unió Troya con Roma (`mapa:eneas`) 🕓 |
+| Rómulo y Remo | base ✅ · La estirpe del troyano (`vinculo:eneas`) ✅ · La colina donde empezó una ciudad de verdad (`mapa:romulo_remo`) 🕓 |
 
-**Tier plateado: los 37 tienen su capítulo base publicado y su(s) segundo(s) capítulo(s) escritos y mergeados** (Cronos, Hel y Medea incluidos — julio 2026). 17 personajes ya tienen los dos capítulos en `publicado`; el resto tiene su segundo capítulo en `borrador`, esperando revisión de Willy.
+**Tier plateado: los 37 tienen su capítulo base publicado y su(s) segundo(s) capítulo(s) escritos y mergeados** (Cronos, Hel y Medea incluidos — julio 2026). 17 personajes ya tienen los dos capítulos en `publicado`; el resto tiene su segundo capítulo en `borrador`, esperando revisión de Willy. Con la carga de El Mapa del Héroe (julio 2026), Eneas, Belerofonte, Deméter, Atlas y Rómulo y Remo suman un tercer capítulo (dentro del tope); Dédalo y Prometeo suman un 4º candidato que se pasa del tope de 3 (⚠️).
 
 # TIER NORMAL (35) — 1 a 2 capítulos
 
@@ -168,8 +168,9 @@ El mergeo de contenido escrito quedó cerrado. Lo que sigue pendiente es distint
 1. **Revisión y publicación:** hay capítulos 🕓 en `estado: "borrador"` en los tres tiers (18 dorados, ~20 plateados). Publicarlos es decisión editorial de Willy, capítulo por capítulo o en lote — no requiere más escritura.
 2. **Construir los módulos que los encienden:** la mayoría de los capítulos 🕓 usan `fuente: "ordena:*"` — no se pueden encender jugando hasta que exista el módulo Ordená el Mito (Ola 2). Mientras el módulo no exista, publicarlos los deja visibles en la ficha como capítulo velado con su pista de origen, pero no jugable.
 3. **Espejo de los Mundos:** falta cerrar la tabla definitiva de pares (~12) y llenar el campo `espejo` en `personajes.json` antes de poder construir el módulo (Ola 2).
-4. **Mapa del Héroe:** falta el catálogo de viajes (4 iniciales: Odisea, Argonautas, Doce Trabajos, Trecén→Atenas→Creta) — insumo de contenido, no depende de este documento.
-5. **Perseo (resuelto):** el título de más que este documento marcaba como pendiente de recortar ya no aplica — el JSON actual tiene exactamente 4 capítulos para Perseo, dentro del rango dorado.
+4. **Mapa del Héroe (resuelto, julio 2026):** catálogo de 12 viajes cargado en `viajes.json` (borrador) con sus 12 capítulos nuevos en `personajes.json` (borrador) — ver `olas_y_fuentes_de_capitulos.md` §4.1 para el detalle. El módulo técnico (`mapa.html`/`mapa.js`/`mapa.css`) también está construido, sin registrar en el hub.
+5. **Perseo (resuelto):** el título de más que este documento marcaba como pendiente de recortar ya no aplica — el JSON tenía exactamente 4 capítulos para Perseo antes de sumar el de `mapa:`; ahora tiene 5 candidatos para su tope de 4, ver punto 6.
+6. **Cupo de más por `mapa:` (julio 2026):** 7 personajes quedaron con un capítulo candidato de más para su tope de tier — dorados: Odiseo, Jasón, Heracles, Teseo, Perseo (5 candidatos, tope 4); plateados: Dédalo, Prometeo (4 candidatos, tope 3). No es un error de datos: son candidatos en `borrador` compitiendo por los mismos 3-4 lugares publicables. Antes de publicar los capítulos de `mapa:` para estos 7, Willy tiene que elegir cuál de los candidatos existentes queda afuera (marcados con ⚠️ en las tablas de arriba).
 
 ## Regla de crecimiento del roster
 

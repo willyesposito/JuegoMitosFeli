@@ -1,0 +1,493 @@
+[
+  {
+    "id": "odisea",
+    "nombre": "La Odisea",
+    "personajeAsociado": "odiseo",
+    "capituloQueEnciende": "mapa_odisea",
+    "paradas": [
+      {
+        "nombre": "Las Puertas de Troya",
+        "x": 68,
+        "y": 30,
+        "contexto": "Acá empezó todo: después de la guerra, Odiseo zarpó para volver a su casa.",
+        "ubicacionReferencia": "Troya, en la región de la Tróade, en el noroeste de la actual Turquía, frente al mar Egeo."
+      },
+      {
+        "nombre": "La Tierra que Hace Olvidar",
+        "x": 38,
+        "y": 78,
+        "contexto": "Acá los marineros probaron una flor que les borraba las ganas de volver a casa.",
+        "ubicacionReferencia": "La tierra de los lotófagos, ubicada por los griegos en la costa del norte de África, cerca de la actual Libia o Túnez."
+      },
+      {
+        "nombre": "La Isla del Cíclope",
+        "x": 28,
+        "y": 58,
+        "contexto": "Acá Odiseo se enfrentó con astucia al cíclope Polifemo.",
+        "ubicacionReferencia": "Tradicionalmente ubicada en Sicilia, junto al volcán Etna, en el sur de la actual Italia."
+      },
+      {
+        "nombre": "Las Islas del Viento",
+        "x": 27,
+        "y": 50,
+        "contexto": "Acá el rey de los vientos le regaló a Odiseo una bolsa con todos los vientos guardados.",
+        "ubicacionReferencia": "Las islas Eolias (o Lípari), al norte de Sicilia, que todavía llevan el nombre de Eolo."
+      },
+      {
+        "nombre": "El Estrecho de los Monstruos",
+        "x": 30,
+        "y": 54,
+        "contexto": "Acá Odiseo cruzó un pasaje angosto y peligroso entre dos costas, donde el mar se traga los barcos.",
+        "ubicacionReferencia": "El estrecho de Mesina, entre Sicilia y la punta de Italia; Caribdis era un remolino real de esas aguas."
+      },
+      {
+        "nombre": "Ítaca, por fin",
+        "x": 44,
+        "y": 55,
+        "contexto": "Acá terminó el viaje: la isla de Odiseo, después de diez años de mar.",
+        "ubicacionReferencia": "La isla de Ítaca, en el mar Jónico, al oeste de Grecia continental."
+      }
+    ],
+    "porque": "El viaje de Odiseo dibuja el mapa del mundo que los griegos conocían por mar: cada isla y cada costa era una historia para explicar un lugar lejano al que se llegaba navegando.",
+    "estado": "borrador"
+  },
+  {
+    "id": "argonautas",
+    "nombre": "El viaje de los Argonautas",
+    "personajeAsociado": "jason",
+    "capituloQueEnciende": "mapa_argonautas",
+    "paradas": [
+      {
+        "nombre": "El Puerto de Yolco",
+        "x": 54,
+        "y": 42,
+        "contexto": "Acá se construyó el Argo y zarparon los héroes en busca del vellocino de oro.",
+        "ubicacionReferencia": "Yolco (la actual Volos), en la región de Tesalia, en el este de Grecia continental."
+      },
+      {
+        "nombre": "La Costa de Fineo",
+        "x": 64,
+        "y": 28,
+        "contexto": "Acá un anciano ciego, molestado por unas aves ladronas, les enseñó el secreto para seguir adelante.",
+        "ubicacionReferencia": "La costa de Tracia, cerca de la entrada al mar Negro, en la actual frontera entre Bulgaria y Turquía."
+      },
+      {
+        "nombre": "Las Rocas que Chocan",
+        "x": 68,
+        "y": 24,
+        "contexto": "Acá dos rocas gigantes marcaban la puerta entre el mar conocido y el mar desconocido.",
+        "ubicacionReferencia": "El estrecho del Bósforo, entre Europa y Asia, en la entrada al mar Negro, en la actual Estambul."
+      },
+      {
+        "nombre": "Cólquida, el fin del mundo",
+        "x": 92,
+        "y": 18,
+        "contexto": "Acá estaba el vellocino de oro, guardado por un dragón que no dormía.",
+        "ubicacionReferencia": "Cólquida, en el extremo este del mar Negro, en la actual Georgia."
+      },
+      {
+        "nombre": "La Isla del Gigante de Bronce",
+        "x": 58,
+        "y": 68,
+        "contexto": "Acá, en el regreso, los esperaba Talos, un guardián de bronce al que le encontraron su único punto débil.",
+        "ubicacionReferencia": "La isla de Creta, en el sur del mar Egeo."
+      },
+      {
+        "nombre": "Vuelta a Yolco",
+        "x": 54,
+        "y": 42,
+        "contexto": "Acá terminó el viaje: el mismo puerto de donde salieron, ahora con el vellocino.",
+        "ubicacionReferencia": "Yolco (Volos), en Tesalia, cerrando el círculo del recorrido."
+      }
+    ],
+    "porque": "El viaje de los Argonautas estira el mapa griego hasta su borde más lejano: el mar Negro, la última frontera conocida, adonde solo se llegaba con un gran barco y muchos talentos juntos.",
+    "estado": "borrador"
+  },
+  {
+    "id": "heracles_doce_trabajos",
+    "nombre": "Los Doce Trabajos como recorrido",
+    "personajeAsociado": "heracles",
+    "capituloQueEnciende": "mapa_heracles",
+    "paradas": [
+      {
+        "nombre": "Nemea, el corazón de Grecia",
+        "x": 50,
+        "y": 57,
+        "contexto": "Acá empezó todo, con el primer trabajo: el león de piel imposible de atravesar.",
+        "ubicacionReferencia": "Nemea, en la región de la Argólide, en el Peloponeso, el sur de Grecia continental."
+      },
+      {
+        "nombre": "La Isla del Toro",
+        "x": 58,
+        "y": 68,
+        "contexto": "Acá, en la gran isla del sur, Heracles atrapó a un toro furioso y se lo llevó.",
+        "ubicacionReferencia": "La isla de Creta, en el sur del mar Egeo."
+      },
+      {
+        "nombre": "El Reino de las Amazonas",
+        "x": 76,
+        "y": 22,
+        "contexto": "Acá, en el este, consiguió el cinturón de la reina de las Amazonas, guerreras temibles que no se lo pusieron fácil.",
+        "ubicacionReferencia": "La tierra de las Amazonas, en Temiscira, sobre la costa sur del mar Negro, en el norte de la actual Turquía."
+      },
+      {
+        "nombre": "Las Yeguas de Tracia",
+        "x": 60,
+        "y": 25,
+        "contexto": "Acá, en el norte, dominó a las yeguas de Diomedes, unos caballos feroces acostumbrados a comer carne.",
+        "ubicacionReferencia": "Tracia, al noreste de Grecia, en la actual frontera entre Grecia, Bulgaria y Turquía."
+      },
+      {
+        "nombre": "Las Columnas de Hércules",
+        "x": 4,
+        "y": 52,
+        "contexto": "Acá, en el extremo oeste, llegó por el ganado de Geríon y dejó dos columnas marcando el final del mar.",
+        "ubicacionReferencia": "El estrecho de Gibraltar, entre España y Marruecos; los griegos lo llamaban las Columnas de Hércules."
+      },
+      {
+        "nombre": "El Jardín del Fin del Mundo",
+        "x": 3,
+        "y": 60,
+        "contexto": "Acá, todavía más al oeste, estaban las manzanas de oro, en el borde mismo del mundo conocido.",
+        "ubicacionReferencia": "El jardín de las Hespérides, ubicado por los griegos en el extremo occidental, cerca de la actual Marruecos."
+      }
+    ],
+    "porque": "Los doce trabajos de Heracles, puestos en un mapa, marcan los cuatro bordes del mundo que Grecia conocía: el toro en el sur, las Amazonas en el este, las yeguas en el norte, y las columnas en el oeste.",
+    "estado": "borrador"
+  },
+  {
+    "id": "teseo",
+    "nombre": "De Trecén a Creta",
+    "personajeAsociado": "teseo",
+    "capituloQueEnciende": "mapa_teseo",
+    "paradas": [
+      {
+        "nombre": "Trecén, la roca del padre",
+        "x": 53,
+        "y": 56,
+        "contexto": "Acá el joven Teseo levantó una roca pesada y encontró la espada que su padre había escondido para él.",
+        "ubicacionReferencia": "Trecén, en el Peloponeso, sobre la costa del golfo Sarónico, frente a Atenas."
+      },
+      {
+        "nombre": "El Camino de los Peligros",
+        "x": 53,
+        "y": 53,
+        "contexto": "Acá Teseo cruzó por tierra un camino lleno de peligros que asustaban a los viajeros, y lo dejó libre para todos.",
+        "ubicacionReferencia": "El camino del istmo, bordeando el golfo Sarónico desde Trecén hasta Atenas, en el este del Peloponeso."
+      },
+      {
+        "nombre": "Atenas, el reencuentro",
+        "x": 54,
+        "y": 50,
+        "contexto": "Acá su padre, el rey Egeo, lo reconoció por la espada que Teseo llevaba al cinto.",
+        "ubicacionReferencia": "Atenas, en la región del Ática, en el centro de Grecia continental."
+      },
+      {
+        "nombre": "El Laberinto de Creta",
+        "x": 58,
+        "y": 68,
+        "contexto": "Acá, en la gran isla del sur, entró al laberinto del Minotauro con el hilo de Ariadna.",
+        "ubicacionReferencia": "Cnosos, en la isla de Creta, en el sur del mar Egeo."
+      },
+      {
+        "nombre": "Naxos, la isla del adiós",
+        "x": 60,
+        "y": 58,
+        "contexto": "Acá, en el regreso, Ariadna se quedó en la isla mientras el barco de Teseo seguía viaje.",
+        "ubicacionReferencia": "La isla de Naxos, en el centro del archipiélago de las Cícladas, en el mar Egeo."
+      },
+      {
+        "nombre": "El Mar que Cambió de Nombre",
+        "x": 62,
+        "y": 48,
+        "contexto": "Acá el rey Egeo, al ver las velas negras, cayó al mar de la tristeza, y desde entonces ese mar lleva su nombre.",
+        "ubicacionReferencia": "El mar Egeo, entre Grecia y la actual Turquía, que según el mito tomó su nombre del rey Egeo."
+      }
+    ],
+    "porque": "El recorrido de Teseo une por mar y por tierra las dos orillas de su historia, el Peloponeso y Creta, y termina explicando por qué un mar entero, el Egeo, se llama como se llama.",
+    "estado": "borrador"
+  },
+  {
+    "id": "perseo",
+    "nombre": "El vuelo de Perseo",
+    "personajeAsociado": "perseo",
+    "capituloQueEnciende": "mapa_perseo",
+    "paradas": [
+      {
+        "nombre": "Sérifos, la isla de la infancia",
+        "x": 56,
+        "y": 56,
+        "contexto": "Acá creció Perseo, hasta que aceptó una misión casi imposible: traer la cabeza de Medusa.",
+        "ubicacionReferencia": "La isla de Sérifos, en el archipiélago de las Cícladas, en el mar Egeo."
+      },
+      {
+        "nombre": "El Confín del Oeste",
+        "x": 2,
+        "y": 48,
+        "contexto": "Acá, en el borde lejano del mundo, Perseo enfrentó a Medusa mirándola solo por el reflejo de su escudo.",
+        "ubicacionReferencia": "La morada de las Gorgonas, ubicada por los griegos en el extremo occidental, más allá de las tierras conocidas."
+      },
+      {
+        "nombre": "La Roca de Andrómeda",
+        "x": 80,
+        "y": 62,
+        "contexto": "Acá Perseo rescató a la princesa Andrómeda, encadenada a una roca frente al mar.",
+        "ubicacionReferencia": "Jope, la actual Jaffa (junto a Tel Aviv), en la costa del Levante, al este del Mediterráneo."
+      },
+      {
+        "nombre": "El Regreso a Sérifos",
+        "x": 56,
+        "y": 56,
+        "contexto": "Acá Perseo volvió con su misión cumplida y liberó a su madre.",
+        "ubicacionReferencia": "La isla de Sérifos, otra vez, en las Cícladas."
+      },
+      {
+        "nombre": "Micenas, la ciudad nueva",
+        "x": 51,
+        "y": 57,
+        "contexto": "Acá, ya en el continente, Perseo fundó su propia ciudad.",
+        "ubicacionReferencia": "Micenas, en la Argólide, en el Peloponeso; una ciudad real cuyas ruinas todavía se visitan."
+      }
+    ],
+    "porque": "El viaje de Perseo va de una islita del Egeo hasta los dos extremos del mundo griego, el oeste lejano de las Gorgonas y el este de la costa de Jope, para volver y fundar una ciudad que existió de verdad.",
+    "estado": "borrador"
+  },
+  {
+    "id": "eneas",
+    "nombre": "El viaje de Eneas",
+    "personajeAsociado": "eneas",
+    "capituloQueEnciende": "mapa_eneas",
+    "paradas": [
+      {
+        "nombre": "Troya en Llamas",
+        "x": 68,
+        "y": 30,
+        "contexto": "Acá empezó todo: Eneas escapó de la ciudad que caía y salió a buscar un hogar nuevo.",
+        "ubicacionReferencia": "Troya, en la Tróade, noroeste de la actual Turquía, frente al mar Egeo."
+      },
+      {
+        "nombre": "El Oráculo de Delos",
+        "x": 58,
+        "y": 55,
+        "contexto": "Acá un oráculo le dijo que buscara la tierra antigua de sus antepasados.",
+        "ubicacionReferencia": "La isla de Delos, en el centro de las Cícladas, en el mar Egeo."
+      },
+      {
+        "nombre": "Cartago, la ciudad de Dido",
+        "x": 35,
+        "y": 76,
+        "contexto": "Acá la reina Dido recibió a Eneas; cuando él siguió viaje, ella quedó muy triste.",
+        "ubicacionReferencia": "Cartago, cerca de la actual Túnez, en la costa norte de África."
+      },
+      {
+        "nombre": "Escala en Sicilia",
+        "x": 27,
+        "y": 57,
+        "contexto": "Acá Eneas hizo juegos en honor a su padre antes de cruzar hacia Italia.",
+        "ubicacionReferencia": "La costa oeste de Sicilia, en el sur de la actual Italia."
+      },
+      {
+        "nombre": "La Puerta de Cumas",
+        "x": 25,
+        "y": 44,
+        "contexto": "Acá, guiado por una sabia adivina, Eneas bajó a visitar el mundo de los que ya no están.",
+        "ubicacionReferencia": "Cumas, cerca de la actual Nápoles, en el oeste de Italia."
+      },
+      {
+        "nombre": "El Lacio, donde nacerá Roma",
+        "x": 22,
+        "y": 40,
+        "contexto": "Acá terminó el viaje: la tierra donde, con el tiempo, se levantaría Roma.",
+        "ubicacionReferencia": "El Lacio, en la desembocadura del río Tíber, en el centro de la actual Italia."
+      }
+    ],
+    "porque": "El viaje de Eneas es el puente entre dos mundos: sale de Troya, en el este, y cruza todo el Mediterráneo hasta Italia, para explicar cómo una ciudad que cayó se transformó, muy lejos, en el comienzo de Roma.",
+    "estado": "borrador"
+  },
+  {
+    "id": "dedalo",
+    "nombre": "El vuelo de Dédalo",
+    "personajeAsociado": "dedalo",
+    "capituloQueEnciende": "mapa_dedalo",
+    "paradas": [
+      {
+        "nombre": "Atenas, la ciudad del inventor",
+        "x": 54,
+        "y": 50,
+        "contexto": "Acá vivía Dédalo, el inventor más ingenioso de todos, antes de partir hacia Creta.",
+        "ubicacionReferencia": "Atenas, en el Ática, en el centro de Grecia continental."
+      },
+      {
+        "nombre": "El Laberinto de Creta",
+        "x": 58,
+        "y": 68,
+        "contexto": "Acá Dédalo construyó, por encargo del rey Minos, el laberinto del que nadie salía.",
+        "ubicacionReferencia": "Cnosos, en la isla de Creta, en el sur del mar Egeo; el palacio real todavía se visita."
+      },
+      {
+        "nombre": "El Cielo sobre el Mar",
+        "x": 62,
+        "y": 55,
+        "contexto": "Acá Dédalo y su hijo Ícaro escaparon volando con alas de plumas y cera.",
+        "ubicacionReferencia": "El cielo sobre el mar Egeo, entre Creta y las islas del este."
+      },
+      {
+        "nombre": "El Mar de Ícaro",
+        "x": 66,
+        "y": 52,
+        "contexto": "Acá Ícaro voló demasiado alto, el sol derritió la cera y cayó al mar, que desde entonces lleva su nombre.",
+        "ubicacionReferencia": "El mar Icario, alrededor de la isla de Icaria, cerca de Samos, en el este del Egeo."
+      },
+      {
+        "nombre": "Sicilia, el refugio final",
+        "x": 27,
+        "y": 57,
+        "contexto": "Acá Dédalo aterrizó sano y salvo, y un rey lo recibió y lo protegió.",
+        "ubicacionReferencia": "Camico, en la isla de Sicilia, en el sur de la actual Italia."
+      }
+    ],
+    "porque": "El vuelo de Dédalo cruza el Egeo de este a oeste y deja una huella que todavía está en el mapa: un mar que se llama Icario por el chico que voló demasiado alto.",
+    "estado": "borrador"
+  },
+  {
+    "id": "belerofonte",
+    "nombre": "Belerofonte y la Quimera",
+    "personajeAsociado": "belerofonte",
+    "capituloQueEnciende": "mapa_belerofonte",
+    "paradas": [
+      {
+        "nombre": "La Fuente de Pirene",
+        "x": 52,
+        "y": 54,
+        "contexto": "Acá, junto a una fuente, Belerofonte logró domar al caballo alado Pegaso.",
+        "ubicacionReferencia": "La fuente Pirene, en Corinto, en el noreste del Peloponeso; la fuente todavía se puede ver."
+      },
+      {
+        "nombre": "Tirinto y la Carta Sellada",
+        "x": 51,
+        "y": 58,
+        "contexto": "Acá un rey le entregó una carta cerrada y lo mandó lejos, a una misión peligrosa.",
+        "ubicacionReferencia": "Tirinto, en la Argólide, en el Peloponeso; sus murallas de piedra siguen en pie."
+      },
+      {
+        "nombre": "El Reino de Licia",
+        "x": 68,
+        "y": 48,
+        "contexto": "Acá, en tierras lejanas del este, lo esperaba el desafío más difícil de todos.",
+        "ubicacionReferencia": "Licia, en el suroeste de la actual Turquía, sobre la costa del Mediterráneo."
+      },
+      {
+        "nombre": "La Montaña de Fuego",
+        "x": 69,
+        "y": 49,
+        "contexto": "Acá Belerofonte, montado en Pegaso, venció a la Quimera, un monstruo que echaba fuego.",
+        "ubicacionReferencia": "El monte Quimera (Yanartaş), en Licia, donde todavía salen llamas naturales de la roca."
+      }
+    ],
+    "porque": "El viaje de Belerofonte va de Grecia a la costa de la actual Turquía, y termina en un lugar asombroso de verdad: una montaña de la que todavía sale fuego, igual que en el mito.",
+    "estado": "borrador"
+  },
+  {
+    "id": "demeter_persefone",
+    "nombre": "La búsqueda de Deméter",
+    "personajeAsociado": "demeter",
+    "capituloQueEnciende": "mapa_demeter",
+    "paradas": [
+      {
+        "nombre": "El Prado de Enna",
+        "x": 28,
+        "y": 59,
+        "contexto": "Acá, juntando flores, Perséfone desapareció: el señor del mundo de abajo se la llevó.",
+        "ubicacionReferencia": "Enna, en el centro de la isla de Sicilia, en el sur de la actual Italia."
+      },
+      {
+        "nombre": "El Camino de las Antorchas",
+        "x": 40,
+        "y": 60,
+        "contexto": "Acá Deméter recorrió el mundo entero con dos antorchas, buscando a su hija sin descanso.",
+        "ubicacionReferencia": "Un largo recorrido por las tierras y los mares del Mediterráneo, según el mito."
+      },
+      {
+        "nombre": "El Santuario de Eleusis",
+        "x": 53,
+        "y": 49,
+        "contexto": "Acá Deméter descansó, y los griegos levantaron un santuario para recordar su historia.",
+        "ubicacionReferencia": "Eleusis, cerca de Atenas, en el Ática; sus ruinas todavía se visitan."
+      }
+    ],
+    "porque": "El recorrido de Deméter une un prado de Sicilia con un santuario cerca de Atenas, y explica, sobre lugares reales, por qué existen las estaciones del año.",
+    "estado": "borrador"
+  },
+  {
+    "id": "prometeo",
+    "nombre": "Prometeo y el fuego",
+    "personajeAsociado": "prometeo",
+    "capituloQueEnciende": "mapa_prometeo",
+    "paradas": [
+      {
+        "nombre": "El Regalo del Fuego",
+        "x": 53,
+        "y": 35,
+        "contexto": "Acá Prometeo tomó una chispa de fuego de los dioses y se la regaló a los seres humanos.",
+        "ubicacionReferencia": "El monte Olimpo, la montaña más alta de Grecia, entre Tesalia y Macedonia."
+      },
+      {
+        "nombre": "La Montaña del Fin del Este",
+        "x": 90,
+        "y": 20,
+        "contexto": "Acá Prometeo quedó encadenado como castigo, hasta que Heracles, de paso, lo liberó.",
+        "ubicacionReferencia": "Las montañas del Cáucaso, entre el mar Negro y el mar Caspio, en el borde este del mundo conocido."
+      }
+    ],
+    "porque": "La historia de Prometeo une el punto más alto de Grecia, el Olimpo, con el borde más lejano del este, el Cáucaso: los dos extremos del mundo que los griegos podían imaginar hacia arriba y hacia afuera.",
+    "estado": "borrador"
+  },
+  {
+    "id": "atlas",
+    "nombre": "Atlas, el borde del oeste",
+    "personajeAsociado": "atlas",
+    "capituloQueEnciende": "mapa_atlas",
+    "paradas": [
+      {
+        "nombre": "El Extremo Oeste del Mundo",
+        "x": 4,
+        "y": 62,
+        "contexto": "Acá, en el borde donde se pone el sol, Atlas sostiene el cielo sobre sus hombros.",
+        "ubicacionReferencia": "El noroeste de África; la cordillera del Atlas, en la actual Marruecos, lleva su nombre."
+      }
+    ],
+    "porque": "Atlas marca el borde oeste del mapa griego, y su nombre quedó pegado a dos lugares enormes de verdad: la cordillera del Atlas y el océano Atlántico.",
+    "estado": "borrador"
+  },
+  {
+    "id": "romulo_remo",
+    "nombre": "Rómulo y Remo funden Roma",
+    "personajeAsociado": "romulo_remo",
+    "capituloQueEnciende": "mapa_romulo_remo",
+    "paradas": [
+      {
+        "nombre": "Alba Longa, la ciudad de origen",
+        "x": 22,
+        "y": 41,
+        "contexto": "Acá nacieron los hermanos Rómulo y Remo, en la ciudad de sus antepasados.",
+        "ubicacionReferencia": "Alba Longa, en el Lacio, cerca de la actual Roma, en el centro de Italia."
+      },
+      {
+        "nombre": "La Orilla del Tíber",
+        "x": 22,
+        "y": 40,
+        "contexto": "Acá, de bebés y solos junto al río, una loba los encontró y los cuidó.",
+        "ubicacionReferencia": "Las orillas del río Tíber, en el sitio donde después crecería Roma."
+      },
+      {
+        "nombre": "El Monte Palatino",
+        "x": 22,
+        "y": 40,
+        "contexto": "Acá los hermanos decidieron levantar una ciudad; se llamó Roma, por Rómulo.",
+        "ubicacionReferencia": "El monte Palatino, una de las siete colinas de Roma, en el centro de la actual Italia."
+      }
+    ],
+    "porque": "El recorrido de Rómulo y Remo es corto pero termina en un punto que sigue existiendo: la colina donde empezó Roma, una ciudad de verdad que se puede visitar hoy.",
+    "estado": "borrador"
+  }
+]
