@@ -8,6 +8,14 @@ const CLAVE_GUARDADO = "feli-mitos-v2";
 const CLAVE_VIEJA_V1 = "feli-cartas-v1";
 const MAX_PERFILES = 5;
 
+/* Dificultad por partida (CLAUDE.md "Dificultad por partida"): se elige una
+   sola vez, al crear el perfil, y no existe forma de cambiarla dentro de la
+   partida — ni UI ni setter acá, a propósito. Para jugar en otra dificultad
+   se crea otro perfil. Los módulos la leen con dificultadActual() y ajustan
+   exigencia (pistas, intentos, feedback), nunca contenido ni acceso. */
+const DIFICULTADES = ["facil", "normal", "dificil"];
+const NOMBRE_DIFICULTAD = { facil: "🌱 Fácil", normal: "⭐ Normal", dificil: "🔥 Difícil" };
+
 /* Mazo inicial curado por Willy (ver Documentacion/sesion_actual.md, que es
    su versión legible). Ya no se aplica solo: un perfil nuevo o recién
    reiniciado arranca en 0 cartas. Esta lista se carga a mano desde Opciones
@@ -80,10 +88,11 @@ let estado = null;  // atajo: datos.perfiles[datos.perfilActivo]
 
 /* ---------- Perfiles (spec funcional §0.1: hasta 5 slots) ---------- */
 
-function perfilNuevo(nombre) {
+function perfilNuevo(nombre, dificultad) {
   const global = { descubiertos: [], capitulos: {}, completas: [], logros: [] };
   return {
     nombre: nombre || "Feli",
+    dificultad: DIFICULTADES.includes(dificultad) ? dificultad : "normal",
     creado: new Date().toISOString().slice(0, 10),
     global,
     coleccion: { vistas: [] },
@@ -96,7 +105,8 @@ function perfilNuevo(nombre) {
 /* Garantiza la forma interna de un perfil venga de donde venga (migración,
    versión anterior del formato, edición manual). Nadie pierde progreso. */
 function normalizarPerfil(p) {
-  const base = perfilNuevo(p && typeof p.nombre === "string" ? p.nombre : undefined);
+  // Los perfiles anteriores a la dificultad por partida quedan en "normal".
+  const base = perfilNuevo(p && typeof p.nombre === "string" ? p.nombre : undefined, p && p.dificultad);
   if (!p || typeof p !== "object") return base;
   const g = p.global && typeof p.global === "object" ? p.global : {};
   if (typeof p.creado === "string") base.creado = p.creado;
@@ -133,16 +143,23 @@ function listaPerfiles() {
   return datos.perfiles.map((p, i) => ({
     indice: i,
     nombre: p.nombre,
+    dificultad: DIFICULTADES.includes(p.dificultad) ? p.dificultad : "normal",
     activo: i === datos.perfilActivo,
     descubiertos: p.global.descubiertos.length
   }));
 }
 
-function crearPerfil(nombre) {
+function crearPerfil(nombre, dificultad) {
   if (datos.perfiles.length >= MAX_PERFILES) return -1;
-  datos.perfiles.push(perfilNuevo((nombre || "").trim() || `Perfil ${datos.perfiles.length + 1}`));
+  datos.perfiles.push(perfilNuevo((nombre || "").trim() || `Perfil ${datos.perfiles.length + 1}`, dificultad));
   guardarEstado();
   return datos.perfiles.length - 1;
+}
+
+/* Dificultad de la partida activa. Única puerta de lectura para los módulos;
+   no hay contraparte de escritura (ver comentario de DIFICULTADES). */
+function dificultadActual() {
+  return estado && DIFICULTADES.includes(estado.dificultad) ? estado.dificultad : "normal";
 }
 
 function cambiarPerfil(indice) {
@@ -165,7 +182,9 @@ function borrarPerfil(indice) {
 }
 
 function reiniciarPerfilActivo() {
-  datos.perfiles[datos.perfilActivo] = perfilNuevo(estado.nombre);
+  // Reiniciar borra el progreso pero no es una puerta trasera para cambiar
+  // la dificultad: la partida conserva la que se eligió al crearla.
+  datos.perfiles[datos.perfilActivo] = perfilNuevo(estado.nombre, estado.dificultad);
   estado = datos.perfiles[datos.perfilActivo];
   guardarEstado();
 }

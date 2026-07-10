@@ -54,6 +54,13 @@ El sello de **"Historia completa"** aparece en TODA carta completada, sin import
 
 Los capítulos los aporta el juego, no la usuaria. La escritura propia (que ella escriba capítulos) queda fuera de alcance por ahora; vuelve como fase muy posterior si se decide.
 
+## Dificultad por partida (fácil / normal / difícil)
+
+- Cada perfil de partida tiene un campo `dificultad` (`"facil"` | `"normal"` | `"dificil"`) que se elige **una sola vez, al crear la partida**, y **no se puede cambiar dentro de ella**: para jugar en otra dificultad se crea otro perfil. No hay UI de edición y `nucleo.js` no expone setter — eso es deliberado, no un faltante.
+- `nucleo.js` es el dueño del dato: `perfilNuevo()`/`crearPerfil()` lo reciben, `normalizarPerfil()` lo preserva (los perfiles anteriores a este sistema migran a `"normal"` sin perder nada), `reiniciarPerfilActivo()` lo conserva (reiniciar no es una puerta trasera para cambiarlo), y los módulos lo leen únicamente vía `dificultadActual()`.
+- Regla para módulos: la dificultad ajusta la **exigencia** (pistas, intentos, feedback, ayudas), nunca el contenido ni el acceso. En cualquier dificultad jugar siempre suma historia (regla de oro).
+- Mapeo vigente: **Oráculo** — partida fácil = solo modo fácil (toggle oculto); normal = los dos modos elegibles por consulta, como siempre; difícil = solo modo difícil (fallar no bloquea el descubrimiento, solo se pierde la versión especial del capítulo). Los demás módulos todavía no ajustan reglas por dificultad: cuando uno lo haga, su mapeo se documenta acá.
+
 ## Descubrimiento de cartas — Oráculo fácil + modo difícil
 
 - **Oráculo (por defecto, fácil):** carta del día casi regalada. Una pista, un tap, la tenés. Objetivo: que junte un mazo grande en pocos días y pase rápido a enriquecer historias.
