@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#2a1c10">
+  <title>Ordená el Mito — Mundo de Mitos</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📜</text></svg>">
+  <link rel="stylesheet" href="ordena.css">
+</head>
+<body>
+
+  <div class="ordena-pantalla">
+
+    <header class="ordena-header">
+      <a class="ordena-volver" href="index.html" aria-label="Volver al hub">‹</a>
+      <div class="ordena-titulo-grupo">
+        <span class="ordena-titulo">Ordená el Mito</span>
+        <span class="ordena-subtitulo">Secuenciá la historia y encendé capítulos</span>
+      </div>
+      <span class="ordena-contador" id="ordena-contador" aria-live="polite"></span>
+    </header>
+
+    <p class="ordena-instruccion" id="ordena-instruccion" aria-live="polite"></p>
+
+    <div class="ordena-mundo oculto" id="ordena-area">
+      <div class="ordena-tarjetas" id="ordena-tarjetas"></div>
+      <button class="ordena-reiniciar" id="boton-reiniciar-ordena" aria-label="Barajar de nuevo">↺</button>
+    </div>
+
+    <p class="ordena-vacio oculto" id="ordena-vacio">
+      Todavía no hay mitos para ordenar acá — Willy está terminando de escribir sus historias.
+      <br><br>
+      <a href="index.html" style="color:#f0c078">← Volver al hub</a>
+    </p>
+
+    <div class="ordena-catalogo oculto" id="ordena-catalogo"></div>
+
+    <div class="ordena-hoja oculto" id="ordena-hoja"></div>
+
+  </div>
+
+  <script src="nucleo.js"></script>
+  <script src="ordena.js"></script>
+</body>
+</html>
