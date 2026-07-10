@@ -22,6 +22,10 @@ const ARCHIVOS = [
   "cielo.js",
   "motor-trazado.js",
   "constelaciones.json",
+  "mapa.html",
+  "mapa.css",
+  "mapa.js",
+  "viajes.json",
   "fonts/cinzel-700.woff2",
   "fonts/cinzel-800.woff2"
 ];

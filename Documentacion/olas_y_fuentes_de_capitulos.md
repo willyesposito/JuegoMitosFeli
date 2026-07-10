@@ -93,11 +93,15 @@ Alcance ya spec'd (hub, perfiles, Colección refactor, Oráculo 2 modos, Cielo, 
 - Tolerancia de trazo generosa, igual criterio que el Cielo.
 - Al completar el viaje se enciende el capítulo del héroe con su "¿Por qué?" (el porqué geográfico: los mitos griegos pasan en lugares reales que hoy se pueden señalar).
 
-**Motor:** reusa el motor de trazado SVG del Cielo (puntos con coordenadas 0-100, orden de trazo, tolerancia). La diferencia es la piel (mapa en vez de cielo nocturno) y el modo guiado. **Instrucción para Claude Code: construir el motor de trazado del Cielo como componente reutilizable, no acoplado al cielo nocturno.** Esto se decide ahora porque el Cielo está en construcción esta semana.
+**Motor:** reusa el motor de trazado SVG del Cielo (puntos con coordenadas 0-100, orden de trazo, tolerancia). La diferencia es la piel (mapa en vez de cielo nocturno) y el modo guiado. **Estado (julio 2026): hecho.** El motor quedó desacoplado en `motor-trazado.js` (ver PR de refactor) y `cielo.js` ya lo consume; `mapa.js` lo reusa con `pistaPorDefecto: true` (modo guiado, sin señuelos).
 
-**Datos:** `viajes.json`: `{ id, nombre, personajeAsociado, capituloQueEnciende, paradas: [{ nombre, x, y, contexto }], ordenTrazo, porque, estado }`.
+**Datos:** `viajes.json`: `{ id, nombre, personajeAsociado, capituloQueEnciende, paradas: [{ nombre, x, y, contexto, ubicacionReferencia }], porque, estado }`. `ubicacionReferencia` es la ubicación geográfica real (nombre antiguo/moderno) que se usó para decidir las coordenadas `x, y` del mapa estilizado — se conserva en el dato por si hace falta revisar o recolocar un punto.
 
-**Catálogo inicial (4 viajes):** la Odisea (Odiseo), el viaje de los Argonautas (Jasón), los Doce Trabajos como recorrido (Heracles), Trecén→Atenas→Creta (Teseo). Los cuatro son dorados: el módulo alimenta directo al tier alto.
+**Estado del contenido (julio 2026): construido, 12 viajes en `estado: "borrador"` en `viajes.json`** (más que el catálogo inicial de 4 — Willy amplió el pedido y se cargó todo lo que llegó escrito). Los 4 originales — la Odisea (Odiseo), el viaje de los Argonautas (Jasón), los Doce Trabajos como recorrido (Heracles), Trecén→Atenas→Creta (Teseo) — más 8 adicionales: el vuelo de Perseo, el viaje de Eneas, el vuelo de Dédalo, Belerofonte y la Quimera, la búsqueda de Deméter, Prometeo y el fuego, Atlas (un solo punto, sin trazado real: es válido, el motor tolera viajes de 1 parada), y Rómulo y Remo. Cada viaje enciende un capítulo nuevo (`mapa:<id_viaje>`) en la carta del héroe correspondiente, también en borrador.
+
+**Aviso de cupo por tier (a resolver antes de publicar):** Odiseo, Jasón, Heracles, Teseo y Perseo son dorados que ya tenían sus 4 capítulos (tope del tier) entre base/vínculo/Cielo/Ordená antes de sumar el de `mapa:`; Dédalo y Prometeo son plateados que ya estaban en su tope de 3. Para esos 7 personajes hay un capítulo de más en borrador — no es un bug, la mayoría de sus capítulos de `ordena:` tampoco están publicados todavía. Al publicar, elegir cuáles quedan dentro del tope de cada uno (regla 6 de `CLAUDE.md`).
+
+**Módulo técnico:** `mapa.html`/`mapa.js`/`mapa.css` construidos, mismo patrón que `cielo.js` (catálogo, ceremonia, hoja de capítulo). **No registrado en el hub** (regla de despliegue: un módulo nuevo no se muestra sin instrucción textual de Willy) — se llega solo por URL directa mientras tanto.
 
 ### 4.2 Espejo de los Mundos (`espejo:`)
 
