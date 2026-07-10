@@ -278,6 +278,12 @@ async function iniciar() {
   document.getElementById("boton-reiniciar-mapa").addEventListener("click", reiniciar);
 
   idx = 0;
+  const parametros = new URLSearchParams(location.search);
+  const pedido = parametros.get("viaje");
+  if (pedido) {
+    const i = catalogo.findIndex(v => v.id === pedido);
+    if (i !== -1) idx = i;
+  }
   const hecho = completados().includes(actual().id);
   if (hecho) motor.marcarCompleto(actual().paradas.length);
   ultimaParadaTocada = hecho ? actual().paradas.length - 1 : -1;

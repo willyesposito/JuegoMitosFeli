@@ -467,6 +467,9 @@ function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones) {
   if (modulo === "ordena") {
     return "Secuenciá ese mito en Ordená el Mito para encender este capítulo.";
   }
+  if (modulo === "mapa") {
+    return "Recorré ese viaje en El Mapa del Héroe para encender este capítulo.";
+  }
   const nombre = NOMBRE_MODULO_FUENTE[modulo];
   return nombre
     ? `Se enciende jugando ${nombre} (llega en una próxima ola).`
@@ -482,6 +485,7 @@ function destinoCapituloVelado(capitulo) {
   if (modulo === "cielo") return `cielo.html?const=${encodeURIComponent(condicion || "")}`;
   if (modulo === "oraculo") return "oraculo.html?modo=dificil";
   if (modulo === "ordena") return `ordena.html?mito=${encodeURIComponent(condicion || "")}`;
+  if (modulo === "mapa") return `mapa.html?viaje=${encodeURIComponent(condicion || "")}`;
   if (modulo === "vinculo") {
     return estaDesbloqueada(condicion) ? `coleccion.html?ver=${encodeURIComponent(condicion)}` : "oraculo.html";
   }

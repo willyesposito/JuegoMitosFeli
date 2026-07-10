@@ -47,6 +47,19 @@ const MODULOS = [
         return publicados.length ? `${completados} de ${publicados.length} viajes` : "Descubrí héroes para desbloquear viajes";
       } catch (e) { return "Seguí el viaje y encendé historias"; }
     }
+  },
+  {
+    id: "ordena", nombre: "Ordená el Mito", icono: "🧩", href: "ordena.html",
+    descripcion: "Secuenciá la historia y encendé capítulos",
+    async progreso() {
+      try {
+        const todos = await (await fetch("mitos_ordena.json")).json();
+        const publicados = todos.filter(m => m.estado === "publicado" && estaDesbloqueada(m.personaje));
+        const completados = (estado.ordena && Array.isArray(estado.ordena.completados))
+          ? estado.ordena.completados.filter(id => publicados.some(m => m.id === id)).length : 0;
+        return publicados.length ? `${completados} de ${publicados.length} mitos` : "Descubrí héroes para desbloquear mitos";
+      } catch (e) { return "Secuenciá la historia y encendé capítulos"; }
+    }
   }
 ];
 
@@ -217,8 +230,14 @@ async function iniciar() {
   configurarOpciones();
   actualizarTodo();
 
-  // Selector de perfil solo si hay más de uno (spec §0.1); con uno solo entra directo.
-  if (datos.perfiles.length > 1) abrirModalPerfiles();
+  // Selector de perfil solo si hay más de uno (spec §0.1), y solo la primera
+  // vez que se abre el hub en esta pestaña: volver de un módulo a index.html
+  // recarga hub.js entero, y sin este freno el selector se re-abría en cada
+  // vuelta en vez de solo al entrar de cero.
+  if (datos.perfiles.length > 1 && !sessionStorage.getItem("feli-selector-mostrado")) {
+    sessionStorage.setItem("feli-selector-mostrado", "1");
+    abrirModalPerfiles();
+  }
 
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
     navigator.serviceWorker.register("sw.js").catch(() => {});

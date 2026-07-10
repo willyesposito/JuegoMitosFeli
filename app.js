@@ -205,6 +205,18 @@ function selloHistoriaCompleta(completa) {
   return completa ? '<span class="sello-historia">✦ Historia completa</span>' : "";
 }
 
+/* Ícono del capítulo velado según el módulo que lo enciende (doc de olas §2):
+   brújula para El Mapa del Héroe, estrella para El Cielo de los Mitos,
+   rompecabezas para Ordená el Mito. El resto (oráculo difícil, vínculo ya
+   alcanzable) conserva la brújula genérica de "hay un lugar adonde ir". */
+function iconoCapituloVelado(capitulo, destino) {
+  if (!destino) return "🔒";
+  const modulo = (capitulo.fuente || "").split(":")[0];
+  if (modulo === "ordena") return "🧩";
+  if (modulo === "cielo") return "⭐";
+  return "🧭";
+}
+
 /* Los capítulos velados con un destino conocido (cielo, oráculo difícil, o un
    vínculo ya alcanzable) se muestran como <button>: un tap navega directo al
    módulo que los enciende (doc de olas §2, regla transversal de UI). */
@@ -225,7 +237,7 @@ function bloqueCapitulo(capitulo, encendido) {
     const atributoDestino = destino ? `data-destino="${destino}"` : "";
     return `
       <${Tag} class="capitulo capitulo--velado${destino ? " capitulo--navegable" : ""}" data-capitulo-id="${capitulo.id}" ${atributoDestino}>
-        <span class="capitulo-candado" aria-hidden="true">${destino ? "🧭" : "🔒"}</span>
+        <span class="capitulo-candado" aria-hidden="true">${iconoCapituloVelado(capitulo, destino)}</span>
         <div>
           <strong class="capitulo-titulo">${capitulo.titulo}</strong>
           <p class="capitulo-pista">${pistaCapituloVelado(capitulo, encendido, nombresConstelaciones)}</p>

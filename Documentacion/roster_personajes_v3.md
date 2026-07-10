@@ -45,25 +45,25 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Personaje | Capítulos |
 |---|---|
 | Zeus | base ✅ · La boda del cielo (`vinculo:hera`) ✅ · Visión Panorámica (`ordena:aguila`) 🕓 · La Prueba de la Xenia (`ordena:hospitalidad`) 🕓 |
-| Poseidón | base ✅ · El Origen de Pegaso (`cielo:pegaso`) ✅ · El Valor del Olivo (`ordena:atenas_olivo`) 🕓 |
+| Poseidón | base ✅ · El Origen de Pegaso (`cielo:pegaso`) ✅ · El Valor del Olivo (`ordena:atenas_olivo`) ✅ |
 | Hades | base ✅ · El acuerdo de las estaciones (`vinculo:persefone`) ✅ · El Contrato Booleano (`ordena:orfeo`) 🕓 · Resolución Paramétrica (`ordena:cerbero`) 🕓 |
 | Atenea | base ✅ · La Red de Soporte (`cielo:andromeda`) ✅ · El Primer Tribunal (`ordena:areopago`) 🕓 |
-| Heracles | base ✅ · El león de Nemea (`cielo:leo`) ✅ · Los establos de Augías (`ordena:establos_augias`) 🕓 · Los doce trabajos (`ordena:heracles`) 🕓 · Los trabajos que dibujaron el mundo (`mapa:heracles_doce_trabajos`) 🕓 |
-| Odiseo | base ✅ · Nadie y el cíclope (`ordena:ciclope`) 🕓 · El caballo de Troya (`ordena:troya`) 🕓 · La vuelta a Ítaca (`vinculo:penelope`) ✅ · El mapa de los diez años (`mapa:odisea`) 🕓 |
-| Teseo | base ✅ · El hilo de Ariadna (`cielo:corona_boreal`) ✅ · El laberinto (`ordena:laberinto`) 🕓 · Después de Creta (`ordena:teseo`) 🕓 · El héroe que le dio nombre a un mar (`mapa:teseo`) 🕓 |
+| Heracles | base ✅ · El león de Nemea (`cielo:leo`) ✅ · Los establos de Augías (`ordena:establos_augias`) ✅ · Los doce trabajos (`ordena:heracles`) 🕓 · Los trabajos que dibujaron el mundo (`mapa:heracles_doce_trabajos`) 🕓 |
+| Odiseo | base ✅ · Nadie y el cíclope (`ordena:ciclope`) ✅ · El caballo de Troya (`ordena:troya`) 🕓 · La vuelta a Ítaca (`vinculo:penelope`) ✅ · El mapa de los diez años (`mapa:odisea`) 🕓 |
+| Teseo | base ✅ · El hilo de Ariadna (`cielo:corona_boreal`) ✅ · El laberinto (`ordena:laberinto`) ✅ · Después de Creta (`ordena:teseo`) 🕓 · El héroe que le dio nombre a un mar (`mapa:teseo`) 🕓 |
 | Aquiles | base ✅ · El Escudo Cosmológico (`ordena:escudo`) 🕓 · El Costo de la Impulsividad (`ordena:ira`) 🕓 · Ruptura del Ciclo (`ordena:reconciliacion`, bonificación) 🕓 |
-| Jasón | base ✅ · El Vellocino Protector (`ordena:vellocino`) 🕓 · Alquimia vs. Fuerza (`ordena:colquida`) 🕓 · Las Rocas Simplégades (`ordena:simplegades`) 🕓 · El barco que llegó al borde del mapa (`mapa:argonautas`) 🕓 |
-| Perseo | base ✅ · El héroe en las estrellas (`cielo:perseo`) ✅ · Inventario Crítico (`ordena:equipamiento`) 🕓 · Ventaja Aérea (`cielo:casiopea`) ✅ · De una isla chica a los dos extremos del mundo (`mapa:perseo`) 🕓 |
+| Jasón | base ✅ · El Vellocino Protector (`ordena:vellocino`) 🕓 · Alquimia vs. Fuerza (`ordena:colquida`) 🕓 · Las Rocas Simplégades (`ordena:simplegades`) ✅ · El barco que llegó al borde del mapa (`mapa:argonautas`) 🕓 |
+| Perseo | base ✅ · El héroe en las estrellas (`cielo:perseo`) ✅ · Inventario Crítico (`ordena:equipamiento`) ✅ · Ventaja Aérea (`cielo:casiopea`) ✅ · De una isla chica a los dos extremos del mundo (`mapa:perseo`) 🕓 |
 
 ## Nórdica (3)
 
 | Personaje | Capítulos |
 |---|---|
-| Odín | base ✅ · El ojo en el pozo (`ordena:pozo_mimir`) 🕓 · Lo que Frigg sabe (`vinculo:frigg`) ✅ |
-| Thor | base ✅ · El Collar de Sif (`ordena:mjolnir`) 🕓 · El Viaje a Jotunheim (`ordena:jotunheim`) 🕓 · El compañero de viajes (`vinculo:loki`) ✅ |
+| Odín | base ✅ · El ojo en el pozo (`ordena:pozo_mimir`) ✅ · Lo que Frigg sabe (`vinculo:frigg`) ✅ |
+| Thor | base ✅ · El Collar de Sif (`ordena:mjolnir`) ✅ · El Viaje a Jotunheim (`ordena:jotunheim`) ✅ · El compañero de viajes (`vinculo:loki`) ✅ |
 | Loki | base ✅ · La travesura del pelo de oro (`vinculo:sif`) ✅ · El lobo que creció demasiado (`vinculo:tyr`) ✅ |
 
-**Tier dorado: los 13 tienen sus 3-5 capítulos escritos y mergeados** (techo subido a 5 en julio 2026, ver decisión 5). Lo único pendiente por personaje es que Willy revise y publique los marcados 🕓 (23 de los 40 capítulos no-base del tier, incluidos los 5 de `mapa:` sumados en julio 2026).
+**Tier dorado: los 13 tienen sus 3-5 capítulos escritos y mergeados** (techo subido a 5 en julio 2026, ver decisión 5). Lo único pendiente por personaje es que Willy revise y publique los marcados 🕓 (18 de los 40 capítulos no-base del tier, incluidos los 5 de `mapa:` sumados en julio 2026).
 
 # TIER PLATEADO (37) — 2 a 4 capítulos
 
@@ -77,14 +77,14 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Artemisa | base ✅ · La Metamorfosis (`cielo:osa_mayor`) ✅ |
 | Ares | base ✅ · Atrapado en la Vasija de Bronce (`ordena:aloadas`) 🕓 |
 | Afrodita | base ✅ · La Manzana Dorada (`ordena:manzana_dorada`) 🕓 |
-| Hefesto | base ✅ · El escudo que cuenta el mundo (`vinculo:aquiles`) ✅ · Talos, el Gigante de Bronce (`ordena:talos`) 🕓 |
-| Hermes | base ✅ · Negociación de Activos (`ordena:robo_ganado`) 🕓 |
+| Hefesto | base ✅ · El escudo que cuenta el mundo (`vinculo:aquiles`) ✅ · Talos, el Gigante de Bronce (`ordena:talos`) ✅ |
+| Hermes | base ✅ · Negociación de Activos (`ordena:robo_ganado`) ✅ |
 | Dioniso | base ✅ · El Don de Midas (`ordena:midas`) 🕓 |
 | Cronos | base ✅ · La guerra que no evitó nada (`ordena:titanomaquia`) ✅ |
-| Prometeo | base ✅ · El Engaño de Mecone (`ordena:reparto`) 🕓 · La Resiliencia (`ordena:caucaso`) 🕓 · El castigo en el borde del mundo (`mapa:prometeo`) 🕓. Absorción futura: Deucalión y Pirra (Ola 2+) |
+| Prometeo | base ✅ · El Engaño de Mecone (`ordena:reparto`) ✅ · La Resiliencia (`ordena:caucaso`) 🕓 · El castigo en el borde del mundo (`mapa:prometeo`) 🕓. Absorción futura: Deucalión y Pirra (Ola 2+) |
 | Perséfone | base ✅ · Algoritmo de las Estaciones (`ordena:ciclo_natural`) 🕓 |
 | Belerofonte | base ✅ · El Límite del Vuelo (`ordena:limite_vuelo`) 🕓 · La montaña que todavía echa fuego (`mapa:belerofonte`) 🕓 |
-| Orfeo | base ✅ · Análisis de Frecuencias (`ordena:inframundo`) 🕓 |
+| Orfeo | base ✅ · Análisis de Frecuencias (`ordena:inframundo`) ✅ |
 | Edipo | base ✅ · El acertijo de la Esfinge (`vinculo:esfinge`) ✅ |
 | Penélope | base ✅ · El regreso de Odiseo (`vinculo:odiseo`) ✅ |
 | Helena | base ✅ · La promesa de Afrodita (`vinculo:afrodita`) ✅ |
@@ -94,7 +94,7 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Agamenón | base ✅ · La ofensa (`vinculo:aquiles`) ✅ |
 | Héctor | base ✅ · La Despedida en las Puertas Esceas (`ordena:despedida`) 🕓 |
 | Atlas | base ✅ · La bóveda celeste (`vinculo:heracles`) ✅ · El gigante que le dio nombre a un océano (`mapa:atlas`) 🕓 |
-| Dédalo | base ✅ · Límites Operativos (`ordena:vuelo_icaro`) 🕓 · El Hilo y la Caracola (`ordena:desafio_minos`) 🕓 · El vuelo que bautizó un mar (`mapa:dedalo`) 🕓 |
+| Dédalo | base ✅ · Límites Operativos (`ordena:vuelo_icaro`) 🕓 · El Hilo y la Caracola (`ordena:desafio_minos`) ✅ · El vuelo que bautizó un mar (`mapa:dedalo`) 🕓 |
 | Orión | base ✅ · El escorpión que lo persigue (`cielo:escorpio`) ✅. Publicado en Ola 1, El Cielo de los Mitos |
 
 ## Nórdica (10)
@@ -102,13 +102,13 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Personaje | Capítulos |
 |---|---|
 | Freya | base ✅ · El Collar Brisingamen (`ordena:forja_enana`) 🕓 |
-| Frigg | base ✅ · El Juramento de Todas las Cosas (`ordena:juramento`) 🕓 |
-| Tyr | base ✅ · La Paradoja de Gleipnir (`ordena:fenrir_paradoja`) 🕓 |
+| Frigg | base ✅ · El Juramento de Todas las Cosas (`ordena:juramento`) ✅ |
+| Tyr | base ✅ · La Paradoja de Gleipnir (`ordena:fenrir_paradoja`) ✅ |
 | Heimdall | base ✅ · El Ancho de Banda (`ordena:heimdall`) 🕓 |
-| Skadi | base ✅ · La Elección a Ciegas (`ordena:eleccion_ciegas`) 🕓 |
+| Skadi | base ✅ · La Elección a Ciegas (`ordena:eleccion_ciegas`) ✅ |
 | Njörd | base ✅ · Noatún y la Montaña (`ordena:convivencia`) 🕓 |
 | Balder | base ✅ · Breidablik, el Salón sin Mancha (`ordena:breidablik`) 🕓 |
-| Sigurd | base ✅ · Parser de Advertencias (`ordena:traicion`) 🕓 |
+| Sigurd | base ✅ · Parser de Advertencias (`ordena:traicion`) ✅ |
 | Sif | base ✅ · La Apuesta de los Enanos (`ordena:apuesta_enanos`) 🕓 |
 | Hel | base ✅ · La única condición (`vinculo:balder`) ✅ |
 
