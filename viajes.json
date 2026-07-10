@@ -49,7 +49,7 @@
       }
     ],
     "porque": "El viaje de Odiseo dibuja el mapa del mundo que los griegos conocían por mar: cada isla y cada costa era una historia para explicar un lugar lejano al que se llegaba navegando.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "argonautas",
@@ -101,7 +101,7 @@
       }
     ],
     "porque": "El viaje de los Argonautas estira el mapa griego hasta su borde más lejano: el mar Negro, la última frontera conocida, adonde solo se llegaba con un gran barco y muchos talentos juntos.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "heracles_doce_trabajos",
@@ -153,7 +153,7 @@
       }
     ],
     "porque": "Los doce trabajos de Heracles, puestos en un mapa, marcan los cuatro bordes del mundo que Grecia conocía: el toro en el sur, las Amazonas en el este, las yeguas en el norte, y las columnas en el oeste.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "teseo",
@@ -205,7 +205,7 @@
       }
     ],
     "porque": "El recorrido de Teseo une por mar y por tierra las dos orillas de su historia, el Peloponeso y Creta, y termina explicando por qué un mar entero, el Egeo, se llama como se llama.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "perseo",
@@ -250,7 +250,7 @@
       }
     ],
     "porque": "El viaje de Perseo va de una islita del Egeo hasta los dos extremos del mundo griego, el oeste lejano de las Gorgonas y el este de la costa de Jope, para volver y fundar una ciudad que existió de verdad.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "eneas",
@@ -302,7 +302,7 @@
       }
     ],
     "porque": "El viaje de Eneas es el puente entre dos mundos: sale de Troya, en el este, y cruza todo el Mediterráneo hasta Italia, para explicar cómo una ciudad que cayó se transformó, muy lejos, en el comienzo de Roma.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "dedalo",
@@ -347,7 +347,7 @@
       }
     ],
     "porque": "El vuelo de Dédalo cruza el Egeo de este a oeste y deja una huella que todavía está en el mapa: un mar que se llama Icario por el chico que voló demasiado alto.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "belerofonte",
@@ -385,7 +385,7 @@
       }
     ],
     "porque": "El viaje de Belerofonte va de Grecia a la costa de la actual Turquía, y termina en un lugar asombroso de verdad: una montaña de la que todavía sale fuego, igual que en el mito.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "demeter_persefone",
@@ -416,7 +416,7 @@
       }
     ],
     "porque": "El recorrido de Deméter une un prado de Sicilia con un santuario cerca de Atenas, y explica, sobre lugares reales, por qué existen las estaciones del año.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "prometeo",
@@ -440,7 +440,7 @@
       }
     ],
     "porque": "La historia de Prometeo une el punto más alto de Grecia, el Olimpo, con el borde más lejano del este, el Cáucaso: los dos extremos del mundo que los griegos podían imaginar hacia arriba y hacia afuera.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "atlas",
@@ -457,7 +457,7 @@
       }
     ],
     "porque": "Atlas marca el borde oeste del mapa griego, y su nombre quedó pegado a dos lugares enormes de verdad: la cordillera del Atlas y el océano Atlántico.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "romulo_remo",
@@ -488,6 +488,6 @@
       }
     ],
     "porque": "El recorrido de Rómulo y Remo es corto pero termina en un punto que sigue existiendo: la colina donde empezó Roma, una ciudad de verdad que se puede visitar hoy.",
-    "estado": "borrador"
+    "estado": "publicado"
   }
 ]
