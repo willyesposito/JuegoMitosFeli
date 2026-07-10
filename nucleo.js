@@ -116,6 +116,13 @@ function normalizarPerfil(p) {
   }
   if (p.cielo && Array.isArray(p.cielo.completadas)) base.cielo = p.cielo;
   if (p.sets && Array.isArray(p.sets.revelados)) base.sets = p.sets;
+  // "mapa" y "ordena" no se declaran en perfilNuevo (cada módulo inicializa su
+  // propio namespace de forma perezosa, ver estadoMapa()/estadoOrdena() en sus
+  // JS), pero si no se preservan acá quedan afuera del perfil normalizado y la
+  // próxima guardarEstado() los borra: el progreso de esos módulos desaparece
+  // en el siguiente reload. Mismo criterio que cielo/sets arriba.
+  if (p.mapa && Array.isArray(p.mapa.completados)) base.mapa = p.mapa;
+  if (p.ordena && Array.isArray(p.ordena.completados)) base.ordena = p.ordena;
   for (const id of base.global.descubiertos) {
     if (!base.global.capitulos[id]) base.global.capitulos[id] = ["base"];
   }
@@ -438,6 +445,9 @@ function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones) {
   if (modulo === "oraculo") {
     return "Resolvé el desafío del Oráculo en modo difícil, sin fallar ni una vez.";
   }
+  if (modulo === "ordena") {
+    return "Secuenciá ese mito en Ordená el Mito para encender este capítulo.";
+  }
   const nombre = NOMBRE_MODULO_FUENTE[modulo];
   return nombre
     ? `Se enciende jugando ${nombre} (llega en una próxima ola).`
@@ -452,6 +462,7 @@ function destinoCapituloVelado(capitulo) {
   const [modulo, condicion] = fuente.split(":");
   if (modulo === "cielo") return `cielo.html?const=${encodeURIComponent(condicion || "")}`;
   if (modulo === "oraculo") return "oraculo.html?modo=dificil";
+  if (modulo === "ordena") return `ordena.html?mito=${encodeURIComponent(condicion || "")}`;
   if (modulo === "vinculo") {
     return estaDesbloqueada(condicion) ? `coleccion.html?ver=${encodeURIComponent(condicion)}` : "oraculo.html";
   }

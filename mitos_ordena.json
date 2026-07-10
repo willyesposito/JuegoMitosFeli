@@ -1,0 +1,712 @@
+[
+  {
+    "id": "ciclope",
+    "personaje": "odiseo",
+    "escenas": [
+      {
+        "texto": "Odiseo deja al cíclope sin su único ojo, y Polifemo pide ayuda a los gritos.",
+        "icono": "👁️"
+      },
+      {
+        "texto": "Odiseo y sus compañeros quedan atrapados en la cueva del cíclope Polifemo.",
+        "icono": "🕳️"
+      },
+      {
+        "texto": "Para escapar, Odiseo le dice al cíclope que su nombre es Nadie.",
+        "icono": "🎭"
+      },
+      {
+        "texto": "Escondidos bajo las ovejas, Odiseo y los suyos salen de la cueva.",
+        "icono": "🐑"
+      },
+      {
+        "texto": "Los otros cíclopes escuchan «Nadie me ataca» y no vienen a ayudarlo.",
+        "icono": "🙉"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ],
+    "porque": "El nombre falso no sirve de nada al principio; recién muestra su magia al final, cuando el cíclope grita «Nadie me ataca» y nadie viene. Ordenar esta cadena enseña que una idea se puede plantar temprano y dar fruto mucho después.",
+    "estado": "borrador"
+  },
+  {
+    "id": "simplegades",
+    "personaje": "jason",
+    "escenas": [
+      {
+        "texto": "Las rocas se cierran de golpe y solo le rozan la cola a la paloma.",
+        "icono": "💨"
+      },
+      {
+        "texto": "Dos rocas gigantes chocan entre sí y aplastan todo lo que intenta pasar.",
+        "icono": "🪨"
+      },
+      {
+        "texto": "El Argo pasa justo a tiempo, con apenas un raspón en la popa.",
+        "icono": "⛵"
+      },
+      {
+        "texto": "Jasón suelta una paloma para ver cómo y cuándo chocan las rocas.",
+        "icono": "🕊️"
+      },
+      {
+        "texto": "Apenas las rocas se abren de nuevo, los Argonautas reman con todas sus fuerzas.",
+        "icono": "🚣"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ],
+    "porque": "Antes de arriesgarse, Jasón observa: manda la paloma para aprender el ritmo de las rocas. Ordenar esta cadena enseña que mirar bien primero, y actuar en el momento justo, vale más que lanzarse a lo loco.",
+    "estado": "borrador"
+  },
+  {
+    "id": "laberinto",
+    "personaje": "teseo",
+    "escenas": [
+      {
+        "texto": "Teseo ata la punta del hilo en la entrada del laberinto.",
+        "icono": "🔗"
+      },
+      {
+        "texto": "A cada paso hacia adentro, va desenrollando el hilo detrás suyo.",
+        "icono": "➰"
+      },
+      {
+        "texto": "Antes de entrar, Ariadna le da a Teseo un ovillo de hilo.",
+        "icono": "🧶"
+      },
+      {
+        "texto": "Para volver, sigue el hilo paso a paso hasta la salida.",
+        "icono": "🧭"
+      },
+      {
+        "texto": "En el centro del laberinto, Teseo vence al Minotauro.",
+        "icono": "🐂"
+      },
+      {
+        "texto": "Teseo sale del laberinto a la luz del día.",
+        "icono": "🌅"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      0,
+      1,
+      4,
+      3,
+      5
+    ],
+    "porque": "El gesto más importante no es el más llamativo: atar el hilo en la entrada, algo chiquito, es lo que después permite volver. Ordenar esta historia enseña que la salida se prepara desde el primer paso, no cuando ya estás perdido.",
+    "estado": "borrador"
+  },
+  {
+    "id": "establos_augias",
+    "personaje": "heracles",
+    "escenas": [
+      {
+        "texto": "Heracles abre un camino nuevo y desvía un río entero hacia los establos.",
+        "icono": "⛏️"
+      },
+      {
+        "texto": "A mano y con pala sería imposible terminar a tiempo.",
+        "icono": "🚫"
+      },
+      {
+        "texto": "Los establos del rey Augías llevan años sin limpiarse y están hechos un desastre.",
+        "icono": "🐄"
+      },
+      {
+        "texto": "El agua corre por adentro y se lleva toda la suciedad sola.",
+        "icono": "🌊"
+      },
+      {
+        "texto": "A Heracles le piden que los limpie en un solo día.",
+        "icono": "⏳"
+      },
+      {
+        "texto": "Los establos quedan limpios antes de que caiga el sol.",
+        "icono": "✨"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      4,
+      1,
+      0,
+      3,
+      5
+    ],
+    "porque": "Heracles no gana con fuerza bruta sino con una idea: si el trabajo es demasiado, cambiá la manera de hacerlo. Ordenar esta cadena enseña que a veces la mejor herramienta no son las manos, sino pensar distinto.",
+    "estado": "borrador"
+  },
+  {
+    "id": "equipamiento",
+    "personaje": "perseo",
+    "escenas": [
+      {
+        "texto": "Sabe que no puede mirarla a los ojos, así que junta objetos especiales antes de partir.",
+        "icono": "🎒"
+      },
+      {
+        "texto": "A Perseo le encargan una misión temible: enfrentar a Medusa, cuya mirada convierte en piedra.",
+        "icono": "🗿"
+      },
+      {
+        "texto": "En vez de mirar a Medusa de frente, la observa por el reflejo del escudo.",
+        "icono": "🪞"
+      },
+      {
+        "texto": "Así puede vencerla sin quedar convertido en piedra.",
+        "icono": "⚔️"
+      },
+      {
+        "texto": "Recibe unas sandalias aladas para moverse rápido y en silencio.",
+        "icono": "🪽"
+      },
+      {
+        "texto": "Recibe un escudo tan brillante que funciona como espejo.",
+        "icono": "🛡️"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      0,
+      4,
+      5,
+      2,
+      3
+    ],
+    "porque": "Cada objeto que Perseo junta tiene un para qué, y el escudo espejo es el que resuelve el problema imposible: mirar sin mirar. Ordenar esta cadena enseña que preparar bien las herramientas, y saber para qué sirve cada una, es la mitad de la aventura.",
+    "estado": "borrador"
+  },
+  {
+    "id": "inframundo",
+    "personaje": "orfeo",
+    "escenas": [
+      {
+        "texto": "Conmovido, Hades acepta dejarla volver, pero con una condición.",
+        "icono": "🤝"
+      },
+      {
+        "texto": "Casi llegando, Orfeo duda y mira hacia atrás antes de tiempo.",
+        "icono": "👀"
+      },
+      {
+        "texto": "Orfeo no puede mirar atrás hasta que los dos estén afuera, a la luz.",
+        "icono": "🙈"
+      },
+      {
+        "texto": "Eurídice, la persona que Orfeo más quería, se va al mundo de abajo.",
+        "icono": "💔"
+      },
+      {
+        "texto": "Orfeo baja a buscarla y toca su música más hermosa para Hades.",
+        "icono": "🎵"
+      },
+      {
+        "texto": "Eurídice vuelve al mundo de abajo, y Orfeo aprende lo difícil que es confiar hasta el final.",
+        "icono": "🌑"
+      }
+    ],
+    "ordenCorrecto": [
+      3,
+      4,
+      0,
+      2,
+      1,
+      5
+    ],
+    "porque": "Todo el viaje de Orfeo depende de una sola regla: esperar hasta el final para mirar. La rompe a un paso de lograrlo. Ordenar esta historia enseña que a veces lo más difícil no es el camino, sino aguantar la última parte sin apurarse.",
+    "estado": "borrador"
+  },
+  {
+    "id": "robo_ganado",
+    "personaje": "hermes",
+    "escenas": [
+      {
+        "texto": "A Apolo le encanta la lira, y los hermanos quedan en paz.",
+        "icono": "🤝"
+      },
+      {
+        "texto": "Apolo se da cuenta de que fue Hermes y le reclama su ganado.",
+        "icono": "🔎"
+      },
+      {
+        "texto": "El pequeño Hermes se lleva sin permiso el ganado de su hermano Apolo.",
+        "icono": "🐮"
+      },
+      {
+        "texto": "Por el camino encuentra un caparazón de tortuga y con él inventa la lira.",
+        "icono": "🎵"
+      },
+      {
+        "texto": "Para que no lo descubran, hace caminar a los animales al revés y confunde las huellas.",
+        "icono": "👣"
+      },
+      {
+        "texto": "Hermes le ofrece la lira a cambio de su perdón.",
+        "icono": "🎁"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      4,
+      3,
+      1,
+      5,
+      0
+    ],
+    "porque": "Hermes se mete en un lío, pero lo resuelve sin pelear: convierte algo que creó, la lira, en la moneda para arreglar las cosas. Ordenar esta cadena enseña que un buen intercambio puede deshacer un problema mejor que una pelea.",
+    "estado": "borrador"
+  },
+  {
+    "id": "atenas_olivo",
+    "personaje": "poseidon",
+    "escenas": [
+      {
+        "texto": "La gente compara los dos regalos y elige el olivo, por lo útil que es.",
+        "icono": "⚖️"
+      },
+      {
+        "texto": "Atenea planta el primer olivo, que da aceite, comida y madera.",
+        "icono": "🫒"
+      },
+      {
+        "texto": "Dos dioses, Atenea y Poseidón, quieren ser los protectores de una misma ciudad.",
+        "icono": "🏛️"
+      },
+      {
+        "texto": "La ciudad toma el nombre de Atenea y se llama Atenas.",
+        "icono": "🦉"
+      },
+      {
+        "texto": "Poseidón golpea la tierra con su tridente y hace brotar agua, pero sale salada.",
+        "icono": "🔱"
+      },
+      {
+        "texto": "Para decidir, cada uno le ofrece un regalo a la gente.",
+        "icono": "🎁"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      5,
+      4,
+      1,
+      0,
+      3
+    ],
+    "porque": "Los dos regalos son poderosos, pero gana el que sirve para la vida de todos los días. Ordenar esta historia enseña que muchas veces lo más valioso no es lo más impresionante, sino lo más útil.",
+    "estado": "borrador"
+  },
+  {
+    "id": "mjolnir",
+    "personaje": "thor",
+    "escenas": [
+      {
+        "texto": "Los enanos forjan el pelo dorado y, además, un martillo poderoso: Mjolnir.",
+        "icono": "🔨"
+      },
+      {
+        "texto": "Aun con el mango corto, Mjolnir resulta ser el mejor regalo de todos.",
+        "icono": "🏆"
+      },
+      {
+        "texto": "Thor se enoja muchísimo y obliga a Loki a arreglar lo que hizo.",
+        "icono": "😠"
+      },
+      {
+        "texto": "Loki va con los enanos, los mejores herreros, para que hagan un pelo nuevo de oro.",
+        "icono": "⚒️"
+      },
+      {
+        "texto": "Loki, haciendo una travesura, le corta el pelo dorado a Sif mientras duerme.",
+        "icono": "✂️"
+      },
+      {
+        "texto": "Durante la forja, una mosca (que en realidad es Loki) molesta al herrero y el mango sale más corto.",
+        "icono": "🪰"
+      }
+    ],
+    "ordenCorrecto": [
+      4,
+      2,
+      3,
+      0,
+      5,
+      1
+    ],
+    "porque": "Una travesura, cortar el pelo de Sif, termina causando algo bueno inesperado: el martillo de Thor. Y hasta el defecto del mango tiene su origen en la historia. Ordenar esta cadena enseña que una acción trae otra, y que de un error a veces sale algo importante.",
+    "estado": "borrador"
+  },
+  {
+    "id": "fenrir_paradoja",
+    "personaje": "tyr",
+    "escenas": [
+      {
+        "texto": "Mandan a hacer una cinta mágica, suave pero imposible de cortar: Gleipnir.",
+        "icono": "🎀"
+      },
+      {
+        "texto": "La cinta aguanta, Fenrir queda atado y Tyr pierde su mano.",
+        "icono": "🦸"
+      },
+      {
+        "texto": "Los dioses intentan atarlo con cadenas fortísimas, pero Fenrir las rompe todas.",
+        "icono": "⛓️"
+      },
+      {
+        "texto": "Tyr, valiente, ofrece su propia mano como garantía.",
+        "icono": "✋"
+      },
+      {
+        "texto": "El lobo Fenrir se hace cada vez más grande y peligroso.",
+        "icono": "🐺"
+      },
+      {
+        "texto": "Fenrir sospecha una trampa y solo acepta si alguien pone una mano en su boca.",
+        "icono": "🤨"
+      }
+    ],
+    "ordenCorrecto": [
+      4,
+      2,
+      0,
+      5,
+      3,
+      1
+    ],
+    "porque": "El plan solo funciona porque Tyr está dispuesto a perder algo suyo: sin su mano en juego, Fenrir nunca hubiera aceptado. Ordenar esta cadena enseña que atrapar un peligro grande a veces pide un sacrificio de verdad, y que la valentía es cumplir aunque duela.",
+    "estado": "borrador"
+  },
+  {
+    "id": "eleccion_ciegas",
+    "personaje": "skadi",
+    "escenas": [
+      {
+        "texto": "Para hacer las paces, los dioses le dejan a Skadi elegir un marido.",
+        "icono": "🤝"
+      },
+      {
+        "texto": "Se casan, pero Skadi ama las montañas y Njörd ama el mar.",
+        "icono": "🏔️"
+      },
+      {
+        "texto": "Al final, esos pies no eran de Balder sino de Njörd, el dios del mar.",
+        "icono": "🌊"
+      },
+      {
+        "texto": "Skadi busca los pies más lindos, segura de que son de Balder.",
+        "icono": "🦶"
+      },
+      {
+        "texto": "Pero hay una regla: solo puede elegir mirando los pies, sin ver la cara.",
+        "icono": "👣"
+      },
+      {
+        "texto": "Como no logran vivir felices en el mismo lugar, deciden separarse.",
+        "icono": "🚶"
+      }
+    ],
+    "ordenCorrecto": [
+      0,
+      4,
+      3,
+      2,
+      1,
+      5
+    ],
+    "porque": "Skadi elige mirando solo una parte de la verdad, y por eso su elección no sale como esperaba. Ordenar esta cadena enseña que decidir con poca información puede llevarte a un lugar muy distinto del que imaginabas.",
+    "estado": "borrador"
+  },
+  {
+    "id": "pozo_mimir",
+    "personaje": "odin",
+    "escenas": [
+      {
+        "texto": "Mimir, el guardián del pozo, le pide un precio muy alto: uno de sus ojos.",
+        "icono": "👁️"
+      },
+      {
+        "texto": "Bebe del pozo y consigue una sabiduría que nadie más tiene.",
+        "icono": "✨"
+      },
+      {
+        "texto": "Desde entonces Odín es tuerto, y ese ojo perdido es la marca de todo lo que aprendió.",
+        "icono": "🧙"
+      },
+      {
+        "texto": "Escucha que el agua del pozo de Mimir le da un conocimiento enorme a quien la bebe.",
+        "icono": "💧"
+      },
+      {
+        "texto": "Odín decide entregar su ojo a cambio del agua.",
+        "icono": "🤲"
+      },
+      {
+        "texto": "Odín quiere entender el mundo mejor que nadie y busca la sabiduría más profunda.",
+        "icono": "🧠"
+      }
+    ],
+    "ordenCorrecto": [
+      5,
+      3,
+      0,
+      4,
+      1,
+      2
+    ],
+    "porque": "Odín no consigue la sabiduría gratis: elige pagar con algo importante suyo. Ordenar esta cadena enseña que lo que más vale casi siempre tiene un precio, y que a veces hay que renunciar a algo para ganar otra cosa.",
+    "estado": "borrador"
+  },
+  {
+    "id": "desafio_minos",
+    "personaje": "dedalo",
+    "escenas": [
+      {
+        "texto": "Al resolver el reto imposible, Minos descubre que ahí estaba escondido Dédalo.",
+        "icono": "🎯"
+      },
+      {
+        "texto": "Ata el hilo a una hormiga y pone una gota de miel del otro lado de la caracola.",
+        "icono": "🐜"
+      },
+      {
+        "texto": "El rey Minos busca a Dédalo por todas partes y lanza un desafío para encontrarlo.",
+        "icono": "👑"
+      },
+      {
+        "texto": "Nadie puede hacerlo, pero Dédalo tiene una idea.",
+        "icono": "💡"
+      },
+      {
+        "texto": "La hormiga camina por adentro buscando la miel y arrastra el hilo hasta el final.",
+        "icono": "🍯"
+      },
+      {
+        "texto": "El reto es pasar un hilo por adentro de una caracola toda enroscada.",
+        "icono": "🐚"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      5,
+      3,
+      1,
+      4,
+      0
+    ],
+    "porque": "Dédalo no fuerza el hilo: busca quién sí puede pasar por la caracola y usa una hormiga y una gota de miel. Ordenar esta cadena enseña que un problema difícil a veces se resuelve con un ayudante inesperado y una idea simple.",
+    "estado": "borrador"
+  },
+  {
+    "id": "talos",
+    "personaje": "hefesto",
+    "escenas": [
+      {
+        "texto": "Por ahí se escapa el líquido que le daba vida.",
+        "icono": "💧"
+      },
+      {
+        "texto": "Alguien descubre ese punto débil y le saca el clavo.",
+        "icono": "🔧"
+      },
+      {
+        "texto": "Talos da vueltas a la isla y espanta a cualquier barco que se acerca.",
+        "icono": "🛡️"
+      },
+      {
+        "texto": "Pero tiene un secreto: todo su poder pasa por un solo clavo en el tobillo.",
+        "icono": "📍"
+      },
+      {
+        "texto": "Hefesto, el dios herrero, fabrica a Talos, un gigante de bronce que protege la isla de Creta.",
+        "icono": "⚙️"
+      },
+      {
+        "texto": "Sin ese líquido, el gigante de bronce se detiene para siempre.",
+        "icono": "🗿"
+      }
+    ],
+    "ordenCorrecto": [
+      4,
+      2,
+      3,
+      1,
+      0,
+      5
+    ],
+    "porque": "Un gigante enorme e imparable tiene, igual, un único punto débil, y ahí está toda la historia. Ordenar esta cadena enseña que hasta lo más fuerte puede depender de un detalle chiquito, y que conocer ese detalle lo cambia todo.",
+    "estado": "borrador"
+  },
+  {
+    "id": "reparto",
+    "personaje": "prometeo",
+    "escenas": [
+      {
+        "texto": "Como castigo, les esconde el fuego a las personas.",
+        "icono": "🔥"
+      },
+      {
+        "texto": "Prometeo tiene que repartir un buey entre los dioses y las personas.",
+        "icono": "🐂"
+      },
+      {
+        "texto": "Zeus elige la parte que se ve más linda por fuera: la de la grasa brillante.",
+        "icono": "✨"
+      },
+      {
+        "texto": "Prepara dos partes: una con la carne buena escondida, otra con huesos tapados por grasa brillante.",
+        "icono": "🍖"
+      },
+      {
+        "texto": "Pero adentro solo había huesos, y la carne queda para las personas.",
+        "icono": "😲"
+      },
+      {
+        "texto": "Zeus se da cuenta del engaño y se enoja mucho.",
+        "icono": "⚡"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      3,
+      2,
+      4,
+      5,
+      0
+    ],
+    "porque": "Prometeo engaña con las apariencias: lo que se ve más lindo por fuera esconde lo peor por dentro. Ordenar esta cadena enseña que las cosas no siempre son lo que parecen, y que decidir solo por lo de afuera puede traer consecuencias.",
+    "estado": "borrador"
+  },
+  {
+    "id": "jotunheim",
+    "personaje": "thor",
+    "escenas": [
+      {
+        "texto": "El gigante los desafía a unas pruebas que parecen fáciles.",
+        "icono": "💪"
+      },
+      {
+        "texto": "Después el gigante confiesa la verdad: el cuerno estaba unido al mar y el gato era la serpiente que rodea el mundo. Todo era ilusión.",
+        "icono": "🌊"
+      },
+      {
+        "texto": "Thor y Loki llegan al enorme castillo de un rey gigante en Jotunheim.",
+        "icono": "🏰"
+      },
+      {
+        "texto": "Thor intenta vaciar un cuerno bebiendo, pero por más que toma, casi no baja.",
+        "icono": "🥤"
+      },
+      {
+        "texto": "Intenta levantar un gato del piso y apenas logra despegarle una pata.",
+        "icono": "🐈"
+      },
+      {
+        "texto": "Parece que fallaron en todo y se van decepcionados.",
+        "icono": "😔"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      0,
+      3,
+      4,
+      5,
+      1
+    ],
+    "porque": "Thor cree que fracasó, pero en realidad enfrentó cosas imposibles disfrazadas de fáciles: bebió del mar y movió a la serpiente del mundo. Ordenar esta cadena enseña que las apariencias engañan, y que a veces lo que parece un fracaso fue en verdad una hazaña enorme.",
+    "estado": "borrador"
+  },
+  {
+    "id": "traicion",
+    "personaje": "sigurd",
+    "escenas": [
+      {
+        "texto": "Los pájaros le avisan que Regin planea traicionarlo.",
+        "icono": "⚠️"
+      },
+      {
+        "texto": "Sigurd vence al dragón Fafnir, que cuidaba un gran tesoro.",
+        "icono": "🐉"
+      },
+      {
+        "texto": "Gracias al aviso, Sigurd se da cuenta del peligro a tiempo.",
+        "icono": "👂"
+      },
+      {
+        "texto": "Se protege de la traición y se queda con el tesoro.",
+        "icono": "💰"
+      },
+      {
+        "texto": "Al probar sin querer una gota mientras cocina, Sigurd entiende de golpe el idioma de los pájaros.",
+        "icono": "🐦"
+      },
+      {
+        "texto": "Regin le pide que cocine el corazón del dragón.",
+        "icono": "🔥"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      5,
+      4,
+      0,
+      2,
+      3
+    ],
+    "porque": "Un accidente, probar una gota, le da a Sigurd la información que lo salva: entender a los pájaros. Ordenar esta cadena enseña que escuchar un aviso a tiempo puede cambiar el final de una historia.",
+    "estado": "borrador"
+  },
+  {
+    "id": "juramento",
+    "personaje": "frigg",
+    "escenas": [
+      {
+        "texto": "Casi todo jura, pero Frigg pasa por alto una plantita: el muérdago, que le parece muy chiquito.",
+        "icono": "🌿"
+      },
+      {
+        "texto": "Loki prepara una flecha de muérdago y logra que la lancen contra Balder.",
+        "icono": "🏹"
+      },
+      {
+        "texto": "Para proteger a Balder, Frigg le pide a todas las cosas del mundo que juren no lastimarlo.",
+        "icono": "🤲"
+      },
+      {
+        "texto": "Loki descubre que el muérdago es lo único que no hizo el juramento.",
+        "icono": "👀"
+      },
+      {
+        "texto": "Justo esa plantita olvidada es la que hace caer a Balder.",
+        "icono": "💔"
+      },
+      {
+        "texto": "Como nada puede dañarlo, los dioses juegan a tirarle cosas a Balder y nada le hace nada.",
+        "icono": "🎯"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      0,
+      5,
+      3,
+      1,
+      4
+    ],
+    "porque": "Frigg protege a Balder de todo, menos de una sola cosa que parecía no importar, y Loki apunta justo ahí. Ordenar esta cadena enseña que el punto débil suele estar en el detalle que dejamos afuera por chiquito, y que conviene no descuidar ni lo que parece insignificante.",
+    "estado": "borrador"
+  }
+]

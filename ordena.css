@@ -1,0 +1,392 @@
+/* Ordená el Mito — estilos propios del módulo.
+   Autocontenido a propósito (no importa estilos.css, cielo.css ni mapa.css):
+   mismo criterio que los otros módulos, para evitar choques de nombres de
+   animación. El estado y los personajes se comparten via nucleo.js. Paleta
+   propia: pergamino y ámbar, distinta de la noche violeta del Cielo y del
+   verde del Mapa. */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@font-face {
+  font-family: "Cinzel";
+  src: url("fonts/cinzel-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("fonts/cinzel-800.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+html, body { height: 100%; }
+
+body {
+  background: #180f08;
+  color: #fdf6ec;
+  font-family: ui-rounded, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+button { font-family: inherit; cursor: pointer; }
+.oculto { display: none !important; }
+
+.ordena-pantalla {
+  position: relative;
+  max-width: 430px;
+  margin: 0 auto;
+  height: 100dvh;
+  min-height: 640px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at 50% 20%, #402a16 0%, #241608 58%, #180f08 100%);
+}
+
+/* ---------- Encabezado ---------- */
+.ordena-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 14px 6px;
+}
+
+.ordena-volver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: rgba(0, 0, 0, .28);
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 999px;
+  width: 44px;
+  height: 44px;
+  flex: none;
+}
+
+.ordena-titulo-grupo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  min-width: 0;
+}
+
+.ordena-titulo {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: .5px;
+  color: #f0c078;
+}
+
+.ordena-subtitulo { font-size: 11px; color: rgba(253, 246, 236, .6); }
+
+.ordena-contador {
+  flex: none;
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(240, 192, 120, .35);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.ordena-instruccion {
+  position: relative;
+  z-index: 2;
+  margin: 6px 16px 0;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: rgba(253, 240, 220, .9);
+  min-height: 1.4em;
+}
+
+/* ---------- Tarjetas de escenas ---------- */
+.ordena-mundo {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ordena-tarjetas {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 12px 14px 60px;
+}
+
+.ordena-tarjeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  border: 1.5px solid rgba(255, 255, 255, .16);
+  background: rgba(255, 255, 255, .06);
+  color: #fdf6ec;
+  border-radius: 16px;
+  padding: 12px 14px;
+  animation: aparece-tarjeta .35s ease-out both;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.ordena-tarjeta:disabled { cursor: default; }
+
+.ordena-tarjeta-numero {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid rgba(240, 192, 120, .5);
+  color: #f0c078;
+  font-family: "Cinzel", serif;
+  font-weight: 800;
+  font-size: 12.5px;
+}
+
+.ordena-tarjeta-icono { flex: none; font-size: 22px; line-height: 1; }
+
+.ordena-tarjeta-texto { flex: 1; font-size: 13.5px; line-height: 1.45; font-weight: 600; }
+
+.ordena-tarjeta.seleccionada {
+  border-color: #f0c078;
+  background: rgba(240, 192, 120, .16);
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px rgba(240, 192, 120, .18);
+}
+
+.ordena-tarjeta.correcta .ordena-tarjeta-numero {
+  border-color: #f0c078;
+  background: rgba(240, 192, 120, .22);
+}
+
+.ordena-tarjeta.recien-movida { animation: pop-tarjeta .5s ease-out both; }
+
+.ordena-reiniciar {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  z-index: 3;
+  border: none;
+  background: rgba(255, 255, 255, .1);
+  color: rgba(253, 246, 236, .7);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 17px;
+}
+
+/* ---------- Catálogo de mitos ---------- */
+.ordena-catalogo {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ordena-catalogo::-webkit-scrollbar { display: none; }
+
+.ordena-chip {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, .07);
+  border: 1px solid rgba(255, 255, 255, .16);
+  color: rgba(253, 246, 236, .65);
+  border-radius: 999px;
+  padding: 9px 15px;
+  font-size: 12.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ordena-chip.hecho { color: rgba(240, 192, 120, .85); }
+
+.ordena-chip.activo {
+  background: rgba(240, 192, 120, .16);
+  border: 1.5px solid rgba(240, 192, 120, .6);
+  color: #f0c078;
+  font-weight: 800;
+}
+
+/* ---------- Estado sin mitos publicados ---------- */
+.ordena-vacio {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  text-align: center;
+  padding: 0 30px;
+  color: rgba(253, 246, 236, .75);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ---------- Hoja de capítulo revelado ---------- */
+.ordena-hoja {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  max-height: 78%;
+  overflow-y: auto;
+  background: linear-gradient(175deg, #4a3016, #241608 70%);
+  border-radius: 22px 22px 0 0;
+  box-shadow: 0 -12px 40px rgba(0, 0, 0, .5);
+  padding: 18px 18px 22px;
+  animation: sube-sheet .5s cubic-bezier(.2, .9, .3, 1) both;
+}
+
+.ordena-hoja-agarre {
+  width: 42px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .25);
+  margin: 0 auto 14px;
+}
+
+.ordena-hoja-encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.ordena-hoja-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(20, 12, 6, .9);
+  border: 1.5px solid rgba(240, 192, 120, .6);
+  color: #f0c078;
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: 13.5px;
+  font-weight: 800;
+  animation: aparece .45s ease-out both;
+}
+
+.ordena-hoja-modulo {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  color: rgba(240, 192, 120, .8);
+  animation: tinta .6s ease-out .35s both;
+}
+
+.ordena-hoja-cuerpo {
+  background: rgba(0, 0, 0, .22);
+  border-radius: 16px;
+  padding: 14px 16px;
+  text-align: left;
+  animation: tinta .8s ease-out .45s both;
+}
+
+.ordena-hoja-titulo-fila {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.ordena-hoja-numero {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid rgba(240, 192, 120, .65);
+  color: #f0c078;
+  font-family: "Cinzel", serif;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.ordena-hoja-titulo-fila strong { font-size: 15.5px; }
+.ordena-hoja-personaje { color: rgba(240, 192, 120, .9); }
+
+.ordena-hoja-texto { margin: 0; font-size: 14px; line-height: 1.6; color: rgba(253, 246, 236, .95); }
+
+.ordena-hoja-porque {
+  margin-top: 10px;
+  background: rgba(240, 192, 120, .14);
+  border: 1.5px solid rgba(240, 192, 120, .5);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.ordena-hoja-porque strong { color: #f0c078; font-size: 12.5px; display: block; margin-bottom: 4px; }
+.ordena-hoja-porque p { margin: 0; font-size: 13px; line-height: 1.55; color: rgba(253, 246, 236, .92); }
+
+.ordena-hoja-clave {
+  margin-top: 12px;
+  background: rgba(255, 255, 255, .05);
+  border: 1.5px dashed rgba(240, 192, 120, .4);
+  border-radius: 12px;
+  padding: 10px 12px;
+  animation: tinta .8s ease-out .55s both;
+}
+
+.ordena-hoja-clave strong { color: #f0c078; font-size: 12.5px; display: block; margin-bottom: 4px; }
+.ordena-hoja-clave p { margin: 0; font-size: 13px; line-height: 1.55; color: rgba(253, 246, 236, .92); }
+
+.ordena-hoja-botones {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.ordena-boton-primario, .ordena-boton-secundario {
+  border: none;
+  border-radius: 999px;
+  padding: 14px 22px;
+  font-size: 14.5px;
+  font-weight: 800;
+  font-family: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+.ordena-boton-primario { background: #f0c078; color: #2a1c10; box-shadow: 0 4px 14px rgba(240, 192, 120, .3); }
+.ordena-boton-secundario { background: rgba(255, 255, 255, .14); color: #fdf6ec; }
+
+/* ---------- Animaciones ---------- */
+@keyframes aparece { from { opacity: 0; } to { opacity: 1; } }
+@keyframes aparece-tarjeta { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes pop-tarjeta { 0% { transform: scale(1); } 40% { transform: scale(1.04); } 100% { transform: scale(1); } }
+@keyframes sube-sheet { from { transform: translateY(105%); } to { transform: none; } }
+@keyframes tinta { from { clip-path: inset(0 0 100% 0); opacity: 0; } to { clip-path: inset(0 0 0 0); opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
