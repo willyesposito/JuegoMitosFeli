@@ -2,7 +2,7 @@
 
 ## Qué es
 
-Hub web de mini-juegos de mitología griega y nórdica para Felicitas (7 años, edad mental ~11, lectora fuerte, perfil AACC). Evolución del MVP de colección de cartas ya construido en este repo. La colección dejó de ser "la app": es el primer módulo de un mundo con varios juegos que comparten universo, datos y progreso.
+Hub web de mini-juegos de mitología griega y nórdica para Feli, lectora fuerte que disfruta los desafíos y entender el porqué de cada mito. La exigencia del juego se piensa en tres modos de dificultad —fácil, normal y difícil— para que los retos escalen sin cambiar el contenido. Evolución del MVP de colección de cartas ya construido en este repo. La colección dejó de ser "la app": es el primer módulo de un mundo con varios juegos que comparten universo, datos y progreso.
 
 Principio de diseño, no negociable: a Feli le gusta **leer historias** y entender el **porqué** de cada mito. Toda mecánica tiene que alimentar eso. Suavizar contenido nunca significa infantilizar: se preserva la estructura y el peso de la historia, se quita el detalle crudo.
 
@@ -82,6 +82,10 @@ Además de los existentes (id, nombre, mitologia, titulo, dones, historia, porqu
    - Hel: equilibrio y administración del inframundo, misma línea de encuadre que Hades; sin tono tenebroso.
    Ninguna ficha ni capítulo de estos tres lleva detalle crudo del mito original. Sus fichas completas las valida Willy antes de entrar al JSON.
 6. **Cantidad de capítulos por tier:** dorado 3-5, plateado 2-4, normal 1-3 (tope subido +1 en julio 2026 para que los capítulos de `mapa:` sumen sin desplazar los que ya había — el piso de cada tier no cambió, solo el techo). Un personaje no se considera terminado en su tier hasta tener sus capítulos diseñados dentro del rango. Cualquier ascenso de tier futuro exige primero completar los capítulos del rango nuevo.
+
+## Regla de privacidad (repo público, NO negociable)
+
+Este repositorio es público. Prohibido escribir en cualquier archivo, commit, PR o issue: nombres reales completos, edades, fechas de nacimiento, escuela, ubicación, o cualquier etiqueta diagnóstica / de perfil cognitivo de la usuaria o de su familia (decisión julio 2026, que además eliminó los que había). El público objetivo se describe únicamente en términos funcionales de diseño (por ejemplo "lectora fuerte") y de modos de dificultad (fácil / normal / difícil), nunca de datos personales. Si Willy pega en una conversación un dato de este tipo como contexto, usarlo para razonar está bien; volcarlo al repo, no.
 
 ## Roadmap por olas
 
