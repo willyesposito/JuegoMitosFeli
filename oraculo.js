@@ -301,11 +301,21 @@ async function iniciar() {
   reconciliarVinculos();
   inyectarKeyframesIconos();
 
-  document.getElementById("toggle-facil").addEventListener("click", () => cambiarModo("facil"));
-  document.getElementById("toggle-dificil").addEventListener("click", () => cambiarModo("dificil"));
-
-  const modoInicial = new URLSearchParams(location.search).get("modo") === "dificil" ? "dificil" : "facil";
-  cambiarModo(modoInicial);
+  // Dificultad por partida (CLAUDE.md): en partida fácil el Oráculo queda
+  // fijo en modo fácil y en partida difícil queda fijo en difícil — sin
+  // toggle. Solo en normal se elige el modo consulta por consulta, como
+  // hasta ahora. Fallar en difícil nunca bloquea el descubrimiento: solo
+  // se pierde la versión especial del capítulo (regla de oro intacta).
+  const dificultadPartida = dificultadActual();
+  if (dificultadPartida === "normal") {
+    document.getElementById("toggle-facil").addEventListener("click", () => cambiarModo("facil"));
+    document.getElementById("toggle-dificil").addEventListener("click", () => cambiarModo("dificil"));
+    const modoInicial = new URLSearchParams(location.search).get("modo") === "dificil" ? "dificil" : "facil";
+    cambiarModo(modoInicial);
+  } else {
+    document.querySelector(".oraculo-toggle").classList.add("oculto");
+    cambiarModo(dificultadPartida);
+  }
 
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
     navigator.serviceWorker.register("sw.js").catch(() => {});

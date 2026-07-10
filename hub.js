@@ -89,7 +89,7 @@ function renderListaPerfiles() {
         <span class="perfil-avatar" aria-hidden="true">👤</span>
         <span class="perfil-datos">
           <strong>${p.nombre}</strong>
-          <span>${p.descubiertos} héroes${p.activo ? " · jugando ahora" : ""}</span>
+          <span>${NOMBRE_DIFICULTAD[p.dificultad]} · ${p.descubiertos} héroes${p.activo ? " · jugando ahora" : ""}</span>
         </span>
       </button>
       ${lista.length > 1 ? `<button class="perfil-borrar" data-indice="${p.indice}" aria-label="Borrar perfil ${p.nombre}">✕</button>` : ""}
@@ -140,11 +140,27 @@ function configurarPerfiles() {
   document.getElementById("boton-nuevo-perfil").addEventListener("click", () => {
     const nombre = prompt("¿Cómo se llama el nuevo perfil?", `Perfil ${datos.perfiles.length + 1}`);
     if (nombre === null) return;
-    const i = crearPerfil(nombre);
-    if (i === -1) { alert("Ya hay 5 perfiles, el máximo."); return; }
-    cambiarPerfil(i);
-    actualizarTodo();
-    renderListaPerfiles();
+    abrirModalDificultad(nombre);
+  });
+  document.getElementById("boton-cancelar-dificultad").addEventListener("click", () => {
+    document.getElementById("modal-dificultad").classList.add("oculto");
+  });
+}
+
+/* La dificultad se elige una sola vez, acá, al crear la partida (CLAUDE.md
+   "Dificultad por partida"): no hay ninguna otra pantalla que la toque. */
+function abrirModalDificultad(nombre) {
+  const modal = document.getElementById("modal-dificultad");
+  modal.classList.remove("oculto");
+  modal.querySelectorAll(".dificultad-opcion").forEach(boton => {
+    boton.onclick = () => {
+      modal.classList.add("oculto");
+      const i = crearPerfil(nombre, boton.dataset.dificultad);
+      if (i === -1) { alert("Ya hay 5 perfiles, el máximo."); return; }
+      cambiarPerfil(i);
+      actualizarTodo();
+      renderListaPerfiles();
+    };
   });
 }
 

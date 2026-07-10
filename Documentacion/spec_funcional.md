@@ -14,6 +14,7 @@ Pantalla principal: título del mundo, contador global ("Descubriste 34 de 80 h�
   "perfiles": [
     {
       "nombre": "Feli",
+      "dificultad": "normal",
       "creado": "2026-07-06",
       "global": {
         "descubiertos": ["teseo", "heracles"],
@@ -31,11 +32,11 @@ Pantalla principal: título del mundo, contador global ("Descubriste 34 de 80 h�
 ```
 
 - Selector de perfil al abrir el hub solo si hay más de un perfil; con uno solo, entra directo.
-- Crear perfil: nombre + confirmar. Borrar perfil: solo desde el menú de utilidades de Willy, con doble confirmación.
+- Crear perfil: nombre + dificultad (fácil / normal / difícil) + confirmar. La dificultad es **de la partida**: se elige al crearla y no se puede cambiar después — para otra dificultad se crea otro perfil (ver CLAUDE.md "Dificultad por partida"). Borrar perfil: solo desde el menú de utilidades de Willy, con doble confirmación.
 - Todos los módulos leen y escriben únicamente sobre `perfiles[perfilActivo]`.
 - `global.completas` reemplaza al viejo `global.doradas`: guarda los personajes con historia completa, sin importar el tier. El tratamiento visual lo decide el `tier` del JSON en render, no el estado guardado.
 
-**Migración:** al primer arranque, si existe `feli-cartas-v1`, crear el perfil 0 con sus cartas desbloqueadas en `global.descubiertos`, capítulo `base` encendido para cada una, y borrar la key vieja. Si existe un `feli-mitos-v2` con el formato anterior (objeto único sin `perfiles`), envolverlo como perfil 0 y renombrar `doradas` → `completas`.
+**Migración:** al primer arranque, si existe `feli-cartas-v1`, crear el perfil 0 con sus cartas desbloqueadas en `global.descubiertos`, capítulo `base` encendido para cada una, y borrar la key vieja. Si existe un `feli-mitos-v2` con el formato anterior (objeto único sin `perfiles`), envolverlo como perfil 0 y renombrar `doradas` → `completas`. Los perfiles guardados antes del sistema de dificultad quedan en `"normal"` sin perder progreso.
 
 ## 1. Formato de carta
 
