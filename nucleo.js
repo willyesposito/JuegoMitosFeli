@@ -30,8 +30,10 @@ const DESBLOQUEADAS_INICIALES = [
 ];
 
 /* Cuántos capítulos le corresponden como mínimo a cada tier (regla 6 de
-   CLAUDE.md: dorado 3-4, plateado 2-3, normal 1-2). Se usa para no dar por
-   completa una historia que todavía no tiene todos sus capítulos diseñados. */
+   CLAUDE.md: piso dorado 3, plateado 2, normal 1). El techo es regla de
+   contenido, no de código: dorado no tiene techo, plateado 4, normal 3. Este
+   piso solo se usa para no dar por completa una historia que todavía no tiene
+   todos sus capítulos diseñados. */
 const TIER_MINIMO = { dorado: 3, plateado: 2, normal: 1 };
 
 /* Nombre amigable del módulo que enciende cada capítulo, a partir del campo
@@ -133,6 +135,7 @@ function normalizarPerfil(p) {
   // en el siguiente reload. Mismo criterio que cielo/sets arriba.
   if (p.mapa && Array.isArray(p.mapa.completados)) base.mapa = p.mapa;
   if (p.ordena && Array.isArray(p.ordena.completados)) base.ordena = p.ordena;
+  if (p.espejo && Array.isArray(p.espejo.completados)) base.espejo = p.espejo;
   for (const id of base.global.descubiertos) {
     if (!base.global.capitulos[id]) base.global.capitulos[id] = ["base"];
   }
@@ -470,6 +473,11 @@ function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones) {
   if (modulo === "mapa") {
     return "Recorré ese viaje en El Mapa del Héroe para encender este capítulo.";
   }
+  if (modulo === "espejo") {
+    const otro = porId(condicion);
+    const nombre = otro ? otro.nombre : "su equivalente";
+    return `Apareá a este héroe con ${nombre} en Espejo de los Mundos para encender este capítulo.`;
+  }
   const nombre = NOMBRE_MODULO_FUENTE[modulo];
   return nombre
     ? `Se enciende jugando ${nombre} (llega en una próxima ola).`
@@ -486,6 +494,7 @@ function destinoCapituloVelado(capitulo) {
   if (modulo === "oraculo") return "oraculo.html?modo=dificil";
   if (modulo === "ordena") return `ordena.html?mito=${encodeURIComponent(condicion || "")}`;
   if (modulo === "mapa") return `mapa.html?viaje=${encodeURIComponent(condicion || "")}`;
+  if (modulo === "espejo") return `espejo.html?con=${encodeURIComponent(condicion || "")}`;
   if (modulo === "vinculo") {
     return estaDesbloqueada(condicion) ? `coleccion.html?ver=${encodeURIComponent(condicion)}` : "oraculo.html";
   }

@@ -23,7 +23,7 @@
 
 ## 1. El presupuesto de capítulos (número que gobierna todo)
 
-Roster v3: 13 dorados (3-4 caps) + 37 plateados (2-3) + 35 normales (1-2) ≈ **190 capítulos totales** en el punto medio de los rangos.
+Roster v3: 13 dorados (3+ caps, sin techo) + 37 plateados (2-4) + 35 normales (1-3) ≈ **190+ capítulos totales** (los dorados pueden pasarse de la estimación: ya no tienen tope).
 
 - El descubrimiento cubre **85** (capítulo base de cada personaje — número confirmado por Willy, coincide con `personajes.json` y con la tabla de Totales de `roster_personajes_v3.md`).
 - Quedan **~105 capítulos** que deben salir de módulos. Las fuentes de este documento suman ~110: cierra con margen para bonificaciones.
@@ -97,11 +97,15 @@ Alcance ya spec'd (hub, perfiles, Colección refactor, Oráculo 2 modos, Cielo, 
 
 **Datos:** `viajes.json`: `{ id, nombre, personajeAsociado, capituloQueEnciende, paradas: [{ nombre, x, y, contexto, ubicacionReferencia }], porque, estado }`. `ubicacionReferencia` es la ubicación geográfica real (nombre antiguo/moderno) que se usó para decidir las coordenadas `x, y` del mapa estilizado — se conserva en el dato por si hace falta revisar o recolocar un punto.
 
-**Estado del contenido (julio 2026): construido, 12 viajes en `estado: "borrador"` en `viajes.json`** (más que el catálogo inicial de 4 — Willy amplió el pedido y se cargó todo lo que llegó escrito). Los 4 originales — la Odisea (Odiseo), el viaje de los Argonautas (Jasón), los Doce Trabajos como recorrido (Heracles), Trecén→Atenas→Creta (Teseo) — más 8 adicionales: el vuelo de Perseo, el viaje de Eneas, el vuelo de Dédalo, Belerofonte y la Quimera, la búsqueda de Deméter, Prometeo y el fuego, Atlas (un solo punto, sin trazado real: es válido, el motor tolera viajes de 1 parada), y Rómulo y Remo. Cada viaje enciende un capítulo nuevo (`mapa:<id_viaje>`) en la carta del héroe correspondiente, también en borrador.
+**Estado del contenido (actualizado julio 2026): PUBLICADO. 12 viajes en `estado: "publicado"` en `viajes.json`** (más que el catálogo inicial de 4 — Willy amplió el pedido y se cargó todo lo que llegó escrito). Los 4 originales — la Odisea (Odiseo), el viaje de los Argonautas (Jasón), los Doce Trabajos como recorrido (Heracles), Trecén→Atenas→Creta (Teseo) — más 8 adicionales: el vuelo de Perseo, el viaje de Eneas, el vuelo de Dédalo, Belerofonte y la Quimera, la búsqueda de Deméter, Prometeo y el fuego, Atlas (un solo punto, sin trazado real: es válido, el motor tolera viajes de 1 parada), y Rómulo y Remo. Cada viaje enciende un capítulo nuevo (`mapa:<id_viaje>`) en la carta del héroe correspondiente, también publicado. El paso de borrador → publicado se hizo por instrucción textual de Willy (PR #14).
 
-**Cupo por tier (resuelto, julio 2026):** Odiseo, Jasón, Heracles, Teseo y Perseo (dorados) y Dédalo y Prometeo (plateados) habían llegado al tope de su tier antes de sumar el capítulo de `mapa:`. Willy resolvió esto subiendo el techo de capítulos +1 en todos los tiers (regla 6 de `CLAUDE.md`: dorado 3-5, plateado 2-4, normal 1-3) en vez de descartar candidatos — el piso de cada tier no cambió, así que ningún personaje quedó con menos de lo que ya tenía diseñado.
+**Cupo por tier (resuelto, julio 2026):** Odiseo, Jasón, Heracles, Teseo y Perseo (dorados) y Dédalo y Prometeo (plateados) habían llegado al tope de su tier antes de sumar el capítulo de `mapa:`. Willy resolvió esto subiendo el techo de capítulos +1 en todos los tiers en vez de descartar candidatos — el piso de cada tier no cambió, así que ningún personaje quedó con menos de lo que ya tenía diseñado.
 
-**Módulo técnico:** `mapa.html`/`mapa.js`/`mapa.css` construidos, mismo patrón que `cielo.js` (catálogo, ceremonia, hoja de capítulo). **No registrado en el hub** (regla de despliegue: un módulo nuevo no se muestra sin instrucción textual de Willy) — se llega solo por URL directa mientras tanto.
+**Techo de dorado eliminado (julio 2026, posterior):** al construir el Espejo de los Mundos volvió a aparecer el mismo cuello de botella (el par de fuerza Heracles↔Thor no entraba porque Heracles estaba en su tope de dorado). Willy resolvió el patrón de raíz: **el tier dorado deja de tener techo** (regla 6 de `CLAUDE.md`: dorado piso 3, sin límite superior; plateado 2-4; normal 1-3). Un dorado puede acumular todos los capítulos que su historia dé, y los módulos nuevos ya no obligan a elegir cuál capítulo se descarta. Gracias a esto los pares del Espejo quedaron en su forma natural: Zeus↔Odín (el rey de los dioses) y Heracles↔Thor (la fuerza), y Atenea sale del Espejo (su equivalente, Odín, vuelve a Zeus).
+
+**Módulo técnico:** `mapa.html`/`mapa.js`/`mapa.css` construidos, mismo patrón que `cielo.js` (catálogo, ceremonia, hoja de capítulo). **Registrado en el hub** (`hub.js`, tarjeta 🗺️ "El Mapa del Héroe", PR #13) por instrucción textual de Willy. El módulo está vivo y jugable desde el hub.
+
+**Resumen de estado de Ola 2 (actualizado julio 2026):** Mapa del Héroe → publicado y registrado. Ordená el Mito → publicado y registrado (primer lote de 18 mitos; ~31 fuentes `ordena:` esperan su mito escrito). **Espejo de los Mundos → único módulo de Ola 2 pendiente de construir** (ver §4.2).
 
 ### 4.2 Espejo de los Mundos (`espejo:`)
 
@@ -167,7 +171,7 @@ Sin cambios sobre lo spec'd en `spec_funcional.md` §5. Se ratifica su rol: cap�
 
 La completitud sigue siendo la del spec (capítulos encendidos = capítulos publicados). Lo que fija esta sección es **de dónde sale cada capítulo** para que ningún personaje quede sin ruta de completado.
 
-**Dorado tipo (3-4 capítulos):** base + vínculo + un módulo de trazado (Cielo o Mapa) + un capítulo de Ola 2/3 (Ordená, Espejo, Reliquia o Encrucijada). Ejemplos que fijan el estándar:
+**Dorado tipo (3 o más capítulos, sin techo):** base + vínculo + un módulo de trazado (Cielo o Mapa) + uno o más capítulos de Ola 2/3 (Ordená, Espejo, Reliquia o Encrucijada). Ejemplos que fijan el estándar (un dorado puede sumar más allá de estos cuatro):
 
 | Personaje | Cap 1 | Cap 2 | Cap 3 | Cap 4 |
 |---|---|---|---|---|

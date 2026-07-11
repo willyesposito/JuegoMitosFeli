@@ -88,7 +88,7 @@ Además de los existentes (id, nombre, mitologia, titulo, dones, historia, porqu
    - Medea: la mente táctica de los Argonautas; final acotado, sin el desenlace trágico con sus hijos.
    - Hel: equilibrio y administración del inframundo, misma línea de encuadre que Hades; sin tono tenebroso.
    Ninguna ficha ni capítulo de estos tres lleva detalle crudo del mito original. Sus fichas completas las valida Willy antes de entrar al JSON.
-6. **Cantidad de capítulos por tier:** dorado 3-5, plateado 2-4, normal 1-3 (tope subido +1 en julio 2026 para que los capítulos de `mapa:` sumen sin desplazar los que ya había — el piso de cada tier no cambió, solo el techo). Un personaje no se considera terminado en su tier hasta tener sus capítulos diseñados dentro del rango. Cualquier ascenso de tier futuro exige primero completar los capítulos del rango nuevo.
+6. **Cantidad de capítulos por tier:** dorado **sin techo** (piso 3, sin límite superior), plateado 2-4, normal 1-3 (julio 2026: se elimina el techo de dorado para que un dorado pueda acumular todos los capítulos que su historia dé, sin tener que descartar candidatos de módulos nuevos; plateado y normal conservan su rango, con el techo +1 que ya se les había subido). El piso de cada tier no cambió. Un personaje no se considera terminado en su tier hasta tener al menos sus capítulos de piso diseñados; para plateado y normal, además dentro de su techo. Cualquier ascenso de tier futuro exige primero completar los capítulos del rango nuevo.
 
 ## Regla de privacidad (repo público, NO negociable)
 
