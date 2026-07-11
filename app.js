@@ -214,6 +214,7 @@ function iconoCapituloVelado(capitulo, destino) {
   const modulo = (capitulo.fuente || "").split(":")[0];
   if (modulo === "ordena") return "🧩";
   if (modulo === "cielo") return "⭐";
+  if (modulo === "espejo") return "🪞";
   return "🧭";
 }
 

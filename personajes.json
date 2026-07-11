@@ -500,6 +500,14 @@
         "porque": "Fundamentos del sistema judicial. Enseña que la evolución de una sociedad depende de reemplazar la violencia física con el debate estructurado y la argumentación lógica.",
         "fuente": "ordena:areopago",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_odin",
+        "titulo": "El espejo de la sabiduría",
+        "texto": "En el norte había otro dios que prefería la cabeza a los puños: Odín, que sacrifica un ojo para beber del pozo de la sabiduría y manda cuervos a mirar el mundo. Atenea hace algo parecido con su lechuza y su estrategia: no gana el que pega más fuerte, gana el que piensa mejor. Dos culturas, la misma apuesta por la mente.",
+        "porque": "Que dos pueblos tan distintos pusieran a la sabiduría por encima de la fuerza dice mucho de los dos. Comparar a Atenea con Odín muestra que la inteligencia siempre fue un valor, no un invento moderno.",
+        "fuente": "espejo:odin",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -535,7 +543,8 @@
       "Esta diosa griega vela sobre los héroes más valientes en el fragor de la batalla.",
       "Su astucia toca el máximo de la escala, y su magia casi la alcanza.",
       "Nació de la cabeza de un dios, ya vestida con su armadura."
-    ]
+    ],
+    "espejo": "odin"
   },
   {
     "id": "perseo",
@@ -782,6 +791,14 @@
         "porque": "Los nórdicos admiraban la fuerza, pero se contaban este mito para reírse y recordar algo serio: la fuerza sola no recupera un martillo robado. Thor necesitó el ingenio de Loki, y Loki necesitó los músculos de Thor: los opuestos que se complementan hacen el mejor equipo. Y una cultura que puede reírse de su dios más fuerte es una cultura que lo quiere de verdad.",
         "fuente": "vinculo:loki",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_zeus",
+        "titulo": "El espejo del trueno",
+        "texto": "Lejos de los bosques del norte, los griegos también escuchaban la tormenta y la volvían un dios: Zeus, el rey del Olimpo, que en vez de martillo lanza un rayo. Thor no gobierna como Zeus; Thor sale a defender a la gente de los gigantes. Dos truenos, dos maneras de imaginar quién los tira.",
+        "porque": "Ver a Thor al lado de Zeus ayuda a entender que ninguna cultura inventa sola: frente al mismo cielo furioso, griegos y nórdicos llegaron a ideas hermanas sin copiarse. El parecido enseña algo sobre cómo pensamos todos los humanos.",
+        "fuente": "espejo:zeus",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -817,7 +834,8 @@
       "El Olimpo nunca fue su hogar.",
       "Su fuerza es máxima, pero su astucia es de las más bajas.",
       "Su arma favorita siempre vuelve a su mano."
-    ]
+    ],
+    "espejo": "zeus"
   },
   {
     "id": "loki",
@@ -865,6 +883,14 @@
         "porque": "Los nórdicos contaban esta historia para hablar de un miedo real: hay fuerzas que crecen tanto que ni quien las quiere puede seguir protegiéndolas. Loki no festeja este mito, lo sufre: ser padre de algo que el mundo entero decide que ya no puede andar libre es una de las partes más tristes de ser Loki, no una travesura más.",
         "fuente": "vinculo:tyr",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_hermes",
+        "titulo": "El espejo de la astucia",
+        "texto": "Lejos del norte, los griegos tenían a Hermes: el mensajero veloz y astuto que cruza entre dioses y mortales. Loki comparte con él la rapidez y el ingenio, aunque sus travesuras a veces llegan más lejos. Dos espíritus inquietos, imposibles de encasillar.",
+        "porque": "Poner a Loki frente a Hermes enseña que el personaje ingenioso aparece en toda mitología. Es el que recuerda que ser vivo y rápido también mueve el mundo.",
+        "fuente": "espejo:hermes",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -900,7 +926,8 @@
       "El Olimpo nunca fue su morada.",
       "Su astucia es máxima, pero su fuerza no llega ni a la mitad de eso.",
       "Una apuesta que él mismo perdió fue el origen del martillo más famoso de Asgard."
-    ]
+    ],
+    "espejo": "hermes"
   },
   {
     "id": "odin",
@@ -948,6 +975,14 @@
         "porque": "Para los nórdicos el destino ya estaba hilado y nadie podía cambiarlo, ni siquiera los dioses. Por eso imaginaron dos formas de sabiduría: la de Odín, que se sale a buscar y se paga cara, y la de Frigg, que se guarda porque decirla no cambiaría nada. Es la manera antigua de mostrar que saber y decir no son lo mismo — y que a veces callar también es sabiduría.",
         "fuente": "vinculo:frigg",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_atenea",
+        "titulo": "El espejo de la sabiduría",
+        "texto": "Al sur, los griegos también tenían una divinidad que ganaba pensando: Atenea, que aconseja a los héroes y elige la estrategia justa. Odín paga su sabiduría con un ojo; Atenea nace ya sabiendo. Distinto camino, la misma idea: entender es más poderoso que golpear.",
+        "porque": "Poner a Odín frente a Atenea revela que la búsqueda del conocimiento es una historia universal. Los cuervos y la lechuza son el mismo símbolo: la mirada que alcanza lo que la fuerza no puede.",
+        "fuente": "espejo:atenea",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -983,7 +1018,8 @@
       "Jamás cruzó las puertas del Olimpo.",
       "Su liderazgo es máximo, y su bondad es exactamente la mitad de eso.",
       "Sacrificó uno de sus propios ojos para beber la sabiduría de un pozo antiguo."
-    ]
+    ],
+    "espejo": "atenea"
   },
   {
     "id": "freya",
@@ -1023,6 +1059,14 @@
         "porque": "Economía de la tecnología. El acceso a herramientas de nivel superior requiere identificar, respetar y negociar con los constructores del hardware.",
         "fuente": "ordena:forja_enana",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_afrodita",
+        "titulo": "El espejo del amor",
+        "texto": "Lejos del norte, los griegos tenían a Afrodita: diosa del amor y la belleza que enciende el enamoramiento en dioses y mortales. Freya comparte con ella ese poder, y le agrega el coraje de la guerrera. Distintas, pero hermanas en lo que representan.",
+        "porque": "Poner a Freya frente a Afrodita revela que el amor tuvo diosa en todas partes. Que Freya además pelee enseña que cada cultura le agregó a la idea algo de sí misma.",
+        "fuente": "espejo:afrodita",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1058,7 +1102,8 @@
       "El Olimpo no la vio nacer.",
       "Su magia es máxima, y su fuerza es apenas la mitad de ese poder.",
       "Un carro de dos gatos y una capa de plumas la llevan por los nueve mundos."
-    ]
+    ],
+    "espejo": "afrodita"
   },
   {
     "id": "heimdall",
@@ -1172,6 +1217,14 @@
         "porque": "Una travesura que empieza mal puede terminar dándole a todo un panteón sus herramientas más importantes. La competencia técnica bajo presión, cuando es sana, produce resultados extraordinarios.",
         "fuente": "ordena:apuesta_enanos",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_demeter",
+        "titulo": "El espejo de la cosecha",
+        "texto": "Lejos del norte, los griegos tenían a Deméter: la diosa de las cosechas, de la que depende que el campo dé fruto. Sif, con su pelo de oro como el trigo, comparte ese vínculo con la tierra que alimenta. Dos figuras doradas de la abundancia.",
+        "porque": "Ver a Sif junto a Deméter enseña que el campo y la cosecha tuvieron diosa en los dos mundos. Donde hay pan, hay una historia sagrada sobre cómo llegó.",
+        "fuente": "espejo:demeter",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1207,7 +1260,8 @@
       "El Olimpo nunca fue su templo.",
       "Su bondad y su valentía son máximas; su liderazgo, el más bajo de todos.",
       "Su cabello fue cortado como broma y reemplazado por hebras de oro verdadero que crecen como pelo real."
-    ]
+    ],
+    "espejo": "demeter"
   },
   {
     "id": "tyr",
@@ -1247,6 +1301,14 @@
         "porque": "Sacrificio paramétrico. Para contener una amenaza global que colapsaría el sistema, un líder debe asumir y pagar un costo personal irreversible.",
         "fuente": "ordena:fenrir_paradoja",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_ares",
+        "titulo": "El espejo de la guerra",
+        "texto": "Al sur, los griegos tenían a Ares: el dios de la furia del combate, la energía pura de la batalla. Tyr representa otra cara de la guerra, la del valor con reglas y la palabra cumplida. Dos maneras de imaginar al dios que va al frente.",
+        "porque": "Ver a Tyr junto a Ares revela que 'guerra' no significaba lo mismo en los dos mundos. Poner el honor o poner la furia en el centro cambia toda la historia.",
+        "fuente": "espejo:ares",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1282,7 +1344,8 @@
       "No rezaron por él en el Olimpo.",
       "Su valentía es máxima, y su magia es la más baja de todas sus virtudes.",
       "Perdió una mano al ofrecerla como garantía para poder atar a un lobo gigante."
-    ]
+    ],
+    "espejo": "ares"
   },
   {
     "id": "zeus",
@@ -1338,6 +1401,14 @@
         "porque": "Enseña el concepto de la xenia (hospitalidad). La verdadera nobleza y el valor de una persona se miden por cómo trata a los vulnerables, no por su acumulación de riqueza.",
         "fuente": "ordena:hospitalidad",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_thor",
+        "titulo": "El espejo del trueno",
+        "texto": "Al otro lado de Europa, un pueblo que nunca oyó hablar del Olimpo también le tenía miedo y respeto a las tormentas. Ellos imaginaron a Thor, que lanza truenos con su martillo igual que Zeus con su rayo. Zeus es el rey que ordena; Thor es el campeón que protege. Distinta corona, la misma tormenta.",
+        "porque": "Cuando dos culturas separadas inventan un dios del trueno parecido, no es casualidad: la naturaleza les hacía la misma pregunta, y las dos contestaron con una historia. Comparar a Zeus con Thor muestra que los mitos son respuestas humanas a lo que no se entendía.",
+        "fuente": "espejo:thor",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1373,7 +1444,8 @@
       "El Bifröst nunca lo vio cruzar.",
       "Su magia y su liderazgo son máximos, y su bondad es apenas la mitad de esos dos.",
       "Solo a él le tocó liderar a los dioses en la guerra contra los titanes."
-    ]
+    ],
+    "espejo": "thor"
   },
   {
     "id": "hera",
@@ -1413,6 +1485,14 @@
         "porque": "Ni el sistema de vigilancia más completo es infalible frente al enfoque correcto. Y honrar a quien cumplió su función, aunque haya fallado al final, es tan importante como el sistema mismo.",
         "fuente": "ordena:argos",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_frigg",
+        "titulo": "El espejo de la reina",
+        "texto": "En el norte, junto a Odín, reina Frigg: conoce el destino de todos y protege a las familias, aunque calle lo que sabe. Hera hace su parte cuidando el matrimonio y el orden del hogar divino. Dos reinas que demuestran que el trono se sostiene de a dos.",
+        "porque": "Comparar a Hera con Frigg muestra que los dos pueblos entendían a la reina como poder de verdad, no como compañía. El hogar y la familia eran cosas serias, dignas de una diosa.",
+        "fuente": "espejo:frigg",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1448,7 +1528,8 @@
       "Jamás pisó el puente que lleva a Asgard.",
       "Tres de sus dones valen exactamente lo mismo, y su bondad es la mitad de ese valor.",
       "Su ave sagrada lleva en la cola cien ojos que pertenecieron a su guardián más fiel."
-    ]
+    ],
+    "espejo": "frigg"
   },
   {
     "id": "poseidon",
@@ -1497,6 +1578,14 @@
         "porque": "Economía a largo plazo. Un recurso sostenible que provee alimento, aceite y madera (el olivo) garantiza la supervivencia de una civilización de manera mucho más eficiente que la capacidad de iniciar guerras.",
         "fuente": "ordena:atenas_olivo",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_njord",
+        "titulo": "El espejo del mar",
+        "texto": "Los pueblos del norte, marineros como los griegos, imaginaron a Njörd: el dios del mar calmo, de la pesca y los viajes con buen viento. Poseidón es su pariente lejano, pero más bravo: puede levantar tormentas y temblores. Dos dioses del agua, uno tranquilo y otro poderoso.",
+        "porque": "Comparar a Poseidón con Njörd muestra cómo cada pueblo vio el mar según cómo lo vivía: los griegos, temibles tormentas; los nórdicos, la costa que alimenta. El mismo mar, dos caras.",
+        "fuente": "espejo:njord",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1532,7 +1621,8 @@
       "Asgard nunca fue su reino.",
       "Su fuerza es más del doble que su bondad, y su magia iguala a esa fuerza.",
       "Los griegos decían que él inventó al caballo, el animal que más admiraban."
-    ]
+    ],
+    "espejo": "njord"
   },
   {
     "id": "hades",
@@ -1588,6 +1678,14 @@
         "porque": "Negociación diplomática. Un líder altamente competente no necesita la guerra para probar a sus oponentes; impone reglas que exigen habilidad e inteligencia en lugar de destrucción.",
         "fuente": "ordena:cerbero",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_hel",
+        "titulo": "El espejo del inframundo",
+        "texto": "En el norte, quien cuida el reino de los que ya no están se llama Hel: administra su mundo con calma y equilibrio, igual que Hades el suyo. Ninguno de los dos es malo; los dos hacen una tarea que alguien tiene que hacer. Dos guardianes serios de un lugar que a todos nos toca imaginar.",
+        "porque": "Comparar a Hades con Hel muestra que griegos y nórdicos no veían ese reino como algo terrorífico, sino como una parte ordenada del mundo. Encargarse de él era una responsabilidad, no una maldad.",
+        "fuente": "espejo:hel",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1623,7 +1721,8 @@
       "Gobierna un reino que no conoce la luz del sol, muy lejos de los salones del Olimpo.",
       "Su fuerza iguala a su astucia, y su valentía iguala a su liderazgo.",
       "Ni una sola alma del mundo griego escapa de cruzar su umbral alguna vez."
-    ]
+    ],
+    "espejo": "hel"
   },
   {
     "id": "demeter",
@@ -1671,6 +1770,14 @@
         "porque": "Los griegos no tenían ciencia del clima, pero veían que el año cambiaba: crecían las plantas, después se secaban, después volvían. Ataron esa idea a un prado de Sicilia y a un santuario cerca de Atenas. Así, la geografía y las estaciones se explicaban con una misma historia que se podía visitar.",
         "fuente": "mapa:demeter_persefone",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_sif",
+        "titulo": "El espejo de la cosecha",
+        "texto": "En el norte, la diosa Sif tiene una cabellera dorada que los mitos comparan con los campos de trigo maduro. Deméter es la dueña de esas cosechas: cuando ella está triste, el campo se seca. Dos diosas ligadas a lo que crece de la tierra y nos alimenta.",
+        "porque": "Comparar a Deméter con Sif muestra que el alimento era demasiado importante para no ser sagrado. El trigo dorado aparece en las dos historias como símbolo de la vida que da la tierra.",
+        "fuente": "espejo:sif",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1706,7 +1813,8 @@
       "De su ánimo depende que la tierra dé trigo o se quede estéril.",
       "Su magia iguala a su bondad, y es el doble de su fuerza.",
       "Cuando se aleja de su hija, ningún campo del mundo antiguo logra dar una sola cosecha."
-    ]
+    ],
+    "espejo": "sif"
   },
   {
     "id": "persefone",
@@ -1888,6 +1996,14 @@
         "porque": "Relación entre arte y lógica. La música no es azar; es una estructura matemática que organiza la percepción humana y crea orden en el entorno.",
         "fuente": "ordena:armonia_lyra",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_balder",
+        "titulo": "El espejo de la luz",
+        "texto": "En el norte brilla Balder, el dios más querido de todos, tan luminoso que su sola presencia alegra. Apolo comparte esa luz: música, sol y belleza que curan y consuelan. Dos jóvenes radiantes que representan lo mejor que puede dar un dios.",
+        "porque": "Comparar a Apolo con Balder muestra que las dos culturas quisieron un dios de la luz amable, no la del rayo sino la que da alegría. La belleza y la bondad merecían su propia estrella.",
+        "fuente": "espejo:balder",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1923,7 +2039,8 @@
       "Su música, dicen los relatos, es capaz de calmar a cualquiera que la escuche.",
       "Su fuerza, su liderazgo y su bondad son exactamente iguales entre sí.",
       "Su templo en Delfos recibía visitantes que viajaban muy lejos para conocer su futuro."
-    ]
+    ],
+    "espejo": "balder"
   },
   {
     "id": "artemisa",
@@ -1964,6 +2081,14 @@
         "porque": "Causalidad externa. Demuestra cómo las decisiones externas (Zeus/Hera) pueden alterar permanentemente el estado de un sistema cerrado y la vida de sus integrantes.",
         "fuente": "cielo:osa_mayor",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_skadi",
+        "titulo": "El espejo de la caza",
+        "texto": "En las montañas heladas del norte caza Skadi, diosa de la nieve y los esquís, tan independiente como Artemisa en sus bosques. Las dos llevan arco, andan solas y eligen la naturaleza antes que la corte de los dioses. Dos cazadoras libres, cada una en su paisaje.",
+        "porque": "Comparar a Artemisa con Skadi muestra que la idea de la mujer libre y cazadora existía en los dos mundos. La montaña y el bosque pedían una diosa que no dependiera de nadie.",
+        "fuente": "espejo:skadi",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -1999,7 +2124,8 @@
       "Prefiere el bosque y la noche antes que cualquier salón del Olimpo.",
       "Su astucia iguala a su magia, y su liderazgo iguala a su bondad.",
       "Nunca, en ningún relato, se cuenta que su flecha haya errado un tiro."
-    ]
+    ],
+    "espejo": "skadi"
   },
   {
     "id": "ares",
@@ -2039,6 +2165,14 @@
         "porque": "Ni el dios de la guerra se salva solo con fuerza. Cuando falta estrategia y aliados, hasta el más poderoso puede quedar atrapado — y necesitó que otro lo liberara con astucia, no con más fuerza.",
         "fuente": "ordena:aloadas",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_tyr",
+        "titulo": "El espejo de la guerra",
+        "texto": "En el norte, la guerra tenía a Tyr: no la furia ciega, sino el coraje y la justicia, tanto que sacrifica su propia mano por cumplir una palabra dada. Ares es puro ímpetu de batalla; Tyr piensa en el honor. Dos dioses de la guerra que la entienden de maneras opuestas.",
+        "porque": "Comparar a Ares con Tyr muestra que ni siquiera la guerra se contaba igual en todos lados. Los nórdicos le sumaron la idea de justicia; los griegos, la fuerza cruda. La diferencia enseña qué valoraba cada pueblo.",
+        "fuente": "espejo:tyr",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -2074,7 +2208,8 @@
       "Prefiere resolver todo a los golpes, sin pensar la estrategia primero.",
       "Su fuerza iguala a su valentía, y ambas superan el doble de su astucia.",
       "Es, de todo el Olimpo, a quien más desconfianza le tienen los griegos que lo crearon."
-    ]
+    ],
+    "espejo": "tyr"
   },
   {
     "id": "afrodita",
@@ -2114,6 +2249,14 @@
         "porque": "Una sola decisión, tomada en un instante, puede desatar una cadena de consecuencias mucho más grande de lo que parece. Esta historia continúa en otras cartas.",
         "fuente": "ordena:manzana_dorada",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_freya",
+        "titulo": "El espejo del amor",
+        "texto": "En el norte brillaba Freya, diosa del amor y la belleza como Afrodita, pero también guerrera: elige a algunos héroes caídos y no le teme a la batalla. Afrodita mueve corazones; Freya, corazones y espadas. Dos diosas del amor, una de ellas también valiente en combate.",
+        "porque": "Comparar a Afrodita con Freya muestra que el amor no era un tema menor para ninguno de los dos pueblos. Y que la belleza podía convivir con la fuerza, no era lo contrario.",
+        "fuente": "espejo:freya",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -2149,7 +2292,8 @@
       "Puede encender un sentimiento entre dos corazones con solo desearlo.",
       "Su astucia iguala a su magia, y su valentía es exactamente el doble de su fuerza.",
       "Llegó a la orilla del mundo flotando sobre una concha, recién nacida de la espuma del mar."
-    ]
+    ],
+    "espejo": "freya"
   },
   {
     "id": "hefesto",
@@ -2273,6 +2417,14 @@
         "porque": "Resolución de conflictos por innovación. Un problema legal o territorial puede neutralizarse creando nueva tecnología que compense el valor del daño original.",
         "fuente": "ordena:robo_ganado",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_loki",
+        "titulo": "El espejo de la astucia",
+        "texto": "En el norte vive Loki, el astuto que va y viene entre los dioses y los gigantes, mezcla de travesuras y ayuda inesperada. Hermes hace algo parecido: mensajero veloz, ingenioso, capaz de una picardía y de un favor enorme. Dos figuras que cruzan todas las fronteras.",
+        "porque": "Comparar a Hermes con Loki muestra que los dos pueblos entendían que el mundo también necesita al ingenioso, al que no se queda quieto. La astucia era un poder tan real como la fuerza.",
+        "fuente": "espejo:loki",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -2308,7 +2460,8 @@
       "Nunca lo verás quieto: su tarea es ir y venir entre el Olimpo y los caminos mortales.",
       "Su astucia es máxima, y duplica exactamente a su liderazgo.",
       "De bebé, inventó un instrumento musical con el caparazón de una tortuga."
-    ]
+    ],
+    "espejo": "loki"
   },
   {
     "id": "dioniso",
@@ -2861,6 +3014,14 @@
         "porque": "Empatía pura. La única forma de desactivar un ciclo infinito de conflicto es reconocer el propio dolor reflejado en el adversario.",
         "fuente": "ordena:reconciliacion",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_sigurd",
+        "titulo": "El espejo del punto débil",
+        "texto": "En el norte, el gran héroe Sigurd se vuelve casi invencible tras enfrentarse a un dragón, salvo por un punto de la espalda que quedó sin cubrir. Es el mismo cuento que el de Aquiles y su talón: el guerrero imparable con una única debilidad. Dos héroes, la misma grieta.",
+        "porque": "Comparar a Aquiles con Sigurd muestra que las dos culturas llegaron a la misma idea: ni el más fuerte es perfecto. El punto débil no es un error del héroe, es lo que lo vuelve humano.",
+        "fuente": "espejo:sigurd",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -2896,7 +3057,8 @@
       "Peleó en una guerra legendaria, y muy pocas armas podían siquiera rozarlo.",
       "Su fuerza y su valentía son máximas por igual, pero su magia es de las más bajas.",
       "Su madre lo volvió invulnerable en aguas mágicas, menos en el único lugar que sostuvo con la mano."
-    ]
+    ],
+    "espejo": "sigurd"
   },
   {
     "id": "hector",
@@ -4123,6 +4285,14 @@
         "porque": "Ni el plan de seguridad más completo del mundo puede cubrir absolutamente todo. Siempre puede quedar, sin querer, un detalle que parecía demasiado chico para importar.",
         "fuente": "ordena:juramento",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_hera",
+        "titulo": "El espejo de la reina",
+        "texto": "Lejos del norte, los griegos tenían a Hera al lado de Zeus: reina del Olimpo, guardiana del matrimonio y la familia. Frigg comparte con ella el saber del hogar y el peso de reinar callando lo que conviene. Distintos nombres, la misma corona compartida.",
+        "porque": "Ver a Frigg junto a Hera enseña que la figura de la reina sabia aparece en las dos mitologías. Sostener a una familia —divina o humana— siempre fue tarea de alguien con poder propio.",
+        "fuente": "espejo:hera",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -4158,7 +4328,8 @@
       "El Olimpo nunca fue su morada: guarda los secretos de todos los mitos nórdicos.",
       "Su liderazgo es el doble de su fuerza, y su astucia casi llega al máximo.",
       "Recorrió los nueve mundos pidiéndole a cada cosa que existe que jurara no lastimar a su hijo."
-    ]
+    ],
+    "espejo": "hera"
   },
   {
     "id": "balder",
@@ -4198,6 +4369,14 @@
         "porque": "Algunos personajes representan un ideal más que una historia de acción. Balder es la luz y la bondad que el resto de los dioses protege, no por sus hazañas, sino por lo que significa para todos ellos.",
         "fuente": "ordena:breidablik",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_apolo",
+        "titulo": "El espejo de la luz",
+        "texto": "Lejos del norte, los griegos tenían a Apolo: dios del sol, la música y la salud, hermoso y admirado. Balder es su hermano de luz en el mundo nórdico, el más amado entre los dioses. Distintos cielos, la misma claridad.",
+        "porque": "Poner a Balder frente a Apolo enseña que la luz que reconforta —no la que asusta— tuvo dios en las dos mitologías. Lo luminoso y lo querido van juntos en las dos historias.",
+        "fuente": "espejo:apolo",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -4233,7 +4412,8 @@
       "El Olimpo nunca fue su cuna: es amado por todos los dioses nórdicos.",
       "Su bondad es máxima, el doble de su liderazgo.",
       "El muérdago fue la única cosa en todo el mundo que nunca prometió protegerlo."
-    ]
+    ],
+    "espejo": "apolo"
   },
   {
     "id": "njord",
@@ -4273,6 +4453,14 @@
         "porque": "Dos personas — o dos sistemas — pueden respetarse e incluso quererse sin que eso signifique que deban forzar una convivencia que no funciona. Reconocer una incompatibilidad no es un fracaso.",
         "fuente": "ordena:convivencia",
         "estado": "borrador"
+      },
+      {
+        "id": "espejo_poseidon",
+        "titulo": "El espejo del mar",
+        "texto": "En el Mediterráneo, los griegos tenían a Poseidón: señor de todo el mar, capaz de partir la tierra con su tridente. Njörd gobierna la parte amable del agua, la que trae peces y buenos viajes. Distinto carácter, el mismo dominio azul.",
+        "porque": "Poner a Njörd frente a Poseidón revela que el mar era demasiado importante para no tener dios. Cada cultura eligió qué parte del mar contar: la que temían o la que agradecían.",
+        "fuente": "espejo:poseidon",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -4308,7 +4496,8 @@
       "No vive en el Olimpo: reina sobre mares y vientos en las tierras heladas del norte.",
       "Su bondad iguala a su magia, y ambas superan claramente a su liderazgo.",
       "Nadie más calma el viento para que los barcos regresen a salvo a puerto."
-    ]
+    ],
+    "espejo": "poseidon"
   },
   {
     "id": "skadi",
@@ -4348,6 +4537,14 @@
         "porque": "Decidir con información incompleta puede llevar a un resultado distinto del esperado. Y eso no siempre es un mal resultado: solo es uno diferente al que uno tenía en la cabeza.",
         "fuente": "ordena:eleccion_ciegas",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_artemisa",
+        "titulo": "El espejo de la caza",
+        "texto": "Al sur, en los bosques griegos, caza Artemisa: diosa de la caza y los animales, independiente y con su arco siempre listo. Skadi es su reflejo en la nieve, dueña de las montañas. Dos diosas que no necesitan permiso de nadie.",
+        "porque": "Ver a Skadi junto a Artemisa revela que la libertad y la caza tuvieron diosa en climas opuestos. El paisaje cambia; la independencia es la misma.",
+        "fuente": "espejo:artemisa",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -4383,7 +4580,8 @@
       "No desciende del Olimpo: nació entre picos helados y ventiscas del norte.",
       "Su valentía es la más alta de sus dones, muy por encima de su magia.",
       "Eligió a su compañero mirando solo sus pies, detrás de una cortina."
-    ]
+    ],
+    "espejo": "artemisa"
   },
   {
     "id": "sigurd",
@@ -4423,6 +4621,14 @@
         "porque": "Gestión de inteligencia. La mayoría de los riesgos críticos son detectables antes de ocurrir si se presta atención a las señales de baja intensidad en el entorno.",
         "fuente": "ordena:traicion",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_aquiles",
+        "titulo": "El espejo del punto débil",
+        "texto": "Al sur, los griegos contaban a Aquiles: invencible en la batalla salvo por su talón, el único lugar por donde podían herirlo. Sigurd comparte su destino con esa misma marca: un punto de la espalda sin cubrir. Dos guerreros gigantes con una debilidad diminuta.",
+        "porque": "Poner a Sigurd frente a Aquiles revela que el 'héroe con un solo punto débil' es una idea que apareció sola en lugares lejanos. Habla de algo que todos sabemos: la fuerza total no existe.",
+        "fuente": "espejo:aquiles",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -4458,7 +4664,8 @@
       "No es un héroe griego: su leyenda nació en las tierras heladas del norte.",
       "Su valentía es máxima, y su magia es una de las más bajas.",
       "Después de su gran hazaña, entendió el idioma de las aves, y eso le salvó la vida."
-    ]
+    ],
+    "espejo": "aquiles"
   },
   {
     "id": "valquirias",
@@ -4857,6 +5064,14 @@
         "porque": "Hel no cambió la regla ni hizo una excepción, ni siquiera para calmar el dolor de todo un mundo. Administrar un sistema con justicia significa aplicar la misma regla para todos, sin favoritismos — incluso cuando la respuesta que da duele.",
         "fuente": "vinculo:balder",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_hades",
+        "titulo": "El espejo del inframundo",
+        "texto": "Lejos del norte, los griegos tenían a Hades cuidando su propio reino con las mismas reglas: orden, justicia y equilibrio. Hel comparte con él la calma y el peso de administrar un mundo entero. Dos figuras tranquilas, encargadas de lo que sigue.",
+        "porque": "Ver a Hel junto a Hades enseña que las dos culturas entendían ese lugar como necesario, no como amenaza. El respeto, no el miedo, es lo que las dos historias piden.",
+        "fuente": "espejo:hades",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -4892,7 +5107,8 @@
       "No gobierna desde el Olimpo: en el norte helado, cuida a quienes ya no viven.",
       "Su magia es su punto más alto, muy por encima de su fuerza.",
       "Recibe a quienes mueren de enfermedad o vejez, no en batalla, y les da un lugar justo."
-    ]
+    ],
+    "espejo": "hades"
   },
   {
     "id": "eneas",
