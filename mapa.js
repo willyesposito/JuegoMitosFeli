@@ -103,10 +103,10 @@ function cerrarHoja() {
 /* ---------- Dibujo del mapa ---------- */
 
 const TEMA_MAPA = {
-  colorTrazoCompleto: "#8fd6c4", colorTrazoParcial: "rgba(143,214,196,.85)",
-  colorPunto: "#8fd6c4", colorPuntoInactivo: "#fff2d6", colorError: "#ff9e8a",
-  colorHalo: "rgba(143,214,196,.16)", colorOnda: "rgba(143,214,196,.8)",
-  colorPista: "rgba(255,233,168,.95)"
+  colorTrazoCompleto: "#9c3b28", colorTrazoParcial: "rgba(156,59,40,.85)",
+  colorPunto: "#9c3b28", colorPuntoInactivo: "#b98b52", colorError: "#c0532f",
+  colorHalo: "rgba(156,59,40,.18)", colorOnda: "rgba(156,59,40,.75)",
+  colorPista: "#c58a2e"
 };
 
 function puntosDe(v) {

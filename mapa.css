@@ -366,3 +366,76 @@ button { font-family: inherit; cursor: pointer; }
     transition-duration: .01ms !important;
   }
 }
+
+/* ==================== PIEL PERGAMINO (Handoff v5) ==================== */
+.mapa-pantalla {
+  background: #efe3c6;
+  color: #3f2f1a;
+}
+.mapa-header { background: linear-gradient(#e7d7b0, #efe3c6); }
+.mapa-volver { background: rgba(107,79,42,.14); color: #6b4f2a; }
+.mapa-titulo { color: #6b4f2a; }
+.mapa-subtitulo { color: rgba(107,79,42,.65); }
+.mapa-contador {
+  background: rgba(107,79,42,.1);
+  border: 1px solid rgba(107,79,42,.3);
+  color: #6b4f2a;
+}
+.mapa-instruccion { color: #8a6a3a; }
+
+/* Marco interno del mapa */
+.mapa-mundo { box-shadow: inset 0 0 0 1.5px rgba(107,79,42,.35); }
+
+/* Panel de la parada tocada */
+.mapa-nombre-viaje {
+  background: rgba(239,227,198,.92);
+  border: 1px solid rgba(107,79,42,.4);
+}
+.mapa-nombre-viaje span {
+  background: none;
+  -webkit-text-fill-color: initial;
+  color: #6b4f2a;
+}
+.mapa-nombre-viaje p { color: rgba(107,79,42,.85); }
+
+/* Boton reiniciar */
+.mapa-reiniciar { background: rgba(107,79,42,.14); color: #6b4f2a; }
+
+/* Chips del catalogo */
+.mapa-chip {
+  background: rgba(107,79,42,.06);
+  border: 1px solid rgba(107,79,42,.25);
+  color: rgba(107,79,42,.7);
+}
+.mapa-chip.hecho { color: rgba(107,79,42,.8); }
+.mapa-chip.activo {
+  background: rgba(107,79,42,.16);
+  border: 1.5px solid rgba(107,79,42,.55);
+  color: #6b4f2a;
+}
+
+/* Hoja de capitulo revelado */
+.mapa-hoja {
+  background: linear-gradient(175deg, #efe3c6, #e3d0a6 70%);
+  box-shadow: 0 -12px 40px rgba(74,54,26,.35);
+}
+.mapa-hoja-agarre { background: rgba(107,79,42,.35); }
+.mapa-hoja-badge {
+  background: rgba(239,227,198,.9);
+  border: 1.5px solid rgba(107,79,42,.55);
+  color: #6b4f2a;
+}
+.mapa-hoja-modulo { color: rgba(107,79,42,.8); }
+.mapa-hoja-cuerpo { background: rgba(107,79,42,.08); color: #3f2f1a; }
+.mapa-hoja-numero { border: 1.5px solid rgba(107,79,42,.6); color: #9c3b28; }
+.mapa-hoja-personaje { color: #8a5a24; }
+.mapa-hoja-texto { color: #3f2f1a; }
+.mapa-hoja-porque {
+  background: rgba(156,59,40,.1);
+  border: 1.5px solid rgba(156,59,40,.4);
+}
+.mapa-hoja-porque strong { color: #9c3b28; }
+.mapa-hoja-porque p { color: #3f2f1a; }
+.mapa-boton-primario { background: #9c3b28; color: #f7ecd4; box-shadow: 0 4px 14px rgba(156,59,40,.3); }
+.mapa-boton-secundario { background: rgba(107,79,42,.16); color: #4a3620; }
+/* ==================== fin piel pergamino ==================== */
