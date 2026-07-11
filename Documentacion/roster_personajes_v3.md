@@ -12,7 +12,7 @@
 2. De los nórdicos eliminados por v2 vuelve solo **Las Valquirias**, por criterio de relevancia en las películas de *How to Train Your Dragon* (mencionadas explícitamente en el funeral de Stoick en HTTYD 2, junto a Odín y el Valhalla). Idunn, Bragi, Frey, Brunilda, Mimir, Las Nornas, Sleipnir, Ratatosk y Vidar quedan fuera del roster activo.
 3. Cronos, Medea y Hel entran con versión suavizada aprobada por Willy (ver regla 5 de CLAUDE.md). **Sus segundos capítulos ya están escritos y publicados** (julio 2026): Cronos (`ordena:titanomaquia`, el miedo al reemplazo como motor de su propia caída), Medea (`ordena:dragon_dormido`, el conocimiento como solución en vez de la fuerza), Hel (`vinculo:balder`, equidad sin excepciones al administrar su reino). Ninguno lleva detalle crudo del mito original.
 4. Tier estático en Ola 1. Absorción de mitos menores y rutas de ascensión: anotadas para Ola 2+, no implementar antes.
-5. Rango de capítulos por tier (regla 6 de CLAUDE.md): dorado 3-5, plateado 2-4, normal 1-3 (techo subido +1 en julio 2026 para que los candidatos de `mapa:` entren sin desplazar capítulos existentes; el piso no cambió).
+5. Rango de capítulos por tier (regla 6 de CLAUDE.md): dorado **sin techo** (piso 3, sin límite superior), plateado 2-4, normal 1-3. El techo de dorado se eliminó en julio 2026 (al construir el Espejo de los Mundos) para que un dorado acumule todos los capítulos que su historia dé sin desplazar candidatos; antes de eso el techo se había subido +1 en los tres tiers por los capítulos de `mapa:`. El piso no cambió en ningún momento.
 6. Confirmado (julio 2026): Ratatosk se reincorpora puntualmente para sostener el set Mensajeros (ficha v1 ya escrita, costo de producción cero — solo falta `pistas_deduccion`). Se agrega chip de mitología "Romana" para Eneas, Dido y Rómulo y Remo.
 7. **Confirmado con Willy (julio 2026): 85 es el número final del roster.** Coincide exacto con `personajes.json` y con la tabla de Totales de este documento — no hay discrepancia que reconciliar. El contador del hub ya se calcula dinámicamente (`personajes.length`), no hardcodeado.
 
@@ -63,7 +63,7 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Thor | base ✅ · El Collar de Sif (`ordena:mjolnir`) ✅ · El Viaje a Jotunheim (`ordena:jotunheim`) ✅ · El compañero de viajes (`vinculo:loki`) ✅ |
 | Loki | base ✅ · La travesura del pelo de oro (`vinculo:sif`) ✅ · El lobo que creció demasiado (`vinculo:tyr`) ✅ |
 
-**Tier dorado: los 13 tienen sus 3-5 capítulos escritos y mergeados** (techo subido a 5 en julio 2026, ver decisión 5). Lo único pendiente por personaje es que Willy revise y publique los marcados 🕓 (18 de los 40 capítulos no-base del tier, incluidos los 5 de `mapa:` sumados en julio 2026).
+**Tier dorado: los 13 tienen 3 o más capítulos escritos y mergeados** (tier sin techo desde julio 2026, ver decisión 5; un dorado puede seguir sumando). Lo único pendiente por personaje es que Willy revise y publique los marcados 🕓 (los 5 de `mapa:` sumados en julio 2026, y los capítulos `espejo:` en borrador de los dorados apareados en el Espejo de los Mundos: Zeus, Odín, Heracles, Thor, Hades, Poseidón, Loki y Aquiles).
 
 # TIER PLATEADO (37) — 2 a 4 capítulos
 

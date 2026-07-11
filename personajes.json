@@ -160,6 +160,14 @@
         "porque": "Cada trabajo llevaba a Heracles a un límite distinto: el sur, el este, el norte, el oeste. Los griegos usaron sus doce hazañas para dibujar los bordes de su mundo, y todavía hoy el estrecho de Gibraltar guarda el nombre de sus columnas. Heracles era el héroe que había estado en todas partes.",
         "fuente": "mapa:heracles_doce_trabajos",
         "estado": "publicado"
+      },
+      {
+        "id": "espejo_thor",
+        "titulo": "El espejo de la fuerza",
+        "texto": "En el norte, el campeón de la fuerza es Thor: con su martillo enfrenta a los gigantes para proteger a dioses y humanos, igual que Heracles enfrentaba monstruos en sus trabajos. Los dos son puro coraje y músculo puesto al servicio de los demás. Dos héroes gigantes, la misma tarea de plantarse frente a lo temible.",
+        "porque": "Comparar a Heracles con Thor muestra que las dos culturas quisieron un héroe de fuerza enorme que usara ese poder para proteger, no para abusar. La fuerza, en las dos historias, sirve para cuidar a los que no pueden defenderse solos.",
+        "fuente": "espejo:thor",
+        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -195,7 +203,8 @@
       "Un héroe griego debió cumplir muchas tareas imposibles para reparar un error que había cometido.",
       "Su fuerza y su valentía tocan el máximo de la escala; su astucia iguala a su liderazgo.",
       "Cumplió doce tareas imposibles, una detrás de otra, sin abandonar ninguna."
-    ]
+    ],
+    "espejo": "thor"
   },
   {
     "id": "penelope",
@@ -500,14 +509,6 @@
         "porque": "Fundamentos del sistema judicial. Enseña que la evolución de una sociedad depende de reemplazar la violencia física con el debate estructurado y la argumentación lógica.",
         "fuente": "ordena:areopago",
         "estado": "borrador"
-      },
-      {
-        "id": "espejo_odin",
-        "titulo": "El espejo de la sabiduría",
-        "texto": "En el norte había otro dios que prefería la cabeza a los puños: Odín, que sacrifica un ojo para beber del pozo de la sabiduría y manda cuervos a mirar el mundo. Atenea hace algo parecido con su lechuza y su estrategia: no gana el que pega más fuerte, gana el que piensa mejor. Dos culturas, la misma apuesta por la mente.",
-        "porque": "Que dos pueblos tan distintos pusieran a la sabiduría por encima de la fuerza dice mucho de los dos. Comparar a Atenea con Odín muestra que la inteligencia siempre fue un valor, no un invento moderno.",
-        "fuente": "espejo:odin",
-        "estado": "borrador"
       }
     ],
     "preguntas": [
@@ -543,8 +544,7 @@
       "Esta diosa griega vela sobre los héroes más valientes en el fragor de la batalla.",
       "Su astucia toca el máximo de la escala, y su magia casi la alcanza.",
       "Nació de la cabeza de un dios, ya vestida con su armadura."
-    ],
-    "espejo": "odin"
+    ]
   },
   {
     "id": "perseo",
@@ -793,11 +793,11 @@
         "estado": "publicado"
       },
       {
-        "id": "espejo_zeus",
-        "titulo": "El espejo del trueno",
-        "texto": "Lejos de los bosques del norte, los griegos también escuchaban la tormenta y la volvían un dios: Zeus, el rey del Olimpo, que en vez de martillo lanza un rayo. Thor no gobierna como Zeus; Thor sale a defender a la gente de los gigantes. Dos truenos, dos maneras de imaginar quién los tira.",
-        "porque": "Ver a Thor al lado de Zeus ayuda a entender que ninguna cultura inventa sola: frente al mismo cielo furioso, griegos y nórdicos llegaron a ideas hermanas sin copiarse. El parecido enseña algo sobre cómo pensamos todos los humanos.",
-        "fuente": "espejo:zeus",
+        "id": "espejo_heracles",
+        "titulo": "El espejo de la fuerza",
+        "texto": "Lejos del norte, los griegos tenían a Heracles: el héroe más fuerte de todos, que enfrentó leones, hidras y bestias imposibles en sus famosos trabajos. Thor comparte con él la fuerza descomunal y el trabajo de defender a la gente, aunque en vez de trabajos tenga gigantes y un martillo. Dos campeones que cargan el mundo al hombro.",
+        "porque": "Ver a Thor junto a Heracles enseña que el héroe fortísimo que enfrenta monstruos existía en los dos mundos. Que los dos usen su fuerza para proteger, y no para dominar, cuenta qué esperaban esos pueblos de un verdadero héroe.",
+        "fuente": "espejo:heracles",
         "estado": "borrador"
       }
     ],
@@ -835,7 +835,7 @@
       "Su fuerza es máxima, pero su astucia es de las más bajas.",
       "Su arma favorita siempre vuelve a su mano."
     ],
-    "espejo": "zeus"
+    "espejo": "heracles"
   },
   {
     "id": "loki",
@@ -977,11 +977,11 @@
         "estado": "publicado"
       },
       {
-        "id": "espejo_atenea",
-        "titulo": "El espejo de la sabiduría",
-        "texto": "Al sur, los griegos también tenían una divinidad que ganaba pensando: Atenea, que aconseja a los héroes y elige la estrategia justa. Odín paga su sabiduría con un ojo; Atenea nace ya sabiendo. Distinto camino, la misma idea: entender es más poderoso que golpear.",
-        "porque": "Poner a Odín frente a Atenea revela que la búsqueda del conocimiento es una historia universal. Los cuervos y la lechuza son el mismo símbolo: la mirada que alcanza lo que la fuerza no puede.",
-        "fuente": "espejo:atenea",
+        "id": "espejo_zeus",
+        "titulo": "El espejo del rey",
+        "texto": "Lejos del norte, los griegos también tenían a su rey de los dioses: Zeus, señor del Olimpo, que gobierna con el rayo y pone orden entre dioses y mortales. Odín reina parecido, pero su corona pesa distinto: entrega un ojo por saber más y carga con lo que el futuro le muestra. Dos padres de dioses, dos maneras de llevar la corona.",
+        "porque": "Poner a Odín frente a Zeus revela que la figura del rey de los dioses aparece en las dos mitologías. Comparar cómo reina cada uno —Zeus con poder, Odín con conocimiento— enseña que 'ser el que manda' se puede imaginar de más de una forma.",
+        "fuente": "espejo:zeus",
         "estado": "borrador"
       }
     ],
@@ -1019,7 +1019,7 @@
       "Su liderazgo es máximo, y su bondad es exactamente la mitad de eso.",
       "Sacrificó uno de sus propios ojos para beber la sabiduría de un pozo antiguo."
     ],
-    "espejo": "atenea"
+    "espejo": "zeus"
   },
   {
     "id": "freya",
@@ -1403,11 +1403,11 @@
         "estado": "borrador"
       },
       {
-        "id": "espejo_thor",
-        "titulo": "El espejo del trueno",
-        "texto": "Al otro lado de Europa, un pueblo que nunca oyó hablar del Olimpo también le tenía miedo y respeto a las tormentas. Ellos imaginaron a Thor, que lanza truenos con su martillo igual que Zeus con su rayo. Zeus es el rey que ordena; Thor es el campeón que protege. Distinta corona, la misma tormenta.",
-        "porque": "Cuando dos culturas separadas inventan un dios del trueno parecido, no es casualidad: la naturaleza les hacía la misma pregunta, y las dos contestaron con una historia. Comparar a Zeus con Thor muestra que los mitos son respuestas humanas a lo que no se entendía.",
-        "fuente": "espejo:thor",
+        "id": "espejo_odin",
+        "titulo": "El espejo del rey",
+        "texto": "En el norte reina Odín, el Padre de Todo: gobierna a los dioses igual que Zeus gobierna el Olimpo. Los dos son la máxima autoridad de su mundo, pero cada uno reina a su manera: Zeus con el rayo y la ley; Odín cambiando un ojo por sabiduría y mirando el futuro. Dos reyes del cielo, dos formas de mandar.",
+        "porque": "Comparar a Zeus con Odín muestra que las dos culturas necesitaron imaginar a alguien en la cima que ordenara todo lo demás. Que uno reine con fuerza y el otro con sabiduría dice qué valoraba cada pueblo en un buen rey.",
+        "fuente": "espejo:odin",
         "estado": "borrador"
       }
     ],
@@ -1445,7 +1445,7 @@
       "Su magia y su liderazgo son máximos, y su bondad es apenas la mitad de esos dos.",
       "Solo a él le tocó liderar a los dioses en la guerra contra los titanes."
     ],
-    "espejo": "thor"
+    "espejo": "odin"
   },
   {
     "id": "hera",

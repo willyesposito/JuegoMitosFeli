@@ -30,8 +30,10 @@ const DESBLOQUEADAS_INICIALES = [
 ];
 
 /* Cuántos capítulos le corresponden como mínimo a cada tier (regla 6 de
-   CLAUDE.md: dorado 3-4, plateado 2-3, normal 1-2). Se usa para no dar por
-   completa una historia que todavía no tiene todos sus capítulos diseñados. */
+   CLAUDE.md: piso dorado 3, plateado 2, normal 1). El techo es regla de
+   contenido, no de código: dorado no tiene techo, plateado 4, normal 3. Este
+   piso solo se usa para no dar por completa una historia que todavía no tiene
+   todos sus capítulos diseñados. */
 const TIER_MINIMO = { dorado: 3, plateado: 2, normal: 1 };
 
 /* Nombre amigable del módulo que enciende cada capítulo, a partir del campo

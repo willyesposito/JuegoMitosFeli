@@ -1,22 +1,22 @@
 [
   {
-    "id": "trueno",
-    "nombre": "El trueno",
+    "id": "reyes",
+    "nombre": "El rey de los dioses",
     "griego": "zeus",
-    "nordico": "thor",
-    "capituloGriego": "espejo_thor",
+    "nordico": "odin",
+    "capituloGriego": "espejo_odin",
     "capituloNordico": "espejo_zeus",
-    "porque": "Dos pueblos que nunca se conocieron miraron la misma tormenta y le pusieron un dueño. Los griegos vieron a un rey que ordena desde el cielo; los nórdicos, a un protector que defiende a la gente. El trueno asustaba igual en el Egeo que en el Báltico: por eso los dos lo volvieron un dios.",
+    "porque": "Los dos pueblos coronaron a un padre de los dioses que gobierna desde lo alto. Zeus reina en el Olimpo con su rayo; Odín, el Padre de Todo, gobierna a los dioses del norte y busca sin descanso la sabiduría. Distinto trono, la misma idea: alguien tiene que estar arriba de todo, y esa corona nunca es liviana.",
     "estado": "borrador"
   },
   {
-    "id": "sabiduria",
-    "nombre": "La sabiduría",
-    "griego": "atenea",
-    "nordico": "odin",
-    "capituloGriego": "espejo_odin",
-    "capituloNordico": "espejo_atenea",
-    "porque": "Griegos y nórdicos coincidieron en algo raro: que la sabiduría vale más que la fuerza. Atenea gana pensando; Odín entrega hasta un ojo con tal de saber más. Los dos llevan un ave que ve lo que otros no ven: la lechuza de Atenea, los cuervos de Odín.",
+    "id": "fuerza",
+    "nombre": "La fuerza",
+    "griego": "heracles",
+    "nordico": "thor",
+    "capituloGriego": "espejo_thor",
+    "capituloNordico": "espejo_heracles",
+    "porque": "Los dos pueblos imaginaron al campeón de fuerza descomunal que sale a enfrentar monstruos y gigantes para proteger a los demás. Heracles limpia el mundo griego de bestias; Thor defiende a dioses y humanos con su martillo. La misma idea: hace falta alguien enorme y valiente que se plante frente a lo que nadie más puede.",
     "estado": "borrador"
   },
   {
