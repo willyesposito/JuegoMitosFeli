@@ -63,7 +63,7 @@ Ya no quedan capítulos "solo título" (🔲) ni "escritos sin mergear" (📝) e
 | Thor | base ✅ · El Collar de Sif (`ordena:mjolnir`) ✅ · El Viaje a Jotunheim (`ordena:jotunheim`) ✅ · El compañero de viajes (`vinculo:loki`) ✅ |
 | Loki | base ✅ · La travesura del pelo de oro (`vinculo:sif`) ✅ · El lobo que creció demasiado (`vinculo:tyr`) ✅ |
 
-**Tier dorado: los 13 tienen 3 o más capítulos escritos y mergeados** (tier sin techo desde julio 2026, ver decisión 5; un dorado puede seguir sumando). Lo único pendiente por personaje es que Willy revise y publique los marcados 🕓 (los 5 de `mapa:` sumados en julio 2026, y los capítulos `espejo:` en borrador de los dorados apareados en el Espejo de los Mundos: Zeus, Odín, Heracles, Thor, Hades, Poseidón, Loki y Aquiles).
+**Tier dorado: los 13 tienen 3 o más capítulos escritos y mergeados** (tier sin techo desde julio 2026, ver decisión 5; un dorado puede seguir sumando). Los capítulos `espejo:` de los dorados apareados (Zeus, Odín, Heracles, Thor, Hades, Poseidón, Loki, Aquiles) ya están **publicados** (julio 2026, con el módulo Espejo de los Mundos). Lo único que puede quedar pendiente por personaje es que Willy revise y publique algún capítulo suelto marcado 🕓.
 
 # TIER PLATEADO (37) — 2 a 4 capítulos
 
@@ -159,7 +159,7 @@ Eneas, Dido y Rómulo y Remo llevan `mitologia: "romana"`. El chip visual y el f
 
 ## Relaciones (espejo) — estado
 
-Ver el detalle completo y las tablas en `capitulos_plateado_bloque3.md` §"Relaciones (espejo)" (archivo histórico, ver nota de julio 2026 al principio de este documento). Resumen: 6 pares confirmados (Hades↔Hel, Aquiles↔Balder, Poseidón↔Njörd, Deméter↔Sif, Artemisa↔Skadi, Afrodita↔Freya), 2 rotos por la salida de Bragi y Sleipnir del roster (Apolo y Pegaso quedan sin contraparte nórdica por ahora), 1 pendiente de que se termine de resolver Frigg↔Casandra. El campo `espejo` en `personajes.json` sigue vacío (`null`) en todos los personajes — pasa a ser funcional recién cuando se construya Espejo de los Mundos (Ola 2, `olas_y_fuentes_de_capitulos.md` §4.2). Cerrar la tabla definitiva de pares es un insumo de contenido que Willy tiene que producir antes de implementar ese módulo.
+**Actualizado julio 2026 — resuelto.** La tabla definitiva de pares se cerró y publicó con el módulo Espejo de los Mundos: **12 pares**, ver `olas_y_fuentes_de_capitulos.md` §4.2 para la tabla completa. El campo `espejo` en `personajes.json` ya está poblado (recíproco) en los 24 personajes apareados y sus 24 capítulos `espejo:` están publicados. Notas sobre la tabla vieja de este archivo (que era tentativa): Aquiles quedó apareado con **Sigurd** (no Balder; Balder va con Apolo), y Frigg con **Hera** (el tanteo Frigg↔Casandra se descartó). Apolo↔Bragi y Pegaso↔Sleipnir siguen descartados (Bragi y Sleipnir fuera del roster). Atenea quedó sin par (su equivalente, Odín, va con Zeus).
 
 ## Trabajo pendiente (actualizado julio 2026 — post-mergeo)
 
@@ -167,7 +167,7 @@ El mergeo de contenido escrito quedó cerrado. Lo que sigue pendiente es distint
 
 1. **Revisión y publicación:** hay capítulos 🕓 en `estado: "borrador"` en los tres tiers (18 dorados, ~20 plateados). Publicarlos es decisión editorial de Willy, capítulo por capítulo o en lote — no requiere más escritura.
 2. **Construir los módulos que los encienden:** la mayoría de los capítulos 🕓 usan `fuente: "ordena:*"` — no se pueden encender jugando hasta que exista el módulo Ordená el Mito (Ola 2). Mientras el módulo no exista, publicarlos los deja visibles en la ficha como capítulo velado con su pista de origen, pero no jugable.
-3. **Espejo de los Mundos:** falta cerrar la tabla definitiva de pares (~12) y llenar el campo `espejo` en `personajes.json` antes de poder construir el módulo (Ola 2).
+3. **Espejo de los Mundos (resuelto y publicado, julio 2026):** 12 pares cerrados en `espejos.json` y campo `espejo` poblado + 24 capítulos `espejo:` en `personajes.json`, todo en `estado: "publicado"`. Módulo construido y registrado en el hub. Ver `olas_y_fuentes_de_capitulos.md` §4.2 para la tabla.
 4. **Mapa del Héroe (resuelto, julio 2026):** catálogo de 12 viajes cargado en `viajes.json` (borrador) con sus 12 capítulos nuevos en `personajes.json` (borrador) — ver `olas_y_fuentes_de_capitulos.md` §4.1 para el detalle. El módulo técnico (`mapa.html`/`mapa.js`/`mapa.css`) también está construido, sin registrar en el hub.
 5. **Perseo (resuelto):** el título de más que este documento marcaba como pendiente de recortar ya no aplica.
 6. **Cupo de más por `mapa:` (resuelto, julio 2026):** los 7 personajes que habían quedado con un capítulo candidato de más para su tope de tier (dorados: Odiseo, Jasón, Heracles, Teseo, Perseo; plateados: Dédalo, Prometeo) ya no tienen conflicto — Willy subió el techo de cada tier +1 (decisión 5) específicamente para que el capítulo de `mapa:` entre sin desplazar a los que ya había. Nadie queda afuera.

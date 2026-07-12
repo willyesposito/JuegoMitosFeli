@@ -60,6 +60,22 @@ const MODULOS = [
         return publicados.length ? `${completados} de ${publicados.length} mitos` : "Descubrí héroes para desbloquear mitos";
       } catch (e) { return "Secuenciá la historia y encendé capítulos"; }
     }
+  },
+  {
+    id: "espejo", nombre: "Espejo de los Mundos", icono: "🪞", href: "espejo.html",
+    descripcion: "Encontrá el reflejo entre Grecia y el norte",
+    async progreso() {
+      try {
+        const todos = await (await fetch("espejos.json")).json();
+        // Un par está disponible solo si los DOS personajes ya se descubrieron
+        // (misma regla de disponibilidad que usa el módulo: nunca spoilea).
+        const disponibles = todos.filter(par => par.estado === "publicado"
+          && estaDesbloqueada(par.griego) && estaDesbloqueada(par.nordico));
+        const completados = (estado.espejo && Array.isArray(estado.espejo.completados))
+          ? estado.espejo.completados.filter(id => disponibles.some(par => par.id === id)).length : 0;
+        return disponibles.length ? `${completados} de ${disponibles.length} reflejos` : "Descubrí héroes de los dos mundos para ver reflejos";
+      } catch (e) { return "Encontrá el reflejo entre Grecia y el norte"; }
+    }
   }
 ];
 
