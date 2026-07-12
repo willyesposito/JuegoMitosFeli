@@ -98,7 +98,7 @@ function perfilNuevo(nombre, dificultad) {
     creado: new Date().toISOString().slice(0, 10),
     global,
     coleccion: { vistas: [] },
-    oraculo: { fecha: "", modo: "facil", resueltas: [] },
+    oraculo: { fecha: "", modo: "facil", resueltas: [], deseo: null, abanicosSinDeseo: 0 },
     cielo: { completadas: [] },
     sets: { revelados: [] }
   };
@@ -123,7 +123,9 @@ function normalizarPerfil(p) {
     base.oraculo = {
       fecha: typeof p.oraculo.fecha === "string" ? p.oraculo.fecha : "",
       modo: p.oraculo.modo === "dificil" ? "dificil" : "facil",
-      resueltas: Array.isArray(p.oraculo.resueltas) ? p.oraculo.resueltas : []
+      resueltas: Array.isArray(p.oraculo.resueltas) ? p.oraculo.resueltas : [],
+      deseo: typeof p.oraculo.deseo === "string" ? p.oraculo.deseo : null,
+      abanicosSinDeseo: Number.isInteger(p.oraculo.abanicosSinDeseo) ? p.oraculo.abanicosSinDeseo : 0
     };
   }
   if (p.cielo && Array.isArray(p.cielo.completadas)) base.cielo = p.cielo;
@@ -302,6 +304,29 @@ function porId(id) {
 
 function estaDesbloqueada(id) {
   return estado.global.descubiertos.includes(id);
+}
+
+/* ---------- Deseo del Oráculo ----------
+   Un solo deseo activo por perfil. Sesga el abanico sin garantizar (la piedad
+   suave la maneja el módulo). Se limpia solo cuando el deseado se descubre. A
+   diferencia de la dificultad, el deseo SÍ tiene setter: es una elección de la
+   jugadora, no un parámetro fijo de la partida. */
+function deseoActual() {
+  const id = estado.oraculo.deseo;
+  if (!id) return null;
+  if (estaDesbloqueada(id)) { estado.oraculo.deseo = null; guardarEstado(); return null; }
+  return porId(id) ? id : null;
+}
+
+function fijarDeseo(id) {
+  estado.oraculo.deseo = (porId(id) && !estaDesbloqueada(id)) ? id : null;
+  estado.oraculo.abanicosSinDeseo = 0;
+  guardarEstado();
+}
+
+function quitarDeseo() {
+  estado.oraculo.deseo = null;
+  guardarEstado();
 }
 
 /* Capítulos con fuente "vinculo:<id>": se encienden solos cuando el personaje
