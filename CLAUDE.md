@@ -65,6 +65,9 @@ Los capítulos los aporta el juego, no la usuaria. La escritura propia (que ella
 
 - **Oráculo (por defecto, fácil):** carta del día casi regalada. Una pista, un tap, la tenés. Objetivo: que junte un mazo grande en pocos días y pase rápido a enriquecer historias.
 - **Oráculo Difícil (modo opcional):** el rompecabezas deductivo completo tipo Mastermind/Cryptid que a Feli le gustó. Adivinar sin fallar da la **versión especial** del capítulo base (más largo / con bonificación de entrada). Preserva el desafío intelectual para cuando ELLA lo elige, sin volverlo peaje diario obligatorio.
+- **Abanico de elección (julio 2026):** antes del desafío, cada consulta muestra un **abanico de 3 cartas veladas** (pista mínima: mitología + un rasgo, nunca el nombre). Feli elige a quién perseguir y recién ahí corre el desafío del modo (grilla en fácil, Mastermind en difícil). Deja de elegir el sistema al azar; elige ella.
+- **Deseo:** un personaje deseado por perfil (setter en `nucleo.js`: `fijarDeseo`/`quitarDeseo`/`deseoActual`). Sesga su aparición en el abanico sin garantizarla, con piedad suave (tras N consultas sin salir, entra sí o sí). Se limpia solo al descubrirlo. **No lo regala**: igual hay que ganar el desafío (regla de oro intacta).
+- **Consulta dorada:** las doradas quedan fuera del abanico común; se llega por una consulta especial con una **pregunta guardián** (campo `preguntas` del JSON). Acertar la revela; fallar o cancelar la devuelve al pool (nunca se pierde, nunca bloquea). Funciona en las tres dificultades por igual — modular la exigencia del guardián por dificultad quedó anotado como fuera de alcance por ahora.
 
 ## Contrato de datos — campos en personajes.json
 

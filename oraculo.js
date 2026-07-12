@@ -16,7 +16,16 @@ const ATRIBUTOS_ORACULO = [
 ];
 const NOMBRE_MITO_ORACULO = { griega: "🏛️ Griega", nordica: "⚡ Nórdica", romana: "🦅 Romana" };
 
+const TAM_ABANICO = 3;    // cartas veladas por consulta
+const PIEDAD_DESEO = 4;   // consultas sin el deseado antes de forzar su entrada
+const PROB_DESEO = 0.6;   // chance de incluir el deseado antes de la piedad
+
 let modo = "facil";
+
+// ---- pantallas nuevas (abanico / dorada / deseo) ----
+let doradaEnConsulta = null;
+let preguntaDorada = null;
+let busquedaDeseo = "";
 
 // ---- modo fácil ----
 let secretoFacil = null;
@@ -124,6 +133,104 @@ function mostrarToast(texto) {
   setTimeout(() => toast.remove(), 3400);
 }
 
+/* ---------- Consulta: abanico + deseo + acceso dorada ----------
+   Nuevo punto de entrada. En vez de arrancar el desafío contra un secreto al
+   azar, se muestran TAM_ABANICO cartas veladas para que Feli elija a quién
+   perseguir; el desafío que ya existía corre recién al elegir una. */
+
+function poolComun()   { return candidatosSinDescubrir().filter(p => p.tier !== "dorado"); }
+function poolDoradas() { return candidatosSinDescubrir().filter(p => p.tier === "dorado"); }
+
+/* Pista de una carta velada: mitología más un rasgo, nunca el nombre. */
+function pistaVeladaDe(p) {
+  const mito = NOMBRE_MITO_ORACULO[p.mitologia] || p.mitologia;
+  const rasgo = (p.dones || [])[0];
+  return rasgo ? `${mito} · ${rasgo}` : mito;
+}
+
+function componerAbanico() {
+  let pool = poolComun();
+  const elegidos = [];
+  const deseo = deseoActual();
+
+  // El deseo entra al abanico común solo si no es dorado (las doradas tienen
+  // su propia consulta). Sesga, no garantiza, salvo piedad suave.
+  const deseoComun = (deseo && porId(deseo).tier !== "dorado") ? deseo : null;
+  if (deseoComun && pool.some(p => p.id === deseoComun)) {
+    const forzar = estado.oraculo.abanicosSinDeseo >= PIEDAD_DESEO;
+    if (forzar || Math.random() < PROB_DESEO) {
+      elegidos.push(deseoComun);
+      pool = pool.filter(p => p.id !== deseoComun);
+      estado.oraculo.abanicosSinDeseo = 0;
+    } else {
+      estado.oraculo.abanicosSinDeseo++;
+    }
+    guardarEstado();
+  }
+
+  for (const p of mezclar(pool)) {
+    if (elegidos.length >= TAM_ABANICO) break;
+    elegidos.push(p.id);
+  }
+  return mezclar(elegidos); // que el deseado no caiga siempre en la misma posición
+}
+
+function pantallaTodoDescubierto() {
+  document.getElementById("oraculo-main").innerHTML = `
+    <p class="oraculo-vacio">✨ ¡Ya descubriste a todos los héroes! Volvé cuando Willy sume alguno nuevo.</p>`;
+}
+
+function iniciarConsulta() {
+  if (!candidatosSinDescubrir().length) { pantallaTodoDescubierto(); return; }
+
+  const abanico = componerAbanico();
+  const hayDoradas = poolDoradas().length > 0;
+  const deseo = deseoActual();
+  const main = document.getElementById("oraculo-main");
+
+  main.innerHTML = `
+    ${hayDoradas ? `
+      <button class="oraculo-acceso-dorada" id="oraculo-acceso-dorada">
+        <span class="oraculo-acceso-dorada-halo" aria-hidden="true"></span>
+        <strong>⭐ Consulta dorada</strong>
+        <em>Un héroe legendario te espera</em>
+      </button>` : ""}
+
+    <div class="oraculo-deseo">
+      ${deseo
+        ? `<span class="oraculo-deseo-chip">✧ Tu deseo: ${porId(deseo).nombre}
+             <button class="oraculo-deseo-quitar" id="oraculo-deseo-quitar" aria-label="Quitar deseo">✕</button>
+           </span>`
+        : `<button class="oraculo-deseo-pedir" id="oraculo-deseo-pedir">✧ Pedí un deseo</button>`}
+    </div>
+
+    <p class="oraculo-instruccion">Elegí a quién querés descubrir</p>
+    <div class="oraculo-abanico">
+      ${abanico.map(id => {
+        const p = porId(id);
+        const esDeseo = deseo === id;
+        return `
+          <button class="oraculo-velada${esDeseo ? " oraculo-velada--deseo" : ""}" data-id="${id}">
+            <span class="oraculo-velada-marca" aria-hidden="true">${esDeseo ? "✧" : "🔮"}</span>
+            <span class="oraculo-velada-pista">${pistaVeladaDe(p)}</span>
+          </button>`;
+      }).join("")}
+    </div>`;
+
+  main.querySelectorAll(".oraculo-velada").forEach(b =>
+    b.addEventListener("click", () => elegirDelAbanico(b.dataset.id)));
+  const accesoD = document.getElementById("oraculo-acceso-dorada");
+  if (accesoD) accesoD.addEventListener("click", abrirConsultaDorada);
+  const pedir = document.getElementById("oraculo-deseo-pedir");
+  if (pedir) pedir.addEventListener("click", abrirSelectorDeseo);
+  const quitar = document.getElementById("oraculo-deseo-quitar");
+  if (quitar) quitar.addEventListener("click", () => { quitarDeseo(); iniciarConsulta(); });
+}
+
+function elegirDelAbanico(id) {
+  if (modo === "facil") desafioFacil(id); else desafioDificil(id);
+}
+
 /* ---------- Modo fácil ---------- */
 
 function pistaFacilDe(p) {
@@ -131,15 +238,15 @@ function pistaFacilDe(p) {
   return `Un héroe o dios de mitología ${p.mitologia === "griega" ? "griega" : p.mitologia === "nordica" ? "nórdica" : "romana"}, con dones como «${(p.dones || [])[0] || "algo especial"}».`;
 }
 
-function iniciarFacil() {
-  const sinDescubrir = candidatosSinDescubrir();
-  if (!sinDescubrir.length) {
-    document.getElementById("oraculo-main").innerHTML = `
-      <p class="oraculo-vacio">✨ ¡Ya descubriste a todos los héroes! Volvé cuando Willy sume alguno nuevo.</p>`;
-    return;
-  }
-  secretoFacil = alAzar(sinDescubrir).id;
+/* Entrada del modo fácil: abre el abanico. El desafío corre recién cuando
+   Feli elige una carta velada (elegirDelAbanico → desafioFacil). */
+function iniciarFacil() { iniciarConsulta(); }
+
+/* El desafío de siempre, pero contra el id ya elegido en el abanico. */
+function desafioFacil(id) {
+  secretoFacil = id;
   erroresFacil = 0;
+  const sinDescubrir = candidatosSinDescubrir();
   const decoys = mezclar(sinDescubrir.filter(p => p.id !== secretoFacil)).slice(0, Math.min(4, sinDescubrir.length - 1));
   candidatosFacil = mezclar([secretoFacil, ...decoys.map(p => p.id)]);
   renderFacil();
@@ -192,14 +299,12 @@ function pistasDe(p) {
   ];
 }
 
-function iniciarDificil() {
-  const sinDescubrir = candidatosSinDescubrir();
-  if (!sinDescubrir.length) {
-    document.getElementById("oraculo-main").innerHTML = `
-      <p class="oraculo-vacio">✨ ¡Ya descubriste a todos los héroes! Volvé cuando Willy sume alguno nuevo.</p>`;
-    return;
-  }
-  secretoDificil = alAzar(sinDescubrir).id;
+/* Entrada del modo difícil: abre el abanico (igual que el fácil). El
+   Mastermind corre recién al elegir una carta velada. */
+function iniciarDificil() { iniciarConsulta(); }
+
+function desafioDificil(id) {
+  secretoDificil = id;
   pistasReveladasDificil = 1;
   erroresDificil = 0;
   intentosDificil = [];
@@ -271,6 +376,93 @@ function onGuessDificil(id) {
   if (erroresDificil <= 2) pistasReveladasDificil = erroresDificil + 1;
   busquedaDificil = "";
   renderDificil();
+}
+
+/* ---------- Consulta dorada (guardián) ----------
+   Las doradas quedan fuera del abanico común: se llega por la consulta dorada,
+   con una pregunta guardián (campo `preguntas` del JSON). Acertar la revela.
+   Fallar o cancelar la devuelve al pool: nunca se pierde, nunca bloquea
+   (regla de oro). Funciona en las tres dificultades. */
+function abrirConsultaDorada() {
+  const doradas = poolDoradas();
+  if (!doradas.length) { iniciarConsulta(); return; }
+
+  // Si el deseo es una dorada sin descubrir, la consulta apunta a ella.
+  const deseo = deseoActual();
+  const idDeseoDorado = (deseo && doradas.some(p => p.id === deseo)) ? deseo : null;
+  doradaEnConsulta = idDeseoDorado || alAzar(doradas).id;
+
+  const p = porId(doradaEnConsulta);
+  preguntaDorada = (p.preguntas && p.preguntas.length) ? alAzar(p.preguntas) : null;
+
+  // Sin pregunta escrita: nunca bloquear por falta de contenido, se revela directo.
+  if (!preguntaDorada) { revelar(doradaEnConsulta, false); return; }
+
+  const main = document.getElementById("oraculo-main");
+  main.innerHTML = `
+    <div class="oraculo-consulta-dorada">
+      <div class="oraculo-velada oraculo-velada--dorada">
+        <span class="oraculo-velada-marca" aria-hidden="true">⭐</span>
+        <span class="oraculo-velada-pista">${pistaVeladaDe(p)}</span>
+      </div>
+      <p class="oraculo-guardian-texto">El guardián te pregunta:<br><strong>${preguntaDorada.texto}</strong></p>
+      <div class="oraculo-grilla-facil" id="oraculo-guardian-opciones">
+        ${preguntaDorada.opciones.map((op, i) =>
+          `<button class="oraculo-candidato" data-i="${i}">${op}</button>`).join("")}
+      </div>
+      <button class="boton-secundario" id="oraculo-dorada-luego">Mejor la busco después</button>
+    </div>`;
+
+  main.querySelectorAll("#oraculo-guardian-opciones .oraculo-candidato").forEach(b =>
+    b.addEventListener("click", () => responderGuardian(Number(b.dataset.i), b)));
+  document.getElementById("oraculo-dorada-luego")
+    .addEventListener("click", () => iniciarConsulta());
+}
+
+function responderGuardian(indice, boton) {
+  if (indice === preguntaDorada.correcta) { revelar(doradaEnConsulta, false); return; }
+
+  // Sin bloqueo: se marca el error, se muestra la correcta, la dorada vuelve
+  // al pool para otro día. No se pierde ni se castiga.
+  sonar("error");
+  boton.classList.add("oraculo-candidato--error");
+  document.querySelectorAll("#oraculo-guardian-opciones .oraculo-candidato").forEach((b, i) => {
+    b.disabled = true;
+    if (i === preguntaDorada.correcta) b.classList.add("oraculo-candidato--correcta");
+  });
+  document.getElementById("oraculo-dorada-luego").textContent = "Volver al Oráculo";
+}
+
+/* ---------- Selector de deseo ----------
+   Un deseo por perfil: aparece más seguido en el abanico, pero igual hay que
+   descubrirlo (no lo regala). */
+function abrirSelectorDeseo() {
+  const main = document.getElementById("oraculo-main");
+  const lista = candidatosSinDescubrir()
+    .filter(p => !busquedaDeseo || normalizar(p.nombre).includes(normalizar(busquedaDeseo)))
+    .slice(0, 40);
+
+  main.innerHTML = `
+    <p class="oraculo-instruccion">¿A quién te gustaría descubrir?</p>
+    <p class="oraculo-pista-siguiente" style="text-align:center;margin-bottom:10px">
+      Va a aparecer más seguido en el Oráculo. No te lo regala: igual hay que descubrirlo.</p>
+    <input type="search" id="oraculo-buscador-deseo" class="buscador oraculo-buscador"
+           placeholder="Buscá un nombre..." value="${busquedaDeseo}">
+    <div class="oraculo-lista-dificil">
+      ${lista.map(p => `<button class="oraculo-candidato-fila" data-id="${p.id}">${p.nombre}</button>`).join("")
+        || `<p class="oraculo-vacio">Nadie coincide con esa búsqueda.</p>`}
+    </div>
+    <button class="boton-secundario" id="oraculo-deseo-cancelar" style="margin-top:10px">Cancelar</button>`;
+
+  document.getElementById("oraculo-buscador-deseo").addEventListener("input", e => {
+    busquedaDeseo = e.target.value;
+    abrirSelectorDeseo();
+    document.getElementById("oraculo-buscador-deseo").focus();
+  });
+  main.querySelectorAll(".oraculo-candidato-fila").forEach(b =>
+    b.addEventListener("click", () => { fijarDeseo(b.dataset.id); busquedaDeseo = ""; iniciarConsulta(); }));
+  document.getElementById("oraculo-deseo-cancelar")
+    .addEventListener("click", () => { busquedaDeseo = ""; iniciarConsulta(); });
 }
 
 /* ---------- Cambio de modo ---------- */
