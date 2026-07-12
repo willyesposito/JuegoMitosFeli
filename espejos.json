@@ -7,7 +7,7 @@
     "capituloGriego": "espejo_odin",
     "capituloNordico": "espejo_zeus",
     "porque": "Los dos pueblos coronaron a un padre de los dioses que gobierna desde lo alto. Zeus reina en el Olimpo con su rayo; Odín, el Padre de Todo, gobierna a los dioses del norte y busca sin descanso la sabiduría. Distinto trono, la misma idea: alguien tiene que estar arriba de todo, y esa corona nunca es liviana.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "fuerza",
@@ -17,7 +17,7 @@
     "capituloGriego": "espejo_thor",
     "capituloNordico": "espejo_heracles",
     "porque": "Los dos pueblos imaginaron al campeón de fuerza descomunal que sale a enfrentar monstruos y gigantes para proteger a los demás. Heracles limpia el mundo griego de bestias; Thor defiende a dioses y humanos con su martillo. La misma idea: hace falta alguien enorme y valiente que se plante frente a lo que nadie más puede.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "reina",
@@ -27,7 +27,7 @@
     "capituloGriego": "espejo_frigg",
     "capituloNordico": "espejo_hera",
     "porque": "Al lado del rey de los dioses, los dos mundos pusieron a una reina que no es un adorno: sabe, protege y decide. Hera cuida el matrimonio y la familia; Frigg conoce el destino y guarda el hogar. Reinar, para las dos, es sostener lo que el rey solo no puede.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "mar",
@@ -37,7 +37,7 @@
     "capituloGriego": "espejo_njord",
     "capituloNordico": "espejo_poseidon",
     "porque": "El mar daba de comer y también hundía barcos, así que los dos pueblos le pusieron un dueño. Poseidón es el mar entero, hermoso y furioso; Njörd es el mar amable de la costa, el de la pesca y el buen viento. Dos formas de mirar la misma agua.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "inframundo",
@@ -47,7 +47,7 @@
     "capituloGriego": "espejo_hel",
     "capituloNordico": "espejo_hades",
     "porque": "Los dos mundos necesitaban a alguien que ordenara lo que pasa después de la vida, y ninguno lo pintó como un villano. Hades administra su reino con justicia; Hel mantiene el equilibrio del suyo. Cuidar ese lugar es un trabajo serio, no un castigo.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "amor",
@@ -57,7 +57,7 @@
     "capituloGriego": "espejo_freya",
     "capituloNordico": "espejo_afrodita",
     "porque": "El amor y la belleza eran tan importantes que los dos pueblos les dieron una diosa. Afrodita enciende el enamoramiento; Freya suma a eso el valor y hasta la guerra. Las dos enseñan que querer no es cosa débil: mueve a personas y a ejércitos.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "guerra",
@@ -67,7 +67,7 @@
     "capituloGriego": "espejo_tyr",
     "capituloNordico": "espejo_ares",
     "porque": "La guerra existía, así que los dos pueblos la volvieron un dios, pero con una diferencia interesante. Ares es la furia del combate; Tyr es la guerra con reglas, la valentía y hasta el sacrificio justo. Comparar los dos es comparar dos ideas de qué es pelear bien.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "astucia",
@@ -77,7 +77,7 @@
     "capituloGriego": "espejo_loki",
     "capituloNordico": "espejo_hermes",
     "porque": "Todo pueblo necesita un personaje que cruce los límites: el mensajero, el ingenioso, el que hace travesuras y también salva el día. Los griegos lo llamaron Hermes; los nórdicos, Loki. Los dos son rápidos, astutos y un poco imprevisibles.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "caza",
@@ -87,7 +87,7 @@
     "capituloGriego": "espejo_skadi",
     "capituloNordico": "espejo_artemisa",
     "porque": "Donde hay montañas y bosques, aparece una diosa que caza sola y no le rinde cuentas a nadie. Artemisa recorre los bosques griegos; Skadi, las montañas nevadas del norte. Las dos son libres, fuertes y prefieren la naturaleza a los palacios.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "luz",
@@ -97,7 +97,7 @@
     "capituloGriego": "espejo_balder",
     "capituloNordico": "espejo_apolo",
     "porque": "Los dos pueblos imaginaron a un joven luminoso, hermoso y querido por todos. Apolo trae la luz, la música y la salud; Balder es el más amado de los dioses del norte, tan brillante que ilumina donde entra. La luz que da alegría necesitaba nombre.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "cosecha",
@@ -107,7 +107,7 @@
     "capituloGriego": "espejo_sif",
     "capituloNordico": "espejo_demeter",
     "porque": "El pan venía del campo, y el campo era un misterio, así que los dos pueblos lo volvieron sagrado. Deméter hace crecer las cosechas; Sif tiene el pelo dorado como el trigo maduro. Cuidar lo que da de comer era tarea de una diosa.",
-    "estado": "borrador"
+    "estado": "publicado"
   },
   {
     "id": "invencible",
@@ -117,6 +117,6 @@
     "capituloGriego": "espejo_sigurd",
     "capituloNordico": "espejo_aquiles",
     "porque": "Los dos pueblos contaron al mismo héroe imposible: el guerrero casi invencible, con un solo punto débil. A Aquiles solo lo hiere el talón; a Sigurd, un lugar de la espalda que el baño de dragón no tocó. La lección se repite: nadie es invulnerable del todo.",
-    "estado": "borrador"
+    "estado": "publicado"
   }
 ]

@@ -115,9 +115,28 @@ Alcance ya spec'd (hub, perfiles, Colección refactor, Oráculo 2 modos, Cielo, 
 
 **Regla de disponibilidad:** solo aparecen en las columnas los pares donde **ambos** personajes están descubiertos. El módulo nunca muestra personajes velados (evita spoilear descubrimientos). Si hay menos de 2 pares disponibles, el módulo muestra un mensaje de misterio ("El espejo todavía está empañado — descubrí más héroes de los dos mundos").
 
-**Datos:** usa el campo `espejo` que ya existe en el contrato de datos y hoy no usa nadie. Cada par define además su capítulo espejo (mismo texto conceptual, adaptado a cada carta) con su "¿Por qué?" comparativo.
+**Datos:** usa el campo `espejo` (ya existente en el contrato) más un catálogo propio, `espejos.json`: `{ id, nombre, griego, nordico, capituloGriego, capituloNordico, porque, estado }`. Cada par define su capítulo espejo en cada carta (mismo concepto, adaptado) con su "¿Por qué?" comparativo, y el `porque` del par (el gancho comparativo que muestra la ceremonia).
 
-**Pendiente de contenido:** cerrar la tabla de pares. Los huérfanos anotados (Apolo↔Bragi, Pegaso↔Sleipnir) quedan **descartados como pares** porque Bragi y Sleipnir están fuera del roster v3; Apolo y Pegaso reciben capítulos por otras fuentes. Target: ~12 pares = ~24 capítulos.
+**Módulo técnico (julio 2026): construido, publicado y registrado en el hub.** `espejo.html`/`espejo.js`/`espejo.css`, mismo patrón que Cielo/Mapa/Ordená (dos columnas, ceremonia, hoja de capítulo; reusa `svgIcono` de `iconos.js`). Cableado en `nucleo.js` (namespace `espejo` del estado, pista y destino de capítulo velado → `espejo.html?con=<id>`) y `app.js` (ícono 🪞). Tarjeta registrada en `hub.js` por instrucción textual de Willy.
+
+**Contenido (julio 2026): 12 pares publicados** en `espejos.json` y sus 24 capítulos `espejo:` en `personajes.json` (instrucción textual de Willy). La tabla definitiva de pares:
+
+| Par | Griego | Nórdico | Idea comparada |
+|---|---|---|---|
+| reyes | Zeus | Odín | el rey de los dioses |
+| fuerza | Heracles | Thor | la fuerza que enfrenta monstruos |
+| reina | Hera | Frigg | la reina que sostiene el trono |
+| mar | Poseidón | Njörd | el señor del mar |
+| inframundo | Hades | Hel | administrar el reino de después (ambos suavizados) |
+| amor | Afrodita | Freya | el amor y la belleza |
+| guerra | Ares | Tyr | dos ideas de la guerra (furia vs. honor) |
+| astucia | Hermes | Loki | el ingenioso que cruza fronteras |
+| caza | Artemisa | Skadi | la cazadora libre |
+| luz | Apolo | Balder | el joven luminoso y querido |
+| cosecha | Deméter | Sif | el trigo dorado que alimenta |
+| invencible | Aquiles | Sigurd | el guerrero con un solo punto débil |
+
+**Descartes:** Apolo↔Bragi y Pegaso↔Sleipnir (Bragi y Sleipnir están fuera del roster v3). **Atenea** no tiene par (su equivalente natural, Odín, se usa en el par "reyes" con Zeus); recibe capítulos por otras fuentes.
 
 ### 4.3 Ordená el Mito
 
@@ -203,7 +222,7 @@ La completitud sigue siendo la del spec (capítulos encendidos = capítulos publ
 
 1. ~~Reconciliar el contador~~ — **resuelto (julio 2026):** 85 es el número confirmado por Willy. Coincide con `personajes.json` (85 entradas) y con la tabla de Totales de `roster_personajes_v3.md`. Además, `hub.js` y `app.js` ya calculan el total con `personajes.length`, no hardcodean el número — no hace falta ningún cambio de código.
 2. ~~Decidir el destino de la pregunta de 3 opciones~~ — **resuelto:** no existe rastro de esa mecánica en el código actual. El Oráculo implementado son los 2 modos spec'd (pista + tap / 3 pistas tipo Mastermind); no hay una tercera variante de "elegir entre 3 opciones" corriendo en paralelo.
-3. **Anexos de contenido a producir en este contexto (no en Claude Code):** tabla definitiva de vínculos (~35), tabla de pares espejo (~12), catálogo de viajes (4), catálogo de reliquias (~14), catálogo de encrucijadas (~13), y el mapeo capítulo-por-capítulo de los 13 dorados y 36 plateados a sus fuentes.
+3. **Anexos de contenido a producir en este contexto (no en Claude Code):** ~~tabla de vínculos~~ (hecha), ~~tabla de pares espejo~~ (hecha: 12 pares, ver §4.2), ~~catálogo de viajes~~ (hecho: 12 viajes), catálogo de reliquias (~14), catálogo de encrucijadas (~13), y el mapeo capítulo-por-capítulo restante a sus fuentes de Ola 3.
 
 ## 9. Roadmap consolidado (reemplaza al de CLAUDE.md)
 
@@ -216,3 +235,31 @@ La completitud sigue siendo la del spec (capítulos encendidos = capítulos publ
 **Ola 4:** sin cambios (escritura propia + taller de personajes).
 
 El Desafío del Héroe queda descartado. "¿Qué hubiera pasado si...?" queda anotado como variante de Ordená el Mito para Ola 3+, sin módulo propio. Crisis del Mundo Antiguo, ¿Quién es quién?, Memoria de Espejos y Acertijos de la Esfinge (viejo roadmap Ola 3) quedan en evaluación detrás de Reliquias y Encrucijada.
+
+---
+
+## 10. Estado de producción — qué está hecho y qué falta (seguimiento)
+
+Tabla viva. Actualizar en cada sesión que cierre o empiece un módulo. "Publicado" = visible para Feli (registrado en el hub y con contenido en `estado: "publicado"`).
+
+| Módulo / fuente | Ola | Construido | Contenido | En el hub | Estado |
+|---|---|---|---|---|---|
+| Colección | 1 | ✅ | ✅ | ✅ | **Publicado** |
+| Oráculo (fácil + difícil) | 1 | ✅ | ✅ | ✅ | **Publicado** |
+| El Cielo de los Mitos (`cielo:`) | 1 | ✅ | ✅ 10 constelaciones | ✅ | **Publicado** |
+| Vínculos (`vinculo:`) | 1 | ✅ | ✅ 25 capítulos | — (sin UI) | **Publicado** |
+| Sets latentes | 1 | ✅ | ✅ | ✅ | **Publicado** |
+| El Mapa del Héroe (`mapa:`) | 2 | ✅ | ✅ 12 viajes | ✅ | **Publicado** |
+| Ordená el Mito (`ordena:`) | 2 | ✅ | 🟡 18 de ~49 mitos publicados | ✅ | **Publicado (contenido parcial)** |
+| **Espejo de los Mundos (`espejo:`)** | 2 | ✅ | ✅ 12 pares / 24 capítulos | ✅ | **Publicado (julio 2026)** |
+| Las Reliquias (`reliquia:`) | 3 | ❌ | ❌ | ❌ | **No empezado** |
+| La Encrucijada (`encrucijada:`) | 3 | ❌ | ❌ | ❌ | **No empezado** |
+| Escritura propia + taller | 4 | ❌ | ❌ | ❌ | **No empezado** |
+
+**Falta de contenido en módulos ya publicados (no bloquea, se suma en lotes):**
+- **Ordená el Mito:** ~31 fuentes `ordena:<id>` sin su mito escrito. Anotados aparte: el mito del telar de Penélope, y reemplazar `ordena:forja_enana` de Freya por el robo del Brisingamen (ver §4.3).
+- **Vínculos:** ~25 escritos; el presupuesto del doc estimaba ~35. Quedan vínculos por escribir para completar plateados/normales.
+
+**Ola 2 — resumen:** los tres módulos (Mapa, Ordená, Espejo) están construidos, publicados y en el hub. El "Laboratorio de Mitos en modo lector" del roadmap sigue sin construir. Con eso, **Ola 2 queda cerrada en lo mecánico**; lo que resta es contenido incremental de Ordená y Vínculos.
+
+**Próximo frente natural:** Ola 3 (Las Reliquias y La Encrucijada), que se benefician de que ya existan varios módulos (los hallazgos de reliquias y los sets de candidatos de encrucijada se nutren de todo lo jugado). Antes de construir cualquiera de los dos hay que producir su catálogo de contenido (reliquias ~14, encrucijadas ~13).
