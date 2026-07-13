@@ -15,6 +15,12 @@ const ATRIBUTOS_ORACULO = [
   { clave: "bondad",    icono: "❤️", nombre: "Bondad" }
 ];
 const NOMBRE_MITO_ORACULO = { griega: "🏛️ Griega", nordica: "⚡ Nórdica", romana: "🦅 Romana" };
+/* Acentos por mitología para el estallido del flip de revelación. */
+const ACENTO_MITO = {
+  griega:  { acc: "#ffd867", acc2: "#ff9e6b" },
+  nordica: { acc: "#8fd3ff", acc2: "#e8f4ff" },
+  romana:  { acc: "#ffb08a", acc2: "#ffd867" }
+};
 
 const TAM_ABANICO = 3;    // cartas veladas por consulta
 const PIEDAD_DESEO = 4;   // consultas sin el deseado antes de forzar su entrada
@@ -66,7 +72,7 @@ function nieblaDispersaHTML() {
 
 function caraOraculoHTML(p) {
   return `
-    <div class="oraculo-cara" style="background:${fondoCarta(p.colorCarta)}">
+    <div class="oraculo-cara mito-${p.mitologia}" style="background:${fondoCarta(p.colorCarta)}">
       <i class="esquina esquina-tl" aria-hidden="true"></i>
       <i class="esquina esquina-tr" aria-hidden="true"></i>
       <i class="esquina esquina-bl" aria-hidden="true"></i>
@@ -78,7 +84,87 @@ function caraOraculoHTML(p) {
     </div>`;
 }
 
-/* Revela un personaje y muestra la ceremonia. `sinFallar` (solo modo difícil)
+/* Dorso "Mundo de Mitos" del flip de revelación — reusa el marco/emblema
+   (rombo, marco, núcleo) que ya vivía en estilos.css sin uso desde el rediseño
+   del abanico. */
+function dorsoOraculoHTML() {
+  return `
+    <div class="oraculo-dorso">
+      <i class="oraculo-dorso-marco" aria-hidden="true"></i>
+      <i class="oraculo-dorso-esq" style="top:14px;left:14px" aria-hidden="true">✦</i>
+      <i class="oraculo-dorso-esq" style="top:14px;right:14px" aria-hidden="true">✦</i>
+      <i class="oraculo-dorso-esq" style="bottom:14px;left:14px" aria-hidden="true">✦</i>
+      <i class="oraculo-dorso-esq" style="bottom:14px;right:14px" aria-hidden="true">✦</i>
+      <div class="oraculo-emblema">
+        <i class="rombo" aria-hidden="true"></i>
+        <i class="marco" aria-hidden="true"></i>
+        <i class="nucleo" aria-hidden="true"></i>
+      </div>
+      <span class="oraculo-dorso-nombre">Mundo de Mitos</span>
+    </div>`;
+}
+
+/* Pinta la cara-personaje dentro del flip (el frente que queda al girar). */
+function pintarCaraOraculo(p) {
+  const frente = document.getElementById("oraculo-cara-frente");
+  if (!frente) return;
+  frente.innerHTML = caraOraculoHTML(p);
+  activarIcono(frente.querySelector(".ilustracion"), p);
+}
+
+/* ---- Helpers de efectos efímeros del flip (partículas, anillo, flash, rayos) ----
+   Duplicados en app.js: coleccion.html y oraculo.html no comparten JS más allá
+   de nucleo.js. */
+
+function conAlpha(hex, a) {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
+}
+
+function fxEfimero(parent, css, ms) {
+  const el = document.createElement("i");
+  el.style.cssText = css;
+  parent.appendChild(el);
+  setTimeout(() => el.remove(), ms);
+  return el;
+}
+
+function fxParticulas(parent, { n, colores, dist, dur, modo, delay = 0, glyphs = ["✦"], base = 13 }) {
+  for (let i = 0; i < n; i++) {
+    const ang = (i / n) * Math.PI * 2 + Math.random() * .5;
+    const d = dist * (0.75 + Math.random() * 0.5);
+    const el = document.createElement("span");
+    el.textContent = glyphs[i % glyphs.length];
+    el.style.cssText = `position:absolute;top:50%;left:50%;z-index:9;pointer-events:none;font-size:${base - 4 + Math.random() * 8}px;color:${colores[i % colores.length]};animation:${modo === "in" ? "cer-part-in" : "cer-part-out"} ${dur}s ease-out ${(delay + Math.random() * .12)}s both`;
+    el.style.setProperty("--dx", `${Math.cos(ang) * d}px`);
+    el.style.setProperty("--dy", `${Math.sin(ang) * d}px`);
+    parent.appendChild(el);
+    setTimeout(() => el.remove(), (delay + dur + .3) * 1000);
+  }
+}
+
+function fxAnillo(parent, color, delay = 0, dur = .95) {
+  fxEfimero(parent,
+    `position:absolute;top:50%;left:50%;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:50%;border:3px solid ${color};pointer-events:none;z-index:8;animation:cer-anillo ${dur}s ease-out ${delay}s both`,
+    (delay + dur + .2) * 1000);
+}
+
+function fxFlash(parent) {
+  fxEfimero(parent,
+    `position:absolute;inset:0;border-radius:18px;background:radial-gradient(circle, rgba(255,255,255,.95), rgba(255,255,255,.6) 60%, transparent);pointer-events:none;z-index:10;animation:cer-flash .45s ease-out both`,
+    800);
+}
+
+function fxRayos(parent, color) {
+  fxEfimero(parent,
+    `position:absolute;top:50%;left:50%;width:480px;height:480px;margin:-240px 0 0 -240px;pointer-events:none;z-index:0;background:repeating-conic-gradient(${color} 0deg 5deg, transparent 5deg 28deg);border-radius:50%;animation:cer-rayos 1.4s ease-out both`,
+    1600);
+}
+
+let tokenFlip = 0;
+
+/* Revela un personaje con un flip 3D del dorso a su cara y un estallido de
+   partículas del color de su mitología. `sinFallar` (solo modo difícil)
    agrega la versión especial del capítulo base si existe (doc de olas §2:
    "oraculo:dificil"). Los vínculos y sets que se enciendan de yapa se cuentan
    después, en un toast — es "el momento que enseña la mecánica sin
@@ -95,21 +181,65 @@ function revelar(id, sinFallar) {
   }
 
   const p = porId(id);
+  const acc = ACENTO_MITO[p.mitologia] || ACENTO_MITO.griega;
   const main = document.getElementById("oraculo-main");
   main.innerHTML = `
-    <div class="oraculo-escena estado-revelada">
-      ${nieblaDispersaHTML()}
-      <div class="oraculo-toast">✨ ¡Apareció ${p.nombre}!${sinFallar ? " · Sin fallar ni una vez 🌟" : ""}</div>
-      <div class="oraculo-carta oraculo-carta--revelada">${caraOraculoHTML(p)}</div>
-      <div class="oraculo-acciones">
-        <a class="boton-principal" href="coleccion.html?ver=${encodeURIComponent(id)}">Ver su carta</a>
-        <button class="boton-secundario" id="oraculo-otra">Abrir otra</button>
+    <div class="oraculo-escena estado-revelando">
+      ${nieblaFlotanteHTML()}
+      <div class="oraculo-flip" id="oraculo-flip">
+        <div class="oraculo-flip-inner" id="oraculo-flip-inner">
+          <div class="oraculo-cara-dorso">${dorsoOraculoHTML()}</div>
+          <div class="oraculo-cara-frente" id="oraculo-cara-frente"></div>
+        </div>
       </div>
+      <div class="oraculo-acciones" id="oraculo-acciones"></div>
     </div>`;
-  document.getElementById("oraculo-otra").addEventListener("click", () => {
-    if (modo === "facil") iniciarFacil(); else iniciarDificil();
-  });
-  activarIcono(main.querySelector(".ilustracion"), p);
+
+  const escena = main.querySelector(".oraculo-escena");
+  const wrap = document.getElementById("oraculo-flip");
+  const inner = document.getElementById("oraculo-flip-inner");
+  const nucleoEl = wrap.querySelector(".oraculo-emblema .nucleo");
+  pintarCaraOraculo(p);
+
+  const tk = ++tokenFlip;
+
+  // Fase 1 — carga del dorso + partículas que convergen
+  wrap.querySelector(".oraculo-dorso").style.animation = "cer-carga .9s ease-in-out";
+  if (nucleoEl) nucleoEl.style.boxShadow = `0 0 34px 10px ${acc.acc}`;
+  fxParticulas(wrap, { n: 12, colores: [acc.acc, "#ffffff"], dist: 130, dur: .8, modo: "in" });
+
+  // Fase 2 — flip + flash + anillo + rayos
+  setTimeout(() => {
+    if (tk !== tokenFlip) return;
+    fxFlash(wrap);
+    fxRayos(wrap, conAlpha(acc.acc, .3));
+    fxAnillo(wrap, acc.acc);
+    inner.style.transition = "transform .75s cubic-bezier(.25,.6,.3,1.18)";
+    inner.style.transform = "rotateY(180deg)";
+  }, 880);
+
+  // Fase 3 — estallido de salida
+  setTimeout(() => {
+    if (tk !== tokenFlip) return;
+    fxParticulas(wrap, { n: 22, colores: [acc.acc, "#ffffff", acc.acc2], dist: 150, dur: .9, modo: "out", glyphs: ["✦", "✧", "·"] });
+    fxAnillo(wrap, acc.acc2, .1);
+  }, 1300);
+
+  // Fase 4 — asienta + toast + acciones
+  setTimeout(() => {
+    if (tk !== tokenFlip) return;
+    const toast = document.createElement("div");
+    toast.className = "oraculo-toast";
+    toast.textContent = `✨ ¡Apareció ${p.nombre}!${sinFallar ? " · Sin fallar ni una vez 🌟" : ""}`;
+    escena.appendChild(toast);
+    const acciones = document.getElementById("oraculo-acciones");
+    acciones.innerHTML = `
+      <a class="boton-principal" href="coleccion.html?ver=${encodeURIComponent(id)}">Ver su carta</a>
+      <button class="boton-secundario" id="oraculo-otra">Abrir otra</button>`;
+    document.getElementById("oraculo-otra").addEventListener("click", () => {
+      if (modo === "facil") iniciarFacil(); else iniciarDificil();
+    });
+  }, 1980);
 
   setTimeout(() => {
     if (resultado.vinculos.length) {
@@ -122,7 +252,7 @@ function revelar(id, sinFallar) {
         if (s) mostrarToast(`🏆 ¡Completaste el set "${s.nombre}"! Mirá la vitrina en tu colección.`);
       }, resultado.vinculos.length ? 2600 : 0);
     }
-  }, 1900);
+  }, 2700);
 }
 
 function mostrarToast(texto) {
@@ -538,6 +668,17 @@ function activarIcono(contenedorEl, p) {
   if (!contenedorEl || typeof animarIcono !== "function") return;
   const svgIco = contenedorEl.querySelector("svg");
   if (!svgIco) return;
-  if (!historiaCompleta(p)) iconoBase(svgIco);
+
+  const completa = historiaCompleta(p);
+  if (!completa) iconoBase(svgIco);
   animarIcono(svgIco, p.icono);
+
+  // Escena de fondo ambiental del medallón (solo los íconos que la tienen definida).
+  const esc = (typeof ICONO_ESCENA !== "undefined") ? ICONO_ESCENA[p.icono] : null;
+  contenedorEl.style.background = esc || "";
+
+  // Borde punteado = ícono evolutivo que todavía no reveló su detalle narrativo.
+  const esEvolutivo = !!(ICONOS[p.icono] && ICONOS[p.icono].includes("data-extra"));
+  contenedorEl.style.borderStyle = (esEvolutivo && !completa) ? "dashed" : "";
+  contenedorEl.style.borderColor = (esEvolutivo && !completa) ? "rgba(255,216,103,.6)" : "";
 }

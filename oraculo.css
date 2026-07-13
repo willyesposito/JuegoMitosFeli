@@ -225,6 +225,34 @@
   color: #8fe3ac;
 }
 
+/* ---------- Flip 3D de revelación ----------
+   Los keyframes cer-* que usa esta animación viven en estilos.css
+   (compartidos con la ceremonia de material de Colección). */
+.oraculo-flip {
+  position: relative;
+  z-index: 1;
+  width: 220px;
+  height: 308px;
+  perspective: 1000px;
+  animation: flota 5.5s ease-in-out infinite;
+}
+.oraculo-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.oraculo-flip .oraculo-cara-dorso,
+.oraculo-flip .oraculo-cara-frente {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.oraculo-flip .oraculo-cara-frente { transform: rotateY(180deg); }
+.oraculo-flip .oraculo-dorso,
+.oraculo-flip .oraculo-cara { width: 100%; height: 100%; animation: none; }
+
 /* ---------- Deseo ---------- */
 .oraculo-deseo { display: flex; justify-content: center; margin-bottom: 12px; }
 .oraculo-deseo-pedir, .oraculo-deseo-chip {
