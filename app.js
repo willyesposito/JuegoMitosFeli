@@ -17,6 +17,8 @@ const ATRIBUTOS = [
 
 let filtroActivo = "todas";
 let textoBusqueda = "";
+let ordenActivo = "sugerido";  // sugerido | az | nuevas
+let vistaActiva = "grilla";    // grilla | lista
 let nombresConstelaciones = {}; // id de constelación → nombre, para las pistas de capítulos velados
 
 /* ---------- Insignias de tier y capítulos ----------
@@ -150,46 +152,91 @@ function renderContador() {
   }
 }
 
+/* Secciones de la grilla por tier (pedido de Hidalgo2): cada tier se muestra
+   por separado con su propio progreso, dorados primero. */
+const TIERS_SECCION = [
+  { id: "dorado",   nombre: "Dorados" },
+  { id: "plateado", nombre: "Plateados" },
+  { id: "normal",   nombre: "Normales" }
+];
+
+/* "Nuevas" usa el orden real de desbloqueo: estado.global.descubiertos crece
+   con push() en desbloquear() (nucleo.js), así que el índice ya es el orden
+   cronológico sin necesitar timestamps. */
+function ordenarVisibles(lista) {
+  if (ordenActivo === "az") return [...lista].sort((a, b) => a.nombre.localeCompare(b.nombre, "es"));
+  if (ordenActivo === "nuevas") {
+    const orden = estado.global.descubiertos;
+    return [...lista].sort((a, b) => orden.indexOf(b.id) - orden.indexOf(a.id));
+  }
+  return lista; // sugerido: orden curado del roster, tal cual viene en personajes.json
+}
+
+function crearCartaGaleria(p) {
+  const tieneMaterial = historiaCompleta(p) && (p.tier === "dorado" || p.tier === "plateado");
+  const carta = document.createElement("button");
+  carta.className = "carta";
+  if (tieneMaterial) carta.classList.add(p.tier === "dorado" ? "carta--dorada" : "carta--plateada");
+  if (!tieneMaterial && casiCompleta(p)) carta.classList.add("carta--casi-completa");
+  carta.dataset.id = p.id;
+  carta.classList.add("mito-" + p.mitologia);
+  if (!tieneMaterial) carta.style.background = fondoCarta(p.colorCarta);
+  carta.setAttribute("aria-label", `Ver la carta de ${p.nombre}`);
+  carta.innerHTML = `
+    ${tieneMaterial ? capasMaterialHTML(p.tier === "dorado" ? "oro" : "plata") : ""}
+    ${medallonTier(p)}
+    <span class="ilustracion">${svgIcono(p.icono)}</span>
+    <span class="nombre">${p.nombre}</span>
+    <span class="subtitulo-mito">${p.titulo}</span>
+    ${divisorMito(p)}
+    ${donesCartaHTML(p)}
+    ${barraCapitulosMini(p)}`;
+  carta.addEventListener("click", () => abrirDetalleConTransicion(p.id));
+  activarIcono(carta.querySelector(".ilustracion"), p);
+  return carta;
+}
+
 /* La grilla solo muestra cartas descubiertas: el camino a una carta nueva es
-   el módulo del Oráculo, accesible desde el hub o el banner de abajo. */
+   el módulo del Oráculo, accesible desde el hub o el FAB de abajo. */
 function renderGaleria() {
   const galeria = document.getElementById("galeria");
   const busqueda = normalizar(textoBusqueda.trim());
 
-  const visibles = personajes.filter(p => {
+  const visibles = ordenarVisibles(personajes.filter(p => {
     if (!estaDesbloqueada(p.id)) return false;
     if (filtroActivo !== "todas" && p.mitologia !== filtroActivo) return false;
     if (busqueda) return normalizar(p.nombre).includes(busqueda);
     return true;
-  });
+  }));
 
   const hayDescubiertos = personajes.some(p => estaDesbloqueada(p.id));
   document.getElementById("mensaje-vacio").classList.toggle("oculto", visibles.length > 0 || !hayDescubiertos || busqueda !== "" || filtroActivo !== "todas");
 
+  galeria.classList.toggle("vista-lista", vistaActiva === "lista");
   galeria.innerHTML = "";
 
-  for (const p of visibles) {
-    const tieneMaterial = historiaCompleta(p) && (p.tier === "dorado" || p.tier === "plateado");
-    const carta = document.createElement("button");
-    carta.className = "carta";
-    if (tieneMaterial) carta.classList.add(p.tier === "dorado" ? "carta--dorada" : "carta--plateada");
-    if (!tieneMaterial && casiCompleta(p)) carta.classList.add("carta--casi-completa");
-    carta.dataset.id = p.id;
-    carta.classList.add("mito-" + p.mitologia);
-    if (!tieneMaterial) carta.style.background = fondoCarta(p.colorCarta);
-    carta.setAttribute("aria-label", `Ver la carta de ${p.nombre}`);
-    carta.innerHTML = `
-      ${tieneMaterial ? capasMaterialHTML(p.tier === "dorado" ? "oro" : "plata") : ""}
-      ${medallonTier(p)}
-      <span class="ilustracion">${svgIcono(p.icono)}</span>
-      <span class="nombre">${p.nombre}</span>
-      <span class="subtitulo-mito">${p.titulo}</span>
-      ${divisorMito(p)}
-      ${donesCartaHTML(p)}
-      ${barraCapitulosMini(p)}`;
-    carta.addEventListener("click", () => abrirDetalleConTransicion(p.id));
-    activarIcono(carta.querySelector(".ilustracion"), p);
-    galeria.appendChild(carta);
+  for (const t of TIERS_SECCION) {
+    const delTier = visibles.filter(p => p.tier === t.id);
+    if (!delTier.length) continue;
+
+    const enFiltro = personajes.filter(p => p.tier === t.id && (filtroActivo === "todas" || p.mitologia === filtroActivo));
+    const tengo = enFiltro.filter(p => estaDesbloqueada(p.id)).length;
+    const total = enFiltro.length;
+    const pct = total ? Math.round((tengo / total) * 100) : 0;
+
+    const seccion = document.createElement("div");
+    seccion.className = "seccion-tier";
+    seccion.innerHTML = `
+      <div class="seccion-tier-header">
+        <span class="seccion-tier-nombre">${t.nombre}</span>
+        <span class="seccion-tier-cifra">${tengo}/${total}</span>
+        <span class="seccion-tier-barra seccion-tier-barra--${t.id}"><i style="width:${pct}%"></i></span>
+      </div>`;
+    const grilla = document.createElement("div");
+    grilla.className = "tier-grid";
+    delTier.forEach(p => grilla.appendChild(crearCartaGaleria(p)));
+    seccion.appendChild(grilla);
+    galeria.appendChild(seccion);
   }
 
   actualizarFabOraculo(personajes.some(p => !estaDesbloqueada(p.id)));
@@ -682,6 +729,24 @@ function configurarControles() {
       document.querySelectorAll(".chip[data-filtro]").forEach(c => c.classList.remove("activo"));
       chip.classList.add("activo");
       filtroActivo = chip.dataset.filtro;
+      renderGaleria();
+    });
+  });
+
+  document.querySelectorAll(".chip[data-orden]").forEach(chip => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll(".chip[data-orden]").forEach(c => c.classList.remove("activo"));
+      chip.classList.add("activo");
+      ordenActivo = chip.dataset.orden;
+      renderGaleria();
+    });
+  });
+
+  document.querySelectorAll(".vista-toggle-boton[data-vista]").forEach(boton => {
+    boton.addEventListener("click", () => {
+      document.querySelectorAll(".vista-toggle-boton[data-vista]").forEach(b => b.classList.remove("activo"));
+      boton.classList.add("activo");
+      vistaActiva = boton.dataset.vista;
       renderGaleria();
     });
   });

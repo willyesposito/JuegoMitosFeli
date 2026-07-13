@@ -29,6 +29,19 @@
       <button class="chip" data-filtro="nordica">⚡ Nórdica</button>
       <button class="chip" data-filtro="romana">🦅 Romana</button>
     </div>
+
+    <div class="orden-vista">
+      <div class="orden-chips" role="group" aria-label="Ordenar la colección">
+        <button class="chip activo" data-orden="sugerido">Sugerido</button>
+        <button class="chip" data-orden="az">A-Z</button>
+        <button class="chip" data-orden="nuevas">Nuevas</button>
+      </div>
+      <div class="vista-toggle" role="group" aria-label="Vista de la colección">
+        <button class="vista-toggle-boton activo" data-vista="grilla" aria-label="Vista en grilla" title="Grilla">▦</button>
+        <button class="vista-toggle-boton" data-vista="lista" aria-label="Vista en lista" title="Lista">☰</button>
+      </div>
+    </div>
+
     <input type="search" id="buscador" class="buscador" placeholder="Buscar un héroe..."
       aria-label="Buscar por nombre (solo encuentra cartas desbloqueadas)">
   </nav>

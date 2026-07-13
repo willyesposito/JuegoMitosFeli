@@ -168,21 +168,83 @@ button { font-family: inherit; cursor: pointer; }
 .buscador::placeholder { color: rgba(253, 251, 255, .5); }
 .buscador:focus { border-color: var(--acento); }
 
-/* ============ Galería ============ */
+/* ============ Orden y vista ============ */
+.orden-vista {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.orden-chips { display: flex; gap: 8px; }
+
+.vista-toggle {
+  display: flex;
+  gap: 4px;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 999px;
+  padding: 4px;
+  flex: none;
+}
+.vista-toggle-boton {
+  border: none;
+  background: transparent;
+  color: var(--texto-suave);
+  font-size: 1rem;
+  line-height: 1;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+}
+.vista-toggle-boton.activo { background: var(--acento); color: #4a3200; }
+
+/* ============ Galería ============
+   Agrupada por tier (dorados/plateados/normales), cada sección con su
+   propia barra de progreso; .tier-grid es la grilla real de naipes. */
 .galeria {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
   padding: 16px 18px 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-@media (min-width: 640px)  { .galeria { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 1024px) { .galeria { grid-template-columns: repeat(4, 1fr); } }
-@media (min-width: 1280px) { .galeria { grid-template-columns: repeat(5, 1fr); } }
+.seccion-tier-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.seccion-tier-nombre {
+  font-family: "Cinzel", serif;
+  font-weight: 800;
+  font-size: .8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+  white-space: nowrap;
+}
+.seccion-tier-cifra { font-size: .8rem; font-weight: 700; color: var(--texto-suave); white-space: nowrap; }
+.seccion-tier-barra { flex: 1; height: 6px; border-radius: 999px; background: rgba(255, 255, 255, .1); overflow: hidden; }
+.seccion-tier-barra i { display: block; height: 100%; border-radius: 999px; transition: width .5s ease; }
+.seccion-tier-barra--dorado i   { background: linear-gradient(90deg, #ffd867, #ff9e6b); }
+.seccion-tier-barra--plateado i { background: linear-gradient(90deg, #e8ecf2, #9aa5b5); }
+.seccion-tier-barra--normal i   { background: linear-gradient(90deg, #8fa3c9, #b8c6e8); }
+
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+@media (min-width: 640px)  { .tier-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1024px) { .tier-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 1280px) { .tier-grid { grid-template-columns: repeat(5, 1fr); } }
+
+.galeria.vista-lista .tier-grid { grid-template-columns: 1fr; }
 
 .carta {
   position: relative;
