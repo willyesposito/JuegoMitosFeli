@@ -244,7 +244,32 @@ button { font-family: inherit; cursor: pointer; }
 @media (min-width: 1024px) { .tier-grid { grid-template-columns: repeat(4, 1fr); } }
 @media (min-width: 1280px) { .tier-grid { grid-template-columns: repeat(5, 1fr); } }
 
-.galeria.vista-lista .tier-grid { grid-template-columns: 1fr; }
+/* Vista lista: recuadros chicos en grilla de 6 por fila — nombre, mitología,
+   tier y progreso, nada más. No una lista de una columna: con tan poca
+   información por carta, una sola columna (o solo 3) dejaba la pantalla
+   vacía; 6 aprovecha que cada recuadro es mínimo. */
+.galeria.vista-lista .tier-grid { grid-template-columns: repeat(6, 1fr); gap: 6px; }
+
+/* .carta.carta-resumida (no ".carta-resumida" sola): tiene que empatar o
+   superar la especificidad de .carta / .carta .ilustracion de más abajo, si
+   no esas reglas de la carta grande ganan por venir después en el archivo. */
+.carta.carta-resumida {
+  min-height: 0;
+  padding: 8px 4px 7px;
+  gap: 4px;
+}
+.carta.carta-resumida .ilustracion { width: 30px; height: 30px; padding: 4px; }
+.carta.carta-resumida .nombre { font-size: .64rem; line-height: 1.15; text-align: center; }
+.carta.carta-resumida .chip-mito-mini {
+  position: relative;
+  z-index: 3;
+  font-size: .5rem;
+  font-weight: 800;
+  letter-spacing: .3px;
+  color: rgba(253, 251, 255, .55);
+}
+.carta.carta-resumida .barra-capitulos-mini { width: 80%; height: 4px; margin-top: 1px; }
+.carta.carta-resumida .medallon-tier { width: 16px; height: 16px; font-size: 8px; top: 4px; right: 4px; }
 
 .carta {
   position: relative;
