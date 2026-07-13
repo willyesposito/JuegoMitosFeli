@@ -120,16 +120,69 @@ button { font-family: inherit; cursor: pointer; }
 /* ============ Controles ============ */
 .controles {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 14px 18px 6px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 10px;
+  padding: 10px 18px 8px;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-.filtros { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+/* Filtro / Orden / Vista dejaron de mostrar sus chips en la fila principal
+   (con 6+ mitologías ya no entraban). Cada uno es ahora un solo botón que
+   despliega su propio menú debajo: la fila principal queda fija en
+   buscador + 3 botones, sin importar cuántas mitologías se agreguen. */
+.menu-control { position: relative; flex: none; }
+
+.chip-trigger {
+  border: 1px solid rgba(255, 255, 255, .25);
+  background: rgba(255, 255, 255, .08);
+  color: var(--texto);
+  border-radius: 999px;
+  padding: 8px 15px;
+  font-size: .88rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: transform .15s, background .2s;
+}
+
+.chip-trigger:active { transform: scale(.95); }
+
+.chip-trigger[aria-expanded="true"] {
+  background: var(--acento);
+  border-color: var(--acento);
+  box-shadow: 0 0 12px rgba(255, 216, 103, .4);
+  color: #4a3200;
+}
+
+/* Menú desplegable de cada botón: absoluto, no empuja el resto de la fila.
+   Ancho mínimo generoso porque ya no comparte espacio con nada más. */
+.panel-control {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: auto;
+  z-index: 5;
+  min-width: 190px;
+  max-width: 260px;
+  background: var(--fondo-claro);
+  border: 1px solid rgba(255, 216, 103, .3);
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  box-shadow: var(--sombra);
+}
+
+/* El último menú de la fila (hoy "Sets") abre pegado a la derecha de su
+   botón en vez de a la izquierda — si no, en pantallas angostas el panel
+   se sale del borde del teléfono en vez de quedar dentro. */
+.menu-control:last-child .panel-control { left: auto; right: 0; }
 
 .chip {
   border: 1px solid rgba(255, 255, 255, .25);
@@ -139,6 +192,7 @@ button { font-family: inherit; cursor: pointer; }
   padding: 7px 16px;
   font-size: .95rem;
   font-weight: 700;
+  white-space: nowrap;
   transition: transform .15s, background .2s;
 }
 
@@ -152,15 +206,16 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .buscador {
-  width: 100%;
-  max-width: 420px;
-  margin: 0 auto;
+  flex: 1 1 160px;
+  min-width: 120px;
+  max-width: 300px;
+  margin: 0;
   border: 2px solid rgba(255, 255, 255, .25);
   background: rgba(255, 255, 255, .1);
   color: var(--texto);
   border-radius: 999px;
-  padding: 11px 20px;
-  font-size: 1rem;
+  padding: 8px 16px;
+  font-size: .92rem;
   font-family: inherit;
   outline: none;
 }
@@ -168,24 +223,21 @@ button { font-family: inherit; cursor: pointer; }
 .buscador::placeholder { color: rgba(253, 251, 255, .5); }
 .buscador:focus { border-color: var(--acento); }
 
-/* ============ Orden y vista ============ */
-.orden-vista {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.orden-chips { display: flex; gap: 8px; }
-
-.vista-toggle {
-  display: flex;
-  gap: 4px;
-  background: rgba(0, 0, 0, .2);
+/* El panel de vista reusa .vista-toggle-boton (mismo selector que ya lee
+   app.js) pero con look de chip con texto en vez del botón circular chico:
+   dentro del menú hay lugar de sobra para la etiqueta. */
+.panel-control .vista-toggle-boton {
+  width: auto;
+  height: auto;
   border-radius: 999px;
-  padding: 4px;
-  flex: none;
+  padding: 7px 16px;
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--texto);
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .25);
 }
+.panel-control .vista-toggle-boton.activo { background: var(--acento); color: #4a3200; border-color: var(--acento); }
 .vista-toggle-boton {
   border: none;
   background: transparent;
@@ -919,17 +971,14 @@ button.capitulo--navegable {
 button.capitulo--navegable:active { transform: scale(.99); }
 button.capitulo--navegable .capitulo-pista { color: rgba(255, 233, 168, .75); }
 
-/* ============ Vitrina de sets temáticos (spec funcional §6) ============ */
+/* ============ Vitrina de sets temáticos (spec funcional §6) ============
+   Vive dentro de un .panel-control (menú "🎖️ Sets" en los controles), igual
+   que Filtro/Orden/Vista — ya no es un banner fijo arriba de la colección. */
 .vitrina-sets {
-  position: relative;
-  z-index: 1;
   display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding: 10px 18px 2px;
-  scrollbar-width: none;
+  flex-wrap: wrap;
+  gap: 6px;
 }
-.vitrina-sets::-webkit-scrollbar { display: none; }
 
 .set-chip {
   flex: none;
