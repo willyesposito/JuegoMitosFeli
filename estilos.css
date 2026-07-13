@@ -90,59 +90,32 @@ button { font-family: inherit; cursor: pointer; }
   margin-top: 10px;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
   background: rgba(255, 255, 255, .12);
   border: 1px solid rgba(255, 216, 103, .35);
   border-radius: 999px;
-  padding: 7px 18px;
+  padding: 6px 12px;
   font-weight: 700;
   font-size: .95rem;
 }
 
-.contador-barra { display: inline-block; width: 84px; height: 7px; border-radius: 999px; background: rgba(0, 0, 0, .35); overflow: hidden; }
-.contador-barra i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b); }
+/* Una pastilla por mitología */
+.contador-mito { display: inline-flex; align-items: center; gap: 6px; }
+.contador-mito + .contador-mito { border-left: 1px solid rgba(255, 255, 255, .14); padding-left: 8px; }
+.contador-mito-icono { font-size: .95rem; line-height: 1; }
+.contador-mito-cifra { font-size: .85rem; font-variant-numeric: tabular-nums; }
+.contador-mito-total { opacity: .55; font-weight: 600; }
+
+.contador-barra { display: inline-block; width: 52px; height: 7px; border-radius: 999px; background: rgba(0, 0, 0, .35); overflow: hidden; }
+.contador-barra i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b); transition: width .5s ease; }
+/* Color propio por cultura */
+.contador-mito--griega  .contador-barra i { background: linear-gradient(90deg, #7fc8ff, #cfe9ff); }
+.contador-mito--nordica .contador-barra i { background: linear-gradient(90deg, #9d8bff, #d8ceff); }
+.contador-mito--romana  .contador-barra i { background: linear-gradient(90deg, #ff9e6b, #ffd867); }
 
 @keyframes contador-pop { 0% { transform: scale(1); } 40% { transform: scale(1.18); } 100% { transform: scale(1); } }
 .contador--pop { animation: contador-pop .45s ease-out; }
-
-/* ============ Banner de módulo (lanzador de otros juegos) ============ */
-.banner-modulo {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  max-width: 1200px;
-  margin: 4px 18px 0;
-  padding: 14px 18px;
-  border-radius: var(--radio);
-  background: linear-gradient(135deg, rgba(44, 34, 96, .9), rgba(25, 17, 66, .9));
-  border: 1.5px solid rgba(255, 216, 103, .4);
-  color: var(--texto);
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, .35);
-  transition: transform .15s ease;
-}
-
-@media (min-width: 640px) { .banner-modulo { margin-left: auto; margin-right: auto; } }
-
-.banner-modulo:active { transform: scale(.98); }
-
-.banner-modulo-icono {
-  font-size: 1.8rem;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: rgba(255, 216, 103, .14);
-  display: grid;
-  place-items: center;
-  flex: none;
-}
-
-.banner-modulo-texto { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
-.banner-modulo-texto strong { font-family: "Cinzel", serif; font-size: 1.02rem; letter-spacing: .3px; }
-.banner-modulo-texto span { font-size: .82rem; color: var(--texto-suave); }
-.banner-modulo-flecha { font-size: 1.4rem; color: rgba(255, 216, 103, .8); flex: none; }
 
 /* ============ Controles ============ */
 .controles {
@@ -349,24 +322,6 @@ button { font-family: inherit; cursor: pointer; }
   50%      { box-shadow: 0 0 18px 4px rgba(255, 216, 103, .35), inset 0 1px 0 rgba(255, 255, 255, .18); }
 }
 .carta--casi-completa { animation: pulso-casi 2.8s ease-in-out infinite; }
-
-/* Lanzador del Oráculo: la única "carta misteriosa" que queda en la grilla.
-   Reemplaza a las decenas de "???" para que el álbum se vea como colección. */
-.carta-lanzador {
-  background: linear-gradient(160deg, rgba(59, 47, 117, .95), rgba(25, 17, 66, .95));
-  border: 1.5px dashed rgba(255, 216, 103, .5);
-  justify-content: center;
-  gap: 10px;
-}
-.carta-lanzador:hover { border-color: rgba(255, 216, 103, .85); }
-.lanzador-icono {
-  font-size: 2.6rem;
-  filter: drop-shadow(0 0 12px rgba(255, 216, 103, .5));
-  animation: flotar-suave 3.4s ease-in-out infinite;
-}
-.lanzador-titulo { font-family: "Cinzel", serif; font-weight: 800; font-size: .98rem; color: #ffe9a8; text-align: center; }
-.lanzador-sub { font-size: .72rem; color: rgba(253, 251, 255, .7); text-align: center; }
-@keyframes flotar-suave { 0%, 100% { transform: translateY(-3px); } 50% { transform: translateY(3px); } }
 
 /* Insignia de tier: distintivo estático de qué tan central es el personaje en su mitología.
    Define el marco/holo máximo que la carta puede alcanzar (ver capítulos más abajo),
@@ -694,7 +649,33 @@ button { font-family: inherit; cursor: pointer; }
   bottom: 10px;
   right: 12px;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+/* Botón flotante del Oráculo: discreto, en la esquina, para no competir con la
+   exploración de cartas. */
+.fab-oraculo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 216, 103, .45);
+  background: linear-gradient(160deg, rgba(59, 47, 117, .92), rgba(25, 17, 66, .92));
+  color: #ffe9a8;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: .82rem;
+  border-radius: 999px;
+  padding: 8px 14px 8px 11px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.fab-oraculo:hover { transform: translateY(-2px); border-color: rgba(255, 216, 103, .9); box-shadow: 0 8px 22px rgba(0, 0, 0, .45); }
+.fab-oraculo:active { transform: scale(.97); }
+.fab-oraculo.oculto { display: none; }
+.fab-oraculo-icono { font-size: 1.15rem; filter: drop-shadow(0 0 8px rgba(255, 216, 103, .5)); }
 
 .boton-config {
   border: none;
@@ -760,8 +741,7 @@ button { font-family: inherit; cursor: pointer; }
 @keyframes holo-mov { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
 
 .carta .ilustracion, .carta .nombre, .carta .subtitulo-mito,
-.carta .divisor-mito, .carta .chip-mito, .carta .chip-tier,
-.carta-lanzador .lanzador-icono, .carta-lanzador .lanzador-titulo, .carta-lanzador .lanzador-sub {
+.carta .divisor-mito, .carta .chip-mito, .carta .chip-tier {
   position: relative;
   z-index: 3;
 }
@@ -943,26 +923,6 @@ button.capitulo--navegable .capitulo-pista { color: rgba(255, 233, 168, .75); }
    Mitos y los que sigan); acá solo vive la celebración visual. */
 @keyframes aparece-oro { from { opacity: 0; } to { opacity: 1; } }
 
-@keyframes onda-oro {
-  0%   { transform: scale(.15); opacity: .9; }
-  100% { transform: scale(4.4); opacity: 0; }
-}
-
-@keyframes flash-blanco {
-  0% { opacity: 0; } 30% { opacity: 1; } 100% { opacity: 0; }
-}
-
-@keyframes rayos-estalla {
-  0%   { transform: rotate(0deg) scale(.6); opacity: 0; }
-  25%  { opacity: .8; }
-  100% { transform: rotate(200deg) scale(1.5); opacity: 0; }
-}
-
-@keyframes part-vuela {
-  0%   { transform: translate(0, 0) scale(1); opacity: 1; }
-  100% { transform: translate(var(--dx), var(--dy)) scale(.15); opacity: 0; }
-}
-
 @keyframes resplandor {
   0%, 100% { box-shadow: 0 0 0 0 rgba(255, 216, 103, 0); }
   50%      { box-shadow: 0 0 34px 8px rgba(255, 216, 103, .55); }
@@ -970,52 +930,49 @@ button.capitulo--navegable .capitulo-pista { color: rgba(255, 233, 168, .75); }
 
 .ceremonia-resplandor { animation: resplandor 1.1s ease-in-out; }
 
-.onda-ceremonia {
-  position: absolute;
-  top: 50%; left: 50%;
-  width: 70px; height: 70px;
-  margin: -35px 0 0 -35px;
-  border-radius: 50%;
-  border: 3px solid rgba(255, 216, 103, .85);
-  pointer-events: none;
-  z-index: 4;
-  animation: onda-oro .9s ease-out both;
-}
+/* Efectos fx* compartidos por la ceremonia de material (app.js) y el flip de
+   revelación del Oráculo (oraculo.js): carga, flash, anillo, rayos, partículas
+   convergentes/divergentes y el estampado del medallón de tier. */
+@keyframes cer-carga    { 0%, 100% { transform: scale(1); filter: brightness(1); } 50% { transform: scale(1.05); filter: brightness(1.5); } }
+@keyframes cer-flash    { 0% { opacity: 0; } 30% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes cer-anillo   { 0% { transform: scale(.15); opacity: .95; } 100% { transform: scale(4.6); opacity: 0; } }
+@keyframes cer-rayos    { 0% { transform: rotate(0deg) scale(.6); opacity: 0; } 25% { opacity: .85; } 100% { transform: rotate(200deg) scale(1.5); opacity: 0; } }
+@keyframes cer-part-out { 0% { transform: translate(0,0) scale(1); opacity: 1; } 100% { transform: translate(var(--dx), var(--dy)) scale(.15); opacity: 0; } }
+@keyframes cer-part-in  { 0% { transform: translate(var(--dx), var(--dy)) scale(.4); opacity: 0; } 30% { opacity: 1; } 100% { transform: translate(0,0) scale(1); opacity: 0; } }
+@keyframes cer-estampa  { 0% { transform: scale(2.6) rotate(-18deg); opacity: 0; } 55% { transform: scale(.9) rotate(-4deg); opacity: 1; } 100% { transform: scale(1) rotate(-6deg); opacity: 1; } }
 
-.onda-ceremonia--plata { border-color: rgba(224, 230, 240, .85); }
-
-.flash-ceremonia {
+/* ===== Fondos texturados por mitología (grilla, detalle y cara del Oráculo) =====
+   Textura sutil detrás del contenido (z-index:-1: nunca tapa marcos, medallón
+   ni holo). En cartas de material manda el holo, así que ahí se apaga. */
+.carta:not(.carta-lanzador)::after,
+.detalle-carta::after,
+.oraculo-cara::after {
+  content: "";
   position: absolute;
   inset: 0;
+  z-index: -1;
+  pointer-events: none;
   border-radius: inherit;
-  background: radial-gradient(circle, rgba(255,255,255,.95), rgba(255,255,255,.6) 60%, transparent);
-  pointer-events: none;
-  z-index: 5;
-  animation: flash-blanco .45s ease-out both;
 }
-
-.rayos-ceremonia {
-  position: absolute;
-  top: 50%; left: 50%;
-  width: 240%;
-  aspect-ratio: 1;
-  margin-left: -120%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  z-index: 0;
-  background: repeating-conic-gradient(rgba(255, 224, 130, .35) 0deg 5deg, transparent 5deg 28deg);
-  border-radius: 50%;
-  animation: rayos-estalla 1.4s ease-out both;
+.mito-griega::after {
+  background:
+    radial-gradient(120% 80% at 18% 8%, rgba(255,255,255,.10), transparent 42%),
+    repeating-linear-gradient(115deg, transparent 0 26px, rgba(255,255,255,.045) 26px 27.5px);
 }
-
-.particula-sello {
-  position: absolute;
-  z-index: 6;
-  font-size: 13px;
-  color: #ffe9a8;
-  pointer-events: none;
-  animation: part-vuela .85s ease-out both;
+.mito-nordica::after {
+  background:
+    linear-gradient(180deg, rgba(214,236,255,.10), transparent 34%),
+    repeating-linear-gradient(45deg, rgba(255,255,255,.03) 0 1px, transparent 1px 9px);
 }
+.mito-romana::after {
+  background-image:
+    linear-gradient(rgba(0,0,0,.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.5) 1px, transparent 1px);
+  background-size: 9px 9px;
+  opacity: .12;
+}
+.carta--dorada::after, .carta--plateada::after,
+.detalle-carta.tier-dorada::after, .detalle-carta.tier-plateada::after { display: none; }
 
 /* ===== Encendido de capítulo dentro del detalle ya abierto ===== */
 @keyframes candado-abre {

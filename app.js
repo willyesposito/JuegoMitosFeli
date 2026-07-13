@@ -116,14 +116,33 @@ function sembrarEstrellas() {
 
 /* ---------- Galería ---------- */
 
+/* Una barra por mitología (pedido de Hidalgo2): cada cultura muestra su propio
+   progreso en vez de un único total general. */
+const MITOS_CONTADOR = [
+  { id: "griega",  icono: "🏛️", nombre: "Griega" },
+  { id: "nordica", icono: "⚡",  nombre: "Nórdica" },
+  { id: "romana",  icono: "🦅", nombre: "Romana" }
+];
+
 function renderContador() {
-  const total = personajes.length;
-  const tengo = personajes.filter(p => estaDesbloqueada(p.id)).length;
-  const pct = total ? Math.round((tengo / total) * 100) : 0;
   const contador = document.getElementById("contador");
-  const subioDesdeUltimoRender = Number(contador.dataset.tengo || 0) < tengo;
-  contador.innerHTML = `<span class="contador-barra"><i style="width:${pct}%"></i></span> Tenés ${tengo} de ${total} héroes`;
-  contador.dataset.tengo = tengo;
+  const tengoTotal = personajes.filter(p => estaDesbloqueada(p.id)).length;
+  const subioDesdeUltimoRender = Number(contador.dataset.tengo || 0) < tengoTotal;
+
+  contador.innerHTML = MITOS_CONTADOR.map(m => {
+    const delMito = personajes.filter(p => p.mitologia === m.id);
+    const tengo = delMito.filter(p => estaDesbloqueada(p.id)).length;
+    const total = delMito.length;
+    const pct = total ? Math.round((tengo / total) * 100) : 0;
+    return `
+      <span class="contador-mito contador-mito--${m.id}" title="${m.nombre}: ${tengo} de ${total}">
+        <span class="contador-mito-icono" aria-hidden="true">${m.icono}</span>
+        <span class="contador-barra"><i style="width:${pct}%"></i></span>
+        <span class="contador-mito-cifra">${tengo}<span class="contador-mito-total">/${total}</span></span>
+      </span>`;
+  }).join("");
+
+  contador.dataset.tengo = tengoTotal;
   if (subioDesdeUltimoRender) {
     contador.classList.remove("contador--pop");
     void contador.offsetWidth;
@@ -156,6 +175,7 @@ function renderGaleria() {
     if (tieneMaterial) carta.classList.add(p.tier === "dorado" ? "carta--dorada" : "carta--plateada");
     if (!tieneMaterial && casiCompleta(p)) carta.classList.add("carta--casi-completa");
     carta.dataset.id = p.id;
+    carta.classList.add("mito-" + p.mitologia);
     if (!tieneMaterial) carta.style.background = fondoCarta(p.colorCarta);
     carta.setAttribute("aria-label", `Ver la carta de ${p.nombre}`);
     carta.innerHTML = `
@@ -172,7 +192,22 @@ function renderGaleria() {
     galeria.appendChild(carta);
   }
 
+  actualizarFabOraculo(personajes.some(p => !estaDesbloqueada(p.id)));
   renderContador();
+}
+
+/* El Oráculo dejó de ocupar un banner grande en la colección: ahora es un botón
+   flotante discreto en la esquina, para que esta pantalla sea sobre todo para
+   explorar las cartas (pedido de Hidalgo2). */
+function actualizarFabOraculo(quedanPorDescubrir) {
+  const fab = document.getElementById("fab-oraculo");
+  if (!fab) return;
+  fab.classList.toggle("oculto", !quedanPorDescubrir);
+  if (quedanPorDescubrir) {
+    const faltan = personajes.filter(p => !estaDesbloqueada(p.id)).length;
+    fab.setAttribute("aria-label", `Abrir una carta nueva — te faltan ${faltan} héroes`);
+    fab.setAttribute("title", `Abrir una carta nueva (te faltan ${faltan})`);
+  }
 }
 
 /* ---------- Detalle ---------- */
@@ -180,7 +215,8 @@ function renderGaleria() {
 function pintarMarcoDetalle(p, completa) {
   const cartaDetalle = document.getElementById("detalle-carta");
   const tieneMaterial = completa && (p.tier === "dorado" || p.tier === "plateado");
-  cartaDetalle.classList.remove("tier-plateada", "tier-dorada");
+  cartaDetalle.classList.remove("tier-plateada", "tier-dorada", "mito-griega", "mito-nordica", "mito-romana");
+  cartaDetalle.classList.add("mito-" + p.mitologia);
   if (!tieneMaterial) {
     cartaDetalle.style.background = fondoCarta(p.colorCarta);
   } else {
@@ -389,62 +425,115 @@ function mostrarLogroSet(setId) {
 
 let tokenCeremonia = 0;
 
-function lanzarParticulasSello(contenedor, cantidad) {
-  const centro = { top: "50%", left: "50%" };
-  for (let i = 0; i < cantidad; i++) {
-    const ang = (i / cantidad) * Math.PI * 2;
-    const dist = 60 + Math.random() * 30;
-    const part = document.createElement("span");
-    part.className = "particula-sello";
-    part.textContent = "✦";
-    part.style.top = centro.top;
-    part.style.left = centro.left;
-    part.style.setProperty("--dx", `${Math.cos(ang) * dist}px`);
-    part.style.setProperty("--dy", `${Math.sin(ang) * dist}px`);
-    contenedor.appendChild(part);
-    setTimeout(() => part.remove(), 900);
-  }
+/* Helpers de efectos efímeros de la ceremonia (partículas, anillo, flash,
+   rayos). Duplicados en oraculo.js: coleccion.html y oraculo.html no
+   comparten JS más allá de nucleo.js. */
+
+function conAlpha(hex, a) {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
 }
 
-function agregarEfimero(contenedor, clase, duracionMs) {
+function fxEfimero(parent, css, ms) {
   const el = document.createElement("i");
-  el.className = clase;
-  contenedor.appendChild(el);
-  setTimeout(() => el.remove(), duracionMs);
+  el.style.cssText = css;
+  parent.appendChild(el);
+  setTimeout(() => el.remove(), ms);
   return el;
 }
 
-/* Ceremonia plateada (~2.5s). `carta` = nodo .carta ya visible con el
-   personaje, ANTES de aplicar el marco. */
+function fxParticulas(parent, { n, colores, dist, dur, modo, delay = 0, glyphs = ["✦"], base = 13 }) {
+  for (let i = 0; i < n; i++) {
+    const ang = (i / n) * Math.PI * 2 + Math.random() * .5;
+    const d = dist * (0.75 + Math.random() * 0.5);
+    const el = document.createElement("span");
+    el.textContent = glyphs[i % glyphs.length];
+    el.style.cssText = `position:absolute;top:50%;left:50%;z-index:9;pointer-events:none;font-size:${base - 4 + Math.random() * 8}px;color:${colores[i % colores.length]};animation:${modo === "in" ? "cer-part-in" : "cer-part-out"} ${dur}s ease-out ${(delay + Math.random() * .12)}s both`;
+    el.style.setProperty("--dx", `${Math.cos(ang) * d}px`);
+    el.style.setProperty("--dy", `${Math.sin(ang) * d}px`);
+    parent.appendChild(el);
+    setTimeout(() => el.remove(), (delay + dur + .3) * 1000);
+  }
+}
+
+function fxAnillo(parent, color, delay = 0, dur = .95) {
+  fxEfimero(parent,
+    `position:absolute;top:50%;left:50%;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:50%;border:3px solid ${color};pointer-events:none;z-index:8;animation:cer-anillo ${dur}s ease-out ${delay}s both`,
+    (delay + dur + .2) * 1000);
+}
+
+function fxFlash(parent) {
+  fxEfimero(parent,
+    `position:absolute;inset:0;border-radius:18px;background:radial-gradient(circle, rgba(255,255,255,.95), rgba(255,255,255,.6) 60%, transparent);pointer-events:none;z-index:10;animation:cer-flash .45s ease-out both`,
+    800);
+}
+
+function fxRayos(parent, color) {
+  fxEfimero(parent,
+    `position:absolute;top:50%;left:50%;width:480px;height:480px;margin:-240px 0 0 -240px;pointer-events:none;z-index:0;background:repeating-conic-gradient(${color} 0deg 5deg, transparent 5deg 28deg);border-radius:50%;animation:cer-rayos 1.4s ease-out both`,
+    1600);
+}
+
+/* Estampa el medallón de tier al final de la ceremonia (aparece con "pop"). */
+function estampaMedallonCeremonia(carta, tono) {
+  const el = document.createElement("span");
+  el.className = "medallon-tier tier-" + (tono === "oro" ? "dorado" : "plateado");
+  el.textContent = tono === "oro" ? "⭐" : "✦";
+  el.style.animation = "cer-estampa .6s ease-out both";
+  carta.appendChild(el);
+}
+
+/* Ceremonia plateada v2 "Luz de luna" (~3s). `carta` = nodo .carta ya visible
+   con el personaje, ANTES de aplicar el marco. */
 function ceremoniaPlateada(carta, alTerminar) {
   const token = ++tokenCeremonia;
   sonar("arpegio");
+  carta.style.transform = "translateY(-6px) scale(1.03)";
+  fxParticulas(carta, { n: 12, colores: ["#eef1f6", "#c8d4e6", "#ffffff"], dist: 120, dur: .95, modo: "in" });
+
   setTimeout(() => {
     if (token !== tokenCeremonia) return;
+    fxFlash(carta);
+    fxAnillo(carta, "rgba(224,230,240,.85)");
+    fxRayos(carta, "rgba(224,230,240,.28)");
     carta.classList.add("carta--plateada");
     carta.style.background = "";
     carta.insertAdjacentHTML("afterbegin", capasMaterialHTML("plata"));
-    agregarEfimero(carta, "onda-ceremonia onda-ceremonia--plata", 1000);
     vibrar([20, 40, 20]);
-  }, 1250);
+  }, 1200);
+
   setTimeout(() => {
     if (token !== tokenCeremonia) return;
     sonar("sello");
-    if (alTerminar) alTerminar();
-  }, 2450);
+    carta.style.transform = "";
+    estampaMedallonCeremonia(carta, "plata");
+    fxParticulas(carta, { n: 8, colores: ["#eef1f6"], dist: 90, dur: .8, modo: "out" });
+    setTimeout(() => { if (token === tokenCeremonia && alTerminar) alTerminar(); }, 650);
+  }, 2350);
 }
 
-/* Ceremonia dorada mayor (~2.8s). */
+/* Ceremonia dorada v2 "Coronación" (~3.2s). */
 function ceremoniaDorada(carta, alTerminar) {
   const token = ++tokenCeremonia;
   sonar("carga");
   carta.classList.add("ceremonia-resplandor");
+  carta.style.transform = "translateY(-8px) scale(1.05)";
+  fxParticulas(carta, { n: 10, colores: ["#ffd867", "#ffe9a8"], dist: 130, dur: .9, modo: "in" });
+  setTimeout(() => {
+    if (token !== tokenCeremonia) return;
+    fxParticulas(carta, { n: 10, colores: ["#ffd867", "#ffffff"], dist: 110, dur: .8, modo: "in" });
+  }, 450);
+
   setTimeout(() => {
     if (token !== tokenCeremonia) return;
     sonar("impacto");
-    agregarEfimero(carta, "flash-ceremonia", 500);
-    agregarEfimero(carta, "onda-ceremonia", 1000);
-  }, 450);
+    fxFlash(carta);
+    fxRayos(carta, "rgba(255,224,130,.32)");
+    fxAnillo(carta, "rgba(255,216,103,.9)");
+    fxAnillo(carta, "rgba(255,158,107,.8)", .15);
+    fxParticulas(carta, { n: 26, colores: ["#ffd867", "#ffffff", "#ff9e6b"], dist: 160, dur: 1, modo: "out", glyphs: ["✦", "✧", "·"] });
+  }, 900);
+
   setTimeout(() => {
     if (token !== tokenCeremonia) return;
     sonar("fanfarria");
@@ -452,16 +541,16 @@ function ceremoniaDorada(carta, alTerminar) {
     carta.classList.add("carta--dorada");
     carta.style.background = "";
     carta.insertAdjacentHTML("afterbegin", capasMaterialHTML("oro"));
-    agregarEfimero(carta, "onda-ceremonia", 1100).style.transform = "scale(1.2)";
-    agregarEfimero(carta, "rayos-ceremonia", 1500);
     vibrar([30, 50, 30, 50, 60]);
-  }, 850);
+  }, 1050);
+
   setTimeout(() => {
     if (token !== tokenCeremonia) return;
     sonar("sello");
-    lanzarParticulasSello(carta, 6);
-    if (alTerminar) alTerminar();
-  }, 1750);
+    carta.style.transform = "";
+    estampaMedallonCeremonia(carta, "oro");
+    setTimeout(() => { if (token === tokenCeremonia && alTerminar) alTerminar(); }, 650);
+  }, 1900);
 }
 
 /* Marca a un personaje como festejado si su historia acaba de completarse
@@ -559,6 +648,7 @@ function actualizarTextoBotonSonido() {
 function configurarOpciones() {
   const modal = document.getElementById("modal-config");
   document.getElementById("boton-config").addEventListener("click", () => modal.classList.remove("oculto"));
+  document.getElementById("fab-oraculo").addEventListener("click", () => { location.href = "oraculo.html"; });
   document.getElementById("boton-cerrar-config").addEventListener("click", () => modal.classList.add("oculto"));
   document.getElementById("boton-sonido").addEventListener("click", () => {
     alternarSonido();
@@ -696,6 +786,17 @@ function activarIcono(contenedorEl, p) {
   if (!contenedorEl || typeof animarIcono !== "function") return;
   const svgIco = contenedorEl.querySelector("svg");
   if (!svgIco) return;
-  if (!historiaCompleta(p)) iconoBase(svgIco);
+
+  const completa = historiaCompleta(p);
+  if (!completa) iconoBase(svgIco);
   animarIcono(svgIco, p.icono);
+
+  // Escena de fondo ambiental del medallón (solo los íconos que la tienen definida).
+  const esc = (typeof ICONO_ESCENA !== "undefined") ? ICONO_ESCENA[p.icono] : null;
+  contenedorEl.style.background = esc || "";
+
+  // Borde punteado = ícono evolutivo que todavía no reveló su detalle narrativo.
+  const esEvolutivo = !!(ICONOS[p.icono] && ICONOS[p.icono].includes("data-extra"));
+  contenedorEl.style.borderStyle = (esEvolutivo && !completa) ? "dashed" : "";
+  contenedorEl.style.borderColor = (esEvolutivo && !completa) ? "rgba(255,216,103,.6)" : "";
 }
