@@ -172,17 +172,28 @@ function ordenarVisibles(lista) {
   return lista; // sugerido: orden curado del roster, tal cual viene en personajes.json
 }
 
+/* Vista lista: mismo naipe, versión resumida — solo lo que hace falta para
+   reconocer al personaje y ver cuánto avanzó: ícono real, nombre, mitología,
+   tier y progreso. Sin dones ni subtítulo: en un recuadro chico no entran
+   sin volverse ilegibles. */
 function crearCartaGaleria(p) {
   const tieneMaterial = historiaCompleta(p) && (p.tier === "dorado" || p.tier === "plateado");
+  const resumida = vistaActiva === "lista";
   const carta = document.createElement("button");
-  carta.className = "carta";
+  carta.className = resumida ? "carta carta-resumida" : "carta";
   if (tieneMaterial) carta.classList.add(p.tier === "dorado" ? "carta--dorada" : "carta--plateada");
   if (!tieneMaterial && casiCompleta(p)) carta.classList.add("carta--casi-completa");
   carta.dataset.id = p.id;
   carta.classList.add("mito-" + p.mitologia);
   if (!tieneMaterial) carta.style.background = fondoCarta(p.colorCarta);
   carta.setAttribute("aria-label", `Ver la carta de ${p.nombre}`);
-  carta.innerHTML = `
+  carta.innerHTML = resumida ? `
+    ${tieneMaterial ? capasMaterialHTML(p.tier === "dorado" ? "oro" : "plata") : ""}
+    ${medallonTier(p)}
+    <span class="ilustracion">${svgIcono(p.icono)}</span>
+    <span class="nombre">${p.nombre}</span>
+    <span class="chip-mito-mini">${NOMBRE_MITO_CORTO[p.mitologia] || p.mitologia.toUpperCase()}</span>
+    ${barraCapitulosMini(p)}` : `
     ${tieneMaterial ? capasMaterialHTML(p.tier === "dorado" ? "oro" : "plata") : ""}
     ${medallonTier(p)}
     <span class="ilustracion">${svgIcono(p.icono)}</span>
@@ -429,11 +440,15 @@ function mostrarToast(texto) {
    qué? apenas se completa un set (revisarSets / desbloquear ya lo detectan). */
 
 function renderVitrinaSets() {
+  const menu = document.getElementById("menu-sets");
   const cont = document.getElementById("vitrina-sets");
-  if (!cont) return;
+  if (!menu || !cont) return;
   const sets = setsPublicados();
-  if (!sets.length) { cont.classList.add("oculto"); return; }
-  cont.classList.remove("oculto");
+  // Oculta el botón "🎖️ Sets" entero si todavía no hay sets publicados; el
+  // panel en sí (abierto/cerrado) lo maneja solo configurarMenusControles(),
+  // así que acá no se toca su clase "oculto".
+  menu.classList.toggle("oculto", !sets.length);
+  if (!sets.length) return;
   cont.innerHTML = sets.map(s => {
     const revelado = estado.sets.revelados.includes(s.id);
     return `<button class="set-chip${revelado ? " set-chip--revelado" : ""}" data-set="${s.id}" aria-label="${s.nombre}">
@@ -723,7 +738,44 @@ function configurarOpciones() {
 
 /* ---------- Arranque ---------- */
 
+/* Filtro / Orden / Vista / Sets son botones que despliegan su propio menú
+   (Handoff v10-v11). Acá solo se maneja abrir/cerrar; la lógica de filtrar,
+   ordenar y cambiar vista sigue igual, sobre los mismos data-* de adentro. */
+function configurarMenusControles() {
+  const menus = [...document.querySelectorAll(".menu-control")];
+
+  function cerrarMenus(exceptoMenu) {
+    menus.forEach(menu => {
+      if (menu === exceptoMenu) return;
+      menu.querySelector(".panel-control").classList.add("oculto");
+      menu.querySelector(".chip-trigger").setAttribute("aria-expanded", "false");
+    });
+  }
+
+  menus.forEach(menu => {
+    const trigger = menu.querySelector(".chip-trigger");
+    const panel = menu.querySelector(".panel-control");
+
+    trigger.addEventListener("click", () => {
+      const yaAbierto = trigger.getAttribute("aria-expanded") === "true";
+      cerrarMenus(menu);
+      trigger.setAttribute("aria-expanded", yaAbierto ? "false" : "true");
+      panel.classList.toggle("oculto", yaAbierto);
+    });
+
+    panel.addEventListener("click", e => {
+      if (e.target.closest("button")) cerrarMenus(null);
+    });
+  });
+
+  document.addEventListener("click", e => {
+    if (!e.target.closest(".menu-control")) cerrarMenus(null);
+  });
+}
+
 function configurarControles() {
+  configurarMenusControles();
+
   document.querySelectorAll(".chip[data-filtro]").forEach(chip => {
     chip.addEventListener("click", () => {
       document.querySelectorAll(".chip[data-filtro]").forEach(c => c.classList.remove("activo"));
@@ -764,6 +816,8 @@ function configurarControles() {
   document.addEventListener("keydown", e => {
     if (e.key === "Escape") {
       cerrarDetalle();
+      document.querySelectorAll(".panel-control").forEach(p => p.classList.add("oculto"));
+      document.querySelectorAll(".chip-trigger").forEach(t => t.setAttribute("aria-expanded", "false"));
       document.getElementById("modal-config").classList.add("oculto");
       document.getElementById("modal-logro-set").classList.add("oculto");
     }

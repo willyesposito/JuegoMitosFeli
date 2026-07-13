@@ -20,30 +20,44 @@
     <p class="contador" id="contador" aria-live="polite"></p>
   </header>
 
-  <div class="vitrina-sets oculto" id="vitrina-sets" aria-label="Sets temáticos"></div>
-
   <nav class="controles" aria-label="Filtros de la colección">
-    <div class="filtros" role="group" aria-label="Filtrar por mitología">
-      <button class="chip activo" data-filtro="todas">Todas</button>
-      <button class="chip" data-filtro="griega">🏛️ Griega</button>
-      <button class="chip" data-filtro="nordica">⚡ Nórdica</button>
-      <button class="chip" data-filtro="romana">🦅 Romana</button>
+    <input type="search" id="buscador" class="buscador" placeholder="Buscar un héroe..."
+      aria-label="Buscar por nombre (solo encuentra cartas desbloqueadas)">
+
+    <div class="menu-control" data-menu="filtro">
+      <button class="chip-trigger" id="trigger-filtro" aria-haspopup="true" aria-expanded="false" aria-controls="panel-filtro">🏛️ Filtro</button>
+      <div class="panel-control oculto" id="panel-filtro" role="group" aria-label="Filtrar por mitología">
+        <button class="chip activo" data-filtro="todas">Todas</button>
+        <button class="chip" data-filtro="griega">🏛️ Griega</button>
+        <button class="chip" data-filtro="nordica">⚡ Nórdica</button>
+        <button class="chip" data-filtro="romana">🦅 Romana</button>
+      </div>
     </div>
 
-    <div class="orden-vista">
-      <div class="orden-chips" role="group" aria-label="Ordenar la colección">
+    <div class="menu-control" data-menu="orden">
+      <button class="chip-trigger" id="trigger-orden" aria-haspopup="true" aria-expanded="false" aria-controls="panel-orden">↕ Orden</button>
+      <div class="panel-control oculto" id="panel-orden" role="group" aria-label="Ordenar la colección">
         <button class="chip activo" data-orden="sugerido">Sugerido</button>
         <button class="chip" data-orden="az">A-Z</button>
         <button class="chip" data-orden="nuevas">Nuevas</button>
       </div>
-      <div class="vista-toggle" role="group" aria-label="Vista de la colección">
-        <button class="vista-toggle-boton activo" data-vista="grilla" aria-label="Vista en grilla" title="Grilla">▦</button>
-        <button class="vista-toggle-boton" data-vista="lista" aria-label="Vista en lista" title="Lista">☰</button>
+    </div>
+
+    <div class="menu-control" data-menu="vista">
+      <button class="chip-trigger" id="trigger-vista" aria-haspopup="true" aria-expanded="false" aria-controls="panel-vista">▦</button>
+      <div class="panel-control oculto" id="panel-vista" role="group" aria-label="Vista de la colección">
+        <button class="vista-toggle-boton activo" data-vista="grilla" aria-label="Vista en grilla">▦ Grilla</button>
+        <button class="vista-toggle-boton" data-vista="lista" aria-label="Vista en lista">☰ Lista</button>
       </div>
     </div>
 
-    <input type="search" id="buscador" class="buscador" placeholder="Buscar un héroe..."
-      aria-label="Buscar por nombre (solo encuentra cartas desbloqueadas)">
+    <!-- Sets temáticos latentes: antes vivían en un banner fijo arriba de los
+         filtros; ahora son un menú más, igual que Filtro/Orden/Vista (Handoff v11).
+         configurarMenusControles() ya los abre/cierra solo, por ser otro .menu-control. -->
+    <div class="menu-control oculto" data-menu="sets" id="menu-sets">
+      <button class="chip-trigger" id="trigger-sets" aria-haspopup="true" aria-expanded="false" aria-controls="vitrina-sets">🎖️ Sets</button>
+      <div class="panel-control vitrina-sets oculto" id="vitrina-sets" aria-label="Sets temáticos"></div>
+    </div>
   </nav>
 
   <main>
