@@ -11,24 +11,26 @@
 </head>
 <body class="hub-body">
 
-  <div class="hub-pantalla">
+  <main class="hub-portada">
+    <div class="hub-cielo" id="hub-cielo" aria-hidden="true"></div>
 
     <header class="hub-header">
-      <h1 class="hub-titulo">Mundo de Mitos</h1>
-      <span class="ornamento-header" aria-hidden="true"><i></i><span>⚡</span><i></i></span>
-      <p class="hub-contador" id="hub-contador" aria-live="polite">Cargando tu progreso…</p>
+      <span class="hub-header-spacer" aria-hidden="true"></span>
+      <div class="hub-header-centro">
+        <h1 class="hub-wordmark">Mundo de Mitos</h1>
+        <p class="hub-contador" id="hub-contador" aria-live="polite">Cargando tu progreso…</p>
+      </div>
+      <button class="hub-avatar" id="hub-avatar" aria-haspopup="true" aria-label="Cambiar de perfil"></button>
     </header>
 
-    <section class="hub-modulos" id="hub-modulos" aria-label="Módulos del juego"></section>
+    <nav class="hub-constelacion" id="hub-constelacion" aria-label="Módulos del juego"></nav>
 
-    <footer class="hub-pie">
-      <button class="hub-perfil-boton" id="hub-boton-perfil" aria-label="Cambiar de perfil">
-        <span aria-hidden="true">👤</span> <span id="hub-perfil-nombre">Feli</span>
-      </button>
-      <button class="boton-config" id="boton-config-hub" aria-label="Opciones" title="Opciones">⚙️</button>
-    </footer>
+    <a class="hub-proxima oculta" id="hub-proxima" href="#"></a>
+  </main>
 
-  </div>
+  <footer class="hub-pie">
+    <button class="boton-config" id="boton-config-hub" aria-label="Opciones" title="Opciones">⚙️</button>
+  </footer>
 
   <!-- Selector / gestión de perfiles -->
   <div class="detalle-fondo oculto" id="modal-perfiles" role="dialog" aria-modal="true">

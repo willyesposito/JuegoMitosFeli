@@ -1,85 +1,86 @@
-/* Mundo de Mitos — hub shell. Reusa fuentes, variables y componentes de
-   estilos.css (botones, modales, --acento); acá solo el layout propio del
-   hub: header, tarjetas grandes de módulo, selector de perfiles. */
+/* Mundo de Mitos — hub shell (spec_funcional §0). Portada como constelación
+   (Handoff v13): reusa fuentes, variables y componentes de estilos.css
+   (botones, modales, --acento); acá el layout propio del hub — cielo de
+   fondo, header, constelación de módulos, selector de perfiles. */
 
-.hub-pantalla {
-  max-width: 480px;
-  margin: 0 auto;
-  min-height: 100vh;
-  padding-bottom: 90px;
-}
-
-.hub-header {
+/* ---------- Portada ---------- */
+.hub-portada {
   position: relative;
-  z-index: 1;
-  padding: 34px 18px 14px;
-  text-align: center;
+  min-height: 100dvh;
+  overflow: hidden;
+  padding: 0 0 30px;
+  background: radial-gradient(circle at 50% 18%, #2c2260 0%, #191142 60%, #120d33 100%);
+  color: #fdfbff;
+  font-family: ui-rounded, "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
-.hub-titulo {
-  font-family: "Cinzel", serif;
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: .5px;
-  background: linear-gradient(90deg, #ffd867, #ff9e6b, #ffd867);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* ----- Cielo de fondo: estrellas + niebla (inyectadas por hub.js) ----- */
+.hub-cielo { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.hub-estrella {
+  position: absolute; border-radius: 50%; background: #fff; box-shadow: 0 0 6px #fff;
+  animation: hub-twinkle ease-in-out infinite;
+}
+@keyframes hub-twinkle { 0%, 100% { opacity: .2; transform: scale(.7); } 50% { opacity: .9; transform: scale(1); } }
+
+.hub-niebla { position: absolute; border-radius: 50%; filter: blur(30px); mix-blend-mode: screen; pointer-events: none; }
+.hub-niebla--1 { left: -16%; top: 6%;  width: 230px; height: 200px; background: radial-gradient(circle, rgba(226, 220, 255, .48), transparent 70%); animation: hub-drift 13s ease-in-out infinite alternate; }
+.hub-niebla--2 { right: -18%; top: 40%; width: 240px; height: 210px; background: radial-gradient(circle, rgba(200, 214, 255, .42), transparent 70%); animation: hub-drift 16s ease-in-out 1.5s infinite alternate-reverse; }
+.hub-niebla--3 { left: 20%; top: 72%; width: 230px; height: 200px; background: radial-gradient(circle, rgba(232, 222, 255, .38), transparent 70%); animation: hub-drift 14s ease-in-out .7s infinite alternate; }
+@keyframes hub-drift { 0% { transform: translate(-12px, 7px); } 100% { transform: translate(14px, -9px); } }
+
+/* ----- Header ----- */
+.hub-header { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 20px 18px 0; }
+.hub-header-spacer, .hub-avatar { width: 38px; height: 38px; flex: none; }
+.hub-header-centro { text-align: center; }
+.hub-wordmark { margin: 0; font-family: "Cinzel", serif; font-size: 1.15rem; font-weight: 800; color: #ffd867; letter-spacing: .5px; text-shadow: 0 0 20px rgba(255, 216, 103, .3); }
+.hub-contador { margin: 3px 0 0; font-size: .66rem; color: rgba(253, 251, 255, .45); }
+.hub-avatar {
+  border-radius: 50%; background: rgba(255, 255, 255, .08); border: 1.5px solid rgba(255, 216, 103, .4);
+  color: #ffe9a8; font-family: "Cinzel", serif; font-weight: 800; font-size: .95rem; cursor: pointer;
+  display: grid; place-items: center; padding: 0;
 }
 
-.hub-contador {
-  margin-top: 14px;
-  display: inline-flex;
-  align-items: center;
-  background: rgba(255, 255, 255, .12);
-  border: 1px solid rgba(255, 216, 103, .35);
-  border-radius: 999px;
-  padding: 8px 18px;
-  font-weight: 700;
-  font-size: .88rem;
+/* ----- Constelación ----- */
+.hub-constelacion { position: relative; z-index: 1; width: 100%; max-width: 560px; height: min(72vh, 620px); margin: 6px auto 0; }
+.hub-lineas { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; animation: hub-shimmer 5s ease-in-out infinite; }
+.hub-lineas line { stroke: #ffd867; stroke-opacity: .38; stroke-width: 1; }
+.hub-lineas .hub-linea--tenue { stroke-opacity: .22; }
+@keyframes hub-shimmer { 0%, 100% { opacity: .3; } 50% { opacity: .62; } }
+
+.hub-astro {
+  position: absolute; transform: translate(-50%, -50%); z-index: 2; width: 46px; height: 46px;
+  border-radius: 50%; display: grid; place-items: center; font-size: 20px; text-decoration: none;
+  background: radial-gradient(circle, rgba(226, 220, 255, .3), rgba(226, 220, 255, .04) 70%);
+  box-shadow: 0 0 14px 3px rgba(200, 190, 255, .22); border: 1.5px solid rgba(255, 255, 255, .26);
+  animation: hub-breathe 4.6s ease-in-out infinite;
 }
-
-.hub-modulos {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  padding: 18px;
+.hub-astro:hover, .hub-astro:focus-visible { animation-play-state: paused; transform: translate(-50%, -50%) scale(1.12); outline: none; }
+.hub-astro--oraculo {
+  width: 64px; height: 64px; font-size: 26px;
+  background: radial-gradient(circle, rgba(255, 216, 103, .5), rgba(255, 216, 103, .06) 70%);
+  box-shadow: 0 0 24px 7px rgba(255, 216, 103, .35); border-color: rgba(255, 216, 103, .6); animation-duration: 4s;
 }
+.hub-astro--locked { opacity: .5; filter: grayscale(.6); border-style: dashed; box-shadow: none; pointer-events: none; animation: none; }
+@keyframes hub-breathe { 0%, 100% { transform: translate(-50%, -50%) scale(1); } 50% { transform: translate(-50%, -50%) scale(1.06); } }
 
-.hub-modulo {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 20px;
-  border-radius: 22px;
-  background: linear-gradient(135deg, rgba(44, 34, 96, .9), rgba(25, 17, 66, .9));
-  border: 1.5px solid rgba(255, 216, 103, .35);
-  color: var(--texto);
-  text-decoration: none;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, .35);
-  transition: transform .15s ease;
+.hub-astro-label { position: absolute; transform: translateX(-50%); z-index: 2; width: 104px; text-align: center; text-shadow: 0 2px 6px rgba(0, 0, 0, .7); pointer-events: none; }
+.hub-astro-label b { display: block; font-family: "Cinzel", serif; font-size: .72rem; font-weight: 700; }
+.hub-astro-label i { font-style: normal; font-size: .6rem; color: rgba(253, 251, 255, .55); }
+.hub-astro-label--locked { opacity: .6; }
+
+/* ----- Próxima aventura (sutil, se oculta si no hay nada que sugerir) ----- */
+.hub-proxima {
+  position: relative; z-index: 2; display: flex; align-items: center; gap: 9px; max-width: 560px;
+  margin: 4px auto 0; padding: 11px 14px; border-radius: 14px; background: rgba(255, 255, 255, .045);
+  border: 1px solid rgba(255, 255, 255, .09); color: rgba(253, 251, 255, .78); font-size: .75rem; text-decoration: none;
 }
+.hub-proxima.oculta { display: none; }
+.hub-proxima b { color: #ffe9a8; }
 
-.hub-modulo:active { transform: scale(.98); }
+@media (prefers-reduced-motion: reduce) { .hub-portada * { animation: none !important; } }
 
-.hub-modulo-icono {
-  font-size: 2.2rem;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  background: rgba(255, 216, 103, .14);
-  display: grid;
-  place-items: center;
-  flex: none;
-}
-
-.hub-modulo-texto { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
-.hub-modulo-texto strong { font-family: "Cinzel", serif; font-size: 1.12rem; letter-spacing: .3px; }
-.hub-modulo-progreso { font-size: .85rem; color: var(--texto-suave); }
-.hub-modulo-flecha { font-size: 1.6rem; color: rgba(255, 216, 103, .8); flex: none; }
-
+/* ----- Pie: solo el botón de Opciones (el selector de perfiles ahora lo
+   abre el avatar del header) ----- */
 .hub-pie {
   position: fixed;
   left: 0;
@@ -87,24 +88,11 @@
   bottom: 0;
   z-index: 5;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 14px 18px;
-  max-width: 480px;
+  max-width: 560px;
   margin: 0 auto;
-}
-
-.hub-perfil-boton {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border: none;
-  background: rgba(255, 255, 255, .1);
-  color: var(--texto);
-  border-radius: 999px;
-  padding: 10px 16px;
-  font-weight: 700;
-  font-size: .85rem;
 }
 
 /* ---------- Selector / gestión de perfiles ---------- */
