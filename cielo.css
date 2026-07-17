@@ -370,3 +370,50 @@ button { font-family: inherit; cursor: pointer; }
     transition-duration: .01ms !important;
   }
 }
+
+/* ---------- Flechas del catálogo (deslizador) ----------
+   Solo aparecen con puntero fino (mouse): en celular la fila se desliza
+   con el dedo. Ver carrusel.js. */
+.deslizador { position: relative; }
+
+.deslizador-flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  display: none;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding-bottom: 3px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 216, 103, .5);
+  background: rgba(20, 14, 50, .85);
+  color: #ffe9a8;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .35);
+}
+.deslizador-prev { left: 4px; }
+.deslizador-next { right: 4px; }
+
+@media (hover: hover) and (pointer: fine), (min-width: 760px) {
+  .deslizador-flecha:not(.oculto-flecha) { display: grid; }
+}
+
+/* ---------- Presentación en pantalla grande ----------
+   En celular el juego ocupa toda la pantalla (mobile-first). En compu o
+   tablet se muestra como una tarjeta grande centrada, en vez de una
+   columna angosta tamaño teléfono. */
+@media (min-width: 760px) {
+  body { display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .cielo-pantalla {
+    width: 100%;
+    max-width: 820px;
+    height: min(calc(100dvh - 48px), 880px);
+    min-height: 0;
+    border-radius: 28px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .55);
+  }
+}

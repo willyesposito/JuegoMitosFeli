@@ -318,3 +318,18 @@ button { font-family: inherit; cursor: pointer; }
   border-radius: 12px;
   padding: 11px 12px;
 }
+
+/* ---------- Presentación en pantalla grande ----------
+   En celular ocupa toda la pantalla; en compu/tablet se muestra como una
+   tarjeta grande centrada en vez de una columna angosta tamaño teléfono. */
+@media (min-width: 760px) {
+  body { display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .espejo-pantalla {
+    width: 100%;
+    max-width: 720px;
+    height: min(calc(100dvh - 48px), 880px);
+    min-height: 0;
+    border-radius: 28px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .55);
+  }
+}

@@ -298,6 +298,7 @@ async function iniciar() {
 
   document.getElementById("cielo-area").classList.remove("oculto");
   document.getElementById("cielo-catalogo").classList.remove("oculto");
+  montarDeslizador(document.getElementById("cielo-catalogo"));
 
   document.getElementById("boton-reiniciar-cielo").addEventListener("click", reiniciar);
 

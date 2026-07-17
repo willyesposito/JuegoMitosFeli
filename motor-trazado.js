@@ -164,6 +164,8 @@ function renderTrazado({
     grupo.appendChild(tapDecoy);
   });
 
+  // Capa visual de cada punto (halo + circulo). Las zonas de toque van
+  // aparte, en una capa propia por encima de todo (ver abajo).
   puntos.forEach((p, i) => {
     const tocado = i < paso;
     const esError = errorKey === "e" + i;
@@ -184,12 +186,23 @@ function renderTrazado({
     punto.style.transformOrigin = "center";
     punto.style.animation = esError ? "sacudir-suave .4s" : (!tocado ? `brillo-estrella 3.4s ease-in-out ${i * .5}s infinite backwards` : "none");
     grupo.appendChild(punto);
-
-    const tap = crearElSvg("circle", { cx: p[0], cy: p[1], r: 7, fill: "rgba(0,0,0,0)" });
-    tap.style.cursor = "pointer";
-    tap.setAttribute("role", "button");
-    tap.setAttribute("aria-label", etiquetaPunto(i, puntos.length));
-    tap.addEventListener("click", () => onTocarPunto && onTocarPunto(i));
-    grupo.appendChild(tap);
   });
+
+  // Capa de toque: se dibuja encima de TODOS los puntos, y el punto que
+  // sigue en el orden queda de ultimo (el mas "arriba" en el SVG). Asi,
+  // cuando dos paradas caen muy juntas (viajes reales con geografia
+  // apretada, como la cola de La Odisea), el tap siempre llega al punto
+  // correcto en vez de trabarse contra un vecino que quedaba tapandolo.
+  const proximo = (!completo && paso < puntos.length) ? paso : -1;
+  puntos
+    .map((p, i) => ({ p, i }))
+    .sort((a, b) => (a.i === proximo ? 1 : 0) - (b.i === proximo ? 1 : 0))
+    .forEach(({ p, i }) => {
+      const tap = crearElSvg("circle", { cx: p[0], cy: p[1], r: 7, fill: "rgba(0,0,0,0)" });
+      tap.style.cursor = "pointer";
+      tap.setAttribute("role", "button");
+      tap.setAttribute("aria-label", etiquetaPunto(i, puntos.length));
+      tap.addEventListener("click", () => onTocarPunto && onTocarPunto(i));
+      grupo.appendChild(tap);
+    });
 }
