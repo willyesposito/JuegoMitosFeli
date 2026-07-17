@@ -9,6 +9,11 @@
   padding-bottom: 40px;
 }
 
+/* En compu/tablet la columna se ensancha para no verse tamaño teléfono. */
+@media (min-width: 760px) {
+  .oraculo-pantalla { max-width: 620px; }
+}
+
 .oraculo-header {
   position: relative;
   display: flex;

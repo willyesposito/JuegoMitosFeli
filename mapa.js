@@ -274,6 +274,7 @@ async function iniciar() {
 
   document.getElementById("mapa-area").classList.remove("oculto");
   document.getElementById("mapa-catalogo").classList.remove("oculto");
+  montarDeslizador(document.getElementById("mapa-catalogo"));
 
   document.getElementById("boton-reiniciar-mapa").addEventListener("click", reiniciar);
 

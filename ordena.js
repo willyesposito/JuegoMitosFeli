@@ -306,6 +306,7 @@ async function iniciar() {
 
   document.getElementById("ordena-area").classList.remove("oculto");
   document.getElementById("ordena-catalogo").classList.remove("oculto");
+  montarDeslizador(document.getElementById("ordena-catalogo"));
 
   document.getElementById("boton-reiniciar-ordena").addEventListener("click", reiniciar);
 
