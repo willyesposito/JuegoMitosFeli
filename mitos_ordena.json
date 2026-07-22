@@ -708,5 +708,460 @@
     ],
     "porque": "Frigg protege a Balder de todo, menos de una sola cosa que parecía no importar, y Loki apunta justo ahí. Ordenar esta cadena enseña que el punto débil suele estar en el detalle que dejamos afuera por chiquito, y que conviene no descuidar ni lo que parece insignificante.",
     "estado": "publicado"
+  },
+  {
+    "id": "teseo",
+    "personaje": "teseo",
+    "escenas": [
+      {
+        "texto": "De vuelta en el mar, entre la alegría y el cansancio, Teseo se olvida de cambiar las velas.",
+        "icono": "⛵"
+      },
+      {
+        "texto": "Al ver aparecer el barco con las velas negras, Egeo cree que su hijo no volvió — y desde entonces ese mar lleva su nombre.",
+        "icono": "🌊"
+      },
+      {
+        "texto": "Antes de zarpar hacia Creta, Teseo le promete a su padre Egeo cambiar las velas negras del barco por blancas si vuelve victorioso.",
+        "icono": "🤝"
+      },
+      {
+        "texto": "El rey Egeo espera en lo alto del acantilado, mirando el horizonte día tras día.",
+        "icono": "🏔️"
+      },
+      {
+        "texto": "En Creta, Teseo vence al Minotauro y sale con vida del laberinto.",
+        "icono": "🌀"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ],
+    "porque": "Una promesa se cumple entera, hasta el último detalle. En un mundo donde una vela podía ser toda la noticia que llegaba de lejos, olvidarse de cambiarla pesó tanto como perder una batalla. Ordenar la historia muestra cómo un solo paso olvidado, justo al final, lo cambió todo.",
+    "estado": "publicado"
+  },
+  {
+    "id": "heracles",
+    "personaje": "heracles",
+    "escenas": [
+      {
+        "texto": "Sigue con trabajos que le toman años: atrapar animales que nadie atrapaba, cruzar fronteras que nadie cruzaba.",
+        "icono": "🏹"
+      },
+      {
+        "texto": "Para reparar un gran error, Heracles acepta cumplir doce trabajos imposibles, uno tras otro.",
+        "icono": "📜"
+      },
+      {
+        "texto": "Al completar el último, no lo espera una fiesta ni una medalla: lo espera la libertad de empezar de nuevo.",
+        "icono": "🕊️"
+      },
+      {
+        "texto": "Primero vence al león de Nemea, de piel que ninguna flecha lograba atravesar.",
+        "icono": "🦁"
+      },
+      {
+        "texto": "Después limpia en un solo día los establos de Augías, desviando el curso de dos ríos.",
+        "icono": "🌊"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ],
+    "porque": "Un error grande no se repara con una sola disculpa: se repara con trabajo sostenido, uno tras otro, sin atajos. Ordenar los trabajos muestra que la constancia pesa más que la fuerza — lo difícil no es el primer monstruo, es no abandonar en el trabajo número once.",
+    "estado": "publicado"
+  },
+  {
+    "id": "troya",
+    "personaje": "odiseo",
+    "escenas": [
+      {
+        "texto": "Odiseo propone un plan: construir un caballo de madera gigante y esconder guerreros adentro.",
+        "icono": "🐴"
+      },
+      {
+        "texto": "Los troyanos creen que es una ofrenda para los dioses y lo entran ellos mismos a la ciudad, festejando.",
+        "icono": "🎉"
+      },
+      {
+        "texto": "Después de diez años de guerra, las murallas de Troya siguen firmes: ningún ejército pudo cruzarlas.",
+        "icono": "🧱"
+      },
+      {
+        "texto": "De noche, mientras Troya duerme, los guerreros salen del caballo y abren las puertas desde adentro.",
+        "icono": "🌙"
+      },
+      {
+        "texto": "Los griegos fingen irse en sus barcos y dejan el caballo abandonado en la playa.",
+        "icono": "⛵"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      0,
+      4,
+      1,
+      3
+    ],
+    "porque": "Diez años de espadas no abrieron Troya; la abrió una idea en una sola noche. Ordenar el plan muestra cómo el pensamiento logra lo que la fuerza no — y por qué todavía, miles de años después, llamamos «caballo de Troya» a lo que entra disfrazado de regalo.",
+    "estado": "publicado"
+  },
+  {
+    "id": "areopago",
+    "personaje": "atenea",
+    "escenas": [
+      {
+        "texto": "Cuando el voto queda empatado, Atenea inclina la balanza hacia el perdón, y el ciclo de venganza se rompe.",
+        "icono": "⚖️"
+      },
+      {
+        "texto": "Una disputa imposible de resolver llega hasta Atenas, y nadie sabe cómo cortar la cadena.",
+        "icono": "❓"
+      },
+      {
+        "texto": "Los ciudadanos escuchan los dos lados y deciden con su voto, en vez de tomar las armas.",
+        "icono": "🗳️"
+      },
+      {
+        "texto": "En los tiempos antiguos, cada ofensa se pagaba con venganza, y cada venganza traía otra, sin fin.",
+        "icono": "⚔️"
+      },
+      {
+        "texto": "Atenea funda el Areópago: un consejo donde cada parte debe presentar pruebas y argumentos.",
+        "icono": "🏛️"
+      }
+    ],
+    "ordenCorrecto": [
+      3,
+      1,
+      4,
+      2,
+      0
+    ],
+    "porque": "Antes, cada ofensa se pagaba con venganza, y la venganza traía otra venganza, sin fin. Ordenar esta historia muestra el nacimiento de una idea enorme: cambiar los golpes por pruebas, argumentos y un voto. Así arranca la justicia.",
+    "estado": "publicado"
+  },
+  {
+    "id": "aguila",
+    "personaje": "zeus",
+    "escenas": [
+      {
+        "texto": "El águila cruza montañas, mares y ciudades, mirándolo todo desde bien alto.",
+        "icono": "🏔️"
+      },
+      {
+        "texto": "Desde el Olimpo, Zeus siente que hay cosas del mundo que no alcanza a ver.",
+        "icono": "☁️"
+      },
+      {
+        "texto": "Con esa vista de arriba, Zeus decide sin dejarse llevar por lo primero que apareció.",
+        "icono": "⚡"
+      },
+      {
+        "texto": "Suelta a su águila, la única que puede volar hasta la cima del cielo sin cansarse.",
+        "icono": "🦅"
+      },
+      {
+        "texto": "Vuelve a Zeus y le trae la imagen completa: dónde hay guerra, dónde hay fiesta, dónde hay peligro.",
+        "icono": "🗺️"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ],
+    "porque": "Un buen líder no decide con lo primero que aparece: primero mira el cuadro completo. Ordenar el vuelo del águila muestra por qué conviene subir bien alto y entender todo el sistema antes de actuar.",
+    "estado": "publicado"
+  },
+  {
+    "id": "hospitalidad",
+    "personaje": "zeus",
+    "escenas": [
+      {
+        "texto": "En plena cena, notan que la jarra de vino se vuelve a llenar sola: el huésped no era quien parecía.",
+        "icono": "🍷"
+      },
+      {
+        "texto": "Golpea muchas puertas, y en las casas más ricas nadie lo deja pasar.",
+        "icono": "🚪"
+      },
+      {
+        "texto": "Zeus se muestra tal cual es y premia a los ancianos por su generosidad.",
+        "icono": "⚡"
+      },
+      {
+        "texto": "Zeus baja a la tierra disfrazado de viajero pobre, para ver cómo tratan los humanos a un desconocido.",
+        "icono": "🧙"
+      },
+      {
+        "texto": "Filemón y Baucis, una pareja de ancianos sin casi nada, lo invitan a entrar y comparten su comida.",
+        "icono": "🍞"
+      }
+    ],
+    "ordenCorrecto": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ],
+    "porque": "Los griegos llamaban xenia al deber de recibir bien a un desconocido. Ordenar la prueba de Zeus muestra que el valor de una persona no se mide por lo que tiene, sino por cómo trata a quien llega con las manos vacías.",
+    "estado": "publicado"
+  },
+  {
+    "id": "orfeo",
+    "personaje": "hades",
+    "escenas": [
+      {
+        "texto": "Su música es tan hermosa que hasta Hades se conmueve y acepta hacer un trato.",
+        "icono": "🖤"
+      },
+      {
+        "texto": "Por romper la única regla, Eurídice se queda del lado de Hades, y Orfeo vuelve solo.",
+        "icono": "💔"
+      },
+      {
+        "texto": "La condición es una sola: puede llevarse a Eurídice si, y solo si, no mira atrás hasta salir a la luz.",
+        "icono": "📜"
+      },
+      {
+        "texto": "Orfeo baja al mundo de Hades con su lira, decidido a recuperar a su amada Eurídice.",
+        "icono": "🎵"
+      },
+      {
+        "texto": "Ya casi afuera, la duda lo vence y Orfeo gira la cabeza para mirarla.",
+        "icono": "👀"
+      }
+    ],
+    "ordenCorrecto": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ],
+    "porque": "Algunas reglas no admiten excepción: se cumplen enteras o no valen. Ordenar el trato con Hades muestra cómo una única instrucción —no mirar atrás— sostiene todo el plan, y cómo un solo desliz, justo al final, lo derrumba.",
+    "estado": "publicado"
+  },
+  {
+    "id": "cerbero",
+    "personaje": "hades",
+    "escenas": [
+      {
+        "texto": "Hades acepta, pero con una regla estricta: dominar a Cerbero sin usar ninguna arma de acero.",
+        "icono": "🚫"
+      },
+      {
+        "texto": "Heracles sujeta al perro solo con la fuerza de sus brazos, hasta que se calma, sin lastimarlo.",
+        "icono": "💪"
+      },
+      {
+        "texto": "Para su último trabajo, Heracles debe subir a Cerbero, el perro de tres cabezas que cuida el mundo de Hades.",
+        "icono": "🐕"
+      },
+      {
+        "texto": "Cumplida la prueba de destreza, lo sube un instante a la superficie y después lo devuelve a su puesto.",
+        "icono": "↩️"
+      },
+      {
+        "texto": "Se presenta ante Hades y le pide permiso para llevarse un momento a su guardián.",
+        "icono": "🤝"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      4,
+      0,
+      1,
+      3
+    ],
+    "porque": "El que de verdad es capaz no necesita destruir para probarlo. Ordenar esta prueba muestra cómo Hades exige destreza en vez de armas: dominar sin lastimar es más difícil —y más valioso— que vencer a pura fuerza.",
+    "estado": "publicado"
+  },
+  {
+    "id": "escudo",
+    "personaje": "aquiles",
+    "escenas": [
+      {
+        "texto": "Aquiles levanta el escudo y lleva a la guerra la imagen de todo lo que vale la pena cuidar.",
+        "icono": "✨"
+      },
+      {
+        "texto": "Antes de la gran batalla, la madre de Aquiles le pide a Hefesto un escudo digno de su hijo.",
+        "icono": "🛡️"
+      },
+      {
+        "texto": "En el metal aparecen ciudades en paz, campos sembrados y gente trabajando.",
+        "icono": "🏙️"
+      },
+      {
+        "texto": "Hefesto lo forja en su fragua, pero no graba en él ni espadas ni ejércitos.",
+        "icono": "🔨"
+      },
+      {
+        "texto": "Alrededor dibuja bailes, fiestas y el cielo entero con sus estrellas.",
+        "icono": "💃"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      3,
+      2,
+      4,
+      0
+    ],
+    "porque": "En el escudo no había armas: había ciudades en paz, campos y bailes. Ordenar lo que Hefesto graba muestra que la guerra es pasajera, y que lo que de verdad sostiene a un pueblo es todo eso que vale la pena proteger.",
+    "estado": "publicado"
+  },
+  {
+    "id": "ira",
+    "personaje": "aquiles",
+    "escenas": [
+      {
+        "texto": "Decide retirarse y no pelear más, aunque su ejército lo necesita.",
+        "icono": "🚪"
+      },
+      {
+        "texto": "Sin su mejor guerrero, sus compañeros quedan expuestos a un peligro enorme.",
+        "icono": "⚠️"
+      },
+      {
+        "texto": "Cuando Aquiles entiende el costo de su ausencia, el daño ya está hecho.",
+        "icono": "😢"
+      },
+      {
+        "texto": "Por una ofensa de su propio jefe, Aquiles siente que su orgullo quedó herido.",
+        "icono": "😤"
+      },
+      {
+        "texto": "Encerrado en su carpa, deja que el enojo gane y no escucha a nadie.",
+        "icono": "⛺"
+      }
+    ],
+    "ordenCorrecto": [
+      3,
+      0,
+      4,
+      1,
+      2
+    ],
+    "porque": "Dejar que el enojo decida sale caro, y el costo casi nunca lo paga uno solo. Ordenar la historia muestra cómo el orgullo de Aquiles, al apartarlo de la lucha, terminó exponiendo a los que más lo necesitaban.",
+    "estado": "publicado"
+  },
+  {
+    "id": "reconciliacion",
+    "personaje": "aquiles",
+    "escenas": [
+      {
+        "texto": "Sin decir palabra, depone las armas y acepta el pedido.",
+        "icono": "🕊️"
+      },
+      {
+        "texto": "Después de tanta guerra, un rey anciano y rival entra de noche, solo, al campamento de Aquiles.",
+        "icono": "🌙"
+      },
+      {
+        "texto": "Le devuelve lo que le pertenece, y por un momento el ciclo de venganza se detiene.",
+        "icono": "🤝"
+      },
+      {
+        "texto": "Aquiles ve en ese dolor el reflejo de su propia pérdida.",
+        "icono": "🪞"
+      },
+      {
+        "texto": "Con lágrimas, el viejo rey le pide que le devuelva a su hijo para poder despedirlo.",
+        "icono": "😢"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ],
+    "porque": "La única forma de cortar un ciclo de venganza es reconocer en el otro el mismo dolor que uno lleva. Ordenar este encuentro muestra el momento exacto en que la empatía puede más que la rabia.",
+    "estado": "publicado"
+  },
+  {
+    "id": "vellocino",
+    "personaje": "jason",
+    "escenas": [
+      {
+        "texto": "El carnero los sube a su lomo y vuela con ellos por encima del mar, lejos del peligro.",
+        "icono": "☁️"
+      },
+      {
+        "texto": "Años después, Jasón parte a buscar ese vellocino, sin saber que su valor no es el oro, sino lo que salvó.",
+        "icono": "⛵"
+      },
+      {
+        "texto": "Un carnero mágico de lana dorada aparece, enviado para rescatarlos.",
+        "icono": "🐏"
+      },
+      {
+        "texto": "En agradecimiento, su lana dorada — el vellocino — queda guardada como un tesoro sagrado.",
+        "icono": "✨"
+      },
+      {
+        "texto": "Mucho antes de Jasón, dos hermanos, Frixo y Hele, están en peligro y nadie los protege.",
+        "icono": "😟"
+      }
+    ],
+    "ordenCorrecto": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ],
+    "porque": "El tesoro no valía por ser de oro, sino por lo que había hecho antes: salvar a dos hermanos en peligro. Ordenar su origen muestra que a veces el valor de una cosa está en la historia que protegió, no en el material.",
+    "estado": "publicado"
+  },
+  {
+    "id": "colquida",
+    "personaje": "jason",
+    "escenas": [
+      {
+        "texto": "Atacar a la fuerza sería inútil: nadie resiste semejante calor.",
+        "icono": "🐂"
+      },
+      {
+        "texto": "Para ganarse el vellocino, Jasón debe enfrentar a unos toros que echan fuego por la boca.",
+        "icono": "🔥"
+      },
+      {
+        "texto": "Antes de entrar al campo, Jasón se cubre toda la piel con el ungüento.",
+        "icono": "🧴"
+      },
+      {
+        "texto": "Protegido por la química, domina a los toros sin quemarse y cumple la prueba.",
+        "icono": "✅"
+      },
+      {
+        "texto": "Medea, que conoce las plantas, le prepara un ungüento que protege del fuego.",
+        "icono": "🌿"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      0,
+      4,
+      2,
+      3
+    ],
+    "porque": "Contra un peligro elemental, la fuerza no alcanza: gana el que conoce los materiales. Ordenar la prueba de los toros muestra cómo un ungüento bien pensado vale más que cualquier golpe.",
+    "estado": "publicado"
   }
 ]
