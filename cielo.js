@@ -303,6 +303,15 @@ async function iniciar() {
   document.getElementById("boton-reiniciar-cielo").addEventListener("click", reiniciar);
 
   idx = 0;
+  // ?const=<id>: llegada desde el link de un capítulo velado en la carta.
+  // Abre directo esa constelación en vez de la primera del catálogo. Si el
+  // id no está (constelación en borrador o carta sin descubrir), queda en 0.
+  const parametros = new URLSearchParams(location.search);
+  const pedido = parametros.get("const");
+  if (pedido) {
+    const i = catalogo.findIndex(c => c.id === pedido);
+    if (i !== -1) idx = i;
+  }
   const hecha = estadoCielo().completadas.includes(actual().id);
   if (hecha) motor.marcarCompleto(actual().estrellas.length);
   fase = hecha ? "completada" : "trazando";
