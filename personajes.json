@@ -52,7 +52,7 @@
         "texto": "Antes de zarpar hacia Creta, Teseo le hizo una promesa a su padre, el rey Egeo: si volvía victorioso, cambiaría las velas negras del barco por velas blancas, para que desde lejos Atenas supiera la buena noticia. Teseo venció al Minotauro y emprendió el regreso, pero entre la alegría y el cansancio del viaje se olvidó de cambiar las velas. Egeo esperaba en lo alto de un acantilado, mirando el horizonte todos los días. Cuando vio aparecer el barco con las velas negras, creyó que su hijo no volvía. El dolor lo venció ahí mismo, frente a las olas. Desde entonces, ese mar lleva su nombre: el mar Egeo.",
         "porque": "Este mito explica un nombre real del mapa: el mar Egeo, el mismo que baña las costas de Grecia hasta hoy. Y guarda una advertencia que los griegos conocían bien: en un mundo donde las noticias viajaban en señales — una vela, una fogata, una bandera —, olvidar un detalle podía pesar tanto como perder una batalla. Las promesas se cumplen enteras, hasta el final del viaje.",
         "fuente": "ordena:teseo",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "mapa_teseo",
@@ -151,7 +151,7 @@
         "texto": "Para reparar un gran error, Heracles aceptó cumplir doce trabajos imposibles, uno detrás del otro, sin saltarse ninguno: vencer al león de Nemea, limpiar los establos de Augías, capturar animales que nadie podía atrapar, cruzar fronteras que nadie cruzaba. Cada trabajo parecía el más difícil de todos, hasta que llegaba el siguiente. No se rindió en ninguno, aunque algunos le tomaron años enteros. Cuando por fin completó el último, no lo esperaba una fiesta ni una medalla: lo esperaba la libertad de empezar de nuevo, sin la deuda que había estado cargando.",
         "porque": "Los griegos no creían que un error grande se reparara con una sola disculpa: se repara con trabajo sostenido en el tiempo. Doce trabajos, uno por uno, sin atajos, es la manera antigua de decir que la constancia pesa más que la fuerza — y que a veces la prueba más dura no es un monstruo, es no abandonar en el trabajo número once.",
         "fuente": "ordena:heracles",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "mapa_heracles",
@@ -409,7 +409,7 @@
         "texto": "La guerra de Troya llevaba diez años, y las murallas de la ciudad seguían firmes: ningún ejército había podido cruzarlas. Entonces Odiseo propuso el plan más famoso de la historia. Los griegos construyeron un caballo de madera gigante, escondieron adentro a sus mejores guerreros y fingieron irse en sus barcos. Los troyanos creyeron que el caballo era una ofrenda para los dioses y lo entraron ellos mismos a la ciudad, festejando. Esa noche, mientras Troya dormía, los guerreros salieron del caballo y abrieron las puertas desde adentro. La guerra que la fuerza no había podido terminar en diez años, la terminó una idea en una sola noche.",
         "porque": "Los griegos contaban esta historia porque les fascinaba una idea: que el pensamiento puede lograr lo que la fuerza no. Diez años de espadas no abrieron Troya; la abrió un plan. Por eso «caballo de Troya» se sigue usando hoy, miles de años después, para nombrar cualquier cosa que entra disfrazada de regalo. Un mito sobrevive tanto tiempo cuando guarda una advertencia útil: mirá bien lo que dejás entrar.",
         "fuente": "ordena:troya",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "vuelta_itaca",
@@ -508,7 +508,7 @@
         "texto": "Establece el Areópago, un consejo donde los ciudadanos deben presentar pruebas y argumentos para resolver disputas, prohibiendo la venganza personal.",
         "porque": "Fundamentos del sistema judicial. Enseña que la evolución de una sociedad depende de reemplazar la violencia física con el debate estructurado y la argumentación lógica.",
         "fuente": "ordena:areopago",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -1392,7 +1392,7 @@
         "texto": "Utiliza un águila como mensajera para vigilar el mundo desde la cima del cielo.",
         "porque": "El águila simboliza la perspectiva macro. Un líder estratégico debe observar el sistema completo antes de tomar decisiones, elevándose por encima del conflicto inmediato.",
         "fuente": "ordena:aguila",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "prueba_xenia",
@@ -1400,7 +1400,7 @@
         "texto": "Viaja disfrazado de mendigo para evaluar a los humanos. Solo Filemón y Baucis, una pareja de ancianos sin recursos, le ofrecen refugio y comida.",
         "porque": "Enseña el concepto de la xenia (hospitalidad). La verdadera nobleza y el valor de una persona se miden por cómo trata a los vulnerables, no por su acumulación de riqueza.",
         "fuente": "ordena:hospitalidad",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_odin",
@@ -1669,7 +1669,7 @@
         "texto": "Establece un trato con Orfeo basado en una condición única: la salida es válida SI y SOLO SI no mira hacia atrás.",
         "porque": "Lógica de programación. Los sistemas funcionan con reglas inflexibles; el fallo humano al no seguir la instrucción colapsa la ejecución.",
         "fuente": "ordena:orfeo",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "resolucion_parametrica",
@@ -1677,7 +1677,7 @@
         "texto": "Permite a Heracles llevarse temporalmente al guardián Cerbero bajo una condición estricta: dominarlo sin recurrir a las armas de acero.",
         "porque": "Negociación diplomática. Un líder altamente competente no necesita la guerra para probar a sus oponentes; impone reglas que exigen habilidad e inteligencia en lugar de destrucción.",
         "fuente": "ordena:cerbero",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_hel",
@@ -2997,7 +2997,7 @@
         "texto": "Recibe un escudo grabado no con armas, sino con un mapa del universo: ciudades pacíficas, agricultura y danzas.",
         "porque": "Perspectiva macro. El conflicto es temporal y destructivo; la verdadera base de la civilización es la paz y el trabajo colaborativo.",
         "fuente": "ordena:escudo",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "costo_impulsividad",
@@ -3005,7 +3005,7 @@
         "texto": "Se retira de sus responsabilidades por una ofensa menor, permitiendo que el orgullo gane. Su negativa a actuar obliga a su círculo cercano a asumir riesgos letales.",
         "porque": "Regulación emocional. La falta de control sobre el ego y la ira genera daños colaterales irreversibles en el entorno afectivo.",
         "fuente": "ordena:ira",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "ruptura_ciclo",
@@ -3013,7 +3013,7 @@
         "texto": "Se reúne en secreto con el rey rival. Al ver el dolor del anciano, depone las armas temporalmente y devuelve lo que le pertenece.",
         "porque": "Empatía pura. La única forma de desactivar un ciclo infinito de conflicto es reconocer el propio dolor reflejado en el adversario.",
         "fuente": "ordena:reconciliacion",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_sigurd",
@@ -3172,7 +3172,7 @@
         "texto": "El objeto buscado proviene de un carnero mágico enviado previamente para rescatar a dos hermanos de una situación de opresión.",
         "porque": "Significado de los artefactos. El valor real del objetivo no reside en que sea de oro, sino en que simboliza el rescate y la protección de los más débiles.",
         "fuente": "ordena:vellocino",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "alquimia_fuerza",
@@ -3180,7 +3180,7 @@
         "texto": "Obligado a enfrentar toros que exhalan fuego. En lugar de atacar con armas, delega la solución química, utilizando ungüentos ignífugos para neutralizar el calor.",
         "porque": "Supervivencia mediante la ciencia. La fuerza es inútil frente a amenazas elementales; el conocimiento de los materiales es la defensa superior.",
         "fuente": "ordena:colquida",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "rocas_simplegades",

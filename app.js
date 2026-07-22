@@ -861,6 +861,7 @@ async function iniciar() {
 
   cargarEstado();
   await cargarNombresConstelaciones();
+  await cargarCatalogosDestino();
   reconciliarVinculos();
   sembrarEstrellas();
   inyectarKeyframesIconos();

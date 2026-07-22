@@ -509,16 +509,43 @@ function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones) {
     : "Se enciende jugando otro módulo (llega en una próxima ola).";
 }
 
+/* Catálogos de destino: ids publicados de cada módulo de trazado/secuencia,
+   para saber si un capítulo velado tiene realmente adónde llevar. Si el
+   contenido escrito de un capítulo apunta a un mito/constelación/viaje que
+   todavía no se construyó (o está en borrador), no queremos ofrecer un tap
+   que caería en un destino genérico: mejor mostrarlo velado sin link hasta
+   que el destino exista. Se cargan una vez desde la Colección. */
+let catalogosDestino = null;
+
+async function cargarCatalogosDestino() {
+  if (catalogosDestino) return catalogosDestino;
+  const leer = async (archivo) => {
+    try {
+      const arr = await (await fetch(archivo)).json();
+      return new Set(arr.filter(x => x.estado === "publicado").map(x => x.id));
+    } catch (e) { return null; } // sin catálogo: no bloqueamos el link (fallback al comportamiento previo)
+  };
+  const [cielo, ordena, mapa] = await Promise.all([
+    leer("constelaciones.json"), leer("mitos_ordena.json"), leer("viajes.json")
+  ]);
+  catalogosDestino = { cielo, ordena, mapa };
+  return catalogosDestino;
+}
+
 /* href del módulo que enciende un capítulo velado, o null si todavía no hay
-   adónde ir (módulos de olas futuras). Para "vinculo" el destino es el
-   Oráculo: es el camino para descubrir al personaje que falta. */
+   adónde ir (módulos de olas futuras, o un destino que todavía no existe /
+   está en borrador). Para "vinculo" el destino es el Oráculo: es el camino
+   para descubrir al personaje que falta. */
 function destinoCapituloVelado(capitulo) {
   const fuente = capitulo.fuente || "";
   const [modulo, condicion] = fuente.split(":");
-  if (modulo === "cielo") return `cielo.html?const=${encodeURIComponent(condicion || "")}`;
+  // Si conocemos el catálogo del módulo y el destino no está publicado ahí,
+  // el link caería en un mito/constelación/viaje genérico: no lo ofrecemos.
+  const existe = (mod) => !catalogosDestino || !catalogosDestino[mod] || catalogosDestino[mod].has(condicion);
+  if (modulo === "cielo") return existe("cielo") ? `cielo.html?const=${encodeURIComponent(condicion || "")}` : null;
   if (modulo === "oraculo") return "oraculo.html?modo=dificil";
-  if (modulo === "ordena") return `ordena.html?mito=${encodeURIComponent(condicion || "")}`;
-  if (modulo === "mapa") return `mapa.html?viaje=${encodeURIComponent(condicion || "")}`;
+  if (modulo === "ordena") return existe("ordena") ? `ordena.html?mito=${encodeURIComponent(condicion || "")}` : null;
+  if (modulo === "mapa") return existe("mapa") ? `mapa.html?viaje=${encodeURIComponent(condicion || "")}` : null;
   if (modulo === "espejo") return `espejo.html?con=${encodeURIComponent(condicion || "")}`;
   if (modulo === "vinculo") {
     return estaDesbloqueada(condicion) ? `coleccion.html?ver=${encodeURIComponent(condicion)}` : "oraculo.html";
