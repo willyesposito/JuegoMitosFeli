@@ -271,11 +271,36 @@ function mostrarToast(texto) {
 function poolComun()   { return candidatosSinDescubrir().filter(p => p.tier !== "dorado"); }
 function poolDoradas() { return candidatosSinDescubrir().filter(p => p.tier === "dorado"); }
 
-/* Pista de una carta velada: mitología más un rasgo, nunca el nombre. */
+/* Nombre visible de cada cualidad. Sustantivos a propósito: no marcan
+   género, así la pista no delata de entrada si es un héroe o una heroína
+   (un adjetivo como "astuta" resolvería media carta sola). El orden de las
+   claves también sirve de desempate estable. */
+const NOMBRE_CUALIDAD = {
+  fuerza: "fuerza",
+  astucia: "astucia",
+  valentia: "valentía",
+  magia: "magia",
+  liderazgo: "liderazgo",
+  bondad: "bondad"
+};
+
+/* Pista de una carta velada: sus dos cualidades más altas, nunca el nombre.
+   Antes decía la mitología y el título ("Griega · Reina de las amazonas"),
+   que con este roster prácticamente regalaba la carta. Dos cualidades dejan
+   varios candidatos posibles y el desafío se sostiene. El desempate por
+   orden de clave hace que una misma carta muestre siempre la misma pista. */
 function pistaVeladaDe(p) {
-  const mito = NOMBRE_MITO_ORACULO[p.mitologia] || p.mitologia;
-  const rasgo = (p.dones || [])[0];
-  return rasgo ? `${mito} · ${rasgo}` : mito;
+  const attrs = p.atributos || {};
+  const top = Object.keys(NOMBRE_CUALIDAD)
+    .filter(k => typeof attrs[k] === "number")
+    .map((k, i) => ({ k, valor: attrs[k], i }))
+    .sort((a, b) => b.valor - a.valor || a.i - b.i)
+    .slice(0, 2)
+    .map(x => NOMBRE_CUALIDAD[x.k]);
+
+  if (!top.length) return "Un héroe o dios del mundo antiguo";
+  const frase = top.join(" y ");
+  return frase.charAt(0).toUpperCase() + frase.slice(1);
 }
 
 function componerAbanico() {
