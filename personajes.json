@@ -683,7 +683,7 @@
         "texto": "Diseña alas de cera y plumas para escapar de la isla, instruyendo a su hijo a volar en la franja de seguridad entre el calor del sol y la humedad del mar.",
         "porque": "Parámetros termodinámicos. Toda tecnología tiene límites de tolerancia; ignorar el manual de usuario y los límites físicos del material produce fallos catastróficos.",
         "fuente": "ordena:vuelo_icaro",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "hilo_caracola",
@@ -1058,7 +1058,7 @@
         "texto": "Gestiona la adquisición del artefacto más valioso de los nueve mundos negociando directamente con los especialistas técnicos (los enanos).",
         "porque": "Economía de la tecnología. El acceso a herramientas de nivel superior requiere identificar, respetar y negociar con los constructores del hardware.",
         "fuente": "ordena:forja_enana",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_afrodita",
@@ -1142,7 +1142,7 @@
         "texto": "Protege el puente Bifröst, monitoreando el flujo constante entre los nueve mundos.",
         "porque": "Gestión de tráfico. La estabilidad de un hub (Asgard) depende de la capacidad del guardián para gestionar el flujo de datos (viajeros/mensajes) sin colapsar el sistema.",
         "fuente": "ordena:heimdall",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -1216,7 +1216,7 @@
         "texto": "Después de conseguirle a Sif su nuevo cabello de oro, Loki no pudo resistirse a presumir, y terminó apostando su propia cabeza a que dos hermanos enanos no podrían forjar nada mejor. Compitiendo contra el reloj, los hermanos crearon el martillo de Thor, la lanza de Odín y otros tesoros — y ganaron la apuesta, aunque Loki logró escapar del castigo final con un tecnicismo ingenioso.",
         "porque": "Una travesura que empieza mal puede terminar dándole a todo un panteón sus herramientas más importantes. La competencia técnica bajo presión, cuando es sana, produce resultados extraordinarios.",
         "fuente": "ordena:apuesta_enanos",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_demeter",
@@ -1484,7 +1484,7 @@
         "texto": "Hera tenía un guardián de total confianza: un gigante con cien ojos repartidos por todo el cuerpo, que nunca dormía del todo porque siempre quedaban ojos despiertos. Vigilaba lo que ella más valoraba. Pero alguien lo venció con una melodía tan envolvente que logró dormir los cien ojos a la vez. Cuando Hera lo perdió, tomó sus ojos y los puso en la cola de su ave favorita, el pavo real, para que su guardián nunca se olvidara.",
         "porque": "Ni el sistema de vigilancia más completo es infalible frente al enfoque correcto. Y honrar a quien cumplió su función, aunque haya fallado al final, es tan importante como el sistema mismo.",
         "fuente": "ordena:argos",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_frigg",
@@ -1761,7 +1761,7 @@
         "texto": "Mientras recorría el mundo buscando a su hija Perséfone, Deméter fue recibida con generosidad por una familia de campesinos. Como agradecimiento, le enseñó a su hijo Triptólemo el secreto de sembrar y cosechar la tierra, y le entregó un carro para que recorriera el mundo llevando ese conocimiento a todos los pueblos.",
         "porque": "El conocimiento útil se comparte, no se guarda. Toda civilización que aprendió a cultivar la tierra le debe algo a una enseñanza que en algún momento alguien decidió transmitir.",
         "fuente": "ordena:triptolemo",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "mapa_demeter",
@@ -1853,7 +1853,7 @@
         "texto": "El movimiento entre mundos define el estado de la superficie; la sincronización es perfecta para que la vida no se detenga.",
         "porque": "Gestión de recursos en sistemas cerrados. La estabilidad de un sistema depende de la transición suave entre procesos opuestos, no de la eliminación de uno de ellos.",
         "fuente": "ordena:ciclo_natural",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -1995,7 +1995,7 @@
         "texto": "Apolo perfecciona la lira, instrumento que traduce las matemáticas en sonidos placenteros.",
         "porque": "Relación entre arte y lógica. La música no es azar; es una estructura matemática que organiza la percepción humana y crea orden en el entorno.",
         "fuente": "ordena:armonia_lyra",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_balder",
@@ -2164,7 +2164,7 @@
         "texto": "Dos gigantes hermanos, crecidos y decididos a desafiar a los dioses, lograron vencer a Ares y encerrarlo dentro de una vasija de bronce. Ahí quedó atrapado más de un año, hasta que su madrastra reveló dónde estaba y Hermes fue a rescatarlo en secreto.",
         "porque": "Ni el dios de la guerra se salva solo con fuerza. Cuando falta estrategia y aliados, hasta el más poderoso puede quedar atrapado — y necesitó que otro lo liberara con astucia, no con más fuerza.",
         "fuente": "ordena:aloadas",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_tyr",
@@ -2248,7 +2248,7 @@
         "texto": "En una fiesta, apareció una manzana de oro con una inscripción: \"para la más hermosa\". Hera, Atenea y Afrodita se la disputaron, y un príncipe mortal llamado Paris fue elegido para decidir. Cada diosa le ofreció algo a cambio de su voto; Afrodita le prometió el amor de la mujer más bella del mundo, y ganó la manzana.",
         "porque": "Una sola decisión, tomada en un instante, puede desatar una cadena de consecuencias mucho más grande de lo que parece. Esta historia continúa en otras cartas.",
         "fuente": "ordena:manzana_dorada",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_freya",
@@ -2499,7 +2499,7 @@
         "texto": "Dioniso quiso recompensar a un rey bondadoso llamado Midas por haber cuidado a su maestro Sileno. Midas pidió que todo lo que tocara se convirtiera en oro. Al principio fue maravilloso, hasta que hasta su comida y su agua se volvieron metal. Dioniso, compasivo, le explicó cómo deshacer el don bañándose en un río.",
         "porque": "Un regalo que parece perfecto puede convertirse en un problema si no se piensan todas sus consecuencias. Y un buen diseño también incluye la manera de deshacerlo.",
         "fuente": "ordena:midas",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -2914,7 +2914,7 @@
         "texto": "Castigado por su innovación, soporta el encierro en la montaña hasta ser liberado, sin arrepentirse de haber acelerado el progreso humano.",
         "porque": "Costo de la innovación disruptiva. Los cambios estructurales masivos en cualquier sociedad siempre generan resistencia inicial de las autoridades establecidas.",
         "fuente": "ordena:caucaso",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "mapa_prometeo",
@@ -3097,7 +3097,7 @@
         "texto": "Antes de una batalla decisiva, Héctor se despidió de su esposa Andrómaca y de su bebé Astianacte en las puertas de la ciudad. El niño lloró, asustado por el penacho de crin del casco de su padre. Héctor se rió, se sacó el casco, alzó a su hijo en brazos y pidió que algún día fuera aún más valiente que él.",
         "porque": "El guerrero más grande de Troya no peleaba por gloria: peleaba por la gente que dejaba atrás. El coraje y el amor por la familia no son opuestos, van juntos.",
         "fuente": "ordena:despedida",
-        "estado": "borrador"
+        "estado": "publicado"
       }
     ],
     "preguntas": [
@@ -3486,7 +3486,7 @@
         "texto": "Después de vencer a la Quimera, Belerofonte se sintió invencible y decidió volar con Pegaso hasta el Olimpo mismo, un lugar reservado solo para los dioses. Pegaso, sobresaltado, lo hizo caer de vuelta a la tierra y siguió solo su camino hacia el cielo, donde Zeus lo recibió como su caballo sagrado. Belerofonte nunca volvió a volar.",
         "porque": "Hay límites que ni el héroe más grande puede cruzar. Confundir un logro con un derecho es uno de los errores más antiguos de la mitología.",
         "fuente": "ordena:limite_vuelo",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "mapa_belerofonte",
@@ -4368,7 +4368,7 @@
         "texto": "Balder vivía en Breidablik, \"el que brilla ampliamente\", un salón tan puro que nada deshonesto ni malintencionado podía entrar en él. Se lo describía como el más radiante de todos los salones de Asgard.",
         "porque": "Algunos personajes representan un ideal más que una historia de acción. Balder es la luz y la bondad que el resto de los dioses protege, no por sus hazañas, sino por lo que significa para todos ellos.",
         "fuente": "ordena:breidablik",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_apolo",
@@ -4452,7 +4452,7 @@
         "texto": "Después de casarse con Skadi, intentaron vivir juntos, repartiendo el tiempo entre la costa de Njörd y las montañas de Skadi. Pero ninguno soportaba el hogar del otro: él no podía dormir con los aullidos del viento y los lobos, ella no podía descansar con el griterío de las gaviotas. Decidieron vivir cada uno en su propio lugar.",
         "porque": "Dos personas — o dos sistemas — pueden respetarse e incluso quererse sin que eso signifique que deban forzar una convivencia que no funciona. Reconocer una incompatibilidad no es un fracaso.",
         "fuente": "ordena:convivencia",
-        "estado": "borrador"
+        "estado": "publicado"
       },
       {
         "id": "espejo_poseidon",
