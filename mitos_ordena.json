@@ -1163,5 +1163,635 @@
     ],
     "porque": "Contra un peligro elemental, la fuerza no alcanza: gana el que conoce los materiales. Ordenar la prueba de los toros muestra cómo un ungüento bien pensado vale más que cualquier golpe.",
     "estado": "publicado"
+  },
+  {
+    "id": "titanomaquia",
+    "personaje": "cronos",
+    "escenas": [
+      {
+        "texto": "Durante diez años el conflicto sacude el cielo y la tierra, con toda su fuerza y su magia en juego.",
+        "icono": "🌩️"
+      },
+      {
+        "texto": "Cuanto más se acerca ese momento, más se aferra Cronos al poder.",
+        "icono": "👑"
+      },
+      {
+        "texto": "Al final ganan Zeus y sus hermanos, y Cronos pierde el trono igual — justo lo que quería evitar.",
+        "icono": "⚡"
+      },
+      {
+        "texto": "Una profecía le advierte a Cronos que uno de sus hijos va a ocupar su trono algún día.",
+        "icono": "🔮"
+      },
+      {
+        "texto": "Reúne a los titanes y declara una guerra enorme contra los dioses jóvenes: la Titanomaquia.",
+        "icono": "⚔️"
+      }
+    ],
+    "ordenCorrecto": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ],
+    "porque": "Cronos no cayó por sorpresa: cayó peleando con todo lo que tenía contra lo que más temía. Ordenar la guerra muestra que el esfuerzo puesto en frenar un cambio a la fuerza no lo detiene — muchas veces es ese mismo esfuerzo el que termina provocando la caída.",
+    "estado": "publicado"
+  },
+  {
+    "id": "dragon_dormido",
+    "personaje": "medea",
+    "escenas": [
+      {
+        "texto": "Medea, que conoce las hierbas desde chica, prepara una pócima especial.",
+        "icono": "🌿"
+      },
+      {
+        "texto": "El vellocino de oro cuelga de un árbol, custodiado por un dragón que nunca cierra los ojos.",
+        "icono": "🐉"
+      },
+      {
+        "texto": "Mientras el dragón duerme, Jasón se acerca y toma el vellocino sin que nadie tenga que pelear.",
+        "icono": "✨"
+      },
+      {
+        "texto": "Ningún guerrero puede vencerlo peleando: siempre está despierto.",
+        "icono": "⚔️"
+      },
+      {
+        "texto": "Le da de beber la pócima al dragón, y por primera vez en su vida se queda dormido.",
+        "icono": "😴"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ],
+    "porque": "La solución de Medea no fue la fuerza, fue el conocimiento: entender cómo funciona algo —una planta, un cuerpo— resuelve lo que ninguna espada podría. Ordenar la historia muestra por qué los griegos admiraban esa inteligencia tanto como el coraje.",
+    "estado": "publicado"
+  },
+  {
+    "id": "vuelo_icaro",
+    "personaje": "dedalo",
+    "escenas": [
+      {
+        "texto": "Le explica a Ícaro la regla: ni muy alto, porque el sol ablanda la cera, ni muy bajo, porque el mar la moja.",
+        "icono": "📏"
+      },
+      {
+        "texto": "El calor deshace la cera, las alas se desarman y el mar se queda con él; Dédalo sigue solo, con el vuelo aprendido a un precio enorme.",
+        "icono": "🌊"
+      },
+      {
+        "texto": "Encerrados en la isla, Dédalo arma dos pares de alas con plumas y cera para poder escapar.",
+        "icono": "🪶"
+      },
+      {
+        "texto": "Entusiasmado por volar, Ícaro sube cada vez más alto y se olvida del límite.",
+        "icono": "☀️"
+      },
+      {
+        "texto": "Los dos despegan y al principio Ícaro respeta la franja segura que le enseñó su padre.",
+        "icono": "🕊️"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      0,
+      4,
+      3,
+      1
+    ],
+    "porque": "Dédalo no le dio a su hijo solo un par de alas: le dio un rango seguro para volar. Ordenar el vuelo muestra que toda herramienta tiene límites de material, y que salirse de ellos —para arriba o para abajo— la rompe igual.",
+    "estado": "publicado"
+  },
+  {
+    "id": "forja_enana",
+    "personaje": "freya",
+    "escenas": [
+      {
+        "texto": "Se lleva el collar puesto, y el Brisingamen se vuelve su marca en los nueve mundos.",
+        "icono": "✨"
+      },
+      {
+        "texto": "Los enanos no se lo quieren vender: ellos lo fabricaron y saben lo que vale.",
+        "icono": "🚫"
+      },
+      {
+        "texto": "En sus recorridas, Freya descubre el taller de cuatro enanos bajo la tierra.",
+        "icono": "⛏️"
+      },
+      {
+        "texto": "Freya negocia con los cuatro, uno por uno, hasta llegar a un trato que a todos les cierra.",
+        "icono": "🤝"
+      },
+      {
+        "texto": "Adentro ve el Brisingamen, un collar de oro tan hermoso como nada que exista en Asgard.",
+        "icono": "📿"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ],
+    "porque": "El collar más hermoso de los nueve mundos no estaba en manos de dioses: estaba en el taller de los que sabían fabricarlo. Ordenar la historia muestra que para conseguir algo de otro nivel hay que reconocer y tratar con quien realmente lo construye.",
+    "estado": "publicado"
+  },
+  {
+    "id": "heimdall",
+    "personaje": "heimdall",
+    "escenas": [
+      {
+        "texto": "Se instala en la punta del puente, donde pasa todo el que va o viene entre los mundos.",
+        "icono": "🏰"
+      },
+      {
+        "texto": "Guarda el cuerno Gjallarhorn: si algo grave se acerca, un solo sonido alcanza para avisarle a todo Asgard.",
+        "icono": "📯"
+      },
+      {
+        "texto": "Heimdall es el elegido: oye crecer el pasto y ve a cientos de leguas, de día y de noche.",
+        "icono": "👁️"
+      },
+      {
+        "texto": "Asgard necesita a alguien que cuide el Bifröst, el puente de arcoíris que une los nueve mundos.",
+        "icono": "🌈"
+      },
+      {
+        "texto": "Desde ahí registra cada cruce, sin dormir casi nunca, para que el flujo no se desborde.",
+        "icono": "🔍"
+      }
+    ],
+    "ordenCorrecto": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ],
+    "porque": "El puente entre los mundos no se cuida con fuerza, se cuida con atención sostenida. Ordenar la guardia de Heimdall muestra que sostener un lugar de paso —que todo el mundo usa y nadie mira— es un trabajo silencioso del que depende todo el sistema.",
+    "estado": "publicado"
+  },
+  {
+    "id": "apuesta_enanos",
+    "personaje": "sif",
+    "escenas": [
+      {
+        "texto": "De esa competencia salen el martillo de Thor, la lanza de Odín y otros tesoros.",
+        "icono": "🔨"
+      },
+      {
+        "texto": "Para reparar su travesura, Loki consigue que unos enanos le forjen a Sif un cabello nuevo de oro puro.",
+        "icono": "💇"
+      },
+      {
+        "texto": "Los hermanos ganan la apuesta, y Loki se salva del castigo final con un tecnicismo ingenioso.",
+        "icono": "🗣️"
+      },
+      {
+        "texto": "Dos hermanos enanos aceptan el desafío y encienden la fragua contra reloj.",
+        "icono": "🔥"
+      },
+      {
+        "texto": "En vez de quedarse callado, Loki presume del trabajo y apuesta su propia cabeza a que nadie puede superarlo.",
+        "icono": "😏"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ],
+    "porque": "Una travesura que empieza mal termina dándole a todo un panteón sus herramientas más importantes. Ordenar la apuesta muestra cómo la competencia técnica bajo presión, cuando es sana, produce resultados que nadie planeó.",
+    "estado": "publicado"
+  },
+  {
+    "id": "argos",
+    "personaje": "hera",
+    "escenas": [
+      {
+        "texto": "Argos es perfecto para el puesto: nunca duerme del todo, porque siempre le quedan ojos despiertos.",
+        "icono": "🛡️"
+      },
+      {
+        "texto": "La música es tan envolvente que, por primera vez, los cien ojos se cierran a la vez.",
+        "icono": "😴"
+      },
+      {
+        "texto": "Hera necesita un guardián para lo que más valora y elige a Argos, un gigante con cien ojos por todo el cuerpo.",
+        "icono": "👀"
+      },
+      {
+        "texto": "Cuando Hera pierde a su guardián, toma sus cien ojos y los pone en la cola del pavo real, para que nadie lo olvide.",
+        "icono": "🦚"
+      },
+      {
+        "texto": "Hermes se acerca disfrazado, sin armas, y empieza a tocar una melodía suave.",
+        "icono": "🎶"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      0,
+      4,
+      1,
+      3
+    ],
+    "porque": "Ni el sistema de vigilancia más completo es infalible frente al enfoque correcto: cien ojos despiertos cayeron ante una melodía. Ordenar la historia muestra también que honrar a quien cumplió su función, aunque haya fallado al final, importa tanto como el sistema.",
+    "estado": "publicado"
+  },
+  {
+    "id": "triptolemo",
+    "personaje": "demeter",
+    "escenas": [
+      {
+        "texto": "Triptólemo recorre los pueblos enseñando a cultivar, y la agricultura deja de ser un secreto.",
+        "icono": "🌍"
+      },
+      {
+        "texto": "Una familia de campesinos, sin saber quién es, la recibe y comparte con ella lo poco que tiene.",
+        "icono": "🏠"
+      },
+      {
+        "texto": "Le entrega además un carro para que pueda viajar lejos con ese conocimiento.",
+        "icono": "🛺"
+      },
+      {
+        "texto": "Buscando a su hija Perséfone, Deméter recorre el mundo disfrazada y agotada.",
+        "icono": "🔦"
+      },
+      {
+        "texto": "Para agradecerles, Deméter le enseña a Triptólemo el secreto de sembrar y cosechar la tierra.",
+        "icono": "🌾"
+      }
+    ],
+    "ordenCorrecto": [
+      3,
+      1,
+      4,
+      2,
+      0
+    ],
+    "porque": "El conocimiento útil se comparte, no se guarda. Ordenar el regalo de Deméter muestra que toda civilización que aprendió a cultivar la tierra le debe algo a una enseñanza que alguien, en algún momento, decidió transmitir.",
+    "estado": "publicado"
+  },
+  {
+    "id": "ciclo_natural",
+    "personaje": "persefone",
+    "escenas": [
+      {
+        "texto": "La tierra se enfría, los árboles quedan pelados y llega el invierno.",
+        "icono": "❄️"
+      },
+      {
+        "texto": "Se sella el acuerdo: Perséfone pasará una parte del año abajo y otra parte arriba.",
+        "icono": "📜"
+      },
+      {
+        "texto": "Su madre reverdece el mundo entero y brota la primavera, lista para repetir el ciclo.",
+        "icono": "🌸"
+      },
+      {
+        "texto": "Cuando baja al mundo de Hades, Deméter deja de ocuparse de los campos.",
+        "icono": "🍂"
+      },
+      {
+        "texto": "Al cumplirse el plazo exacto, Perséfone vuelve a subir a la superficie.",
+        "icono": "🚪"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ],
+    "porque": "El sistema no funciona eliminando una de las dos partes, sino pasando suavemente de una a la otra. Ordenar el ciclo muestra que el invierno no es una falla del mundo: es la mitad de un acuerdo que mantiene viva a la otra mitad.",
+    "estado": "publicado"
+  },
+  {
+    "id": "armonia_lyra",
+    "personaje": "apolo",
+    "escenas": [
+      {
+        "texto": "Para arreglar una travesura con su hermano, Hermes le entrega el instrumento a Apolo.",
+        "icono": "🎁"
+      },
+      {
+        "texto": "Con la lira afinada, la música ordena, calma y acompaña — y queda como su instrumento para siempre.",
+        "icono": "🎼"
+      },
+      {
+        "texto": "Hermes, todavía muy chico, encuentra un caparazón de tortuga y le tiende unas cuerdas: inventa la lira.",
+        "icono": "🐢"
+      },
+      {
+        "texto": "Ajusta largos y tensiones hasta afinar cada nota en su lugar justo.",
+        "icono": "🎵"
+      },
+      {
+        "texto": "Apolo descubre que las cuerdas suenan bien cuando guardan proporciones exactas entre sí.",
+        "icono": "📐"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      0,
+      4,
+      3,
+      1
+    ],
+    "porque": "La música no es azar: es matemática que se escucha. Ordenar cómo llega la lira a Apolo muestra que detrás de algo que suena hermoso casi siempre hay una estructura exacta sosteniéndolo.",
+    "estado": "publicado"
+  },
+  {
+    "id": "aloadas",
+    "personaje": "ares",
+    "escenas": [
+      {
+        "texto": "Ahí queda atrapado más de un año, sin que nadie sepa dónde está.",
+        "icono": "⏳"
+      },
+      {
+        "texto": "Ares sale a enfrentarlos confiado, apostando todo a su fuerza.",
+        "icono": "⚔️"
+      },
+      {
+        "texto": "Su madrastra revela el escondite y Hermes lo rescata en secreto, con maña en vez de fuerza.",
+        "icono": "🗝️"
+      },
+      {
+        "texto": "Los hermanos lo vencen con un plan y lo encierran dentro de una vasija de bronce.",
+        "icono": "🏺"
+      },
+      {
+        "texto": "Dos gigantes hermanos crecen rapidísimo y se envalentonan hasta querer desafiar a los dioses.",
+        "icono": "🌱"
+      }
+    ],
+    "ordenCorrecto": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ],
+    "porque": "Ni el dios de la guerra se salva solo con fuerza. Ordenar el encierro de Ares muestra que cuando falta estrategia y faltan aliados, hasta el más poderoso queda atrapado — y que quien lo sacó lo hizo con astucia, no con más golpes.",
+    "estado": "publicado"
+  },
+  {
+    "id": "manzana_dorada",
+    "personaje": "afrodita",
+    "escenas": [
+      {
+        "texto": "Para no elegir él, Zeus designa como juez a Paris, un príncipe mortal.",
+        "icono": "⚖️"
+      },
+      {
+        "texto": "Paris elige la promesa de Afrodita, le da la manzana — y esa elección enciende una historia mucho más grande.",
+        "icono": "💫"
+      },
+      {
+        "texto": "Hera, Atenea y Afrodita se la disputan, y ninguna acepta ceder.",
+        "icono": "👑"
+      },
+      {
+        "texto": "Cada diosa le ofrece algo a cambio de su voto: poder, sabiduría en la batalla, o amor.",
+        "icono": "🎁"
+      },
+      {
+        "texto": "En medio de una gran fiesta aparece una manzana de oro con una inscripción: «para la más hermosa».",
+        "icono": "🍎"
+      }
+    ],
+    "ordenCorrecto": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ],
+    "porque": "Una sola decisión, tomada en un instante, puede desatar una cadena de consecuencias enorme. Ordenar el juicio de Paris muestra el momento exacto en que una elección chica empuja una historia larguísima — que sigue en otras cartas.",
+    "estado": "publicado"
+  },
+  {
+    "id": "midas",
+    "personaje": "dioniso",
+    "escenas": [
+      {
+        "texto": "Dioniso, compasivo, le explica cómo deshacer el don bañándose en un río, y Midas queda curado.",
+        "icono": "🏞️"
+      },
+      {
+        "texto": "El rey Midas encuentra perdido a Sileno, el viejo maestro de Dioniso, y lo cuida durante días.",
+        "icono": "🍇"
+      },
+      {
+        "texto": "El problema aparece en la mesa: el pan, la fruta y hasta el agua se le vuelven metal.",
+        "icono": "🍞"
+      },
+      {
+        "texto": "Agradecido, Dioniso le ofrece cumplirle el deseo que quiera.",
+        "icono": "🙏"
+      },
+      {
+        "texto": "Midas pide que todo lo que toque se convierta en oro, y al principio le parece maravilloso.",
+        "icono": "✨"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ],
+    "porque": "Un regalo que parece perfecto puede volverse un problema si no se piensan todas sus consecuencias. Ordenar el don de Midas muestra que un buen diseño incluye también la forma de deshacerlo.",
+    "estado": "publicado"
+  },
+  {
+    "id": "caucaso",
+    "personaje": "prometeo",
+    "escenas": [
+      {
+        "texto": "Con ese fuego, la gente aprende a cocinar, a forjar metales y a atravesar el invierno.",
+        "icono": "🏺"
+      },
+      {
+        "texto": "Ahí resiste años enteros, visitado cada día por un águila, sin arrepentirse ni una vez.",
+        "icono": "🦅"
+      },
+      {
+        "texto": "Prometeo roba una chispa del fuego de los dioses y se la entrega a los humanos.",
+        "icono": "🔥"
+      },
+      {
+        "texto": "Con el tiempo pasa Heracles, rompe las cadenas y lo libera: el progreso ya no tenía vuelta atrás.",
+        "icono": "💪"
+      },
+      {
+        "texto": "Zeus, furioso por el atrevimiento, lo manda encadenar en lo alto del monte Cáucaso.",
+        "icono": "⛓️"
+      }
+    ],
+    "ordenCorrecto": [
+      2,
+      0,
+      4,
+      1,
+      3
+    ],
+    "porque": "Todo cambio grande encuentra resistencia de los que mandaban antes. Ordenar la resistencia de Prometeo muestra que aguantó el castigo entero sin arrepentirse de lo que había hecho — porque el fuego ya estaba abajo, y eso no se podía deshacer.",
+    "estado": "publicado"
+  },
+  {
+    "id": "despedida",
+    "personaje": "hector",
+    "escenas": [
+      {
+        "texto": "Héctor se ríe, se saca el casco y lo apoya en el suelo para alzar a su hijo.",
+        "icono": "🪖"
+      },
+      {
+        "texto": "Antes de una batalla decisiva, Héctor busca a su familia en las puertas Esceas de la ciudad.",
+        "icono": "🚪"
+      },
+      {
+        "texto": "Lo levanta en brazos y pide que algún día sea aún más valiente que su padre.",
+        "icono": "🙌"
+      },
+      {
+        "texto": "Cuando Héctor se acerca, el nene llora asustado por el penacho de crin del casco.",
+        "icono": "😢"
+      },
+      {
+        "texto": "Andrómaca le pide que no salga, con el bebé Astianacte en brazos.",
+        "icono": "💗"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ],
+    "porque": "El guerrero más grande de Troya no peleaba por gloria: peleaba por la gente que dejaba atrás. Ordenar la despedida muestra que el coraje y el amor por la familia no son opuestos — van juntos, y uno sostiene al otro.",
+    "estado": "publicado"
+  },
+  {
+    "id": "limite_vuelo",
+    "personaje": "belerofonte",
+    "escenas": [
+      {
+        "texto": "Decide volar hasta el Olimpo mismo, un lugar reservado solo para los dioses.",
+        "icono": "☁️"
+      },
+      {
+        "texto": "Montado en Pegaso, Belerofonte vence a la Quimera y se convierte en el héroe del que todos hablan.",
+        "icono": "🔥"
+      },
+      {
+        "texto": "Pegaso sigue solo hasta el cielo, donde Zeus lo recibe; Belerofonte nunca vuelve a volar.",
+        "icono": "🐴"
+      },
+      {
+        "texto": "Tanto elogio lo envalentona y empieza a sentirse invencible.",
+        "icono": "😤"
+      },
+      {
+        "texto": "En pleno ascenso Pegaso se sobresalta y Belerofonte cae de vuelta a la tierra.",
+        "icono": "💥"
+      }
+    ],
+    "ordenCorrecto": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ],
+    "porque": "Hay límites que ni el héroe más grande puede cruzar. Ordenar el último vuelo muestra uno de los errores más antiguos de la mitología: confundir un logro con un derecho.",
+    "estado": "publicado"
+  },
+  {
+    "id": "breidablik",
+    "personaje": "balder",
+    "escenas": [
+      {
+        "texto": "Balder construye el suyo y lo llama Breidablik: «el que brilla ampliamente».",
+        "icono": "☀️"
+      },
+      {
+        "texto": "Los dioses lo cuidan como cuidan a Balder: no por lo que conquistó, sino por lo que representa.",
+        "icono": "🤍"
+      },
+      {
+        "texto": "Lo levanta con una condición: nada deshonesto ni malintencionado puede entrar ahí.",
+        "icono": "🚫"
+      },
+      {
+        "texto": "En Asgard cada dios levanta su propio salón, y cada uno dice algo de quien lo habita.",
+        "icono": "🏛️"
+      },
+      {
+        "texto": "Por eso se lo describe como el más radiante y limpio de todos los salones.",
+        "icono": "✨"
+      }
+    ],
+    "ordenCorrecto": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ],
+    "porque": "Algunos personajes representan un ideal más que una historia de acción. Ordenar cómo se cuenta Breidablik muestra que Balder es la luz que el resto de los dioses protege, no por sus hazañas, sino por lo que significa para todos.",
+    "estado": "publicado"
+  },
+  {
+    "id": "convivencia",
+    "personaje": "njord",
+    "escenas": [
+      {
+        "texto": "Después de intentarlo en serio, deciden vivir cada uno en su propio lugar, sin dejar de respetarse.",
+        "icono": "🏔️"
+      },
+      {
+        "texto": "Acuerdan repartir el tiempo: unos días en Noatún, junto a la costa, y otros en las cumbres nevadas.",
+        "icono": "🤝"
+      },
+      {
+        "texto": "En la costa, Skadi no descansa con el griterío de las gaviotas al amanecer.",
+        "icono": "🕊️"
+      },
+      {
+        "texto": "En la montaña, Njörd no logra dormir con los aullidos del viento y de los lobos.",
+        "icono": "🐺"
+      },
+      {
+        "texto": "Njörd, dios del mar, y Skadi, criada en la montaña, se casan y tienen que elegir dónde vivir.",
+        "icono": "💍"
+      }
+    ],
+    "ordenCorrecto": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ],
+    "porque": "Dos personas —o dos sistemas— pueden respetarse e incluso quererse sin que eso signifique forzar una convivencia que no funciona. Ordenar el intento muestra que reconocer una incompatibilidad, después de probar en serio, no es un fracaso.",
+    "estado": "publicado"
   }
 ]
