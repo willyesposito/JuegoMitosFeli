@@ -485,6 +485,12 @@ function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones) {
   }
   if (modulo === "cielo") {
     const nombre = nombresConstelaciones && nombresConstelaciones[condicion];
+    const ancla = catalogosDestino && catalogosDestino.cielo && catalogosDestino.cielo.get(condicion);
+    if (ancla && !estaDesbloqueada(ancla)) {
+      const personajeAncla = porId(ancla);
+      const nombreAncla = personajeAncla ? personajeAncla.nombre : "otro personaje";
+      return `Primero descubrí a ${nombreAncla} — recién ahí vas a poder trazar ${nombre || "esa constelación"} en El Cielo de los Mitos y encender este capítulo.`;
+    }
     return nombre
       ? `Trazá ${nombre} en El Cielo de los Mitos para encender este capítulo.`
       : "Se enciende trazando una constelación en El Cielo de los Mitos.";
@@ -525,8 +531,22 @@ async function cargarCatalogosDestino() {
       return new Set(arr.filter(x => x.estado === "publicado").map(x => x.id));
     } catch (e) { return null; } // sin catálogo: no bloqueamos el link (fallback al comportamiento previo)
   };
+  // El Cielo necesita, además del id, el personaje ancla de cada constelación:
+  // el catálogo de Cielo solo lista constelaciones de cartas ya desbloqueadas
+  // (cielo.js: "el Cielo enciende capítulos, no descubre"), así que un capítulo
+  // encendido por `tambienEnciende` en OTRA carta (ej. Atenea vía la
+  // constelación de Andrómeda) recién tiene adónde ir cuando esa ancla ya
+  // fue descubierta.
+  const leerCielo = async () => {
+    try {
+      const arr = await (await fetch("constelaciones.json")).json();
+      const mapa = new Map();
+      arr.filter(x => x.estado === "publicado").forEach(x => mapa.set(x.id, x.personajeId));
+      return mapa;
+    } catch (e) { return null; }
+  };
   const [cielo, ordena, mapa] = await Promise.all([
-    leer("constelaciones.json"), leer("mitos_ordena.json"), leer("viajes.json")
+    leerCielo(), leer("mitos_ordena.json"), leer("viajes.json")
   ]);
   catalogosDestino = { cielo, ordena, mapa };
   return catalogosDestino;
@@ -542,7 +562,15 @@ function destinoCapituloVelado(capitulo) {
   // Si conocemos el catálogo del módulo y el destino no está publicado ahí,
   // el link caería en un mito/constelación/viaje genérico: no lo ofrecemos.
   const existe = (mod) => !catalogosDestino || !catalogosDestino[mod] || catalogosDestino[mod].has(condicion);
-  if (modulo === "cielo") return existe("cielo") ? `cielo.html?const=${encodeURIComponent(condicion || "")}` : null;
+  if (modulo === "cielo") {
+    if (!existe("cielo")) return null;
+    const ancla = catalogosDestino && catalogosDestino.cielo && catalogosDestino.cielo.get(condicion);
+    // Si la constelación ancla todavía no está desbloqueada, el link a Cielo
+    // caería en un catálogo sin esa constelación (dead end): mandamos al
+    // Oráculo, el mismo camino que ya usa "vinculo" para descubrir a alguien.
+    if (ancla && !estaDesbloqueada(ancla)) return "oraculo.html";
+    return `cielo.html?const=${encodeURIComponent(condicion || "")}`;
+  }
   if (modulo === "oraculo") return "oraculo.html?modo=dificil";
   if (modulo === "ordena") return existe("ordena") ? `ordena.html?mito=${encodeURIComponent(condicion || "")}` : null;
   if (modulo === "mapa") return existe("mapa") ? `mapa.html?viaje=${encodeURIComponent(condicion || "")}` : null;
