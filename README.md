@@ -18,7 +18,7 @@ npx serve .
 ```
 
 O publicarlo en **GitHub Pages**: Settings → Pages → Deploy from a branch → rama
-principal, carpeta `/ (root)`. Queda online en `https://<usuario>.github.io/JuegoMitosFeli/`
+principal, carpeta `/ (root)`. Queda online en `https://<usuario>.github.io/MundodeMitos/`
 y funciona offline después de la primera carga (tiene service worker).
 
 ## Cómo se juega
