@@ -144,11 +144,11 @@ Sin cambios sobre lo spec'd en `spec_funcional.md` §5. Se ratifica su rol: cap�
 
 **Módulo técnico (julio 2026): construido y registrado en el hub.** `ordena.html`/`ordena.js`/`ordena.css`, mismo patrón que `cielo.js`/`mapa.js` (catálogo, ceremonia, hoja de capítulo). Sin motor de trazado: la interacción es tocar dos escenas para intercambiarlas hasta llegar al orden causal; sin castigo, con conteo de posiciones ya correctas como pista. El barajado inicial de cada apertura vive en código (Fisher-Yates con rechazo si sale ya resuelto), nunca en el JSON — un JSON guarda datos, no funciones. Tarjeta agregada a `hub.js` (icono 🧩), y el capítulo velado con fuente `ordena:<id>` muestra ícono de rompecabezas 🧩 en la ficha (icono propio, distinto de la brújula 🧭 de `mapa:` y la estrella ⭐ de `cielo:` — ver `app.js`, `iconoCapituloVelado`).
 
-**Estado del contenido (julio 2026): primer lote de 18 mitos publicado.** `mitos_ordena.json` y sus 18 capítulos correspondientes en `personajes.json` (fuente `ordena:<id>`) pasaron a `estado: "publicado"` por instrucción textual de Willy: ciclope, simplegades, laberinto, establos_augias, equipamiento, inframundo, robo_ganado, atenas_olivo, mjolnir, fenrir_paradoja, eleccion_ciegas, pozo_mimir, desafio_minos, talos, reparto, jotunheim, traicion, juramento. Quedan ~31 fuentes `ordena:<id>` sin su mito escrito, para lotes futuros.
+**Estado del contenido (actualizado agosto 2026): CATÁLOGO COMPLETO. Los 49 mitos de `mitos_ordena.json` están en `estado: "publicado"`,** con sus 49 capítulos correspondientes en `personajes.json` (fuente `ordena:<id>`). El primer lote de 18 (julio 2026) se completó con dos lotes posteriores — los 13 mitos de los capítulos dorados (PR #30) y los 18 mitos de los plateados restantes más Cronos y Medea (PR #31, 27 de julio de 2026) — que cerraron el pendiente: "0 borradores, 0 links colgados" según el mensaje de ese commit. Verificado directo contra el repo en agosto 2026.
 
 **Pendiente de contenido (anotado julio 2026, no implementar hasta que Willy lo pida):**
-- **Freya:** reemplazar `ordena:forja_enana` (la forja del collar, dejada afuera) por el robo del Brisingamen — Loki se lo roba a Freya, Heimdall lo descubre y se lo disputa para devolvérselo. Cadena causal limpia, sin contenido adulto, y conecta con Heimdall. Va con un `id` de mito nuevo (no `forja_enana`), lo que implica también actualizar la `fuente` del capítulo de Freya en `personajes.json` cuando se escriba.
-- **Penélope:** falta su mito secuenciable — premio + puzzle del telar, contado desde ella.
+- **Freya:** reemplazar `ordena:forja_enana` (la forja del collar, ya publicada) por el robo del Brisingamen — Loki se lo roba a Freya, Heimdall lo descubre y se lo disputa para devolvérselo. Cadena causal limpia, sin contenido adulto, y conecta con Heimdall. Va con un `id` de mito nuevo (no `forja_enana`), lo que implica también actualizar la `fuente` del capítulo de Freya en `personajes.json` cuando se escriba. Es una mejora de contenido, no una falta: Freya ya cumple el piso de su tier con la versión actual.
+- **Penélope:** no tiene mito secuenciable propio en Ordená (cumple el piso de plateado igual, con base + `vinculo:odiseo`). Si se quiere sumar, sería premio + puzzle del telar, contado desde ella.
 
 ---
 
@@ -222,7 +222,7 @@ La completitud sigue siendo la del spec (capítulos encendidos = capítulos publ
 
 1. ~~Reconciliar el contador~~ — **resuelto (julio 2026):** 85 es el número confirmado por Willy. Coincide con `personajes.json` (85 entradas) y con la tabla de Totales de `roster_personajes_v3.md`. Además, `hub.js` y `app.js` ya calculan el total con `personajes.length`, no hardcodean el número — no hace falta ningún cambio de código.
 2. ~~Decidir el destino de la pregunta de 3 opciones~~ — **resuelto:** no existe rastro de esa mecánica en el código actual. El Oráculo implementado son los 2 modos spec'd (pista + tap / 3 pistas tipo Mastermind); no hay una tercera variante de "elegir entre 3 opciones" corriendo en paralelo.
-3. **Anexos de contenido a producir en este contexto (no en Claude Code):** ~~tabla de vínculos~~ (hecha), ~~tabla de pares espejo~~ (hecha: 12 pares, ver §4.2), ~~catálogo de viajes~~ (hecho: 12 viajes), catálogo de reliquias (~14), catálogo de encrucijadas (~13), y el mapeo capítulo-por-capítulo restante a sus fuentes de Ola 3.
+3. **Anexos de contenido a producir en este contexto (no en Claude Code):** ~~tabla de vínculos~~ (hecha), ~~tabla de pares espejo~~ (hecha: 12 pares, ver §4.2), ~~catálogo de viajes~~ (hecho: 12 viajes), ~~catálogo de mitos de Ordená~~ (hecho: 49 de 49, ver §4.3), catálogo de reliquias (~14), catálogo de encrucijadas (~13), y el mapeo capítulo-por-capítulo restante a sus fuentes de Ola 3.
 
 ## 9. Roadmap consolidado (reemplaza al de CLAUDE.md)
 
@@ -250,16 +250,16 @@ Tabla viva. Actualizar en cada sesión que cierre o empiece un módulo. "Publica
 | Vínculos (`vinculo:`) | 1 | ✅ | ✅ 25 capítulos | — (sin UI) | **Publicado** |
 | Sets latentes | 1 | ✅ | ✅ | ✅ | **Publicado** |
 | El Mapa del Héroe (`mapa:`) | 2 | ✅ | ✅ 12 viajes | ✅ | **Publicado** |
-| Ordená el Mito (`ordena:`) | 2 | ✅ | 🟡 18 de ~49 mitos publicados | ✅ | **Publicado (contenido parcial)** |
+| Ordená el Mito (`ordena:`) | 2 | ✅ | ✅ 49 de 49 mitos publicados | ✅ | **Publicado (contenido completo)** |
 | **Espejo de los Mundos (`espejo:`)** | 2 | ✅ | ✅ 12 pares / 24 capítulos | ✅ | **Publicado (julio 2026)** |
 | Las Reliquias (`reliquia:`) | 3 | ❌ | ❌ | ❌ | **No empezado** |
 | La Encrucijada (`encrucijada:`) | 3 | ❌ | ❌ | ❌ | **No empezado** |
 | Escritura propia + taller | 4 | ❌ | ❌ | ❌ | **No empezado** |
 
-**Falta de contenido en módulos ya publicados (no bloquea, se suma en lotes):**
-- **Ordená el Mito:** ~31 fuentes `ordena:<id>` sin su mito escrito. Anotados aparte: el mito del telar de Penélope, y reemplazar `ordena:forja_enana` de Freya por el robo del Brisingamen (ver §4.3).
-- **Vínculos:** ~25 escritos; el presupuesto del doc estimaba ~35. Quedan vínculos por escribir para completar plateados/normales.
+**Estado de contenido en módulos publicados (agosto 2026, verificado contra el repo):**
+- **Ordená el Mito:** catálogo completo, 49 de 49 mitos publicados. Anotado como mejora futura, no falta: el mito del telar de Penélope, y reemplazar `ordena:forja_enana` de Freya por el robo del Brisingamen (ver §4.3).
+- **Vínculos:** 25 escritos; el presupuesto del doc estimaba ~35. Las 85 cartas ya cumplen el piso de su tier sin necesitar más vínculos — lo que queda por escribir es enriquecimiento para los 25 personajes normales que hoy tienen solo el capítulo base.
 
-**Ola 2 — resumen:** los tres módulos (Mapa, Ordená, Espejo) están construidos, publicados y en el hub. El "Laboratorio de Mitos en modo lector" del roadmap sigue sin construir. Con eso, **Ola 2 queda cerrada en lo mecánico**; lo que resta es contenido incremental de Ordená y Vínculos.
+**Ola 2 — resumen:** los tres módulos (Mapa, Ordená, Espejo) están construidos, publicados y en el hub, con su contenido completo. El "Laboratorio de Mitos en modo lector" del roadmap sigue sin construir (no genera capítulos de ninguna carta, no bloquea nada existente). Con eso, **Ola 2 queda cerrada, tanto en lo mecánico como en el contenido de Mapa, Ordená y Espejo.**
 
 **Próximo frente natural:** Ola 3 (Las Reliquias y La Encrucijada), que se benefician de que ya existan varios módulos (los hallazgos de reliquias y los sets de candidatos de encrucijada se nutren de todo lo jugado). Antes de construir cualquiera de los dos hay que producir su catálogo de contenido (reliquias ~14, encrucijadas ~13).

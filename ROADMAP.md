@@ -27,17 +27,16 @@
 | Vínculos entre personajes | `vinculo:` | 25 de ~35 | sin UI, es automático |
 | Sets temáticos latentes | — | completo | sí |
 | El Mapa del Héroe | `mapa:` | 12 viajes | sí |
-| Ordená el Mito | `ordena:` | 18 de ~49 mitos | sí |
+| Ordená el Mito | `ordena:` | 49 de 49 mitos | sí |
 | Espejo de los Mundos | `espejo:` | 12 pares / 24 capítulos | sí |
 
-Presupuesto vigente: 85 personajes (13 dorados, 37 plateados, 35 normales) ≈ 190+ capítulos, de los cuales 85 son el capítulo base del descubrimiento.
+Presupuesto vigente: 85 personajes (13 dorados, 37 plateados, 35 normales), 206 capítulos publicados (verificado contra `personajes.json`, agosto 2026), de los cuales 85 son el capítulo base del descubrimiento. **Cero capítulos en `"borrador"` y cero anclas rotas**: las 85 cartas cumplen hoy el piso de su tier con contenido jugable.
 
 ## 3. Deuda de contenido (no bloquea, se salda en lotes)
 
-* **Ordená el Mito:** ~31 fuentes `ordena:` sin su mito escrito. Anotados aparte: el telar de Penélope, y reemplazar `ordena:forja_enana` de Freya por el robo del Brisingamen.
-* **Vínculos:** faltan ~10 para llegar al presupuesto y cubrir plateados y normales.
-* **Ola 3:** antes de construir cualquiera de los dos módulos hay que producir su catálogo: ~14 reliquias, ~13 encrucijadas.
-* **Reparaciones nórdicas pendientes:** Bragi, Sleipnir, Las Nornas, Brunilda.
+* **Vínculos:** 25 escritos contra el presupuesto de ~35. Faltan para dar segundo capítulo a los 25 personajes normales que hoy solo tienen el capítulo base (cumplen el piso igual; es enriquecimiento, no falta).
+* **Nota de contenido anotada, sin implementar a propósito:** reemplazar `ordena:forja_enana` de Freya por el robo del Brisingamen. Hoy juega con la versión publicada (la forja del collar).
+* **Ola 3:** antes de construir Reliquias o Encrucijada hay que producir su catálogo: ~14 reliquias, ~13 encrucijadas. Ningún personaje depende hoy de estas fuentes (no hay capítulos `reliquia:` ni `encrucijada:` en `personajes.json`), así que no bloquean nada existente.
 
 ## 4. Ideas abiertas (esperando decisión de Willy)
 
