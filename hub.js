@@ -145,7 +145,7 @@ function proximaAventura() {
     const href = destinoCapituloVelado(cap);
     if (!href) continue;                          // sin destino jugable → no lo sugiero
     if (!mejor || velados.length < mejor.faltan) {
-      const pista = pistaCapituloVelado(cap, false, nombresConstelaciones)
+      const pista = pistaCapituloVelado(cap, false, nombresConstelaciones, p)
         .replace(/\s*para encender este capítulo\.?$/i, "");
       mejor = { faltan: velados.length, href, texto: `A <b>${p.nombre}</b> le falta un capítulo: ${pista}` };
     }

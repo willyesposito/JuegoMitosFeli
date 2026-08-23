@@ -192,6 +192,76 @@ button { font-family: inherit; cursor: pointer; }
   80% { transform: translateX(3px); }
 }
 
+/* ---------- Paso de categoría (nombrar la idea antes de sellar) ----------
+   Pantalla completa a propósito: nombrar la idea compartida es la tarea
+   central del apareo, no un premio posterior (handoff "subir la exigencia",
+   §Cambio 4). Errar acá no cierra el paso ni pierde el par. */
+.espejo-categoria {
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  background: rgba(7, 12, 20, .92);
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 20px;
+  gap: 10px;
+}
+
+.espejo-cat-par {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #bfe0ff;
+  margin-bottom: 2px;
+}
+
+.espejo-cat-pregunta {
+  text-align: center;
+  font-size: 13.5px;
+  color: rgba(238, 244, 251, .85);
+  margin-bottom: 8px;
+}
+
+.espejo-cat-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.espejo-cat-opcion {
+  padding: 13px 14px;
+  border: 1.5px solid rgba(160, 200, 240, .25);
+  border-radius: 14px;
+  background: rgba(20, 34, 52, .85);
+  color: #eef4fb;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  transition: border-color .15s ease, background .15s ease;
+}
+
+.espejo-cat-opcion.mal {
+  border-color: #e6a15b;
+  background: rgba(120, 70, 30, .4);
+  animation: espejo-temblor .4s ease;
+}
+
+.espejo-cat-opcion.bien {
+  border-color: #9be6a1;
+  background: rgba(30, 90, 50, .5);
+}
+
+.espejo-cat-aviso {
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(238, 244, 251, .65);
+  min-height: 18px;
+  margin-top: 2px;
+}
+
 /* ---------- Estado vacío / empañado ---------- */
 .espejo-vacio {
   text-align: center;
