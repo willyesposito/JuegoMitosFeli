@@ -60,3 +60,4 @@
 * [2026-07] El repo dejó de contener datos personales de la usuaria; la documentación la describe solo en términos funcionales.
 * [2026-07] Claude Code mergea sus propios PRs sin esperar revisión de Willy.
 * [2026-08] Antes de responder sobre cualquier archivo del proyecto, Chat lee primero el repo (clonar `willyesposito/JuegoMitosFeli`). El proyecto de Claude no duplica archivos del repo: ahí solo van borradores todavía no subidos o contenido que nunca va al repo (privado, ver §2.1).
+* [2026-08] Los señuelos de mecánicas de apareo (Espejo de los Mundos, y cualquier otra que sume distractores) solo pueden salir de personajes ya descubiertos en el perfil activo, nunca del roster completo: mostrar una carta no descubierta como señuelo la spoilearía y rompe la regla de disponibilidad de `CLAUDE.md` §4.

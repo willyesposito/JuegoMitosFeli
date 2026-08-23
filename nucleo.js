@@ -300,6 +300,14 @@ function porId(id) {
   return personajes.find(p => p.id === id);
 }
 
+/* No hay campo de género en el contrato de datos (CLAUDE.md §4) y no se
+   agrega uno solo para esto: el `titulo` de cada personaje ya empieza
+   siempre con el artículo correcto ("El rey...", "La reina..."), así que
+   alcanza como señal para elegir pronombre en textos generados. */
+function esFemenino(p) {
+  return typeof p.titulo === "string" && p.titulo.startsWith("La ");
+}
+
 /* ---------- Descubrimiento y vínculos ---------- */
 
 function estaDesbloqueada(id) {
@@ -473,7 +481,7 @@ function contarHistoriasCompletas() {
    pre-activado. `nombresConstelaciones` es un mapa opcional id → nombre que
    la Colección arma tras leer constelaciones.json. */
 
-function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones) {
+function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones, personaje) {
   if (encendido) return "Ya lo desbloqueaste — el texto todavía se está terminando de escribir.";
   const fuente = capitulo.fuente || "";
   const [modulo, condicion] = fuente.split(":");
@@ -505,9 +513,14 @@ function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones) {
     return "Recorré ese viaje en El Mapa del Héroe para encender este capítulo.";
   }
   if (modulo === "espejo") {
-    const otro = porId(condicion);
-    const nombre = otro ? otro.nombre : "su equivalente";
-    return `Apareá a este héroe con ${nombre} en Espejo de los Mundos para encender este capítulo.`;
+    // No nombra al compañero: decirlo de antemano resuelve media tarea del
+    // módulo (handoff "subir la exigencia" §Cambio 5). Solo dice de qué
+    // lado buscar, con el pronombre del personaje de esta carta.
+    const zona = personaje && personaje.mitologia === "griega" ? "del norte" : "de Grecia";
+    const femenino = personaje && esFemenino(personaje);
+    const pronombre = femenino ? "ella" : "él";
+    const busca = femenino ? "Buscala" : "Buscalo";
+    return `Alguien ${zona} cuenta la misma idea que ${pronombre}. ${busca} en Espejo de los Mundos.`;
   }
   const nombre = NOMBRE_MODULO_FUENTE[modulo];
   return nombre
@@ -574,7 +587,7 @@ function destinoCapituloVelado(capitulo) {
   if (modulo === "oraculo") return "oraculo.html?modo=dificil";
   if (modulo === "ordena") return existe("ordena") ? `ordena.html?mito=${encodeURIComponent(condicion || "")}` : null;
   if (modulo === "mapa") return existe("mapa") ? `mapa.html?viaje=${encodeURIComponent(condicion || "")}` : null;
-  if (modulo === "espejo") return `espejo.html?con=${encodeURIComponent(condicion || "")}`;
+  if (modulo === "espejo") return "espejo.html";
   if (modulo === "vinculo") {
     return estaDesbloqueada(condicion) ? `coleccion.html?ver=${encodeURIComponent(condicion)}` : "oraculo.html";
   }

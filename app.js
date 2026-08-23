@@ -315,7 +315,7 @@ function iconoCapituloVelado(capitulo, destino) {
 /* Los capítulos velados con un destino conocido (cielo, oráculo difícil, o un
    vínculo ya alcanzable) se muestran como <button>: un tap navega directo al
    módulo que los enciende (doc de olas §2, regla transversal de UI). */
-function bloqueCapitulo(capitulo, encendido) {
+function bloqueCapitulo(capitulo, encendido, personaje) {
   if (capitulo.pendienteDeDiseno) {
     return `
       <div class="capitulo capitulo--velado">
@@ -335,7 +335,7 @@ function bloqueCapitulo(capitulo, encendido) {
         <span class="capitulo-candado" aria-hidden="true">${iconoCapituloVelado(capitulo, destino)}</span>
         <div>
           <strong class="capitulo-titulo">${capitulo.titulo}</strong>
-          <p class="capitulo-pista">${pistaCapituloVelado(capitulo, encendido, nombresConstelaciones)}</p>
+          <p class="capitulo-pista">${pistaCapituloVelado(capitulo, encendido, nombresConstelaciones, personaje)}</p>
         </div>
       </${Tag}>`;
   }
@@ -374,7 +374,7 @@ function abrirDetalle(id, recienRevelada = false) {
 
   const capitulos = capitulosParaMostrar(p);
   const encendidos = capitulosEncendidosDe(p.id);
-  const listaCapitulos = capitulos.map(c => bloqueCapitulo(c, encendidos.includes(c.id))).join("");
+  const listaCapitulos = capitulos.map(c => bloqueCapitulo(c, encendidos.includes(c.id), p)).join("");
 
   document.getElementById("detalle-contenido").innerHTML = `
     <div class="detalle-ilustracion">${svgIcono(p.icono)}</div>

@@ -3,20 +3,34 @@
    Usa el núcleo compartido (nucleo.js: estado, personajes, audio) y los íconos
    de iconos.js. El catálogo de pares vive en espejos.json.
 
-   Mecánica: matching simple. Se elige una carta de cada columna; si forman un
-   par válido, se ilumina y enciende un capítulo en ambos. Errar no castiga: las
-   cartas vuelven a su lugar con una pista suave. Solo aparecen pares donde los
-   DOS personajes ya fueron descubiertos — el módulo nunca spoilea (regla de
-   disponibilidad del doc). Paleta propia: plata y azul de espejo, distinta de
-   la noche del Cielo, el verde del Mapa y el ámbar de Ordená. */
+   Mecánica: matching con desafío real (handoff "Espejo de los Mundos: subir
+   la exigencia"). Las columnas se mezclan una sola vez por apertura, se suman
+   señuelos sin reflejo jugable, y antes de sellar el par hay que nombrar qué
+   idea comparten los dos — esa es la tarea central, no un premio posterior al
+   match. Errar no castiga en ningún paso: las cartas o la pregunta vuelven a
+   ofrecerse con una pista suave, sin límite de intentos.
 
-let catalogo = [];        // pares publicados y con ambos personajes descubiertos
-let idx = 0;              // par en ceremonia / hoja
-let fase = "apareando";   // apareando | ceremonia | capitulo
+   Solo aparecen pares donde los DOS personajes ya fueron descubiertos — el
+   módulo nunca spoilea (regla de disponibilidad del doc). Los señuelos, por
+   la misma regla, solo salen de personajes ya descubiertos: nunca del roster
+   completo. Paleta propia: plata y azul de espejo, distinta de la noche del
+   Cielo, el verde del Mapa y el ámbar de Ordená. */
+
+const LADO_MITOLOGIA = { griego: "griega", nordico: "nordica" };
+const MAX_SENUELOS = 4;
+
+let publicadosTodos = []; // todos los pares publicados de espejos.json, sin filtrar por descubrimiento
+let catalogo = [];        // pares publicados y con ambos personajes descubiertos: los jugables
+let ordenG = [];           // orden fijo (jugables + señuelos) de la columna griega para esta apertura
+let ordenN = [];           // ídem columna nórdica
+let idx = 0;               // par en ceremonia / hoja
+let fase = "apareando";    // apareando | categoria | ceremonia | capitulo
 let tokenSecuencia = 0;
-let selG = null;          // id griego elegido
-let selN = null;          // id nórdico elegido
-let parError = null;      // [g, n] con feedback de error momentáneo
+let selG = null;           // id griego elegido
+let selN = null;           // id nórdico elegido
+let parError = null;       // [g, n] con feedback de error momentáneo
+let parEnCurso = null;     // par recién apareado, en paso de categoría o ceremonia
+let opcionesCategoria = [];
 
 function estadoEspejo() {
   if (!estado.espejo || !Array.isArray(estado.espejo.completados)) estado.espejo = { completados: [] };
@@ -36,8 +50,10 @@ function hecho(par) {
   return estadoEspejo().completados.includes(par.id);
 }
 
-/* Personajes únicos de un lado, en el orden en que aparecen en el catálogo. */
-function columna(lado) {
+/* Personajes jugables de un lado (tienen reflejo en el tablero), en el orden
+   en que aparecen en el catálogo. Distinto de ordenG/ordenN: esto es el
+   conjunto, no el orden final en pantalla. */
+function columnaJugable(lado) {
   const vistos = new Set();
   const out = [];
   catalogo.forEach(par => {
@@ -47,11 +63,44 @@ function columna(lado) {
   return out;
 }
 
+/* Hasta 4 personajes ya descubiertos de ese lado, sin reflejo jugable hoy.
+   Se prefiere al que sí tiene un par en el catálogo publicado pero cuyo
+   compañero todavía no fue descubierto: es el señuelo más honesto, porque es
+   un reflejo real que todavía no se puede completar (handoff §Cambio 2). */
+function candidatosSenuelo(lado) {
+  const otroLado = lado === "griego" ? "nordico" : "griego";
+  const enTablero = new Set(columnaJugable(lado));
+  const conParPendiente = new Set();
+  publicadosTodos.forEach(par => {
+    const id = par[lado];
+    if (!enTablero.has(id) && estaDesbloqueada(id) && !estaDesbloqueada(par[otroLado])) {
+      conParPendiente.add(id);
+    }
+  });
+  const mitologia = LADO_MITOLOGIA[lado];
+  const descubiertos = personajes
+    .filter(p => p.mitologia === mitologia && estaDesbloqueada(p.id) && !enTablero.has(p.id))
+    .map(p => p.id);
+  const preferidos = mezclar(descubiertos.filter(id => conParPendiente.has(id)));
+  const resto = mezclar(descubiertos.filter(id => !conParPendiente.has(id)));
+  return preferidos.concat(resto).slice(0, MAX_SENUELOS);
+}
+
+/* Arma el orden de las dos columnas para esta apertura del módulo: jugables +
+   señuelos, mezclados de forma independiente. No se vuelve a mezclar en cada
+   render (si se mezclara ahí, el tablero saltaría cuando ella toca una
+   carta) ni se persiste: cada entrada al módulo es un tablero nuevo. */
+function armarTablero() {
+  ordenG = mezclar([...columnaJugable("griego"), ...candidatosSenuelo("griego")]);
+  ordenN = mezclar([...columnaJugable("nordico"), ...candidatosSenuelo("nordico")]);
+}
+
 function parDe(g, n) {
   return catalogo.find(par => par.griego === g && par.nordico === n);
 }
 
-/* Un personaje ya está apareado si su par (de cualquier lado) está completo. */
+/* Un personaje ya está apareado si su par (de cualquier lado) está completo.
+   Un señuelo nunca puede dar true acá: no pertenece a ningún par de catalogo. */
 function idHecho(lado, id) {
   return catalogo.some(par => par[lado] === id && hecho(par));
 }
@@ -61,7 +110,7 @@ function capituloDe(personajeId, capituloId) {
   return p ? capitulosDe(p).find(c => c.id === capituloId) : null;
 }
 
-/* ---------- Interacción ---------- */
+/* ---------- Interacción: apareo ---------- */
 
 function tocar(lado, id) {
   if (fase !== "apareando") return;
@@ -85,9 +134,19 @@ function evaluar() {
   if (par && !hecho(par)) {
     sonar("correcto");
     idx = catalogo.indexOf(par);
-    ceremonia(par);
+    parEnCurso = par;
+    // Con menos de 3 pares publicados no hay dos distractores honestos:
+    // el paso de categoría se saltea y se sella directo (handoff §Cambio 4).
+    if (publicadosTodos.length >= 3) {
+      fase = "categoria";
+      prepararCategoria(par);
+      render();
+    } else {
+      ceremonia(par);
+    }
   } else {
-    // Errar no castiga: pista suave y las cartas vuelven a su lugar.
+    // Errar no castiga (tampoco contra un señuelo): pista suave y las
+    // cartas vuelven a su lugar.
     sonar("dosNotas");
     parError = [selG, selN];
     vibrar([20]);
@@ -98,6 +157,53 @@ function evaluar() {
     }, 750);
   }
 }
+
+/* ---------- Paso de categoría: nombrar la idea compartida ----------
+   Es la tarea central del módulo, no un premio posterior al match (handoff
+   §Cambio 4, corrección de Willy ya registrada en MEMORY.md §3). Errar acá
+   nunca devuelve el tablero, no descuenta nada y no tiene límite de
+   intentos: se sigue eligiendo hasta acertar. */
+
+function prepararCategoria(par) {
+  const otras = mezclar(publicadosTodos.filter(p => p.id !== par.id).map(p => p.nombre)).slice(0, 2);
+  opcionesCategoria = mezclar([par.nombre, ...otras]);
+}
+
+function elegirCategoria(opcion, boton) {
+  if (opcion === parEnCurso.nombre) {
+    boton.classList.add("bien");
+    setTimeout(() => ceremonia(parEnCurso), 450);
+  } else {
+    boton.classList.add("mal");
+    document.getElementById("espejo-cat-aviso").textContent =
+      "Casi. Mirá bien qué hacen los dos y probá otra vez.";
+    sonar("dosNotas");
+    vibrar([20]);
+  }
+}
+
+function renderCategoria() {
+  const cont = document.getElementById("espejo-categoria");
+  if (fase !== "categoria" || !parEnCurso) { cont.classList.add("oculto"); return; }
+
+  document.getElementById("espejo-cat-par").textContent =
+    `🪞 ${nombre(parEnCurso.griego)} ⟷ ${nombre(parEnCurso.nordico)}`;
+
+  const opcionesEl = document.getElementById("espejo-cat-opciones");
+  opcionesEl.innerHTML = "";
+  opcionesCategoria.forEach(op => {
+    const boton = document.createElement("button");
+    boton.type = "button";
+    boton.className = "espejo-cat-opcion";
+    boton.textContent = op;
+    boton.addEventListener("click", () => elegirCategoria(op, boton));
+    opcionesEl.appendChild(boton);
+  });
+  document.getElementById("espejo-cat-aviso").textContent = "";
+  cont.classList.remove("oculto");
+}
+
+/* ---------- Ceremonia y sellado ---------- */
 
 function ceremonia(par) {
   fase = "ceremonia";
@@ -127,12 +233,14 @@ function completar(par) {
 function cerrarHoja() {
   tokenSecuencia++;
   fase = "apareando";
+  parEnCurso = null;
   render();
 }
 
 /* ---------- Texto e instrucciones ---------- */
 
 function textoInstruccion() {
+  if (fase === "categoria") return "";
   if (fase === "ceremonia") return "¡Los dos mundos se reflejan! 🪞";
   if (fase === "capitulo") return "";
   const restan = catalogo.filter(par => !hecho(par)).length;
@@ -170,15 +278,17 @@ function renderColumnas() {
   const colN = document.getElementById("espejo-col-nordico");
   colG.innerHTML = "";
   colN.innerHTML = "";
-  columna("griego").forEach(id => colG.appendChild(tarjetaPersonaje("griego", id)));
-  columna("nordico").forEach(id => colN.appendChild(tarjetaPersonaje("nordico", id)));
+  ordenG.forEach(id => colG.appendChild(tarjetaPersonaje("griego", id)));
+  ordenN.forEach(id => colN.appendChild(tarjetaPersonaje("nordico", id)));
 }
 
 /* ---------- Hoja de capítulo revelado ----------
    Igual que El Cielo, El Mapa y Ordená: si los capítulos todavía son borrador,
    la ceremonia se siente igual pero sin mostrar texto sin revisar. El "¿por
    qué?" comparativo del par (lo que enseña este espejo) es del módulo y se
-   muestra siempre: solo se juegan pares ya publicados. */
+   muestra siempre: solo se juegan pares ya publicados. Se titula con el
+   nombre del par para cerrar el círculo con la pregunta de categoría que
+   ella acaba de responder (handoff §Cambio 4). */
 
 function bloqueCapituloHoja(personajeId, capituloId) {
   const p = porId(personajeId);
@@ -214,7 +324,7 @@ function renderHoja() {
       ${bloqueCapituloHoja(par.nordico, par.capituloNordico)}
     </div>
     <div class="espejo-hoja-porque">
-      <strong>🪞 ¿Por qué se reflejan?</strong>
+      <strong>🪞 ${par.nombre}</strong>
       <p>${par.porque}</p>
     </div>
     <div class="espejo-hoja-botones">
@@ -235,18 +345,18 @@ function render() {
     `${catalogo.length - restan} de ${catalogo.length} 🪞`;
   document.getElementById("espejo-instruccion").textContent = textoInstruccion();
   renderColumnas();
+  renderCategoria();
   renderHoja();
 }
 
 /* ---------- Arranque ---------- */
 
 async function iniciar() {
-  let publicados = [];
   try {
     await cargarPersonajes();
     const respuesta = await fetch("espejos.json");
     const todos = await respuesta.json();
-    publicados = todos.filter(par => par.estado === "publicado");
+    publicadosTodos = todos.filter(par => par.estado === "publicado");
   } catch (e) {
     document.getElementById("espejo-vacio").textContent =
       "No pude cargar los espejos. Si abriste el archivo directo, probá servirlo con un servidor local (ver README).";
@@ -258,7 +368,7 @@ async function iniciar() {
 
   // Regla de disponibilidad (doc §4.2): solo pares donde AMBOS ya están
   // descubiertos. El módulo enciende capítulos, no descubre — nunca spoilea.
-  catalogo = publicados.filter(par => estaDesbloqueada(par.griego) && estaDesbloqueada(par.nordico));
+  catalogo = publicadosTodos.filter(par => estaDesbloqueada(par.griego) && estaDesbloqueada(par.nordico));
 
   // Con menos de 2 pares disponibles el espejo "todavía está empañado".
   if (catalogo.length < 2) {
@@ -268,14 +378,7 @@ async function iniciar() {
   }
 
   document.getElementById("espejo-area").classList.remove("oculto");
-
-  // ?con=<id>: preselecciona ese personaje (llegada desde un capítulo velado).
-  const pedido = new URLSearchParams(location.search).get("con");
-  if (pedido) {
-    if (columna("griego").includes(pedido)) selG = pedido;
-    else if (columna("nordico").includes(pedido)) selN = pedido;
-  }
-
+  armarTablero();
   render();
 
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
