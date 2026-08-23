@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>Generador de mapa-geo.js</title>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+<style>body{font:14px monospace;background:#111;color:#8f8;padding:24px;white-space:pre-wrap}</style>
+</head><body>
+<div id="log">generando…</div>
+<script>
+const BBOX = { lon0:-32, lon1:64, lat0:-8, lat1:70 };
+/* Zona de detalle fino: el mundo que el juego realmente recorre. Fuera de
+   ella la costa se simplifica mucho más (solo hace de fondo). */
+const FINO = { lon0:-14, lon1:48, lat0:26, lat1:48 };
+
+function dentro(p) { return p[0] >= BBOX.lon0 && p[0] <= BBOX.lon1 && p[1] >= BBOX.lat0 && p[1] <= BBOX.lat1; }
+
+/* Douglas-Peucker con tolerancia variable: fina dentro del mundo del juego,
+   gruesa afuera (ahí la costa es solo decorado de fondo). */
+function epsDe(a, b) {
+  const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2;
+  const cerca = mx > FINO.lon0 && mx < FINO.lon1 && my > FINO.lat0 && my < FINO.lat1;
+  return cerca ? 0.025 : 0.45;
+}
+
+function simplificar(pts, escala) {
+  if (pts.length < 3) return pts;
+  let maxD = 0, idx = 0;
+  const [ax, ay] = pts[0], [bx, by] = pts[pts.length - 1];
+  const dx = bx - ax, dy = by - ay, len = Math.hypot(dx, dy);
+  for (let i = 1; i < pts.length - 1; i++) {
+    const [px, py] = pts[i];
+    const d = len === 0 ? Math.hypot(px - ax, py - ay)
+      : Math.abs(dy * px - dx * py + bx * ay - by * ax) / len;
+    if (d > maxD) { maxD = d; idx = i; }
+  }
+  if (maxD <= epsDe(pts[0], pts[pts.length - 1]) * escala) return [pts[0], pts[pts.length - 1]];
+  return simplificar(pts.slice(0, idx + 1), escala).slice(0, -1).concat(simplificar(pts.slice(idx), escala));
+}
+
+function areaAprox(pts) {
+  let a = 0;
+  for (let i = 0, j = pts.length - 1; i < pts.length; j = i++)
+    a += (pts[j][0] * pts[i][1] - pts[i][0] * pts[j][1]);
+  return Math.abs(a / 2);
+}
+
+/* Recorte Sutherland-Hodgman contra el rectángulo de la ventana: los anillos
+   quedan cerrados (se pueden rellenar) y se tiran los tramos de costa que el
+   juego nunca muestra (Escandinavia, el Golfo, el Atlántico sur…). */
+function recortar(pts, b) {
+  const bordes = [
+    { dentro:p => p[0] >= b.lon0, corte:(a, c) => [b.lon0, a[1] + (c[1] - a[1]) * (b.lon0 - a[0]) / (c[0] - a[0])] },
+    { dentro:p => p[0] <= b.lon1, corte:(a, c) => [b.lon1, a[1] + (c[1] - a[1]) * (b.lon1 - a[0]) / (c[0] - a[0])] },
+    { dentro:p => p[1] >= b.lat0, corte:(a, c) => [a[0] + (c[0] - a[0]) * (b.lat0 - a[1]) / (c[1] - a[1]), b.lat0] },
+    { dentro:p => p[1] <= b.lat1, corte:(a, c) => [a[0] + (c[0] - a[0]) * (b.lat1 - a[1]) / (c[1] - a[1]), b.lat1] }
+  ];
+  let salida = pts;
+  for (const borde of bordes) {
+    const entrada = salida; salida = [];
+    for (let i = 0; i < entrada.length; i++) {
+      const actual = entrada[i], previo = entrada[(i + entrada.length - 1) % entrada.length];
+      const dentroActual = borde.dentro(actual), dentroPrevio = borde.dentro(previo);
+      if (dentroActual) {
+        if (!dentroPrevio) salida.push(borde.corte(previo, actual));
+        salida.push(actual);
+      } else if (dentroPrevio) salida.push(borde.corte(previo, actual));
+    }
+    if (!salida.length) return [];
+  }
+  return salida;
+}
+
+d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json").then(topo => {
+  const land = topojson.feature(topo, topo.objects.land);
+  const geoms = land.type === "FeatureCollection" ? land.features.map(f => f.geometry) : [land.geometry];
+  const anillos = [];
+  geoms.forEach(g => {
+    const polis = g.type === "MultiPolygon" ? g.coordinates : [g.coordinates];
+    polis.forEach(poly => poly.forEach(ring => anillos.push(ring)));
+  });
+
+  const salida = [];
+  let puntosOriginales = 0, puntosFinales = 0;
+
+  anillos.forEach(ring => {
+    puntosOriginales += ring.length;
+    const tocaZona = ring.some(dentro);
+    if (!tocaZona) return;
+
+    const area = areaAprox(ring);
+    const enMed = ring.some(p => p[0] > -12 && p[0] < 46 && p[1] > 28 && p[1] < 47);
+    // Islas mínimas: se conservan las del Mediterráneo (Delos, Sérifos, Ítaca…)
+    if (area < 0.0006) return;
+    if (!enMed && area < 0.05) return;
+
+    const eps = area > 8 ? 1 : area > 0.5 ? 0.8 : 0.4;
+    let s = simplificar(ring, eps);
+    s = recortar(s, BBOX);
+    if (s.length < 3) return;
+    s = s.map(p => [Math.round(p[0] * 100) / 100, Math.round(p[1] * 100) / 100]);
+    // dedupe consecutivos
+    s = s.filter((p, i) => i === 0 || p[0] !== s[i - 1][0] || p[1] !== s[i - 1][1]);
+    if (s.length < 3) return;
+    puntosFinales += s.length;
+    salida.push(s);
+  });
+
+  salida.sort((a, b) => areaAprox(b) - areaAprox(a));
+
+  const cuerpo = salida.map(r => "[" + r.map(p => p[0] + "," + p[1]).join(",") + "]").join(",\n");
+  const archivo =
+`/* mapa-geo.js — costas reales del mundo antiguo, congeladas en el repo.
+
+   Origen: Natural Earth 1:50m "land" (dominio público), vía world-atlas 2.0.2.
+   Proceso: se recortó a la ventana del juego (lon ${BBOX.lon0}..${BBOX.lon1}, lat ${BBOX.lat0}..${BBOX.lat1}),
+   se simplificó con Douglas-Peucker y se redondeó a 2 decimales (~1 km).
+   ${puntosOriginales} puntos originales → ${puntosFinales} puntos finales, ${salida.length} anillos.
+
+   Formato: cada anillo es un array plano [lon,lat, lon,lat, …] en grados.
+   NO editar a mano: se regenera con el script del handoff. */
+
+const GEO_COSTAS = [
+${cuerpo}
+];
+`;
+  window.__salida = archivo;
+  document.getElementById("log").textContent =
+    `anillos: ${salida.length}\npuntos: ${puntosOriginales} → ${puntosFinales}\nbytes: ${archivo.length}`;
+});
+</script>
+</body></html>

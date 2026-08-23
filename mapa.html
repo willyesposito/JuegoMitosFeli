@@ -37,7 +37,11 @@
     <p class="mapa-instruccion" id="mapa-instruccion" aria-live="polite"></p>
 
     <div class="mapa-mundo oculto" id="mapa-area">
-      <svg id="mapa-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mapa del mundo antiguo (estilo carta de pergamino) para trazar el viaje del héroe">
+      <!-- El viewBox lo fija mapa.js en cada medición: 100 unidades = el ancho
+           del mapa, y el alto se calcula con la proporción real de la caja.
+           Así los radios del motor de trazado (pensados para un plano 0-100)
+           siguen valiendo sin tocar motor-trazado.js. -->
+      <svg id="mapa-svg" viewBox="0 0 100 150" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mapa del Mediterráneo antiguo, con costas reales, para trazar el viaje del héroe">
 
         <defs>
           <radialGradient id="mapa-mar" cx="50%" cy="42%" r="75%">
@@ -48,73 +52,31 @@
           <pattern id="mapa-olas" width="6" height="6" patternUnits="userSpaceOnUse">
             <path d="M0 4 Q1.5 2.5 3 4 T6 4" fill="none" stroke="#c9b485" stroke-width="0.18" opacity="0.5"></path>
           </pattern>
+          <!-- Le saca la perfección de vector a la costa: apenas tiembla, como
+               trazada a pluma. Sin esto el mapa real se ve "de Google". -->
+          <filter id="mapa-tinta" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="ruido"></feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="ruido" scale="0.35" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+          </filter>
         </defs>
 
         <!-- Mar (pergamino) -->
-        <rect x="-30" y="-30" width="160" height="160" fill="url(#mapa-mar)"></rect>
-        <rect x="-30" y="-30" width="160" height="160" fill="url(#mapa-olas)"></rect>
+        <rect class="mapa-fondo" x="0" y="0" width="100" height="150" fill="url(#mapa-mar)"></rect>
+        <rect class="mapa-fondo" x="0" y="0" width="100" height="150" fill="url(#mapa-olas)"></rect>
 
-        <!-- Retícula tenue -->
-        <g stroke="#b39b6a" stroke-width="0.12" opacity="0.55">
-          <line x1="20" y1="0" x2="20" y2="100"></line><line x1="40" y1="0" x2="40" y2="100"></line>
-          <line x1="60" y1="0" x2="60" y2="100"></line><line x1="80" y1="0" x2="80" y2="100"></line>
-          <line x1="0" y1="20" x2="100" y2="20"></line><line x1="0" y1="40" x2="100" y2="40"></line>
-          <line x1="0" y1="60" x2="100" y2="60"></line><line x1="0" y1="80" x2="100" y2="80"></line>
+        <!-- Tierra y retícula: viven adentro del grupo de cámara, que hace el
+             zoom y el desplazamiento hacia el viaje elegido. Los caminos los
+             arma mapa.js a partir de mapa-geo.js (costas reales). -->
+        <g id="mapa-camara">
+          <path id="mapa-graticula" d="" fill="none" stroke="#b39b6a" stroke-width="0.12" opacity="0.55"></path>
+          <path id="mapa-tierras" d="" fill="#dcc79a" stroke="#6b4f2a" stroke-width="0.5" stroke-linejoin="round" filter="url(#mapa-tinta)"></path>
         </g>
 
-        <!-- Tierras reales (reemplaza a #mapa-tierras) -->
-        <g id="mapa-tierras" fill="#dcc79a" stroke="#6b4f2a" stroke-width="0.5" stroke-linejoin="round">
-          <!-- Europa: Hispania -> Galia -> Italia (bota) -> Balcanes -> Grecia -> Peloponeso -> Tracia -->
-          <path d="M 4 53 L 6 49 L 9 43 L 11 37 L 14 32 L 18 30 L 21 31 L 22 34 L 22 40 L 24 44 L 26 48 L 29 53 L 30 55 L 31 52 L 30 47 L 30 42 L 29 34 L 30 28 L 33 29 L 35 34 L 37 40 L 40 44 L 43 47 L 45 51 L 46 55 L 47 58 L 49 60 L 50 61 L 51 60 L 52 61 L 53 58 L 52 54 L 54 52 L 55 51 L 54 49 L 55 46 L 54 43 L 53 38 L 53 35 L 54 31 L 57 29 L 60 28 L 62 27 L 65 26 L 68 24 L 66 18 L 64 12 L 60 8 L 50 4 L 30 2 L 10 2 L 0 4 L 0 40 L 2 48 Z"></path>
-          <!-- Africa del Norte -->
-          <path d="M 0 66 L 2 60 L 4 58 L 6 60 L 9 63 L 13 66 L 19 69 L 25 71 L 30 72 L 33 73 L 35 74 L 37 76 L 38 78 L 42 79 L 48 80 L 58 81 L 72 82 L 90 83 L 100 83 L 100 100 L 0 100 Z"></path>
-          <!-- Asia: Anatolia + Levante + Caucaso -->
-          <path d="M 69 24 L 69 27 L 68 30 L 67 34 L 67 38 L 68 42 L 67 45 L 68 48 L 69 49 L 72 50 L 76 51 L 79 52 L 81 53 L 82 55 L 81 58 L 80 62 L 81 66 L 82 70 L 83 73 L 100 75 L 100 10 L 94 14 L 92 18 L 90 20 L 86 20 L 82 21 L 79 22 L 76 22 L 73 23 L 70 24 Z"></path>
-          <!-- Creta -->
-          <path d="M 51 68.5 L 55 66.8 L 59 66.5 L 63 67.2 L 65 68 L 63 69.8 L 58 70.3 L 54 69.8 Z"></path>
-          <!-- Sicilia -->
-          <path d="M 24 55 L 29.5 54.5 L 31 57 L 28.5 60.5 L 25 58.5 Z"></path>
-          <!-- Cerdena / Corcega -->
-          <path d="M 14 40 L 16.5 40 L 17 45 L 15 46.5 L 13.5 44 Z"></path>
-          <path d="M 14.5 36 L 16.5 36.5 L 16 39 L 14 38.5 Z"></path>
-          <!-- Chipre -->
-          <path d="M 74 55 L 78 54.5 L 79 56 L 76 56.5 Z"></path>
-          <!-- Eubea -->
-          <path d="M 54 44 L 56 47 L 56 50 L 55 49 L 54 46 Z"></path>
-          <!-- Cicladas -->
-          <circle cx="57" cy="53" r="0.8"></circle><circle cx="59" cy="54" r="0.6"></circle>
-          <circle cx="58" cy="55" r="0.8"></circle><circle cx="59" cy="57" r="0.7"></circle>
-          <circle cx="60" cy="58" r="1"></circle><circle cx="56" cy="56" r="0.8"></circle>
-          <circle cx="57" cy="59" r="0.7"></circle>
-        </g>
+        <!-- Rótulos: se reubican por coordenada real pero no cambian de tamaño. -->
+        <g id="mapa-rotulos"></g>
 
-        <!-- Montanas (Olimpo, Apeninos, Atlas, Caucaso, Tauro, Pindo) -->
-        <g fill="#6b4f2a" fill-opacity="0.9">
-          <path d="M 52 35 L 53 32.5 L 54 35 Z"></path><path d="M 22.5 31 L 24 28.5 L 25.5 31 Z"></path>
-          <path d="M 5 64 L 6 61.5 L 7 64 Z"></path><path d="M 87.5 20 L 89 17.5 L 90.5 20 Z"></path>
-          <path d="M 72.5 49 L 74 46.5 L 75.5 49 Z"></path><path d="M 45 45 L 46 42.5 L 47 45 Z"></path>
-        </g>
-
-        <!-- Etiquetas de regiones -->
-        <g fill="#6b4f2a" font-family="'Cinzel', serif" font-weight="700" text-anchor="middle" opacity="0.72">
-          <text x="16" y="24" font-size="2.1" letter-spacing="0.15">HISPANIA</text>
-          <text x="24" y="42" font-size="2.4" letter-spacing="0.3">ITALIA</text>
-          <text x="48" y="49" font-size="2.6" letter-spacing="0.3">GRECIA</text>
-          <text x="79" y="42" font-size="2.1" letter-spacing="0.15">ANATOLIA</text>
-          <text x="20" y="91" font-size="2.6" letter-spacing="0.4">ÁFRICA</text>
-          <text x="58" y="73.5" font-size="2" letter-spacing="0.3">CRETA</text>
-        </g>
-
-        <!-- Etiquetas de mares -->
-        <g fill="#9a8259" font-family="Georgia, serif" font-style="italic" text-anchor="middle" opacity="0.7">
-          <text x="62" y="44" font-size="2.1">Mar Egeo</text>
-          <text x="78" y="14" font-size="2.1">Mar Negro</text>
-          <text x="39" y="66" font-size="1.9">Mar Jónico</text>
-          <text x="55" y="90" font-size="2">Mare Nostrum</text>
-        </g>
-
-        <!-- Rosa de los vientos -->
-        <g opacity="0.7" transform="translate(13,86)">
+        <!-- Rosa de los vientos (la posiciona mapa.js según el alto real) -->
+        <g id="mapa-rosa" opacity="0.7">
           <path d="M0 -4.2 L1 -0.6 L4.2 0 L1 0.6 L0 4.2 L-1 0.6 L-4.2 0 L-1 -0.6 Z" fill="#6b4f2a"></path>
           <circle r="0.7" fill="#efe3c6" stroke="#6b4f2a" stroke-width="0.2"></circle>
           <text x="0" y="-5.2" font-size="1.8" font-family="'Cinzel', serif" font-weight="800" fill="#6b4f2a" text-anchor="middle">N</text>
@@ -147,6 +109,7 @@
   <script src="nucleo.js"></script>
   <script src="motor-trazado.js"></script>
   <script src="carrusel.js"></script>
+  <script src="mapa-geo.js"></script>
   <script src="mapa.js"></script>
 </body>
 </html>
