@@ -485,3 +485,39 @@ button { font-family: inherit; cursor: pointer; }
     box-shadow: 0 24px 70px rgba(0, 0, 0, .5);
   }
 }
+
+/* ============================================================
+   PARCHE mapa.css — Mapa real (handoff "Mapa real", opción 1d)
+
+   Agregar este bloque AL FINAL de mapa.css. No hay que borrar ni
+   modificar nada de lo que ya está: la piel pergamino, los chips, la
+   hoja de capítulo y las animaciones del motor quedan igual.
+   ============================================================ */
+
+/* Mientras la cámara vuela hacia el viaje elegido, mapa.js redibuja el
+   trazado en cada cuadro. Sin esto, la animación de la línea y el pulso
+   del halo se reiniciarían sesenta veces por segundo y se verían
+   congelados o parpadeando. */
+#mapa-svg.moviendo .linea-trazada,
+#mapa-svg.moviendo .halo-guia,
+#mapa-svg.moviendo .onda-final,
+#mapa-svg.moviendo .destello-final {
+  animation: none !important;
+}
+
+/* El mapa ahora puede acercarse mucho (Rómulo y Remo entra hasta el
+   Palatino): el pergamino de fondo tiene que seguir cubriendo todo aunque
+   la tierra se salga del lienzo. */
+#mapa-svg { display: block; }
+
+/* La costa real trae mucho más detalle que el dibujo a mano: se le baja un
+   punto la opacidad al trazo para que no se vea recargada en el zoom más
+   lejano, y se deja el filtro de tinta (definido en mapa.html) haciendo el
+   trabajo de "pluma". */
+#mapa-tierras { stroke-opacity: .85; }
+
+/* En pantalla grande el mapa es más ancho: los rótulos de región quedarían
+   pequeños respecto del resto de la interfaz. */
+@media (min-width: 760px) {
+  #mapa-rotulos text { font-weight: 700; }
+}
