@@ -4,24 +4,25 @@
    de iconos.js. El catálogo de pares vive en espejos.json.
 
    Mecánica: matching con desafío real (handoff "Espejo de los Mundos: subir
-   la exigencia"). Las columnas se mezclan una sola vez por apertura, se suman
-   señuelos sin reflejo jugable, y antes de sellar el par hay que nombrar qué
-   idea comparten los dos — esa es la tarea central, no un premio posterior al
-   match. Errar no castiga en ningún paso: las cartas o la pregunta vuelven a
-   ofrecerse con una pista suave, sin límite de intentos.
+   la exigencia"). Las columnas se mezclan una sola vez por apertura y, antes
+   de sellar el par, hay que nombrar qué idea comparten los dos — esa es la
+   tarea central, no un premio posterior al match. Errar no castiga en ningún
+   paso: las cartas o la pregunta vuelven a ofrecerse con una pista suave, sin
+   límite de intentos.
 
    Solo aparecen pares donde los DOS personajes ya fueron descubiertos — el
-   módulo nunca spoilea (regla de disponibilidad del doc). Los señuelos, por
-   la misma regla, solo salen de personajes ya descubiertos: nunca del roster
-   completo. Paleta propia: plata y azul de espejo, distinta de la noche del
+   módulo nunca spoilea (regla de disponibilidad del doc) y, además, todo lo
+   que se ve en el tablero aparea. Un personaje cuyo reflejo todavía no fue
+   descubierto no entra: mostrarlo lo volvía intocable en la práctica y
+   convertía el tablero en prueba y error (corrección de Willy, septiembre
+   2026). Paleta propia: plata y azul de espejo, distinta de la noche del
    Cielo, el verde del Mapa y el ámbar de Ordená. */
 
 const LADO_MITOLOGIA = { griego: "griega", nordico: "nordica" };
-const MAX_SENUELOS = 4;
 
 let publicadosTodos = []; // todos los pares publicados de espejos.json, sin filtrar por descubrimiento
 let catalogo = [];        // pares publicados y con ambos personajes descubiertos: los jugables
-let ordenG = [];           // orden fijo (jugables + señuelos) de la columna griega para esta apertura
+let ordenG = [];           // orden fijo de la columna griega para esta apertura
 let ordenN = [];           // ídem columna nórdica
 let idx = 0;               // par en ceremonia / hoja
 let fase = "apareando";    // apareando | categoria | ceremonia | capitulo
@@ -50,8 +51,8 @@ function hecho(par) {
   return estadoEspejo().completados.includes(par.id);
 }
 
-/* Personajes jugables de un lado (tienen reflejo en el tablero), en el orden
-   en que aparecen en el catálogo. Distinto de ordenG/ordenN: esto es el
+/* Personajes de un lado que tienen su reflejo en el tablero, en el orden en
+   que aparecen en el catálogo. Distinto de ordenG/ordenN: esto es el
    conjunto, no el orden final en pantalla. */
 function columnaJugable(lado) {
   const vistos = new Set();
@@ -63,44 +64,21 @@ function columnaJugable(lado) {
   return out;
 }
 
-/* Hasta 4 personajes ya descubiertos de ese lado, sin reflejo jugable hoy.
-   Se prefiere al que sí tiene un par en el catálogo publicado pero cuyo
-   compañero todavía no fue descubierto: es el señuelo más honesto, porque es
-   un reflejo real que todavía no se puede completar (handoff §Cambio 2). */
-function candidatosSenuelo(lado) {
-  const otroLado = lado === "griego" ? "nordico" : "griego";
-  const enTablero = new Set(columnaJugable(lado));
-  const conParPendiente = new Set();
-  publicadosTodos.forEach(par => {
-    const id = par[lado];
-    if (!enTablero.has(id) && estaDesbloqueada(id) && !estaDesbloqueada(par[otroLado])) {
-      conParPendiente.add(id);
-    }
-  });
-  const mitologia = LADO_MITOLOGIA[lado];
-  const descubiertos = personajes
-    .filter(p => p.mitologia === mitologia && estaDesbloqueada(p.id) && !enTablero.has(p.id))
-    .map(p => p.id);
-  const preferidos = mezclar(descubiertos.filter(id => conParPendiente.has(id)));
-  const resto = mezclar(descubiertos.filter(id => !conParPendiente.has(id)));
-  return preferidos.concat(resto).slice(0, MAX_SENUELOS);
-}
-
-/* Arma el orden de las dos columnas para esta apertura del módulo: jugables +
-   señuelos, mezclados de forma independiente. No se vuelve a mezclar en cada
-   render (si se mezclara ahí, el tablero saltaría cuando ella toca una
-   carta) ni se persiste: cada entrada al módulo es un tablero nuevo. */
+/* Arma el orden de las dos columnas para esta apertura del módulo. Se mezcla
+   una sola vez, no en cada render (si se mezclara ahí, el tablero saltaría
+   cuando ella toca una carta) ni se persiste: cada entrada al módulo es un
+   tablero nuevo. Solo entran personajes de `catalogo`, así que toda carta en
+   pantalla tiene su reflejo del otro lado. */
 function armarTablero() {
-  ordenG = mezclar([...columnaJugable("griego"), ...candidatosSenuelo("griego")]);
-  ordenN = mezclar([...columnaJugable("nordico"), ...candidatosSenuelo("nordico")]);
+  ordenG = mezclar(columnaJugable("griego"));
+  ordenN = mezclar(columnaJugable("nordico"));
 }
 
 function parDe(g, n) {
   return catalogo.find(par => par.griego === g && par.nordico === n);
 }
 
-/* Un personaje ya está apareado si su par (de cualquier lado) está completo.
-   Un señuelo nunca puede dar true acá: no pertenece a ningún par de catalogo. */
+/* Un personaje ya está apareado si su par (de cualquier lado) está completo. */
 function idHecho(lado, id) {
   return catalogo.some(par => par[lado] === id && hecho(par));
 }
@@ -145,8 +123,7 @@ function evaluar() {
       ceremonia(par);
     }
   } else {
-    // Errar no castiga (tampoco contra un señuelo): pista suave y las
-    // cartas vuelven a su lugar.
+    // Errar no castiga: pista suave y las cartas vuelven a su lugar.
     sonar("dosNotas");
     parError = [selG, selN];
     vibrar([20]);

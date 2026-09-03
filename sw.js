@@ -1,7 +1,7 @@
 /* Service worker: deja el juego disponible offline una vez cargado.
    Al cambiar cualquier archivo, subir la versión para que se actualice la caché. */
 
-const VERSION = "feli-mitos-v3.4.0";
+const VERSION = "feli-mitos-v3.4.1";
 const ARCHIVOS = [
   "./",
   "index.html",

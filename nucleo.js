@@ -520,6 +520,13 @@ function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones, persona
     const femenino = personaje && esFemenino(personaje);
     const pronombre = femenino ? "ella" : "él";
     const busca = femenino ? "Buscala" : "Buscalo";
+    // Si el reflejo todavía no fue descubierto, el par no existe en el
+    // tablero del Espejo: mandar ahí sería un callejón sin salida. Primero
+    // hay que descubrirlo, y eso pasa por el Oráculo — el mismo camino que
+    // ya usan "vinculo" y las constelaciones con ancla velada.
+    if (!estaDesbloqueada(condicion)) {
+      return `Alguien ${zona} cuenta la misma idea que ${pronombre}, pero todavía no lo descubriste. Consultá al Oráculo.`;
+    }
     return `Alguien ${zona} cuenta la misma idea que ${pronombre}. ${busca} en Espejo de los Mundos.`;
   }
   const nombre = NOMBRE_MODULO_FUENTE[modulo];
@@ -587,7 +594,10 @@ function destinoCapituloVelado(capitulo) {
   if (modulo === "oraculo") return "oraculo.html?modo=dificil";
   if (modulo === "ordena") return existe("ordena") ? `ordena.html?mito=${encodeURIComponent(condicion || "")}` : null;
   if (modulo === "mapa") return existe("mapa") ? `mapa.html?viaje=${encodeURIComponent(condicion || "")}` : null;
-  if (modulo === "espejo") return "espejo.html";
+  // El Espejo solo aparea pares con los DOS personajes descubiertos. Si el
+  // reflejo todavía está velado, la carta no abre el módulo (no habría a
+  // quién aparear): manda al Oráculo, igual que "vinculo".
+  if (modulo === "espejo") return estaDesbloqueada(condicion) ? "espejo.html" : "oraculo.html";
   if (modulo === "vinculo") {
     return estaDesbloqueada(condicion) ? `coleccion.html?ver=${encodeURIComponent(condicion)}` : "oraculo.html";
   }
