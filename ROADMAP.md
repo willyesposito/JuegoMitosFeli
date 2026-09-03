@@ -30,7 +30,9 @@
 | Ordená el Mito | `ordena:` | 49 de 49 mitos | sí |
 | Espejo de los Mundos | `espejo:` | 12 pares / 24 capítulos | sí |
 
-Espejo de los Mundos subió su exigencia (agosto 2026, handoff "subir la exigencia"): mezcla las columnas en cada apertura, suma señuelos de personajes ya descubiertos sin reflejo jugable, y pide nombrar la idea compartida antes de sellar el par — la pista del capítulo velado ya no nombra al compañero. Cambio de mecánica, no de contenido: sigue con 12 pares / 24 capítulos.
+Espejo de los Mundos subió su exigencia (agosto 2026, handoff "subir la exigencia"): mezcla las columnas en cada apertura y pide nombrar la idea compartida antes de sellar el par — la pista del capítulo velado ya no nombra al compañero. Cambio de mecánica, no de contenido: sigue con 12 pares / 24 capítulos.
+
+Los señuelos que había sumado esa misma sesión se sacaron (septiembre 2026, corrección de Willy): un personaje sin su reflejo descubierto llenaba el tablero de cartas intocables y el módulo se jugaba a prueba y error. Ahora todo lo que se ve en el tablero aparea, y el capítulo velado `espejo:` de una carta cuya contraparte todavía está velada manda al Oráculo en vez de abrir el módulo.
 
 Presupuesto vigente: 85 personajes (13 dorados, 37 plateados, 35 normales), 206 capítulos publicados (verificado contra `personajes.json`, agosto 2026), de los cuales 85 son el capítulo base del descubrimiento. **Cero capítulos en `"borrador"` y cero anclas rotas**: las 85 cartas cumplen hoy el piso de su tier con contenido jugable.
 
