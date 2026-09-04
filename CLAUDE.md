@@ -114,4 +114,17 @@ Cuando diseñes o documentes un módulo nuevo, usá esta estructura en `ROADMAP.
 | `Documentacion/roster_personajes.md` | Fichas heredadas v1, vigentes para personajes no tocados en v2/v3. |
 | `Documentacion/contenido para mergear/` | Capítulos escritos sin volcar al JSON. |
 | `Documentacion/mockups visuales/` | Referencia visual. |
+| `skills/nuevo-personaje-mitos/SKILL.md` | Skill de producción visual controlada para generar una única imagen desde el ADN del repo y con preflight anti-clonación. |
 | `Archivos anteriores/` | Superado. **No partir de estos archivos.** |
+
+---
+
+## 7. Skills operativas del proyecto
+
+### Nuevo personaje Mitos
+
+Cuando Willy diga `Usá Nuevo personaje Mitos para <PERSONAJE>` o una variante inequívoca, leer y ejecutar `skills/nuevo-personaje-mitos/SKILL.md`.
+
+La invocación debe alcanzar por sí sola: no pedirle que copie prompts ni fichas ya guardadas en el repo.
+
+La skill gobierna la generación visual de personajes y exige lectura real del repo, whitelist/blacklist, control anti-clonación y preflight antes de generar una única imagen. Si el repo deja un dato visual materialmente ambiguo o contradictorio, frenar en vez de completar por intuición.
