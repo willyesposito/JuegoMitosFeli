@@ -151,3 +151,56 @@ La actualización de este historial no autoriza cambiar el canon, borrar pruebas
 - Ningún SÍ previo sustituye una comprobación posterior.
 - Si una sola condición falla o no puede verificarse, detenerse sin declarar éxito.
 - Sólo una nueva instrucción de Willy habilita otro intento; releer el historial actualizado antes de hacerlo.
+
+
+## Intento fallido 4 — Agamenón — 2026-09-04
+
+**Estado:** FALLIDO por inspección posterior del agente; pendiente de feedback específico de Willy sobre esta imagen. Nueva instrucción de Willy autorizó exactamente un intento adicional. No confundir esta evaluación con una aprobación o rechazo posterior suyo.
+
+**Versión:** rama `claude/game-setup-v98pr1`, skill reforzada en commit `6c196cec1d5e435608fcc282203d6d07956ce05f`; las ocho fuentes obligatorias de diseño no cambiaron respecto del intento 3. Historial completo releído y Zeus real abierto antes del preflight. Una generación con la herramienta integrada, desde texto y sin imagen base.
+
+**Evidencia:** `exec-c9efe1c4-123f-434b-870f-b2c9bca950a1.png`, 1086 × 1448 px, SHA-256 `C259B5915C45FAD9035F723EF16C5B8430E4C5A9CC18C5CAE329AF1ED00CE57C`. Imagen inspeccionada a resolución original en la conversación, no incorporada al repo. Recorte circular de inspección sobre copia: cuadro x=80, y=20, ancho=440, alto=440 px; conserva rostro completo y cabeza del cetro. No se exportó un avatar final.
+
+### Qué mejoró de forma visible
+
+- No aparecen el broche circular ni los remaches decorativos del intento 3.
+- La mano se muestra lateral, con palma hacia abajo, y la mirada sigue su dirección. Se eliminó el gesto frontal de bienvenida.
+- Volúmenes y superficies más simplificados; la coraza es lisa y el cetro no lleva iconografía.
+- Una única escena sin inset, marcos, texto ni duplicación de Agamenón.
+- Pies completos y margen inferior más claro.
+- El recorte se probó realmente en lugar de aprobarlo por intuición.
+
+### Incumplimientos y puntos pendientes
+
+- **Adecuación infantil no alcanzada:** rostro serio/solemne, cejas tensas y mirada contenida. El diseño no alcanza la accesibilidad y expresividad del Zeus aprobado.
+- **Volúmenes todavía duros:** la simplificación produjo planos angulosos marcados en cara y miembros; no equivale al modelado amable buscado. Simplificar no significa facetar la anatomía.
+- **Escala fuera de lo previsto:** la figura ocupa aproximadamente 87% de la altura total, estimación visual por límites de cabello y pies, frente al 70–80% pedido. La relación 3:4 sí cumple; no confundir ambos controles.
+- **Sujetos secundarios no previstos:** los barcos contienen pequeñas siluetas humanas. La flota estaba autorizada, pero el inventario y el prompt pedían una escena con un solo hombre; la tripulación no había sido incluida ni resuelta explícitamente.
+- **Contorno superior a revisar:** el cabello alrededor de la nuca y la barba tienen mayor volumen que el contorno corto/controlado previsto. No considerar la fidelidad de pelo/barba completamente verificada sólo porque son rubios.
+- **Decisión sobre calzado:** se omitió el accesorio no trazado y el generador mostró pies descalzos. Esto fue explícito en el preflight de esta prueba; no queda establecido como canon ni como solución obligatoria para los 85 personajes.
+
+### Gate posterior de esta ejecución
+
+| Control | Resultado | Evidencia |
+|---|---|---|
+| 1. Formato 3:4 | SÍ | Dimensiones leídas: 1086 × 1448 |
+| 2. Escena y cantidad de sujetos | NO | Un Agamenón, pero siluetas humanas adicionales en barcos |
+| 3. Sin texto/paneles/interfaz | SÍ | No se observan |
+| 4. Anatomía, rostro, cabello y silueta | NO VERIFICADO | Madurez/robustez/rubio presentes; contorno de pelo y barba requiere resolver su desviación |
+| 5. Pose y dirección | SÍ | Cetro bajo, mano lateral y mirada hacia el sector de la flota |
+| 6. Identificador | SÍ | Cetro vertical sin símbolo, flota reconocible |
+| 7. Inventario completo | NO | Tripulación añadida; ropa sin los adornos anteriores |
+| 8. Escenario | SÍ | Orilla y flota subordinadas, sin templo ni pedestal |
+| 9. Cuerpo, escala y margen | NO | Cuerpo completo, pero figura demasiado grande |
+| 10. Anti-clonación | SÍ | Cetro bajo/gesto lateral frente a Zeus; eje estable frente a Jasón; sin guardia de Héctor ni trabajo de Hefesto |
+| 11. Adecuación infantil | NO | Expresión solemne y planos anatómicos duros |
+| 12. Seguridad emocional | SÍ | Sin violencia, terror ni amenaza directa |
+| 13. Recorte | SÍ | Copia circular inspeccionada con cara y cabeza de cetro completas |
+
+### Hipótesis y cambio exigido antes de otro intento
+
+- **Hipótesis:** pedir que mire a los barcos mejoró la dirección, pero pudo reforzar una expresión distante. La relación mirada/acción debe conservar accesibilidad emocional sin volver a la palma de bienvenida.
+- **Hipótesis:** “planos de color simples” fue interpretado como planos facetados; la próxima especificación debe distinguir simplificación de dureza angular.
+- Ajustar escala y dejar explícita la resolución de ocupantes de la flota. No asumir que autorizar vehículos autoriza automáticamente sujetos secundarios.
+- Un nuevo intento necesita una corrección material del método o del diseño de expresión; no repetir el mismo prompt cambiando adjetivos ni relajar gates para conseguir un SÍ.
+- No se generó una segunda variante dentro de esta ejecución.
