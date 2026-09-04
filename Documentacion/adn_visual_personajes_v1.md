@@ -521,12 +521,12 @@ Los campos de criaturas, híbridos, duplas y grupos se adaptan a su anatomía re
 - **Familia de encuadre:** figura humana.
 - **Densidad visual:** alta.
 - **Edad aparente y contextura:** adulto maduro; robusto.
-- **Geometría general de rostro y cabello:** rostro rectangular ancho, barba corta muy cuidada y cabello corto.
+- **Geometría general de rostro y cabello:** rostro rectangular ancho, barba corta muy cuidada y cabello corto rubio. **Criterio de fuente:** [Pseudo-Dares, *De excidio Troiae* 13](https://www.theoi.com/Text/DaresPhrygius.html) aporta la única descripción cromática explícita localizada (rubio); se usa como decisión visual documentada, no como dato homérico, porque el texto conservado es una construcción tardoantigua, probablemente del siglo VI d. C.
 - **Dirección corporal:** frontal tres cuartos.
 - **Acción y pose:** cetro bajo y mano extendida hacia una flota; liderazgo antes que combate.
 - **Composición y espacio negativo:** flota en segundo plano y aire hacia la mano que dirige; evitar que el cetro quede al pecho como plantilla.
 - **Identificador principal:** cetro y gran flota como sistema de mando.
-- **Pistas secundarias autorizadas:** contexto de flota y capa de comandante.
+- **Pistas secundarias autorizadas:** contexto de flota y capa de comandante sobre quitón corto y coraza con lambrequines. **Criterio de fuente:** la [*Iliada* 10.131](https://www.homermultitext.org/iliad10/pages/urn_cts_greekLit_tlg0012_tlg001_10_101_10_150.html) viste a Agamenón con quitón; el [skyphos ático de ca. 480 a. C. catalogado por el Louvre](https://collections.louvre.fr/en/ark:/53355/cl010270038) lo identifica con quitón, coraza con lambrequines e himatión. Se toma únicamente esa base de vestimenta, sin trasladar las armas ni los demás accesorios de la pieza.
 - **Avatar circular:** rostro + cabeza del cetro.
 - **Riesgos de parecido:** Jasón y Zeus. Diferenciar por rigidez regia, masa corporal y ausencia de magia.
 
