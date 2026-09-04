@@ -1,0 +1,34 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html",             "x": 0,    "y": 0,    "w": 390, "h": 844, "title": "Frente · con ilustración" },
+    { "file": "DorsoA.dc.html",           "x": 470,  "y": 0,    "w": 390, "h": 844, "title": "Opción A · dorso completo" },
+    { "file": "DorsoB.dc.html",           "x": 940,  "y": 0,    "w": 390, "h": 844, "title": "Opción B · dorso ficha" },
+    { "file": "CapitulosB.dc.html",       "x": 1410, "y": 0,    "w": 390, "h": 844, "title": "Opción B · capa de capítulos" },
+    { "file": "SinImagenGriega.dc.html",  "x": 0,    "y": 1010, "w": 390, "h": 844, "title": "Sin imagen · griega" },
+    { "file": "SinImagenNordica.dc.html", "x": 470,  "y": 1010, "w": 390, "h": 844, "title": "Sin imagen · nórdica" },
+    { "file": "SinImagenRomana.dc.html",  "x": 940,  "y": 1010, "w": 390, "h": 844, "title": "Sin imagen · romana" }
+  ],
+  "annotations": [
+    {
+      "id": "nota-frente",
+      "x": 0, "y": -230, "w": 390,
+      "text": "FRENTE\nLa ilustración entra a 3:4 y ocupa el tope de la carta, no a sangre completa. A sangre en una pantalla de teléfono hay que recortar más de la mitad de la imagen y se pierden los pies apoyados y la figura entera que fija la referencia aprobada de Zeus."
+    },
+    {
+      "id": "nota-opcion-a",
+      "x": 470, "y": -230, "w": 390,
+      "text": "OPCIÓN A · todo en el dorso\nUn solo scroll con ficha y capítulos juntos. Zeus completo ya se corta dentro del capítulo 1 y quedan 4 abajo.\nA favor: nada escondido, un solo lugar.\nEn contra: releer un capítulo obliga a pasar la ficha entera cada vez."
+    },
+    {
+      "id": "nota-opcion-b",
+      "x": 940, "y": -230, "w": 860,
+      "text": "OPCIÓN B · dorso corto y capítulos aparte\nEl dorso entra completo en una pantalla, sin scroll. Los capítulos pasan a una capa propia con índice: el primero abierto y el resto plegado.\nA favor: releer un capítulo es un tap, y la ficha se lee de un vistazo.\nEn contra: la historia queda a dos taps del frente en vez de uno."
+    },
+    {
+      "id": "nota-sin-imagen",
+      "x": 0, "y": 880, "w": 1330,
+      "text": "CARTAS SIN IMAGEN · el nombre ocupa el lugar de la ilustración\nTres diferencias por mitología: ornamento (greca griega / entrelazado nórdico / laurel romano), acento (oro #ffd867 / hielo #d6ecff / terracota #e8a884) y la textura de fondo que ya existe en estilos.css. El color base de cada carta sigue saliendo de su colorCarta en personajes.json.\nEl acento terracota de la romana es el único valor que no estaba en el repo: no había acento definido para esa mitología."
+    }
+  ],
+  "launch": { "view": "canvas" }
+}
