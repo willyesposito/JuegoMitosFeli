@@ -985,3 +985,61 @@ Para cada uno de los 85 personajes:
 12. Revisión colectiva cada 8–12 personajes.
 
 **Resultado esperado final: 85 identidades visuales distintas, 85 imágenes completas y 85 avatares circulares derivados, todos coherentes dentro del mismo mundo visual.**
+
+---
+
+## 15. Aplicación obligatoria al ADN visual individual de los 85 personajes
+
+El siguiente bloque lógico de producción es **aplicar esta guía al ADN visual individual de cada uno de los 85 personajes antes de generar imágenes**.
+
+La biblia operativa vive en:
+
+`Documentacion/adn_visual_personajes_v1.md`
+
+Ese documento debe cerrar, personaje por personaje:
+
+- firma de silueta;
+- familia de encuadre;
+- densidad visual;
+- edad aparente y contextura;
+- geometría general de rostro y cabello cuando corresponda;
+- dirección corporal;
+- acción y pose;
+- composición y espacio negativo;
+- identificador principal;
+- pistas secundarias autorizadas;
+- requisitos concretos del avatar circular;
+- principales riesgos de parecido con otros integrantes del roster.
+
+### Regla de bloqueo de producción
+
+**No se genera ninguna ilustración de un personaje cuyo ADN individual no esté definido y revisado.**
+
+Antes de producir una imagen deben pasar cuatro controles explícitos:
+
+1. **Silueta:** la figura debe conservar identidad al reducirla conceptualmente a negro puro.
+2. **Composición:** personaje, identificador y contexto deben mantener la jerarquía definida en esta guía sin repetir una plantilla automática.
+3. **Pose:** la combinación de dirección corporal + acción debe diferenciar al personaje de sus principales riesgos de parecido.
+4. **Avatar circular:** el recorte debe estar resuelto desde la composición maestra y conservar rostro o foco principal + al menos una pista visual propia.
+
+### Control global de los 85
+
+El ADN individual no se valida de forma aislada.
+
+Antes de generar la primera tanda se debe revisar el conjunto completo para detectar colisiones en:
+
+- siluetas;
+- caras;
+- edades;
+- cuerpos;
+- peinados;
+- poses;
+- direcciones corporales;
+- ubicación de identificadores;
+- densidad visual;
+- familia de encuadre;
+- funcionamiento del avatar.
+
+Después, la producción continúa en tandas mezcladas de **8–12 personajes**, con una revisión colectiva entre tandas.
+
+La guía maestra define el idioma visual común. `adn_visual_personajes_v1.md` define **quién es visualmente cada personaje dentro de ese idioma**. Ninguno de los dos documentos reemplaza al otro.
