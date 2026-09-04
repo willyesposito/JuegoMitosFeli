@@ -6,6 +6,17 @@ description: Genera una única ilustración de personaje de Mundo de Mitos estri
 
 # Skill — Nuevo personaje Mitos
 
+## 0. Primer paso operativo obligatorio — historial de fallas
+
+Antes de extraer fichas, diseñar, redactar un prompt, preparar el preflight o llamar al generador, **leer completo** [Documentacion/memoria_fallas_generacion_imagenes.md](../../Documentacion/memoria_fallas_generacion_imagenes.md) desde la rama solicitada. Esta lectura también es obligatoria antes de modificar esta skill.
+
+- Si el archivo no está disponible o la salida se trunca, completar la lectura por partes. Si no es posible, **frenar**.
+- Extraer las fallas aplicables al personaje y convertirlas en controles verificables del intento actual.
+- No usar imágenes fallidas como canon o referencia de estilo.
+- No generar para comprobar si una duda se resuelve sola.
+- Las instrucciones explícitas de Willy delimitan escritura, cantidad de imágenes y publicación. Esta skill no amplía esos permisos.
+
+
 ## Invocación
 
 Activar esta skill cuando Willy diga una variante equivalente a:
@@ -65,7 +76,9 @@ Antes de redactar el prompt de imagen, leer desde la rama vigente del repo, como
 
 Si existe una referencia visual aprobada específica del personaje objetivo, leerla también y darle precedencia en decisiones puramente visuales de ese personaje.
 
-No afirmar que se leyó un archivo si no se pudo abrir realmente.
+No afirmar que se leyó un archivo si no se pudo abrir realmente. La descarga y una salida truncada no equivalen a lectura: leer las reglas generales completas y la ficha completa del objetivo y de cada personaje de riesgo. Recuperar por partes cualquier tramo necesario omitido. En el preflight declarar qué fuentes y secciones se leyeron y la rama utilizada.
+
+**Referencia real obligatoria:** abrir e inspeccionar visualmente la imagen aprobada de Zeus antes de redactar el preflight. Leer su Markdown no alcanza. Si existe una referencia aprobada específica del objetivo, inspeccionarla también. Si la imagen necesaria no puede abrirse, frenar y pedir su ubicación o adjunto. No inventar una ruta ni suponer que un adjunto de otro chat es accesible.
 
 ### Precedencia
 
@@ -145,7 +158,7 @@ El prompt de imagen sólo puede contener elementos derivados de:
 
 Todo objeto, animal, símbolo, arma, tatuaje, tocado, color de cabello, efecto mágico, edificio, vehículo, criatura o decoración debe poder rastrearse a una fuente del repo.
 
-Si no puede rastrearse, se excluye.
+Si no puede rastrearse, se excluye. Esta trazabilidad también alcanza a broches, cierres visibles, remaches ornamentales, insignias, joyas, calzado y dibujos del objeto principal. Un detalle funcional sin contenido identificatorio puede simplificarse; no inventar motivos ni transformar esa simplificación en nuevo canon. Mostrar una lista objeto/detalle → fuente; si falta una decisión material que no pueda omitirse, marcar `[FALTA: ...]` y frenar.
 
 ---
 
@@ -223,7 +236,7 @@ No reutilizar una pose estructural de una referencia aprobada o de un personaje 
 
 ### Prueba de avatar
 
-El tercio superior debe conservar rostro/foco principal + una pista identificatoria sin depender del fondo completo.
+El tercio superior debe conservar rostro/foco principal + una pista identificatoria sin depender del fondo completo. En el prompt esto se expresa únicamente mediante posiciones y espacio disponible. No pedir un avatar, retrato secundario, círculo, medallón, inset, panel o interfaz como contenido visible. Las duplas/grupos oficiales conservan su número de integrantes; nunca duplicar al mismo sujeto para mostrar una vista secundaria.
 
 ---
 
@@ -267,11 +280,25 @@ De la guía maestra y de las referencias aprobadas puede heredarse:
 
 No convertir estas propiedades en una composición única.
 
+### Adecuación infantil positiva, independiente de seguridad
+
+Comparar con la imagen real aprobada y exigir por separado:
+
+- rostro expresivo y accesible, con caricatura moderada compatible con la edad del personaje;
+- proporciones ilustradas y cabeza levemente agrandada cuando corresponda a su anatomía;
+- formas limpias y volumen simplificado, sin anatomía cincelada ni poros o texturas fotográficas;
+- materiales distinguibles mediante color, luz y grandes formas; el microdetalle no debe dominar;
+- personalidad y aventura sin solemnidad uniforme, amenaza ni militarización adulta.
+
+Una sonrisa y ausencia de violencia no prueban este gate. No imponer sonrisa a personajes cuya ficha exige otra emoción; la lectura infantil se resuelve en el diseño completo. “Adulto maduro”, “robusto” o un valor alto de rigidez no autorizan realismo adulto. La forma rectangular del rostro no exige dureza expresiva.
+
+Ordenar el prompt: acabado infantil → identidad → acción/silueta → inventario cerrado → encuadre/contexto → exclusiones breves. Evitar repetir descripciones anatómicas o materiales que ahoguen el estilo. No usar “stylized realism”, “cinematic realism” ni “proud command” como instrucciones positivas.
+
 ---
 
 ## 9. Preflight obligatorio antes de llamar al generador
 
-Mostrar al usuario un bloque breve de control, sin pedir aprobación si todo está resuelto:
+Mostrar al usuario el preflight completo, sin pedir aprobación adicional si todo está resuelto:
 
 **Personaje:** <nombre>
 
@@ -283,7 +310,7 @@ Mostrar al usuario un bloque breve de control, sin pedir aprobación si todo est
 
 **Escenario:** una frase que explique por qué ese fondo surge del repo.
 
-Después ejecutar automáticamente la generación.
+Añadir fuentes/alcance de lectura, observaciones de la referencia real, ficha de producción, inventario trazable y al menos tres comparaciones con separadores de silueta, pose y composición. Mostrar todos los gates, cada uno con evidencia concreta. Sólo entonces generar si todos pasan.
 
 ### Gate de producción
 
@@ -297,8 +324,15 @@ Sólo generar si todas son `SÍ`:
 6. ¿El avatar puede conservar identidad?
 7. ¿No se está usando otra imagen de personaje como base de transformación?
 8. ¿No se agregó cultura pop ni iconografía externa?
+9. ¿Se leyó completo el historial de fallas y se tradujeron las aplicables en controles de este intento?
+10. ¿Se abrió visualmente la referencia real necesaria y se describió su acabado observado?
+11. ¿El prompt exige adecuación infantil positiva en rostro, proporciones, volúmenes y materiales?
+12. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
+13. ¿Incluye formato 3:4, encuadre completo y escala de la familia, margen de seguridad y cero texto?
+14. ¿Los detalles pequeños también tienen trazabilidad o se omitieron?
+15. ¿No hay faltantes materiales ni contradicciones que cambien la imagen?
 
-Si alguna respuesta es `NO`, **no generar**. Explicar el bloqueo exacto.
+Un SÍ del preflight confirma la preparación, nunca el resultado futuro. Si alguna respuesta es `NO` o `NO VERIFICADO`, **no generar**. Explicar el bloqueo exacto.
 
 ---
 
@@ -312,7 +346,7 @@ Una vez superado el preflight:
 - respetar cuerpo entero cuando la familia de encuadre lo requiera;
 - priorizar personaje → identificador → contexto;
 - mantener suficiente espacio negativo;
-- conservar la zona alta útil para avatar;
+- conservar la zona alta útil para recorte, sólo como restricción invisible de encuadre;
 - no generar variantes ni paneles comparativos;
 - no mezclar dos personajes en una misma imagen salvo que el personaje oficial sea dupla o grupo.
 
@@ -320,7 +354,35 @@ Nunca generar una segunda imagen automáticamente para “corregir” una primer
 
 ---
 
-## 11. Criterio de fallo
+## 11. Gate posterior obligatorio y criterio de fallo
+
+Después de generar, abrir visualmente la imagen completa y compararla con la referencia real. Revisar también rostro, manos, identificador, cierres/adornos, pies y bordes a suficiente tamaño. No declarar éxito sólo porque se ejecutó el generador.
+
+Mostrar esta tabla con `SÍ`, `NO` o `NO VERIFICADO` y evidencia visible por fila:
+
+1. Formato 3:4 verificado por dimensiones reales.
+2. Una escena y cantidad exacta de sujetos del personaje oficial; sin duplicado ni vista secundaria.
+3. Cero texto/pseudo-texto, paneles, marcos o interfaz no autorizados.
+4. Edad, anatomía, rostro, cabello y firma de silueta fieles.
+5. Pose, dirección corporal y relación de la mano/acción con su destino verificables.
+6. Identificador correcto, legible y sin iconografía inventada.
+7. Vestimenta, objetos, accesorios y detalles pequeños dentro de la lista positiva.
+8. Escenario autorizado y subordinado.
+9. Cuerpo completo cuando corresponda, escala de encuadre y margen de seguridad.
+10. Anti-clonación: comparar por separado rostro/cuerpo, silueta, pose y composición contra los riesgos.
+11. Adecuación infantil positiva: comparar por separado rostro, proporciones, volúmenes y materiales con el acabado aprobado.
+12. Seguridad emocional: sin amenaza, violencia ni contenido adulto.
+13. Recorte de identidad comprobado: rostro/foco y pista propia permanecen completos y legibles.
+
+Para el último control, probar un recorte de inspección en copia mediante una herramienta disponible, sin modificar la imagen ni generar otro activo. No presentar esa copia como ilustración adicional ni insertarla en la imagen. Si no se puede comprobar el recorte, declarar `NO VERIFICADO`, no SÍ por intuición.
+
+**Basta un NO o NO VERIFICADO para detener la ejecución.** Un fallo visible determina `FALLIDO`; si sólo faltan comprobaciones, usar `NO VALIDADO`. No retocar, regenerar ni reinterpretar el canon para salvar el resultado. Sólo cuando todos los controles sean SÍ se puede decir “pasa la revisión”; la aprobación de Willy no se presume.
+
+### Registro al fallar
+
+Agregar una entrada al historial siguiendo su plantilla, preservando las anteriores, cuando la escritura esté autorizada. Registrar también errores de evaluación y falsos SÍ. Si está prohibido editar el repo, mostrar la entrada propuesta sin escribirla. Nunca afirmar que se guardó sin verificar la escritura. Una nueva instrucción para probar de nuevo habilita una única generación adicional, después de releer el historial y resolver los gates.
+
+### Incumplimientos que invalidan la imagen
 
 Una imagen se considera fallida si contiene cualquiera de estos problemas:
 
