@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="theme-color" content="#241c4d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(circle at 50%% 12%%, #2c2260 0%%, #191142 58%%, #120d33 100%%) fixed;
+      background-color: #191142;
+      color: #fdfbff;
+      font-family: ui-rounded, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #ffd867; } a:hover { color: #ffe9a8; }
+    button { font-family: inherit; cursor: pointer; }
+    img { display: block; max-width: 100%%; }
+    @keyframes holo-mov { 0%% { background-position: 0%% 50%%; } 100%% { background-position: 100%% 50%%; } }
+  </style>
+</helmet>
+
+<div style="width: 390px; height: 844px; display: flex; flex-direction: column; background: #120d33;">
+
+  <div style="flex: none; display: flex; align-items: center; justify-content: space-between; padding: 22px 16px 0;">
+    <span style="font-family: 'Cinzel', serif; font-weight: 800; font-size: 1.05rem; letter-spacing: 1px; color: rgba(255,236,170,.9);">ZEUS</span>
+    <button aria-label="Cerrar la ilustración" style="display: grid; place-items: center; width: 44px; height: 44px; border: none; border-radius: 999px; background: rgba(255,255,255,.12); color: #fdfbff;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+    </button>
+  </div>
+
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 0;">
+    <i style="display: block; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,216,103,.6), transparent);"></i>
+    <img src="zeus.jpg" alt="Zeus, el rey del Olimpo" style="width: 390px; height: 520px; object-fit: cover; object-position: center;">
+    <i style="display: block; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,216,103,.6), transparent);"></i>
+  </div>
+
+  <div style="flex: none; text-align: center; padding: 0 24px 30px;">
+    <p style="margin: 0 0 4px; font-style: italic; color: rgba(255,255,255,.92); font-size: 1rem;">El rey del Olimpo</p>
+    <span style="display: flex; align-items: center; gap: 6px; justify-content: center; width: 100%; margin-bottom: 18px;">
+      <i style="flex: 1; max-width: 40px; height: 1px; background: rgba(255,216,103,.45);"></i>
+      <span style="font-size: .7rem; font-weight: 700; color: rgba(255,236,170,.9); letter-spacing: 1px;">GRIEGA</span>
+      <i style="flex: 1; max-width: 40px; height: 1px; background: rgba(255,216,103,.45);"></i>
+    </span>
+    <span style="font-size: .85rem; color: rgba(253,251,255,.55);">Tocá en cualquier lado para volver a la carta</span>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
