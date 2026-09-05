@@ -21,7 +21,7 @@
 
 | Módulo | Fuente | Contenido | En el hub |
 |---|---|---|---|
-| Colección | — | completo | sí |
+| Colección | — | completo, carta v2 de tres caras | sí |
 | Oráculo (fácil + difícil) | `descubrimiento` | completo | sí |
 | El Cielo de los Mitos | `cielo:` | 10 constelaciones | sí |
 | Vínculos entre personajes | `vinculo:` | 25 de ~35 | sin UI, es automático |
@@ -45,6 +45,12 @@ Presupuesto vigente: 85 personajes (13 dorados, 37 plateados, 35 normales), 206 
 ## 4. Ideas abiertas (esperando decisión de Willy)
 
 Nada de acá se construye sin instrucción explícita.
+
+**Abiertas por el formato de carta v2 (septiembre 2026):**
+
+* **Miniaturas de imagen en la grilla.** Hoy la grilla sigue con los SVG de `iconos.js`, por decisión de Willy. Cuando haya varias ilustraciones, evaluar si la miniatura pasa a ser un recorte de la imagen.
+* **Peso del lote de ilustraciones.** Zeus a 780 px de ancho pesa 143 KB. Por 85 personajes son ~12 MB, contra menos de 1 MB que pesa hoy el juego entero. Hay que decidir si las imágenes siguen en la precarga de `sw.js` (que hoy las baja todas al instalar) o si pasan a caché bajo demanda. Con una sola imagen no molesta; con veinte sí.
+* **El ícono evolutivo perdió su lugar grande.** El frente de la carta ya no muestra el medallón SVG de 150 px con su estado "antes de leer / después de leer". Los íconos siguen vivos en la grilla, a 72 px, donde ese detalle casi no se ve. Si se quiere conservar la revelación, hay que darle un lugar nuevo.
 
 **Decididas, esperando su ola:**
 

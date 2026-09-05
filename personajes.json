@@ -1368,6 +1368,7 @@
     },
     "colorCarta": "#3B5E9E",
     "icono": "rayo",
+    "imagen": "imagenes/zeus.jpg",
     "tier": "dorado",
     "capitulos": [
       {
