@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="theme-color" content="#241c4d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(circle at 50% 12%, #2c2260 0%, #191142 58%, #120d33 100%) fixed;
+      background-color: #191142;
+      color: #fdfbff;
+      font-family: ui-rounded, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #ffd867; } a:hover { color: #ffe9a8; }
+    button { font-family: inherit; cursor: pointer; }
+    @keyframes holo-mov { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+  </style>
+</helmet>
+
+<div style="width: 390px; height: 844px; padding: 16px; box-sizing: border-box; display: flex;">
+
+  <div style="position: relative; flex: 1; display: flex; flex-direction: column; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,.5); border: 3px solid transparent; background-origin: border-box; background-clip: padding-box, border-box; background-image: linear-gradient(165deg, #6b5015 0%, #4a3610 48%, #33250b 100%), linear-gradient(130deg, #f8e08e, #c9962e 30%, #ffefb0 50%, #a87b1f 72%, #f2cf6b);">
+
+    <div style="position: absolute; inset: 0; z-index: 0; pointer-events: none; border-radius: inherit; background-size: 240% 240%; background-image: linear-gradient(115deg, rgba(255,110,196,.30) 10%, rgba(96,225,255,.30) 34%, rgba(255,230,120,.34) 56%, rgba(150,255,180,.26) 80%); animation: holo-mov 7s ease-in-out infinite alternate;"></div>
+
+    <div style="position: relative; z-index: 2; flex: none; padding: 16px 18px 0;">
+      <button style="border: none; background: rgba(0,0,0,.28); color: #fff; font-size: 1.05rem; font-weight: 800; border-radius: 999px; padding: 11px 22px; min-height: 44px;">← Volver</button>
+    </div>
+
+    <button style="position: relative; z-index: 2; flex: none; height: 400px; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; padding: 0 22px; border: none; background: transparent; color: inherit;">
+      <svg width="260" height="26" viewBox="0 0 240 24" fill="none" stroke="#ffd867" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M2,22 V2 H22 V18 H8 V8 H16 V14 M26,22 V2 H46 V18 H32 V8 H40 V14 M50,22 V2 H70 V18 H56 V8 H64 V14 M74,22 V2 H94 V18 H80 V8 H88 V14 M98,22 V2 H118 V18 H104 V8 H112 V14 M122,22 V2 H142 V18 H128 V8 H136 V14 M146,22 V2 H166 V18 H152 V8 H160 V14 M170,22 V2 H190 V18 H176 V8 H184 V14 M194,22 V2 H214 V18 H200 V8 H208 V14 M218,22 V2 H238 V18 H224 V8 H232 V14"></path></svg>
+      <h2 style="margin: 0; font-family: 'Cinzel', serif; font-weight: 800; font-size: 3rem; line-height: 1.06; letter-spacing: 1.5px; text-align: center; text-shadow: 0 3px 10px rgba(0,0,0,.45);">Zeus</h2>
+      <span style="display: flex; align-items: center; gap: 6px; justify-content: center; width: 100%;">
+        <i style="flex: 1; max-width: 40px; height: 1px; background: rgba(255,216,103,.45);"></i>
+        <span style="font-size: .7rem; font-weight: 700; color: rgba(255,236,170,.9); letter-spacing: 1px;">GRIEGA</span>
+        <i style="flex: 1; max-width: 40px; height: 1px; background: rgba(255,216,103,.45);"></i>
+      </span>
+      <svg style="transform: scaleY(-1);" width="260" height="26" viewBox="0 0 240 24" fill="none" stroke="#ffd867" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M2,22 V2 H22 V18 H8 V8 H16 V14 M26,22 V2 H46 V18 H32 V8 H40 V14 M50,22 V2 H70 V18 H56 V8 H64 V14 M74,22 V2 H94 V18 H80 V8 H88 V14 M98,22 V2 H118 V18 H104 V8 H112 V14 M122,22 V2 H142 V18 H128 V8 H136 V14 M146,22 V2 H166 V18 H152 V8 H160 V14 M170,22 V2 H190 V18 H176 V8 H184 V14 M194,22 V2 H214 V18 H200 V8 H208 V14 M218,22 V2 H238 V18 H224 V8 H232 V14"></path></svg>
+      <span style="display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; min-height: 44px; padding: 11px 18px; border-radius: 999px; border: 1.5px solid rgba(255,216,103,.5); background: rgba(255,216,103,.12); color: #ffd867; font-size: .9rem; font-weight: 800;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7.5 7.5"></path><path d="M3 21l7.5-7.5"></path>
+        </svg>
+        Tocá para ver la ilustración
+      </span>
+    </button>
+
+    <div style="position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 18px 22px;">
+      <p style="margin: 0 0 10px; font-style: italic; color: rgba(255,255,255,.92); font-size: 1rem;">El rey del Olimpo</p>
+      <div style="display: flex; gap: 8px; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <span style="font-size: .8rem; font-weight: 700; background: rgba(0,0,0,.25); border-radius: 999px; padding: 4px 14px;">🏛️ Griega</span>
+        <span style="font-size: .72rem; font-weight: 800; letter-spacing: .2px; border-radius: 999px; padding: 3px 10px; background: linear-gradient(120deg, rgba(255,216,103,.95), rgba(255,236,170,.9)); color: #4a3200;">DORADO</span>
+      </div>
+      <span style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 15px; border-radius: 999px; font-weight: 800; font-size: .78rem; letter-spacing: .3px; margin: 12px 0 2px; background: linear-gradient(120deg, rgba(255,255,255,.92), rgba(224,216,255,.85)); color: #2b2350; box-shadow: 0 0 0 3px rgba(255,255,255,.18); transform: rotate(-6deg);">✦ Historia completa</span>
+
+      <div style="flex: 1;"></div>
+
+      <div style="width: 100%; text-align: left; margin-bottom: 14px;">
+        <div style="display: flex; justify-content: space-between; font-weight: 800; font-size: .92rem; margin-bottom: 8px; color: rgba(253,251,255,.75);">
+          <span>📖 Su historia</span><span>5 de 5 capítulos</span>
+        </div>
+        <div style="display: flex; gap: 4px; height: 8px;"><i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i><i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i><i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i><i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i><i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i></div>
+      </div>
+
+      <button style="width: 100%; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1.5px solid rgba(255,216,103,.5); background: rgba(255,216,103,.12); color: #ffd867; border-radius: 999px; padding: 14px 20px; font-size: 1rem; font-weight: 800;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"></path><path d="M21 3v5h-5"></path>
+          <path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"></path><path d="M3 21v-5h5"></path>
+        </svg>
+        Dar vuelta la carta
+      </button>
+    </div>
+
+    <i style="position: absolute; top: 12px; left: 12px; width: 30px; height: 30px; border-top: 3px solid rgba(255,216,103,.65); border-left: 3px solid rgba(255,216,103,.65); border-top-left-radius: 8px; pointer-events: none; z-index: 4;"></i>
+    <i style="position: absolute; top: 12px; right: 12px; width: 30px; height: 30px; border-top: 3px solid rgba(255,216,103,.65); border-right: 3px solid rgba(255,216,103,.65); border-top-right-radius: 8px; pointer-events: none; z-index: 4;"></i>
+    <i style="position: absolute; bottom: 12px; left: 12px; width: 30px; height: 30px; border-bottom: 3px solid rgba(255,216,103,.65); border-left: 3px solid rgba(255,216,103,.65); border-bottom-left-radius: 8px; pointer-events: none; z-index: 4;"></i>
+    <i style="position: absolute; bottom: 12px; right: 12px; width: 30px; height: 30px; border-bottom: 3px solid rgba(255,216,103,.65); border-right: 3px solid rgba(255,216,103,.65); border-bottom-right-radius: 8px; pointer-events: none; z-index: 4;"></i>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

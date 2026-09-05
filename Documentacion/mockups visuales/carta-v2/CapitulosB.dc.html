@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="theme-color" content="#241c4d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(circle at 50% 12%, #2c2260 0%, #191142 58%, #120d33 100%) fixed;
+      background-color: #191142;
+      color: #fdfbff;
+      font-family: ui-rounded, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #ffd867; } a:hover { color: #ffe9a8; }
+    button { font-family: inherit; cursor: pointer; }
+    @keyframes holo-mov { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+  </style>
+</helmet>
+
+<div style="width: 390px; height: 844px; padding: 16px; box-sizing: border-box; display: flex;">
+
+  <div style="position: relative; flex: 1; display: flex; flex-direction: column; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,.5); border: 3px solid transparent; background-origin: border-box; background-clip: padding-box, border-box; background-image: linear-gradient(165deg, #6b5015 0%, #4a3610 48%, #33250b 100%), linear-gradient(130deg, #f8e08e, #c9962e 30%, #ffefb0 50%, #a87b1f 72%, #f2cf6b);">
+
+    <div style="position: absolute; inset: 0; z-index: 0; pointer-events: none; border-radius: inherit; background-size: 240% 240%; background-image: linear-gradient(115deg, rgba(255,110,196,.30) 10%, rgba(96,225,255,.30) 34%, rgba(255,230,120,.34) 56%, rgba(150,255,180,.26) 80%); animation: holo-mov 7s ease-in-out infinite alternate;"></div>
+
+    <div style="position: relative; z-index: 2; flex: none; padding: 16px 18px 12px; background: linear-gradient(180deg, rgba(51,37,11,.95), rgba(51,37,11,.6));">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+        <button style="border: none; background: rgba(0,0,0,.28); color: #fff; font-size: 1.05rem; font-weight: 800; border-radius: 999px; padding: 11px 20px; min-height: 44px;">←</button>
+        <div style="text-align: left; min-width: 0;">
+          <div style="font-family: 'Cinzel', serif; font-weight: 800; font-size: 1.1rem; letter-spacing: .3px;">Zeus</div>
+          <div style="font-size: .82rem; color: rgba(253,251,255,.7); font-weight: 700;">Su historia · 5 de 5 capítulos</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 4px; height: 8px;">
+        <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+        <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+        <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+        <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+        <i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i>
+      </div>
+    </div>
+
+    <div style="position: relative; z-index: 2; flex: 1; min-height: 0; overflow: hidden; padding: 12px 18px 0; text-align: left;">
+
+      <div style="border-radius: 18px; padding: 14px 16px; margin-bottom: 10px; line-height: 1.55; font-size: .98rem; background: rgba(0,0,0,.22);">
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 6px;">
+          <h3 style="margin: 0; font-size: 1.02rem;">📜 El rey del Olimpo</h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(253,251,255,.6)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 3px;" aria-hidden="true"><path d="m18 15-6-6-6 6"></path></svg>
+        </div>
+        <p style="margin: 0;">Zeus lideró a los dioses del Olimpo en la gran guerra contra los titanes, y ganaron. Cuando repartieron el mundo con sus hermanos, a él le tocó gobernar el cielo. Desde ahí lanza el rayo, su arma más temida, y pone orden cuando dioses o mortales se pelean demasiado. Es el rey del Olimpo, pero no gobierna solo: escucha consejos, se enoja, y a veces también se equivoca.</p>
+        <div style="margin-top: 10px; padding: 12px 14px; border-radius: 14px; background: rgba(255,216,103,.16); border: 2px solid rgba(255,216,103,.55);">
+          <h4 style="margin: 0 0 4px; color: #ffd867; font-size: .95rem;">💡 ¿Por qué?</h4>
+          <p style="margin: 0;">Los griegos explicaban los truenos y los rayos como la voz y el arma de Zeus. El mito también mostraba que hasta el rey de los dioses necesita poner límites y mantener el orden entre tantas personalidades fuertes.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <button style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 56px; border: none; border-radius: 18px; padding: 15px 16px; background: rgba(0,0,0,.22); color: #fdfbff; text-align: left;">
+          <span style="font-size: 1rem; font-weight: 700;">📜 La boda del cielo</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(253,251,255,.6)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none;" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+        </button>
+        <button style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 56px; border: none; border-radius: 18px; padding: 15px 16px; background: rgba(0,0,0,.22); color: #fdfbff; text-align: left;">
+          <span style="font-size: 1rem; font-weight: 700;">📜 Visión Panorámica</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(253,251,255,.6)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none;" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+        </button>
+        <button style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 56px; border: none; border-radius: 18px; padding: 15px 16px; background: rgba(0,0,0,.22); color: #fdfbff; text-align: left;">
+          <span style="font-size: 1rem; font-weight: 700;">📜 La Prueba de la Xenia</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(253,251,255,.6)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none;" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+        </button>
+        <button style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 56px; border: none; border-radius: 18px; padding: 15px 16px; background: rgba(0,0,0,.22); color: #fdfbff; text-align: left;">
+          <span style="font-size: 1rem; font-weight: 700;">📜 El espejo del rey</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(253,251,255,.6)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none;" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <i style="position: absolute; top: 12px; left: 12px; width: 30px; height: 30px; border-top: 3px solid rgba(255,216,103,.65); border-left: 3px solid rgba(255,216,103,.65); border-top-left-radius: 8px; pointer-events: none; z-index: 4;"></i>
+    <i style="position: absolute; top: 12px; right: 12px; width: 30px; height: 30px; border-top: 3px solid rgba(255,216,103,.65); border-right: 3px solid rgba(255,216,103,.65); border-top-right-radius: 8px; pointer-events: none; z-index: 4;"></i>
+    <i style="position: absolute; bottom: 12px; left: 12px; width: 30px; height: 30px; border-bottom: 3px solid rgba(255,216,103,.65); border-left: 3px solid rgba(255,216,103,.65); border-bottom-left-radius: 8px; pointer-events: none; z-index: 4;"></i>
+    <i style="position: absolute; bottom: 12px; right: 12px; width: 30px; height: 30px; border-bottom: 3px solid rgba(255,216,103,.65); border-right: 3px solid rgba(255,216,103,.65); border-bottom-right-radius: 8px; pointer-events: none; z-index: 4;"></i>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

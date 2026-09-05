@@ -1,0 +1,47 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html",               "x": 0,    "y": 0,    "w": 390, "h": 844, "title": "Opción 1 · el nombre es el frente" },
+    { "file": "FrenteCarta34.dc.html",      "x": 470,  "y": 0,    "w": 390, "h": 844, "title": "Opción 2 · la carta toma la forma de la imagen" },
+    { "file": "FrenteImagenArriba.dc.html", "x": 940,  "y": 0,    "w": 390, "h": 844, "title": "Opción 3 · ilustración arriba" },
+    { "file": "Ilustracion.dc.html",        "x": 0,    "y": 1010, "w": 390, "h": 844, "title": "Ilustración a pantalla completa" },
+    { "file": "DorsoB.dc.html",             "x": 470,  "y": 1010, "w": 390, "h": 844, "title": "Dorso · ficha" },
+    { "file": "CapitulosB.dc.html",         "x": 940,  "y": 1010, "w": 390, "h": 844, "title": "Capítulos · índice" },
+    { "file": "SinImagenGriega.dc.html",    "x": 0,    "y": 2020, "w": 390, "h": 844, "title": "Sin imagen · griega" },
+    { "file": "SinImagenNordica.dc.html",   "x": 470,  "y": 2020, "w": 390, "h": 844, "title": "Sin imagen · nórdica" },
+    { "file": "SinImagenRomana.dc.html",    "x": 940,  "y": 2020, "w": 390, "h": 844, "title": "Sin imagen · romana" },
+    { "file": "DorsoA.dc.html",             "x": 0,    "y": 3030, "w": 390, "h": 844, "title": "Dorso A · descartado" }
+  ],
+  "annotations": [
+    {
+      "id": "nota-opcion-1",
+      "x": 0, "y": -250, "w": 390,
+      "text": "OPCIÓN 1 · el nombre es el frente (tu idea)\nLa carta con imagen se ve igual que una sin imagen. La ilustración se abre a pantalla completa con un tap, a 390 × 520: el tamaño más grande que entra en el teléfono.\nA favor: un solo formato de frente para las 85 cartas, y ver la ilustración es un premio.\nEn contra: la ilustración no se ve hasta que la va a buscar."
+    },
+    {
+      "id": "nota-opcion-2",
+      "x": 470, "y": -250, "w": 390,
+      "text": "OPCIÓN 2 · la carta toma la forma de la ilustración\nLa carta deja de ser alta como la pantalla y pasa a 3:4. La imagen la llena entera, sin recorte. Nombre y ficha quedan abajo, fuera de la carta.\nA favor: se parece a una carta de verdad y la imagen manda.\nEn contra: rompe el marco actual, que hoy ocupa la pantalla completa."
+    },
+    {
+      "id": "nota-opcion-3",
+      "x": 940, "y": -250, "w": 390,
+      "text": "OPCIÓN 3 · ilustración arriba, dentro de la carta\nLa carta sigue alta y la imagen ocupa el tope a 3:4. Es lo que viste ayer, ahora con la imagen real.\nA favor: no cambia nada del marco actual.\nEn contra: la ilustración queda a 352 px de ancho, la más chica de las tres."
+    },
+    {
+      "id": "nota-flujo",
+      "x": 0, "y": 890, "w": 1330,
+      "text": "EL RESTO DEL FLUJO\nLa ilustración a pantalla completa es el segundo paso de la opción 1: sale del tap sobre el nombre. El dorso y el índice de capítulos son la opción B que elegiste, sin cambios."
+    },
+    {
+      "id": "nota-sin-imagen",
+      "x": 0, "y": 1900, "w": 1330,
+      "text": "CARTAS SIN IMAGEN · el nombre ocupa el lugar de la ilustración\nTres diferencias por mitología: ornamento (greca griega / entrelazado nórdico / laurel romano), acento (oro #ffd867 / hielo #d6ecff / terracota #e8a884) y la textura de fondo que ya existe en estilos.css. El color base de cada carta sigue saliendo de su colorCarta en personajes.json.\nEl acento terracota de la romana es el único valor que no estaba en el repo."
+    },
+    {
+      "id": "nota-descartado",
+      "x": 0, "y": 2910, "w": 390,
+      "text": "DORSO A · afuera, salvo que digas lo contrario\nFicha y capítulos en un solo scroll. Queda acá por si querés volver a mirarlo."
+    }
+  ],
+  "launch": { "view": "canvas" }
+}

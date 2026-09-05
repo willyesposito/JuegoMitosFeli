@@ -618,19 +618,6 @@ button { font-family: inherit; cursor: pointer; }
   padding-right: 6px;
 }
 
-.detalle-ilustracion {
-  width: 150px;
-  height: 150px;
-  margin: 4px auto 10px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, .18);
-  display: grid;
-  place-items: center;
-  padding: 14px;
-}
-
-.detalle-ilustracion svg { width: 100%; height: 100%; }
-
 .detalle-contenido h2 {
   font-family: "Cinzel", serif;
   letter-spacing: .3px;
@@ -837,21 +824,25 @@ button { font-family: inherit; cursor: pointer; }
 .carta--plateada,
 .carta--dorada,
 .detalle-carta.tier-plateada,
-.detalle-carta.tier-dorada {
+.detalle-carta.tier-dorada,
+.frente-caja.tier-plateada,
+.frente-caja.tier-dorada {
   border: 3px solid transparent;
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
 
 .carta--plateada,
-.detalle-carta.tier-plateada {
+.detalle-carta.tier-plateada,
+.frente-caja.tier-plateada {
   background-image:
     linear-gradient(165deg, #4a5460 0%, #39424d 48%, #262d36 100%),
     linear-gradient(130deg, #e8ecf2, #9aa5b5 30%, #f4f7fb 50%, #77828f 72%, #d9dfe8);
 }
 
 .carta--dorada,
-.detalle-carta.tier-dorada {
+.detalle-carta.tier-dorada,
+.frente-caja.tier-dorada {
   background-image:
     linear-gradient(165deg, #6b5015 0%, #4a3610 48%, #33250b 100%),
     linear-gradient(130deg, #f8e08e, #c9962e 30%, #ffefb0 50%, #a87b1f 72%, #f2cf6b);
@@ -868,12 +859,14 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .carta--plateada .holo,
-.detalle-carta.tier-plateada .holo {
+.detalle-carta.tier-plateada .holo,
+.frente-caja.tier-plateada .holo {
   background-image: linear-gradient(115deg, rgba(180,200,255,.28) 10%, rgba(210,175,255,.26) 34%, rgba(255,255,255,.34) 56%, rgba(170,220,255,.26) 80%);
 }
 
 .carta--dorada .holo,
-.detalle-carta.tier-dorada .holo {
+.detalle-carta.tier-dorada .holo,
+.frente-caja.tier-dorada .holo {
   background-image: linear-gradient(115deg, rgba(255,110,196,.30) 10%, rgba(96,225,255,.30) 34%, rgba(255,230,120,.34) 56%, rgba(150,255,180,.26) 80%);
 }
 
@@ -1082,6 +1075,7 @@ button.capitulo--navegable .capitulo-pista { color: rgba(255, 233, 168, .75); }
    ni holo). En cartas de material manda el holo, así que ahí se apaga. */
 .carta:not(.carta-lanzador)::after,
 .detalle-carta::after,
+.frente-caja::after,
 .oraculo-cara::after {
   content: "";
   position: absolute;
@@ -1108,7 +1102,9 @@ button.capitulo--navegable .capitulo-pista { color: rgba(255, 233, 168, .75); }
   opacity: .12;
 }
 .carta--dorada::after, .carta--plateada::after,
-.detalle-carta.tier-dorada::after, .detalle-carta.tier-plateada::after { display: none; }
+.detalle-carta.tier-dorada::after, .detalle-carta.tier-plateada::after,
+.frente-caja.tier-dorada::after, .frente-caja.tier-plateada::after,
+.detalle-carta.cara--frente::after { display: none; }
 
 /* ===== Encendido de capítulo dentro del detalle ya abierto ===== */
 @keyframes candado-abre {
@@ -1306,3 +1302,215 @@ button.capitulo--navegable .capitulo-pista { color: rgba(255, 233, 168, .75); }
     transition-duration: .01ms !important;
   }
 }
+
+/* ============ Carta abierta: tres caras (frente · dorso · capítulos) ============
+   El frente muestra la ilustración (o el nombre, si el personaje todavía no
+   tiene imagen) en una caja 3:4, la misma proporción en que se producen las
+   imágenes: así entra entera, sin recorte. El dorso lleva la ficha y entra
+   completo en una pantalla. Los capítulos viven en su propia cara, como índice.
+   Las tres se pintan dentro de #detalle-contenido (ver app.js). */
+
+/* --- El frente: la carta es la caja, no la pantalla --- */
+.detalle-carta.cara--frente > .esquina { display: none; }
+
+.detalle-carta.cara--frente {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  overflow: visible;
+}
+
+.detalle-carta.cara--frente .detalle-contenido {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2px;
+}
+
+.frente-encabezado { text-align: left; margin-bottom: 12px; flex: none; }
+
+.frente-caja {
+  position: relative;
+  flex: none;
+  height: min(470px, 56vh);
+  aspect-ratio: 3 / 4;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .5);
+}
+
+.frente-imagen {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Sin imagen, el nombre ocupa el lugar de la ilustración. Lo que distingue una
+   mitología de otra son tres cosas: el ornamento, el acento y la textura de
+   fondo (esta última ya vivía en .mito-* más arriba). */
+.frente-sin-imagen {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 0 20px;
+  color: var(--acento-mito, var(--acento));
+}
+
+.ornamento-mito { width: min(250px, 86%); height: auto; flex: none; }
+.ornamento-mito--invertido { transform: scaleY(-1); }
+
+.frente-nombre {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-weight: 800;
+  font-size: clamp(2.1rem, 11vw, 3.1rem);
+  line-height: 1.06;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--texto);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, .45);
+}
+
+.frente-caja .divisor-mito i { max-width: 40px; }
+
+.frente-sello { margin-top: -18px; position: relative; z-index: 5; display: flex; justify-content: center; }
+
+.frente-ficha {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 14px 4px 0;
+}
+
+.frente-espaciador { flex: 1; min-height: 10px; }
+.frente-progreso { width: 100%; text-align: left; }
+
+.frente-nombre-debajo {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: .3px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+/* --- Barra superior compartida por el dorso y los capítulos --- */
+.cara-barra {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  flex: none;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* --- El dorso: la ficha, sin scroll en una pantalla normal --- */
+.detalle-carta.cara--dorso .detalle-contenido { display: flex; flex-direction: column; }
+.dorso-cuerpo { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; }
+.dorso-cuerpo > .dones, .dorso-cuerpo > .atributos, .dorso-cuerpo > .dorso-historia { width: 100%; }
+.dorso-espaciador { flex: 1; min-height: 6px; }
+
+/* El sello se estampa rotado: necesita aire propio para no pisar los dones. */
+.dorso-cuerpo > .sello-historia { margin: 12px 0 12px; }
+
+.dorso-historia {
+  text-align: left;
+  background: rgba(0, 0, 0, .22);
+  border-radius: var(--radio);
+  padding: 16px;
+}
+.dorso-historia .capitulos-progreso { margin-bottom: 10px; }
+.dorso-historia .barra-capitulos { margin-bottom: 14px; }
+
+/* --- Los capítulos: índice con el primero abierto --- */
+.capitulos-encabezado { flex: none; margin-bottom: 12px; }
+.capitulos-titulo { display: flex; flex-direction: column; text-align: left; min-width: 0; }
+.capitulos-titulo strong { font-family: "Cinzel", serif; font-weight: 800; font-size: 1.1rem; letter-spacing: .3px; }
+.capitulos-titulo span { font-size: .82rem; font-weight: 700; color: var(--texto-suave); }
+
+/* Cada capítulo encendido es un <details>: plegarlo y desplegarlo no necesita
+   JS, y así releer uno es un tap en vez de un scroll por toda la ficha. */
+details.capitulo--encendido { padding: 0; overflow: hidden; }
+
+details.capitulo--encendido > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 16px;
+  min-height: 56px;
+  cursor: pointer;
+  list-style: none;
+}
+details.capitulo--encendido > summary::-webkit-details-marker { display: none; }
+details.capitulo--encendido > summary h3 { font-size: 1.02rem; margin: 0; }
+
+.capitulo-chevron {
+  flex: none;
+  width: 11px;
+  height: 11px;
+  border-right: 2.2px solid rgba(253, 251, 255, .6);
+  border-bottom: 2.2px solid rgba(253, 251, 255, .6);
+  border-radius: 2px;
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform .2s ease;
+}
+details.capitulo--encendido[open] .capitulo-chevron { transform: rotate(-135deg) translate(-2px, -2px); }
+
+.capitulo-texto { padding: 0 16px 15px; }
+
+/* --- Botón de cambio de cara (dar vuelta la carta, leer los capítulos) --- */
+.boton-cara {
+  width: 100%;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1.5px solid rgba(255, 216, 103, .5);
+  background: rgba(255, 216, 103, .12);
+  color: var(--acento);
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.boton-cara svg { width: 20px; height: 20px; flex: none; }
+.boton-cara:active { transform: scale(.99); }
+
+/* En la barra superior el botón es chico y no ocupa el ancho. */
+.cara-barra .boton-cara {
+  width: auto;
+  min-height: 44px;
+  padding: 10px 16px;
+  font-size: .88rem;
+}
+.cara-barra .boton-cara svg { width: 18px; height: 18px; }
+
+.detalle-chips { display: flex; gap: 8px; justify-content: center; align-items: center; flex-wrap: wrap; }
+.detalle-chips .detalle-chip { margin-bottom: 0; }
+
+/* Las esquinas del frente viven en la caja 3:4 y son más chicas que las de la
+   carta entera, para no comerse la ilustración. */
+.frente-caja .esquina { width: 26px; height: 26px; z-index: 4; }
+.frente-caja .esquina-tl { top: 10px; left: 10px; border-top-width: 2px; border-left-width: 2px; }
+.frente-caja .esquina-tr { top: 10px; right: 10px; border-top-width: 2px; border-right-width: 2px; }
+.frente-caja .esquina-bl { bottom: 10px; left: 10px; border-bottom-width: 2px; border-left-width: 2px; }
+.frente-caja .esquina-br { bottom: 10px; right: 10px; border-bottom-width: 2px; border-right-width: 2px; }

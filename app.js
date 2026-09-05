@@ -268,22 +268,107 @@ function actualizarFabOraculo(quedanPorDescubrir) {
   }
 }
 
-/* ---------- Detalle ---------- */
+/* ---------- Detalle: la carta abierta tiene tres caras ----------
+   frente     → la ilustración (o el nombre, si el personaje todavía no tiene
+                imagen), con la ficha mínima debajo;
+   dorso      → dones y atributos, que entran completos en una pantalla;
+   capitulos  → la historia como índice: el primer capítulo abierto y el resto
+                plegado, para que releer uno sea un tap y no un scroll.
+   Una sola cara se pinta por vez dentro de #detalle-contenido. */
 
-function pintarMarcoDetalle(p, completa) {
-  const cartaDetalle = document.getElementById("detalle-carta");
+let caraDetalle = "frente";
+
+/* Identidad visual de cada mitología en la carta sin imagen: ornamento, acento
+   y línea. La textura de fondo la sigue poniendo estilos.css (.mito-*).
+   El acento romano no venía del repo: se derivó de los colorCarta romanos. */
+const MITO_VISUAL = {
+  griega:  { acento: "#ffd867", suave: "rgba(255, 236, 170, .9)",  linea: "rgba(255, 216, 103, .45)", ornamento: "greca" },
+  nordica: { acento: "#d6ecff", suave: "rgba(214, 236, 255, .92)", linea: "rgba(214, 236, 255, .45)", ornamento: "nudo" },
+  romana:  { acento: "#e8a884", suave: "rgba(232, 168, 132, .92)", linea: "rgba(232, 168, 132, .45)", ornamento: "laurel" }
+};
+
+/* Bandas ornamentales, dibujadas en SVG para que escalen y se recoloreen.
+   Griega: greca. Nórdica: entrelazado. Romana: laurel. */
+const ORNAMENTOS = {
+  greca: () => {
+    const d = Array.from({ length: 10 }, (_, i) => {
+      const x = i * 24;
+      return `M${x + 2},22 V2 H${x + 22} V18 H${x + 8} V8 H${x + 16} V14`;
+    }).join(" ");
+    return `<path d="${d}"></path>`;
+  },
+  nudo: () => {
+    const onda = (y) => "M0,12 " + Array.from({ length: 10 }, (_, i) =>
+      `Q${i * 24 + 12},${y} ${i * 24 + 24},12`).join(" ");
+    const nudos = Array.from({ length: 11 }, (_, i) =>
+      `<circle cx="${i * 24}" cy="12" r="1.9" fill="currentColor" stroke="none"></circle>`).join("");
+    return `<path d="${onda(1)}"></path><path d="${onda(23)}"></path>${nudos}`;
+  },
+  laurel: () => {
+    let hojas = "";
+    for (let i = 0; i < 7; i++) {
+      const izq = 104 - i * 15, der = 136 + i * 15;
+      hojas += `<path d="M${izq},12 q-7,-7 -14,-4 q3,7 14,4"></path><path d="M${izq},12 q-7,7 -14,4 q3,-7 14,-4"></path>`;
+      hojas += `<path d="M${der},12 q7,-7 14,-4 q-3,7 -14,4"></path><path d="M${der},12 q7,7 14,4 q-3,-7 -14,-4"></path>`;
+    }
+    return `<path d="M14,12 H104"></path><path d="M136,12 H226"></path>${hojas}<circle cx="120" cy="12" r="5.5"></circle>`;
+  }
+};
+
+function ornamentoMito(mitologia, invertido = false) {
+  const visual = MITO_VISUAL[mitologia] || MITO_VISUAL.griega;
+  const dibujo = (ORNAMENTOS[visual.ornamento] || ORNAMENTOS.greca)();
+  return `<svg class="ornamento-mito${invertido ? " ornamento-mito--invertido" : ""}" viewBox="0 0 240 24"
+    fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+    aria-hidden="true">${dibujo}</svg>`;
+}
+
+function esquinasHTML() {
+  return `
+    <i class="esquina esquina-tl" aria-hidden="true"></i>
+    <i class="esquina esquina-tr" aria-hidden="true"></i>
+    <i class="esquina esquina-bl" aria-hidden="true"></i>
+    <i class="esquina esquina-br" aria-hidden="true"></i>`;
+}
+
+/* Materiales de la carta abierta. En el frente el marco vive en la caja de la
+   ilustración (que es 3:4 como la imagen); en el dorso y en los capítulos vive
+   en la carta entera, como venía. */
+function clasesMaterial(p, completa) {
   const tieneMaterial = completa && (p.tier === "dorado" || p.tier === "plateado");
-  cartaDetalle.classList.remove("tier-plateada", "tier-dorada", "mito-griega", "mito-nordica", "mito-romana");
+  if (!tieneMaterial) return { clase: "", capas: "", tieneMaterial: false };
+  return {
+    clase: p.tier === "dorado" ? "tier-dorada" : "tier-plateada",
+    capas: `<div class="capas-material">${capasMaterialHTML(p.tier === "dorado" ? "oro" : "plata")}</div>`,
+    tieneMaterial: true
+  };
+}
+
+function pintarMarcoDetalle(p, completa, cara) {
+  const cartaDetalle = document.getElementById("detalle-carta");
+  const material = clasesMaterial(p, completa);
+  cartaDetalle.classList.remove("tier-plateada", "tier-dorada", "mito-griega", "mito-nordica", "mito-romana",
+                                "cara--frente", "cara--dorso", "cara--capitulos");
+  cartaDetalle.classList.add("cara--" + cara);
   cartaDetalle.classList.add("mito-" + p.mitologia);
-  if (!tieneMaterial) {
+
+  // En el frente la carta es solo el marco de la pantalla: no lleva fondo ni material.
+  if (cara === "frente") {
+    cartaDetalle.style.background = "";
+    const capasViejas = cartaDetalle.querySelector(":scope > .capas-material");
+    if (capasViejas) capasViejas.remove();
+    return;
+  }
+
+  if (!material.tieneMaterial) {
     cartaDetalle.style.background = fondoCarta(p.colorCarta);
   } else {
     cartaDetalle.style.background = "";
-    cartaDetalle.classList.add(p.tier === "dorado" ? "tier-dorada" : "tier-plateada");
+    cartaDetalle.classList.add(material.clase);
   }
 
   let capas = cartaDetalle.querySelector(":scope > .capas-material");
-  if (tieneMaterial) {
+  if (material.tieneMaterial) {
     if (!capas) {
       capas = document.createElement("div");
       capas.className = "capas-material";
@@ -298,6 +383,115 @@ function pintarMarcoDetalle(p, completa) {
 function selloHistoriaCompleta(completa) {
   return completa ? '<span class="sello-historia">✦ Historia completa</span>' : "";
 }
+
+function chipsIdentidad(p) {
+  return `
+    <div class="detalle-chips">
+      <span class="detalle-chip">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
+      ${chipTier(p)}
+    </div>`;
+}
+
+function progresoHistoria(p) {
+  const total = capitulosParaMostrar(p).length;
+  return `
+    <div class="capitulos-progreso">
+      <span>📖 Su historia</span>
+      <span>${capitulosGanadosDe(p).length} de ${total} capítulos</span>
+    </div>
+    ${barraCapitulos(p)}`;
+}
+
+function botonCara(cara, texto, icono) {
+  return `<button class="boton-cara" data-cara="${cara}">${icono}<span>${texto}</span></button>`;
+}
+
+const ICONO_GIRAR = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"></path><path d="M21 3v5h-5"></path>
+  <path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"></path><path d="M3 21v-5h5"></path></svg>`;
+
+const ICONO_LEER = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>`;
+
+/* ---------- Cara 1: el frente ---------- */
+
+function cajaIlustracionHTML(p, completa) {
+  const material = clasesMaterial(p, completa);
+  const clases = ["frente-caja", "mito-" + p.mitologia, material.clase].filter(Boolean).join(" ");
+  const estilo = material.tieneMaterial ? "" : ` style="background:${fondoCarta(p.colorCarta)}"`;
+
+  const dentro = p.imagen
+    ? `<img class="frente-imagen" src="${p.imagen}" alt="${p.nombre}, ${p.titulo}" width="780" height="1040">`
+    : `
+      <div class="frente-sin-imagen" style="--acento-mito:${(MITO_VISUAL[p.mitologia] || MITO_VISUAL.griega).acento}">
+        ${ornamentoMito(p.mitologia)}
+        <h2 class="frente-nombre" id="detalle-nombre">${p.nombre}</h2>
+        <span class="divisor-mito"><i></i><span>${NOMBRE_MITO_CORTO[p.mitologia] || p.mitologia.toUpperCase()}</span><i></i></span>
+        ${ornamentoMito(p.mitologia, true)}
+      </div>`;
+
+  return `<div class="${clases}"${estilo}>${material.capas}${dentro}${esquinasHTML()}</div>`;
+}
+
+function caraFrenteHTML(p, completa) {
+  // Con imagen el nombre va debajo de la caja; sin imagen ya está dentro de ella.
+  const nombreDebajo = p.imagen ? `<h2 class="frente-nombre-debajo" id="detalle-nombre">${p.nombre}</h2>` : "";
+  return `
+    <div class="frente-encabezado">
+      <button class="boton-volver" data-accion="atras">← Volver</button>
+    </div>
+    ${cajaIlustracionHTML(p, completa)}
+    ${completa ? `<div class="frente-sello">${selloHistoriaCompleta(completa)}</div>` : ""}
+    <div class="frente-ficha">
+      ${nombreDebajo}
+      <p class="detalle-titulo">${p.titulo}</p>
+      ${chipsIdentidad(p)}
+      <div class="frente-espaciador"></div>
+      <div class="frente-progreso">${progresoHistoria(p)}</div>
+      ${botonCara("dorso", "Dar vuelta la carta", ICONO_GIRAR)}
+    </div>`;
+}
+
+/* ---------- Cara 2: el dorso ---------- */
+
+function caraDorsoHTML(p, completa) {
+  const barras = ATRIBUTOS
+    .filter(a => typeof p.atributos[a.clave] === "number")
+    .map(a => `
+    <div class="atributo">
+      <span class="icono-attr" aria-hidden="true">${a.icono}</span>
+      <span class="nombre-attr">${a.nombre}</span>
+      <div class="barra" role="img" aria-label="${a.nombre}: ${p.atributos[a.clave]} de 10">
+        <span style="width:${p.atributos[a.clave] * 10}%"></span>
+      </div>
+      <strong class="valor-attr" aria-hidden="true">${p.atributos[a.clave]}</strong>
+    </div>`).join("");
+
+  const total = capitulosParaMostrar(p).length;
+  const etiquetaLectura = total === 1 ? "Leer su capítulo" : `Leer sus ${total} capítulos`;
+
+  return `
+    <div class="cara-barra">
+      <button class="boton-volver" data-accion="atras">← Volver</button>
+      ${botonCara("frente", p.imagen ? "Ilustración" : "La carta", ICONO_GIRAR)}
+    </div>
+    <div class="dorso-cuerpo">
+      <h2 id="detalle-nombre">${p.nombre}</h2>
+      <p class="detalle-titulo">${p.titulo}</p>
+      ${chipsIdentidad(p)}
+      ${completa ? selloHistoriaCompleta(completa) : ""}
+      <div class="dones">${p.dones.map(d => `<span class="don">${d}</span>`).join("")}</div>
+      <div class="atributos">${barras}</div>
+      <div class="dorso-espaciador"></div>
+      <div class="dorso-historia">
+        ${progresoHistoria(p)}
+        ${botonCara("capitulos", etiquetaLectura, ICONO_LEER)}
+      </div>
+    </div>`;
+}
+
+/* ---------- Cara 3: los capítulos, como índice ---------- */
 
 /* Ícono del capítulo velado según el módulo que lo enciende (doc de olas §2):
    brújula para El Mapa del Héroe, estrella para El Cielo de los Mitos,
@@ -314,8 +508,9 @@ function iconoCapituloVelado(capitulo, destino) {
 
 /* Los capítulos velados con un destino conocido (cielo, oráculo difícil, o un
    vínculo ya alcanzable) se muestran como <button>: un tap navega directo al
-   módulo que los enciende (doc de olas §2, regla transversal de UI). */
-function bloqueCapitulo(capitulo, encendido, personaje) {
+   módulo que los enciende (doc de olas §2, regla transversal de UI).
+   Los encendidos son <details>: el primero abierto, el resto plegado. */
+function bloqueCapitulo(capitulo, encendido, personaje, abierto) {
   if (capitulo.pendienteDeDiseno) {
     return `
       <div class="capitulo capitulo--velado">
@@ -340,70 +535,86 @@ function bloqueCapitulo(capitulo, encendido, personaje) {
       </${Tag}>`;
   }
   return `
-    <div class="capitulo capitulo--encendido" data-capitulo-id="${capitulo.id}">
-      <h3>📜 ${capitulo.titulo}</h3>
-      <p>${capitulo.texto}</p>
-      ${capitulo.porque ? `
-      <div class="bloque-porque bloque-porque--capitulo">
-        <h4>💡 ¿Por qué?</h4>
-        <p>${capitulo.porque}</p>
-      </div>` : ""}
-    </div>`;
+    <details class="capitulo capitulo--encendido" data-capitulo-id="${capitulo.id}"${abierto ? " open" : ""}>
+      <summary><h3>📜 ${capitulo.titulo}</h3><span class="capitulo-chevron" aria-hidden="true"></span></summary>
+      <div class="capitulo-texto">
+        <p>${capitulo.texto}</p>
+        ${capitulo.porque ? `
+        <div class="bloque-porque bloque-porque--capitulo">
+          <h4>💡 ¿Por qué?</h4>
+          <p>${capitulo.porque}</p>
+        </div>` : ""}
+      </div>
+    </details>`;
 }
 
-function abrirDetalle(id, recienRevelada = false) {
+function caraCapitulosHTML(p) {
+  const capitulos = capitulosParaMostrar(p);
+  const encendidos = capitulosEncendidosDe(p.id);
+  let yaAbriUno = false;
+  const lista = capitulos.map(c => {
+    const encendido = encendidos.includes(c.id);
+    const visible = !c.pendienteDeDiseno && capituloListoParaMostrar(c, encendido);
+    const abrir = visible && !yaAbriUno;
+    if (abrir) yaAbriUno = true;
+    return bloqueCapitulo(c, encendido, p, abrir);
+  }).join("");
+
+  return `
+    <div class="capitulos-encabezado">
+      <div class="cara-barra">
+        <button class="boton-volver" data-accion="atras">←</button>
+        <div class="capitulos-titulo">
+          <strong id="detalle-nombre">${p.nombre}</strong>
+          <span>Su historia · ${capitulosGanadosDe(p).length} de ${capitulos.length} capítulos</span>
+        </div>
+      </div>
+      ${barraCapitulos(p)}
+    </div>
+    <div class="capitulos">${lista}</div>`;
+}
+
+/* ---------- Apertura y navegación entre caras ---------- */
+
+function abrirDetalle(id, recienRevelada = false, cara = "frente") {
   const p = porId(id);
   if (!p) return;
 
+  caraDetalle = cara;
   const detalle = document.getElementById("detalle");
   const cartaDetalle = document.getElementById("detalle-carta");
   const completa = historiaCompleta(p);
-  pintarMarcoDetalle(p, completa);
+  pintarMarcoDetalle(p, completa, cara);
 
-  const barras = ATRIBUTOS
-    .filter(a => typeof p.atributos[a.clave] === "number")
-    .map(a => `
-    <div class="atributo">
-      <span class="icono-attr" aria-hidden="true">${a.icono}</span>
-      <span class="nombre-attr">${a.nombre}</span>
-      <div class="barra" role="img" aria-label="${a.nombre}: ${p.atributos[a.clave]} de 10">
-        <span style="width:${p.atributos[a.clave] * 10}%"></span>
-      </div>
-      <strong class="valor-attr" aria-hidden="true">${p.atributos[a.clave]}</strong>
-    </div>`).join("");
+  const contenido = document.getElementById("detalle-contenido");
+  if (cara === "dorso") contenido.innerHTML = caraDorsoHTML(p, completa);
+  else if (cara === "capitulos") contenido.innerHTML = caraCapitulosHTML(p);
+  else contenido.innerHTML = caraFrenteHTML(p, completa);
 
-  const capitulos = capitulosParaMostrar(p);
-  const encendidos = capitulosEncendidosDe(p.id);
-  const listaCapitulos = capitulos.map(c => bloqueCapitulo(c, encendidos.includes(c.id), p)).join("");
-
-  document.getElementById("detalle-contenido").innerHTML = `
-    <div class="detalle-ilustracion">${svgIcono(p.icono)}</div>
-    <h2 id="detalle-nombre">${p.nombre}</h2>
-    <p class="detalle-titulo">${p.titulo}</p>
-    <span class="detalle-chip">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
-    ${chipTier(p)}
-    ${selloHistoriaCompleta(completa)}
-    <div class="dones">${p.dones.map(d => `<span class="don">${d}</span>`).join("")}</div>
-    <div class="atributos">${barras}</div>
-    <div class="capitulos">
-      <div class="capitulos-progreso">
-        <span>📖 Su historia</span>
-        <span>${capitulosGanadosDe(p).length} de ${capitulos.length} capítulos</span>
-      </div>
-      ${barraCapitulos(p)}
-      ${listaCapitulos}
-    </div>`;
-
-  document.querySelectorAll("#detalle-contenido .capitulo--navegable").forEach(boton => {
+  contenido.querySelectorAll(".capitulo--navegable").forEach(boton => {
     boton.addEventListener("click", () => { location.href = boton.dataset.destino; });
   });
-  activarIcono(document.querySelector("#detalle-contenido .detalle-ilustracion"), p);
+  contenido.querySelectorAll("[data-cara]").forEach(boton => {
+    boton.addEventListener("click", () => abrirDetalle(id, false, boton.dataset.cara));
+  });
+  contenido.querySelectorAll('[data-accion="atras"]').forEach(boton => {
+    boton.addEventListener("click", volverDeCara);
+  });
 
   detalle.dataset.personajeId = id;
-  cartaDetalle.classList.toggle("revelando", recienRevelada);
+  cartaDetalle.classList.toggle("revelando", recienRevelada && cara === "frente");
   detalle.classList.remove("oculto");
-  cartaDetalle.scrollTop = 0;
-  document.getElementById("boton-volver").focus();
+  contenido.scrollTop = 0;
+  const foco = contenido.querySelector(".boton-volver");
+  if (foco) foco.focus();
+}
+
+/* "← Volver" retrocede una cara: capítulos → dorso → frente → cerrar. */
+function volverDeCara() {
+  const id = document.getElementById("detalle").dataset.personajeId;
+  if (caraDetalle === "capitulos") abrirDetalle(id, false, "dorso");
+  else if (caraDetalle === "dorso") abrirDetalle(id, false, "frente");
+  else cerrarDetalle();
 }
 
 /* Progressive enhancement: transición carta → detalle con View Transitions
@@ -423,7 +634,9 @@ function cerrarDetalle() {
   document.getElementById("detalle").classList.add("oculto");
   document.getElementById("detalle").dataset.personajeId = "";
   document.getElementById("detalle-carta").classList.remove("revelando");
+  caraDetalle = "frente";
 }
+
 
 /* ---------- Toast ---------- */
 
@@ -694,9 +907,12 @@ function animarCapituloEncendido(personajeId, capituloId) {
   const detalleAbierto = !detalle.classList.contains("oculto") && detalle.dataset.personajeId === personajeId;
   if (!detalleAbierto) return;
   setTimeout(() => {
-    abrirDetalle(personajeId);
+    abrirDetalle(personajeId, false, "capitulos");
     const nuevo = document.querySelector(`#detalle-contenido .capitulo[data-capitulo-id="${capituloId}"]`);
-    if (nuevo) nuevo.classList.add("capitulo--recien-encendido");
+    if (nuevo) {
+      nuevo.classList.add("capitulo--recien-encendido");
+      nuevo.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
   }, 950);
 }
 
@@ -808,7 +1024,6 @@ function configurarControles() {
     renderGaleria();
   });
 
-  document.getElementById("boton-volver").addEventListener("click", cerrarDetalle);
   document.getElementById("detalle").addEventListener("click", e => {
     if (e.target.id === "detalle") cerrarDetalle();
   });

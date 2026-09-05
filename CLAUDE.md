@@ -76,6 +76,8 @@ Subir `VERSION` en `sw.js` en cada deploy real.
 
 Campos base: `id`, `nombre`, `mitologia`, `titulo`, `dones`, `historia`, `porque`, `atributos`, `colorCarta`, `icono`.
 
+- `imagen`: ruta opcional a la ilustración del personaje (`imagenes/<id>.jpg`), en 3:4. Si está, el frente de la carta la muestra entera; si no está, el frente muestra el nombre con el tratamiento de su mitología. Ningún personaje la necesita para funcionar: es enriquecimiento visual, no un requisito.
+
 - `tier`: `"dorado"` | `"plateado"` | `"normal"`. Estático. Define el tratamiento visual máximo al completar todos los capítulos: dorado (marco dorado + holográfico), plateado (marco plateado), normal (solo sello). El sello **"Historia completa"** aparece en toda carta completada, sin importar el tier.
 - `capitulos`: array de `{ id, titulo, texto, porque, fuente, estado }`. El primero es siempre el base. `fuente` = `"descubrimiento"` o `<modulo>:<condicion>` (`cielo:`, `vinculo:`, `mapa:`, `ordena:`, `espejo:`, `reliquia:`, `encrucijada:`).
 - **Capítulos por tier:** dorado piso 3 sin techo; plateado 2-4; normal 1-3. Un personaje no está terminado hasta cubrir su piso. Los contadores publicados no se recalculan hacia abajo.

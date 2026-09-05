@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="theme-color" content="#241c4d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(circle at 50%% 12%%, #2c2260 0%%, #191142 58%%, #120d33 100%%) fixed;
+      background-color: #191142;
+      color: #fdfbff;
+      font-family: ui-rounded, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #ffd867; } a:hover { color: #ffe9a8; }
+    button { font-family: inherit; cursor: pointer; }
+    img { display: block; max-width: 100%%; }
+    @keyframes holo-mov { 0%% { background-position: 0%% 50%%; } 100%% { background-position: 100%% 50%%; } }
+  </style>
+</helmet>
+
+<div style="width: 390px; height: 844px; padding: 16px; box-sizing: border-box; display: flex;">
+
+  <div style="position: relative; flex: 1; display: flex; flex-direction: column; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,.5); border: 3px solid transparent; background-origin: border-box; background-clip: padding-box, border-box; background-image: linear-gradient(165deg, #6b5015 0%, #4a3610 48%, #33250b 100%), linear-gradient(130deg, #f8e08e, #c9962e 30%, #ffefb0 50%, #a87b1f 72%, #f2cf6b);">
+    <div style="position: absolute; inset: 0; z-index: 0; pointer-events: none; border-radius: inherit; background-size: 240% 240%; background-image: linear-gradient(115deg, rgba(255,110,196,.30) 10%, rgba(96,225,255,.30) 34%, rgba(255,230,120,.34) 56%, rgba(150,255,180,.26) 80%); animation: holo-mov 7s ease-in-out infinite alternate;"></div>
+
+    <div style="position: relative; z-index: 1; width: 100%; height: 469px; flex: none; overflow: hidden;">
+      <img src="zeus.jpg" alt="Zeus, el rey del Olimpo" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+      <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 80px; background: linear-gradient(180deg, transparent, #33250b);"></div>
+      <div style="position: absolute; top: 14px; left: 14px; z-index: 3;"><button style="border: none; background: rgba(0,0,0,.28); color: #fff; font-size: 1.05rem; font-weight: 800; border-radius: 999px; padding: 11px 22px; min-height: 44px;">← Volver</button></div>
+    </div>
+
+    <div style="position: relative; z-index: 1; flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 6px 18px 22px;">
+      <h2 style="margin: 0; font-family: 'Cinzel', serif; font-size: 1.7rem; font-weight: 800; letter-spacing: .3px; text-shadow: 0 2px 4px rgba(0,0,0,.3);">Zeus</h2>
+      <p style="margin: 2px 0 8px; font-style: italic; color: rgba(255,255,255,.92); font-size: .98rem;">El rey del Olimpo</p>
+      <div style="display: flex; gap: 8px; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <span style="font-size: .8rem; font-weight: 700; background: rgba(0,0,0,.25); border-radius: 999px; padding: 4px 14px;">🏛️ Griega</span>
+        <span style="font-size: .72rem; font-weight: 800; letter-spacing: .2px; border-radius: 999px; padding: 3px 10px; background: linear-gradient(120deg, rgba(255,216,103,.95), rgba(255,236,170,.9)); color: #4a3200;">DORADO</span>
+      </div>
+      <div style="margin: 12px 0 2px;"><span style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 15px; border-radius: 999px; font-weight: 800; font-size: .78rem; letter-spacing: .3px; background: linear-gradient(120deg, rgba(255,255,255,.92), rgba(224,216,255,.85)); color: #2b2350; box-shadow: 0 0 0 3px rgba(255,255,255,.18); transform: rotate(-6deg);">✦ Historia completa</span></div>
+      <div style="flex: 1;"></div>
+      <div style="width: 100%; text-align: left; margin-bottom: 14px;">
+        <div style="display: flex; justify-content: space-between; font-weight: 800; font-size: .92rem; margin-bottom: 8px; color: rgba(253,251,255,.75);">
+          <span>📖 Su historia</span><span>5 de 5 capítulos</span>
+        </div>
+        <div style="display: flex; gap: 4px; height: 8px;"><i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i><i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i><i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i><i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i><i style="flex: 1; border-radius: 999px; background: linear-gradient(90deg, #ffd867, #ff9e6b);"></i></div>
+      </div>
+      <button style="width: 100%; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1.5px solid rgba(255,216,103,.5); background: rgba(255,216,103,.12); color: #ffd867; border-radius: 999px; padding: 14px 20px; font-size: 1rem; font-weight: 800;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"></path><path d="M21 3v5h-5"></path>
+          <path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"></path><path d="M3 21v-5h5"></path>
+        </svg>
+        Dar vuelta la carta
+      </button>
+    </div>
+
+    <i style="position: absolute; width: 30px; height: 30px; pointer-events: none; z-index: 4; top: 12px; left: 12px; border-top: 3px solid rgba(255,216,103,.65); border-left: 3px solid rgba(255,216,103,.65); border-top-left-radius: 8px;"></i><i style="position: absolute; width: 30px; height: 30px; pointer-events: none; z-index: 4; top: 12px; right: 12px; border-top: 3px solid rgba(255,216,103,.65); border-right: 3px solid rgba(255,216,103,.65); border-top-right-radius: 8px;"></i><i style="position: absolute; width: 30px; height: 30px; pointer-events: none; z-index: 4; bottom: 12px; left: 12px; border-bottom: 3px solid rgba(255,216,103,.65); border-left: 3px solid rgba(255,216,103,.65); border-bottom-left-radius: 8px;"></i><i style="position: absolute; width: 30px; height: 30px; pointer-events: none; z-index: 4; bottom: 12px; right: 12px; border-bottom: 3px solid rgba(255,216,103,.65); border-right: 3px solid rgba(255,216,103,.65); border-bottom-right-radius: 8px;"></i>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

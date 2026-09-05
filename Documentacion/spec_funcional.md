@@ -40,14 +40,18 @@ Pantalla principal: título del mundo, contador global ("Descubriste 34 de 80 h�
 
 ## 1. Formato de carta
 
-La carta tiene:
+La carta abierta tiene **tres caras**, y se muestra una por vez. El botón "← Volver" retrocede una cara: capítulos → dorso → frente → cerrar.
 
-**Frente:** ilustración, nombre, título, chip de mitología, dones como badges, atributos como barras **con el número 1-10 visible al lado de cada barra** (necesario para las pistas del Oráculo Difícil y para que ella compare).
+**Cara 1 — el frente.** Una caja en proporción **3:4**, la misma en que se producen las ilustraciones, para que la imagen entre entera y sin recorte. La caja lleva el marco de material del tier y las esquinas ornamentales; debajo van nombre, título, chip de mitología, insignia de tier, progreso de historia y el botón "Dar vuelta la carta". El sello "Historia completa" se estampa montado sobre el borde inferior de la caja.
 
-**Cuerpo — historia por capítulos:** lista de capítulos del personaje. Cada uno:
-- Encendido: título + texto + su "¿Por qué?", legible completo.
-- Velado: título en gris, ícono de candado, y la pista de dónde se gana ("Trazá la Corona Boreal en el Cielo de los Mitos"). Tap sobre un capítulo velado lleva directo al módulo que lo enciende.
-- Barra de progreso arriba: "Historia: 2 de 4 capítulos".
+- **Con `imagen` en el JSON:** la caja muestra la ilustración y el nombre va debajo.
+- **Sin `imagen`:** la caja muestra el nombre, y lo que distingue una mitología de otra son tres cosas: el **ornamento** (greca griega, entrelazado nórdico, laurel romano), el **acento** (oro `#ffd867`, hielo `#d6ecff`, terracota `#e8a884`) y la **textura de fondo** que ya existía por mitología. El color base sigue saliendo del `colorCarta` del personaje.
+
+**Cara 2 — el dorso.** La ficha: nombre, título, chips, dones como badges y atributos como barras **con el número 1-10 visible al lado de cada barra** (necesario para las pistas del Oráculo Difícil y para que ella compare). Cierra con el bloque "Su historia" (progreso + barra) y el botón "Leer sus N capítulos". Entra completo en una pantalla de teléfono, sin scroll: ese es el punto de separarlo de los capítulos.
+
+**Cara 3 — los capítulos, como índice.** Encabezado con el nombre y "Su historia · N de M capítulos", y la lista de capítulos:
+- Encendido: `<details>` con el título; **el primero abierto y el resto plegado**, para que releer uno sea un tap y no un scroll por toda la ficha. Abierto muestra texto + su "¿Por qué?".
+- Velado: título, ícono del módulo que lo enciende y la pista de dónde se gana ("Trazá la Corona Boreal en el Cielo de los Mitos"). Tap sobre un capítulo velado lleva directo al módulo que lo enciende.
 - Los capítulos con `estado: "borrador"` no se muestran ni cuentan para el total (regla de despliegue de CLAUDE.md).
 
 **Estados de completitud por tier (reemplaza al estado dorado binario):**
