@@ -204,3 +204,83 @@ La actualización de este historial no autoriza cambiar el canon, borrar pruebas
 - Ajustar escala y dejar explícita la resolución de ocupantes de la flota. No asumir que autorizar vehículos autoriza automáticamente sujetos secundarios.
 - Un nuevo intento necesita una corrección material del método o del diseño de expresión; no repetir el mismo prompt cambiando adjetivos ni relajar gates para conseguir un SÍ.
 - No se generó una segunda variante dentro de esta ejecución.
+
+
+## Intento fallido 5 — Agamenón — 2026-09-07
+
+**Estado:** FALLIDO por incumplimientos visibles; no aprobado por Willy. La instrucción vigente del usuario fue generar la imagen completa vertical 3:4 con el **mismo estilo del Zeus aprobado, ni más ni menos infantil**. No se autorizó sustituirla por un busto o una prueba parcial.
+
+### Qué se hizo realmente
+
+- Se leyó completo este historial y se revalidaron las ocho fuentes obligatorias en la rama `claude/game-setup-v98pr1`. Se leyeron los cambios recientes de `CLAUDE.md` y `MEMORY.md`; la ficha de Agamenón seguía igual.
+- Se abrió visualmente el PNG aprobado de Zeus.
+- Por primera vez entre las generaciones de esta conversación, la llamada al generador incluyó el PNG real en `referenced_image_paths`, además del prompt. Los intentos 3 y 4 habían recibido sólo texto, aunque el agente sí había mirado Zeus.
+- Se entregó un preflight completo y se hizo exactamente una llamada a `image_gen.imagegen`.
+- Se usó Zeus como referencia declarada de acabado, con instrucción de no copiar identidad, pose ni entorno. La referencia completa contenía, de todos modos, esos elementos.
+- Se midieron las dimensiones y se inspeccionó la imagen y una copia de recorte circular: x=0, y=0, ancho=650, alto=650 px. Esa copia conservó rostro y cabeza del cetro; no fue otro intento de generación ni un avatar final.
+- No se editó el repo durante la generación. Esta entrada se agrega después, por pedido explícito de Willy.
+- No se conoce el identificador exacto del modelo de imagen que ejecutó la herramienta integrada: su respuesta no lo expuso. No confundir el modelo de conversación con el generador de imágenes.
+
+**Evidencia:** `exec-e4e917ac-2519-4ac1-8ed7-81619026ae58.png`; 1086 × 1448 px; SHA-256 `281244B68D7FD2879702096BE38DCC2A1A5905186B414D39F37B7E8C8C2657D7`. Imagen disponible en esta conversación y en el entorno local de esa ejecución, no subida al repo. No asumir que el nombre basta para abrirla desde otro chat.
+
+### Qué estuvo bien
+
+- El registro se acercó al Zeus aprobado: ojos más expresivos, expresión amable y lenguaje de dibujo más cercano a la colección. Esto es una comparación visual del agente, no una aprobación de Willy ni prueba de coincidencia perfecta de estilo.
+- El archivo de referencia llegó explícitamente a la llamada del generador; no se reemplazó por una descripción Markdown.
+- Se mantuvieron formato 3:4, cuerpo completo, cabello rubio, capa rojiza, cetro y flota.
+- No hubo texto, paneles, retrato secundario ni duplicación de Agamenón.
+- No hubo violencia ni amenaza.
+- El recorte se comprobó en una copia.
+- Se rechazó la imagen al detectar incumplimientos; no se generó otra variante automáticamente.
+
+### Qué estuvo mal
+
+1. **Transferencia del fondo:** cielo azul intenso con grandes nubes, muy próximo al de Zeus, pese a pedir un ambiente marítimo mínimo e independiente.
+2. **Transferencia del gesto:** reapareció la palma abierta hacia el espectador. La mano no resolvió la dirección hacia el agua como estaba especificado.
+3. **Sujetos añadidos:** se ven tripulantes en los barcos aunque el prompt pedía que no hubiera personas discernibles.
+4. **Escala:** la figura ocupa aproximadamente 90% del alto del lienzo, estimación visual, frente al 70–80% previsto. El formato del archivo sí es correcto; la escala del sujeto no.
+5. **Decoración de vestuario:** aparecieron bordes ornamentales y pequeños detalles metálicos en la ropa/coraza que no figuraban en la lista positiva de superficies lisas. El registro anterior decía sólo “detalles”; esta entrada precisa la observación.
+6. **Control de referencia insuficiente:** escribir “sólo estilo” junto a una imagen completa no impidió que el resultado reprodujera pose y ambiente.
+7. **Evaluación de estilo demasiado agregada:** el gate “registro infantil comparable = SÍ” sólo sustentaba la mejora visible de expresividad y dibujo. No debía interpretarse como certificación de igualdad exacta de acabado en rostro, cuerpo, superficies y fondo.
+8. **Arrastre de decisiones del proceso:** pies descalzos, exclusión de tripulación y rechazo de pequeños cierres fueron resoluciones operativas de esta prueba; no deben convertirse en canon global del roster.
+9. **Persistencia pendiente de la referencia:** el Zeus aprobado sigue requiriendo un adjunto accesible o una ubicación verificada para la nueva ejecución. El archivo Markdown no sustituye la imagen.
+
+### Aprendizajes que cambian el próximo intento
+
+- Mantener explícito el objetivo final confirmado: **imagen completa, una sola, vertical 3:4, mismo estilo que Zeus**. No inferir autorización para bustos, variantes, edición del canon o nuevas publicaciones.
+- Una referencia completa mejora potencialmente el acabado y también puede transferir contenido no deseado. En esta prueba coexistieron ambas cosas; no prometer aislamiento perfecto entre estilo y contenido.
+- **Hipótesis a probar, todavía no validada:** utilizar como referencia de estilo un recorte del Zeus original que excluya cielo, brazos y accesorios podría reducir la transferencia de composición. Requiere acordar esa preparación; no hacerlo silenciosamente ni afirmar que resolverá el problema.
+- No reutilizar los Agamenones fallidos como referencias positivas.
+- Presentar una única ficha de producción breve y trazable, con prioridades claras. El historial sirve para razonar y auditar; no debe copiarse entero como una lista creciente de prohibiciones dentro del prompt de imagen.
+- Separar incumplimientos de canon, incumplimientos de una decisión de prueba y cuestiones visuales discutibles. No elevar una inferencia del agente a norma universal.
+- Preservar la distinción entre “el prompt lo exige” y “la imagen lo cumple”. Evaluar con evidencia cada SÍ y señalar las incertidumbres.
+- El 74% de contexto que muestra la captura de Willy no demuestra causalidad con los fallos. No afirmar que cambiar de chat o subir razonamiento garantiza mejores imágenes.
+
+### Continuidad desde otra tarea
+
+Se recomienda comenzar una tarea nueva con el Zeus original adjunto y una instrucción de arranque corta. Esta recomendación busca evitar mezclar propuestas descartadas, imágenes rechazadas y decisiones de prueba; no se presenta como una corrección técnica garantizada.
+
+**Advertencia operativa:** la skill guardada todavía exige “desde texto y desde cero”. En el intento 5 se aplicó la instrucción posterior de Willy que autorizó referencia visual directa. Un chat nuevo debe recibir explícitamente esa excepción; este historial no modifica por sí solo la skill. No cambiar el resto de los gates ni el canon para conseguir una aprobación.
+
+Conservar la referencia real, la rama, la ficha vigente, los fallos concretos y la excepción autorizada. No arrastrar las imágenes rechazadas como ejemplos de cómo debe quedar.
+
+### Prompt exacto enviado en el intento 5
+
+Se conserva para auditoría y comparación, **no como receta aprobada para repetir**. La llamada incluyó además el PNG original aprobado de Zeus como única referencia visual.
+
+```text
+Use the attached approved Zeus illustration as the DIRECT VISUAL STYLE REFERENCE for this image. The user requests EXACTLY THE SAME CHILD-FRIENDLY ILLUSTRATION STYLE, neither more realistic nor more childish. The new image should look drawn and colored by the same illustrator for the same collection: match the reference's expressive eye design language, friendly animated-feature facial expressiveness, moderate caricature, clean flowing colored linework, luminous color, softly rounded volumes, smooth shading and refined illustrated finish. This visual style match is essential. Do not reproduce the previously attempted stern, realistically rendered, angular military portraits.
+
+Create one complete vertical 3:4 illustration of AGAMEMNON, a DIFFERENT character. The attached image establishes STYLE ONLY; design the new face, short hair, body silhouette, clothing, pose and maritime scene independently. No Zeus, lightning, laurel, white beard, long hair, blue cloak, celestial sky, temple, rocks or pedestal.
+
+Agamemnon: a mature robust man, broad chest, broad rectangular face, SHORT BLOND HAIR kept compact close to the head, neatly trimmed SHORT beard following the jaw. Warm, engaging, self-assured and approachable expression, open expressive eyes and relaxed brows, a gentle confident smile. The illustration must have the same warm child-friendly appeal as the attached Zeus; keep the character mature, not a child, chibi or caricature with exaggerated proportions.
+
+Character identity and silhouette: broad chest + heavy plain cape descending under its own weight + plain vertical scepter. Wear a short chiton under a smooth plain cuirass with plain lambrequin strips. Muted reddish-brown #6B4A4A clothing accents and naturally colored materials, painted with the reference's clean rich illustration technique. No visible cloak clasp, brooch, studs, jewelry, ornament or emblem. Bare feet fully visible. A simple scepter with a modest plain terminal, no decorative symbol.
+
+Full-body frontal three-quarter standing pose. Grip the scepter LOW beside the hip, with relaxed low elbow. Scepter stays vertical beside him with its head near and clearly separate from his face. The other hand gestures sideways toward the fleet, palm angled toward the water rather than toward the viewer. Let his expression stay friendly and his face clearly readable. Stable and calm, not a military salute, attack, march or theatrical welcome. Both arms remain below shoulder height.
+
+Compose the complete figure at about 78% of canvas height, hair near 15% down and feet near 93% down, with full feet and ground beneath. Entire figure, hair, hands and scepter inside the frame. Face and scepter terminal in the same clean upper region, with breathing room. One continuous scene only.
+Agamemnon stands on a simple flat shore. A large fleet of ancient ships forms the subordinate background in the direction of the gesture. Ships should recede in depth, softly simplified at lower contrast, with no discernible people aboard. Plain quiet maritime atmosphere, no decorative architecture, no heroic or celestial sky. Person first, scepter second, fleet third.
+
+Exactly ONE image and ONE representation of Agamemnon. No text, pseudo-text, lettering, borders, panels, insets, circles, portraits, medallions, interfaces or extra views. No additional objects, weapons, animals, magic or symbols. Match the attached illustration's exact friendly children's style throughout the face, body, cloth, metal and environment.
+```
