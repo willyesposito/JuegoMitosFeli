@@ -500,6 +500,28 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 1.05rem;
 }
 
+/* Casillero velado: personaje todavía no descubierto (spec_funcional §2,
+   "cuatro estados visuales en grilla" — velada era la única sin construir).
+   Apagado a propósito: sin colorCarta, sin ícono real, sin el brillo cálido
+   de una carta descubierta. Es un hueco en la colección, no un dato. */
+.carta--velada {
+  background: rgba(255, 255, 255, .04);
+  border: 1.5px dashed rgba(255, 255, 255, .14);
+  box-shadow: none;
+  cursor: default;
+}
+.carta--velada:hover, .carta--velada:active { transform: none; }
+.carta--velada .ilustracion {
+  background: rgba(0, 0, 0, .25);
+  border-color: rgba(255, 255, 255, .12);
+  box-shadow: none;
+  opacity: .5;
+}
+.carta--velada .nombre {
+  color: rgba(253, 251, 255, .32);
+  letter-spacing: 3px;
+}
+
 /* Brote de la carta al abrir el detalle de una recién revelada. */
 @keyframes carta-brotar {
   0%   { opacity: 0; transform: scale(.86); filter: brightness(2.4) saturate(.6); }
