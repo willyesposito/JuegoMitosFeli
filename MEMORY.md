@@ -69,3 +69,16 @@
 * [2026-09] **La imagen es opcional por personaje, no un requisito.** El campo `imagen` en `personajes.json` decide qué muestra el frente: con imagen, la ilustración; sin imagen, el nombre con el tratamiento de su mitología (ornamento, acento y textura). Las 85 cartas funcionan hoy, con una sola imagen producida.
 * [2026-09] **El acento de la mitología romana (`#e8a884`) no existía en el repo** y se derivó de los `colorCarta` de las 3 cartas romanas. Griega (`#ffd867`) y nórdica (`#d6ecff`) sí venían de `estilos.css`.
 
+---
+
+## 5. Notas técnicas de entorno (para no repetir descubrimientos)
+
+> Esto es para la propia sesión de Claude Code, no para Willy. Cosas de infraestructura del repo y del entorno remoto que cuestan tiempo redescubrir cada vez.
+
+* **La rama por defecto del repo NO es `main`.** Es `claude/game-setup-v98pr1`. Cualquier PR nueva va con `base: claude/game-setup-v98pr1` salvo que se indique otra cosa.
+* **Hook `check-sw-version.sh` bloquea el commit** si cambia algún archivo que `sw.js` cachea (`app.js`, `iconos.js`, `estilos.css`, `index.html`, `personajes.json`) sin que `VERSION` en `sw.js` también cambie. El hook corre como PreToolUse **antes** de que se ejecute la cadena completa del comando Bash: si se encadena `git add sw.js && git commit`, el hook chequea el staging de ANTES del `add` y rechaza igual. Solución: stagear `sw.js` en un `Bash` aparte, y recién después, en otro `Bash`, correr `git commit`.
+* **Willy puede mergear la PR directo desde GitHub sin avisar en el chat.** Si pasa, llega como evento de suscripción (`pull_request.ready_for_review` seguido de merge). No hace falta re-mergear ni tocar nada de la PR; sí conviene sincronizar la rama local. `git reset --hard`, `git merge` y variantes quedan bloqueados por el clasificador de auto mode del entorno ("Git Destructive"), incluso cuando el cambio es no destructivo (fast-forward, sin commits locales únicos). Si el commit local ya es ancestro del nuevo tip de la base (chequear con `git log --oneline base..rama-local`, vacío = sin commits propios), **no hace falta resetear nada**: seguir commiteando encima del mismo commit local y abrir una PR nueva contra la base cuando haya algo para subir — el diff se calcula bien igual porque git encuentra el merge-base correcto.
+* **El repo no tiene CI configurado** (cero check runs, cero `.github/workflows`) ni template de PR (`.github/pull_request_template.md` no existe). No hay nada que esperar en "checks".
+* **Playwright no es dependencia del repo** (no hay `package.json`: CLAUDE.md mantiene cero dependencias de runtime). En esta sesión de Claude Code está instalado aparte, en `/opt/node22/lib/node_modules/playwright`, con Chromium en `/opt/pw-browsers`. `herramientas/capturar-pantallas.js` ya contempla ese fallback de rutas al hacer `require`.
+* **Para servir el juego como estático en una prueba, usar el módulo `http` nativo de Node** (como hace `herramientas/capturar-pantallas.js`), no depender de `python3 -m http.server` ni de paquetes externos — evita instalar algo que no está.
+

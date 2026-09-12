@@ -500,6 +500,28 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 1.05rem;
 }
 
+/* Casillero velado: personaje todavía no descubierto (spec_funcional §2,
+   "cuatro estados visuales en grilla" — velada era la única sin construir).
+   Apagado a propósito: sin colorCarta, sin ícono real, sin el brillo cálido
+   de una carta descubierta. Es un hueco en la colección, no un dato. */
+.carta--velada {
+  background: rgba(255, 255, 255, .04);
+  border: 1.5px dashed rgba(255, 255, 255, .14);
+  box-shadow: none;
+  cursor: default;
+}
+.carta--velada:hover, .carta--velada:active { transform: none; }
+.carta--velada .ilustracion {
+  background: rgba(0, 0, 0, .25);
+  border-color: rgba(255, 255, 255, .12);
+  box-shadow: none;
+  opacity: .5;
+}
+.carta--velada .nombre {
+  color: rgba(253, 251, 255, .32);
+  letter-spacing: 3px;
+}
+
 /* Brote de la carta al abrir el detalle de una recién revelada. */
 @keyframes carta-brotar {
   0%   { opacity: 0; transform: scale(.86); filter: brightness(2.4) saturate(.6); }
@@ -1381,6 +1403,24 @@ button.capitulo--navegable .capitulo-pista { color: rgba(255, 233, 168, .75); }
 
 .ornamento-mito { width: min(250px, 86%); height: auto; flex: none; }
 .ornamento-mito--invertido { transform: scaleY(-1); }
+
+/* Ícono evolutivo en grande: el mismo medallón de la grilla (72-84px), acá
+   como centro del frente sin imagen. activarIcono() (app.js) le arma el
+   detalle inline: escena de fondo si el ícono tiene una, y borde punteado
+   mientras la historia del personaje no está completa. */
+.frente-sin-imagen .ilustracion {
+  flex: none;
+  width: clamp(112px, 34vw, 150px);
+  height: clamp(112px, 34vw, 150px);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .18);
+  border: 1.5px solid rgba(255, 255, 255, .22);
+  box-shadow: 0 0 32px rgba(255, 216, 103, .22);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+.frente-sin-imagen .ilustracion svg { width: 100%; height: 100%; }
 
 .frente-nombre {
   margin: 0;

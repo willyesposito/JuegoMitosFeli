@@ -207,8 +207,28 @@ function crearCartaGaleria(p) {
   return carta;
 }
 
-/* La grilla solo muestra cartas descubiertas: el camino a una carta nueva es
-   el módulo del Oráculo, accesible desde el hub o el FAB de abajo. */
+/* Casillero de una carta todavía no descubierta (spec_funcional §2, "cuatro
+   estados visuales en grilla": velada · descubierta · completa plateada ·
+   completa dorada — la velada era la única que faltaba construir).
+   No identifica personaje ni mitología: ni nombre, ni ícono real, ni
+   colorCarta — nada que la jugadora no supiera ya por la cifra del
+   encabezado de la sección (ej. "5/13"). Es un hueco, no una pista. */
+function crearCartaVelada(resumida) {
+  const carta = document.createElement("div");
+  carta.className = resumida ? "carta carta-resumida carta--velada" : "carta carta--velada";
+  carta.setAttribute("aria-hidden", "true");
+  carta.innerHTML = `
+    <span class="ilustracion">${svgIcono(null, true)}</span>
+    <span class="nombre">???</span>`;
+  return carta;
+}
+
+/* La grilla muestra las cartas descubiertas y, al lado, un casillero velado
+   por cada una que todavía falta (mismo tier y mitología del filtro activo):
+   el camino a una carta nueva es el módulo del Oráculo, accesible desde el
+   hub o el FAB de abajo — acá no se navega, solo se ve el hueco. Durante una
+   búsqueda por nombre los casilleros velados no tienen sentido (no hay nombre
+   que puedan matchear) y se ocultan. */
 function renderGaleria() {
   const galeria = document.getElementById("galeria");
   const busqueda = normalizar(textoBusqueda.trim());
@@ -220,20 +240,24 @@ function renderGaleria() {
     return true;
   }));
 
-  const hayDescubiertos = personajes.some(p => estaDesbloqueada(p.id));
-  document.getElementById("mensaje-vacio").classList.toggle("oculto", visibles.length > 0 || !hayDescubiertos || busqueda !== "" || filtroActivo !== "todas");
+  document.getElementById("mensaje-vacio").classList.toggle("oculto", !busqueda || visibles.length > 0);
 
   galeria.classList.toggle("vista-lista", vistaActiva === "lista");
   galeria.innerHTML = "";
 
   for (const t of TIERS_SECCION) {
-    const delTier = visibles.filter(p => p.tier === t.id);
-    if (!delTier.length) continue;
-
     const enFiltro = personajes.filter(p => p.tier === t.id && (filtroActivo === "todas" || p.mitologia === filtroActivo));
+    const delTier = visibles.filter(p => p.tier === t.id);
+    // Buscando por nombre, una sección sin coincidencias no tiene nada que
+    // mostrar (ni cartas ni casilleros: "no encontré..." ya lo dice arriba).
+    // Sin búsqueda, la sección se muestra igual aunque esté en 0 — ahí abajo
+    // van los casilleros velados.
+    if (busqueda ? !delTier.length : !enFiltro.length) continue;
+
     const tengo = enFiltro.filter(p => estaDesbloqueada(p.id)).length;
     const total = enFiltro.length;
     const pct = total ? Math.round((tengo / total) * 100) : 0;
+    const veladas = busqueda ? 0 : total - tengo;
 
     const seccion = document.createElement("div");
     seccion.className = "seccion-tier";
@@ -246,6 +270,7 @@ function renderGaleria() {
     const grilla = document.createElement("div");
     grilla.className = "tier-grid";
     delTier.forEach(p => grilla.appendChild(crearCartaGaleria(p)));
+    for (let i = 0; i < veladas; i++) grilla.appendChild(crearCartaVelada(vistaActiva === "lista"));
     seccion.appendChild(grilla);
     galeria.appendChild(seccion);
   }
@@ -421,14 +446,19 @@ function cajaIlustracionHTML(p, completa) {
   const clases = ["frente-caja", "mito-" + p.mitologia, material.clase].filter(Boolean).join(" ");
   const estilo = material.tieneMaterial ? "" : ` style="background:${fondoCarta(p.colorCarta)}"`;
 
+  // Sin imagen, el ícono evolutivo (el mismo de la grilla, en iconos.js)
+  // recupera acá el lugar grande que tenía antes de la carta v2: medallón
+  // circular con su animación, su escena de fondo si tiene, y el borde
+  // punteado de "todavía por revelar" mientras la historia no está completa
+  // (lo aplica activarIcono() al abrir esta cara, ver abrirDetalle).
   const dentro = p.imagen
     ? `<img class="frente-imagen" src="${p.imagen}" alt="${p.nombre}, ${p.titulo}" width="780" height="1040">`
     : `
       <div class="frente-sin-imagen" style="--acento-mito:${(MITO_VISUAL[p.mitologia] || MITO_VISUAL.griega).acento}">
         ${ornamentoMito(p.mitologia)}
+        <span class="ilustracion" aria-hidden="true">${svgIcono(p.icono)}</span>
         <h2 class="frente-nombre" id="detalle-nombre">${p.nombre}</h2>
         <span class="divisor-mito"><i></i><span>${NOMBRE_MITO_CORTO[p.mitologia] || p.mitologia.toUpperCase()}</span><i></i></span>
-        ${ornamentoMito(p.mitologia, true)}
       </div>`;
 
   return `<div class="${clases}"${estilo}>${material.capas}${dentro}${esquinasHTML()}</div>`;
@@ -589,7 +619,10 @@ function abrirDetalle(id, recienRevelada = false, cara = "frente") {
   const contenido = document.getElementById("detalle-contenido");
   if (cara === "dorso") contenido.innerHTML = caraDorsoHTML(p, completa);
   else if (cara === "capitulos") contenido.innerHTML = caraCapitulosHTML(p);
-  else contenido.innerHTML = caraFrenteHTML(p, completa);
+  else {
+    contenido.innerHTML = caraFrenteHTML(p, completa);
+    if (!p.imagen) activarIcono(contenido.querySelector(".frente-sin-imagen .ilustracion"), p);
+  }
 
   contenido.querySelectorAll(".capitulo--navegable").forEach(boton => {
     boton.addEventListener("click", () => { location.href = boton.dataset.destino; });
