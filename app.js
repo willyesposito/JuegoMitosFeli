@@ -4,15 +4,15 @@
    grilla, detalle de carta, sets temáticos y ceremonias de material. El
    descubrimiento (Oráculo, ambos modos) vive en oraculo.html/oraculo.js. */
 
-const NOMBRE_MITO = { griega: "🏛️ Griega", nordica: "⚡ Nórdica", romana: "🦅 Romana" };
+const NOMBRE_MITO = { griega: "Griega", nordica: "Nórdica", romana: "Romana" };
 const NOMBRE_MITO_CORTO = { griega: "GRIEGA", nordica: "NÓRDICA", romana: "ROMANA" };
 const ATRIBUTOS = [
-  { clave: "fuerza",    icono: "⚔️", nombre: "Fuerza" },
-  { clave: "astucia",   icono: "🧠", nombre: "Astucia" },
-  { clave: "valentia",  icono: "🦁", nombre: "Valentía" },
-  { clave: "magia",     icono: "✨", nombre: "Magia" },
-  { clave: "liderazgo", icono: "👑", nombre: "Liderazgo" },
-  { clave: "bondad",    icono: "❤️", nombre: "Bondad" }
+  { clave: "fuerza",    icono: "fuerza",    nombre: "Fuerza" },
+  { clave: "astucia",   icono: "astucia",   nombre: "Astucia" },
+  { clave: "valentia",  icono: "valentia",  nombre: "Valentía" },
+  { clave: "magia",     icono: "magia",     nombre: "Magia" },
+  { clave: "liderazgo", icono: "liderazgo", nombre: "Liderazgo" },
+  { clave: "bondad",    icono: "bondad",    nombre: "Bondad" }
 ];
 
 let filtroActivo = "todas";
@@ -25,26 +25,25 @@ let nombresConstelaciones = {}; // id de constelación → nombre, para las pist
    Insignia de tier: distintivo estático de cuán central es el personaje en su
    mitología. Define el marco/holo máximo que puede alcanzar (ver historiaCompleta),
    no un logro en sí mismo. */
-const NOMBRE_TIER = { dorado: "⭐ Dorado", plateado: "✦ Plateado" };
+const NOMBRE_TIER = { dorado: "Dorado", plateado: "Plateado" };
 
 function chipTier(p) {
   const etiqueta = NOMBRE_TIER[p.tier];
-  return etiqueta ? `<span class="chip-tier tier-${p.tier}">${etiqueta}</span>` : "";
+  return etiqueta ? `<span class="chip-tier tier-${p.tier}">${iconoUI(p.tier, "icono-ui--inline")} ${etiqueta}</span>` : "";
 }
 
 /* Medallón de tier en la esquina del naipe (grilla — Handoff v2 §8, opción 1b).
    Solo dorado/plateado llevan medallón; normal no lo necesita. */
 function medallonTier(p) {
   if (p.tier !== "dorado" && p.tier !== "plateado") return "";
-  const simbolo = p.tier === "dorado" ? "⭐" : "✦";
-  return `<span class="medallon-tier tier-${p.tier}" title="${NOMBRE_TIER[p.tier]}">${simbolo}</span>`;
+  return `<span class="medallon-tier tier-${p.tier}" title="${NOMBRE_TIER[p.tier]}">${iconoUI(p.tier)}</span>`;
 }
 
 /* Divisor ornamental con el nombre de la mitología, en vez del chip suelto
    (grilla — Handoff v2 §8, opción 1b). */
 function divisorMito(p) {
   const nombre = NOMBRE_MITO_CORTO[p.mitologia] || p.mitologia.toUpperCase();
-  return `<span class="divisor-mito"><i></i><span>${nombre}</span><i></i></span>`;
+  return `<span class="divisor-mito"><i></i>${iconoUI(p.mitologia, "icono-ui--inline")}<span>${nombre}</span><i></i></span>`;
 }
 
 /* Habilidades del personaje en la carta de la grilla: sus dones principales,
@@ -121,9 +120,9 @@ function sembrarEstrellas() {
 /* Una barra por mitología (pedido de Hidalgo2): cada cultura muestra su propio
    progreso en vez de un único total general. */
 const MITOS_CONTADOR = [
-  { id: "griega",  icono: "🏛️", nombre: "Griega" },
-  { id: "nordica", icono: "⚡",  nombre: "Nórdica" },
-  { id: "romana",  icono: "🦅", nombre: "Romana" }
+  { id: "griega",  icono: "griega",  nombre: "Griega" },
+  { id: "nordica", icono: "nordica", nombre: "Nórdica" },
+  { id: "romana",  icono: "romana",  nombre: "Romana" }
 ];
 
 function renderContador() {
@@ -138,7 +137,7 @@ function renderContador() {
     const pct = total ? Math.round((tengo / total) * 100) : 0;
     return `
       <span class="contador-mito contador-mito--${m.id}" title="${m.nombre}: ${tengo} de ${total}">
-        <span class="contador-mito-icono" aria-hidden="true">${m.icono}</span>
+        <span class="contador-mito-icono" aria-hidden="true">${iconoUI(m.icono)}</span>
         <span class="contador-barra"><i style="width:${pct}%"></i></span>
         <span class="contador-mito-cifra">${tengo}<span class="contador-mito-total">/${total}</span></span>
       </span>`;
@@ -412,7 +411,7 @@ function selloHistoriaCompleta(completa) {
 function chipsIdentidad(p) {
   return `
     <div class="detalle-chips">
-      <span class="detalle-chip">${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
+      <span class="detalle-chip">${iconoUI(p.mitologia, "icono-ui--inline")} ${NOMBRE_MITO[p.mitologia] || p.mitologia}</span>
       ${chipTier(p)}
     </div>`;
 }
@@ -458,7 +457,7 @@ function cajaIlustracionHTML(p, completa) {
         ${ornamentoMito(p.mitologia)}
         <span class="ilustracion" aria-hidden="true">${svgIcono(p.icono)}</span>
         <h2 class="frente-nombre" id="detalle-nombre">${p.nombre}</h2>
-        <span class="divisor-mito"><i></i><span>${NOMBRE_MITO_CORTO[p.mitologia] || p.mitologia.toUpperCase()}</span><i></i></span>
+        <span class="divisor-mito"><i></i>${iconoUI(p.mitologia, "icono-ui--inline")}<span>${NOMBRE_MITO_CORTO[p.mitologia] || p.mitologia.toUpperCase()}</span><i></i></span>
       </div>`;
 
   return `<div class="${clases}"${estilo}>${material.capas}${dentro}${esquinasHTML()}</div>`;
@@ -490,7 +489,7 @@ function caraDorsoHTML(p, completa) {
     .filter(a => typeof p.atributos[a.clave] === "number")
     .map(a => `
     <div class="atributo">
-      <span class="icono-attr" aria-hidden="true">${a.icono}</span>
+      <span class="icono-attr" aria-hidden="true">${iconoUI(a.icono)}</span>
       <span class="nombre-attr">${a.nombre}</span>
       <div class="barra" role="img" aria-label="${a.nombre}: ${p.atributos[a.clave]} de 10">
         <span style="width:${p.atributos[a.clave] * 10}%"></span>

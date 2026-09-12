@@ -61,9 +61,18 @@
     <div class="pregunta-caja dificultad-caja">
       <h2>¿Qué tan difícil?</h2>
       <p class="dificultad-nota">Vale para toda la partida. Para jugar en otra dificultad, después creá otro perfil.</p>
-      <button class="boton-secundario dificultad-opcion" data-dificultad="facil">🌱 Fácil<span>Pistas generosas, desafíos suaves</span></button>
-      <button class="boton-secundario dificultad-opcion" data-dificultad="normal">⭐ Normal<span>El equilibrio de siempre: el reto se elige en cada módulo</span></button>
-      <button class="boton-secundario dificultad-opcion" data-dificultad="dificil">🔥 Difícil<span>Deducción completa y desafíos exigentes</span></button>
+      <button class="boton-secundario dificultad-opcion" data-dificultad="facil">
+        <span class="dificultad-titulo"><svg class="icono-ui icono-ui--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c0-6 0-11 6-15-1 6-2 9-6 15Z"/><path d="M12 21c0-4.5-1-8-5-11 1.5 4.5 2.5 7.5 5 11Z"/></svg>Fácil</span>
+        <span>Pistas generosas, desafíos suaves</span>
+      </button>
+      <button class="boton-secundario dificultad-opcion" data-dificultad="normal">
+        <span class="dificultad-titulo"><svg class="icono-ui icono-ui--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 14.4 9l5.6.5-4.3 3.8 1.3 5.5L12 15.9 6.9 18.8l1.3-5.5L4 9.5 9.6 9 12 3.5Z"/></svg>Normal</span>
+        <span>El equilibrio de siempre: el reto se elige en cada módulo</span>
+      </button>
+      <button class="boton-secundario dificultad-opcion" data-dificultad="dificil">
+        <span class="dificultad-titulo"><svg class="icono-ui icono-ui--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c.4 3-1.8 3.8-2.6 5.8-.7 1.7.1 2.9 1 3.5-.9-2 .1-3 1-3.7-.2 1.6.6 2.4 1.4 3.2 1.4 1.4 1.4 3.4.2 4.8-1.6 1.9-4.8 1.9-6.4-.2-1.7-2.3-1.1-5.5.6-7.7 1.4-1.8 3.4-3 4.8-5.7Z"/></svg>Difícil</span>
+        <span>Deducción completa y desafíos exigentes</span>
+      </button>
       <button class="boton-principal" id="boton-cancelar-dificultad">Cancelar</button>
     </div>
   </div>
@@ -82,6 +91,7 @@
   </div>
 
   <script src="nucleo.js"></script>
+  <script src="iconos-ui.js"></script>
   <script src="hub.js"></script>
 </body>
 </html>

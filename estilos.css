@@ -13,6 +13,11 @@
 
 html { -webkit-text-size-adjust: 100%; }
 
+/* Ícono de sistema (iconos-ui.js): hereda color del texto que acompaña,
+   se ubica junto a la palabra sin descolgarse de la línea. */
+.icono-ui { width: 1.1em; height: 1.1em; flex: none; vertical-align: -.18em; }
+.icono-ui--inline { width: .95em; height: .95em; margin-right: 2px; }
+
 @font-face {
   font-family: "Cinzel";
   src: url("fonts/cinzel-700.woff2") format("woff2");
@@ -103,7 +108,8 @@ button { font-family: inherit; cursor: pointer; }
 /* Una pastilla por mitología */
 .contador-mito { display: inline-flex; align-items: center; gap: 6px; }
 .contador-mito + .contador-mito { border-left: 1px solid rgba(255, 255, 255, .14); padding-left: 8px; }
-.contador-mito-icono { font-size: .95rem; line-height: 1; }
+.contador-mito-icono { display: inline-flex; }
+.contador-mito-icono .icono-ui { width: .95rem; height: .95rem; color: rgba(255, 255, 255, .85); }
 .contador-mito-cifra { font-size: .85rem; font-variant-numeric: tabular-nums; }
 .contador-mito-total { opacity: .55; font-weight: 600; }
 
@@ -365,11 +371,14 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .chip-mito {
+  display: inline-flex;
+  align-items: center;
   font-size: .72rem;
   font-weight: 700;
   background: rgba(0, 0, 0, .25);
   border-radius: 999px;
   padding: 3px 10px;
+  color: #fdfbff;
 }
 
 /* ===== Naipe de colección (Handoff v2 §8, opciones 1a + 1b) =====
@@ -400,6 +409,8 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
 }
+.medallon-tier .icono-ui { width: 13px; height: 13px; }
+.carta.carta-resumida .medallon-tier .icono-ui { width: 9px; height: 9px; }
 .medallon-tier.tier-dorado   { background: linear-gradient(135deg, #f8e08e, #c9962e); color: #4a3200; }
 .medallon-tier.tier-plateado { background: linear-gradient(135deg, #f4f7fb, #9aa5b5); color: #2b323c; }
 
@@ -425,6 +436,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .divisor-mito i { flex: 1; max-width: 26px; height: 1px; background: rgba(255, 216, 103, .45); }
 .divisor-mito span { font-size: .62rem; font-weight: 700; color: rgba(255, 236, 170, .9); letter-spacing: 1px; }
+.divisor-mito .icono-ui { color: rgba(255, 236, 170, .9); width: .8em; height: .8em; }
 
 .carta .esquina { width: 11px; height: 11px; top: 8px; bottom: 8px; left: 8px; right: 8px; }
 
@@ -466,6 +478,8 @@ button { font-family: inherit; cursor: pointer; }
    Define el marco/holo máximo que la carta puede alcanzar (ver capítulos más abajo),
    no es en sí mismo un logro. */
 .chip-tier {
+  display: inline-flex;
+  align-items: center;
   font-size: .72rem;
   font-weight: 800;
   border-radius: 999px;
@@ -651,13 +665,15 @@ button { font-family: inherit; cursor: pointer; }
 .detalle-titulo { font-style: italic; color: rgba(255, 255, 255, .92); margin: 2px 0 4px; }
 
 .detalle-chip {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   font-size: .8rem;
   font-weight: 700;
   background: rgba(0, 0, 0, .25);
   border-radius: 999px;
   padding: 4px 14px;
   margin-bottom: 12px;
+  color: #fdfbff;
 }
 
 .dones { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 16px; }
@@ -674,7 +690,8 @@ button { font-family: inherit; cursor: pointer; }
 
 .atributo { display: grid; grid-template-columns: 26px 76px 1fr 24px; align-items: center; gap: 8px; }
 
-.atributo .icono-attr { font-size: 1.2rem; text-align: center; }
+.atributo .icono-attr { display: flex; align-items: center; justify-content: center; color: rgba(255, 216, 103, .9); }
+.atributo .icono-attr .icono-ui { width: 1.15rem; height: 1.15rem; }
 
 .atributo .nombre-attr {
   font-size: .82rem;

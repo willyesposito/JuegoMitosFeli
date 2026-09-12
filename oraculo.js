@@ -7,14 +7,14 @@
    más de una carta por sesión en cualquiera de los dos modos. */
 
 const ATRIBUTOS_ORACULO = [
-  { clave: "fuerza",    icono: "⚔️", nombre: "Fuerza" },
-  { clave: "astucia",   icono: "🧠", nombre: "Astucia" },
-  { clave: "valentia",  icono: "🦁", nombre: "Valentía" },
-  { clave: "magia",     icono: "✨", nombre: "Magia" },
-  { clave: "liderazgo", icono: "👑", nombre: "Liderazgo" },
-  { clave: "bondad",    icono: "❤️", nombre: "Bondad" }
+  { clave: "fuerza",    icono: "fuerza",    nombre: "Fuerza" },
+  { clave: "astucia",   icono: "astucia",   nombre: "Astucia" },
+  { clave: "valentia",  icono: "valentia",  nombre: "Valentía" },
+  { clave: "magia",     icono: "magia",     nombre: "Magia" },
+  { clave: "liderazgo", icono: "liderazgo", nombre: "Liderazgo" },
+  { clave: "bondad",    icono: "bondad",    nombre: "Bondad" }
 ];
-const NOMBRE_MITO_ORACULO = { griega: "🏛️ Griega", nordica: "⚡ Nórdica", romana: "🦅 Romana" };
+const NOMBRE_MITO_ORACULO = { griega: "Griega", nordica: "Nórdica", romana: "Romana" };
 /* Acentos por mitología para el estallido del flip de revelación. */
 const ACENTO_MITO = {
   griega:  { acc: "#ffd867", acc2: "#ff9e6b" },
@@ -80,7 +80,7 @@ function caraOraculoHTML(p) {
       <span class="ilustracion">${svgIcono(p.icono)}</span>
       <strong class="oraculo-cara-nombre">${p.nombre}</strong>
       <em class="oraculo-cara-titulo">${p.titulo}</em>
-      <span class="chip-mito">${NOMBRE_MITO_ORACULO[p.mitologia] || p.mitologia}</span>
+      <span class="chip-mito">${iconoUI(p.mitologia, "icono-ui--inline")} ${NOMBRE_MITO_ORACULO[p.mitologia] || p.mitologia}</span>
     </div>`;
 }
 
@@ -478,7 +478,7 @@ function feedbackParametrico(intento) {
   const mismaLinaje = intento.mitologia === secreto.mitologia;
   const attrs = ATRIBUTOS_ORACULO.map(a => {
     const f = flechaComparacion(secreto.atributos[a.clave], intento.atributos[a.clave]);
-    return `<span class="oraculo-feedback-attr oraculo-feedback-attr--${f.clase}" title="${a.nombre}">${a.icono}${f.simbolo}</span>`;
+    return `<span class="oraculo-feedback-attr oraculo-feedback-attr--${f.clase}" title="${a.nombre}">${iconoUI(a.icono)}${f.simbolo}</span>`;
   }).join("");
   return `
     <div class="oraculo-intento">

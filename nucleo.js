@@ -14,7 +14,8 @@ const MAX_PERFILES = 5;
    se crea otro perfil. Los módulos la leen con dificultadActual() y ajustan
    exigencia (pistas, intentos, feedback), nunca contenido ni acceso. */
 const DIFICULTADES = ["facil", "normal", "dificil"];
-const NOMBRE_DIFICULTAD = { facil: "🌱 Fácil", normal: "⭐ Normal", dificil: "🔥 Difícil" };
+const NOMBRE_DIFICULTAD = { facil: "Fácil", normal: "Normal", dificil: "Difícil" };
+const ICONO_DIFICULTAD = { facil: "facil", normal: "normal", dificil: "dificil" };
 
 /* Mazo inicial curado por Willy (ver Documentacion/sesion_actual.md, que es
    su versión legible). Ya no se aplica solo: un perfil nuevo o recién
