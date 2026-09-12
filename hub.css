@@ -49,17 +49,19 @@
 
 .hub-astro {
   position: absolute; transform: translate(-50%, -50%); z-index: 2; width: 46px; height: 46px;
-  border-radius: 50%; display: grid; place-items: center; font-size: 20px; text-decoration: none;
+  border-radius: 50%; display: grid; place-items: center; color: #ffe9a8; text-decoration: none;
   background: radial-gradient(circle, rgba(226, 220, 255, .3), rgba(226, 220, 255, .04) 70%);
   box-shadow: 0 0 14px 3px rgba(200, 190, 255, .22); border: 1.5px solid rgba(255, 255, 255, .26);
   animation: hub-breathe 4.6s ease-in-out infinite;
 }
+.hub-astro .icono-ui { width: 22px; height: 22px; }
 .hub-astro:hover, .hub-astro:focus-visible { animation-play-state: paused; transform: translate(-50%, -50%) scale(1.12); outline: none; }
 .hub-astro--oraculo {
-  width: 64px; height: 64px; font-size: 26px;
+  width: 64px; height: 64px;
   background: radial-gradient(circle, rgba(255, 216, 103, .5), rgba(255, 216, 103, .06) 70%);
   box-shadow: 0 0 24px 7px rgba(255, 216, 103, .35); border-color: rgba(255, 216, 103, .6); animation-duration: 4s;
 }
+.hub-astro--oraculo .icono-ui { width: 30px; height: 30px; }
 .hub-astro--locked { opacity: .5; filter: grayscale(.6); border-style: dashed; box-shadow: none; pointer-events: none; animation: none; }
 @keyframes hub-breathe { 0%, 100% { transform: translate(-50%, -50%) scale(1); } 50% { transform: translate(-50%, -50%) scale(1.06); } }
 
@@ -159,6 +161,16 @@
   font-size: .78rem;
   font-weight: normal;
   color: var(--texto-suave);
+}
+
+.dificultad-titulo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--texto);
 }
 
 #boton-cancelar-dificultad { width: 100%; margin-top: 14px; }

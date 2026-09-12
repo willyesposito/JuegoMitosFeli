@@ -38,12 +38,24 @@
       aria-label="Buscar por nombre (solo encuentra cartas desbloqueadas)">
 
     <div class="menu-control" data-menu="filtro">
-      <button class="chip-trigger" id="trigger-filtro" aria-haspopup="true" aria-expanded="false" aria-controls="panel-filtro">🏛️ Filtro</button>
+      <button class="chip-trigger" id="trigger-filtro" aria-haspopup="true" aria-expanded="false" aria-controls="panel-filtro">
+        <svg class="icono-ui icono-ui--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M5 20V10M9 20V10M15 20V10M19 20V10M3 10l9-6 9 6"/></svg>
+        Filtro
+      </button>
       <div class="panel-control oculto" id="panel-filtro" role="group" aria-label="Filtrar por mitología">
         <button class="chip activo" data-filtro="todas">Todas</button>
-        <button class="chip" data-filtro="griega">🏛️ Griega</button>
-        <button class="chip" data-filtro="nordica">⚡ Nórdica</button>
-        <button class="chip" data-filtro="romana">🦅 Romana</button>
+        <button class="chip" data-filtro="griega">
+          <svg class="icono-ui icono-ui--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M5 20V10M9 20V10M15 20V10M19 20V10M3 10l9-6 9 6"/></svg>
+          Griega
+        </button>
+        <button class="chip" data-filtro="nordica">
+          <svg class="icono-ui icono-ui--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 6 13h5l-2 9 9-13h-5l2-9Z"/></svg>
+          Nórdica
+        </button>
+        <button class="chip" data-filtro="romana">
+          <svg class="icono-ui icono-ui--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16"/><path d="M12 6c-2.4.3-4 2-4 4s1.6 3.2 4 3c-2.4.4-4 2-4 3.8"/><path d="M12 6c2.4.3 4 2 4 4s-1.6 3.2-4 3c2.4.4 4 2 4 3.8"/></svg>
+          Romana
+        </button>
       </div>
     </div>
 
@@ -117,6 +129,7 @@
 
   <script src="iconos.js"></script>
   <script src="nucleo.js"></script>
+  <script src="iconos-ui.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

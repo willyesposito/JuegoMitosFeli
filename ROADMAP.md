@@ -42,6 +42,8 @@ Presupuesto vigente: 85 personajes (13 dorados, 37 plateados, 35 normales), 206 
 * **Nota de contenido anotada, sin implementar a propósito:** reemplazar `ordena:forja_enana` de Freya por el robo del Brisingamen. Hoy juega con la versión publicada (la forja del collar).
 * **Ola 3:** antes de construir Reliquias o Encrucijada hay que producir su catálogo: ~14 reliquias, ~13 encrucijadas. Ningún personaje depende hoy de estas fuentes (no hay capítulos `reliquia:` ni `encrucijada:` en `personajes.json`), así que no bloquean nada existente.
 
+* **Íconos propios de Ordená el Mito.** `mitos_ordena.json` tiene ~250 campos `icono` en emoji del sistema operativo (mismo problema que se corrigió en hub/atributos/mitología/tier/dificultad: se ven distinto por dispositivo, rompen el registro Cinzel/oro, y alguno mete error de sentido — el caso testigo era el mono tapándose los oídos para "los otros cíclopes escuchan"). Es una producción de volumen (~250 SVG propios), no un ajuste de una sesión: queda pendiente como frente aparte.
+
 ## 4. Ideas abiertas (esperando decisión de Willy)
 
 Nada de acá se construye sin instrucción explícita.

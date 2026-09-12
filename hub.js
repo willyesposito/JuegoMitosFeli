@@ -6,12 +6,12 @@
    "arquitectura de hub modular"). */
 
 const MODULOS = [
-  { id: "oraculo",   nombre: "El Oráculo",     emoji: "🔮", href: "oraculo.html",   x: 50,   y: 22,   hub: true },
-  { id: "coleccion", nombre: "Héroes y Dioses", emoji: "🏛️", href: "coleccion.html", x: 21.5, y: 41.2 },
-  { id: "cielo",     nombre: "El Cielo",       emoji: "🌌", href: "cielo.html",     x: 79,   y: 12.8 },
-  { id: "ordena",    nombre: "Ordená el Mito", emoji: "🧩", href: "ordena.html",    x: 68,   y: 68 },
-  { id: "mapa",      nombre: "El Mapa",        emoji: "🗺️", href: "mapa.html",      x: 29.5, y: 78.4 },
-  { id: "espejo",    nombre: "El Espejo",      emoji: "🪞", href: "espejo.html",    x: 85,   y: 46.4 },
+  { id: "oraculo",   nombre: "El Oráculo",     icono: "oraculo",   href: "oraculo.html",   x: 50,   y: 22,   hub: true },
+  { id: "coleccion", nombre: "Héroes y Dioses", icono: "coleccion", href: "coleccion.html", x: 21.5, y: 41.2 },
+  { id: "cielo",     nombre: "El Cielo",       icono: "cielo",     href: "cielo.html",     x: 79,   y: 12.8 },
+  { id: "ordena",    nombre: "Ordená el Mito", icono: "ordena",    href: "ordena.html",    x: 68,   y: 68 },
+  { id: "mapa",      nombre: "El Mapa",        icono: "mapa",      href: "mapa.html",      x: 29.5, y: 78.4 },
+  { id: "espejo",    nombre: "El Espejo",      icono: "espejo",    href: "espejo.html",    x: 85,   y: 46.4 },
 ];
 
 /* Aristas de la constelación (el Oráculo es el centro). true = línea punteada tenue. */
@@ -124,7 +124,7 @@ async function renderConstelacion() {
     const prog = progresos[i];
     const cls = "hub-astro" + (m.hub ? " hub-astro--oraculo" : "");
     const delay = (Math.random() * 2).toFixed(2);
-    html += `<a class="${cls}" href="${m.href}" style="left:${m.x}%;top:${m.y}%;animation-delay:${delay}s" aria-label="${m.nombre}, ${prog}">${m.emoji}</a>`;
+    html += `<a class="${cls}" href="${m.href}" style="left:${m.x}%;top:${m.y}%;animation-delay:${delay}s" aria-label="${m.nombre}, ${prog}">${iconoUI(m.icono)}</a>`;
     html += `<span class="hub-astro-label" style="left:${m.x}%;top:calc(${m.y}% + ${m.hub ? 42 : 32}px)" aria-hidden="true"><b>${m.nombre}</b><i>${prog}</i></span>`;
   });
   cont.innerHTML = html;
@@ -183,7 +183,7 @@ function renderListaPerfiles() {
         <span class="perfil-avatar" aria-hidden="true">👤</span>
         <span class="perfil-datos">
           <strong>${p.nombre}</strong>
-          <span>${NOMBRE_DIFICULTAD[p.dificultad]} · ${p.descubiertos} héroes${p.activo ? " · jugando ahora" : ""}</span>
+          <span>${iconoUI(ICONO_DIFICULTAD[p.dificultad], "icono-ui--inline")} ${NOMBRE_DIFICULTAD[p.dificultad]} · ${p.descubiertos} héroes${p.activo ? " · jugando ahora" : ""}</span>
         </span>
       </button>
       ${lista.length > 1 ? `<button class="perfil-borrar" data-indice="${p.indice}" aria-label="Borrar perfil ${p.nombre}">✕</button>` : ""}
