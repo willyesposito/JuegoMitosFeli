@@ -117,6 +117,7 @@ Cuando diseñes o documentes un módulo nuevo, usá esta estructura en `ROADMAP.
 | `Documentacion/contenido para mergear/` | Capítulos escritos sin volcar al JSON. |
 | `Documentacion/mockups visuales/` | Referencia visual. |
 | `skills/nuevo-personaje-mitos/SKILL.md` | Skill de producción visual controlada para generar una única imagen desde el ADN del repo y con preflight anti-clonación. |
+| `herramientas/capturar-pantallas.js` | No es parte del juego. Herramienta de Claude Code para sembrar un perfil de prueba y sacar capturas de las pantallas principales, así una revisión visual arranca viendo el juego real en vez de leer CSS. |
 | `Archivos anteriores/` | Superado. **No partir de estos archivos.** |
 
 ---
