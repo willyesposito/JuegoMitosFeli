@@ -421,14 +421,19 @@ function cajaIlustracionHTML(p, completa) {
   const clases = ["frente-caja", "mito-" + p.mitologia, material.clase].filter(Boolean).join(" ");
   const estilo = material.tieneMaterial ? "" : ` style="background:${fondoCarta(p.colorCarta)}"`;
 
+  // Sin imagen, el ícono evolutivo (el mismo de la grilla, en iconos.js)
+  // recupera acá el lugar grande que tenía antes de la carta v2: medallón
+  // circular con su animación, su escena de fondo si tiene, y el borde
+  // punteado de "todavía por revelar" mientras la historia no está completa
+  // (lo aplica activarIcono() al abrir esta cara, ver abrirDetalle).
   const dentro = p.imagen
     ? `<img class="frente-imagen" src="${p.imagen}" alt="${p.nombre}, ${p.titulo}" width="780" height="1040">`
     : `
       <div class="frente-sin-imagen" style="--acento-mito:${(MITO_VISUAL[p.mitologia] || MITO_VISUAL.griega).acento}">
         ${ornamentoMito(p.mitologia)}
+        <span class="ilustracion" aria-hidden="true">${svgIcono(p.icono)}</span>
         <h2 class="frente-nombre" id="detalle-nombre">${p.nombre}</h2>
         <span class="divisor-mito"><i></i><span>${NOMBRE_MITO_CORTO[p.mitologia] || p.mitologia.toUpperCase()}</span><i></i></span>
-        ${ornamentoMito(p.mitologia, true)}
       </div>`;
 
   return `<div class="${clases}"${estilo}>${material.capas}${dentro}${esquinasHTML()}</div>`;
@@ -589,7 +594,10 @@ function abrirDetalle(id, recienRevelada = false, cara = "frente") {
   const contenido = document.getElementById("detalle-contenido");
   if (cara === "dorso") contenido.innerHTML = caraDorsoHTML(p, completa);
   else if (cara === "capitulos") contenido.innerHTML = caraCapitulosHTML(p);
-  else contenido.innerHTML = caraFrenteHTML(p, completa);
+  else {
+    contenido.innerHTML = caraFrenteHTML(p, completa);
+    if (!p.imagen) activarIcono(contenido.querySelector(".frente-sin-imagen .ilustracion"), p);
+  }
 
   contenido.querySelectorAll(".capitulo--navegable").forEach(boton => {
     boton.addEventListener("click", () => { location.href = boton.dataset.destino; });

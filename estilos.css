@@ -1382,6 +1382,24 @@ button.capitulo--navegable .capitulo-pista { color: rgba(255, 233, 168, .75); }
 .ornamento-mito { width: min(250px, 86%); height: auto; flex: none; }
 .ornamento-mito--invertido { transform: scaleY(-1); }
 
+/* Ícono evolutivo en grande: el mismo medallón de la grilla (72-84px), acá
+   como centro del frente sin imagen. activarIcono() (app.js) le arma el
+   detalle inline: escena de fondo si el ícono tiene una, y borde punteado
+   mientras la historia del personaje no está completa. */
+.frente-sin-imagen .ilustracion {
+  flex: none;
+  width: clamp(112px, 34vw, 150px);
+  height: clamp(112px, 34vw, 150px);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .18);
+  border: 1.5px solid rgba(255, 255, 255, .22);
+  box-shadow: 0 0 32px rgba(255, 216, 103, .22);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+.frente-sin-imagen .ilustracion svg { width: 100%; height: 100%; }
+
 .frente-nombre {
   margin: 0;
   font-family: "Cinzel", serif;
