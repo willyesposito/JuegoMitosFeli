@@ -906,8 +906,19 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* Capítulos dentro del detalle: encendido (leíble) o velado (con la pista de
-   dónde se gana, ver pistaCapituloVelado en app.js). */
-.capitulos { text-align: left; margin-bottom: 14px; }
+   dónde se gana, ver pistaCapituloVelado en app.js).
+   El color de identidad del personaje se queda en el encabezado de la cara
+   (fuera de este bloque); acá adentro la superficie de lectura es un panel
+   neutro fijo, para que el texto largo no tenga que competir con el
+   degradado de `colorCarta` — un color sirve para identificar la carta,
+   no para leer párrafos encima. */
+.capitulos {
+  text-align: left;
+  margin-bottom: 14px;
+  background: rgba(10, 8, 26, .6);
+  border-radius: calc(var(--radio) + 4px);
+  padding: 10px;
+}
 
 .capitulos-progreso {
   position: relative;
@@ -930,7 +941,7 @@ button { font-family: inherit; cursor: pointer; }
   font-size: .98rem;
 }
 
-.capitulo--encendido { background: rgba(0, 0, 0, .22); }
+.capitulo--encendido { background: rgba(0, 0, 0, .24); }
 .capitulo--encendido h3 { font-size: 1.02rem; margin-bottom: 6px; }
 
 .capitulo--encendido .bloque-porque--capitulo {
