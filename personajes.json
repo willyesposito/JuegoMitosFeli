@@ -467,6 +467,7 @@
   },
   {
     "id": "atenea",
+    "imagen": "imagenes/atenea.jpg",
     "nombre": "Atenea",
     "mitologia": "griega",
     "titulo": "La diosa de la sabiduría",
@@ -933,6 +934,7 @@
   },
   {
     "id": "odin",
+    "imagen": "imagenes/odin.jpg",
     "nombre": "Odín",
     "mitologia": "nordica",
     "titulo": "El Padre de Todos",
@@ -2216,6 +2218,7 @@
   },
   {
     "id": "afrodita",
+    "imagen": "imagenes/afrodita.jpg",
     "nombre": "Afrodita",
     "mitologia": "griega",
     "titulo": "La diosa del amor y la belleza",
