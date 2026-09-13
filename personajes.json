@@ -285,6 +285,7 @@
   },
   {
     "id": "atlas",
+    "imagen": "imagenes/atlas.jpg",
     "nombre": "Atlas",
     "mitologia": "griega",
     "titulo": "El titán que sostiene el cielo",
@@ -842,6 +843,7 @@
   },
   {
     "id": "loki",
+    "imagen": "imagenes/loki.jpg",
     "nombre": "Loki",
     "mitologia": "nordica",
     "titulo": "El tramposo de Asgard",
@@ -5501,6 +5503,7 @@
   },
   {
     "id": "romulo_remo",
+    "imagen": "imagenes/romulo_remo.jpg",
     "nombre": "Rómulo y Remo",
     "mitologia": "romana",
     "titulo": "Los hermanos fundadores de Roma",
