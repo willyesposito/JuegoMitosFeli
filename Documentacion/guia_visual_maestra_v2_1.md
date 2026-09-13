@@ -53,17 +53,38 @@ Si una imagen puede asustar a una nena que la mira sola de noche, está mal resu
 
 Este bloque es fijo y se mantiene estable en las 85 ilustraciones.
 
-Las imágenes aprobadas de **Zeus, Atenea e Iris** son referencias de **estilo**, no de anatomía ni identidad facial.
+Las imágenes aprobadas de **Zeus, Atenea e Iris** son referencias de **estilo**, no de anatomía, identidad facial, objetos ni escenario. El feedback de Willy sobre la última generación de **Odín** fija además la calibración infantil escrita a continuación; mientras esa imagen no tenga una ruta persistente en el repo, no se debe afirmar que fue inspeccionada desde un chat nuevo.
+
+En el caso de Odín, la aprobación alcanza exclusivamente al lenguaje infantil de ejecución. No valida como canon la lanza, el parche, las runas, los broches, la montaña, el barco, el pueblo ni ningún otro elemento que no esté autorizado por su ficha. **ESTILO = referencia aprobada. IDENTIDAD Y CONTENIDO = exclusivamente fuentes del personaje en el repo.**
+
+### Restricción dominante: aventura infantil
+
+Antes que mitológico, épico, adulto, guerrero, rey, anciano o poderoso, cada personaje debe leerse como un **personaje de aventura infantil de película animada familiar**, con acabado sofisticado.
+
+Esto exige de manera positiva:
+
+- ojos grandes y muy expresivos dentro de la anatomía propia del personaje;
+- cabeza proporcionalmente algo mayor que en un adulto real cuando corresponda;
+- nariz, mandíbula, manos y musculatura simplificadas y suavemente redondeadas;
+- formas limpias, legibles y amables, sin planos faciales duros;
+- volumen suave y sombreado pictórico simplificado;
+- iluminación cálida o amable, ajustada al ambiente, sin dramatismo adulto;
+- materiales claramente ilustrados, diferenciados por grandes formas, color y luz, sin simulación fotorrealista ni microtextura dominante;
+- expresión accesible y con curiosidad, calidez, humor o personalidad según la ficha, sin imponer la misma sonrisa a todos.
+
+La edad aparente se conserva: un adulto mayor debe seguir pareciendo adulto mayor y un guerrero debe conservar su fuerza. Esos atributos nunca autorizan anatomía realista, rostro severo, mandíbula cincelada, piel fotorrealista, solemnidad épica, intimidación, militarización adulta ni estética de videojuego AAA.
+
+**Gate obligatorio:** si la imagen parece arte conceptual para un videojuego, una película épica adulta o una representación semirrealista, falla aunque sus atributos mitológicos sean correctos. Si sólo es “segura” o sonríe, pero no tiene el lenguaje infantil positivo definido arriba, también falla.
 
 ### Técnica
 
 - Ilustración digital pintada.
-- Acabado suave, con volumen real.
+- Acabado suave, con volumen ilustrado y simplificado.
 - Textura visible en piel, pelo, tela, cuero, madera, piedra y metal.
 - Contorno blando.
 - Sin línea negra dura de cartoon.
 - Nivel de caricatura moderado.
-- Proporciones cercanas a las humanas cuando corresponda.
+- Proporciones humanas reinterpretadas mediante caricatura moderada cuando corresponda.
 - Cabeza levemente agrandada.
 - Rasgos expresivos, pero no deformes.
 
