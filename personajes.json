@@ -20,6 +20,7 @@
     },
     "colorCarta": "#4A7C59",
     "icono": "laberinto",
+    "imagen": "imagenes/teseo.jpg",
     "tier": "dorado",
     "capitulos": [
       {
@@ -119,6 +120,7 @@
     },
     "colorCarta": "#C97B2D",
     "icono": "leon",
+    "imagen": "imagenes/heracles.jpg",
     "tier": "dorado",
     "capitulos": [
       {
@@ -5598,6 +5600,7 @@
     },
     "colorCarta": "#6B4A4A",
     "icono": "cetro",
+    "imagen": "imagenes/agamenon.jpg",
     "tier": "plateado",
     "capitulos": [
       {
