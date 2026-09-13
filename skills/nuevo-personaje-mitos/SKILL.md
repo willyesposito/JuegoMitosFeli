@@ -284,13 +284,17 @@ No convertir estas propiedades en una composición única.
 
 Comparar con la imagen real aprobada y exigir por separado:
 
-- rostro expresivo y accesible, con caricatura moderada compatible con la edad del personaje;
-- proporciones ilustradas y cabeza levemente agrandada cuando corresponda a su anatomía;
-- formas limpias y volumen simplificado, sin anatomía cincelada ni poros o texturas fotográficas;
+- lectura inmediata de personaje de aventura infantil de película animada familiar, antes que guerrero, rey, anciano, criatura o figura épica;
+- ojos grandes y muy expresivos, y rostro accesible, con caricatura moderada compatible con la edad del personaje;
+- proporciones ilustradas y cabeza algo mayor que en un adulto real cuando corresponda a su anatomía;
+- nariz, mandíbula, manos y musculatura simplificadas y suavemente redondeadas;
+- formas limpias y volumen suave, sin planos faciales duros, anatomía cincelada ni poros o texturas fotográficas;
 - materiales distinguibles mediante color, luz y grandes formas; el microdetalle no debe dominar;
 - personalidad y aventura sin solemnidad uniforme, amenaza ni militarización adulta.
 
-Una sonrisa y ausencia de violencia no prueban este gate. No imponer sonrisa a personajes cuya ficha exige otra emoción; la lectura infantil se resuelve en el diseño completo. “Adulto maduro”, “robusto” o un valor alto de rigidez no autorizan realismo adulto. La forma rectangular del rostro no exige dureza expresiva.
+Una sonrisa y ausencia de violencia no prueban este gate. No imponer sonrisa a personajes cuya ficha exige otra emoción; la lectura infantil se resuelve en el diseño completo. “Adulto maduro”, “robusto”, “anciano”, “guerrero”, “rey”, “poderoso” o un valor alto de rigidez no autorizan realismo adulto. La forma rectangular del rostro no exige dureza expresiva. Si parece arte conceptual de videojuego, película épica adulta o representación semirrealista, falla aunque el canon mitológico esté correcto.
+
+El feedback de Willy sobre la última generación de Odín calibra este nivel infantil, pero sólo su **estilo** es transferible. Sus objetos, símbolos, vestuario y escenario no se incorporan a la whitelist de Odín ni de ningún otro personaje si no aparecen en las fuentes obligatorias. Separar siempre: **ESTILO = referencias aprobadas; IDENTIDAD Y CONTENIDO = ficha y canon del objetivo.** Mientras esa imagen no tenga una ruta persistente en el repo, aplicar la calibración escrita sin afirmar que la imagen fue inspeccionada desde un chat nuevo.
 
 Ordenar el prompt: acabado infantil → identidad → acción/silueta → inventario cerrado → encuadre/contexto → exclusiones breves. Evitar repetir descripciones anatómicas o materiales que ahoguen el estilo. No usar “stylized realism”, “cinematic realism” ni “proud command” como instrucciones positivas.
 
