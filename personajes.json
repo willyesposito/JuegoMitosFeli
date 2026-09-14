@@ -210,6 +210,7 @@
   },
   {
     "id": "penelope",
+    "imagen": "imagenes/penelope.jpg",
     "nombre": "Penélope",
     "mitologia": "griega",
     "titulo": "La reina del telar",
@@ -552,6 +553,7 @@
   },
   {
     "id": "perseo",
+    "imagen": "imagenes/perseo.jpg",
     "nombre": "Perseo",
     "mitologia": "griega",
     "titulo": "El héroe del escudo espejo",
@@ -1113,6 +1115,7 @@
   },
   {
     "id": "heimdall",
+    "imagen": "imagenes/heimdall.jpg",
     "nombre": "Heimdall",
     "mitologia": "nordica",
     "titulo": "El guardián del arcoíris",
@@ -1456,6 +1459,7 @@
   },
   {
     "id": "hera",
+    "imagen": "imagenes/hera.jpg",
     "nombre": "Hera",
     "mitologia": "griega",
     "titulo": "La reina del Olimpo",
@@ -1633,6 +1637,7 @@
   },
   {
     "id": "hades",
+    "imagen": "imagenes/hades.jpg",
     "nombre": "Hades",
     "mitologia": "griega",
     "titulo": "El guardián del mundo subterráneo",
@@ -2388,6 +2393,7 @@
   },
   {
     "id": "hermes",
+    "imagen": "imagenes/hermes.jpg",
     "nombre": "Hermes",
     "mitologia": "griega",
     "titulo": "El mensajero de los dioses",
@@ -4593,6 +4599,7 @@
   },
   {
     "id": "sigurd",
+    "imagen": "imagenes/sigurd.jpg",
     "nombre": "Sigurd",
     "mitologia": "nordica",
     "titulo": "El héroe que venció al dragón",
