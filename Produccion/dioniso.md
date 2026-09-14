@@ -80,23 +80,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
-**Contra Orfeo.**
-
-| | Dioniso | Orfeo |
-|---|---|---|
-| Cabello | negro | castaño muy oscuro |
-| Textura | largo rizado suelto | ondulado marcado |
-| Piel | oliva media | oliva clara |
-| Ojos | marrón cálido | avellana |
-
-Silueta de Orfeo, para no repetirla: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas.
-
-Pose de Orfeo, para no repetirla: sentado o apoyado tocando la lira.
-
-Ejes numéricos que ya los separan: apertura corporal 9 contra 4, densidad visual 8 contra 4, contorno superior 9 contra 6, dependencia del identificador 6 contra 9.
-
-**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
 **Contra Apolo.**
 
 | | Dioniso | Apolo |
@@ -113,6 +96,23 @@ Pose de Apolo, para no repetirla: tocando o afinando la lira; gesto artístico, 
 Ejes numéricos que ya los separan: contorno superior 9 contra 5, apertura corporal 9 contra 5, verticalidad 4 contra 8, angulosidad facial 2 contra 5.
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Orfeo.**
+
+| | Dioniso | Orfeo |
+|---|---|---|
+| Cabello | negro | castaño muy oscuro |
+| Textura | largo rizado suelto | ondulado marcado |
+| Piel | oliva media | oliva clara |
+| Ojos | marrón cálido | avellana |
+
+Silueta de Orfeo, para no repetirla: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas.
+
+Pose de Orfeo, para no repetirla: sentado o apoyado tocando la lira.
+
+Ejes numéricos que ya los separan: apertura corporal 9 contra 4, densidad visual 8 contra 4, contorno superior 9 contra 6, dependencia del identificador 6 contra 9.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 Criterio de la ficha: Apolo y Orfeo. Diferenciar por energía social, cabello más suelto y formas orgánicas, no pose artística íntima ni lira protagonista.
 
@@ -138,4 +138,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de `estilo_visual_aprobado.md` §9.

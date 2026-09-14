@@ -480,3 +480,52 @@ aladas — identificador principal" se cumple con un par de sandalias apoyadas.
 prohibición de caricatura y de cabeza agrandada, y Teseo como calibración. La corrección es
 sobre el acabado y sobre el don, no sobre la estructura. Volver al registro animado estaba
 sobre la mesa y Willy lo descartó.
+
+---
+
+## Intento 2 de Hermes — 2026-09-14, RECHAZADO por Willy. Y el diagnóstico real
+
+Segunda imagen, generada después de agregar al archivo de estilo la §3.1 de pintura visible y
+la §7 de manifestación del don.
+
+**Qué salió.** Un óleo academicista del siglo XIX. Pincelada visible, empaste en las luces,
+fondo en manchas, halo blanco cálido en las sandalias iluminando el tobillo y el suelo. Es
+decir: **cumplió todo lo que se le había agregado**, y salió peor que el anterior para el uso
+real. Musculatura de estatua, gravedad de monumento, cuadro de museo. Para una carta de un
+juego infantil, inservible.
+
+**Qué pasó de verdad, y es más grave que las dos imágenes.** El archivo de estilo del 14/9 a la
+mañana declaró a `imagenes/teseo.jpg` como calibración y después lo describió mal. Dijo
+"anatomía y proporciones de adulto real", "pintura digital", "sin caricatura", "la forma la
+define la luz".
+
+Teseo no es nada de eso. Teseo es un fotograma de película de animación 3D: volumen pulido,
+cejas gruesas y actuadas de caricatura moderada, cara joven idealizada, materiales estilizados,
+luz cinematográfica con contraluz.
+
+El generador obedece al texto y nunca ve la imagen. Con esa descripción entregó primero una
+fotografía y después, cuando se le pidió pintura, un óleo. **Las dos salidas eran lecturas
+correctas de lo que estaba escrito.** No falló el generador ni falló el circuito: falló el
+texto, que describía una imagen distinta de la que decía calibrar.
+
+**La regla que queda, y vale más que este caso:** si un archivo declara una imagen como
+calibración, el texto tiene que describir esa imagen. Cuando el texto y la referencia se
+contradicen, gana el texto, porque es lo único que llega al generador. Antes de dar por buena
+una norma visual, leerla preguntándose si describe la imagen que dice calibrar.
+
+**Costo del error:** dos generaciones y tres reescrituras del archivo de estilo en un día.
+Verificar esa coherencia habría costado abrir una imagen.
+
+**Corrección aplicada.** Tercera y vigente versión de `estilo_visual_aprobado.md`: cine de
+animación 3D familiar, con el acabado calibrado por `teseo.jpg` y el registro emocional por
+`hermes.jpg`, cada uno declarado en lo suyo. La §0 del archivo explica el error para que no se
+repita. Gate de once puntos, que ahora rechaza por separado la fotografía, la pintura al óleo y
+el 2D plano, más la musculatura de estatua académica.
+
+La §7 de manifestación del don sobrevive intacta a los tres cambios de estilo: es agnóstica del
+acabado y el halo de las sandalias fue lo único que funcionó en esta imagen.
+
+**Qué no volvió de `hermes.jpg`, aunque sea la calibración del registro:** el templo al fondo,
+el cielo azul de default, el broche inventado del hombro y las estelas de chispas. De esa imagen
+vuelve el tono y nada más. La auditoría del 14/9 sobre escenario, inventario y anti-clones es
+independiente del estilo y sigue entera.

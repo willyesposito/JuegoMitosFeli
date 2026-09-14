@@ -51,13 +51,20 @@ Si una imagen puede asustar a una nena que la mira sola de noche, está mal resu
 
 ## 1. ADN de estilo
 
-> **Superado el 2026-09-14.** Willy decidió que la colección es **semirrealista, calibrada
-> por `imagenes/teseo.jpg`**. El estilo vigente vive completo en
-> `Documentacion/estilo_visual_aprobado.md` y esta sección ya no gobierna.
+> **Superado el 2026-09-14.** La colección es **cine de animación 3D familiar**, con el
+> acabado calibrado por `imagenes/teseo.jpg` y el registro emocional por `imagenes/hermes.jpg`.
+> El estilo vigente vive completo en `Documentacion/estilo_visual_aprobado.md` y esta sección
+> ya no gobierna.
 >
-> Queda derogado todo lo que esta sección decía sobre restricción dominante de aventura
-> infantil, cabeza agrandada, caricatura moderada, rasgos redondeados y contorno blando.
-> También queda superada la calibración infantil derivada de Odín.
+> Queda derogado todo lo que esta sección decía sobre cabeza agrandada, rasgos redondeados y
+> contorno blando, y también la calibración infantil derivada de Odín, que producía caras de
+> gnomo. La estilización vigente es **moderada**: proporciones creíbles, ojos grandes y cejas
+> actuadas, rasgos simplificados con intención.
+>
+> La "restricción dominante: aventura infantil" que esta sección proponía volvió en parte: el
+> registro emocional de la colección es accesible y alegre. Lo que no vuelve es resolverlo
+> deformando la anatomía. Ese matiz costó dos imágenes rechazadas el mismo día; el detalle
+> está en la §0 del archivo de estilo.
 >
 > Lo que **no** cambia y sigue vigente en este documento: formato y zona segura de avatar
 > (§2), familias de encuadre (§3), ejes de diferenciación (§4), lectura del personaje (§5),

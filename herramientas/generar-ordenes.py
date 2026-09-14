@@ -163,7 +163,8 @@ def orden(nombre, adn, mat, pj):
     L.append('')
     if img:
         L.append(f'**Imagen actual:** `{img}`, **a reemplazar.** Es de un estilo anterior: la '
-                 'colección pasó a semirrealista el 2026-09-14.')
+                 'colección quedó en cine de animación 3D el 2026-09-14, con el acabado calibrado '
+                 'por `imagenes/teseo.jpg` y el registro emocional por `imagenes/hermes.jpg`.')
     else:
         L.append('**Imagen actual:** ninguna. La carta funciona igual, mostrando el nombre con el '
                  'tratamiento de su mitología.')
@@ -406,8 +407,8 @@ def orden(nombre, adn, mat, pj):
              'sale el escenario.')
     L.append('')
     L.append('Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el '
-             'inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de '
-             '`estilo_visual_aprobado.md` §8.')
+             'inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de '
+             '`estilo_visual_aprobado.md` §9.')
     L.append('')
     return sid, '\n'.join(L)
 

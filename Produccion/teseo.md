@@ -2,7 +2,7 @@
 
 **Estado: LISTA.** Identidad cerrada, inventario cerrado, separación resuelta.
 
-**Imagen actual:** `imagenes/teseo.jpg`, **a reemplazar.** Es de un estilo anterior: la colección pasó a semirrealista el 2026-09-14.
+**Imagen actual:** `imagenes/teseo.jpg`, **a reemplazar.** Es de un estilo anterior: la colección quedó en cine de animación 3D el 2026-09-14, con el acabado calibrado por `imagenes/teseo.jpg` y el registro emocional por `imagenes/hermes.jpg`.
 
 **Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.
 
@@ -102,23 +102,6 @@ Ejes numéricos que ya los separan: masa corporal 6 contra 4, apertura corporal 
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
-**Contra Perseo.**
-
-| | Teseo | Perseo |
-|---|---|---|
-| Cabello | castaño oscuro | negro |
-| Textura | rizado cerrado | ondulado marcado |
-| Piel | oliva media | canela |
-| Ojos | marrón cálido | negro |
-
-Silueta de Perseo, para no repetirla: escudo espejo en diagonal + sandalias aladas rompiendo el contorno bajo + casco separado del eje facial.
-
-Pose de Perseo, para no repetirla: mira el reflejo del escudo en vez de dirigir la mirada al peligro; sensación de vuelo propio.
-
-Ejes numéricos que ya los separan: verticalidad 4 contra 8, densidad visual 5 contra 8, dinamismo de pose 6 contra 8, dependencia del identificador 7 contra 9.
-
-**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
 **Contra Odiseo.**
 
 | | Teseo | Odiseo |
@@ -133,6 +116,23 @@ Silueta de Odiseo, para no repetirla: capa o tela de viaje inclinada + postura l
 Pose de Odiseo, para no repetirla: gesto mental y de cálculo; mano activa antes que arma protagonista.
 
 Ejes numéricos que ya los separan: angulosidad facial 4 contra 8, dependencia del identificador 7 contra 3, edad visual 4 contra 7, dinamismo de pose 6 contra 4.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Perseo.**
+
+| | Teseo | Perseo |
+|---|---|---|
+| Cabello | castaño oscuro | negro |
+| Textura | rizado cerrado | ondulado marcado |
+| Piel | oliva media | canela |
+| Ojos | marrón cálido | negro |
+
+Silueta de Perseo, para no repetirla: escudo espejo en diagonal + sandalias aladas rompiendo el contorno bajo + casco separado del eje facial.
+
+Pose de Perseo, para no repetirla: mira el reflejo del escudo en vez de dirigir la mirada al peligro; sensación de vuelo propio.
+
+Ejes numéricos que ya los separan: verticalidad 4 contra 8, densidad visual 5 contra 8, dinamismo de pose 6 contra 8, dependencia del identificador 7 contra 9.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
@@ -177,4 +177,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de `estilo_visual_aprobado.md` §9.

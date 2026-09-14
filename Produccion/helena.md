@@ -2,7 +2,7 @@
 
 **Estado: LISTA.** Identidad cerrada, inventario cerrado, separación resuelta.
 
-**Imagen actual:** `imagenes/helena.jpg`, **a reemplazar.** Es de un estilo anterior: la colección pasó a semirrealista el 2026-09-14.
+**Imagen actual:** `imagenes/helena.jpg`, **a reemplazar.** Es de un estilo anterior: la colección quedó en cine de animación 3D el 2026-09-14, con el acabado calibrado por `imagenes/teseo.jpg` y el registro emocional por `imagenes/hermes.jpg`.
 
 **Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.
 
@@ -87,23 +87,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 - **Calipso**: misma mujer con otro objeto al lado.
 - **Penélope**: misma mujer con otro objeto al lado.
 
-**Contra Casandra.**
-
-| | Helena | Casandra |
-|---|---|---|
-| Cabello | castaño claro dorado | negro |
-| Textura | ondas pesadas | lacio largo de poco volumen |
-| Piel | clara dorada | oliva media |
-| Ojos | gris | marrón muy oscuro |
-
-Silueta de Casandra, para no repetirla: cuerpo inclinado hacia adelante + una mano señalando lejos + otra abierta en frustración contenida.
-
-Pose de Casandra, para no repetirla: advertencia activa mediante mirada y manos; ninguna magia lanzada.
-
-Ejes numéricos que ya los separan: angulosidad facial 3 contra 8, apertura corporal 3 contra 8, dinamismo de pose 1 contra 6, verticalidad 9 contra 6.
-
-**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
 **Contra Afrodita.**
 
 | | Helena | Afrodita |
@@ -120,6 +103,23 @@ Pose de Afrodita, para no repetirla: cuerpo relajado y manos bajas; belleza visu
 Ejes numéricos que ya los separan: apertura corporal 3 contra 7, verticalidad 9 contra 6, oscuridad 4 contra 1, dependencia del identificador 3 contra 6.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Casandra.**
+
+| | Helena | Casandra |
+|---|---|---|
+| Cabello | castaño claro dorado | negro |
+| Textura | ondas pesadas | lacio largo de poco volumen |
+| Piel | clara dorada | oliva media |
+| Ojos | gris | marrón muy oscuro |
+
+Silueta de Casandra, para no repetirla: cuerpo inclinado hacia adelante + una mano señalando lejos + otra abierta en frustración contenida.
+
+Pose de Casandra, para no repetirla: advertencia activa mediante mirada y manos; ninguna magia lanzada.
+
+Ejes numéricos que ya los separan: angulosidad facial 3 contra 8, apertura corporal 3 contra 8, dinamismo de pose 1 contra 6, verticalidad 9 contra 6.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 **Contra Calipso.**
 
@@ -179,4 +179,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de `estilo_visual_aprobado.md` §9.
