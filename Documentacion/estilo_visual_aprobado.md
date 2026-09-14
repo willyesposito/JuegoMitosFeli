@@ -130,6 +130,13 @@ La magia **sale siempre del don del personaje**, nunca de un efecto genérico pe
 identificador principal que la orden declara en su §2 es la fuente. Eso no agrega ningún objeto
 al inventario cerrado: lo que se enciende es lo que el personaje ya tiene.
 
+**Y lo característico se muestra, no sólo se permite.** El inventario de la §5 de cada orden está
+cerrado hacia arriba y no hacia abajo: lo que no figura no entra, y lo que figura tiene que
+entrar. Un personaje que llega a la imagen sin ninguno de sus atributos reconocibles es una carta
+fallada aunque no haya inventado nada, y **entre una carta pelada y una con tres objetos
+autorizados, van los tres**. El único límite es la jerarquía: el identificador manda, las pistas
+acompañan, y nada tapa la cara ni el identificador.
+
 ### Las tres capas
 
 De menos a más. Una carta usa las tres cuando el don da para eso.
@@ -218,8 +225,10 @@ Se rechaza la imagen, aunque el contenido mitológico sea correcto, si:
 7. el fondo está tan nítido como el personaje;
 8. **no hay magia:** el personaje se lee como una persona común con un objeto, sin el fenómeno
    que su don sostiene (§7). Una carta sobria es una carta fallada;
-9. **la magia no se puede trazar al don:** chispas genéricas, aura que envuelve el cuerpo y
+9. **la carta está pelada:** falta sin explicación un elemento que la §5 de la orden
+   autorizaba. El inventario cerrado se incumple por omisión igual que por exceso;
+10. **la magia no se puede trazar al don:** chispas genéricas, aura que envuelve el cuerpo y
    disuelve la silueta, halo detrás de la cabeza, runas o pseudo-texto flotando, o un efecto que
    tapa la cara o el identificador;
-10. la expresión es amenazante, o es la misma solemnidad genérica de otra carta;
-11. el brillo dorado se usa como recurso sin justificación de escena.
+11. la expresión es amenazante, o es la misma solemnidad genérica de otra carta;
+12. el brillo dorado se usa como recurso sin justificación de escena.

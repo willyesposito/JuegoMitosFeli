@@ -63,10 +63,12 @@ Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de
 Lo único que puede verse:
 
 1. **Sandalias aladas** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas:** Lira o ganado, sólo como contexto secundario. ADN. Subordinadas, nunca compitiendo con el identificador.
-3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
+2. **Pistas secundarias autorizadas, y van en la imagen:** Caduceo (kerykeion), el bastón de heraldo con dos serpientes entrelazadas y alas en el extremo alto: va en la mano o cruzado al cuerpo, y es lo que dice "mensajero de los dioses". Petaso alado, el sombrero de ala ancha: **colgado a la espalda por el cordón**, nunca puesto en la cabeza. Lira o ganado como contexto de escena. ADN. Subordinadas al identificador, nunca compitiendo con él, pero presentes.
+3. **Vestimenta autorizada:** Clámide corta griega, sujeta al hombro y tomada por el viento de la carrera. Sin broche ornamental, sin medallón: el cierre va simple o queda fuera de vista. ADN. Sin adornos más allá de lo que dice esa línea.
 
 Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
+
+**Esta lista es para mostrar, no sólo para permitir.** El inventario está cerrado hacia arriba, no hacia abajo: lo que no figura no entra, y lo que figura tiene que entrar. Un personaje que llega a la imagen sin ninguno de sus atributos característicos es una carta fallada, aunque no haya inventado nada. **Ante la duda entre una carta pelada y una con tres objetos autorizados, van los tres.** El único límite es la jerarquía: el identificador principal manda, las pistas acompañan, y nada tapa la cara ni el identificador.
 
 **La magia es obligatoria y sale del identificador.** El detalle reconocible de la §2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina de verdad, deformación del aire, materia que responde: todo eso está autorizado y va sin timidez. Esto no agrega ningún objeto al inventario de arriba, porque lo que se enciende es lo que el personaje ya tiene.
 
@@ -92,23 +94,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Loki.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
-**Contra Loki.**
-
-| | Hermes | Loki |
-|---|---|---|
-| Cabello | cobrizo | castaño rojizo oscuro |
-| Textura | rizado abierto | medio asimétrico |
-| Piel | clara dorada con pecas | clara pálida |
-| Ojos | verde oliva | verde |
-
-Silueta de Loki, para no repetirla: cuerpo en S + manos separadas en acciones distintas + borde de capa irregular; sin corona ni cuernos inventados.
-
-Pose de Loki, para no repetirla: mira hacia un lado mientras una mano parece terminar una travesura; la otra queda activa en una acción distinta.
-
-Ejes numéricos que ya los separan: dependencia del identificador 9 contra 3, angulosidad facial 3 contra 8, contorno superior 4 contra 8, apertura corporal 8 contra 4.
-
-**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
 **Contra Iris.**
 
 | | Hermes | Iris |
@@ -125,6 +110,23 @@ Pose de Iris, para no repetirla: movimiento de mensajera aérea; no carrera terr
 Ejes numéricos que ya los separan: contorno superior 4 contra 7, verticalidad 5 contra 8, densidad visual 5 contra 7, rigidez de materiales 4 contra 2.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Loki.**
+
+| | Hermes | Loki |
+|---|---|---|
+| Cabello | cobrizo | castaño rojizo oscuro |
+| Textura | rizado abierto | medio asimétrico |
+| Piel | clara dorada con pecas | clara pálida |
+| Ojos | verde oliva | verde |
+
+Silueta de Loki, para no repetirla: cuerpo en S + manos separadas en acciones distintas + borde de capa irregular; sin corona ni cuernos inventados.
+
+Pose de Loki, para no repetirla: mira hacia un lado mientras una mano parece terminar una travesura; la otra queda activa en una acción distinta.
+
+Ejes numéricos que ya los separan: dependencia del identificador 9 contra 3, angulosidad facial 3 contra 8, contorno superior 4 contra 8, apertura corporal 8 contra 4.
+
+**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 **Contra Teseo.**
 
@@ -183,7 +185,7 @@ La diferencia no puede depender sólo del color, del fondo, del objeto sostenido
 
 Vertical 3:4. Figura al 70–80% del alto del cuadro. Zona limpia detrás de la cabeza o del foco principal.
 
-Avatar circular, como restricción invisible: Rostro inclinado + pequeña ala de sandalia o motivo alado alto repetido en accesorio autorizado por diseño. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
+Avatar circular, como restricción invisible: Rostro inclinado + pequeña ala de sandalia o el remate alado del caduceo entrando por el borde alto. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
 
 ## 9. Registro
 
@@ -199,4 +201,6 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de `estilo_visual_aprobado.md` §9.
+Después de generar, declarar cuatro cosas: qué objetos quedaron en la imagen que no estaban en el inventario; **qué elementos autorizados de la §5 no aparecieron y por qué**; qué campos de esta orden no se cumplieron; y los once puntos del gate de `estilo_visual_aprobado.md` §9, que ahora son doce.
+
+El segundo control es tan importante como el primero y es el que faltaba hasta el 2026-09-14: una imagen puede cumplir el inventario cerrado al pie de la letra y seguir siendo una carta fallada por no mostrar nada de lo que hace reconocible al personaje.

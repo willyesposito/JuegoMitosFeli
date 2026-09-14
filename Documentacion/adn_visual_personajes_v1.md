@@ -31,6 +31,19 @@ Para eliminar ambigüedad y permitir una revisión comparativa real de los 85 pe
 
 Los campos de criaturas, híbridos, duplas y grupos se adaptan a su anatomía real. Cuando un atributo humano no corresponde, la ficha lo declara y lo sustituye por la geometría anatómica relevante en lugar de inventar un equivalente.
 
+**Campo 13, opcional, agregado el 2026-09-14: vestimenta autorizada.** Cuando una prenda concreta
+es parte de cómo se reconoce al personaje (una clámide al viento, un manto que cae en bloque, una
+piel echada al hombro), la ficha la declara acá. Si el campo no está, el personaje va con
+vestimenta lisa del vocabulario de su mitología y sin ornamento, que es el default de siempre.
+El campo existe para autorizar la prenda, nunca para agregarle adornos: broches, medallones,
+insignias y emblemas siguen prohibidos salvo que la ficha los nombre uno por uno.
+
+**Las pistas secundarias autorizadas son para mostrar, no sólo para permitir** (cambio del
+2026-09-14). Un personaje que llega a la imagen sin ninguno de sus atributos característicos es
+una carta fallada, aunque no haya inventado nada. Hasta el 14/9 todos los controles del método
+buscaban objetos de más y ninguno buscaba objetos que faltaran, y así salió un Hermes sin
+caduceo, sin petaso y sin lira, teniendo los tres disponibles.
+
 ### Pruebas obligatorias antes de generar
 
 1. **Prueba de silueta:** reducir conceptualmente la figura a negro puro. Debe seguir diferenciándose de sus riesgos de parecido.
@@ -344,8 +357,9 @@ Los campos de criaturas, híbridos, duplas y grupos se adaptan a su anatomía re
 - **Acción y pose:** carrera terrestre, no vuelo frontal.
 - **Composición y espacio negativo:** fondo barrido y simple; aire por delante de la carrera y suficiente margen abajo para que las sandalias entren completas.
 - **Identificador principal:** sandalias aladas.
-- **Pistas secundarias autorizadas:** lira o ganado, sólo como contexto secundario.
-- **Avatar circular:** rostro inclinado + pequeña ala de sandalia o motivo alado alto repetido en accesorio autorizado por diseño.
+- **Pistas secundarias autorizadas:** caduceo (kerykeion), el bastón de heraldo con dos serpientes entrelazadas y alas en el extremo alto: va en la mano o cruzado al cuerpo, y es lo que dice "mensajero de los dioses". Petaso alado, el sombrero de ala ancha: **colgado a la espalda por el cordón**, nunca puesto en la cabeza. Lira o ganado como contexto de escena.
+- **Vestimenta autorizada:** clámide corta griega, sujeta al hombro y tomada por el viento de la carrera. Sin broche ornamental, sin medallón: el cierre va simple o queda fuera de vista.
+- **Avatar circular:** rostro inclinado + pequeña ala de sandalia o el remate alado del caduceo entrando por el borde alto.
 - **Riesgos de parecido:** Iris y Loki. Diferenciar de Iris por carrera terrestre; de Loki por dirección corporal limpia y ausencia de torsión ambigua.
 
 ### Dioniso

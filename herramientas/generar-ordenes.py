@@ -33,6 +33,7 @@ CAMPOS = {'Firma de silueta':'silueta','Familia de encuadre':'familia','Densidad
  'Edad aparente y contextura':'edad','Geometría general de rostro y cabello':'rostro',
  'Dirección corporal':'direccion','Acción y pose':'accion','Composición y espacio negativo':'composicion',
  'Identificador principal':'identificador','Pistas secundarias autorizadas':'pistas',
+ 'Vestimenta autorizada':'vestimenta',
  'Avatar circular':'avatar','Riesgos de parecido':'riesgos'}
 
 # Contaminación pop de alta confianza. El resto queda pendiente de la investigación:
@@ -314,14 +315,20 @@ def orden(nombre, adn, mat, pj):
     L.append('')
     L.append(f"1. **{may(idt).rstrip('.')}** — identificador principal. ADN.")
     pistas = limpiar_fuente(f['pistas'])
-    if pistas.lower().startswith('ning') or 'no aplica' in pistas.lower():
-        L.append('2. Sin pistas secundarias autorizadas.')
+    hay_pistas = not (pistas.lower().startswith('ning') or 'no aplica' in pistas.lower())
+    if hay_pistas:
+        L.append(f'2. **Pistas secundarias autorizadas, y van en la imagen:** {may(pistas)} ADN. '
+                 'Subordinadas al identificador, nunca compitiendo con él, pero presentes.')
     else:
-        L.append(f'2. **Pistas secundarias autorizadas:** {may(pistas)} ADN. Subordinadas, nunca compitiendo '
-                 'con el identificador.')
+        L.append('2. Sin pistas secundarias autorizadas.')
     if not es_nh:
-        L.append(f"3. **Vestimenta lisa del vocabulario {GENTILICIO.get(c['mitologia'], c['mitologia'])}**, sin ornamento. Necesaria para "
-                 'vestir al personaje; sin autorización de ningún adorno concreto, va lisa.')
+        vest = limpiar_fuente(f.get('vestimenta', ''))
+        if vest:
+            L.append(f'3. **Vestimenta autorizada:** {may(vest)} ADN. Sin adornos más allá de lo que '
+                     'dice esa línea.')
+        else:
+            L.append(f"3. **Vestimenta lisa del vocabulario {GENTILICIO.get(c['mitologia'], c['mitologia'])}**, sin ornamento. Necesaria para "
+                     'vestir al personaje; sin autorización de ningún adorno concreto, va lisa.')
     L.append('')
     L.append('Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** '
              'medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, '
@@ -330,6 +337,16 @@ def orden(nombre, adn, mat, pj):
              'agregado por fuera del identificador, **sin** runas, '
              '**sin** pseudo-texto, **sin** calzado con decisión no trazada.')
     L.append('')
+    if hay_pistas:
+        L.append('**Esta lista es para mostrar, no sólo para permitir.** El inventario está cerrado '
+                 'hacia arriba, no hacia abajo: lo que no figura no entra, y lo que figura tiene que '
+                 'entrar. Un personaje que llega a la imagen sin ninguno de sus atributos '
+                 'característicos es una carta fallada, aunque no haya inventado nada. **Ante la duda '
+                 'entre una carta pelada y una con tres objetos autorizados, van los tres.** El único '
+                 'límite es la jerarquía: el identificador principal manda, las pistas acompañan, y '
+                 'nada tapa la cara ni el identificador.')
+        L.append('')
+
     L.append('**La magia es obligatoria y sale del identificador.** El detalle reconocible de la '
              '§2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el '
              'don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina '
@@ -452,9 +469,15 @@ def orden(nombre, adn, mat, pj):
              'inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde '
              'sale el escenario.')
     L.append('')
-    L.append('Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el '
-             'inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de '
-             '`estilo_visual_aprobado.md` §9.')
+    L.append('Después de generar, declarar cuatro cosas: qué objetos quedaron en la imagen que no '
+             'estaban en el inventario; **qué elementos autorizados de la §5 no aparecieron y por '
+             'qué**; qué campos de esta orden no se cumplieron; y los once puntos del gate de '
+             '`estilo_visual_aprobado.md` §9, que ahora son doce.')
+    L.append('')
+    L.append('El segundo control es tan importante como el primero y es el que faltaba hasta el '
+             '2026-09-14: una imagen puede cumplir el inventario cerrado al pie de la letra y '
+             'seguir siendo una carta fallada por no mostrar nada de lo que hace reconocible al '
+             'personaje.')
     L.append('')
     return sid, '\n'.join(L)
 
