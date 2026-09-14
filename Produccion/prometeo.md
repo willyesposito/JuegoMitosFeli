@@ -1,0 +1,135 @@
+# Orden de producción — Prometeo
+
+**Estado: LISTA.** Identidad cerrada, inventario cerrado, separación resuelta.
+
+**Imagen actual:** ninguna. La carta funciona igual, mostrando el nombre con el tratamiento de su mitología.
+
+**Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.
+
+> Generada por `herramientas/generar-ordenes.py`. Para cambiarla, editar la fuente (el ADN, la matriz, `personajes.json` o `herramientas/identidad_visual.py`) y volver a generar. Editar este archivo a mano se pierde.
+
+---
+
+## 1. Identidad
+
+| Campo | Valor | Origen |
+|---|---|---|
+| Mitología | griega | `personajes.json` |
+| Tier | plateado | `personajes.json` |
+| Familia de encuadre | figura humana | ADN |
+| Edad y contextura | Adulto maduro; alto y fibroso. | ADN |
+| Rostro y cabello | Cara alargada y cabello oscuro medio. | ADN |
+| Cabello, color | castaño muy oscuro | ya declarado en el ADN, precisado sin contradecirlo |
+| Cabello, textura | medio | ya declarado en el ADN, precisado sin contradecirlo |
+| Piel | oliva media | ya declarado en el ADN, precisado sin contradecirlo |
+| Ojos | gris | ya declarado en el ADN, precisado sin contradecirlo |
+
+## 2. Detalle reconocible
+
+**Fuego entregado a los humanos.**
+
+Dones declarados en `personajes.json`: Titán del ingenio; Le regaló el fuego a los humanos.
+
+Ícono de la carta en la colección: `antorcha`. Dependencia del identificador en la matriz: 9 de 10.
+
+## 3. Acción y pose
+
+Brazo extendido ofreciendo el fuego, nunca objeto al pecho.
+
+Dirección corporal: Diagonal de entrega hacia afuera.
+
+Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
+
+## 4. Silueta y composición
+
+- **Firma de silueta:** Llama separada de la mano + cuerpo inclinado protegiéndola del viento + manto corto hacia atrás.
+- **Composición:** Aire delante de la llama y del brazo extendido; el fuego pequeño debe leerse sin transformarse en sol monumental.
+- **Densidad visual:** media-alta (matriz: 6 de 10).
+
+Números de la matriz, como límites de diseño y no como sugerencia:
+
+| EV | MC | EA | AF | CO | AC | DP | VD | DV | OV | DI | AN | PF | RM | RA |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 7 | 5 | 7 | 8 | 5 | 8 | 6 | 5 | 6 | 5 | 9 | 5 | 5 | 4 | 1 |
+
+Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de los personajes de la §7.
+
+## 5. Inventario cerrado
+
+Lo único que puede verse:
+
+1. **Fuego entregado a los humanos** — identificador principal. ADN.
+2. **Pistas secundarias autorizadas:** Herramientas o cocina como pistas muy secundarias si hacen falta. ADN. Subordinadas, nunca compitiendo con el identificador.
+3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
+
+Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
+
+## 6. Escenario
+
+Sale de la acción de la §3 y de las pistas autorizadas de la §5, en ese orden. El fondo se diseña después del personaje, nunca antes.
+
+Protagonismo de fondo asignado: 5 de 10, o sea que el contexto acompaña sin llevar peso.
+
+**Sin** pedestal de roca ni acantilado heroico, **sin** templo griego de decoración, **sin** Olimpo, **sin** cielo azul con nubes por defecto, **sin** arquitectura de fantasía, **sin** paisaje panorámico que compita en nitidez. Quince de las treinta y una imágenes anteriores tenían el pedestal y once el templo.
+
+El fondo va con profundidad de campo real: menos nitidez y menos contraste que el personaje. Es el recurso principal para cumplir la jerarquía personaje → identificador → contexto.
+
+## 7. Separación obligatoria
+
+**Contra Helios.**
+
+| | Prometeo | Helios |
+|---|---|---|
+| Cabello | castaño muy oscuro | rubio cobrizo |
+| Textura | medio | corto barrido |
+| Piel | oliva media | dorada media |
+| Ojos | gris | ámbar |
+
+Silueta de Helios, para no repetirla: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro.
+
+Pose de Helios, para no repetirla: conduce el carro, erguido y estable.
+
+Ejes numéricos que ya los separan: angulosidad facial 8 contra 4, oscuridad 5 contra 1, rareza anatómica 1 contra 5, densidad visual 6 contra 9.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Hestia.**
+
+| | Prometeo | Hestia |
+|---|---|---|
+| Cabello | castaño muy oscuro | castaño ceniza |
+| Textura | medio | recogido simple |
+| Piel | oliva media | dorada media |
+| Ojos | gris | marrón cálido |
+
+Silueta de Hestia, para no repetirla: cuerpo compacto sentado o arrodillado + llama del hogar a un costado + telas suaves sin objetos de poder.
+
+Pose de Hestia, para no repetirla: cuida la llama en calma.
+
+Ejes numéricos que ya los separan: angulosidad facial 8 contra 2, apertura corporal 8 contra 2, dinamismo de pose 6 contra 1, contorno superior 5 contra 1.
+
+Criterio de la ficha: Helios y Hestia. Diferenciar por fuego pequeño transportado/entregado, no carro solar ni fuego doméstico conservado.
+
+La diferencia no puede depender sólo del color, del fondo, del objeto sostenido, del peinado ni de una prenda. Matriz §4.1: el objeto no salva un clon.
+
+## 8. Encuadre
+
+Vertical 3:4. Figura al 70–80% del alto del cuadro. Zona limpia detrás de la cabeza o del foco principal.
+
+Avatar circular, como restricción invisible: Rostro + llama cercana sin taparlo. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
+
+## 9. Registro
+
+Cálido, despierto, concentrado. No hace falta que sonría. Sin amenaza, sin crueldad, sin solemnidad genérica repetida de otra carta. La emoción sale de la historia del personaje y de lo que está haciendo.
+
+## 10. Contaminación a evitar
+
+La película *Prometheus* (2012).
+
+Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta lista.
+
+## 11. Antes de generar
+
+Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
+
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los siete puntos del gate de `estilo_visual_aprobado.md` §7.

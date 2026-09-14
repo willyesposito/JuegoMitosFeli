@@ -1,8 +1,8 @@
-# Orden de producción — Sif
+# Orden de producción — Frigg
 
 **Estado: LISTA.** Identidad cerrada, inventario cerrado, separación resuelta.
 
-**Imagen actual:** `imagenes/sif.jpg`, **a reemplazar.** Es de un estilo anterior: la colección pasó a semirrealista el 2026-09-14.
+**Imagen actual:** ninguna. La carta funciona igual, mostrando el nombre con el tratamiento de su mitología.
 
 **Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.
 
@@ -17,40 +17,42 @@
 | Mitología | nordica | `personajes.json` |
 | Tier | plateado | `personajes.json` |
 | Familia de encuadre | figura humana | ADN |
-| Edad y contextura | Adulta joven-madura; contextura media. | ADN |
-| Rostro y cabello | Rostro oval ancho; cabello extremadamente largo, pesado y voluminoso, tratado como pelo real y protagonista absoluto. | ADN |
-| Cabello, color | oro verdadero | atestación citada en la ficha del ADN |
-| Cabello, textura | extremadamente largo y pesado | atestación citada en la ficha del ADN |
-| Piel | clara dorada | atestación citada en la ficha del ADN |
-| Ojos | ámbar | atestación citada en la ficha del ADN |
+| Edad y contextura | Adulta madura; alta y de presencia serena. | ADN |
+| Rostro y cabello | Rostro largo sereno; cabello recogido en trenzas simples. | ADN |
+| Cabello, color | rubio ceniza con canas | decisión de diseño visual, sin atestación localizada; revisable por la investigación |
+| Cabello, textura | trenzas simples | decisión de diseño visual, sin atestación localizada; revisable por la investigación |
+| Piel | clara rosada | decisión de diseño visual, sin atestación localizada; revisable por la investigación |
+| Ojos | azul gris | decisión de diseño visual, sin atestación localizada; revisable por la investigación |
 
 ## 2. Detalle reconocible
 
-**Cabello de oro verdadero.**
+**Conocimiento del destino expresado por comportamiento.**
 
-Dones declarados en `personajes.json`: Cabellos de oro verdadero, forjados por los enanos.
+Dones declarados en `personajes.json`: Reina de Asgard; Conoce el destino de todos, aunque nunca lo revela.
 
-Ícono de la carta en la colección: `trigo`. Dependencia del identificador en la matriz: 10 de 10.
+Ícono de la carta en la colección: `rueca`. Dependencia del identificador en la matriz: 2 de 10.
+
+> **[REVISAR] Identificador abstracto.** Esta ficha no nombra un objeto concreto: el reconocimiento depende del ambiente o del comportamiento. Es el caso más frágil del roster, porque una carta sin objeto propio se vuelve genérica. Antes de generar, confirmar con el lote correspondiente de `Documentacion/prompt_investigacion_85.md` si hay un detalle mundialmente reconocible atestiguado que convenga incorporar a la ficha. No inventarlo acá.
 
 ## 3. Acción y pose
 
-Una mano levanta parte del cabello para mostrar materialidad y peso.
+Parece saber algo que no va a decir; manos controladas y ausencia de objeto profético.
 
-Dirección corporal: Perfil tres cuartos.
+Dirección corporal: Frontal tres cuartos con mirada lateral.
 
 Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
 
 ## 4. Silueta y composición
 
-- **Firma de silueta:** Masa dorada de cabello ocupando un lateral completo y cayendo hasta romper el contorno del cuerpo.
-- **Composición:** El cabello forma una gran masa lateral y el lado opuesto queda más limpio; campo de trigo subordinado.
-- **Densidad visual:** media (matriz: 6 de 10).
+- **Firma de silueta:** Figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.
+- **Composición:** Fondo muy simple y amplio alrededor del eje vertical.
+- **Densidad visual:** baja-media (matriz: 3 de 10).
 
 Números de la matriz, como límites de diseño y no como sugerencia:
 
 | EV | MC | EA | AF | CO | AC | DP | VD | DV | OV | DI | AN | PF | RM | RA |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 5 | 5 | 6 | 3 | 10 | 5 | 2 | 7 | 6 | 2 | 10 | 5 | 4 | 2 | 1 |
+| 7 | 4 | 7 | 7 | 1 | 2 | 1 | 9 | 3 | 4 | 2 | 4 | 2 | 5 | 1 |
 
 Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de los personajes de la §7.
 
@@ -58,8 +60,8 @@ Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de
 
 Lo único que puede verse:
 
-1. **Cabello de oro verdadero** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas:** Campo de trigo. ADN. Subordinadas, nunca compitiendo con el identificador.
+1. **Conocimiento del destino expresado por comportamiento** — identificador principal. ADN.
+2. **Pistas secundarias autorizadas:** Manto y gesto silencioso; no inventar objetos de adivinación. ADN. Subordinadas, nunca compitiendo con el identificador.
 3. **Vestimenta lisa del vocabulario nórdico**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
 
 Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
@@ -70,7 +72,7 @@ Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche
 
 Sale de la acción de la §3 y de las pistas autorizadas de la §5, en ese orden. El fondo se diseña después del personaje, nunca antes.
 
-Protagonismo de fondo asignado: 4 de 10, o sea que el fondo es prescindible: mínimo suficiente y nada más.
+Protagonismo de fondo asignado: 2 de 10, o sea que el fondo es prescindible: mínimo suficiente y nada más.
 
 **Sin** pedestal de roca ni acantilado heroico, **sin** templo griego de decoración, **sin** Olimpo, **sin** cielo azul con nubes por defecto, **sin** arquitectura de fantasía, **sin** paisaje panorámico que compita en nitidez. Quince de las treinta y una imágenes anteriores tenían el pedestal y once el templo.
 
@@ -78,47 +80,26 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
-**Clones comprobados en la auditoría del 2026-09-14.** Estos pares salieron de mirar las imágenes reales y **no figuraban en el campo de riesgos de la ficha**: la lista del ADN se armó sobre el papel y no vio los pares que después fallaron.
+**Par de Espejo: Hera.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
-- **Deméter**: la imagen anterior de Sif ejecutaba la acción de Deméter.
+**Contra Hera.**
 
-**Par de Espejo: Deméter.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
-
-**Contra Freya.**
-
-| | Sif | Freya |
+| | Frigg | Hera |
 |---|---|---|
-| Cabello | oro verdadero | cobrizo oscuro |
-| Textura | extremadamente largo y pesado | largo voluminoso |
-| Piel | clara dorada ⚠ igual | clara dorada |
-| Ojos | ámbar | verde oliva |
+| Cabello | rubio ceniza con canas | castaño oscuro |
+| Textura | trenzas simples | pesado y estructurado |
+| Piel | clara rosada | oliva clara |
+| Ojos | azul gris | ámbar |
 
-Silueta de Freya, para no repetirla: capa de halcón amplia + uno o dos gatos como masas bajas secundarias.
+Silueta de Hera, para no repetirla: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno.
 
-Pose de Freya, para no repetirla: capa abriéndose como si fuera a elevarse; gesto seguro, no coqueto ni guerrero genérico.
+Pose de Hera, para no repetirla: una mano relajada y otra sobre el manto; cero gesto de combate.
 
-Ejes numéricos que ya los separan: dinamismo de pose 2 contra 7, apertura corporal 5 contra 8, densidad visual 6 contra 8, dependencia del identificador 10 contra 8.
-
-**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
-**Contra Deméter.**
-
-| | Sif | Deméter |
-|---|---|---|
-| Cabello | oro verdadero | castaño ceniza con canas |
-| Textura | extremadamente largo y pesado | recogido bajo |
-| Piel | clara dorada | dorada media |
-| Ojos | ámbar | avellana |
-
-Silueta de Deméter, para no repetirla: espigas/cosecha formando una masa lateral + falda o túnica amplia cerca del suelo.
-
-Pose de Deméter, para no repetirla: manos activas trabajando con plantas o semillas.
-
-Ejes numéricos que ya los separan: contorno superior 10 contra 2, dependencia del identificador 10 contra 6, protagonismo de fondo 4 contra 7, edad visual 5 contra 7.
+Ejes numéricos que ya los separan: densidad visual 3 contra 8, dependencia del identificador 2 contra 7, apertura corporal 2 contra 5, protagonismo de fondo 2 contra 5.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
-Criterio de la ficha: Freya. Diferenciar por cabello como protagonista absoluto, sin capa de halcón ni magia como foco.
+Criterio de la ficha: Hera. Diferenciar por ausencia de animal/regalia, menor densidad y energía silenciosa.
 
 La diferencia no puede depender sólo del color, del fondo, del objeto sostenido, del peinado ni de una prenda. Matriz §4.1: el objeto no salva un clon.
 
@@ -126,7 +107,7 @@ La diferencia no puede depender sólo del color, del fondo, del objeto sostenido
 
 Vertical 3:4. Figura al 70–80% del alto del cuadro. Zona limpia detrás de la cabeza o del foco principal.
 
-Avatar circular, como restricción invisible: Rostro rodeado por volumen dorado inequívoco. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
+Avatar circular, como restricción invisible: Rostro + mirada lateral claramente legible. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
 
 ## 9. Registro
 
@@ -134,7 +115,7 @@ Cálido, despierto, concentrado. No hace falta que sonría. Sin amenaza, sin cru
 
 ## 10. Contaminación a evitar
 
-Rapunzel de *Enredados* (Disney, 2010). Ya contaminó su imagen anterior.
+**Pendiente de la investigación** del lote correspondiente de `Documentacion/prompt_investigacion_85.md`, campo `contaminacion_pop`. No bloquea la generación, pero dejarlo vacío es aceptar el riesgo a ciegas: la contaminación de cultura pop fue la falla más frecuente de la tanda anterior y la más difícil de ver desde adentro.
 
 Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta lista.
 
