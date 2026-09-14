@@ -45,7 +45,11 @@ Es la acción de la ficha y no se cambia. Si la acción no se puede representar 
 - **Composición:** La cinta debe verse claramente contra la masa del lobo y existir aire delante del hocico.
 - **Densidad visual:** alta (matriz: 8 de 10).
 
-Números de la matriz, como límites de diseño y no como sugerencia:
+- **Cuerpo, y esto manda sobre cualquier intuición:** de edad media, de masa enorme, muy por encima de lo humano, hombros muy anchos, que dominan la silueta, de escala algo mayor que humana.
+
+La contextura sale de acá y no de lo que el personaje representa. Un dios no es corpulento por ser dios, ni un héroe es musculoso por ser héroe: si estos valores piden un cuerpo liviano, va un cuerpo liviano. **Sin abdominales marcados, sin deltoides separados, sin bíceps de gimnasio y sin espalda en V** salvo que la masa y los hombros de arriba lo pidan expresamente.
+
+Los quince ejes completos, como límites de diseño y no como sugerencia (EV edad visual, MC masa corporal, EA escala aparente, AF angulosidad facial, CO contorno superior, AC apertura corporal, DP dinamismo de pose, VD verticalidad, DV densidad visual, OV oscuridad, DI dependencia del identificador, AN anchura de hombros, PF protagonismo de fondo, RM rigidez de materiales, RA rareza anatómica):
 
 | EV | MC | EA | AF | CO | AC | DP | VD | DV | OV | DI | AN | PF | RM | RA |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -62,9 +66,9 @@ Lo único que puede verse:
 
 Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
 
-**El identificador va encendido.** El detalle reconocible de la §2 se muestra en actividad, no apoyado y quieto, y el entorno inmediato acusa esa actividad: aire, polvo, agua, tela, hierba o luz respondiendo a lo que el objeto hace. Si además el don tiene manifestación luminosa trazable a la ficha, el objeto emite una luz suave y acotada que ilumina de verdad lo que tiene al lado. Esto no agrega ningún objeto al inventario de arriba: sale del identificador que el personaje ya tiene.
+**La magia es obligatoria y sale del identificador.** El detalle reconocible de la §2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina de verdad, deformación del aire, materia que responde: todo eso está autorizado y va sin timidez. Esto no agrega ningún objeto al inventario de arriba, porque lo que se enciende es lo que el personaje ya tiene.
 
-Las tres capas y sus límites están en `estilo_visual_aprobado.md` §7, que gobierna. En particular: **sin** partículas flotantes, **sin** chispas, **sin** estelas, **sin** purpurina, **sin** runas en el aire, **sin** aura alrededor del cuerpo, **sin** halo detrás de la cabeza y **sin** resplandor dorado si el objeto no es de oro. Si el don no tiene manifestación física, la carta va sin luz propia y no se inventa una.
+Las tres capas y las cuatro reglas están en `estilo_visual_aprobado.md` §7, que gobierna. En resumen: el efecto nace del don y se puede señalar de dónde salió; no tapa la cara ni el identificador; el color sale del don o del material y nunca es el dorado por default; y el fenómeno es propio de este personaje y no el mismo de las otras 84. Queda afuera el aura que envuelve el cuerpo y disuelve la silueta, el halo detrás de la cabeza, las runas o pseudo-texto flotando, y cualquier efecto que no se pueda trazar al don. Si el identificador no da para un fenómeno, la carta va con el objeto en actividad y el entorno reaccionando, y no se inventa uno.
 
 **Kit nórdico prohibido:** nudo celta, cuello o ribete de piel, broche redondo, medallón, botas envueltas con tiras, cinturón de hebilla decorada, trenzas con anillos de metal. Ese conjunto se repitió en seis cartas nórdicas y es la razón por la que parecen del mismo disfraz. Una mitología aporta vocabulario, no uniforme.
 
@@ -80,16 +84,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
-**Contra Calisto.**
-
-Silueta de Calisto, para no repetirla: gran cuerpo de osa + arco de estrellas de Osa Mayor arriba + perfil ancho y patas firmes.
-
-Pose de Calisto, para no repetirla: quieta mirando las estrellas, nunca rugiendo.
-
-Ejes numéricos que ya los separan: angulosidad facial 8 contra 3, dependencia del identificador 2 contra 7, oscuridad 8 contra 4, protagonismo de fondo 5 contra 8.
-
-**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
 **Contra Cerbero.**
 
 Silueta de Cerbero, para no repetirla: tres perfiles de cabeza escalonados en altura + cuerpo único ancho.
@@ -99,6 +93,16 @@ Pose de Cerbero, para no repetirla: sentado o quieto ante una entrada.
 Ejes numéricos que ya los separan: angulosidad facial 8 contra 5, rareza anatómica 8 contra 10.
 
 **Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Calisto.**
+
+Silueta de Calisto, para no repetirla: gran cuerpo de osa + arco de estrellas de Osa Mayor arriba + perfil ancho y patas firmes.
+
+Pose de Calisto, para no repetirla: quieta mirando las estrellas, nunca rugiendo.
+
+Ejes numéricos que ya los separan: angulosidad facial 8 contra 3, dependencia del identificador 2 contra 7, oscuridad 8 contra 4, protagonismo de fondo 5 contra 8.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 Criterio de la ficha: Calisto y Cerbero. Diferenciar por hocico más largo, pelaje más áspero, cuerpo único y lenguaje nórdico.
 

@@ -149,6 +149,35 @@ def tabla_separacion(nombre, riesgo, mat, adn):
                  'no de los números.')
     return '\n'.join(l)
 
+def cuerpo_en_palabras(m):
+    """Traduce los ejes de cuerpo a español ejecutable.
+
+    La tabla de siglas de la §4 no la puede ejecutar un generador: "MC 3" no es una
+    instrucción. Hermes salió musculoso tres veces seguidas teniendo masa 3 y hombros 3
+    declarados en la matriz. Los números estaban; lo que faltaba era decirlos.
+    """
+    mc, an, ea, ev = m['MC'], m['AN'], m['EA'], m['EV']
+    masa = ('muy delgado, de contextura frágil' if mc <= 2 else
+            'delgado y liviano, sin masa muscular marcada' if mc <= 4 else
+            'de contextura media, atlética sin volumen' if mc <= 6 else
+            'corpulento, con masa evidente' if mc <= 8 else
+            'de masa enorme, muy por encima de lo humano')
+    hombros = ('hombros estrechos' if an <= 3 else
+               'hombros de ancho medio' if an <= 6 else
+               'hombros anchos' if an <= 8 else
+               'hombros muy anchos, que dominan la silueta')
+    escala = ('de escala menor que una persona común' if ea <= 3 else
+              'de escala humana' if ea <= 6 else
+              'de escala algo mayor que humana' if ea <= 8 else
+              'de escala claramente sobrehumana')
+    edad = ('muy joven' if ev <= 2 else
+            'joven' if ev <= 4 else
+            'de edad media' if ev <= 6 else
+            'entrado en años' if ev <= 8 else
+            'anciano')
+    return masa, hombros, escala, edad
+
+
 def orden(nombre, adn, mat, pj):
     f, m = adn[nombre], mat[nombre]
     c = pj[nombre]
@@ -254,7 +283,21 @@ def orden(nombre, adn, mat, pj):
     L.append(f"- **Composición:** {may(limpiar_fuente(f['composicion']))}")
     L.append(f"- **Densidad visual:** {f['densidad'].rstrip('.')} (matriz: {m['DV']} de 10).")
     L.append('')
-    L.append('Números de la matriz, como límites de diseño y no como sugerencia:')
+    masa, hombros, escala, edad = cuerpo_en_palabras(m)
+    L.append(f'- **Cuerpo, y esto manda sobre cualquier intuición:** {edad}, {masa}, {hombros}, '
+             f'{escala}.')
+    L.append('')
+    L.append('La contextura sale de acá y no de lo que el personaje representa. Un dios no es '
+             'corpulento por ser dios, ni un héroe es musculoso por ser héroe: si estos valores '
+             'piden un cuerpo liviano, va un cuerpo liviano. **Sin abdominales marcados, sin '
+             'deltoides separados, sin bíceps de gimnasio y sin espalda en V** salvo que la masa '
+             'y los hombros de arriba lo pidan expresamente.')
+    L.append('')
+    L.append('Los quince ejes completos, como límites de diseño y no como sugerencia '
+             '(EV edad visual, MC masa corporal, EA escala aparente, AF angulosidad facial, '
+             'CO contorno superior, AC apertura corporal, DP dinamismo de pose, VD verticalidad, '
+             'DV densidad visual, OV oscuridad, DI dependencia del identificador, AN anchura de '
+             'hombros, PF protagonismo de fondo, RM rigidez de materiales, RA rareza anatómica):')
     L.append('')
     L.append('| ' + ' | '.join(EJES) + ' |')
     L.append('|' + '---|'*len(EJES))
@@ -287,18 +330,21 @@ def orden(nombre, adn, mat, pj):
              'agregado por fuera del identificador, **sin** runas, '
              '**sin** pseudo-texto, **sin** calzado con decisión no trazada.')
     L.append('')
-    L.append('**El identificador va encendido.** El detalle reconocible de la §2 se muestra en '
-             'actividad, no apoyado y quieto, y el entorno inmediato acusa esa actividad: aire, '
-             'polvo, agua, tela, hierba o luz respondiendo a lo que el objeto hace. Si además el don '
-             'tiene manifestación luminosa trazable a la ficha, el objeto emite una luz suave y '
-             'acotada que ilumina de verdad lo que tiene al lado. Esto no agrega ningún objeto al '
-             'inventario de arriba: sale del identificador que el personaje ya tiene.')
+    L.append('**La magia es obligatoria y sale del identificador.** El detalle reconocible de la '
+             '§2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el '
+             'don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina '
+             'de verdad, deformación del aire, materia que responde: todo eso está autorizado y va '
+             'sin timidez. Esto no agrega ningún objeto al inventario de arriba, porque lo que se '
+             'enciende es lo que el personaje ya tiene.')
     L.append('')
-    L.append('Las tres capas y sus límites están en `estilo_visual_aprobado.md` §7, que gobierna. '
-             'En particular: **sin** partículas flotantes, **sin** chispas, **sin** estelas, **sin** '
-             'purpurina, **sin** runas en el aire, **sin** aura alrededor del cuerpo, **sin** halo '
-             'detrás de la cabeza y **sin** resplandor dorado si el objeto no es de oro. Si el don no '
-             'tiene manifestación física, la carta va sin luz propia y no se inventa una.')
+    L.append('Las tres capas y las cuatro reglas están en `estilo_visual_aprobado.md` §7, que '
+             'gobierna. En resumen: el efecto nace del don y se puede señalar de dónde salió; no '
+             'tapa la cara ni el identificador; el color sale del don o del material y nunca es el '
+             'dorado por default; y el fenómeno es propio de este personaje y no el mismo de las '
+             'otras 84. Queda afuera el aura que envuelve el cuerpo y disuelve la silueta, el halo '
+             'detrás de la cabeza, las runas o pseudo-texto flotando, y cualquier efecto que no se '
+             'pueda trazar al don. Si el identificador no da para un fenómeno, la carta va con el '
+             'objeto en actividad y el entorno reaccionando, y no se inventa uno.')
     L.append('')
     if c['mitologia'] == 'nordica':
         L.append(f'**Kit nórdico prohibido:** {KIT_NORDICO}. Ese conjunto se repitió en seis cartas '

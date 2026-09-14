@@ -61,8 +61,15 @@ La estilización es **moderada y controlada**. Ni realismo anatómico ni muñeco
   funcionan: la ceja hace la mitad del trabajo emocional.
 - **Rasgos simplificados con intención:** nariz limpia, mandíbula definida sin dureza, manos
   legibles. Se saca el detalle que no actúa, no se redondea todo.
-- **Musculatura de atleta joven, no de fisicoculturista.** El segundo Hermes rechazado tenía
-  musculatura de estatua académica y eso es exactamente lo que no va.
+- **Contextura juvenil y liviana por defecto.** Brazos y piernas de chico o chica atlética, no
+  de adulto entrenado. Sin abdominales marcados, sin deltoides separados, sin bíceps con
+  definición de gimnasio, sin espalda en V. Tres Hermes seguidos salieron cada vez más
+  musculosos y los tres se rechazaron por eso.
+- **La masa corporal no la decide el generador: la decide la orden.** Cada personaje trae en su
+  §4 la masa corporal y la anchura de hombros ya traducidas a palabras, y ese dato manda sobre
+  cualquier intuición sobre qué cuerpo "corresponde" a un dios, a un héroe o a un guerrero.
+  Hermes es masa 3 y hombros 3 sobre 10: es el cuerpo de un corredor liviano, no el de un
+  atleta olímpico.
 
 ### Cómo se resuelve la edad
 
@@ -112,55 +119,76 @@ Hermes, y cada carta elige su punto según lo que el personaje está haciendo.
 - Prohibido: solemnidad uniforme, la misma expresión digna repetida en 85 cartas.
 - Prohibido: la gravedad épica de estatua, que es adonde se fue el segundo Hermes.
 
-## 7. Manifestación del don
+## 7. Magia visible
 
-**Estas son cartas de mitología, no retratos de época.** El identificador principal de cada
-personaje —el objeto o rasgo que la orden de producción declara en su §2— no se muestra apoyado
-y quieto: se muestra **funcionando**. El don está encendido.
+**Estos personajes no existen en la vida real y las cartas tienen que decirlo.** Un dios que
+parece una persona común con un objeto en la mano es una carta fallada, aunque el objeto sea
+correcto. La magia no es un adorno que se agrega si sobra lugar: es la mitad de por qué alguien
+quiere la carta.
 
-La regla vale para las 85 cartas y sale enteramente del identificador que ya tiene asignado cada
-personaje. No agrega ningún objeto al inventario cerrado ni autoriza ninguno nuevo.
+La magia **sale siempre del don del personaje**, nunca de un efecto genérico pegado encima. El
+identificador principal que la orden declara en su §2 es la fuente. Eso no agrega ningún objeto
+al inventario cerrado: lo que se enciende es lo que el personaje ya tiene.
 
 ### Las tres capas
 
-Se aplican en este orden y ninguna puede usarse sin la anterior:
+De menos a más. Una carta usa las tres cuando el don da para eso.
 
-1. **El objeto en actividad.** Las alas de las sandalias están abiertas y batiendo, no plegadas
-   y decorativas. Una lira está sonando. Un hilo está tenso. Un martillo está cargado.
-2. **El entorno responde al objeto.** El aire, el polvo, el agua, la tela, la hierba o la luz
-   reaccionando a lo que el objeto hace. La magia se lee porque el mundo la acusa.
-3. **Luz propia del objeto.** El objeto emite una luz suave y acotada que ilumina de verdad lo
-   que tiene al lado: la piel cercana, el borde de la tela, el suelo debajo.
+1. **El objeto en actividad.** Las alas de las sandalias abiertas y batiendo, no plegadas y
+   decorativas. Una lira sonando. Un hilo tenso. Un martillo cargado.
+2. **El entorno reaccionando.** El aire, el polvo, el agua, la tela, la hierba o la luz acusando
+   lo que el objeto hace. La velocidad se ve en el polvo que sale disparado.
+3. **El fenómeno mágico propiamente dicho.** Acá va todo lo bueno y va sin timidez.
 
-### El halo
+### Qué entra en la capa 3
 
-- **Va pegado al objeto.** Radio corto: el halo es del objeto, no del personaje.
-- **Es una fuente de luz real dentro de la escena.** Tiene que iluminar algo.
-- **Nunca compite con la luz principal de §4.** Es la fuente secundaria, siempre.
-- **El color lo hereda del material del objeto o de la luz de la escena.** Alas de pluma blanca
-  dan luz blanca cálida; bronce da luz de bronce; agua da luz verde azulada. **No es la excepción
-  al dorado automático de §4:** un objeto que no es de oro no brilla dorado.
-- **Nunca detrás de la cabeza** (eso es un halo de santo) ni como aura de cuerpo entero.
-- **Nunca tapa el identificador.** Si el resplandor come la forma de las alas, perdimos la carta.
+Todo esto está **autorizado y es bienvenido**:
 
-### Lo que sigue afuera
+- **Estela.** El rastro que el don deja atrás: luz que se estira, aire que se curva, huellas que
+  quedan encendidas un instante. En un corredor es el recurso más obvio y el más lindo.
+- **Chispas y partículas** que se desprenden del objeto o del punto donde el don toca el mundo.
+- **Luz propia del objeto**, que ilumina de verdad lo que tiene al lado: la piel cercana, el
+  borde de la tela, el suelo debajo.
+- **Deformación del aire**, ondas, remolinos, distorsión por velocidad o por calor.
+- **Materia que responde:** piedritas que levitan, agua que sube, plantas que se abren, fuego
+  que se curva hacia el personaje.
 
-Partículas flotantes de colores, chispas, purpurina, estelas de cometa que recorren el cuadro,
-destellos en cruz, runas o símbolos flotando, humo de color, rayos saliendo del cuerpo, energía
-envolviendo al personaje, degradados mágicos de fondo.
+Generoso está bien. El error de las tres primeras versiones de este archivo fue acotar tanto
+que las cartas quedaron sobrias, y sobrio no es lo que pide un juego de mitología.
 
-`hermes.jpg` tiene estelas azules y chispas por todo el cuadro: **eso no vuelve.** De esa imagen
-vuelve el registro emocional, no el efecto decorativo. Decisión de Willy del 14/9, tercera
-ronda.
+### Las cuatro reglas que ordenan el efecto
 
-### Cuando el don no se puede mostrar
+Son pocas a propósito, y son las únicas.
 
-**Si el identificador no tiene manifestación física, la carta va sin halo y sin capa 3, y no se
-inventa una.** Un ovillo, un telar, una máscara o un libro pueden estar en actividad (capa 1) y
-mover el entorno (capa 2) sin emitir luz. Forzar un resplandor que la ficha no sostiene es el
-efecto mágico inventado que prohíbe `CLAUDE.md` §2.4.
+1. **Nace del don.** El efecto sale del identificador o del punto donde el don actúa, y se puede
+   señalar de dónde salió. Un brillo que aparece porque sí es decoración, y decoración es lo que
+   hace que las 85 cartas se parezcan entre sí.
+2. **No tapa la cara ni el identificador.** Si el resplandor come la forma de las alas o borra la
+   expresión, perdimos las dos cosas que hacen a la carta. El efecto rodea y acompaña, no cubre.
+3. **El color sale del don o del material**, no de un default. Alas de pluma blanca dan luz
+   blanca cálida; bronce da luz de bronce; agua da verde azulado; muerte da frío azul. **Sigue
+   prohibido el dorado automático de §4:** un objeto que no es de oro no brilla dorado.
+4. **Cada personaje tiene su fenómeno.** Si todas las cartas usan las mismas chispas doradas, la
+   magia deja de identificar a nadie. La estela de velocidad de un corredor no se parece a la
+   resonancia de una lira ni al frío de una diosa del inframundo.
 
-En la duda, las capas 1 y 2 alcanzan. Son gratis y nunca fallan.
+### Lo único que queda afuera
+
+- **Aura que envuelve el cuerpo entero** y disuelve la silueta. Rompe la regla 2 y arruina la
+  prueba de mancha negra.
+- **Halo detrás de la cabeza.** Es iconografía de santo y no es este juego.
+- **Runas, símbolos o pseudo-texto flotando.** Es una regla aparte y anterior: el generador
+  inventa escritura que no dice nada.
+- **Efecto que no se puede trazar al don**, del tipo "partículas mágicas genéricas".
+
+### Cuando el don no tiene fenómeno
+
+Si el identificador no da para la capa 3, **la carta va con las capas 1 y 2 y no se inventa un
+fenómeno**. Un ovillo, un telar o un libro pueden estar en plena actividad y mover el entorno
+sin emitir nada. Forzar un resplandor que la ficha no sostiene es el efecto inventado que
+prohíbe `CLAUDE.md` §2.4.
+
+Dicho eso: antes de concluir que un personaje no tiene magia, mirar bien. La mayoría la tiene.
 
 ## 8. Qué sigue gobernando el contenido
 
@@ -184,13 +212,14 @@ Se rechaza la imagen, aunque el contenido mitológico sea correcto, si:
 2. **parece pintura tradicional:** óleo, pincelada visible, empaste, aspecto de cuadro de museo;
 3. **parece 2D plano:** contorno negro de dibujo animado, cel shading de color plano, vectorial;
 4. tiene cara redondeada, cabeza de gnomo o proporciones de muñeco;
-5. tiene musculatura de estatua académica o gravedad épica de monumento;
+5. tiene musculatura de adulto entrenado, abdominales marcados o espalda en V cuando la orden
+   pide masa y hombros bajos, o gravedad épica de monumento;
 6. la cara del personaje es intercambiable con la de otro personaje del roster;
 7. el fondo está tan nítido como el personaje;
-8. **el don está apagado:** el identificador aparece quieto y decorativo cuando la ficha permitía
-   mostrarlo en actividad (§7, capas 1 y 2);
-9. **hay efecto mágico decorativo:** partículas, chispas, estelas que recorren el cuadro, runas o
-   aura que no salen del identificador, o halo que no ilumina nada, tapa el identificador, rodea
-   el cuerpo entero, va detrás de la cabeza o es dorado sin que el objeto sea de oro;
+8. **no hay magia:** el personaje se lee como una persona común con un objeto, sin el fenómeno
+   que su don sostiene (§7). Una carta sobria es una carta fallada;
+9. **la magia no se puede trazar al don:** chispas genéricas, aura que envuelve el cuerpo y
+   disuelve la silueta, halo detrás de la cabeza, runas o pseudo-texto flotando, o un efecto que
+   tapa la cara o el identificador;
 10. la expresión es amenazante, o es la misma solemnidad genérica de otra carta;
 11. el brillo dorado se usa como recurso sin justificación de escena.

@@ -312,17 +312,24 @@ Comparar contra `Documentacion/estilo_visual_aprobado.md` y exigir por separado:
   redondeada, sin cabeza de gnomo y sin proporciones de muñeco;
 - ojos grandes y muy expresivos, y **cejas gruesas, marcadas y actuadas**: son el centro de la
   actuación, como en `teseo.jpg`;
-- rasgos simplificados con intención, y musculatura de atleta joven, nunca de estatua académica;
+- rasgos simplificados con intención y **contextura juvenil y liviana por defecto**: sin
+  abdominales marcados, sin deltoides separados, sin bíceps de gimnasio, sin espalda en V. La
+  masa corporal y la anchura de hombros las fija la §4 de la orden, ya traducidas a palabras, y
+  ese dato manda sobre cualquier intuición sobre qué cuerpo le "corresponde" a un dios o a un
+  héroe;
 - edad resuelta por estructura y actuación dentro del vocabulario de la animación, nunca por
   cara redonda con ojos enormes;
 - materiales netamente diferenciados **en versión estilizada**, sin microtextura fotográfica, y
   pelo en mechones sólidos agrupados;
 - luz cinematográfica con contraluz y rebote, y fondo con profundidad de campo real;
-- **el don encendido** (§7): el identificador en actividad, el entorno acusando esa actividad, y
-  luz propia del objeto sólo si el don la sostiene, acotada al objeto, iluminando algo real y sin
-  taparlo. Sin partículas, chispas, estelas que recorran el cuadro, runas flotando, aura de
-  cuerpo entero ni halo detrás de la cabeza. Si el don no tiene manifestación física, va sin luz
-  propia y no se inventa una;
+- **magia visible y obligatoria** (§7): estos personajes no existen en la vida real y la carta
+  tiene que decirlo. El identificador en actividad, el entorno reaccionando, y el fenómeno del
+  don sin timidez: estela, chispas, partículas, luz propia que ilumina de verdad, deformación
+  del aire, materia que responde. Cuatro reglas y ninguna más: nace del don y se puede señalar
+  de dónde salió; no tapa la cara ni el identificador; el color sale del don o del material y
+  nunca es el dorado por default; el fenómeno es propio de ese personaje y no el mismo de las
+  otras 84. Queda afuera el aura que disuelve la silueta, el halo detrás de la cabeza, las runas
+  flotando y el efecto que no se pueda trazar. **Una carta sobria es una carta fallada;**
 - registro entre la concentración despierta de Teseo y la alegría abierta de Hermes, sin
   obligación de sonrisa, sin amenaza, sin gravedad épica de monumento y sin la misma solemnidad
   genérica de otra carta.
@@ -377,12 +384,13 @@ Sólo generar si todas son `SÍ`:
 10. ¿Se evitó abrir cualquier imagen de otro personaje?
 11. ¿El prompt exige el **fotograma de animación 3D**: volumen pulido, estilización moderada,
     cejas actuadas y materiales estilizados, sin foto, sin óleo y sin 2D plano?
-12. ¿El prompt muestra el identificador en actividad y el entorno respondiendo, y la luz propia
-    del objeto sólo si el don la sostiene, sin partículas, estelas ni aura?
-13. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
-14. ¿Incluye formato 3:4, encuadre completo y escala de la familia, margen de seguridad y cero texto?
-15. ¿Los detalles pequeños también tienen trazabilidad o se omitieron?
-16. ¿No hay faltantes materiales ni contradicciones que cambien la imagen?
+12. ¿El prompt nombra la masa corporal y la anchura de hombros de la §4 de la orden **en
+    palabras**, y no sólo como número de la tabla de siglas?
+13. ¿El prompt pide el fenómeno mágico del don, trazado al identificador, y no una carta sobria?
+14. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
+15. ¿Incluye formato 3:4, encuadre completo y escala de la familia, margen de seguridad y cero texto?
+16. ¿Los detalles pequeños también tienen trazabilidad o se omitieron?
+17. ¿No hay faltantes materiales ni contradicciones que cambien la imagen?
 
 Un SÍ del preflight confirma la preparación, nunca el resultado futuro. Si alguna respuesta es `NO` o `NO VERIFICADO`, **no generar**. Explicar el bloqueo exacto.
 
