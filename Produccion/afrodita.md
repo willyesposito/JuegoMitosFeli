@@ -46,7 +46,11 @@ Es la acción de la ficha y no se cambia. Si la acción no se puede representar 
 - **Composición:** Curvas amplias de tela/cabello con aire alrededor; espuma o manzana quedan en segundo nivel.
 - **Densidad visual:** baja-media (matriz: 5 de 10).
 
-Números de la matriz, como límites de diseño y no como sugerencia:
+- **Cuerpo, y esto manda sobre cualquier intuición:** de edad media, delgado y liviano, sin masa muscular marcada, hombros de ancho medio, de escala humana.
+
+La contextura sale de acá y no de lo que el personaje representa. Un dios no es corpulento por ser dios, ni un héroe es musculoso por ser héroe: si estos valores piden un cuerpo liviano, va un cuerpo liviano. **Sin abdominales marcados, sin deltoides separados, sin bíceps de gimnasio y sin espalda en V** salvo que la masa y los hombros de arriba lo pidan expresamente.
+
+Los quince ejes completos, como límites de diseño y no como sugerencia (EV edad visual, MC masa corporal, EA escala aparente, AF angulosidad facial, CO contorno superior, AC apertura corporal, DP dinamismo de pose, VD verticalidad, DV densidad visual, OV oscuridad, DI dependencia del identificador, AN anchura de hombros, PF protagonismo de fondo, RM rigidez de materiales, RA rareza anatómica):
 
 | EV | MC | EA | AF | CO | AC | DP | VD | DV | OV | DI | AN | PF | RM | RA |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -64,9 +68,9 @@ Lo único que puede verse:
 
 Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
 
-**El identificador va encendido.** El detalle reconocible de la §2 se muestra en actividad, no apoyado y quieto, y el entorno inmediato acusa esa actividad: aire, polvo, agua, tela, hierba o luz respondiendo a lo que el objeto hace. Si además el don tiene manifestación luminosa trazable a la ficha, el objeto emite una luz suave y acotada que ilumina de verdad lo que tiene al lado. Esto no agrega ningún objeto al inventario de arriba: sale del identificador que el personaje ya tiene.
+**La magia es obligatoria y sale del identificador.** El detalle reconocible de la §2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina de verdad, deformación del aire, materia que responde: todo eso está autorizado y va sin timidez. Esto no agrega ningún objeto al inventario de arriba, porque lo que se enciende es lo que el personaje ya tiene.
 
-Las tres capas y sus límites están en `estilo_visual_aprobado.md` §7, que gobierna. En particular: **sin** partículas flotantes, **sin** chispas, **sin** estelas, **sin** purpurina, **sin** runas en el aire, **sin** aura alrededor del cuerpo, **sin** halo detrás de la cabeza y **sin** resplandor dorado si el objeto no es de oro. Si el don no tiene manifestación física, la carta va sin luz propia y no se inventa una.
+Las tres capas y las cuatro reglas están en `estilo_visual_aprobado.md` §7, que gobierna. En resumen: el efecto nace del don y se puede señalar de dónde salió; no tapa la cara ni el identificador; el color sale del don o del material y nunca es el dorado por default; y el fenómeno es propio de este personaje y no el mismo de las otras 84. Queda afuera el aura que envuelve el cuerpo y disuelve la silueta, el halo detrás de la cabeza, las runas o pseudo-texto flotando, y cualquier efecto que no se pueda trazar al don. Si el identificador no da para un fenómeno, la carta va con el objeto en actividad y el entorno reaccionando, y no se inventa uno.
 
 ## 6. Escenario
 

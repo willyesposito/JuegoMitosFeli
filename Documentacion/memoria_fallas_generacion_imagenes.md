@@ -529,3 +529,46 @@ acabado y el halo de las sandalias fue lo único que funcionó en esta imagen.
 el cielo azul de default, el broche inventado del hombro y las estelas de chispas. De esa imagen
 vuelve el tono y nada más. La auditoría del 14/9 sobre escenario, inventario y anti-clones es
 independiente del estilo y sigue entera.
+
+---
+
+## Intento 3 de Hermes — 2026-09-14, PARCIAL. Dos correcciones que salieron de acá
+
+Primera imagen en el estilo de cine de animación 3D, y la primera que Willy consideró encaminada.
+Salió con el registro correcto, las alas encendidas, la estela y el polvo de la carrera.
+
+**Falla 1: demasiado musculoso.** Y acá el dato importante es que **el repo ya decía que no.**
+La matriz declara para Hermes masa corporal 3 y anchura de hombros 3 sobre 10 desde el
+principio, o sea el cuerpo de un corredor liviano. Los tres intentos lo ignoraron.
+
+El motivo no fue desobediencia: la orden entregaba esos números como una tabla de quince siglas
+con los valores debajo y sin leyenda. `| EV | MC | EA | ... |` seguido de `| 3 | 3 | 6 | ... |`
+no es una instrucción ejecutable. Un dato que no está en palabras no llega.
+
+Corrección: `generar-ordenes.py` traduce ahora edad visual, masa corporal, anchura de hombros y
+escala aparente a una frase en español al principio de la §4 de cada orden ("joven, delgado y
+liviano, sin masa muscular marcada, hombros estrechos, de escala humana"), con la aclaración
+expresa de que ese dato manda sobre lo que el personaje representa: un dios no es corpulento por
+ser dios. La tabla completa queda, ahora con leyenda, para control humano.
+
+**Regla general que queda: si un dato tiene que llegar al generador, tiene que llegar en
+palabras.** Vale para cualquier eje numérico que se agregue en el futuro.
+
+**Falla 2: poca magia, y era culpa del archivo de estilo.** Corrección textual de Willy: son
+personajes que no existen en la vida real y la carta tiene que decirlo. Un dios que parece una
+persona común con un objeto en la mano es una carta fallada aunque el objeto sea correcto.
+
+Las versiones anteriores de la §7 autorizaban el fenómeno del don pero después lo acotaban con
+una lista larga de prohibiciones que incluía chispas, partículas y estelas. Esa lista nació de
+un problema real de la tanda vieja, donde todas las cartas tenían las mismas chispas doradas
+genéricas, pero el problema era **la falta de traza al don**, no el efecto en sí. Prohibir el
+efecto resolvió el síntoma y mató el motor.
+
+La §7 se reescribió como "Magia visible": las tres capas se mantienen, la capa 3 pasa a estar
+explícitamente autorizada y generosa (estela, chispas, partículas, luz propia, deformación del
+aire, materia que responde), y el control pasa de una lista de prohibiciones a cuatro reglas:
+nace del don, no tapa la cara ni el identificador, el color sale del don o del material, y el
+fenómeno es propio de ese personaje. Afuera queda sólo el aura que disuelve la silueta, el halo
+de santo, las runas flotando y el efecto sin traza.
+
+El gate ahora rechaza por **falta** de magia: "una carta sobria es una carta fallada".
