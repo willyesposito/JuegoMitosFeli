@@ -1031,6 +1031,7 @@
   },
   {
     "id": "freya",
+    "imagen": "imagenes/freya.jpg",
     "nombre": "Freya",
     "mitologia": "nordica",
     "titulo": "La diosa de la magia",
@@ -1191,6 +1192,7 @@
   },
   {
     "id": "sif",
+    "imagen": "imagenes/sif.jpg",
     "nombre": "Sif",
     "mitologia": "nordica",
     "titulo": "La diosa del cabello de oro",
@@ -1738,6 +1740,7 @@
   },
   {
     "id": "demeter",
+    "imagen": "imagenes/demeter.jpg",
     "nombre": "Deméter",
     "mitologia": "griega",
     "titulo": "La diosa de las cosechas",
@@ -1830,6 +1833,7 @@
   },
   {
     "id": "persefone",
+    "imagen": "imagenes/persefone.jpg",
     "nombre": "Perséfone",
     "mitologia": "griega",
     "titulo": "La reina de las dos estaciones",
@@ -2056,6 +2060,7 @@
   },
   {
     "id": "artemisa",
+    "imagen": "imagenes/artemisa.jpg",
     "nombre": "Artemisa",
     "mitologia": "griega",
     "titulo": "La diosa de la caza y la luna",
@@ -2620,6 +2625,7 @@
   },
   {
     "id": "iris",
+    "imagen": "imagenes/iris.jpg",
     "nombre": "Iris",
     "mitologia": "griega",
     "titulo": "La mensajera del arcoíris",
@@ -3548,6 +3554,7 @@
   },
   {
     "id": "pandora",
+    "imagen": "imagenes/pandora.jpg",
     "nombre": "Pandora",
     "mitologia": "griega",
     "titulo": "La primera mujer de la mitología griega",
@@ -4684,6 +4691,7 @@
   },
   {
     "id": "valquirias",
+    "imagen": "imagenes/valquirias.jpg",
     "nombre": "Las Valquirias",
     "mitologia": "nordica",
     "titulo": "Las jinetes del cielo",
@@ -5285,6 +5293,7 @@
   },
   {
     "id": "helena",
+    "imagen": "imagenes/helena.jpg",
     "nombre": "Helena",
     "mitologia": "griega",
     "titulo": "La mujer por la que zarparon mil barcos",
@@ -5946,6 +5955,7 @@
   },
   {
     "id": "calipso",
+    "imagen": "imagenes/calipso.jpg",
     "nombre": "Calipso",
     "mitologia": "griega",
     "titulo": "La ninfa de la isla lejana",
@@ -6013,6 +6023,7 @@
   },
   {
     "id": "psique",
+    "imagen": "imagenes/psique.jpg",
     "nombre": "Psique",
     "mitologia": "griega",
     "titulo": "El alma que buscó a su amor",
