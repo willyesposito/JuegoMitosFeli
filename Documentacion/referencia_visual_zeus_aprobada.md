@@ -1,10 +1,17 @@
 # Referencia visual aprobada — Zeus
 
-**Estado:** APROBADA por Feli como referencia visual de Zeus.
+**Estado:** aprobada como referencia visual de Zeus el 2026-09-04.
 
-**Fecha de aprobación:** 2026-09-04.
+> **Alcance reducido el 2026-09-14.** Esta ficha ya no aporta nada al resto de la colección.
+> El estilo vigente es semirrealista y vive en `Documentacion/estilo_visual_aprobado.md`,
+> calibrado por `imagenes/teseo.jpg`. `imagenes/zeus.jpg` quedó fuera de norma de estilo.
+>
+> Lo que este archivo sigue gobernando: la **identidad concreta** de Zeus, o sea qué se ve en
+> su carta. Cuando se regenere en el estilo nuevo, esta apariencia se conserva y cambia sólo
+> el acabado, con dos excepciones ya identificadas: la cara redonda con ojos enormes, que era
+> la calibración vieja, y el fondo de Olimpo con templo y cielo azul, que está en la blacklist.
 
-**Uso:** esta ficha fija la apariencia concreta de Zeus y, al mismo tiempo, separa qué rasgos pueden trasladarse al resto de la colección y cuáles son exclusivos del personaje.
+**Uso:** esta ficha fija la apariencia concreta de Zeus. Ya no se usa para trasladar rasgos al resto de la colección.
 
 > Esta referencia no modifica valores numéricos, tier, poderes, roster ni datos funcionales del juego. Sólo documenta decisiones visuales.
 

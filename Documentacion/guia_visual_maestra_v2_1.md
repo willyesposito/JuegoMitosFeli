@@ -51,51 +51,22 @@ Si una imagen puede asustar a una nena que la mira sola de noche, está mal resu
 
 ## 1. ADN de estilo
 
-Este bloque es fijo y se mantiene estable en las 85 ilustraciones.
+> **Superado el 2026-09-14.** Willy decidió que la colección es **semirrealista, calibrada
+> por `imagenes/teseo.jpg`**. El estilo vigente vive completo en
+> `Documentacion/estilo_visual_aprobado.md` y esta sección ya no gobierna.
+>
+> Queda derogado todo lo que esta sección decía sobre restricción dominante de aventura
+> infantil, cabeza agrandada, caricatura moderada, rasgos redondeados y contorno blando.
+> También queda superada la calibración infantil derivada de Odín.
+>
+> Lo que **no** cambia y sigue vigente en este documento: formato y zona segura de avatar
+> (§2), familias de encuadre (§3), ejes de diferenciación (§4), lectura del personaje (§5),
+> vocabulario por mitología (§7), jerarquía de fondo (§9), contenido y seguridad (§10),
+> prohibición de clones (§11) y criterios de rechazo (§12).
+>
+> El contenido no se ablanda: semirrealista es cómo se dibuja, no qué se muestra.
 
-Las imágenes aprobadas de **Zeus, Atenea e Iris** son referencias de **estilo**, no de anatomía, identidad facial, objetos ni escenario. El feedback de Willy sobre la última generación de **Odín** fija además la calibración infantil escrita a continuación; mientras esa imagen no tenga una ruta persistente en el repo, no se debe afirmar que fue inspeccionada desde un chat nuevo.
-
-En el caso de Odín, la aprobación alcanza exclusivamente al lenguaje infantil de ejecución. No valida como canon la lanza, el parche, las runas, los broches, la montaña, el barco, el pueblo ni ningún otro elemento que no esté autorizado por su ficha. **ESTILO = referencia aprobada. IDENTIDAD Y CONTENIDO = exclusivamente fuentes del personaje en el repo.**
-
-### Restricción dominante: aventura infantil
-
-Antes que mitológico, épico, adulto, guerrero, rey, anciano o poderoso, cada personaje debe leerse como un **personaje de aventura infantil de película animada familiar**, con acabado sofisticado.
-
-Esto exige de manera positiva:
-
-- ojos grandes y muy expresivos dentro de la anatomía propia del personaje;
-- cabeza proporcionalmente algo mayor que en un adulto real cuando corresponda;
-- nariz, mandíbula, manos y musculatura simplificadas y suavemente redondeadas;
-- formas limpias, legibles y amables, sin planos faciales duros;
-- volumen suave y sombreado pictórico simplificado;
-- iluminación cálida o amable, ajustada al ambiente, sin dramatismo adulto;
-- materiales claramente ilustrados, diferenciados por grandes formas, color y luz, sin simulación fotorrealista ni microtextura dominante;
-- expresión accesible y con curiosidad, calidez, humor o personalidad según la ficha, sin imponer la misma sonrisa a todos.
-
-La edad aparente se conserva: un adulto mayor debe seguir pareciendo adulto mayor y un guerrero debe conservar su fuerza. Esos atributos nunca autorizan anatomía realista, rostro severo, mandíbula cincelada, piel fotorrealista, solemnidad épica, intimidación, militarización adulta ni estética de videojuego AAA.
-
-**Gate obligatorio:** si la imagen parece arte conceptual para un videojuego, una película épica adulta o una representación semirrealista, falla aunque sus atributos mitológicos sean correctos. Si sólo es “segura” o sonríe, pero no tiene el lenguaje infantil positivo definido arriba, también falla.
-
-### Técnica
-
-- Ilustración digital pintada.
-- Acabado suave, con volumen ilustrado y simplificado.
-- Textura visible en piel, pelo, tela, cuero, madera, piedra y metal.
-- Contorno blando.
-- Sin línea negra dura de cartoon.
-- Nivel de caricatura moderado.
-- Proporciones humanas reinterpretadas mediante caricatura moderada cuando corresponda.
-- Cabeza levemente agrandada.
-- Rasgos expresivos, pero no deformes.
-
-### Luz
-
-- Luz direccional clara.
-- Sombras suaves y coloreadas.
-- La temperatura de la luz se adapta al personaje y al ambiente.
-- El resultado general sigue siendo amable, legible y atractivo para una colección infantil.
-- Puede existir luz de separación en los bordes, pero su color depende de la escena: dorada, fría, plateada, rojiza, verdosa u otra que corresponda.
-- **No usar brillo dorado como recurso automático en toda la colección.**
+Se conservan de este ADN original tres bloques que la decisión nueva no toca.
 
 ### Materiales
 
@@ -110,20 +81,22 @@ Los materiales deben sentirse distintos entre sí:
 - el pelo tiene volumen y textura;
 - las plumas, pieles, escamas y elementos naturales conservan su materialidad.
 
+### Luz
+
+- Luz direccional clara.
+- La temperatura de la luz se adapta al personaje y al ambiente.
+- **No usar brillo dorado como recurso automático en toda la colección.**
+
 ### Registro
 
-- Amigable.
-- Inteligente.
-- Expresivo.
-- Con personalidad.
-- Capaz de tener humor sin volverse caricatura infantil simplona.
+- Amigable, inteligente, expresivo, con personalidad.
 - No infantilizar a la jugadora.
 
-Este ADN de estilo es lo que todos comparten.
-
-Todo lo relacionado con rostro, cuerpo, edad, cabello, pose, identidad, objetos y energía cambia según el ADN individual.
+Todo lo relacionado con rostro, cuerpo, edad, cabello, pose, identidad, objetos y energía
+cambia según el ADN individual.
 
 ---
+
 
 ## 2. Formato, dos imágenes por personaje y zona segura de avatar
 

@@ -65,9 +65,14 @@ Si un elemento no está autorizado por las fuentes del repo, no debe aparecer.
 
 Antes de redactar el prompt de imagen, leer desde la rama vigente del repo, como mínimo:
 
-1. `CLAUDE.md`
-2. `MEMORY.md`
-3. `Documentacion/guia_visual_maestra_v2_1.md`
+0. `Produccion/<id>.md` — la orden de producción del personaje, si ya existe. Cuando existe,
+   **gana sobre todo lo demás** y alcanza por sí sola junto con el estilo: está precompilada
+   justamente para que no haya que reconstruir el canon desde 500 KB en cada generación.
+1. `Documentacion/estilo_visual_aprobado.md` — **el estilo vigente.** Semirrealista,
+   calibrado por `imagenes/teseo.jpg`, decidido el 2026-09-14.
+2. `CLAUDE.md` y `MEMORY.md`
+3. `Documentacion/guia_visual_maestra_v2_1.md` — su §1 está superada por el archivo de estilo;
+   el resto sigue vigente.
 4. `Documentacion/adn_visual_personajes_v1.md`
 5. `Documentacion/matriz_adn_visual_numerica_v1.md`
 6. `Documentacion/referencia_visual_zeus_aprobada.md`
@@ -78,7 +83,12 @@ Si existe una referencia visual aprobada específica del personaje objetivo, lee
 
 No afirmar que se leyó un archivo si no se pudo abrir realmente. La descarga y una salida truncada no equivalen a lectura: leer las reglas generales completas y la ficha completa del objetivo y de cada personaje de riesgo. Recuperar por partes cualquier tramo necesario omitido. En el preflight declarar qué fuentes y secciones se leyeron y la rama utilizada.
 
-**Referencia real obligatoria:** abrir e inspeccionar visualmente la imagen aprobada de Zeus antes de redactar el preflight. Leer su Markdown no alcanza. Si existe una referencia aprobada específica del objetivo, inspeccionarla también. Si la imagen necesaria no puede abrirse, frenar y pedir su ubicación o adjunto. No inventar una ruta ni suponer que un adjunto de otro chat es accesible.
+**Prohibido abrir imágenes de otros personajes** (cambio del 2026-09-14). Ni como referencia
+de estilo, ni para compararse, ni para "no repetir" una cara. El estilo se hereda por el texto
+de `estilo_visual_aprobado.md`. Para no repetir a otro personaje hay que mirarlo, y lo que
+sobrevive hasta el generador es su vocabulario visual, no la intención de evitarlo: así se
+produjo el clon Teseo → Hermes → Perseo. La única imagen que se abre es la propia, después de
+generarla, para el gate posterior.
 
 ### Precedencia
 
@@ -89,7 +99,7 @@ En caso de tensión entre fuentes:
 - referencia visual aprobada específica: apariencia concreta ya validada para ese personaje;
 - `guia_visual_maestra_v2_1.md`: lenguaje visual común;
 - `matriz_adn_visual_numerica_v1.md`: control comparativo y colisiones;
-- referencia aprobada de Zeus: **únicamente nivel de acabado general**, salvo cuando el personaje objetivo sea Zeus.
+- `estilo_visual_aprobado.md`: acabado, luz, materiales y registro, para todos los personajes.
 
 No inventar una solución para reconciliar contradicciones. Si hay una contradicción real que cambia la imagen, detener la generación y señalarla.
 
@@ -97,7 +107,11 @@ No inventar una solución para reconciliar contradicciones. Si hay una contradic
 
 ## 2. Regla crítica sobre referencias visuales
 
-Las imágenes aprobadas de otros personajes sirven para entender el **nivel de acabado**, nunca como plantilla espacial.
+**Desde el 2026-09-14 no se usa ninguna imagen como referencia.** El acabado se hereda por el
+texto de `estilo_visual_aprobado.md`, que describe en prosa el estilo semirrealista calibrado
+por Teseo. Pasarle una imagen completa al generador con la aclaración "sólo estilo" no impide
+que copie pose, fondo y cara: está probado dos veces en este repo, en el intento 5 de Agamenón
+y en las 24 imágenes generadas con el punto 6 del prompt maestro anterior.
 
 Para generar un personaje nuevo:
 
@@ -110,15 +124,18 @@ Para generar un personaje nuevo:
 - no transferir su paleta;
 - no transferir vestuario, cara, cabello o accesorios.
 
-**Especialmente Zeus:** su imagen aprobada transmite calidad, legibilidad, expresividad, acabado pulido y materialidad. No transmite al resto del roster su Olimpo, cielo, templo, roca, perspectiva baja, manto, túnica, oro, brazo abierto ni pose con objeto elevado.
+- no abrir ninguna imagen del roster, ni para inspirarse ni para diferenciarse.
 
-La generación de un personaje nuevo debe comenzar **desde texto y desde cero**, no desde una imagen maestra de otro personaje.
+La generación de un personaje nuevo empieza **desde texto y desde cero**, siempre.
 
 ---
 
 ## 3. Extracción del ADN del personaje
 
-Antes de generar, construir internamente una ficha de producción con estos campos exactos:
+Antes de generar, escribir la orden de producción en `Produccion/<id>.md` con estos campos
+exactos. **Se escribe en el repo, no se arma internamente en cada ejecución:** reconstruirla
+cada vez desde 500 KB de fuentes es lo que produce truncamiento silencioso y huecos rellenados
+por intuición. Ver `Produccion/sif.md` como modelo.
 
 - personaje;
 - mitología;
@@ -280,23 +297,31 @@ De la guía maestra y de las referencias aprobadas puede heredarse:
 
 No convertir estas propiedades en una composición única.
 
-### Adecuación infantil positiva, independiente de seguridad
+### Gate de estilo semirrealista
 
-Comparar con la imagen real aprobada y exigir por separado:
+Comparar contra `Documentacion/estilo_visual_aprobado.md` y exigir por separado:
 
-- lectura inmediata de personaje de aventura infantil de película animada familiar, antes que guerrero, rey, anciano, criatura o figura épica;
-- ojos grandes y muy expresivos, y rostro accesible, con caricatura moderada compatible con la edad del personaje;
-- proporciones ilustradas y cabeza algo mayor que en un adulto real cuando corresponda a su anatomía;
-- nariz, mandíbula, manos y musculatura simplificadas y suavemente redondeadas;
-- formas limpias y volumen suave, sin planos faciales duros, anatomía cincelada ni poros o texturas fotográficas;
-- materiales distinguibles mediante color, luz y grandes formas; el microdetalle no debe dominar;
-- personalidad y aventura sin solemnidad uniforme, amenaza ni militarización adulta.
+- anatomía y proporciones de adulto real, con la cabeza en proporción real;
+- ojos y cejas algo más grandes y bastante más expresivos que lo fotográfico, y **sólo eso**
+  por encima del realismo: nada más se agranda ni se redondea;
+- edad resuelta por estructura ósea, textura de piel, mandíbula, implantación del pelo y
+  párpado, nunca por caricatura;
+- forma definida por luz y volumen, sin contorno negro duro ni cel shading plano;
+- piel con textura y calidez reales, sin aspecto de plástico de render ni de fotografía;
+- materiales netamente diferenciados y fondo con profundidad de campo real;
+- registro cálido y despierto, sin obligación de sonrisa, sin amenaza y sin la misma
+  solemnidad genérica de otra carta.
 
-Una sonrisa y ausencia de violencia no prueban este gate. No imponer sonrisa a personajes cuya ficha exige otra emoción; la lectura infantil se resuelve en el diseño completo. “Adulto maduro”, “robusto”, “anciano”, “guerrero”, “rey”, “poderoso” o un valor alto de rigidez no autorizan realismo adulto. La forma rectangular del rostro no exige dureza expresiva. Si parece arte conceptual de videojuego, película épica adulta o representación semirrealista, falla aunque el canon mitológico esté correcto.
+"Adulto", "anciano", "guerrero", "rey" o "poderoso" ahora sí autorizan estructura adulta: eso
+es lo que cambió el 2026-09-14. Lo que siguen sin autorizar es amenaza, crueldad, violencia ni
+oscuridad temática. Semirrealista es cómo se dibuja, no qué se muestra: `CLAUDE.md` §2.2 y §10
+de la guía maestra no se flexibilizan.
 
-El feedback de Willy sobre la última generación de Odín calibra este nivel infantil, pero sólo su **estilo** es transferible. Sus objetos, símbolos, vestuario y escenario no se incorporan a la whitelist de Odín ni de ningún otro personaje si no aparecen en las fuentes obligatorias. Separar siempre: **ESTILO = referencias aprobadas; IDENTIDAD Y CONTENIDO = ficha y canon del objetivo.** Mientras esa imagen no tenga una ruta persistente en el repo, aplicar la calibración escrita sin afirmar que la imagen fue inspeccionada desde un chat nuevo.
+Quedan derogadas las instrucciones anteriores de esta skill sobre lectura de aventura infantil,
+cabeza agrandada, rasgos redondeados y caricatura moderada, y la calibración derivada de Odín.
 
-Ordenar el prompt: acabado infantil → identidad → acción/silueta → inventario cerrado → encuadre/contexto → exclusiones breves. Evitar repetir descripciones anatómicas o materiales que ahoguen el estilo. No usar “stylized realism”, “cinematic realism” ni “proud command” como instrucciones positivas.
+Ordenar el prompt: acabado semirrealista → identidad → acción/silueta → inventario cerrado →
+encuadre/contexto → exclusiones breves.
 
 ---
 
@@ -329,8 +354,8 @@ Sólo generar si todas son `SÍ`:
 7. ¿No se está usando otra imagen de personaje como base de transformación?
 8. ¿No se agregó cultura pop ni iconografía externa?
 9. ¿Se leyó completo el historial de fallas y se tradujeron las aplicables en controles de este intento?
-10. ¿Se abrió visualmente la referencia real necesaria y se describió su acabado observado?
-11. ¿El prompt exige adecuación infantil positiva en rostro, proporciones, volúmenes y materiales?
+10. ¿Se evitó abrir cualquier imagen de otro personaje?
+11. ¿El prompt exige el acabado semirrealista en rostro, proporciones, luz y materiales?
 12. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
 13. ¿Incluye formato 3:4, encuadre completo y escala de la familia, margen de seguridad y cero texto?
 14. ¿Los detalles pequeños también tienen trazabilidad o se omitieron?
@@ -374,7 +399,7 @@ Mostrar esta tabla con `SÍ`, `NO` o `NO VERIFICADO` y evidencia visible por fil
 8. Escenario autorizado y subordinado.
 9. Cuerpo completo cuando corresponda, escala de encuadre y margen de seguridad.
 10. Anti-clonación: comparar por separado rostro/cuerpo, silueta, pose y composición contra los riesgos.
-11. Adecuación infantil positiva: comparar por separado rostro, proporciones, volúmenes y materiales con el acabado aprobado.
+11. Estilo semirrealista: los siete puntos del gate de `estilo_visual_aprobado.md` §7, uno por uno.
 12. Seguridad emocional: sin amenaza, violencia ni contenido adulto.
 13. Recorte de identidad comprobado: rostro/foco y pista propia permanecen completos y legibles.
 
