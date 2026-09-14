@@ -80,6 +80,16 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Contra Pegaso.**
+
+Silueta de Pegaso, para no repetirla: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena.
+
+Pose de Pegaso, para no repetirla: vuelo o elevación controlada, no picada heroica.
+
+Ejes numéricos que ya los separan: dependencia del identificador 10 contra 1, contorno superior 3 contra 7, rigidez de materiales 6 contra 2, protagonismo de fondo 7 contra 4.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
 **Contra Perseo.**
 
 | | Belerofonte | Perseo |
@@ -96,16 +106,6 @@ Pose de Perseo, para no repetirla: mira el reflejo del escudo en vez de dirigir 
 Ejes numéricos que ya los separan: rareza anatómica 7 contra 1, protagonismo de fondo 7 contra 4.
 
 **Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
-**Contra Pegaso.**
-
-Silueta de Pegaso, para no repetirla: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena.
-
-Pose de Pegaso, para no repetirla: vuelo o elevación controlada, no picada heroica.
-
-Ejes numéricos que ya los separan: dependencia del identificador 10 contra 1, contorno superior 3 contra 7, rigidez de materiales 6 contra 2, protagonismo de fondo 7 contra 4.
-
-**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 Criterio de la ficha: Perseo y Pegaso. Diferenciar de Perseo por dupla jinete-montura; del Pegaso individual por presencia inequívoca del jinete.
 
@@ -131,4 +131,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de `estilo_visual_aprobado.md` §9.

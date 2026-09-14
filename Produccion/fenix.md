@@ -78,14 +78,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
-**Contra Iris.**
-
-Silueta de Iris, para no repetirla: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección.
-
-Pose de Iris, para no repetirla: movimiento de mensajera aérea; no carrera terrestre.
-
-Ejes numéricos que ya los separan: dependencia del identificador 1 contra 10, rareza anatómica 8 contra 1, angulosidad facial 6 contra 2, contorno superior 10 contra 7.
-
 **Contra Nike.**
 
 Silueta de Nike, para no repetirla: alas grandes en V asimétrica + cuerpo inclinado hacia adelante, con contorno de velocidad.
@@ -95,6 +87,14 @@ Pose de Nike, para no repetirla: movimiento de llegada; manos libres o gesto de 
 Ejes numéricos que ya los separan: contorno superior 10 contra 6, oscuridad 3 contra 1, anchura de hombros 6 contra 4, protagonismo de fondo 5 contra 3.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Iris.**
+
+Silueta de Iris, para no repetirla: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección.
+
+Pose de Iris, para no repetirla: movimiento de mensajera aérea; no carrera terrestre.
+
+Ejes numéricos que ya los separan: dependencia del identificador 1 contra 10, rareza anatómica 8 contra 1, angulosidad facial 6 contra 2, contorno superior 10 contra 7.
 
 Criterio de la ficha: Nike e Iris. Diferenciar por anatomía completamente aviar.
 
@@ -120,4 +120,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de `estilo_visual_aprobado.md` §9.

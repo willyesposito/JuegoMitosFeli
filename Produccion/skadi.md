@@ -84,21 +84,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Artemisa.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
-**Contra Artemisa.**
-
-| | Skadi | Artemisa |
-|---|---|---|
-| Cabello | castaño muy oscuro ⚠ igual | castaño muy oscuro |
-| Textura | trenzado contenido | lacio recogido alto |
-| Piel | clara pálida | canela |
-| Ojos | gris hielo | ámbar |
-
-Silueta de Artemisa, para no repetirla: arco largo rompiendo un lateral + cuerpo de cazadora en eje diagonal + capa corta o faldón práctico.
-
-Pose de Artemisa, para no repetirla: arco en reposo hacia abajo; calma vigilante, no disparo ni combate.
-
-Ejes numéricos que ya los separan: dinamismo de pose 8 contra 3, edad visual 7 contra 4, angulosidad facial 8 contra 5, apertura corporal 7 contra 4.
-
 **Contra Atalanta.**
 
 | | Skadi | Atalanta |
@@ -113,6 +98,21 @@ Silueta de Atalanta, para no repetirla: piernas largas en carrera + arco bajo + 
 Pose de Atalanta, para no repetirla: cuerpo inclinado en carrera física; arco bajo, no en uso.
 
 Ejes numéricos que ya los separan: protagonismo de fondo 9 contra 4, angulosidad facial 8 contra 4, edad visual 7 contra 4, rigidez de materiales 9 contra 6.
+
+**Contra Artemisa.**
+
+| | Skadi | Artemisa |
+|---|---|---|
+| Cabello | castaño muy oscuro ⚠ igual | castaño muy oscuro |
+| Textura | trenzado contenido | lacio recogido alto |
+| Piel | clara pálida | canela |
+| Ojos | gris hielo | ámbar |
+
+Silueta de Artemisa, para no repetirla: arco largo rompiendo un lateral + cuerpo de cazadora en eje diagonal + capa corta o faldón práctico.
+
+Pose de Artemisa, para no repetirla: arco en reposo hacia abajo; calma vigilante, no disparo ni combate.
+
+Ejes numéricos que ya los separan: dinamismo de pose 8 contra 3, edad visual 7 contra 4, angulosidad facial 8 contra 5, apertura corporal 7 contra 4.
 
 Criterio de la ficha: Artemisa y Atalanta. Diferenciar por ropa invernal, mayor masa y acción sobre nieve.
 
@@ -138,4 +138,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de `estilo_visual_aprobado.md` §9.

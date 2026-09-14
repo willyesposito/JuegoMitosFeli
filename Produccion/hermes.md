@@ -2,7 +2,7 @@
 
 **Estado: LISTA.** Identidad cerrada, inventario cerrado, separación resuelta.
 
-**Imagen actual:** `imagenes/hermes.jpg`, **a reemplazar.** Es de un estilo anterior: la colección pasó a semirrealista el 2026-09-14.
+**Imagen actual:** `imagenes/hermes.jpg`, **a reemplazar.** Es de un estilo anterior: la colección quedó en cine de animación 3D el 2026-09-14, con el acabado calibrado por `imagenes/teseo.jpg` y el registro emocional por `imagenes/hermes.jpg`.
 
 **Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.
 
@@ -88,23 +88,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Loki.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
-**Contra Iris.**
-
-| | Hermes | Iris |
-|---|---|---|
-| Cabello | cobrizo | castaño claro |
-| Textura | rizado abierto | largo recogido parcialmente |
-| Piel | clara dorada con pecas | canela |
-| Ojos | verde oliva | avellana |
-
-Silueta de Iris, para no repetirla: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección.
-
-Pose de Iris, para no repetirla: movimiento de mensajera aérea; no carrera terrestre.
-
-Ejes numéricos que ya los separan: contorno superior 4 contra 7, verticalidad 5 contra 8, densidad visual 5 contra 7, rigidez de materiales 4 contra 2.
-
-**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
 **Contra Loki.**
 
 | | Hermes | Loki |
@@ -121,6 +104,23 @@ Pose de Loki, para no repetirla: mira hacia un lado mientras una mano parece ter
 Ejes numéricos que ya los separan: dependencia del identificador 9 contra 3, angulosidad facial 3 contra 8, contorno superior 4 contra 8, apertura corporal 8 contra 4.
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Iris.**
+
+| | Hermes | Iris |
+|---|---|---|
+| Cabello | cobrizo | castaño claro |
+| Textura | rizado abierto | largo recogido parcialmente |
+| Piel | clara dorada con pecas | canela |
+| Ojos | verde oliva | avellana |
+
+Silueta de Iris, para no repetirla: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección.
+
+Pose de Iris, para no repetirla: movimiento de mensajera aérea; no carrera terrestre.
+
+Ejes numéricos que ya los separan: contorno superior 4 contra 7, verticalidad 5 contra 8, densidad visual 5 contra 7, rigidez de materiales 4 contra 2.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 **Contra Teseo.**
 
@@ -195,4 +195,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de `estilo_visual_aprobado.md` §9.

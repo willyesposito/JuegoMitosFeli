@@ -80,6 +80,21 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Contra Hestia.**
+
+| | Prometeo | Hestia |
+|---|---|---|
+| Cabello | castaño muy oscuro | castaño ceniza |
+| Textura | medio | recogido simple |
+| Piel | oliva media | dorada media |
+| Ojos | gris | marrón cálido |
+
+Silueta de Hestia, para no repetirla: cuerpo compacto sentado o arrodillado + llama del hogar a un costado + telas suaves sin objetos de poder.
+
+Pose de Hestia, para no repetirla: cuida la llama en calma.
+
+Ejes numéricos que ya los separan: angulosidad facial 8 contra 2, apertura corporal 8 contra 2, dinamismo de pose 6 contra 1, contorno superior 5 contra 1.
+
 **Contra Helios.**
 
 | | Prometeo | Helios |
@@ -96,21 +111,6 @@ Pose de Helios, para no repetirla: conduce el carro, erguido y estable.
 Ejes numéricos que ya los separan: angulosidad facial 8 contra 4, oscuridad 5 contra 1, rareza anatómica 1 contra 5, densidad visual 6 contra 9.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
-**Contra Hestia.**
-
-| | Prometeo | Hestia |
-|---|---|---|
-| Cabello | castaño muy oscuro | castaño ceniza |
-| Textura | medio | recogido simple |
-| Piel | oliva media | dorada media |
-| Ojos | gris | marrón cálido |
-
-Silueta de Hestia, para no repetirla: cuerpo compacto sentado o arrodillado + llama del hogar a un costado + telas suaves sin objetos de poder.
-
-Pose de Hestia, para no repetirla: cuida la llama en calma.
-
-Ejes numéricos que ya los separan: angulosidad facial 8 contra 2, apertura corporal 8 contra 2, dinamismo de pose 6 contra 1, contorno superior 5 contra 1.
 
 Criterio de la ficha: Helios y Hestia. Diferenciar por fuego pequeño transportado/entregado, no carro solar ni fuego doméstico conservado.
 
@@ -136,4 +136,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de `estilo_visual_aprobado.md` §9.

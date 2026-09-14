@@ -68,9 +68,10 @@ Antes de redactar el prompt de imagen, leer desde la rama vigente del repo, como
 0. `Produccion/<id>.md` — la orden de producción del personaje, si ya existe. Cuando existe,
    **gana sobre todo lo demás** y alcanza por sí sola junto con el estilo: está precompilada
    justamente para que no haya que reconstruir el canon desde 500 KB en cada generación.
-1. `Documentacion/estilo_visual_aprobado.md` — **el estilo vigente.** Semirrealista,
-   calibrado por `imagenes/teseo.jpg`, decidido el 2026-09-14, con el acabado de pintura
-   visible (§3.1) y la manifestación del don (§7) agregados en la corrección del mismo día.
+1. `Documentacion/estilo_visual_aprobado.md` — **el estilo vigente.** Cine de animación 3D
+   familiar, con el acabado calibrado por `imagenes/teseo.jpg` y el registro emocional por
+   `imagenes/hermes.jpg`. Tercera y vigente versión del 2026-09-14: su §0 explica por qué las
+   dos anteriores fallaron y no hay que volver a ellas.
 2. `CLAUDE.md` y `MEMORY.md`
 3. `Documentacion/guia_visual_maestra_v2_1.md` — su §1 está superada por el archivo de estilo;
    el resto sigue vigente.
@@ -109,7 +110,7 @@ No inventar una solución para reconciliar contradicciones. Si hay una contradic
 ## 2. Regla crítica sobre referencias visuales
 
 **Desde el 2026-09-14 no se usa ninguna imagen como referencia.** El acabado se hereda por el
-texto de `estilo_visual_aprobado.md`, que describe en prosa el estilo semirrealista calibrado
+texto de `estilo_visual_aprobado.md`, que describe en prosa el estilo de animación 3D calibrado
 por Teseo. Pasarle una imagen completa al generador con la aclaración "sólo estilo" no impide
 que copie pose, fondo y cara: está probado dos veces en este repo, en el intento 5 de Agamenón
 y en las 24 imágenes generadas con el punto 6 del prompt maestro anterior.
@@ -301,40 +302,46 @@ De la guía maestra y de las referencias aprobadas puede heredarse:
 
 No convertir estas propiedades en una composición única.
 
-### Gate de estilo semirrealista
+### Gate de estilo de animación
 
 Comparar contra `Documentacion/estilo_visual_aprobado.md` y exigir por separado:
 
-- anatomía y proporciones de adulto real, con la cabeza en proporción real;
-- ojos y cejas algo más grandes y bastante más expresivos que lo fotográfico, y **sólo eso**
-  por encima del realismo: nada más se agranda ni se redondea;
-- edad resuelta por estructura ósea, textura de piel, mandíbula, implantación del pelo y
-  párpado, nunca por caricatura;
-- forma definida por luz y volumen, sin contorno negro duro ni cel shading plano;
-- piel con textura y calidez reales, sin aspecto de plástico de render ni de fotografía;
-- materiales netamente diferenciados y fondo con profundidad de campo real;
-- **pintura visible** (§3.1 del archivo de estilo): pincelada en ropa, pelo, fondo y sombras,
-  empaste en las luces, bordes decididos y fondo en manchas de color. El realismo de este
-  estilo está en la anatomía, no en el acabado: si la primera lectura es foto retocada o
-  render, falla aunque la estructura sea impecable;
-- **el don encendido** (§7 del archivo de estilo): el identificador se muestra en actividad y
-  el entorno acusa esa actividad; luz propia del objeto sólo si el don la sostiene, acotada al
-  objeto, iluminando algo real y sin taparlo. Sin partículas, chispas, estelas, runas
-  flotando, aura de cuerpo entero ni halo detrás de la cabeza. Si el don no tiene
-  manifestación física, va sin luz propia y no se inventa una;
-- registro cálido y despierto, sin obligación de sonrisa, sin amenaza y sin la misma
-  solemnidad genérica de otra carta.
+- **fotograma de película de animación 3D:** volumen sólido y superficie pulida. Ni fotografía,
+  ni pintura al óleo con pincelada, ni 2D plano con contorno negro o cel shading;
+- estilización moderada: proporciones creíbles con la cabeza apenas mayor que lo real, sin cara
+  redondeada, sin cabeza de gnomo y sin proporciones de muñeco;
+- ojos grandes y muy expresivos, y **cejas gruesas, marcadas y actuadas**: son el centro de la
+  actuación, como en `teseo.jpg`;
+- rasgos simplificados con intención, y musculatura de atleta joven, nunca de estatua académica;
+- edad resuelta por estructura y actuación dentro del vocabulario de la animación, nunca por
+  cara redonda con ojos enormes;
+- materiales netamente diferenciados **en versión estilizada**, sin microtextura fotográfica, y
+  pelo en mechones sólidos agrupados;
+- luz cinematográfica con contraluz y rebote, y fondo con profundidad de campo real;
+- **el don encendido** (§7): el identificador en actividad, el entorno acusando esa actividad, y
+  luz propia del objeto sólo si el don la sostiene, acotada al objeto, iluminando algo real y sin
+  taparlo. Sin partículas, chispas, estelas que recorran el cuadro, runas flotando, aura de
+  cuerpo entero ni halo detrás de la cabeza. Si el don no tiene manifestación física, va sin luz
+  propia y no se inventa una;
+- registro entre la concentración despierta de Teseo y la alegría abierta de Hermes, sin
+  obligación de sonrisa, sin amenaza, sin gravedad épica de monumento y sin la misma solemnidad
+  genérica de otra carta.
 
-"Adulto", "anciano", "guerrero", "rey" o "poderoso" ahora sí autorizan estructura adulta: eso
-es lo que cambió el 2026-09-14. Lo que siguen sin autorizar es amenaza, crueldad, violencia ni
-oscuridad temática. Semirrealista es cómo se dibuja, no qué se muestra: `CLAUDE.md` §2.2 y §10
-de la guía maestra no se flexibilizan.
+"Adulto", "anciano", "guerrero", "rey" o "poderoso" autorizan estructura adulta dentro del
+vocabulario de la animación. Lo que siguen sin autorizar es amenaza, crueldad, violencia ni
+oscuridad temática: el estilo es cómo se dibuja, no qué se muestra, y `CLAUDE.md` §2.2 y §10 de
+la guía maestra no se flexibilizan.
 
-Quedan derogadas las instrucciones anteriores de esta skill sobre lectura de aventura infantil,
-cabeza agrandada, rasgos redondeados y caricatura moderada, y la calibración derivada de Odín.
+**Dos calibraciones, cada una en lo suyo:** `imagenes/teseo.jpg` fija el acabado y la anatomía;
+`imagenes/hermes.jpg` fija **sólo el registro emocional**. De hermes.jpg no vuelven ni el
+templo, ni el cielo azul de default, ni el broche inventado, ni las estelas y chispas.
 
-Ordenar el prompt: acabado semirrealista y pintura visible → identidad → acción/silueta →
-inventario cerrado → manifestación del don → encuadre/contexto → exclusiones breves.
+Quedan derogadas las instrucciones anteriores de esta skill sobre lectura de aventura infantil
+con cabeza agrandada y rasgos redondeados, la calibración derivada de Odín, y también la
+calibración semirrealista con pintura visible que la reemplazó por unas horas el 2026-09-14.
+
+Ordenar el prompt: estilo de animación 3D → identidad → acción/silueta → inventario cerrado →
+manifestación del don → encuadre/contexto → exclusiones breves.
 
 ---
 
@@ -368,8 +375,8 @@ Sólo generar si todas son `SÍ`:
 8. ¿No se agregó cultura pop ni iconografía externa?
 9. ¿Se leyó completo el historial de fallas y se tradujeron las aplicables en controles de este intento?
 10. ¿Se evitó abrir cualquier imagen de otro personaje?
-11. ¿El prompt exige el acabado semirrealista en rostro, proporciones, luz y materiales, y **la
-    pintura visible** de §3.1: pincelada, empaste en las luces y bordes decididos?
+11. ¿El prompt exige el **fotograma de animación 3D**: volumen pulido, estilización moderada,
+    cejas actuadas y materiales estilizados, sin foto, sin óleo y sin 2D plano?
 12. ¿El prompt muestra el identificador en actividad y el entorno respondiendo, y la luz propia
     del objeto sólo si el don la sostiene, sin partículas, estelas ni aura?
 13. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
@@ -415,7 +422,7 @@ Mostrar esta tabla con `SÍ`, `NO` o `NO VERIFICADO` y evidencia visible por fil
 8. Escenario autorizado y subordinado.
 9. Cuerpo completo cuando corresponda, escala de encuadre y margen de seguridad.
 10. Anti-clonación: comparar por separado rostro/cuerpo, silueta, pose y composición contra los riesgos.
-11. Estilo semirrealista: los diez puntos del gate de `estilo_visual_aprobado.md` §8, uno por uno.
+11. Estilo de animación: los once puntos del gate de `estilo_visual_aprobado.md` §9, uno por uno.
 12. Seguridad emocional: sin amenaza, violencia ni contenido adulto.
 13. Recorte de identidad comprobado: rostro/foco y pista propia permanecen completos y legibles.
 

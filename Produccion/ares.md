@@ -82,23 +82,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Tyr.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
-**Contra Héctor.**
-
-| | Ares | Héctor |
-|---|---|---|
-| Cabello | negro | castaño oscuro |
-| Textura | muy corto | corto |
-| Piel | oliva media ⚠ igual | oliva media |
-| Ojos | marrón muy oscuro | marrón cálido |
-
-Silueta de Héctor, para no repetirla: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior.
-
-Pose de Héctor, para no repetirla: protege y contiene, no avanza ni ataca.
-
-Ejes numéricos que ya los separan: protagonismo de fondo 2 contra 8, angulosidad facial 8 contra 4, masa corporal 9 contra 7, apertura corporal 4 contra 6.
-
-**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
 **Contra Atenea.**
 
 | | Ares | Atenea |
@@ -115,6 +98,23 @@ Pose de Atenea, para no repetirla: escudo en diagonal baja y mano libre indicand
 Ejes numéricos que ya los separan: masa corporal 9 contra 5, anchura de hombros 9 contra 5, oscuridad 6 contra 3.
 
 **Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Héctor.**
+
+| | Ares | Héctor |
+|---|---|---|
+| Cabello | negro | castaño oscuro |
+| Textura | muy corto | corto |
+| Piel | oliva media ⚠ igual | oliva media |
+| Ojos | marrón muy oscuro | marrón cálido |
+
+Silueta de Héctor, para no repetirla: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior.
+
+Pose de Héctor, para no repetirla: protege y contiene, no avanza ni ataca.
+
+Ejes numéricos que ya los separan: protagonismo de fondo 2 contra 8, angulosidad facial 8 contra 4, masa corporal 9 contra 7, apertura corporal 4 contra 6.
+
+**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 **Contra Tyr.**
 
@@ -157,4 +157,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los once puntos del gate de `estilo_visual_aprobado.md` §9.
