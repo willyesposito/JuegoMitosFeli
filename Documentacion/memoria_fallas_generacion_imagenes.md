@@ -284,3 +284,125 @@ Agamemnon stands on a simple flat shore. A large fleet of ancient ships forms th
 
 Exactly ONE image and ONE representation of Agamemnon. No text, pseudo-text, lettering, borders, panels, insets, circles, portraits, medallions, interfaces or extra views. No additional objects, weapons, animals, magic or symbols. Match the attached illustration's exact friendly children's style throughout the face, body, cloth, metal and environment.
 ```
+
+
+## Auditoría de las 31 imágenes producidas — 2026-09-14
+
+**Estado:** auditoría completa del lote, no de un intento suelto. Se abrieron y miraron las 31
+imágenes (28 registradas en `personajes.json` más `odiseo.png`, `poseidon.png` y `thor.png`,
+subidas y todavía sin registrar) y se contrastaron contra su ficha de
+`adn_visual_personajes_v1.md`, la matriz numérica y la guía maestra.
+
+### Hallazgo de proceso: la skill nunca gobernó ninguna imagen
+
+Las 30 imágenes que no son Zeus entraron al repo como commits `Add files via upload` desde
+GitHub web. Se generaron afuera, en chats de GPT, con
+`Documentacion/prompt_generacion_personaje.md`, que no tenía blacklist ni gate posterior. La
+skill, con sus 15 gates de preflight y sus 13 de gate posterior, no participó de ninguna.
+
+Consecuencia comprobable: la imagen final de Agamenón repite cuatro fallas ya documentadas y
+rechazadas en los intentos 3 a 5 de este mismo archivo. Palma abierta hacia el espectador,
+sujetos secundarios en la flota, figura muy por encima del 70–80% del alto, e iconografía
+inventada (leones en cetro, coraza, grebas y estandarte, cuando la corrección exigía cetro sin
+iconografía y sin emblema). **Un historial de fallas que el proceso de producción no lee no
+previene nada.**
+
+### Causa raíz 1: el punto 6 del prompt maestro
+
+Decía: *"Tomá las imágenes aprobadas de Zeus, Atenea, Iris y Teseo solo como referencia del
+lenguaje visual general... Nunca copies cara, cuerpo, pose, anatomía"*. Estuvo desde la primera
+versión del archivo, el 2026-09-12, y las 24 imágenes posteriores se generaron con esa
+instrucción activa.
+
+Resultado: Teseo, Hermes y Perseo comparten la cara. Es el mismo mecanismo que ya había fallado
+en el intento 5 de Agamenón, registrado arriba como *"escribir 'sólo estilo' junto a una imagen
+completa no impidió que el resultado reprodujera pose y ambiente"*. El aprendizaje se escribió
+y después se hizo exactamente lo contrario, con cuatro imágenes en vez de una.
+
+Agravante detectado: cuando se escribió ese punto, en el repo sólo existía `zeus.jpg`. Atenea,
+Iris y Teseo entraron después. Durante las primeras tandas el prompt nombraba tres referencias
+que el modelo no podía abrir.
+
+### Causa raíz 2: cara y pelo no están gobernados por ningún archivo
+
+- Los 15 ejes de la matriz numérica no incluyen color de pelo, tono de piel ni identidad
+  facial. El único eje de cara es `AF`, angulosidad.
+- De 85 fichas, unas 15 declaran color o tono de pelo. Entre los 28 ilustrados: Agamenón, Sif,
+  Heimdall, Hades, Odín y Loki. El resto no declara nada y el generador cae en su default.
+- Peor, las fichas asignan geometrías casi idénticas: Teseo "cara más redonda, cabello corto
+  rizado", Perseo "rostro oval corto y cabello rizado compacto", Hermes "rostro corto y vivo,
+  cabello rizado pequeño". Los tres se cumplieron. El clon está en la fuente, no en el
+  generador.
+- Lo mismo en el elenco femenino: Atenea, Penélope, Helena, Calipso, Pandora, Iris, Psique y
+  Perséfone tienen todas rostro oval o corazón y ninguna declara color de pelo. Salieron ocho
+  castañas de rostro oval.
+
+Confirmación por contraste: Sigurd comparte la construcción facial del grupo de héroes jóvenes
+y se distingue igual, porque su ficha declara el pelo. Es el único separador que funcionó.
+
+### Causa raíz 3: dos archivos de instrucciones, y el que se usa es el que no tiene la blacklist
+
+La skill prohíbe textualmente el pedestal de roca y el templo griego automático. El prompt
+maestro no los mencionaba. Resultado sobre 31 imágenes: 15 con roca-pedestal, 11 con templo en
+acantilado.
+
+### Incumplimientos por categoría
+
+**Cultura pop, prohibición expresa de la blacklist.** Thor como Thor de Marvel, con capa roja y
+martillo al hombro. Loki con la silueta y la paleta de Marvel. Sif como Rapunzel de *Enredados*.
+Una valquiria como Merida de *Valiente*.
+
+**Objetos inventados.** Alas anatómicas en Freya, cuando su ficha dice capa de plumas de halcón.
+Lanza, parche, valknut, piedra rúnica, aldea y drakkar en Odín, ninguno autorizado por su ficha,
+cuya única pista secundaria es el pozo de sabiduría. Valva de vieira en Afrodita, que es
+Botticelli y no está en su ficha. Galaxia espiral y Vía Láctea de astrofotografía en la bóveda
+de Atlas. Mapa del tesoro con rosa de los vientos y una X en Odiseo. Calavera y perro negro en
+Perséfone, cuyas pistas autorizadas son sólo flor y piedra. Lechuza en el escudo de Atenea.
+Pelo azul verdoso en Poseidón. Ropa arcoíris en Iris, que es la misma prohibición del pelo
+multicolor mudada a la tela.
+
+**Acción prestada de otra carta.** Sif ejecuta la acción de Deméter, canasto y siembra, en vez
+de la suya, levantar el cabello para mostrar su peso. Son par de Espejo en el juego, así que la
+confusión es doblemente costosa.
+
+**Momento narrativo equivocado.** Rómulo y Remo aparecen como bebés con la loba. Su ficha pide
+gemelos adultos jóvenes fundando la ciudad, con contexturas deliberadamente distintas. Salieron
+dos nenes casi idénticos, o sea que además incumple el anti-clon interno de la dupla.
+
+**Estructura de ficha rota.** Perséfone es un plano medio sin pies, con la dualidad resuelta por
+collage de fondo, cuando su ficha exige un pie en cada zona visual y cuerpo repartido entre dos
+ambientes.
+
+**Uniforme por mitología.** El kit "nudo celta más cuello de piel más broche redondo más botas
+envueltas" se repite en Odín, Sif, Freya, Heimdall, Loki, Sigurd, Thor y las Valquirias. La
+guía maestra §7 dice explícitamente que una mitología aporta vocabulario, no uniforme.
+
+**Tres técnicas distintas conviviendo.** Cel 2D con línea negra dura, render 3D estilo Pixar, y
+semirrealismo cinematográfico en Teseo, que es un caso único.
+
+### Qué se cambió a partir de esta auditoría
+
+1. **Decisión de estilo de Willy: la colección es semirrealista, calibrada por
+   `imagenes/teseo.jpg`.** Nuevo archivo `Documentacion/estilo_visual_aprobado.md`. Deroga la
+   restricción dominante de aventura infantil de la guía maestra §1 y la calibración infantil
+   derivada de Odín.
+2. **Se invierte el criterio de los intentos 1 a 5 de Agamenón.** Esos cinco se rechazaron por
+   ser demasiado adultos y realistas. Ese motivo de rechazo ya no aplica. Las entradas se
+   conservan enteras: sus otros hallazgos (objetos inventados, escala, sujetos añadidos, falsos
+   SÍ del gate) siguen plenamente vigentes.
+3. **Prohibido abrir imágenes de otros personajes**, en la skill y en el prompt maestro.
+4. **Órdenes de producción precompiladas** en `Produccion/<id>.md`, una por personaje, cerradas
+   y de dos páginas. `Produccion/sif.md` queda como modelo, y a propósito queda **bloqueada**
+   por dos `[FALTA]`: es la demostración de que el circuito frena en vez de rellenar con el
+   default.
+5. **Blacklist dentro del prompt maestro**, no sólo en la skill, con la cuenta de incidencias
+   de cada ítem sobre las 31 imágenes.
+6. **Preflight de cinco líneas antes de generar y declaración obligatoria después.**
+7. **Investigación documental de los 85** en `Documentacion/prompt_investigacion_85.md`, para
+   cerrar detalle reconocible, atestación física y contaminación pop antes de volver a generar.
+
+### Estado del lote
+
+Las 31 imágenes quedan fuera de norma de estilo. Teseo es la única en el estilo vigente y pasa
+a ser la calibración. Ninguna se borra ni se despublica en este cambio: eso es decisión de
+Willy y requiere instrucción textual suya.
