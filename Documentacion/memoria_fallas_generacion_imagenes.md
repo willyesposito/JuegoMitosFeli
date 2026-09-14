@@ -572,3 +572,69 @@ fenómeno es propio de ese personaje. Afuera queda sólo el aura que disuelve la
 de santo, las runas flotando y el efecto sin traza.
 
 El gate ahora rechaza por **falta** de magia: "una carta sobria es una carta fallada".
+
+---
+
+## El agujero que faltaba: el inventario no se controlaba hacia abajo — 2026-09-14
+
+Salió de revisar el tercer Hermes, que Willy dio por bueno en estilo pero notó más pobre que la
+imagen vieja: "daba más aspecto de Dios con la capa y la lira".
+
+**La revisión encontró que sí había fallado un elemento, y que el método no podía detectarlo.**
+
+La ficha de Hermes autorizaba "lira o ganado" como pistas secundarias. No apareció ninguna. El
+generador, al declarar su cumplimiento, dijo la verdad: la pregunta que se le hace después de
+generar es *qué objetos quedaron que no estaban en el inventario*. Nadie le pregunta nunca qué
+autorizado faltó.
+
+Todo el aparato de control del repo —inventario cerrado, blacklist, kit nórdico prohibido, la
+lista de "sin broche, sin medallón, sin insignia"— está construido contra un solo riesgo: que el
+generador agregue cosas. Es el riesgo que dominó la tanda vieja y la corrección fue correcta.
+Pero corregido ese lado, el péndulo se fue al otro: cartas que cumplen todo y no muestran nada.
+
+**Regla nueva: el inventario está cerrado hacia arriba, no hacia abajo.** Lo que no figura no
+entra, y lo que figura tiene que entrar. Instrucción textual de Willy: entre una carta pelada y
+una con tres objetos autorizados, van los tres.
+
+### Hallazgo mayor: faltaban atributos en la propia ficha
+
+Búsqueda en todo el repositorio: **cero menciones de "caduceo" y cero de "petaso"**, en código,
+datos y documentación.
+
+La ficha de Hermes tenía las sandalias aladas como identificador y "lira o ganado" como
+secundarios. Faltaban los otros dos atributos con los que se lo reconoce en el mundo entero, y
+eso teniendo como título en `personajes.json` "El mensajero de los dioses": el caduceo es
+literalmente el bastón del heraldo.
+
+Además, su campo de avatar pedía "motivo alado alto repetido en accesorio autorizado por diseño".
+Ese accesorio nunca se autorizó en ninguna línea de ninguna ficha. Es un `[FALTA]` latente que el
+generador de órdenes no marcaba, porque sólo marca los identificadores abstractos.
+
+**Al revisar las 84 fichas restantes hay que buscar este patrón:** atributo mundialmente
+reconocible ausente, y campos de avatar que remiten a accesorios que ninguna otra línea autoriza.
+
+### Detalle de diseño que vale guardar
+
+El petaso puesto en la cabeza tapa el pelo rizado cobrizo, que es justamente el eje que separa a
+Hermes de Teseo, Perseo y Sigurd, los tres clones comprobados. Se resolvió con la variante
+clásica del petaso colgado a la espalda por el cordón: el atributo entra y el separador se
+conserva. **Cuando un atributo canónico choca con un separador anti-clon, buscar la variante de
+la iconografía que conserva las dos cosas antes de descartar el atributo.**
+
+### Sobre el caduceo, para el capítulo
+
+El caduceo son dos serpientes entrelazadas con alas en el extremo, y es el bastón de heraldo de
+Hermes: mensajería, comercio, viajeros. **No es la vara de Asclepio**, que tiene una sola
+serpiente, no tiene alas, y es la de la medicina. La confusión está muy extendida, incluso en
+logos de instituciones médicas. Es material para el "¿Por qué?" de un capítulo.
+
+### Correcciones aplicadas
+
+- ADN de Hermes: caduceo y petaso agregados a pistas secundarias, con la instrucción de colgar el
+  petaso; clámide agregada en el campo nuevo de vestimenta.
+- Campo 13 opcional del ADN, "Vestimenta autorizada", para declarar prendas que son parte del
+  reconocimiento del personaje. Autoriza la prenda, nunca sus adornos.
+- `generar-ordenes.py`: la §5 pasa a decir "y van en la imagen", con el párrafo de cerrado hacia
+  arriba y la regla de los tres objetos; la §11 suma el control de omisiones.
+- Gate de estilo: punto nuevo, "la carta está pelada". Son doce puntos.
+- `SKILL.md`: gate posterior, preflight y gate de estilo.

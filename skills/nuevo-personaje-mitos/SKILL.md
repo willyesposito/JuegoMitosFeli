@@ -322,6 +322,10 @@ Comparar contra `Documentacion/estilo_visual_aprobado.md` y exigir por separado:
 - materiales netamente diferenciados **en versión estilizada**, sin microtextura fotográfica, y
   pelo en mechones sólidos agrupados;
 - luz cinematográfica con contraluz y rebote, y fondo con profundidad de campo real;
+- **atributos característicos presentes:** las pistas secundarias autorizadas y la vestimenta
+  autorizada de la orden van en la imagen, no son opcionales. Entre una carta pelada y una con
+  tres objetos autorizados, van los tres; el único límite es que nada tape la cara ni el
+  identificador principal;
 - **magia visible y obligatoria** (§7): estos personajes no existen en la vida real y la carta
   tiene que decirlo. El identificador en actividad, el entorno reaccionando, y el fenómeno del
   don sin timidez: estela, chispas, partículas, luz propia que ilumina de verdad, deformación
@@ -387,10 +391,11 @@ Sólo generar si todas son `SÍ`:
 12. ¿El prompt nombra la masa corporal y la anchura de hombros de la §4 de la orden **en
     palabras**, y no sólo como número de la tabla de siglas?
 13. ¿El prompt pide el fenómeno mágico del don, trazado al identificador, y no una carta sobria?
-14. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
-15. ¿Incluye formato 3:4, encuadre completo y escala de la familia, margen de seguridad y cero texto?
-16. ¿Los detalles pequeños también tienen trazabilidad o se omitieron?
-17. ¿No hay faltantes materiales ni contradicciones que cambien la imagen?
+14. ¿El prompt **nombra uno por uno** los elementos autorizados de la §5 de la orden, incluidos las pistas secundarias y la vestimenta autorizada, para que entren en la imagen?
+15. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
+16. ¿Incluye formato 3:4, encuadre completo y escala de la familia, margen de seguridad y cero texto?
+17. ¿Los detalles pequeños también tienen trazabilidad o se omitieron?
+18. ¿No hay faltantes materiales ni contradicciones que cambien la imagen?
 
 Un SÍ del preflight confirma la preparación, nunca el resultado futuro. Si alguna respuesta es `NO` o `NO VERIFICADO`, **no generar**. Explicar el bloqueo exacto.
 
@@ -426,13 +431,16 @@ Mostrar esta tabla con `SÍ`, `NO` o `NO VERIFICADO` y evidencia visible por fil
 4. Edad, anatomía, rostro, cabello y firma de silueta fieles.
 5. Pose, dirección corporal y relación de la mano/acción con su destino verificables.
 6. Identificador correcto, legible y sin iconografía inventada.
-7. Vestimenta, objetos, accesorios y detalles pequeños dentro de la lista positiva.
+7. Vestimenta, objetos, accesorios y detalles pequeños dentro de la lista positiva, **y la lista
+   positiva efectivamente mostrada**: las pistas secundarias autorizadas son para mostrar, no sólo
+   para permitir.
 8. Escenario autorizado y subordinado.
 9. Cuerpo completo cuando corresponda, escala de encuadre y margen de seguridad.
 10. Anti-clonación: comparar por separado rostro/cuerpo, silueta, pose y composición contra los riesgos.
-11. Estilo de animación: los once puntos del gate de `estilo_visual_aprobado.md` §9, uno por uno.
-12. Seguridad emocional: sin amenaza, violencia ni contenido adulto.
-13. Recorte de identidad comprobado: rostro/foco y pista propia permanecen completos y legibles.
+11. Estilo de animación: los doce puntos del gate de `estilo_visual_aprobado.md` §9, uno por uno.
+12. **Omisiones:** qué elementos autorizados por la orden no aparecieron y por qué. El inventario cerrado se incumple por omisión igual que por exceso, y hasta el 2026-09-14 ningún control miraba este lado.
+13. Seguridad emocional: sin amenaza, violencia ni contenido adulto.
+14. Recorte de identidad comprobado: rostro/foco y pista propia permanecen completos y legibles.
 
 Para el último control, probar un recorte de inspección en copia mediante una herramienta disponible, sin modificar la imagen ni generar otro activo. No presentar esa copia como ilustración adicional ni insertarla en la imagen. Si no se puede comprobar el recorte, declarar `NO VERIFICADO`, no SÍ por intuición.
 

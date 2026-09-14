@@ -72,7 +72,8 @@ Después de generar, con la imagen abierta y mirada de verdad:
 
 1. qué objetos quedaron en la imagen que no estaban en el inventario del preflight;
 2. qué campos de la orden no se cumplieron;
-3. los once puntos del gate de estilo de `estilo_visual_aprobado.md` §9.
+3. los doce puntos del gate de estilo de `estilo_visual_aprobado.md` §9.
+4. qué elementos autorizados de la orden no aparecieron en la imagen, y por qué.
 
 Un `NO` o un `NO VERIFICADO` en cualquiera detiene la ejecución. No retocar, no regenerar,
 no reinterpretar el canon para salvar el resultado.
