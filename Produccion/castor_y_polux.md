@@ -1,0 +1,117 @@
+# Orden de producción — Cástor y Pólux
+
+**Estado: LISTA.** Identidad cerrada, inventario cerrado, separación resuelta.
+
+**Imagen actual:** ninguna. La carta funciona igual, mostrando el nombre con el tratamiento de su mitología.
+
+**Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.
+
+> Generada por `herramientas/generar-ordenes.py`. Para cambiarla, editar la fuente (el ADN, la matriz, `personajes.json` o `herramientas/identidad_visual.py`) y volver a generar. Editar este archivo a mano se pierde.
+
+---
+
+## 1. Identidad
+
+| Campo | Valor | Origen |
+|---|---|---|
+| Mitología | griega | `personajes.json` |
+| Tier | normal | `personajes.json` |
+| Familia de encuadre | dupla | ADN |
+| Edad y contextura | Gemelos jóvenes con parecido familiar, uno más terrestre/robusto y otro más ligero/luminoso. | ADN |
+| Rostro y cabello | Parentesco facial visible sin clonación; diferencias de ancho de cara, expresión y tratamiento de cabello. | ADN |
+| Cabello, piel y ojos | por integrante, ver abajo | decisión de diseño coordinada |
+
+**Integrantes.** Parentesco o pertenencia visible, sin clonación. Cada uno cambia al menos dos de los cuatro valores.
+
+| Integrante | Cabello | Textura | Piel | Ojos |
+|---|---|---|---|---|
+| Cástor | negro | lacio | oliva clara | gris |
+| Pólux | negro | rizado abierto | oliva clara | marrón cálido |
+
+## 2. Detalle reconocible
+
+**Gemelos inseparables + constelación Géminis.**
+
+Dones declarados en `personajes.json`: Hermanos inseparables; Comparten una misma inmortalidad.
+
+Ícono de la carta en la colección: `gemelos`. Dependencia del identificador en la matriz: 6 de 10.
+
+## 3. Acción y pose
+
+Ambos de pie, hombros tocándose o conectados por gesto; nunca espejo exacto.
+
+Dirección corporal: Inclinaciones opuestas que se encuentran visualmente.
+
+Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
+
+## 4. Silueta y composición
+
+- **Firma de silueta:** Dos cuerpos paralelos con inclinaciones opuestas + dos estrellas altas separadas.
+- **Composición:** Las dos estrellas deben quedar separadas sobre cada sujeto y ambos rostros tener aire propio.
+- **Densidad visual:** media (matriz: 7 de 10).
+
+Números de la matriz, como límites de diseño y no como sugerencia:
+
+| EV | MC | EA | AF | CO | AC | DP | VD | DV | OV | DI | AN | PF | RM | RA |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 4 | 5 | 6 | 4 | 3 | 6 | 2 | 8 | 7 | 2 | 6 | 5 | 6 | 5 | 8 |
+
+Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de los personajes de la §7.
+
+## 5. Inventario cerrado
+
+Lo único que puede verse:
+
+1. **Gemelos inseparables + constelación Géminis** — identificador principal. ADN.
+2. **Pistas secundarias autorizadas:** Dos estrellas altas. ADN. Subordinadas, nunca compitiendo con el identificador.
+3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
+
+Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
+
+## 6. Escenario
+
+Sale de la acción de la §3 y de las pistas autorizadas de la §5, en ese orden. El fondo se diseña después del personaje, nunca antes.
+
+Protagonismo de fondo asignado: 6 de 10, o sea que el contexto acompaña sin llevar peso.
+
+**Sin** pedestal de roca ni acantilado heroico, **sin** templo griego de decoración, **sin** Olimpo, **sin** cielo azul con nubes por defecto, **sin** arquitectura de fantasía, **sin** paisaje panorámico que compita en nitidez. Quince de las treinta y una imágenes anteriores tenían el pedestal y once el templo.
+
+El fondo va con profundidad de campo real: menos nitidez y menos contraste que el personaje. Es el recurso principal para cumplir la jerarquía personaje → identificador → contexto.
+
+## 7. Separación obligatoria
+
+**Contra Rómulo y Remo.**
+
+Silueta de Rómulo y Remo, para no repetirla: dos ejes corporales distintos + loba baja entre ambos o detrás; uno más ancho/frontal y el otro más delgado/lateral.
+
+Pose de Rómulo y Remo, para no repetirla: uno señala el terreno y el otro observa la colina; ambos coprotagonistas.
+
+Ejes numéricos que ya los separan: dinamismo de pose 2 contra 5, dependencia del identificador 6 contra 9, protagonismo de fondo 6 contra 9, apertura corporal 6 contra 8.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+Criterio de la ficha: Rómulo y Remo. Diferenciar por eje celeste, ausencia de loba y mayor simetría afectiva.
+
+La diferencia no puede depender sólo del color, del fondo, del objeto sostenido, del peinado ni de una prenda. Matriz §4.1: el objeto no salva un clon.
+
+## 8. Encuadre
+
+Vertical 3:4. Figura al 70–80% del alto del cuadro. Zona limpia detrás de la cabeza o del foco principal.
+
+Avatar circular, como restricción invisible: Ambos rostros + ambas estrellas. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
+
+## 9. Registro
+
+Cálido, despierto, concentrado. No hace falta que sonría. Sin amenaza, sin crueldad, sin solemnidad genérica repetida de otra carta. La emoción sale de la historia del personaje y de lo que está haciendo.
+
+## 10. Contaminación a evitar
+
+**Pendiente de la investigación** del lote correspondiente de `Documentacion/prompt_investigacion_85.md`, campo `contaminacion_pop`. No bloquea la generación, pero dejarlo vacío es aceptar el riesgo a ciegas: la contaminación de cultura pop fue la falla más frecuente de la tanda anterior y la más difícil de ver desde adentro.
+
+Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta lista.
+
+## 11. Antes de generar
+
+Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
+
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los siete puntos del gate de `estilo_visual_aprobado.md` §7.

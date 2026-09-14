@@ -406,3 +406,25 @@ semirrealismo cinematográfico en Teseo, que es un caso único.
 Las 31 imágenes quedan fuera de norma de estilo. Teseo es la única en el estilo vigente y pasa
 a ser la calibración. Ninguna se borra ni se despublica en este cambio: eso es decisión de
 Willy y requiere instrucción textual suya.
+
+
+### Cierre de la auditoría — órdenes de producción, 2026-09-14
+
+Se precompilaron las 85 órdenes en `Produccion/` y se llenó el hueco de identidad facial y
+cromática que la auditoría había señalado como causa raíz 2.
+
+Hallazgo nuevo, aparecido al armarlas: **el campo "riesgos de parecido" de las fichas no
+contiene los pares que efectivamente fallaron.** La ficha de Hermes nombra a Iris y a Loki; su
+clon real fue con Teseo y con Perseo, que no figuran. Lo mismo con Calipso, Helena y Penélope,
+que salieron la misma mujer sin estar emparejadas entre sí en ninguna ficha. La lista de riesgos
+del ADN se construyó sobre el papel, comparando descripciones, y no anticipó lo que el generador
+efectivamente hizo. Los 15 pares comprobados quedaron en `herramientas/identidad_visual.py`,
+bajo `RIESGOS_OBSERVADOS`, y entran en las órdenes **además** de los de la ficha, nunca en lugar.
+
+Se agregó también el par de Espejo como riesgo visual automático: el módulo muestra las dos
+cartas enfrentadas, así que un parecido ahí cuesta el doble. Es el caso de Sif y Deméter.
+
+Se borraron `imagenes/odiseo.png`, `imagenes/poseidon.png` y `imagenes/thor.png` por
+instrucción de Willy: estaban subidas sin registrar en `personajes.json`, o sea que no se veían
+en el juego, y eran cel 2D, fuera de norma antes de llegar. Thor además había salido con la capa
+roja y el martillo al hombro de Marvel, y Poseidón con pelo azul verdoso inventado.

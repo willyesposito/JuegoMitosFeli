@@ -32,8 +32,11 @@ tres reglas de método que gobiernan este archivo:
    pendientes, ~2 páginas.
 2. `Documentacion/estilo_visual_aprobado.md` — el estilo, en prosa, ~3 páginas.
 
-Si la orden de producción no existe todavía, **no se genera**. Se arma primero, con los 20
-campos de la §3 de `skills/nuevo-personaje-mitos/SKILL.md` y las fuentes del repo.
+Las 85 órdenes ya están precompiladas. `Documentacion/indice_ordenes_produccion.md` las lista
+con su estado y las decisiones de identidad de cada una.
+
+Si alguna orden dejara de existir, **no se genera**: se arma primero, con los 20 campos de la §3
+de `skills/nuevo-personaje-mitos/SKILL.md`, o se corre `herramientas/generar-ordenes.py`.
 
 ## 2. Prohibido completar huecos
 
