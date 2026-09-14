@@ -282,8 +282,22 @@ def orden(nombre, adn, mat, pj):
     L.append('Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** '
              'medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, '
              '**sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no '
-             'pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico, **sin** runas, '
+             'pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo '
+             'agregado por fuera del identificador, **sin** runas, '
              '**sin** pseudo-texto, **sin** calzado con decisión no trazada.')
+    L.append('')
+    L.append('**El identificador va encendido.** El detalle reconocible de la §2 se muestra en '
+             'actividad, no apoyado y quieto, y el entorno inmediato acusa esa actividad: aire, '
+             'polvo, agua, tela, hierba o luz respondiendo a lo que el objeto hace. Si además el don '
+             'tiene manifestación luminosa trazable a la ficha, el objeto emite una luz suave y '
+             'acotada que ilumina de verdad lo que tiene al lado. Esto no agrega ningún objeto al '
+             'inventario de arriba: sale del identificador que el personaje ya tiene.')
+    L.append('')
+    L.append('Las tres capas y sus límites están en `estilo_visual_aprobado.md` §7, que gobierna. '
+             'En particular: **sin** partículas flotantes, **sin** chispas, **sin** estelas, **sin** '
+             'purpurina, **sin** runas en el aire, **sin** aura alrededor del cuerpo, **sin** halo '
+             'detrás de la cabeza y **sin** resplandor dorado si el objeto no es de oro. Si el don no '
+             'tiene manifestación física, la carta va sin luz propia y no se inventa una.')
     L.append('')
     if c['mitologia'] == 'nordica':
         L.append(f'**Kit nórdico prohibido:** {KIT_NORDICO}. Ese conjunto se repitió en seis cartas '
@@ -392,8 +406,8 @@ def orden(nombre, adn, mat, pj):
              'sale el escenario.')
     L.append('')
     L.append('Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el '
-             'inventario, qué campos de esta orden no se cumplieron, y los siete puntos del gate de '
-             '`estilo_visual_aprobado.md` §7.')
+             'inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de '
+             '`estilo_visual_aprobado.md` §8.')
     L.append('')
     return sid, '\n'.join(L)
 

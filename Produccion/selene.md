@@ -62,7 +62,11 @@ Lo único que puede verse:
 2. **Pistas secundarias autorizadas:** Creciente lunar y luz plateada. ADN. Subordinadas, nunca compitiendo con el identificador.
 3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
 
-Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
+Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
+
+**El identificador va encendido.** El detalle reconocible de la §2 se muestra en actividad, no apoyado y quieto, y el entorno inmediato acusa esa actividad: aire, polvo, agua, tela, hierba o luz respondiendo a lo que el objeto hace. Si además el don tiene manifestación luminosa trazable a la ficha, el objeto emite una luz suave y acotada que ilumina de verdad lo que tiene al lado. Esto no agrega ningún objeto al inventario de arriba: sale del identificador que el personaje ya tiene.
+
+Las tres capas y sus límites están en `estilo_visual_aprobado.md` §7, que gobierna. En particular: **sin** partículas flotantes, **sin** chispas, **sin** estelas, **sin** purpurina, **sin** runas en el aire, **sin** aura alrededor del cuerpo, **sin** halo detrás de la cabeza y **sin** resplandor dorado si el objeto no es de oro. Si el don no tiene manifestación física, la carta va sin luz propia y no se inventa una.
 
 ## 6. Escenario
 
@@ -132,4 +136,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los siete puntos del gate de `estilo_visual_aprobado.md` §7.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.

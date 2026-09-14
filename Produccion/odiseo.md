@@ -62,7 +62,11 @@ Lo único que puede verse:
 2. **Pistas secundarias autorizadas:** Caballo de Troya o elemento de viaje/navegación, sólo como contexto. ADN. Subordinadas, nunca compitiendo con el identificador.
 3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
 
-Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
+Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
+
+**El identificador va encendido.** El detalle reconocible de la §2 se muestra en actividad, no apoyado y quieto, y el entorno inmediato acusa esa actividad: aire, polvo, agua, tela, hierba o luz respondiendo a lo que el objeto hace. Si además el don tiene manifestación luminosa trazable a la ficha, el objeto emite una luz suave y acotada que ilumina de verdad lo que tiene al lado. Esto no agrega ningún objeto al inventario de arriba: sale del identificador que el personaje ya tiene.
+
+Las tres capas y sus límites están en `estilo_visual_aprobado.md` §7, que gobierna. En particular: **sin** partículas flotantes, **sin** chispas, **sin** estelas, **sin** purpurina, **sin** runas en el aire, **sin** aura alrededor del cuerpo, **sin** halo detrás de la cabeza y **sin** resplandor dorado si el objeto no es de oro. Si el don no tiene manifestación física, la carta va sin luz propia y no se inventa una.
 
 ## 6. Escenario
 
@@ -75,23 +79,6 @@ Protagonismo de fondo asignado: 6 de 10, o sea que el contexto acompaña sin lle
 El fondo va con profundidad de campo real: menos nitidez y menos contraste que el personaje. Es el recurso principal para cumplir la jerarquía personaje → identificador → contexto.
 
 ## 7. Separación obligatoria
-
-**Contra Edipo.**
-
-| | Odiseo | Edipo |
-|---|---|---|
-| Cabello | castaño oscuro con canas | negro |
-| Textura | ondulado marcado | lacio |
-| Piel | canela curtida | oliva media |
-| Ojos | gris verdoso | marrón muy oscuro |
-
-Silueta de Edipo, para no repetirla: figura pensante de pie + mano en mentón y Esfinge fuera de eje; bastón sólo si funciona como símbolo general del acertijo humano y no como atributo personal inventado.
-
-Pose de Edipo, para no repetirla: observa y resuelve; postura estática de pregunta, no viaje ni amenaza.
-
-Ejes numéricos que ya los separan: dinamismo de pose 4 contra 1, dependencia del identificador 3 contra 6, contorno superior 4 contra 2, apertura corporal 5 contra 3.
-
-**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 **Contra Teseo.**
 
@@ -109,6 +96,23 @@ Pose de Teseo, para no repetirla: una mano guía el hilo y la otra queda libre; 
 Ejes numéricos que ya los separan: angulosidad facial 8 contra 4, dependencia del identificador 3 contra 7, edad visual 7 contra 4, dinamismo de pose 4 contra 6.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Edipo.**
+
+| | Odiseo | Edipo |
+|---|---|---|
+| Cabello | castaño oscuro con canas | negro |
+| Textura | ondulado marcado | lacio |
+| Piel | canela curtida | oliva media |
+| Ojos | gris verdoso | marrón muy oscuro |
+
+Silueta de Edipo, para no repetirla: figura pensante de pie + mano en mentón y Esfinge fuera de eje; bastón sólo si funciona como símbolo general del acertijo humano y no como atributo personal inventado.
+
+Pose de Edipo, para no repetirla: observa y resuelve; postura estática de pregunta, no viaje ni amenaza.
+
+Ejes numéricos que ya los separan: dinamismo de pose 4 contra 1, dependencia del identificador 3 contra 6, contorno superior 4 contra 2, apertura corporal 5 contra 3.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 Criterio de la ficha: Teseo y Edipo. Separarlo por mayor edad, movimiento de viaje y gesto de estrategia antes que exploración o acertijo estático.
 
@@ -134,4 +138,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los siete puntos del gate de `estilo_visual_aprobado.md` §7.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.
