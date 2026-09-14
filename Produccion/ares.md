@@ -62,7 +62,11 @@ Lo único que puede verse:
 2. **Pistas secundarias autorizadas:** Sólo símbolos ya presentes en el repo; no agregar emblemas por rutina. ADN. Subordinadas, nunca compitiendo con el identificador.
 3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
 
-Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
+Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
+
+**El identificador va encendido.** El detalle reconocible de la §2 se muestra en actividad, no apoyado y quieto, y el entorno inmediato acusa esa actividad: aire, polvo, agua, tela, hierba o luz respondiendo a lo que el objeto hace. Si además el don tiene manifestación luminosa trazable a la ficha, el objeto emite una luz suave y acotada que ilumina de verdad lo que tiene al lado. Esto no agrega ningún objeto al inventario de arriba: sale del identificador que el personaje ya tiene.
+
+Las tres capas y sus límites están en `estilo_visual_aprobado.md` §7, que gobierna. En particular: **sin** partículas flotantes, **sin** chispas, **sin** estelas, **sin** purpurina, **sin** runas en el aire, **sin** aura alrededor del cuerpo, **sin** halo detrás de la cabeza y **sin** resplandor dorado si el objeto no es de oro. Si el don no tiene manifestación física, la carta va sin luz propia y no se inventa una.
 
 ## 6. Escenario
 
@@ -77,23 +81,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 ## 7. Separación obligatoria
 
 **Par de Espejo: Tyr.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
-
-**Contra Atenea.**
-
-| | Ares | Atenea |
-|---|---|---|
-| Cabello | negro | castaño ceniza |
-| Textura | muy corto | ondulado recogido compacto |
-| Piel | oliva media | oliva clara |
-| Ojos | marrón muy oscuro | gris claro |
-
-Silueta de Atenea, para no repetirla: casco/cresta + escudo desplazado + línea de lanza o arma defensiva sólo si la referencia aprobada la conserva.
-
-Pose de Atenea, para no repetirla: escudo en diagonal baja y mano libre indicando estrategia; no combate ni simetría de estatua.
-
-Ejes numéricos que ya los separan: masa corporal 9 contra 5, anchura de hombros 9 contra 5, oscuridad 6 contra 3.
-
-**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 **Contra Héctor.**
 
@@ -111,6 +98,23 @@ Pose de Héctor, para no repetirla: protege y contiene, no avanza ni ataca.
 Ejes numéricos que ya los separan: protagonismo de fondo 2 contra 8, angulosidad facial 8 contra 4, masa corporal 9 contra 7, apertura corporal 4 contra 6.
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Atenea.**
+
+| | Ares | Atenea |
+|---|---|---|
+| Cabello | negro | castaño ceniza |
+| Textura | muy corto | ondulado recogido compacto |
+| Piel | oliva media | oliva clara |
+| Ojos | marrón muy oscuro | gris claro |
+
+Silueta de Atenea, para no repetirla: casco/cresta + escudo desplazado + línea de lanza o arma defensiva sólo si la referencia aprobada la conserva.
+
+Pose de Atenea, para no repetirla: escudo en diagonal baja y mano libre indicando estrategia; no combate ni simetría de estatua.
+
+Ejes numéricos que ya los separan: masa corporal 9 contra 5, anchura de hombros 9 contra 5, oscuridad 6 contra 3.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 **Contra Tyr.**
 
@@ -153,4 +157,4 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los siete puntos del gate de `estilo_visual_aprobado.md` §7.
+Después de generar, declarar qué objetos quedaron en la imagen que no estaban en el inventario, qué campos de esta orden no se cumplieron, y los diez puntos del gate de `estilo_visual_aprobado.md` §8.

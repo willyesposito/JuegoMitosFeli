@@ -69,7 +69,8 @@ Antes de redactar el prompt de imagen, leer desde la rama vigente del repo, como
    **gana sobre todo lo demás** y alcanza por sí sola junto con el estilo: está precompilada
    justamente para que no haya que reconstruir el canon desde 500 KB en cada generación.
 1. `Documentacion/estilo_visual_aprobado.md` — **el estilo vigente.** Semirrealista,
-   calibrado por `imagenes/teseo.jpg`, decidido el 2026-09-14.
+   calibrado por `imagenes/teseo.jpg`, decidido el 2026-09-14, con el acabado de pintura
+   visible (§3.1) y la manifestación del don (§7) agregados en la corrección del mismo día.
 2. `CLAUDE.md` y `MEMORY.md`
 3. `Documentacion/guia_visual_maestra_v2_1.md` — su §1 está superada por el archivo de estilo;
    el resto sigue vigente.
@@ -196,7 +197,10 @@ Aplicar siempre estas prohibiciones salvo autorización expresa del personaje ob
 - alas inventadas;
 - armas inventadas;
 - animales acompañantes inventados;
-- efectos mágicos inventados;
+- efectos mágicos inventados o decorativos agregados por fuera del identificador (partículas,
+  chispas, estelas, purpurina, runas flotando, aura de cuerpo entero, halo detrás de la cabeza).
+  **No confundir con la manifestación del don de `estilo_visual_aprobado.md` §7**, que sí está
+  autorizada: ahí lo que se enciende es el identificador propio del personaje, no un efecto nuevo;
 - pelo multicolor porque el personaje se relacione con colores, luz o arcoíris;
 - rasgos tomados de Marvel, Disney, DC, anime conocido, videojuegos u otra franquicia;
 - iconografía moderna no documentada;
@@ -309,6 +313,15 @@ Comparar contra `Documentacion/estilo_visual_aprobado.md` y exigir por separado:
 - forma definida por luz y volumen, sin contorno negro duro ni cel shading plano;
 - piel con textura y calidez reales, sin aspecto de plástico de render ni de fotografía;
 - materiales netamente diferenciados y fondo con profundidad de campo real;
+- **pintura visible** (§3.1 del archivo de estilo): pincelada en ropa, pelo, fondo y sombras,
+  empaste en las luces, bordes decididos y fondo en manchas de color. El realismo de este
+  estilo está en la anatomía, no en el acabado: si la primera lectura es foto retocada o
+  render, falla aunque la estructura sea impecable;
+- **el don encendido** (§7 del archivo de estilo): el identificador se muestra en actividad y
+  el entorno acusa esa actividad; luz propia del objeto sólo si el don la sostiene, acotada al
+  objeto, iluminando algo real y sin taparlo. Sin partículas, chispas, estelas, runas
+  flotando, aura de cuerpo entero ni halo detrás de la cabeza. Si el don no tiene
+  manifestación física, va sin luz propia y no se inventa una;
 - registro cálido y despierto, sin obligación de sonrisa, sin amenaza y sin la misma
   solemnidad genérica de otra carta.
 
@@ -320,8 +333,8 @@ de la guía maestra no se flexibilizan.
 Quedan derogadas las instrucciones anteriores de esta skill sobre lectura de aventura infantil,
 cabeza agrandada, rasgos redondeados y caricatura moderada, y la calibración derivada de Odín.
 
-Ordenar el prompt: acabado semirrealista → identidad → acción/silueta → inventario cerrado →
-encuadre/contexto → exclusiones breves.
+Ordenar el prompt: acabado semirrealista y pintura visible → identidad → acción/silueta →
+inventario cerrado → manifestación del don → encuadre/contexto → exclusiones breves.
 
 ---
 
@@ -355,11 +368,14 @@ Sólo generar si todas son `SÍ`:
 8. ¿No se agregó cultura pop ni iconografía externa?
 9. ¿Se leyó completo el historial de fallas y se tradujeron las aplicables en controles de este intento?
 10. ¿Se evitó abrir cualquier imagen de otro personaje?
-11. ¿El prompt exige el acabado semirrealista en rostro, proporciones, luz y materiales?
-12. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
-13. ¿Incluye formato 3:4, encuadre completo y escala de la familia, margen de seguridad y cero texto?
-14. ¿Los detalles pequeños también tienen trazabilidad o se omitieron?
-15. ¿No hay faltantes materiales ni contradicciones que cambien la imagen?
+11. ¿El prompt exige el acabado semirrealista en rostro, proporciones, luz y materiales, y **la
+    pintura visible** de §3.1: pincelada, empaste en las luces y bordes decididos?
+12. ¿El prompt muestra el identificador en actividad y el entorno respondiendo, y la luz propia
+    del objeto sólo si el don la sostiene, sin partículas, estelas ni aura?
+13. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
+14. ¿Incluye formato 3:4, encuadre completo y escala de la familia, margen de seguridad y cero texto?
+15. ¿Los detalles pequeños también tienen trazabilidad o se omitieron?
+16. ¿No hay faltantes materiales ni contradicciones que cambien la imagen?
 
 Un SÍ del preflight confirma la preparación, nunca el resultado futuro. Si alguna respuesta es `NO` o `NO VERIFICADO`, **no generar**. Explicar el bloqueo exacto.
 
@@ -399,7 +415,7 @@ Mostrar esta tabla con `SÍ`, `NO` o `NO VERIFICADO` y evidencia visible por fil
 8. Escenario autorizado y subordinado.
 9. Cuerpo completo cuando corresponda, escala de encuadre y margen de seguridad.
 10. Anti-clonación: comparar por separado rostro/cuerpo, silueta, pose y composición contra los riesgos.
-11. Estilo semirrealista: los siete puntos del gate de `estilo_visual_aprobado.md` §7, uno por uno.
+11. Estilo semirrealista: los diez puntos del gate de `estilo_visual_aprobado.md` §8, uno por uno.
 12. Seguridad emocional: sin amenaza, violencia ni contenido adulto.
 13. Recorte de identidad comprobado: rostro/foco y pista propia permanecen completos y legibles.
 

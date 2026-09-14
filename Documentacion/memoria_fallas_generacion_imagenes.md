@@ -428,3 +428,55 @@ Se borraron `imagenes/odiseo.png`, `imagenes/poseidon.png` y `imagenes/thor.png`
 instrucción de Willy: estaban subidas sin registrar en `personajes.json`, o sea que no se veían
 en el juego, y eran cel 2D, fuera de norma antes de llegar. Thor además había salido con la capa
 roja y el martillo al hombro de Marvel, y Poseidón con pelo azul verdoso inventado.
+
+---
+
+## Intento 1 de Hermes semirrealista — 2026-09-14, RECHAZADO por Willy
+
+Primera imagen generada con el circuito nuevo: orden precompilada `Produccion/hermes.md` +
+`estilo_visual_aprobado.md`, sin abrir ninguna imagen del repo. El circuito funcionó. El
+resultado lo rechazó Willy por estilo.
+
+**Qué salió.** Un corredor de anatomía real, cabello cobrizo rizado, piel clara con pecas,
+túnica de lino sin ornamento, sandalias con alas blancas, carrera lateral con diagonal limpia,
+polvo levantado, fondo de olivos y cipreses desenfocado. Contenido correcto: inventario
+respetado, sin pedestal, sin templo, sin Olimpo, sin dorado automático, separación cumplida.
+
+**Por qué se rechazó, en dos fallas distintas.**
+
+1. **Salió fotográfica.** No parece una ilustración pintada: parece la foto de un chico
+   corriendo por un campo. No hay pincelada, los bordes están todos igual de enfocados y las
+   luces no tienen empaste.
+2. **El don estaba apagado.** Las alas de las sandalias eran dos apliques de cuero blanco
+   quietos, atados al pie. Hermes es el más veloz de los dioses y la imagen no lo dice: sin la
+   ficha al lado, es un chico corriendo.
+
+**Causa raíz, y es de método, no del generador.** El archivo de estilo estaba escrito casi
+enteramente en negativo y en términos de lo que el estilo *no* era: no caricatura, no cabeza
+agrandada, no cel shading, no dorado. Lo único positivo que declaraba era "anatomía real,
+textura real, terminación alta". El default del generador para esa descripción es la
+fotografía, y la entregó. **Un estilo definido por sus prohibiciones converge al default del
+modelo.** Es la misma falla de fondo que el "no repitas a Perseo" que produjo el clon de
+Perseo: lo que sobrevive hasta el generador es el sustantivo, no la negación.
+
+Sobre el don, el error fue de encuadre conceptual: la orden trataba al identificador como un
+objeto a incluir en un inventario, no como algo que el personaje está usando. "Sandalias
+aladas — identificador principal" se cumple con un par de sandalias apoyadas.
+
+**Correcciones aplicadas el mismo día.**
+
+- `estilo_visual_aprobado.md` §3.1, nueva: el acabado de pintura visible, en positivo.
+- `estilo_visual_aprobado.md` §7, nueva: la manifestación del don en tres capas, con el halo
+  acotado al objeto y la salvedad de que un don sin manifestación física va sin luz.
+- El gate de estilo pasó de siete a diez puntos: se agregaron "no se ve la pintura", "el don
+  está apagado" y "hay efecto mágico decorativo".
+- `herramientas/generar-ordenes.py`: la §5 de cada orden dejó de decir "sin efecto mágico" a
+  secas, que prohibía también encender el identificador propio, y pasó a prohibir el efecto
+  decorativo agregado por fuera del identificador. Se agregó el bloque "El identificador va
+  encendido". Las 85 órdenes se regeneraron.
+- `skills/nuevo-personaje-mitos/SKILL.md`: gate de estilo, blacklist y preflight.
+
+**Lo que no se cambió, a propósito:** la anatomía y las proporciones de adulto real, la
+prohibición de caricatura y de cabeza agrandada, y Teseo como calibración. La corrección es
+sobre el acabado y sobre el don, no sobre la estructura. Volver al registro animado estaba
+sobre la mesa y Willy lo descartó.
