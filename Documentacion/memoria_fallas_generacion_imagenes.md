@@ -638,3 +638,49 @@ logos de instituciones médicas. Es material para el "¿Por qué?" de un capítu
   arriba y la regla de los tres objetos; la §11 suma el control de omisiones.
 - Gate de estilo: punto nuevo, "la carta está pelada". Son doce puntos.
 - `SKILL.md`: gate posterior, preflight y gate de estilo.
+
+---
+
+## Por qué el caduceo no entraba: la silueta le ganaba al inventario — 2026-09-14
+
+El cuarto Hermes cerró el estilo y Willy lo dio por bueno: cuerpo liviano, animación 3D, magia
+trazada a las sandalias con estela y luz propia. **Pero salió otra vez sin ninguno de los cuatro
+objetos**, y esta vez con el caduceo, el petaso y la clámide ya agregados a la ficha y nombrados
+uno por uno, numerados y en mayúsculas, en el prompt.
+
+O sea: quedó descartada la hipótesis del énfasis. El objeto estaba autorizado, estaba en la orden
+y estaba en el prompt, y aun así no entró.
+
+**La causa estaba en la propia ficha.** La firma de silueta de Hermes decía "sandalias aladas
+abajo + paso largo + **brazos opuestos en carrera**, con diagonal corporal limpia". Brazos
+opuestos en carrera son dos puños cerrados. Sin mano libre no hay forma de llevar un bastón, y la
+§4 de la orden presenta la firma de silueta como límite de diseño y no como sugerencia.
+
+El generador tenía dos instrucciones incompatibles y resolvió a favor de la que la orden marca
+como no negociable. Hizo lo correcto.
+
+**El hueco de método:** la §3 de cada orden ya contemplaba un sentido del conflicto —"si la acción
+no se puede representar sin agregar un objeto que no está en el inventario, frenar y avisar"— y no
+decía nada del sentido contrario, que es un objeto autorizado que no entra en la pose. Ese silencio
+se resolvía siempre igual: el objeto se caía.
+
+**Regla nueva:** si un objeto autorizado no entra en la pose tal como está descripta, el objeto no
+se descarta. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la
+diagonal, y el ajuste se declara en el preflight.
+
+**Y un segundo hallazgo:** autorizar tres objetos sin decir dónde va cada uno los manda a competir
+por el mismo espacio. La clámide al viento y la estela de velocidad ocupan los dos el lado de atrás
+del corredor. En la ficha quedaron ubicados uno por uno: caduceo en la mano adelantada y en alto,
+petaso colgado a la espalda por el cordón, clámide en el hombro contrario y tendida en la dirección
+de la estela sin cruzarla.
+
+**Corolario general:** cuando un objeto autorizado no aparece tres veces seguidas, el problema no
+es el prompt. Es que algo en la ficha lo está bloqueando. Buscar el choque antes de repetir la
+instrucción más fuerte.
+
+### Nota de mantenimiento
+
+Al escribir esta corrección se renombró el campo "Pistas secundarias autorizadas" del ADN para
+agregarle una aclaración, y el generador falló con `KeyError: 'pistas'`: los nombres de los campos
+son estructura y `generar-ordenes.py` los busca literalmente. Las aclaraciones van dentro del valor.
+Queda anotado en la cabecera del ADN.

@@ -40,6 +40,8 @@ Dirección corporal: Diagonal descendente, como entrando o saliendo de un paso.
 
 Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
 
+**Y al revés, que es el caso que falló tres veces:** si un objeto autorizado de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight.
+
 ## 4. Silueta y composición
 
 - **Firma de silueta:** Hilo visible que sale de una mano y dibuja una curva externa + cuerpo ágil de explorador.
@@ -108,23 +110,6 @@ Ejes numéricos que ya los separan: masa corporal 6 contra 4, apertura corporal 
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
-**Contra Odiseo.**
-
-| | Teseo | Odiseo |
-|---|---|---|
-| Cabello | castaño oscuro | castaño oscuro con canas |
-| Textura | rizado cerrado | ondulado marcado |
-| Piel | oliva media | canela curtida |
-| Ojos | marrón cálido | gris verdoso |
-
-Silueta de Odiseo, para no repetirla: capa o tela de viaje inclinada + postura levemente adelantada + mano activa señalando o calculando.
-
-Pose de Odiseo, para no repetirla: gesto mental y de cálculo; mano activa antes que arma protagonista.
-
-Ejes numéricos que ya los separan: angulosidad facial 4 contra 8, dependencia del identificador 7 contra 3, edad visual 4 contra 7, dinamismo de pose 6 contra 4.
-
-**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
 **Contra Perseo.**
 
 | | Teseo | Perseo |
@@ -142,6 +127,23 @@ Ejes numéricos que ya los separan: verticalidad 4 contra 8, densidad visual 5 c
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Contra Odiseo.**
+
+| | Teseo | Odiseo |
+|---|---|---|
+| Cabello | castaño oscuro | castaño oscuro con canas |
+| Textura | rizado cerrado | ondulado marcado |
+| Piel | oliva media | canela curtida |
+| Ojos | marrón cálido | gris verdoso |
+
+Silueta de Odiseo, para no repetirla: capa o tela de viaje inclinada + postura levemente adelantada + mano activa señalando o calculando.
+
+Pose de Odiseo, para no repetirla: gesto mental y de cálculo; mano activa antes que arma protagonista.
+
+Ejes numéricos que ya los separan: angulosidad facial 4 contra 8, dependencia del identificador 7 contra 3, edad visual 4 contra 7, dinamismo de pose 6 contra 4.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
 **Contra Hermes.**
 
 | | Teseo | Hermes |
@@ -151,7 +153,7 @@ Ejes numéricos que ya los separan: verticalidad 4 contra 8, densidad visual 5 c
 | Piel | oliva media | clara dorada con pecas |
 | Ojos | marrón cálido | verde oliva |
 
-Silueta de Hermes, para no repetirla: sandalias aladas abajo + paso largo + brazos opuestos en carrera, con diagonal corporal limpia.
+Silueta de Hermes, para no repetirla: sandalias aladas abajo + paso largo + caduceo en alto en la mano adelantada mientras el otro brazo va en carrera, con diagonal corporal limpia. **Corrección del 2026-09-14:** decía "brazos opuestos en carrera", o sea los dos puños cerrados, y eso dejaba a Hermes sin mano para el caduceo. Tres imágenes seguidas salieron sin él resolviendo el choque a favor de la silueta, que es lo que la orden manda. El brazo que lleva el caduceo conserva el contrabalanceo de la carrera; no es una pose de presentación.
 
 Pose de Hermes, para no repetirla: carrera terrestre, no vuelo frontal.
 

@@ -380,22 +380,25 @@ Sólo generar si todas son `SÍ`:
 2. ¿Cada objeto importante está autorizado?
 3. ¿El escenario está respaldado por la ficha o la acción?
 4. ¿La pose pertenece al personaje y no a una referencia?
-5. ¿Hay separadores claros frente a sus riesgos de parecido?
-6. ¿El avatar puede conservar identidad?
-7. ¿No se está usando otra imagen de personaje como base de transformación?
-8. ¿No se agregó cultura pop ni iconografía externa?
-9. ¿Se leyó completo el historial de fallas y se tradujeron las aplicables en controles de este intento?
-10. ¿Se evitó abrir cualquier imagen de otro personaje?
-11. ¿El prompt exige el **fotograma de animación 3D**: volumen pulido, estilización moderada,
+5. ¿Cada objeto autorizado tiene un lugar concreto en la pose? Si alguno no entra, **se ajusta
+   la pose, no se descarta el objeto**, y el ajuste se declara acá. Tres Hermes salieron sin
+   caduceo porque su firma de silueta pedía los dos puños cerrados en carrera.
+6. ¿Hay separadores claros frente a sus riesgos de parecido?
+7. ¿El avatar puede conservar identidad?
+8. ¿No se está usando otra imagen de personaje como base de transformación?
+9. ¿No se agregó cultura pop ni iconografía externa?
+10. ¿Se leyó completo el historial de fallas y se tradujeron las aplicables en controles de este intento?
+11. ¿Se evitó abrir cualquier imagen de otro personaje?
+12. ¿El prompt exige el **fotograma de animación 3D**: volumen pulido, estilización moderada,
     cejas actuadas y materiales estilizados, sin foto, sin óleo y sin 2D plano?
-12. ¿El prompt nombra la masa corporal y la anchura de hombros de la §4 de la orden **en
+13. ¿El prompt nombra la masa corporal y la anchura de hombros de la §4 de la orden **en
     palabras**, y no sólo como número de la tabla de siglas?
-13. ¿El prompt pide el fenómeno mágico del don, trazado al identificador, y no una carta sobria?
-14. ¿El prompt **nombra uno por uno** los elementos autorizados de la §5 de la orden, incluidos las pistas secundarias y la vestimenta autorizada, para que entren en la imagen?
-15. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
-16. ¿Incluye formato 3:4, encuadre completo y escala de la familia, margen de seguridad y cero texto?
-17. ¿Los detalles pequeños también tienen trazabilidad o se omitieron?
-18. ¿No hay faltantes materiales ni contradicciones que cambien la imagen?
+14. ¿El prompt pide el fenómeno mágico del don, trazado al identificador, y no una carta sobria?
+15. ¿El prompt **nombra uno por uno** los elementos autorizados de la §5 de la orden, incluidos las pistas secundarias y la vestimenta autorizada, para que entren en la imagen?
+16. ¿La cantidad de sujetos es la del personaje oficial, sin duplicados, inset, paneles ni avatar visible?
+17. ¿Incluye formato 3:4, encuadre completo y escala de la familia, margen de seguridad y cero texto?
+18. ¿Los detalles pequeños también tienen trazabilidad o se omitieron?
+19. ¿No hay faltantes materiales ni contradicciones que cambien la imagen?
 
 Un SÍ del preflight confirma la preparación, nunca el resultado futuro. Si alguna respuesta es `NO` o `NO VERIFICADO`, **no generar**. Explicar el bloqueo exacto.
 

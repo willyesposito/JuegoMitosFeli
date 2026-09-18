@@ -40,6 +40,8 @@ Dirección corporal: Frontal asimétrica con eje vertical.
 
 Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
 
+**Y al revés, que es el caso que falló tres veces:** si un objeto autorizado de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight.
+
 ## 4. Silueta y composición
 
 - **Firma de silueta:** Tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno.
@@ -88,21 +90,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Frigg.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
-**Contra Afrodita.**
-
-| | Hera | Afrodita |
-|---|---|---|
-| Cabello | castaño oscuro | rubio ceniza |
-| Textura | pesado y estructurado | ondulado amplio |
-| Piel | oliva clara | clara neutra |
-| Ojos | ámbar | verde gris |
-
-Silueta de Afrodita, para no repetirla: cabello y telas ondulantes formando curvas abiertas; sin pose pin-up ni sexualización.
-
-Pose de Afrodita, para no repetirla: cuerpo relajado y manos bajas; belleza visual sin depender de una pose ornamental.
-
-Ejes numéricos que ya los separan: contorno superior 2 contra 9, angulosidad facial 7 contra 2, rigidez de materiales 7 contra 2, verticalidad 9 contra 6.
-
 **Contra Casiopea.**
 
 | | Hera | Casiopea |
@@ -119,6 +106,21 @@ Pose de Casiopea, para no repetirla: quietud orgullosa sobre el trono.
 Ejes numéricos que ya los separan: protagonismo de fondo 5 contra 9, apertura corporal 5 contra 2, verticalidad 9 contra 6, oscuridad 3 contra 5.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Afrodita.**
+
+| | Hera | Afrodita |
+|---|---|---|
+| Cabello | castaño oscuro | rubio ceniza |
+| Textura | pesado y estructurado | ondulado amplio |
+| Piel | oliva clara | clara neutra |
+| Ojos | ámbar | verde gris |
+
+Silueta de Afrodita, para no repetirla: cabello y telas ondulantes formando curvas abiertas; sin pose pin-up ni sexualización.
+
+Pose de Afrodita, para no repetirla: cuerpo relajado y manos bajas; belleza visual sin depender de una pose ornamental.
+
+Ejes numéricos que ya los separan: contorno superior 2 contra 9, angulosidad facial 7 contra 2, rigidez de materiales 7 contra 2, verticalidad 9 contra 6.
 
 **Contra Frigg.**
 

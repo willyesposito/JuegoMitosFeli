@@ -40,9 +40,11 @@ Dirección corporal: Movimiento lateral rápido con eje diagonal claro.
 
 Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
 
+**Y al revés, que es el caso que falló tres veces:** si un objeto autorizado de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight.
+
 ## 4. Silueta y composición
 
-- **Firma de silueta:** Sandalias aladas abajo + paso largo + brazos opuestos en carrera, con diagonal corporal limpia.
+- **Firma de silueta:** Sandalias aladas abajo + paso largo + caduceo en alto en la mano adelantada mientras el otro brazo va en carrera, con diagonal corporal limpia. **Corrección del 2026-09-14:** decía "brazos opuestos en carrera", o sea los dos puños cerrados, y eso dejaba a Hermes sin mano para el caduceo. Tres imágenes seguidas salieron sin él resolviendo el choque a favor de la silueta, que es lo que la orden manda. El brazo que lleva el caduceo conserva el contrabalanceo de la carrera; no es una pose de presentación.
 - **Composición:** Fondo barrido y simple; aire por delante de la carrera y suficiente margen abajo para que las sandalias entren completas.
 - **Densidad visual:** media (matriz: 5 de 10).
 
@@ -63,8 +65,8 @@ Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de
 Lo único que puede verse:
 
 1. **Sandalias aladas** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas, y van en la imagen:** Caduceo (kerykeion), el bastón de heraldo con dos serpientes entrelazadas y alas en el extremo alto: va en la mano o cruzado al cuerpo, y es lo que dice "mensajero de los dioses". Petaso alado, el sombrero de ala ancha: **colgado a la espalda por el cordón**, nunca puesto en la cabeza. Lira o ganado como contexto de escena. ADN. Subordinadas al identificador, nunca compitiendo con él, pero presentes.
-3. **Vestimenta autorizada:** Clámide corta griega, sujeta al hombro y tomada por el viento de la carrera. Sin broche ornamental, sin medallón: el cierre va simple o queda fuera de vista. ADN. Sin adornos más allá de lo que dice esa línea.
+2. **Pistas secundarias autorizadas, y van en la imagen:** Cada una con su lugar en la pose, para que no compitan entre sí. Caduceo (kerykeion), el bastón de heraldo con dos serpientes entrelazadas y alas en el extremo alto, **en la mano adelantada y en alto**: es lo que dice "mensajero de los dioses" y es parte de la firma de silueta, no un accesorio. Petaso alado, el sombrero de ala ancha, **colgado a la espalda por el cordón y volando por la carrera**, nunca puesto en la cabeza. Lira o ganado sólo como contexto de escena lejano, y sólo si queda lugar: con caduceo, petaso y clámide ya hay tres objetos y la densidad de la ficha es media. ADN. Subordinadas al identificador, nunca compitiendo con él, pero presentes.
+3. **Vestimenta autorizada:** Clámide corta griega, sujeta al hombro contrario al caduceo y tomada por el viento de la carrera, tendida hacia atrás en la dirección de la estela y no cruzándola. Sin broche ornamental, sin medallón: el cierre va simple o queda fuera de vista. ADN. Sin adornos más allá de lo que dice esa línea.
 
 Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
 

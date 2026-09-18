@@ -40,6 +40,8 @@ Dirección corporal: Diagonal ascendente con giro del torso.
 
 Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
 
+**Y al revés, que es el caso que falló tres veces:** si un objeto autorizado de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight.
+
 ## 4. Silueta y composición
 
 - **Firma de silueta:** Escudo espejo en diagonal + sandalias aladas rompiendo el contorno bajo + casco separado del eje facial.
@@ -134,7 +136,7 @@ Ejes numéricos que ya los separan: verticalidad 8 contra 4, densidad visual 8 c
 | Piel | canela | clara dorada con pecas |
 | Ojos | negro | verde oliva |
 
-Silueta de Hermes, para no repetirla: sandalias aladas abajo + paso largo + brazos opuestos en carrera, con diagonal corporal limpia.
+Silueta de Hermes, para no repetirla: sandalias aladas abajo + paso largo + caduceo en alto en la mano adelantada mientras el otro brazo va en carrera, con diagonal corporal limpia. **Corrección del 2026-09-14:** decía "brazos opuestos en carrera", o sea los dos puños cerrados, y eso dejaba a Hermes sin mano para el caduceo. Tres imágenes seguidas salieron sin él resolviendo el choque a favor de la silueta, que es lo que la orden manda. El brazo que lleva el caduceo conserva el contrabalanceo de la carrera; no es una pose de presentación.
 
 Pose de Hermes, para no repetirla: carrera terrestre, no vuelo frontal.
 
