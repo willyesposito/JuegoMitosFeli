@@ -45,6 +45,8 @@ Dirección corporal: Barrido ascendente lateral con direcciones complementarias,
 
 Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
 
+**Y al revés, que es el caso que falló tres veces:** si un objeto autorizado de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight.
+
 ## 4. Silueta y composición
 
 - **Firma de silueta:** Tres jinetes principales en alturas distintas + armaduras brillantes + diagonales de monturas; nunca formación militar simétrica.

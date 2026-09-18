@@ -39,6 +39,8 @@ Dirección corporal: Ascendente desde una base baja.
 
 Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
 
+**Y al revés, que es el caso que falló tres veces:** si un objeto autorizado de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight.
+
 ## 4. Silueta y composición
 
 - **Firma de silueta:** Alas en arco desigual + cola amplia cuyas plumas se fragmentan visualmente en fuego/ceniza.
@@ -84,14 +86,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
-**Contra Iris.**
-
-Silueta de Iris, para no repetirla: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección.
-
-Pose de Iris, para no repetirla: movimiento de mensajera aérea; no carrera terrestre.
-
-Ejes numéricos que ya los separan: dependencia del identificador 1 contra 10, rareza anatómica 8 contra 1, angulosidad facial 6 contra 2, contorno superior 10 contra 7.
-
 **Contra Nike.**
 
 Silueta de Nike, para no repetirla: alas grandes en V asimétrica + cuerpo inclinado hacia adelante, con contorno de velocidad.
@@ -101,6 +95,14 @@ Pose de Nike, para no repetirla: movimiento de llegada; manos libres o gesto de 
 Ejes numéricos que ya los separan: contorno superior 10 contra 6, oscuridad 3 contra 1, anchura de hombros 6 contra 4, protagonismo de fondo 5 contra 3.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Iris.**
+
+Silueta de Iris, para no repetirla: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección.
+
+Pose de Iris, para no repetirla: movimiento de mensajera aérea; no carrera terrestre.
+
+Ejes numéricos que ya los separan: dependencia del identificador 1 contra 10, rareza anatómica 8 contra 1, angulosidad facial 6 contra 2, contorno superior 10 contra 7.
 
 Criterio de la ficha: Nike e Iris. Diferenciar por anatomía completamente aviar.
 

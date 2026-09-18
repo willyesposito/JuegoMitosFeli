@@ -40,6 +40,8 @@ Dirección corporal: Tres cuartos lateral orientado hacia un problema fuera de c
 
 Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
 
+**Y al revés, que es el caso que falló tres veces:** si un objeto autorizado de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight.
+
 ## 4. Silueta y composición
 
 - **Firma de silueta:** Capa o tela de viaje inclinada + postura levemente adelantada + mano activa señalando o calculando.
@@ -86,23 +88,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
-**Contra Edipo.**
-
-| | Odiseo | Edipo |
-|---|---|---|
-| Cabello | castaño oscuro con canas | negro |
-| Textura | ondulado marcado | lacio |
-| Piel | canela curtida | oliva media |
-| Ojos | gris verdoso | marrón muy oscuro |
-
-Silueta de Edipo, para no repetirla: figura pensante de pie + mano en mentón y Esfinge fuera de eje; bastón sólo si funciona como símbolo general del acertijo humano y no como atributo personal inventado.
-
-Pose de Edipo, para no repetirla: observa y resuelve; postura estática de pregunta, no viaje ni amenaza.
-
-Ejes numéricos que ya los separan: dinamismo de pose 4 contra 1, dependencia del identificador 3 contra 6, contorno superior 4 contra 2, apertura corporal 5 contra 3.
-
-**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
 **Contra Teseo.**
 
 | | Odiseo | Teseo |
@@ -119,6 +104,23 @@ Pose de Teseo, para no repetirla: una mano guía el hilo y la otra queda libre; 
 Ejes numéricos que ya los separan: angulosidad facial 8 contra 4, dependencia del identificador 3 contra 7, edad visual 7 contra 4, dinamismo de pose 4 contra 6.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Edipo.**
+
+| | Odiseo | Edipo |
+|---|---|---|
+| Cabello | castaño oscuro con canas | negro |
+| Textura | ondulado marcado | lacio |
+| Piel | canela curtida | oliva media |
+| Ojos | gris verdoso | marrón muy oscuro |
+
+Silueta de Edipo, para no repetirla: figura pensante de pie + mano en mentón y Esfinge fuera de eje; bastón sólo si funciona como símbolo general del acertijo humano y no como atributo personal inventado.
+
+Pose de Edipo, para no repetirla: observa y resuelve; postura estática de pregunta, no viaje ni amenaza.
+
+Ejes numéricos que ya los separan: dinamismo de pose 4 contra 1, dependencia del identificador 3 contra 6, contorno superior 4 contra 2, apertura corporal 5 contra 3.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 Criterio de la ficha: Teseo y Edipo. Separarlo por mayor edad, movimiento de viaje y gesto de estrategia antes que exploración o acertijo estático.
 

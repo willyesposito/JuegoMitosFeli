@@ -31,6 +31,11 @@ Para eliminar ambigüedad y permitir una revisión comparativa real de los 85 pe
 
 Los campos de criaturas, híbridos, duplas y grupos se adaptan a su anatomía real. Cuando un atributo humano no corresponde, la ficha lo declara y lo sustituye por la geometría anatómica relevante en lugar de inventar un equivalente.
 
+**Los nombres de los campos son estructura y no se editan.** `herramientas/generar-ordenes.py` los
+busca literalmente para armar las 85 órdenes: cambiar "Pistas secundarias autorizadas" por
+cualquier variante hace que el generador falle con un `KeyError`. Las aclaraciones van dentro del
+valor del campo, nunca en su nombre.
+
 **Campo 13, opcional, agregado el 2026-09-14: vestimenta autorizada.** Cuando una prenda concreta
 es parte de cómo se reconoce al personaje (una clámide al viento, un manto que cae en bloque, una
 piel echada al hombro), la ficha la declara acá. Si el campo no está, el personaje va con
@@ -348,7 +353,7 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Riesgos de parecido:** Heracles. Separarlo por cuerpo de oficio, asimetría funcional y manos construyendo en vez de masa heroica y piel de león.
 
 ### Hermes
-- **Firma de silueta:** sandalias aladas abajo + paso largo + brazos opuestos en carrera, con diagonal corporal limpia.
+- **Firma de silueta:** sandalias aladas abajo + paso largo + caduceo en alto en la mano adelantada mientras el otro brazo va en carrera, con diagonal corporal limpia. **Corrección del 2026-09-14:** decía "brazos opuestos en carrera", o sea los dos puños cerrados, y eso dejaba a Hermes sin mano para el caduceo. Tres imágenes seguidas salieron sin él resolviendo el choque a favor de la silueta, que es lo que la orden manda. El brazo que lleva el caduceo conserva el contrabalanceo de la carrera; no es una pose de presentación.
 - **Familia de encuadre:** figura humana.
 - **Densidad visual:** media.
 - **Edad aparente y contextura:** adulto joven; delgado y elástico.
@@ -357,8 +362,8 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Acción y pose:** carrera terrestre, no vuelo frontal.
 - **Composición y espacio negativo:** fondo barrido y simple; aire por delante de la carrera y suficiente margen abajo para que las sandalias entren completas.
 - **Identificador principal:** sandalias aladas.
-- **Pistas secundarias autorizadas:** caduceo (kerykeion), el bastón de heraldo con dos serpientes entrelazadas y alas en el extremo alto: va en la mano o cruzado al cuerpo, y es lo que dice "mensajero de los dioses". Petaso alado, el sombrero de ala ancha: **colgado a la espalda por el cordón**, nunca puesto en la cabeza. Lira o ganado como contexto de escena.
-- **Vestimenta autorizada:** clámide corta griega, sujeta al hombro y tomada por el viento de la carrera. Sin broche ornamental, sin medallón: el cierre va simple o queda fuera de vista.
+- **Pistas secundarias autorizadas:** cada una con su lugar en la pose, para que no compitan entre sí. Caduceo (kerykeion), el bastón de heraldo con dos serpientes entrelazadas y alas en el extremo alto, **en la mano adelantada y en alto**: es lo que dice "mensajero de los dioses" y es parte de la firma de silueta, no un accesorio. Petaso alado, el sombrero de ala ancha, **colgado a la espalda por el cordón y volando por la carrera**, nunca puesto en la cabeza. Lira o ganado sólo como contexto de escena lejano, y sólo si queda lugar: con caduceo, petaso y clámide ya hay tres objetos y la densidad de la ficha es media.
+- **Vestimenta autorizada:** clámide corta griega, sujeta al hombro contrario al caduceo y tomada por el viento de la carrera, tendida hacia atrás en la dirección de la estela y no cruzándola. Sin broche ornamental, sin medallón: el cierre va simple o queda fuera de vista.
 - **Avatar circular:** rostro inclinado + pequeña ala de sandalia o el remate alado del caduceo entrando por el borde alto.
 - **Riesgos de parecido:** Iris y Loki. Diferenciar de Iris por carrera terrestre; de Loki por dirección corporal limpia y ausencia de torsión ambigua.
 

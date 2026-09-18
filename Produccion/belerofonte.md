@@ -40,6 +40,8 @@ Dirección corporal: Diagonal ascendente, inclinado hacia adelante sobre la mont
 
 Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
 
+**Y al revés, que es el caso que falló tres veces:** si un objeto autorizado de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight.
+
 ## 4. Silueta y composición
 
 - **Firma de silueta:** Jinete + alas de Pegaso creando contorno horizontal ancho dentro del 3:4 + brida de oro visible cerca de la mano.
@@ -86,16 +88,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
-**Contra Pegaso.**
-
-Silueta de Pegaso, para no repetirla: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena.
-
-Pose de Pegaso, para no repetirla: vuelo o elevación controlada, no picada heroica.
-
-Ejes numéricos que ya los separan: dependencia del identificador 10 contra 1, contorno superior 3 contra 7, rigidez de materiales 6 contra 2, protagonismo de fondo 7 contra 4.
-
-**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
-
 **Contra Perseo.**
 
 | | Belerofonte | Perseo |
@@ -112,6 +104,16 @@ Pose de Perseo, para no repetirla: mira el reflejo del escudo en vez de dirigir 
 Ejes numéricos que ya los separan: rareza anatómica 7 contra 1, protagonismo de fondo 7 contra 4.
 
 **Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Pegaso.**
+
+Silueta de Pegaso, para no repetirla: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena.
+
+Pose de Pegaso, para no repetirla: vuelo o elevación controlada, no picada heroica.
+
+Ejes numéricos que ya los separan: dependencia del identificador 10 contra 1, contorno superior 3 contra 7, rigidez de materiales 6 contra 2, protagonismo de fondo 7 contra 4.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
 Criterio de la ficha: Perseo y Pegaso. Diferenciar de Perseo por dupla jinete-montura; del Pegaso individual por presencia inequívoca del jinete.
 
