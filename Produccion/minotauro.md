@@ -18,7 +18,7 @@
 | Mitología | griega | `personajes.json` |
 | Tier | normal | `personajes.json` |
 | Familia de encuadre | híbrido | ADN |
-| Edad y contextura | Adulto híbrido; torso humanoide muy ancho y pesado. | ADN |
+| Edad y contextura | Adulto híbrido; torso humanoide muy ancho y pesado, con piernas taurinas terminadas en pezuñas. Sin piernas ni pies humanos. | ADN |
 | Rostro y cabello | Cabeza de toro completa; no aplica rostro/cabello humano. Cuernos y hocico deben definir la parte superior de la silueta. | ADN |
 | Cabello, piel y ojos | no aplica: la identidad es anatómica, ver ADN | ADN |
 
@@ -67,7 +67,9 @@ Lo único que puede verse:
 1. **Anatomía toro-humano** — identificador principal. ADN.
 2. **Pistas secundarias autorizadas:** laberinto. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
 3. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
-   - [FALTA: Anatomía inferior y cobertura de Minotauro pendientes de decisión específica; no asumir pies humanos, pezuñas ni desnudez.]
+   - **Vestimenta funcional:** Faldellín liso hasta medio muslo, sin ornamentos; torso descubierto.
+   - **Calzado:** No corresponde: piernas taurinas terminadas en pezuñas, sin calzado humano.
+   - **Excepción anatómica:** Conservar cabeza de toro, torso humanoide masivo y piernas taurinas con pezuñas. No agregar piernas ni pies humanos.
 
 Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
 

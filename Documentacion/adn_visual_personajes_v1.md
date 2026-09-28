@@ -133,10 +133,8 @@ conservan los pendientes indicados; no se resuelven por defecto. El generador le
   },
   "excepciones": {
     "aquiles": {
-      "calzado": "Sandalia simple con talón visible. Conservar el requisito del eco visual del talón; no inventar el motivo repetido si sigue sin definición.",
-      "pendientes": [
-        "Detalle identificatorio repetido del talón en greba/calzado sin definición; esta regla no lo resuelve."
-      ]
+      "calzado": "Sandalia simple con talón descubierto y una pequeña interrupción en forma de V en su borde, repetida en el borde superior del escudo. Es un recorte del contorno, no una letra, inscripción ni símbolo añadido; sin herida.",
+      "pendientes": []
     },
     "dafne": {
       "vestimenta": "Vestimenta base lisa sólo donde conserve cuerpo humano.",
@@ -159,22 +157,19 @@ conservan los pendientes indicados; no se resuelven por defecto. El generador le
       "notas": "Aplicar la regla humana a las partes humanas descritas; no agregar cuerpo de serpiente ni cambiar la anatomía autorizada."
     },
     "quiron": {
-      "vestimenta": null,
+      "vestimenta": "Túnica corta lisa, sin mangas, limitada al torso humano y terminada antes de la unión equina. Brazos libres para enseñar; cuerpo equino visible, sin prendas que lo cubran.",
       "calzado": "No corresponde calzado humano: conservar la parte equina completa y sus patas.",
-      "pendientes": [
-        "Vestimenta superior del torso humano de Quirón pendiente de decisión específica; no presumir ropa ni desnudez."
-      ]
+      "pendientes": []
     },
     "esfinge": {
       "vestimenta": null,
       "calzado": "No corresponde calzado humano: conservar el cuerpo y las patas de león; no agregar vestimenta humana."
     },
     "minotauro": {
-      "vestimenta": null,
-      "calzado": null,
-      "pendientes": [
-        "Anatomía inferior y cobertura de Minotauro pendientes de decisión específica; no asumir pies humanos, pezuñas ni desnudez."
-      ]
+      "vestimenta": "Faldellín liso hasta medio muslo, sin ornamentos; torso descubierto.",
+      "calzado": "No corresponde: piernas taurinas terminadas en pezuñas, sin calzado humano.",
+      "notas": "Conservar cabeza de toro, torso humanoide masivo y piernas taurinas con pezuñas. No agregar piernas ni pies humanos.",
+      "pendientes": []
     },
     "pegaso": {
       "vestimenta": null,
@@ -333,8 +328,8 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Dirección corporal:** perfil tres cuartos con eje proyectado hacia adelante.
 - **Acción y pose:** pausa tensa como a punto de moverse; evitar combate directo.
 - **Composición y espacio negativo:** mantener visible el talón en la imagen completa sin convertirlo en único foco; aire delante del eje corporal para sostener la sensación de impulso.
-- **Identificador principal:** escudo + patrón visual de vulnerabilidad asociado al talón.
-- **Pistas secundarias autorizadas:** eco visual del talón mediante detalle repetido en greba/calzado, sin texto.
+- **Identificador principal:** escudo + talón descubierto, asociado a una pequeña interrupción en forma de V en el borde de la sandalia, repetida en el borde superior del escudo.
+- **Pistas secundarias autorizadas:** eco visual del talón mediante la misma pequeña interrupción en forma de V en el borde de la sandalia y en el borde superior del escudo. Es un recorte del contorno, sin texto, sin símbolo añadido y sin herida; no exige grebas.
 - **Avatar circular:** rostro + borde de escudo; el eco alto debe permitir que el avatar no dependa del talón.
 - **Riesgos de parecido:** Héctor y Heracles. Diferenciar por energía impulsiva, silueta más fina y eje hacia adelante.
 
@@ -1019,7 +1014,7 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Firma de silueta:** cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano.
 - **Familia de encuadre:** híbrido.
 - **Densidad visual:** alta.
-- **Edad aparente y contextura:** adulto híbrido; torso humanoide muy ancho y pesado.
+- **Edad aparente y contextura:** adulto híbrido; torso humanoide muy ancho y pesado, con piernas taurinas terminadas en pezuñas. Sin piernas ni pies humanos.
 - **Geometría general de rostro y cabello:** cabeza de toro completa; no aplica rostro/cabello humano. Cuernos y hocico deben definir la parte superior de la silueta.
 - **Dirección corporal:** tres cuartos detenido en una bifurcación.
 - **Acción y pose:** observa o decide camino; no carga hacia cámara.

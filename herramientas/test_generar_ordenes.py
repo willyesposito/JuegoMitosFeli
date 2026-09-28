@@ -70,19 +70,30 @@ class CompilacionTest(unittest.TestCase):
         texto = g.orden('Odiseo', self.adn, self.mat, self.pj)[1]
         self.assertIn('Sandalias simples de cuero', texto)
 
-    def test_excepciones_conservan_anatomia_y_pendientes(self):
-        for nombre in ('Pegaso', 'Quirón', 'Esfinge', 'Minotauro', 'Fénix',
+    def test_excepciones_conservan_anatomia_y_decisiones_aprobadas(self):
+        for nombre in ('Pegaso', 'Esfinge', 'Minotauro', 'Fénix',
                        'Cerbero', 'Ratatosk', 'Fenrir', 'Calisto'):
             texto = g.orden(nombre, self.adn, self.mat, self.pj)[1]
             self.assertNotIn('**Vestimenta funcional:** Túnica', texto)
             self.assertNotIn('**Calzado:** Sandalias', texto)
             self.assertNotIn('**Calzado:** Botas', texto)
-        for nombre, pendiente in (('Aquiles', 'Detalle identificatorio repetido del talón'),
-                                   ('Quirón', 'Vestimenta superior del torso humano'),
-                                   ('Minotauro', 'Anatomía inferior y cobertura')):
+        for nombre in ('Aquiles', 'Quirón', 'Minotauro'):
             texto = g.orden(nombre, self.adn, self.mat, self.pj)[1]
-            self.assertIn('[FALTA: ' + pendiente, texto)
+            self.assertNotIn('[FALTA:', texto)
             self.assertIn('Validación visual: PENDIENTE', texto)
+        texto = g.orden('Aquiles', self.adn, self.mat, self.pj)[1]
+        self.assertIn('talón descubierto', texto)
+        self.assertIn('interrupción en forma de V', texto)
+        self.assertIn('borde superior del escudo', texto)
+        self.assertNotIn('greba/calzado', texto)
+        texto = g.orden('Quirón', self.adn, self.mat, self.pj)[1]
+        self.assertIn('Túnica corta lisa, sin mangas', texto)
+        self.assertIn('terminada antes de la unión equina', texto)
+        self.assertNotIn('**Calzado:** Sandalias', texto)
+        texto = g.orden('Minotauro', self.adn, self.mat, self.pj)[1]
+        self.assertIn('piernas taurinas terminadas en pezuñas', texto)
+        self.assertIn('Faldellín liso hasta medio muslo', texto)
+        self.assertIn('torso descubierto', texto)
         texto = g.orden('Dafne', self.adn, self.mat, self.pj)[1]
         self.assertIn('raíces visibles en la parte baja', texto)
         self.assertNotIn('**Calzado:** Sandalias', texto)

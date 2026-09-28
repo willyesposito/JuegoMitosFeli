@@ -27,7 +27,7 @@
 
 ## 2. Detalle reconocible
 
-**Escudo + patrón visual de vulnerabilidad asociado al talón.**
+**Escudo + talón descubierto, asociado a una pequeña interrupción en forma de V en el borde de la sandalia, repetida en el borde superior del escudo.**
 
 Dones declarados en `personajes.json`: El guerrero más veloz y fuerte de Troya; Casi invulnerable.
 
@@ -65,14 +65,13 @@ Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de
 
 Lo único que puede verse:
 
-1. **Escudo + patrón visual de vulnerabilidad asociado al talón** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas:** eco visual del talón mediante detalle repetido en greba/calzado, sin texto. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
+1. **Escudo + talón descubierto, asociado a una pequeña interrupción en forma de V en el borde de la sandalia, repetida en el borde superior del escudo** — identificador principal. ADN.
+2. **Pistas secundarias autorizadas:** eco visual del talón mediante la misma pequeña interrupción en forma de V en el borde de la sandalia y en el borde superior del escudo. Es un recorte del contorno, sin texto, sin símbolo añadido y sin herida; no exige grebas. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
 3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
 4. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
    - **Vestimenta funcional:** Túnica lisa de corte sencillo, ajustada a la acción y a la silueta.
-   - **Calzado:** Sandalia simple con talón visible. Conservar el requisito del eco visual del talón; no inventar el motivo repetido si sigue sin definición.
+   - **Calzado:** Sandalia simple con talón descubierto y una pequeña interrupción en forma de V en su borde, repetida en el borde superior del escudo. Es un recorte del contorno, no una letra, inscripción ni símbolo añadido; sin herida.
    - **Alcance:** Conservar prendas y armaduras expresamente autorizadas; la base lisa sólo completa las partes que requieren vestimenta funcional, sin reemplazar ni tapar la firma de silueta. No imponer un color común: conservar los colores autorizados. Cierres funcionales discretos, sin broches, emblemas, joyas ni adornos nuevos.
-   - [FALTA: Detalle identificatorio repetido del talón en greba/calzado sin definición; esta regla no lo resuelve.]
 
 Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
 
