@@ -43,6 +43,168 @@ vestimenta lisa del vocabulario de su mitología y sin ornamento, que es el defa
 El campo existe para autorizar la prenda, nunca para agregarle adornos: broches, medallones,
 insignias y emblemas siguen prohibidos salvo que la ficha los nombre uno por uno.
 
+
+## Regla común de vestimenta funcional y calzado — lote del 2026-09-28
+
+Decisión de diseño aprobada por Willy. Se aplica únicamente a los IDs enumerados del lote cerrado,
+no modifica la anatomía ni convierte una salida compilada en una imagen validada. Las prendas
+específicas del personaje tienen prioridad sobre la base funcional. Aquiles, Quirón y Minotauro
+conservan los pendientes indicados; no se resuelven por defecto. El generador lee este bloque
+único y cita esta sección en las órdenes, sin duplicar decisiones en las fichas individuales.
+
+<!-- regla-vestimenta-funcional-lote:inicio -->
+```json
+{
+  "version": "2026-09-28",
+  "origen": "Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.",
+  "aplica_ids": [
+    "odiseo",
+    "dedalo",
+    "thor",
+    "tyr",
+    "poseidon",
+    "hestia",
+    "apolo",
+    "ares",
+    "hefesto",
+    "dioniso",
+    "nike",
+    "helios",
+    "selene",
+    "pan",
+    "prometeo",
+    "aquiles",
+    "hector",
+    "jason",
+    "orfeo",
+    "ariadna",
+    "atalanta",
+    "belerofonte",
+    "aracne",
+    "midas",
+    "pegaso",
+    "quiron",
+    "fenix",
+    "cerbero",
+    "medusa",
+    "esfinge",
+    "minotauro",
+    "frigg",
+    "balder",
+    "njord",
+    "skadi",
+    "ratatosk",
+    "fenrir",
+    "cronos",
+    "medea",
+    "hel",
+    "eneas",
+    "edipo",
+    "casandra",
+    "circe",
+    "eros",
+    "dido",
+    "andromeda",
+    "nausicaa",
+    "dafne",
+    "eco",
+    "narciso",
+    "pentesilea",
+    "paris",
+    "calisto",
+    "casiopea",
+    "orion",
+    "castor_polux"
+  ],
+  "comun": "Conservar prendas y armaduras expresamente autorizadas; la base lisa sólo completa las partes que requieren vestimenta funcional, sin reemplazar ni tapar la firma de silueta. No imponer un color común: conservar los colores autorizados. Cierres funcionales discretos, sin broches, emblemas, joyas ni adornos nuevos.",
+  "bases": {
+    "griega": {
+      "vestimenta": "Túnica lisa de corte sencillo, ajustada a la acción y a la silueta.",
+      "calzado": "Sandalias simples de cuero, sin motivos ornamentales."
+    },
+    "nordica": {
+      "vestimenta": "Túnica lisa de manga larga y pantalón sencillo.",
+      "calzado": "Botas simples de cuero, sin pieles, tiras envolventes ni herrajes decorativos agregados."
+    },
+    "romana": {
+      "vestimenta": "Base funcional lisa, subordinada al vocabulario específico del personaje; sin estética imperial.",
+      "calzado": "Sandalias simples de cuero, sin motivos ornamentales."
+    }
+  },
+  "excepciones": {
+    "aquiles": {
+      "calzado": "Sandalia simple con talón visible. Conservar el requisito del eco visual del talón; no inventar el motivo repetido si sigue sin definición.",
+      "pendientes": [
+        "Detalle identificatorio repetido del talón en greba/calzado sin definición; esta regla no lo resuelve."
+      ]
+    },
+    "dafne": {
+      "vestimenta": "Vestimenta base lisa sólo donde conserve cuerpo humano.",
+      "calzado": "No corresponde: raíces visibles en la parte baja, sin zapatos ni pies humanos agregados."
+    },
+    "skadi": {
+      "vestimenta": "Ropa de invierno lisa, conservando la postura y la silueta autorizadas.",
+      "calzado": "Botas funcionales simples compatibles con los esquís; sin inventar equipamiento moderno ni adornos."
+    },
+    "eneas": {
+      "vestimenta": "Base funcional lisa subordinada al equipamiento preimperial y de tradición de Edad del Bronce; no introducir coraza segmentada ni estética legionaria imperial."
+    },
+    "dido": {
+      "vestimenta": "Base funcional lisa subordinada al vocabulario fenicio autorizado y al manto/púrpura de Tiro; no introducir estética de emperatriz romana."
+    },
+    "pan": {
+      "notas": "Aplicar la regla humana a las partes humanas descritas; no agregar patas de cabra ni cambiar la anatomía autorizada."
+    },
+    "medusa": {
+      "notas": "Aplicar la regla humana a las partes humanas descritas; no agregar cuerpo de serpiente ni cambiar la anatomía autorizada."
+    },
+    "quiron": {
+      "vestimenta": null,
+      "calzado": "No corresponde calzado humano: conservar la parte equina completa y sus patas.",
+      "pendientes": [
+        "Vestimenta superior del torso humano de Quirón pendiente de decisión específica; no presumir ropa ni desnudez."
+      ]
+    },
+    "esfinge": {
+      "vestimenta": null,
+      "calzado": "No corresponde calzado humano: conservar el cuerpo y las patas de león; no agregar vestimenta humana."
+    },
+    "minotauro": {
+      "vestimenta": null,
+      "calzado": null,
+      "pendientes": [
+        "Anatomía inferior y cobertura de Minotauro pendientes de decisión específica; no asumir pies humanos, pezuñas ni desnudez."
+      ]
+    },
+    "pegaso": {
+      "vestimenta": null,
+      "calzado": "No corresponde: conservar la anatomía de criatura autorizada, sin ropa ni calzado humano."
+    },
+    "fenix": {
+      "vestimenta": null,
+      "calzado": "No corresponde: conservar la anatomía de criatura autorizada, sin ropa ni calzado humano."
+    },
+    "cerbero": {
+      "vestimenta": null,
+      "calzado": "No corresponde: conservar la anatomía de criatura autorizada, sin ropa ni calzado humano."
+    },
+    "ratatosk": {
+      "vestimenta": null,
+      "calzado": "No corresponde: conservar la anatomía de criatura autorizada, sin ropa ni calzado humano."
+    },
+    "fenrir": {
+      "vestimenta": null,
+      "calzado": "No corresponde: conservar la anatomía de criatura autorizada, sin ropa ni calzado humano."
+    },
+    "calisto": {
+      "vestimenta": null,
+      "calzado": "No corresponde: conservar la anatomía de criatura autorizada, sin ropa ni calzado humano."
+    }
+  }
+}
+```
+<!-- regla-vestimenta-funcional-lote:fin -->
+
 **Las pistas secundarias autorizadas son para mostrar, no sólo para permitir** (cambio del
 2026-09-14). Un personaje que llega a la imagen sin ninguno de sus atributos característicos es
 una carta fallada, aunque no haya inventado nada. Hasta el 14/9 todos los controles del método

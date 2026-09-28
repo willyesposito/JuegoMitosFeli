@@ -106,7 +106,56 @@ def cargar():
         mat[c[0]] = {'tier':c[1],'mit':c[2],'morf':c[3],'lect':c[4], **dict(zip(EJES, nums))}
     with open(r('personajes.json'), encoding='utf-8') as archivo:
         pj = {c['nombre']: c for c in json.load(archivo)}
+    regla = leer_regla_vestimenta(txt)
+    if regla:
+        for nombre, ficha in adn.items():
+            if pj.get(nombre, {}).get('id') in regla['aplica_ids']:
+                # La decisión vive en el bloque común, no en 57 fichas duplicadas.
+                ficha['_regla_vestimenta_funcional'] = regla
     return adn, mat, pj
+
+def leer_regla_vestimenta(texto):
+    """Lee sólo el bloque común aprobado; una fuente mal formada no se ignora."""
+    inicio = '<!-- regla-vestimenta-funcional-lote:inicio -->'
+    fin = '<!-- regla-vestimenta-funcional-lote:fin -->'
+    if inicio not in texto and fin not in texto:
+        return None
+    if texto.count(inicio) != 1 or texto.count(fin) != 1:
+        raise ValueError('Bloque común de vestimenta ausente, duplicado o incompleto')
+    bloque = texto.split(inicio, 1)[1].split(fin, 1)[0]
+    contenido = re.fullmatch(r'\s*```json\s*\n(.*?)\n```\s*', bloque, re.S)
+    if not contenido:
+        raise ValueError('Formato inválido de la regla común de vestimenta')
+    regla = json.loads(contenido.group(1))
+    ids = regla['aplica_ids']
+    if not ids or len(ids) != len(set(ids)):
+        raise ValueError('IDs vacíos o duplicados en la regla de vestimenta')
+    if not set(regla['excepciones']).issubset(ids):
+        raise ValueError('Excepción de vestimenta fuera del alcance aprobado')
+    return regla
+
+def vestimenta_funcional(ficha, personaje, es_no_humano):
+    """Resuelve prendas y calzado desde la decisión común, sin crear anatomía."""
+    regla = ficha.get('_regla_vestimenta_funcional')
+    if not regla or personaje['id'] not in regla['aplica_ids']:
+        return []
+    decision = dict(regla['bases'][personaje['mitologia']])
+    decision.update(regla['excepciones'].get(personaje['id'], {}))
+    numero = 3 if es_no_humano else 4
+    lineas = [f'{numero}. **Resolución funcional de vestimenta y calzado:** '
+              '`Documentacion/adn_visual_personajes_v1.md`, sección '
+              '«Regla común de vestimenta funcional y calzado — lote del 2026-09-28». '
+              + regla['origen']]
+    for campo, etiqueta in (('vestimenta', 'Vestimenta funcional'), ('calzado', 'Calzado')):
+        if decision.get(campo):
+            lineas.append('   - **' + etiqueta + ':** ' + decision[campo])
+    if not es_no_humano:
+        lineas.append('   - **Alcance:** ' + regla['comun'])
+    if decision.get('notas'):
+        lineas.append('   - **Excepción anatómica:** ' + decision['notas'])
+    for pendiente in decision.get('pendientes', []):
+        lineas.append('   - [FALTA: ' + pendiente + ']')
+    return lineas
 
 GENTILICIO = {'griega':'griego', 'nordica':'nórdico', 'romana':'romano'}
 
@@ -416,6 +465,7 @@ def orden(nombre, adn, mat, pj):
         else:
             L.append(f"3. **Vestimenta lisa del vocabulario {GENTILICIO.get(c['mitologia'], c['mitologia'])}**, sin ornamento. Necesaria para "
                      'vestir al personaje; sin autorización de ningún adorno concreto, va lisa.')
+    L.extend(vestimenta_funcional(f, c, es_nh))
     L.append('')
     L.append('Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** '
              'medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, '

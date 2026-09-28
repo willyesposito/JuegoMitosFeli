@@ -66,6 +66,9 @@ Lo único que puede verse:
 
 1. **Anatomía de centauro + rol de maestro** — identificador principal. ADN.
 2. **Pistas secundarias autorizadas:** arquería o instrumento de enseñanza autorizado. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
+3. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
+   - **Calzado:** No corresponde calzado humano: conservar la parte equina completa y sus patas.
+   - [FALTA: Vestimenta superior del torso humano de Quirón pendiente de decisión específica; no presumir ropa ni desnudez.]
 
 Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
 

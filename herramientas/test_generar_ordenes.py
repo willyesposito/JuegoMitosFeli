@@ -60,6 +60,51 @@ class CompilacionTest(unittest.TestCase):
         self.assertNotIn('Vestimenta lisa', texto)
         self.assertNotIn('Vestimenta autorizada:', texto)
 
+    def test_regla_funcional_limitada_al_lote(self):
+        regla = self.adn['Thor']['_regla_vestimenta_funcional']
+        self.assertEqual(len(regla['aplica_ids']), 57)
+        self.assertNotIn('_regla_vestimenta_funcional', self.adn['Zeus'])
+        texto = g.orden('Zeus', self.adn, self.mat, self.pj)[1]
+        self.assertNotIn('Resolución funcional de vestimenta y calzado', texto)
+        self.assertIn('Botas simples de cuero', self.orden())
+        texto = g.orden('Odiseo', self.adn, self.mat, self.pj)[1]
+        self.assertIn('Sandalias simples de cuero', texto)
+
+    def test_excepciones_conservan_anatomia_y_pendientes(self):
+        for nombre in ('Pegaso', 'Quirón', 'Esfinge', 'Minotauro', 'Fénix',
+                       'Cerbero', 'Ratatosk', 'Fenrir', 'Calisto'):
+            texto = g.orden(nombre, self.adn, self.mat, self.pj)[1]
+            self.assertNotIn('**Vestimenta funcional:** Túnica', texto)
+            self.assertNotIn('**Calzado:** Sandalias', texto)
+            self.assertNotIn('**Calzado:** Botas', texto)
+        for nombre, pendiente in (('Aquiles', 'Detalle identificatorio repetido del talón'),
+                                   ('Quirón', 'Vestimenta superior del torso humano'),
+                                   ('Minotauro', 'Anatomía inferior y cobertura')):
+            texto = g.orden(nombre, self.adn, self.mat, self.pj)[1]
+            self.assertIn('[FALTA: ' + pendiente, texto)
+            self.assertIn('Validación visual: PENDIENTE', texto)
+        texto = g.orden('Dafne', self.adn, self.mat, self.pj)[1]
+        self.assertIn('raíces visibles en la parte baja', texto)
+        self.assertNotIn('**Calzado:** Sandalias', texto)
+        texto = g.orden('Skadi', self.adn, self.mat, self.pj)[1]
+        self.assertIn('Botas funcionales simples compatibles con los esquís', texto)
+
+    def test_excepciones_culturales_no_heredan_estetica_imperial(self):
+        for nombre, vocabulario in (('Eneas', 'Edad del Bronce'), ('Dido', 'fenicio')):
+            texto = g.orden(nombre, self.adn, self.mat, self.pj)[1]
+            self.assertIn(vocabulario, texto)
+            self.assertIn('**Calzado:** Sandalias simples de cuero', texto)
+        for nombre in ('Pan', 'Medusa'):
+            texto = g.orden(nombre, self.adn, self.mat, self.pj)[1]
+            self.assertIn('**Excepción anatómica:**', texto)
+
+    def test_regla_corrupta_no_desaparece_silenciosamente(self):
+        for texto in ('<!-- regla-vestimenta-funcional-lote:inicio -->',
+                      '<!-- regla-vestimenta-funcional-lote:fin -->'):
+            with self.assertRaises(ValueError):
+                g.leer_regla_vestimenta(texto)
+        self.assertIsNone(g.leer_regla_vestimenta('fuente anterior sin regla'))
+
     def test_incompleta_y_visual_pendiente(self):
         for campo in ('accion', 'pistas', 'avatar'):
             with self.subTest(campo=campo):
