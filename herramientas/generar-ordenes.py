@@ -36,6 +36,10 @@ CAMPOS = {'Firma de silueta':'silueta','Familia de encuadre':'familia','Densidad
  'Vestimenta autorizada':'vestimenta',
  'Avatar circular':'avatar','Riesgos de parecido':'riesgos'}
 
+# Estos controles son opcionales: se compilan sólo cuando la ficha los documenta.
+CAMPOS_OPCIONALES = {'Separadores de parecido':'separadores',
+ 'Contaminación pop documentada':'contaminacion', 'Controles de acabado':'acabado'}
+
 # Contaminación pop de alta confianza. El resto queda pendiente de la investigación:
 # marcarlo pendiente es honesto, inventarlo no.
 POP = {
@@ -93,6 +97,7 @@ def cargar():
         for m in re.finditer(r'- \*\*(.+?):\*\*[ \t]*(.*?)(?=\n- \*\*|\n#|\n---|\Z)', b.split('\n---\n')[0], re.S):
             k = m.group(1).strip()
             if k in CAMPOS: d[CAMPOS[k]] = ' '.join(m.group(2).split())
+            elif k in CAMPOS_OPCIONALES: d[CAMPOS_OPCIONALES[k]] = ' '.join(m.group(2).split())
         adn[nombre] = d
     mat = {}
     with open(r('Documentacion','matriz_adn_visual_numerica_v1.md'), encoding='utf-8') as archivo:
@@ -561,6 +566,9 @@ def orden(nombre, adn, mat, pj):
     else:
         L.append('La ficha no nombra un riesgo de parecido concreto: ' + may(limpiar_fuente(f['riesgos'])))
         L.append('')
+    if limpiar_fuente(f.get('separadores', '')):
+        L.append('**Separadores documentados:** ' + limpiar_fuente(f['separadores']))
+        L.append('')
     L.append('La diferencia no puede depender sólo del color, del fondo, del objeto sostenido, del '
              'peinado ni de una prenda. Matriz §4.1: el objeto no salva un clon.')
     L.append('')
@@ -583,10 +591,16 @@ def orden(nombre, adn, mat, pj):
              'de lo que está haciendo.')
     L.append('')
 
+    if limpiar_fuente(f.get('acabado', '')):
+        L.append('**Controles de acabado documentados:** ' + limpiar_fuente(f['acabado']))
+        L.append('')
+
     # 10. Contaminación
     L.append('## 10. Contaminación a evitar')
     L.append('')
-    if nombre in POP:
+    if limpiar_fuente(f.get('contaminacion', '')):
+        L.append(limpiar_fuente(f['contaminacion']))
+    elif nombre in POP:
         L.append(may(POP[nombre]))
     else:
         L.append('**Pendiente de la investigación** del lote correspondiente de '
@@ -655,7 +669,7 @@ def indice(adn, mat, pj):
         idt = limpiar_fuente(f['identificador'])
         if re.search(r'expresad|expresión|condición|capacidad|mediante|por contexto', idt, re.I):
             notas.append('identificador abstracto'); n_rev += 1
-        if nombre not in POP:
+        if nombre not in POP and not limpiar_fuente(f.get('contaminacion', '')):
             notas.append('contaminación pop pendiente'); n_pop += 1
         if nombre in IV.RIESGOS_OBSERVADOS:
             notas.append('clon comprobado')
