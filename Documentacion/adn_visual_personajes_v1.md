@@ -499,16 +499,17 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Riesgos de parecido:** Helena y Hera. Diferenciar de Helena por energía divina y elementos marinos; de Hera por curvas abiertas y menor verticalidad regia.
 
 ### Hefesto
-- **Firma de silueta:** hombro adelantado + herramienta de forja baja + delantal/tela pesada; cuerpo deliberadamente no simétrico.
+- **Firma de silueta:** hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico.
 - **Familia de encuadre:** figura humana.
 - **Densidad visual:** alta.
 - **Edad aparente y contextura:** adulto maduro; torso robusto y brazos de trabajador.
 - **Geometría general de rostro y cabello:** rostro ancho irregular, cabello corto áspero y barba breve.
 - **Dirección corporal:** lateral orientado hacia la pieza de trabajo.
-- **Acción y pose:** trabajando sobre metal; manos ocupadas en construir.
-- **Composición y espacio negativo:** banco de trabajo subordinado y chispas controladas; dejar aire suficiente para leer la herramienta y el hombro adelantado.
+- **Acción y pose:** trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir.
+- **Composición y espacio negativo:** banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado.
 - **Identificador principal:** fragua y metal trabajado.
-- **Pistas secundarias autorizadas:** autómata de bronce.
+- **Pistas secundarias autorizadas:** autómata de bronce, martillo de forja simple, pinzas, yunque liso y banco de trabajo. Martillo, pinzas y yunque son una decisión de diseño de Willy aprobada el 2026-09-28, no una atestación histórica. El banco ya estaba autorizado en la composición. Todo el equipo es liso y sin adornos, emblemas ni inscripciones nuevos.
+- **Vestimenta autorizada:** delantal/tela pesada lisa ya prevista en la firma de silueta, sobre la vestimenta funcional vigente; sin adornos ni cierres decorativos nuevos.
 - **Avatar circular:** rostro + hombro + reflejo naranja de la fragua.
 - **Riesgos de parecido:** Heracles. Separarlo por cuerpo de oficio, asimetría funcional y manos construyendo en vez de masa heroica y piel de león.
 

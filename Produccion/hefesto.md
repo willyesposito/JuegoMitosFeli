@@ -35,7 +35,7 @@ Dones declarados en `personajes.json`: El herrero de los dioses; Forjó el rayo 
 
 ## 3. Acción y pose
 
-Trabajando sobre metal; manos ocupadas en construir.
+Trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir.
 
 Dirección corporal: Lateral orientado hacia la pieza de trabajo.
 
@@ -45,8 +45,8 @@ Es la acción de la ficha y no se cambia. Si la acción no se puede representar 
 
 ## 4. Silueta y composición
 
-- **Firma de silueta:** Hombro adelantado + herramienta de forja baja + delantal/tela pesada; cuerpo deliberadamente no simétrico.
-- **Composición:** Banco de trabajo subordinado y chispas controladas; dejar aire suficiente para leer la herramienta y el hombro adelantado.
+- **Firma de silueta:** Hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico.
+- **Composición:** Banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado.
 - **Densidad visual:** alta (matriz: 8 de 10).
 
 - **Cuerpo, y esto manda sobre cualquier intuición:** entrado en años, corpulento, con masa evidente, hombros anchos, de escala humana.
@@ -66,8 +66,8 @@ Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de
 Lo único que puede verse:
 
 1. **Fragua y metal trabajado** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas:** autómata de bronce. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
-3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
+2. **Pistas secundarias autorizadas:** autómata de bronce, martillo de forja simple, pinzas, yunque liso y banco de trabajo. Martillo, pinzas y yunque son una decisión de diseño de Willy aprobada el 2026-09-28, no una atestación histórica. El banco ya estaba autorizado en la composición. Todo el equipo es liso y sin adornos, emblemas ni inscripciones nuevos. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
+3. **Vestimenta autorizada:** Delantal/tela pesada lisa ya prevista en la firma de silueta, sobre la vestimenta funcional vigente; sin adornos ni cierres decorativos nuevos. ADN. Sin adornos más allá de lo que dice esa línea.
 4. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
    - **Vestimenta funcional:** Túnica lisa de corte sencillo, ajustada a la acción y a la silueta.
    - **Calzado:** Sandalias simples de cuero, sin motivos ornamentales.
