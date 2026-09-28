@@ -468,17 +468,17 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Riesgos de parecido:** Atalanta, Pentesilea y Atenea. Diferenciar por calma vigilante, menor masa guerrera y ausencia de carrera o escudo dominante.
 
 ### Ares
-- **Firma de silueta:** armadura voluminosa + postura de guardia cuadrada + arma en reposo lateral.
+- **Firma de silueta:** casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso.
 - **Familia de encuadre:** figura humana.
 - **Densidad visual:** alta.
 - **Edad aparente y contextura:** adulto maduro; musculoso compacto.
 - **Geometría general de rostro y cabello:** rostro ancho, mandíbula fuerte y cabello muy corto.
 - **Dirección corporal:** frontal con peso repartido en ambas piernas.
-- **Acción y pose:** guardia estática y tensa; arma nunca en ataque hacia cámara.
-- **Composición y espacio negativo:** fondo mínimo para que mande la masa corporal; separar el arma del torso lo suficiente para leerla como forma lateral.
-- **Identificador principal:** armadura y presencia guerrera.
-- **Pistas secundarias autorizadas:** sólo símbolos ya presentes en el repo; no agregar emblemas por rutina.
-- **Avatar circular:** casco/armadura superior + rostro intenso.
+- **Acción y pose:** guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara.
+- **Composición y espacio negativo:** fondo mínimo para que mande la masa corporal; lanza y escudo separados del torso y entre sí para conservar sus contornos. Mantener el rostro legible bajo el casco y evitar que el escudo lo tape.
+- **Identificador principal:** casco liso, armadura voluminosa y presencia guerrera de guardia.
+- **Pistas secundarias autorizadas:** lanza en reposo lateral y escudo liso, sin símbolos, emblemas, inscripciones ni adornos nuevos. Casco, armadura, lanza y escudo son una decisión de diseño de Willy aprobada el 2026-09-28, no una atestación histórica.
+- **Avatar circular:** casco y armadura superior + rostro intenso; el casco no oculta los ojos ni la expresión.
 - **Riesgos de parecido:** Atenea y Héctor. Diferenciar por frontalidad bruta, cuadratura corporal y ausencia de gesto estratégico o contexto protector.
 
 ### Afrodita

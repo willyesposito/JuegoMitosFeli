@@ -27,7 +27,7 @@
 
 ## 2. Detalle reconocible
 
-**Armadura y presencia guerrera.**
+**Casco liso, armadura voluminosa y presencia guerrera de guardia.**
 
 Dones declarados en `personajes.json`: Coraje guerrero; Nunca retrocede en una batalla.
 
@@ -35,7 +35,7 @@ Dones declarados en `personajes.json`: Coraje guerrero; Nunca retrocede en una b
 
 ## 3. Acción y pose
 
-Guardia estática y tensa; arma nunca en ataque hacia cámara.
+Guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara.
 
 Dirección corporal: Frontal con peso repartido en ambas piernas.
 
@@ -45,8 +45,8 @@ Es la acción de la ficha y no se cambia. Si la acción no se puede representar 
 
 ## 4. Silueta y composición
 
-- **Firma de silueta:** Armadura voluminosa + postura de guardia cuadrada + arma en reposo lateral.
-- **Composición:** Fondo mínimo para que mande la masa corporal; separar el arma del torso lo suficiente para leerla como forma lateral.
+- **Firma de silueta:** Casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso.
+- **Composición:** Fondo mínimo para que mande la masa corporal; lanza y escudo separados del torso y entre sí para conservar sus contornos. Mantener el rostro legible bajo el casco y evitar que el escudo lo tape.
 - **Densidad visual:** alta (matriz: 8 de 10).
 
 - **Cuerpo, y esto manda sobre cualquier intuición:** de edad media, de masa enorme, muy por encima de lo humano, hombros muy anchos, que dominan la silueta, de escala algo mayor que humana.
@@ -65,8 +65,8 @@ Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de
 
 Lo único que puede verse:
 
-1. **Armadura y presencia guerrera** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas:** sólo símbolos ya presentes en el repo; no agregar emblemas por rutina. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
+1. **Casco liso, armadura voluminosa y presencia guerrera de guardia** — identificador principal. ADN.
+2. **Pistas secundarias autorizadas:** lanza en reposo lateral y escudo liso, sin símbolos, emblemas, inscripciones ni adornos nuevos. Casco, armadura, lanza y escudo son una decisión de diseño de Willy aprobada el 2026-09-28, no una atestación histórica. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
 3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
 4. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
    - **Vestimenta funcional:** Túnica lisa de corte sencillo, ajustada a la acción y a la silueta.
@@ -154,7 +154,7 @@ La diferencia no puede depender sólo del color, del fondo, del objeto sostenido
 
 Vertical 3:4. Figura al 70–80% del alto del cuadro. Zona limpia detrás de la cabeza o del foco principal.
 
-Avatar circular, como restricción invisible: Casco/armadura superior + rostro intenso. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
+Avatar circular, como restricción invisible: Casco y armadura superior + rostro intenso; el casco no oculta los ojos ni la expresión. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
 
 ## 9. Registro
 
