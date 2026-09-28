@@ -1221,7 +1221,7 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Composición y espacio negativo:** sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes.
 - **Identificador principal:** carro del sol.
 - **Pistas secundarias autorizadas:** sol y líneas de movimiento.
-- **Avatar circular:** rostro + halo solar + borde de carro/rienda si entra.
+- **Avatar circular:** rostro + porción visible del sol ambiental autorizado en la composición, sin halo decorativo detrás de la cabeza + borde de carro/rienda si entra.
 - **Riesgos de parecido:** Apolo, Selene y Prometeo. Diferenciar por movimiento vehicular, luz cálida y escala solar.
 
 ### Hestia

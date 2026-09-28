@@ -150,7 +150,7 @@ La diferencia no puede depender sólo del color, del fondo, del objeto sostenido
 
 Vertical 3:4. Figura al 70–80% del alto del cuadro. Zona limpia detrás de la cabeza o del foco principal.
 
-Avatar circular, como restricción invisible: Rostro + halo solar + borde de carro/rienda si entra. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
+Avatar circular, como restricción invisible: Rostro + porción visible del sol ambiental autorizado en la composición, sin halo decorativo detrás de la cabeza + borde de carro/rienda si entra. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
 
 ## 9. Registro
 
