@@ -49,7 +49,7 @@ Es la acción de la ficha y no se cambia. Si la acción no se puede representar 
 - **Composición:** Pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura.
 - **Densidad visual:** baja-media (matriz: 4 de 10).
 
-- **Cuerpo, y esto manda sobre cualquier intuición:** de edad media, delgado y liviano, sin masa muscular marcada, hombros estrechos, de escala humana.
+- **Cuerpo, y esto manda sobre cualquier intuición:** joven, delgado y liviano, sin masa muscular marcada, hombros estrechos, de escala humana.
 
 La contextura sale de acá y no de lo que el personaje representa. Un dios no es corpulento por ser dios, ni un héroe es musculoso por ser héroe: si estos valores piden un cuerpo liviano, va un cuerpo liviano. **Sin abdominales marcados, sin deltoides separados, sin bíceps de gimnasio y sin espalda en V** salvo que la masa y los hombros de arriba lo pidan expresamente.
 
@@ -57,7 +57,7 @@ Los quince ejes completos, como límites de diseño y no como sugerencia (EV eda
 
 | EV | MC | EA | AF | CO | AC | DP | VD | DV | OV | DI | AN | PF | RM | RA |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 5 | 3 | 5 | 2 | 6 | 4 | 2 | 4 | 4 | 4 | 9 | 3 | 6 | 2 | 1 |
+| 4 | 3 | 5 | 2 | 6 | 4 | 2 | 4 | 4 | 4 | 9 | 3 | 6 | 2 | 1 |
 
 Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de los personajes de la §7.
 

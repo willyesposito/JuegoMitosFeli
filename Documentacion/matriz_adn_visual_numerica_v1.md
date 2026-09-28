@@ -66,7 +66,7 @@ Todos los valores usan escala 1–10. Los extremos tienen significado fijo; 5 re
 | Prometeo | Plateado | Griega | Humano | M | 7 | 5 | 7 | 8 | 5 | 8 | 6 | 5 | 6 | 5 | 9 | 5 | 5 | 4 | 1 |
 | Perséfone | Plateado | Griega | Humano | F | 4 | 4 | 6 | 3 | 5 | 3 | 1 | 8 | 7 | 6 | 6 | 4 | 10 | 5 | 1 |
 | Belerofonte | Plateado | Griega | Montura | M | 4 | 5 | 7 | 5 | 3 | 7 | 8 | 8 | 8 | 3 | 10 | 5 | 7 | 6 | 7 |
-| Orfeo | Plateado | Griega | Humano | M | 5 | 3 | 5 | 2 | 6 | 4 | 2 | 4 | 4 | 4 | 9 | 3 | 6 | 2 | 1 |
+| Orfeo | Plateado | Griega | Humano | M | 4 | 3 | 5 | 2 | 6 | 4 | 2 | 4 | 4 | 4 | 9 | 3 | 6 | 2 | 1 |
 | Edipo | Plateado | Griega | Humano | M | 7 | 5 | 6 | 7 | 2 | 3 | 1 | 7 | 5 | 6 | 6 | 5 | 7 | 4 | 1 |
 | Penélope | Plateado | Griega | Humano | F | 7 | 4 | 5 | 2 | 2 | 3 | 3 | 6 | 5 | 3 | 8 | 4 | 6 | 2 | 1 |
 | Helena | Plateado | Griega | Humano | F | 5 | 4 | 7 | 3 | 7 | 3 | 1 | 9 | 5 | 4 | 3 | 4 | 7 | 4 | 1 |
