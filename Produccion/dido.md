@@ -95,6 +95,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Hera.**
 
 | | Dido | Hera |
@@ -111,6 +113,67 @@ Pose de Hera, para no repetirla: una mano relajada y otra sobre el manto; cero g
 Ejes numéricos que ya los separan: protagonismo de fondo 9 contra 5, apertura corporal 8 contra 5, dinamismo de pose 4 contra 1, dependencia del identificador 4 contra 7.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** autoridad femenina madura.
+**Filtro numérico:** distancia ponderada 1.156; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dido: manto/púrpura de Tiro + gesto de planificación + muralla en construcción como forma secundaria; evitar estética de emperatriz romana. Cuerpo: adulta madura; alta y de contextura media. Frente a Hera: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno. Cuerpo: adulta madura; alta y de postura regia. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dido: señala el trazado de Cartago o supervisa obra; actividad fundadora, no pose regia estática. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dido: muralla/puerto mediterráneo subordinados; aire en la dirección del gesto de planificación. Frente a Hera: pavo real lateral para quebrar la verticalidad sin competir con el rostro; fondo contenido. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dido, comparación Hera; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Atenea.**
+
+| | Dido | Atenea |
+|---|---|---|
+| Cabello | negro | castaño ceniza |
+| Textura | recogido de volumen controlado | ondulado recogido compacto |
+| Piel | castaña media | oliva clara |
+| Ojos | marrón muy oscuro | gris claro |
+
+Silueta de Atenea, para no repetirla: casco/cresta + escudo desplazado + línea de lanza o arma defensiva sólo si la referencia aprobada la conserva.
+
+Pose de Atenea, para no repetirla: escudo en diagonal baja y mano libre indicando estrategia; no combate ni simetría de estatua.
+
+Ejes numéricos que ya los separan: protagonismo de fondo 9 contra 3, apertura corporal 8 contra 4, rigidez de materiales 5 contra 9, dependencia del identificador 4 contra 7.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figuras femeninas de planificación estratégica; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.240; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dido: manto/púrpura de Tiro + gesto de planificación + muralla en construcción como forma secundaria; evitar estética de emperatriz romana. Cuerpo: adulta madura; alta y de contextura media. Frente a Atenea: casco/cresta + escudo desplazado + línea de lanza o arma defensiva sólo si la referencia aprobada la conserva. Cuerpo: adulta joven-madura; atlética sin hipermusculatura. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dido: señala el trazado de Cartago o supervisa obra; actividad fundadora, no pose regia estática. Frente a Atenea: escudo en diagonal baja y mano libre indicando estrategia; no combate ni simetría de estatua. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dido: muralla/puerto mediterráneo subordinados; aire en la dirección del gesto de planificación. Frente a Atenea: arquitectura corporal firme con aire alrededor del escudo y de la mano que guía la lectura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dido, comparación Atenea; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Casiopea.**
+
+| | Dido | Casiopea |
+|---|---|---|
+| Cabello | negro ⚠ igual | negro |
+| Textura | recogido de volumen controlado | estructurado alto |
+| Piel | castaña media ⚠ igual | castaña media |
+| Ojos | marrón muy oscuro | ámbar |
+
+Silueta de Casiopea, para no repetirla: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles.
+
+Pose de Casiopea, para no repetirla: quietud orgullosa sobre el trono.
+
+Ejes numéricos que ya los separan: apertura corporal 8 contra 2, dinamismo de pose 4 contra 1, dependencia del identificador 4 contra 7, verticalidad 8 contra 6.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** autoridad femenina madura de arquitectura/trono; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.274; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dido: manto/púrpura de Tiro + gesto de planificación + muralla en construcción como forma secundaria; evitar estética de emperatriz romana. Cuerpo: adulta madura; alta y de contextura media. Frente a Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dido: señala el trazado de Cartago o supervisa obra; actividad fundadora, no pose regia estática. Frente a Casiopea: quietud orgullosa sobre el trono. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dido: muralla/puerto mediterráneo subordinados; aire en la dirección del gesto de planificación. Frente a Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dido, comparación Casiopea; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Hera. Diferenciar por actividad fundadora, gesto de planificación y lenguaje fenicio, no regalia olímpica.
 

@@ -90,7 +90,66 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
-La ficha no nombra un riesgo de parecido concreto: Héroes guerreros humanos. Diferenciar por edad, anatomía híbrida y comportamiento docente.
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
+**Contra Minotauro.**
+
+Silueta de Minotauro, para no repetirla: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano.
+
+Pose de Minotauro, para no repetirla: observa o decide camino; no carga hacia cámara.
+
+Ejes numéricos que ya los separan: masa corporal 7 contra 10, apertura corporal 7 contra 4, oscuridad 3 contra 6, anchura de hombros 7 contra 10.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** híbridos grandes de torso humanoide y masa alta.
+**Filtro numérico:** distancia ponderada 1.352; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Quirón: cuerpo de centauro + arco o instrumento de enseñanza en diagonal + postura abierta de maestro. Cuerpo: parte humana de adulto mayor con torso atlético moderado; parte equina completa y estable. Frente a Minotauro: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano. Cuerpo: adulto híbrido; torso humanoide muy ancho y pesado, con piernas taurinas terminadas en pezuñas. Sin piernas ni pies humanos. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Quirón: enseña o indica; no corre. Frente a Minotauro: observa o decide camino; no carga hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Quirón: espacio negativo frente al gesto docente; cuerpo equino completo para que la hibridez no quede escondida. Frente a Minotauro: transición anatómica completa en imagen maestra; laberinto subordinado y aire alrededor de ambos cuernos. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo quiron, comparación Minotauro; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Esfinge.**
+
+Silueta de Esfinge, para no repetirla: cabeza humana alta + pecho y patas de león en reposo; no sumar alas si no están autorizadas.
+
+Pose de Esfinge, para no repetirla: mira con curiosidad a quien responde; quietud de acertijo, no amenaza.
+
+Ejes numéricos que ya los separan: apertura corporal 7 contra 3, oscuridad 3 contra 6, escala aparente 8 contra 6.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** híbrido de rostro humano y cuerpo cuadrúpedo en reposo.
+**Filtro numérico:** distancia ponderada 0.944; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Quirón: cuerpo de centauro + arco o instrumento de enseñanza en diagonal + postura abierta de maestro. Cuerpo: parte humana de adulto mayor con torso atlético moderado; parte equina completa y estable. Frente a Esfinge: cabeza humana alta + pecho y patas de león en reposo; no sumar alas si no están autorizadas. Cuerpo: figura híbrida adulta; cuerpo de león robusto y presencia majestuosa. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Quirón: enseña o indica; no corre. Frente a Esfinge: mira con curiosidad a quien responde; quietud de acertijo, no amenaza. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Quirón: espacio negativo frente al gesto docente; cuerpo equino completo para que la hibridez no quede escondida. Frente a Esfinge: camino bloqueado queda visible y el cuerpo leonino debe leerse completo; aire alrededor del rostro humano. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo quiron, comparación Esfinge; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Pegaso.**
+
+Silueta de Pegaso, para no repetirla: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena.
+
+Pose de Pegaso, para no repetirla: vuelo o elevación controlada, no picada heroica.
+
+Ejes numéricos que ya los separan: dinamismo de pose 2 contra 8, edad visual 8 contra 5, angulosidad facial 5 contra 3, contorno superior 5 contra 7.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** cuerpo equino que puede absorber o borrar la transición humana.
+**Filtro numérico:** distancia ponderada 1.754; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Quirón: cuerpo de centauro + arco o instrumento de enseñanza en diagonal + postura abierta de maestro. Cuerpo: parte humana de adulto mayor con torso atlético moderado; parte equina completa y estable. Frente a Pegaso: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena. Cuerpo: caballo adulto de proporciones elegantes y atléticas. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Quirón: enseña o indica; no corre. Frente a Pegaso: vuelo o elevación controlada, no picada heroica. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Quirón: espacio negativo frente al gesto docente; cuerpo equino completo para que la hibridez no quede escondida. Frente a Pegaso: cuerpo completo cuando la escala lo permita; aire entre alas y borde del cuadro para no perder la firma. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo quiron, comparación Pegaso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+Criterio de la ficha: Héroes guerreros humanos. Diferenciar por edad, anatomía híbrida y comportamiento docente.
 
 La diferencia no puede depender sólo del color, del fondo, del objeto sostenido, del peinado ni de una prenda. Matriz §4.1: el objeto no salva un clon.
 

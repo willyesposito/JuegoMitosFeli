@@ -91,7 +91,64 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
-La ficha no nombra un riesgo de parecido concreto: Resto de criaturas. Debe distinguirse por escala pequeña, cola enorme y movimiento vertical de trepa.
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
+**Contra Fénix.**
+
+Silueta de Fénix, para no repetirla: alas en arco desigual + cola amplia cuyas plumas se fragmentan visualmente en fuego/ceniza.
+
+Pose de Fénix, para no repetirla: renace o se eleva desde ceniza; no vuelo horizontal.
+
+Ejes numéricos que ya los separan: escala aparente 2 contra 7, anchura de hombros 1 contra 6, masa corporal 1 contra 5, angulosidad facial 2 contra 6.
+
+**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** contorno superior expansivo y ascenso de criatura; cruce de morfología, no clon de especie.
+**Filtro numérico:** distancia ponderada 2.050; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ratatosk: cola en gran arco + cuerpo vertical trepando + rama de Yggdrasil cruzando diagonal. Cuerpo: ardilla adulta pequeña, ágil, con cola desproporcionadamente grande y expresiva como recurso de diseño. Frente a Fénix: alas en arco desigual + cola amplia cuyas plumas se fragmentan visualmente en fuego/ceniza. Cuerpo: ave adulta grande, de alas largas, cabeza relativamente pequeña y cola amplia. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ratatosk: trepa con cabeza girada como llevando un mensaje. Frente a Fénix: renace o se eleva desde ceniza; no vuelo horizontal. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ratatosk: rama/tronco forman diagonales de apoyo; aire alrededor de la cola para que su arco no se pierda. Frente a Fénix: base de ceniza abajo y gran aire superior para la trayectoria ascendente; fuego sin convertir la escena en amenaza. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ratatosk, comparación Fénix; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Pegaso.**
+
+Silueta de Pegaso, para no repetirla: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena.
+
+Pose de Pegaso, para no repetirla: vuelo o elevación controlada, no picada heroica.
+
+Ejes numéricos que ya los separan: masa corporal 1 contra 6, escala aparente 2 contra 7, anchura de hombros 1 contra 6, contorno superior 10 contra 7.
+
+**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** criatura elevada con curva de contorno amplia; control de trepa frente a vuelo.
+**Filtro numérico:** distancia ponderada 2.050; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ratatosk: cola en gran arco + cuerpo vertical trepando + rama de Yggdrasil cruzando diagonal. Cuerpo: ardilla adulta pequeña, ágil, con cola desproporcionadamente grande y expresiva como recurso de diseño. Frente a Pegaso: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena. Cuerpo: caballo adulto de proporciones elegantes y atléticas. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ratatosk: trepa con cabeza girada como llevando un mensaje. Frente a Pegaso: vuelo o elevación controlada, no picada heroica. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ratatosk: rama/tronco forman diagonales de apoyo; aire alrededor de la cola para que su arco no se pierda. Frente a Pegaso: cuerpo completo cuando la escala lo permita; aire entre alas y borde del cuadro para no perder la firma. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ratatosk, comparación Pegaso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Fenrir.**
+
+Silueta de Fenrir, para no repetirla: lomo horizontal + cinta mágica fina contrastando con el gran tamaño + patas separadas y firmes.
+
+Pose de Fenrir, para no repetirla: detenido y observando; nunca abalanzándose.
+
+Ejes numéricos que ya los separan: masa corporal 1 contra 9, anchura de hombros 1 contra 9, dinamismo de pose 9 contra 2, angulosidad facial 2 contra 8.
+
+**Por qué se controla este par:** criatura peluda nórdica; control de escala y hocico para evitar animal genérico.
+**Filtro numérico:** distancia ponderada 4.201; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ratatosk: cola en gran arco + cuerpo vertical trepando + rama de Yggdrasil cruzando diagonal. Cuerpo: ardilla adulta pequeña, ágil, con cola desproporcionadamente grande y expresiva como recurso de diseño. Frente a Fenrir: lomo horizontal + cinta mágica fina contrastando con el gran tamaño + patas separadas y firmes. Cuerpo: lobo adulto gigante; cuerpo largo, musculoso y de cabeza grande. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ratatosk: trepa con cabeza girada como llevando un mensaje. Frente a Fenrir: detenido y observando; nunca abalanzándose. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ratatosk: rama/tronco forman diagonales de apoyo; aire alrededor de la cola para que su arco no se pierda. Frente a Fenrir: la cinta debe verse claramente contra la masa del lobo y existir aire delante del hocico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ratatosk, comparación Fenrir; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+Criterio de la ficha: Resto de criaturas. Debe distinguirse por escala pequeña, cola enorme y movimiento vertical de trepa.
 
 La diferencia no puede depender sólo del color, del fondo, del objeto sostenido, del peinado ni de una prenda. Matriz §4.1: el objeto no salva un clon.
 

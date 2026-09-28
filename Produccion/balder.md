@@ -99,6 +99,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Apolo.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Apolo.**
 
 | | Balder | Apolo |
@@ -115,6 +117,65 @@ Pose de Apolo, para no repetirla: tocando o afinando la lira; gesto artístico, 
 Ejes numéricos que ya los separan: dependencia del identificador 3 contra 8, apertura corporal 9 contra 5, angulosidad facial 2 contra 5, contorno superior 3 contra 5.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones jóvenes esbeltos luminosos.
+**Filtro numérico:** distancia ponderada 1.413; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Balder: cuerpo abierto y limpio + luminosidad propia contenida; ninguna armadura pesada. Cuerpo: adulto joven; alto y esbelto. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Balder: manos visibles y bajas; quietud abierta. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo balder, comparación Apolo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Paris.**
+
+| | Balder | Paris |
+|---|---|---|
+| Cabello | rubio claro | castaño medio |
+| Textura | corto-medio | lacio |
+| Piel | clara luminosa | oliva media |
+| Ojos | azul claro | verde gris |
+
+Silueta de Paris, para no repetirla: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección.
+
+Pose de Paris, para no repetirla: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria.
+
+Ejes numéricos que ya los separan: dependencia del identificador 3 contra 10, apertura corporal 9 contra 4, protagonismo de fondo 3 contra 7, densidad visual 3 contra 5.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones jóvenes de rasgos suaves y baja acción.
+**Filtro numérico:** distancia ponderada 1.654; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Balder: cuerpo abierto y limpio + luminosidad propia contenida; ninguna armadura pesada. Cuerpo: adulto joven; alto y esbelto. Frente a Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Balder: manos visibles y bajas; quietud abierta. Frente a Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Frente a Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo balder, comparación Paris; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Eros.**
+
+| | Balder | Eros |
+|---|---|---|
+| Cabello | rubio claro | castaño claro |
+| Textura | corto-medio | rizado abierto |
+| Piel | clara luminosa | clara neutra |
+| Ojos | azul claro ⚠ igual | azul claro |
+
+Silueta de Eros, para no repetirla: arco curvo + flecha diagonal + cuerpo ligero; alas sólo si ya están autorizadas por la implementación visual del personaje.
+
+Pose de Eros, para no repetirla: apunta sin tensión bélica; gesto travieso-amable.
+
+Ejes numéricos que ya los separan: dependencia del identificador 3 contra 9, dinamismo de pose 1 contra 6, masa corporal 4 contra 2, escala aparente 7 contra 5.
+
+**Por qué se controla este par:** varones juveniles livianos y abiertos.
+**Filtro numérico:** distancia ponderada 1.754; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Balder: cuerpo abierto y limpio + luminosidad propia contenida; ninguna armadura pesada. Cuerpo: adulto joven; alto y esbelto. Frente a Eros: arco curvo + flecha diagonal + cuerpo ligero; alas sólo si ya están autorizadas por la implementación visual del personaje. Cuerpo: adulto joven de aspecto claramente juvenil pero no infantil; delgado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Balder: manos visibles y bajas; quietud abierta. Frente a Eros: apunta sin tensión bélica; gesto travieso-amable. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Frente a Eros: dejar aire delante de la flecha; evitar que arco y cuerpo formen una masa cerrada. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo balder, comparación Eros; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Apolo. Diferenciar por ausencia de lira/sol, frontalidad relajada y foco en luminosidad propia.
 

@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Odiseo.**
 
 | | Edipo | Odiseo |
@@ -109,6 +111,67 @@ Pose de Odiseo, para no repetirla: gesto mental y de cálculo; mano activa antes
 Ejes numéricos que ya los separan: dinamismo de pose 1 contra 4, dependencia del identificador 6 contra 3, contorno superior 2 contra 4, apertura corporal 3 contra 5.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos pensantes de pie; cercanía numérica.
+**Filtro numérico:** distancia ponderada 0.933; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Edipo: figura pensante de pie + mano en mentón y Esfinge fuera de eje; bastón sólo si funciona como símbolo general del acertijo humano y no como atributo personal inventado. Cuerpo: adulto maduro; contextura media. Frente a Odiseo: capa o tela de viaje inclinada + postura levemente adelantada + mano activa señalando o calculando. Cuerpo: adulto maduro; cuerpo fibroso, viajado y menos ceremonial que otros héroes. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Edipo: observa y resuelve; postura estática de pregunta, no viaje ni amenaza. Frente a Odiseo: gesto mental y de cálculo; mano activa antes que arma protagonista. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Edipo: distancia clara entre Edipo y Esfinge; el vacío entre ambos funciona como espacio del acertijo. Frente a Odiseo: reservar aire hacia la dirección donde piensa avanzar; menos armadura y menos frontalidad que los héroes guerreros. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo edipo, comparación Odiseo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Heimdall.**
+
+| | Edipo | Heimdall |
+|---|---|---|
+| Cabello | negro | rubio ceniza |
+| Textura | lacio | recogido atrás |
+| Piel | oliva media | clara dorada |
+| Ojos | marrón muy oscuro | ámbar |
+
+Silueta de Heimdall, para no repetirla: cuerno largo en diagonal + cuerpo erguido de centinela + arco de Bifröst en fondo.
+
+Pose de Heimdall, para no repetirla: mano en el cuerno pero sin tocarlo obligatoriamente; inmovilidad vigilante.
+
+Ejes numéricos que ya los separan: rigidez de materiales 4 contra 9, dependencia del identificador 6 contra 10, verticalidad 7 contra 10, oscuridad 6 contra 4.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos angulares de postura contenida y vigilancia; cercanía numérica.
+**Filtro numérico:** distancia ponderada 0.944; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Edipo: figura pensante de pie + mano en mentón y Esfinge fuera de eje; bastón sólo si funciona como símbolo general del acertijo humano y no como atributo personal inventado. Cuerpo: adulto maduro; contextura media. Frente a Heimdall: cuerno largo en diagonal + cuerpo erguido de centinela + arco de Bifröst en fondo. Cuerpo: adulto maduro; alto y de contextura contenida. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Edipo: observa y resuelve; postura estática de pregunta, no viaje ni amenaza. Frente a Heimdall: mano en el cuerno pero sin tocarlo obligatoriamente; inmovilidad vigilante. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Edipo: distancia clara entre Edipo y Esfinge; el vacío entre ambos funciona como espacio del acertijo. Frente a Heimdall: diagonal del cuerno cruza sin tapar rostro; Bifröst queda atrás y deja respirar la silueta. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo edipo, comparación Heimdall; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Tyr.**
+
+| | Edipo | Tyr |
+|---|---|---|
+| Cabello | negro | rubio oscuro |
+| Textura | lacio | corto |
+| Piel | oliva media | clara rosada |
+| Ojos | marrón muy oscuro | azul gris |
+
+Silueta de Tyr, para no repetirla: asimetría clara de brazos sin detalle gráfico + cinta de Fenrir formando una curva externa.
+
+Pose de Tyr, para no repetirla: postura firme y voluntaria junto al lobo; no ataque ni herida explícita.
+
+Ejes numéricos que ya los separan: dependencia del identificador 6 contra 9, rigidez de materiales 4 contra 7, dinamismo de pose 1 contra 3, protagonismo de fondo 7 contra 5.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos sobrios junto a segundo sujeto; cercanía numérica.
+**Filtro numérico:** distancia ponderada 0.978; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Edipo: figura pensante de pie + mano en mentón y Esfinge fuera de eje; bastón sólo si funciona como símbolo general del acertijo humano y no como atributo personal inventado. Cuerpo: adulto maduro; contextura media. Frente a Tyr: asimetría clara de brazos sin detalle gráfico + cinta de Fenrir formando una curva externa. Cuerpo: adulto maduro; fuerte pero seco. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Edipo: observa y resuelve; postura estática de pregunta, no viaje ni amenaza. Frente a Tyr: postura firme y voluntaria junto al lobo; no ataque ni herida explícita. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Edipo: distancia clara entre Edipo y Esfinge; el vacío entre ambos funciona como espacio del acertijo. Frente a Tyr: curva de la cinta separada del torso y espacio limpio entre Tyr y Fenrir. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo edipo, comparación Tyr; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Odiseo. Diferenciar por escena estática de pregunta y diálogo visual, no estrategia en viaje.
 

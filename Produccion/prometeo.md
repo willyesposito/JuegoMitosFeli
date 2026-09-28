@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Helios.**
 
 | | Prometeo | Helios |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: angulosidad facial 8 contra 4, oscuridad 5 c
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** luz/fuego y figura masculina.
+**Filtro numérico:** distancia ponderada 1.743; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Prometeo: llama separada de la mano + cuerpo inclinado protegiéndola del viento + manto corto hacia atrás. Cuerpo: adulto maduro; alto y fibroso. Frente a Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Prometeo: brazo extendido ofreciendo el fuego, nunca objeto al pecho. Frente a Helios: conduce el carro, erguido y estable. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Prometeo: aire delante de la llama y del brazo extendido; el fuego pequeño debe leerse sin transformarse en sol monumental. Frente a Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo prometeo, comparación Helios; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Hestia.**
 
 | | Prometeo | Hestia |
@@ -124,6 +135,41 @@ Silueta de Hestia, para no repetirla: cuerpo compacto sentado o arrodillado + ll
 Pose de Hestia, para no repetirla: cuida la llama en calma.
 
 Ejes numéricos que ya los separan: angulosidad facial 8 contra 2, apertura corporal 8 contra 2, dinamismo de pose 6 contra 1, contorno superior 5 contra 1.
+
+**Por qué se controla este par:** fuego como núcleo visual.
+**Filtro numérico:** distancia ponderada 2.626; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Prometeo: llama separada de la mano + cuerpo inclinado protegiéndola del viento + manto corto hacia atrás. Cuerpo: adulto maduro; alto y fibroso. Frente a Hestia: cuerpo compacto sentado o arrodillado + llama del hogar a un costado + telas suaves sin objetos de poder. Cuerpo: adulta madura; contextura media-pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Prometeo: brazo extendido ofreciendo el fuego, nunca objeto al pecho. Frente a Hestia: cuida la llama en calma. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Prometeo: aire delante de la llama y del brazo extendido; el fuego pequeño debe leerse sin transformarse en sol monumental. Frente a Hestia: composición baja y contenida, con aire cálido alrededor de la llama y fondo doméstico simple. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo prometeo, comparación Hestia; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Odiseo.**
+
+| | Prometeo | Odiseo |
+|---|---|---|
+| Cabello | castaño muy oscuro | castaño oscuro con canas |
+| Textura | medio | ondulado marcado |
+| Piel | oliva media | canela curtida |
+| Ojos | gris | gris verdoso |
+
+Silueta de Odiseo, para no repetirla: capa o tela de viaje inclinada + postura levemente adelantada + mano activa señalando o calculando.
+
+Pose de Odiseo, para no repetirla: gesto mental y de cálculo; mano activa antes que arma protagonista.
+
+Ejes numéricos que ya los separan: dependencia del identificador 9 contra 3, apertura corporal 8 contra 5, dinamismo de pose 6 contra 4.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos fibrosos de rostro largo y mano activa; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.011; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Prometeo: llama separada de la mano + cuerpo inclinado protegiéndola del viento + manto corto hacia atrás. Cuerpo: adulto maduro; alto y fibroso. Frente a Odiseo: capa o tela de viaje inclinada + postura levemente adelantada + mano activa señalando o calculando. Cuerpo: adulto maduro; cuerpo fibroso, viajado y menos ceremonial que otros héroes. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Prometeo: brazo extendido ofreciendo el fuego, nunca objeto al pecho. Frente a Odiseo: gesto mental y de cálculo; mano activa antes que arma protagonista. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Prometeo: aire delante de la llama y del brazo extendido; el fuego pequeño debe leerse sin transformarse en sol monumental. Frente a Odiseo: reservar aire hacia la dirección donde piensa avanzar; menos armadura y menos frontalidad que los héroes guerreros. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo prometeo, comparación Odiseo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Helios y Hestia. Diferenciar por fuego pequeño transportado/entregado, no carro solar ni fuego doméstico conservado.
 

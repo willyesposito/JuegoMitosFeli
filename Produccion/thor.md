@@ -101,6 +101,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Heracles.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Zeus.**
 
 | | Thor | Zeus |
@@ -117,6 +119,15 @@ Pose de Zeus, para no repetirla: una mano baja estabiliza y la otra presenta el 
 Ejes numéricos que ya los separan: verticalidad 6 contra 10, angulosidad facial 6 contra 8, contorno superior 7 contra 5, apertura corporal 7 contra 9.
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones poderosos de hombros anchos y atributo separado.
+**Filtro numérico:** distancia ponderada 1.425; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Thor: Mjölnir separado del cuerpo + capa corta o pieles que ensanchan la parte alta + piernas firmes. Cuerpo: adulto maduro; muy ancho de hombros, masa alta pero menor que Heracles. Frente a Zeus: hombros amplios + brazo del rayo separado del torso + manto que cae en una sola masa lateral. Cuerpo: adulto maduro; torso ancho, compacto y de presencia dominante sin llegar a la masa extrema de Heracles. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Thor: martillo bajo o lateral listo pero sin golpear; cuerpo preparado, no agresivo hacia cámara. Frente a Zeus: una mano baja estabiliza y la otra presenta el rayo hacia afuera; gesto de mando abierto, no pose estática con objeto al pecho. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Thor: separar la cabeza del martillo de la masa del torso y reservar aire lateral; electricidad ambiental controlada. Frente a Zeus: figura centrada pero asimétrica, con aire claro sobre y alrededor del lado del rayo para que éste tenga lectura propia. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo thor, comparación Zeus; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Heracles.**
 
@@ -135,6 +146,15 @@ Ejes numéricos que ya los separan: rigidez de materiales 8 contra 4, dependenci
 
 **Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** máximos volúmenes masculinos; par de riesgo alto y Espejo.
+**Filtro numérico:** distancia ponderada 0.832; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Thor: Mjölnir separado del cuerpo + capa corta o pieles que ensanchan la parte alta + piernas firmes. Cuerpo: adulto maduro; muy ancho de hombros, masa alta pero menor que Heracles. Frente a Heracles: espalda muy ancha + piel del león de Nemea rompiendo el contorno de hombros + brazos separados del torso. Cuerpo: adulto joven-maduro; el cuerpo humano más macizo del roster, cuello ancho y centro de gravedad bajo. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Thor: martillo bajo o lateral listo pero sin golpear; cuerpo preparado, no agresivo hacia cámara. Frente a Heracles: cargando o desplazando peso en vez de posar; gesto laborioso más que guerrero perfecto. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Thor: separar la cabeza del martillo de la masa del torso y reservar aire lateral; electricidad ambiental controlada. Frente a Heracles: masa corporal dominante, con brazos separados para que la silueta respire y la piel del león se lea sin collage de trabajos. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo thor, comparación Heracles; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Loki.**
 
 | | Thor | Loki |
@@ -149,6 +169,41 @@ Silueta de Loki, para no repetirla: cuerpo en S + manos separadas en acciones di
 Pose de Loki, para no repetirla: mira hacia un lado mientras una mano parece terminar una travesura; la otra queda activa en una acción distinta.
 
 Ejes numéricos que ya los separan: masa corporal 9 contra 3, dependencia del identificador 9 contra 3, anchura de hombros 9 contra 3, rigidez de materiales 8 contra 4.
+
+**Por qué se controla este par:** contaminación de composición comprobada en el registro del repo.
+**Filtro numérico:** distancia ponderada 2.358; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Thor: Mjölnir separado del cuerpo + capa corta o pieles que ensanchan la parte alta + piernas firmes. Cuerpo: adulto maduro; muy ancho de hombros, masa alta pero menor que Heracles. Frente a Loki: cuerpo en S + manos separadas en acciones distintas + borde de capa irregular; sin corona ni cuernos inventados. Cuerpo: adulto joven-maduro; delgado y flexible. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Thor: martillo bajo o lateral listo pero sin golpear; cuerpo preparado, no agresivo hacia cámara. Frente a Loki: mira hacia un lado mientras una mano parece terminar una travesura; la otra queda activa en una acción distinta. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Thor: separar la cabeza del martillo de la masa del torso y reservar aire lateral; electricidad ambiental controlada. Frente a Loki: sombra o reflejo con forma levemente distinta puede sugerir cambio de forma sin agregar criatura concreta; mantener aire alrededor de ambas manos. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo thor, comparación Loki; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Poseidón.**
+
+| | Thor | Poseidón |
+|---|---|---|
+| Cabello | cobrizo | gris acero |
+| Textura | ondulado grueso | ondulado largo barrido |
+| Piel | clara rosada curtida | canela |
+| Ojos | azul claro | verde gris |
+
+Silueta de Poseidón, para no repetirla: tridente alto fuera del eje corporal + manto o tela empujada lateralmente como por viento marino.
+
+Pose de Poseidón, para no repetirla: pies bien apoyados; sostiene o presenta el tridente en eje alto sin atacar.
+
+Ejes numéricos que ya los separan: protagonismo de fondo 4 contra 8, rigidez de materiales 8 contra 5, angulosidad facial 6 contra 8, contorno superior 7 contra 9.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones robustos con contorno amplio y dinamismo cercano.
+**Filtro numérico:** distancia ponderada 0.922; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Thor: Mjölnir separado del cuerpo + capa corta o pieles que ensanchan la parte alta + piernas firmes. Cuerpo: adulto maduro; muy ancho de hombros, masa alta pero menor que Heracles. Frente a Poseidón: tridente alto fuera del eje corporal + manto o tela empujada lateralmente como por viento marino. Cuerpo: adulto maduro; cuerpo largo y robusto, menos compacto que Zeus. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Thor: martillo bajo o lateral listo pero sin golpear; cuerpo preparado, no agresivo hacia cámara. Frente a Poseidón: pies bien apoyados; sostiene o presenta el tridente en eje alto sin atacar. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Thor: separar la cabeza del martillo de la masa del torso y reservar aire lateral; electricidad ambiental controlada. Frente a Poseidón: movimiento horizontal de agua en fondo contra la vertical del tridente; aire lateral suficiente para que el arma no se pegue al cuerpo. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo thor, comparación Poseidón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Zeus y Heracles. Diferenciar por objeto corto y pesado, lenguaje nórdico, centro de gravedad bajo y masa menos extrema que Heracles.
 

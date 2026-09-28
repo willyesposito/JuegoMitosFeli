@@ -95,6 +95,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Calipso.**
 
 | | Nausícaa | Calipso |
@@ -111,6 +113,67 @@ Pose de Calipso, para no repetirla: contemplación inmóvil desde la isla.
 Ejes numéricos que ya los separan: contorno superior 1 contra 9, apertura corporal 8 contra 3, dinamismo de pose 5 contra 1, protagonismo de fondo 6 contra 10.
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figuras femeninas junto al mar.
+**Filtro numérico:** distancia ponderada 2.061; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Nausícaa: vasija de agua o paño amplio a un lado + postura inclinada de ayuda; cero regalia de princesa genérica. Cuerpo: adulta joven; contextura media. Frente a Calipso: figura aislada + telas largas verticales + vegetación insular lateral; sin objeto mágico inventado. Cuerpo: adulta madura; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Nausícaa: extiende ropa/ayuda; escena cotidiana y activa. Frente a Calipso: contemplación inmóvil desde la isla. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Nausícaa: costa tranquila detrás y aire en la dirección del gesto; objeto doméstico lateral sin convertirse en trofeo. Frente a Calipso: mucho espacio negativo de mar; vegetación insular sólo rompe un lateral. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo nausicaa, comparación Calipso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Ariadna.**
+
+| | Nausícaa | Ariadna |
+|---|---|---|
+| Cabello | castaño medio | castaño claro |
+| Textura | rizado cerrado | ondulado medio |
+| Piel | dorada media | oliva media |
+| Ojos | verde gris | avellana |
+
+Silueta de Ariadna, para no repetirla: ovillo redondo en una mano + hilo largo dibujando curva externa + postura de guía.
+
+Pose de Ariadna, para no repetirla: entrega o sigue el hilo hacia fuera del cuadro; guía desde la solución.
+
+Ejes numéricos que ya los separan: dependencia del identificador 4 contra 9, contorno superior 1 contra 4, angulosidad facial 2 contra 4, oscuridad 1 contra 3.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres jóvenes de gesto abierto hacia otro; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.050; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Nausícaa: vasija de agua o paño amplio a un lado + postura inclinada de ayuda; cero regalia de princesa genérica. Cuerpo: adulta joven; contextura media. Frente a Ariadna: ovillo redondo en una mano + hilo largo dibujando curva externa + postura de guía. Cuerpo: adulta joven; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Nausícaa: extiende ropa/ayuda; escena cotidiana y activa. Frente a Ariadna: entrega o sigue el hilo hacia fuera del cuadro; guía desde la solución. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Nausícaa: costa tranquila detrás y aire en la dirección del gesto; objeto doméstico lateral sin convertirse en trofeo. Frente a Ariadna: laberinto queda como patrón bajo y el hilo cruza aire limpio para ser legible. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo nausicaa, comparación Ariadna; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Penélope.**
+
+| | Nausícaa | Penélope |
+|---|---|---|
+| Cabello | castaño medio | castaño oscuro con hilos grises |
+| Textura | rizado cerrado | recogido bajo |
+| Piel | dorada media | oliva media |
+| Ojos | verde gris | marrón cálido |
+
+Silueta de Penélope, para no repetirla: telar formando un marco vertical parcial + brazos ocupados a distinta altura.
+
+Pose de Penélope, para no repetirla: trabajando con el hilo, sentada o de pie lateral; mirada fuera de cuadro en una pausa pensativa.
+
+Ejes numéricos que ya los separan: apertura corporal 8 contra 3, dependencia del identificador 4 contra 8, edad visual 4 contra 7, dinamismo de pose 5 contra 3.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** actividad doméstica con tela; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.156; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Nausícaa: vasija de agua o paño amplio a un lado + postura inclinada de ayuda; cero regalia de princesa genérica. Cuerpo: adulta joven; contextura media. Frente a Penélope: telar formando un marco vertical parcial + brazos ocupados a distinta altura. Cuerpo: adulta madura; contextura media-pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Nausícaa: extiende ropa/ayuda; escena cotidiana y activa. Frente a Penélope: trabajando con el hilo, sentada o de pie lateral; mirada fuera de cuadro en una pausa pensativa. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Nausícaa: costa tranquila detrás y aire en la dirección del gesto; objeto doméstico lateral sin convertirse en trofeo. Frente a Penélope: telar estructura la imagen sin encerrar por completo el cuerpo; escena doméstica activa, no pasiva. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo nausicaa, comparación Penélope; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Calipso. Diferenciar por gesto activo de ayuda y escena cotidiana, no contemplación aislada.
 

@@ -91,6 +91,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Calisto.**
 
 Silueta de Calisto, para no repetirla: gran cuerpo de osa + arco de estrellas de Osa Mayor arriba + perfil ancho y patas firmes.
@@ -101,6 +103,15 @@ Ejes numéricos que ya los separan: angulosidad facial 8 contra 3, dependencia d
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** grandes cuadrúpedos peludos.
+**Filtro numérico:** distancia ponderada 1.447; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Fenrir: lomo horizontal + cinta mágica fina contrastando con el gran tamaño + patas separadas y firmes. Cuerpo: lobo adulto gigante; cuerpo largo, musculoso y de cabeza grande. Frente a Calisto: gran cuerpo de osa + arco de estrellas de Osa Mayor arriba + perfil ancho y patas firmes. Cuerpo: osa adulta, amable e imponente; cuerpo pesado y estable. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Fenrir: detenido y observando; nunca abalanzándose. Frente a Calisto: quieta mirando las estrellas, nunca rugiendo. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Fenrir: la cinta debe verse claramente contra la masa del lobo y existir aire delante del hocico. Frente a Calisto: paisaje nocturno limpio y arco estelar por encima, con aire suficiente entre lomo y constelación. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo fenrir, comparación Calisto; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Cerbero.**
 
 Silueta de Cerbero, para no repetirla: tres perfiles de cabeza escalonados en altura + cuerpo único ancho.
@@ -110,6 +121,34 @@ Pose de Cerbero, para no repetirla: sentado o quieto ante una entrada.
 Ejes numéricos que ya los separan: angulosidad facial 8 contra 5, rareza anatómica 8 contra 10.
 
 **Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** caninos de masa enorme detenidos.
+**Filtro numérico:** distancia ponderada 0.983; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Fenrir: lomo horizontal + cinta mágica fina contrastando con el gran tamaño + patas separadas y firmes. Cuerpo: lobo adulto gigante; cuerpo largo, musculoso y de cabeza grande. Frente a Cerbero: tres perfiles de cabeza escalonados en altura + cuerpo único ancho. Cuerpo: perro adulto enorme, robusto y de patas pesadas. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Fenrir: detenido y observando; nunca abalanzándose. Frente a Cerbero: sentado o quieto ante una entrada. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Fenrir: la cinta debe verse claramente contra la masa del lobo y existir aire delante del hocico. Frente a Cerbero: escalonar las tres cabezas para evitar solapamiento; entrada subordinada y aire suficiente entre perfiles. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo fenrir, comparación Cerbero; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Minotauro.**
+
+Silueta de Minotauro, para no repetirla: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano.
+
+Pose de Minotauro, para no repetirla: observa o decide camino; no carga hacia cámara.
+
+Ejes numéricos que ya los separan: contorno superior 8 contra 5, verticalidad 4 contra 7, oscuridad 8 contra 6.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** criatura enorme y pesada en pausa; riesgo de bloque cefálico genérico.
+**Filtro numérico:** distancia ponderada 1.045; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Fenrir: lomo horizontal + cinta mágica fina contrastando con el gran tamaño + patas separadas y firmes. Cuerpo: lobo adulto gigante; cuerpo largo, musculoso y de cabeza grande. Frente a Minotauro: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano. Cuerpo: adulto híbrido; torso humanoide muy ancho y pesado, con piernas taurinas terminadas en pezuñas. Sin piernas ni pies humanos. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Fenrir: detenido y observando; nunca abalanzándose. Frente a Minotauro: observa o decide camino; no carga hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Fenrir: la cinta debe verse claramente contra la masa del lobo y existir aire delante del hocico. Frente a Minotauro: transición anatómica completa en imagen maestra; laberinto subordinado y aire alrededor de ambos cuernos. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo fenrir, comparación Minotauro; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Calisto y Cerbero. Diferenciar por hocico más largo, pelaje más áspero, cuerpo único y lenguaje nórdico.
 

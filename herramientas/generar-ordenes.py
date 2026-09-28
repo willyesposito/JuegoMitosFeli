@@ -117,6 +117,7 @@ def cargar():
             if pj.get(nombre, {}).get('id') in regla['aplica_ids']:
                 # La decisión vive en el bloque común, no en 57 fichas duplicadas.
                 ficha['_regla_vestimenta_funcional'] = regla
+    cargar_anti_clonacion(adn, mat, pj)
     return adn, mat, pj
 
 def leer_regla_vestimenta(texto):
@@ -233,6 +234,67 @@ def problemas_mecanicos(nombre, adn, mat, pj):
             problemas.append('identidad de referencia incompleta: ' + referencia)
     return problemas
 
+FUENTE_ANTI_CLONACION = 'Documentacion/anti_clonacion_lote_2026-09-28.json'
+
+def cargar_anti_clonacion(adn, mat, pj):
+    """Carga sólo las decisiones editoriales del lote y comprueba sus fuentes."""
+    ruta = r(*FUENTE_ANTI_CLONACION.split('/'))
+    if not os.path.exists(ruta):
+        return
+    with open(ruta, encoding='utf-8') as archivo:
+        fuente = json.load(archivo)
+    for sid, decision in fuente['objetivos'].items():
+        nombre = decision['nombre']
+        if nombre not in adn or pj.get(nombre, {}).get('id') != sid:
+            raise ValueError('Objetivo anti-clonación desalineado: ' + sid)
+        pares = decision['comparaciones']
+        riesgos = [p['riesgo'] for p in pares]
+        if len(riesgos) < 3 or len(set(riesgos)) != len(riesgos) or nombre in riesgos:
+            raise ValueError('Se requieren tres riesgos distintos: ' + nombre)
+        for par in pares:
+            rival = par['riesgo']
+            if rival not in adn or rival not in mat:
+                raise ValueError('Comparador ausente: ' + rival)
+            if not par['motivo'].strip():
+                raise ValueError('Riesgo sin justificar: ' + nombre + '/' + rival)
+            for eje in ('silueta', 'pose', 'composicion'):
+                if not par['separadores'].get(eje, '').strip():
+                    raise ValueError('Separador ausente: ' + nombre + '/' + rival + '/' + eje)
+            # Una fuente cambiada obliga a revisar el par, no conserva un falso SÍ.
+            for sujeto in (nombre, rival):
+                ficha = adn[sujeto]
+                for campo, esperado in fuente['fichas'][sujeto]['campos'].items():
+                    actual = limpiar_fuente(ficha.get(campo, ''))
+                    if actual != limpiar_fuente(esperado):
+                        raise ValueError('Evidencia anti-clonación cambió: ' + sujeto + '/' + campo)
+                for eje, esperado in fuente['fichas'][sujeto]['matriz'].items():
+                    if mat[sujeto][eje] != esperado:
+                        raise ValueError('Matriz anti-clonación cambió: ' + sujeto + '/' + eje)
+        adn[nombre]['_anti_clonacion'] = decision
+
+def detalle_separacion_documentada(nombre, riesgo, adn):
+    """Compila la justificación y los tres contrastes positivos ya documentados."""
+    decision = adn[nombre].get('_anti_clonacion')
+    if not decision:
+        return ''
+    par = next((p for p in decision['comparaciones'] if p['riesgo'] == riesgo), None)
+    if par is None:
+        raise ValueError('Riesgo vigente sin separadores documentados: ' + nombre + '/' + riesgo)
+    lineas = [
+        '**Por qué se controla este par:** ' + par['motivo'] + '.',
+        '**Filtro numérico:** distancia ponderada ' + format(par['distancia'], '.3f') +
+        '; ' + par['lectura_filtro'] + '. No sustituye la comparación textual.',
+        '',
+    ]
+    for campo, etiqueta in (('silueta', 'Separador de silueta'),
+                           ('pose', 'Separador de pose'),
+                           ('composicion', 'Separador de composición')):
+        lineas.append('- **' + etiqueta + ':** ' + par['separadores'][campo])
+    lineas += ['', '**Fuente de los separadores:** ' + chr(96) + FUENTE_ANTI_CLONACION +
+               chr(96) + ', objetivo ' + decision['id'] + ', comparación ' + riesgo +
+               '; contrastes derivados del ADN y la matriz, sin nuevo diseño.']
+    return '\n'.join(lineas)
+
 def riesgos_nombrados(texto, todos):
     hallados = []
     for n in sorted(todos, key=lambda n: (-len(n), n)):
@@ -268,6 +330,9 @@ def tabla_separacion(nombre, riesgo, mat, adn):
         l.append(f'**Atención: {len(pegados)} de 15 ejes están dentro de un punto.** Son personajes '
                  'genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, '
                  'no de los números.')
+    detalle = detalle_separacion_documentada(nombre, riesgo, adn)
+    if detalle:
+        l += ['', detalle]
     return '\n'.join(l)
 
 def cuerpo_en_palabras(m):
@@ -536,6 +601,9 @@ def orden(nombre, adn, mat, pj):
     L.append('')
     rs = riesgos_nombrados(f['riesgos'], set(adn))
     rs = [x for x in rs if x != nombre]
+    for par in f.get('_anti_clonacion', {}).get('comparaciones', []):
+        if par['riesgo'] not in rs:
+            rs.append(par['riesgo'])
     obs = [(x, por) for x, por in IV.RIESGOS_OBSERVADOS.get(nombre, []) if x in adn]
     esp = pj.get(nombre, {}).get('espejo')
     esp_nombre = next((n for n in adn if slug(n) == esp), None) if esp else None
@@ -556,6 +624,11 @@ def orden(nombre, adn, mat, pj):
         L.append(f'**Par de Espejo: {esp_nombre}.** El módulo Espejo de los Mundos los muestra '
                  'enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple '
                  'vista. Es el par donde un parecido cuesta doble.')
+        L.append('')
+    if f.get('_anti_clonacion'):
+        L.append('**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos '
+                 'justificados y separadores de silueta, pose y composición; la prueba visual '
+                 'de silueta, pose y avatar sigue pendiente.')
         L.append('')
     if rs:
         for x in rs:

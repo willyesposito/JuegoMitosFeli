@@ -89,6 +89,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Nike.**
 
 Silueta de Nike, para no repetirla: alas grandes en V asimétrica + cuerpo inclinado hacia adelante, con contorno de velocidad.
@@ -99,6 +101,15 @@ Ejes numéricos que ya los separan: contorno superior 10 contra 6, oscuridad 3 c
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** alas expansivas y ascenso.
+**Filtro numérico:** distancia ponderada 1.207; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Fénix: alas en arco desigual + cola amplia cuyas plumas se fragmentan visualmente en fuego/ceniza. Cuerpo: ave adulta grande, de alas largas, cabeza relativamente pequeña y cola amplia. Frente a Nike: alas grandes en V asimétrica + cuerpo inclinado hacia adelante, con contorno de velocidad. Cuerpo: adulta joven; atlética ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Fénix: renace o se eleva desde ceniza; no vuelo horizontal. Frente a Nike: movimiento de llegada; manos libres o gesto de coronación sin texto. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Fénix: base de ceniza abajo y gran aire superior para la trayectoria ascendente; fuego sin convertir la escena en amenaza. Frente a Nike: nacimiento de ambas alas debe quedar limpio en la zona alta y conservar aire hacia la trayectoria. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo fenix, comparación Nike; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Iris.**
 
 Silueta de Iris, para no repetirla: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección.
@@ -106,6 +117,34 @@ Silueta de Iris, para no repetirla: telas/velo en arco + cuerpo diagonal rápido
 Pose de Iris, para no repetirla: movimiento de mensajera aérea; no carrera terrestre.
 
 Ejes numéricos que ya los separan: dependencia del identificador 1 contra 10, rareza anatómica 8 contra 1, angulosidad facial 6 contra 2, contorno superior 10 contra 7.
+
+**Por qué se controla este par:** trayectoria aérea luminosa.
+**Filtro numérico:** distancia ponderada 2.475; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Fénix: alas en arco desigual + cola amplia cuyas plumas se fragmentan visualmente en fuego/ceniza. Cuerpo: ave adulta grande, de alas largas, cabeza relativamente pequeña y cola amplia. Frente a Iris: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección. Cuerpo: adulta joven; ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Fénix: renace o se eleva desde ceniza; no vuelo horizontal. Frente a Iris: movimiento de mensajera aérea; no carrera terrestre. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Fénix: base de ceniza abajo y gran aire superior para la trayectoria ascendente; fuego sin convertir la escena en amenaza. Frente a Iris: arcoíris funciona como camino y curva compositiva, con aire delante de la trayectoria y sin encerrar la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo fenix, comparación Iris; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Pegaso.**
+
+Silueta de Pegaso, para no repetirla: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena.
+
+Pose de Pegaso, para no repetirla: vuelo o elevación controlada, no picada heroica.
+
+Ejes numéricos que ya los separan: angulosidad facial 6 contra 3, contorno superior 10 contra 7, verticalidad 10 contra 8.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** criatura alada en elevación.
+**Filtro numérico:** distancia ponderada 0.972; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Fénix: alas en arco desigual + cola amplia cuyas plumas se fragmentan visualmente en fuego/ceniza. Cuerpo: ave adulta grande, de alas largas, cabeza relativamente pequeña y cola amplia. Frente a Pegaso: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena. Cuerpo: caballo adulto de proporciones elegantes y atléticas. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Fénix: renace o se eleva desde ceniza; no vuelo horizontal. Frente a Pegaso: vuelo o elevación controlada, no picada heroica. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Fénix: base de ceniza abajo y gran aire superior para la trayectoria ascendente; fuego sin convertir la escena en amenaza. Frente a Pegaso: cuerpo completo cuando la escala lo permita; aire entre alas y borde del cuadro para no perder la firma. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo fenix, comparación Pegaso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Nike e Iris. Diferenciar por anatomía completamente aviar.
 

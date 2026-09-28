@@ -94,6 +94,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Orfeo.**
 
 | | Pan | Orfeo |
@@ -107,9 +109,18 @@ Silueta de Orfeo, para no repetirla: lira amplia cruzada en diagonal baja + homb
 
 Pose de Orfeo, para no repetirla: sentado o apoyado tocando la lira.
 
-Ejes numéricos que ya los separan: masa corporal 6 contra 3, contorno superior 9 contra 6, anchura de hombros 6 contra 3, densidad visual 6 contra 4.
+Ejes numéricos que ya los separan: masa corporal 6 contra 3, contorno superior 9 contra 6, anchura de hombros 6 contra 3, edad visual 6 contra 4.
 
-**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figura masculina baja tocando instrumento.
+**Filtro numérico:** distancia ponderada 1.436; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Pan: flauta de caña horizontal + cuerpo compacto + vegetación de bosque; no agregar patas, cuernos u otros rasgos anatómicos si la ficha visual no los autoriza expresamente. Cuerpo: adulto maduro; bajo y compacto. Frente a Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Pan: sentado o apoyado tocando la flauta. Frente a Orfeo: sentado o apoyado tocando la lira. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Pan: composición baja con bosque lateral; aire alrededor de las cañas para que el instrumento sea legible. Frente a Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo pan, comparación Orfeo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Minotauro.**
 
@@ -118,6 +129,41 @@ Silueta de Minotauro, para no repetirla: cuernos largos + hombros enormes + post
 Pose de Minotauro, para no repetirla: observa o decide camino; no carga hacia cámara.
 
 Ejes numéricos que ya los separan: dependencia del identificador 9 contra 1, rareza anatómica 1 contra 9, masa corporal 6 contra 10, escala aparente 4 contra 8.
+
+**Por qué se controla este par:** riesgo caprino/taurino ya nombrado; evitar inventar híbrido en Pan.
+**Filtro numérico:** distancia ponderada 3.408; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Pan: flauta de caña horizontal + cuerpo compacto + vegetación de bosque; no agregar patas, cuernos u otros rasgos anatómicos si la ficha visual no los autoriza expresamente. Cuerpo: adulto maduro; bajo y compacto. Frente a Minotauro: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano. Cuerpo: adulto híbrido; torso humanoide muy ancho y pesado, con piernas taurinas terminadas en pezuñas. Sin piernas ni pies humanos. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Pan: sentado o apoyado tocando la flauta. Frente a Minotauro: observa o decide camino; no carga hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Pan: composición baja con bosque lateral; aire alrededor de las cañas para que el instrumento sea legible. Frente a Minotauro: transición anatómica completa en imagen maestra; laberinto subordinado y aire alrededor de ambos cuernos. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo pan, comparación Minotauro; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Dioniso.**
+
+| | Pan | Dioniso |
+|---|---|---|
+| Cabello | castaño muy oscuro | negro |
+| Textura | rizado abundante | largo rizado suelto |
+| Piel | canela | oliva media |
+| Ojos | ámbar | marrón cálido |
+
+Silueta de Dioniso, para no repetirla: racimos/vides y tela teatral creando contorno orgánico + postura abierta de anfitrión.
+
+Pose de Dioniso, para no repetirla: una mano invita y otra sostiene máscara teatral o elemento de escena; celebración sin alcohol protagonista.
+
+Ejes numéricos que ya los separan: apertura corporal 5 contra 9, dependencia del identificador 9 contra 6, escala aparente 4 contra 6, dinamismo de pose 1 contra 3.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figura masculina artística de contorno orgánico y vegetación.
+**Filtro numérico:** distancia ponderada 1.341; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Pan: flauta de caña horizontal + cuerpo compacto + vegetación de bosque; no agregar patas, cuernos u otros rasgos anatómicos si la ficha visual no los autoriza expresamente. Cuerpo: adulto maduro; bajo y compacto. Frente a Dioniso: racimos/vides y tela teatral creando contorno orgánico + postura abierta de anfitrión. Cuerpo: adulto joven-maduro; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Pan: sentado o apoyado tocando la flauta. Frente a Dioniso: una mano invita y otra sostiene máscara teatral o elemento de escena; celebración sin alcohol protagonista. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Pan: composición baja con bosque lateral; aire alrededor de las cañas para que el instrumento sea legible. Frente a Dioniso: formas orgánicas rodean sin cerrar el cuerpo; reservar aire para el gesto de invitación. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo pan, comparación Dioniso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Orfeo y Minotauro. Diferenciar por instrumento, cuerpo compacto y entorno rústico; no sumar anatomía caprina no autorizada.
 

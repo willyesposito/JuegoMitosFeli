@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Atlas.**
 
 | | Orión | Atlas |
@@ -107,6 +109,67 @@ Silueta de Atlas, para no repetirla: arco de la bóveda celeste sobre hombros/br
 Pose de Atlas, para no repetirla: piernas muy separadas y brazos sosteniendo físicamente la bóveda.
 
 Ejes numéricos que ya los separan: verticalidad 5 contra 9, masa corporal 7 contra 10, dinamismo de pose 2 contra 5, densidad visual 6 contra 9.
+
+**Por qué se controla este par:** figuras enormes bajo cielo.
+**Filtro numérico:** distancia ponderada 2.028; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Atlas: arco de la bóveda celeste sobre hombros/brazos, una forma única que domina el contorno. Cuerpo: titán enorme; torso y brazos masivos, cabeza relativamente pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. Frente a Atlas: piernas muy separadas y brazos sosteniendo físicamente la bóveda. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Atlas: paisaje pequeño refuerza escala; la curva celeste debe quedar separada del cráneo para conservar la firma en negro puro. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo orion, comparación Atlas; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Héctor.**
+
+| | Orión | Héctor |
+|---|---|---|
+| Cabello | negro | castaño oscuro |
+| Textura | corto áspero | corto |
+| Piel | castaña media | oliva media |
+| Ojos | gris | marrón cálido |
+
+Silueta de Héctor, para no repetirla: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior.
+
+Pose de Héctor, para no repetirla: protege y contiene, no avanza ni ataca.
+
+Ejes numéricos que ya los separan: rigidez de materiales 5 contra 8, escala aparente 9 contra 7, angulosidad facial 6 contra 4.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones altos maduros fuertes; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.866; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. Frente a Héctor: protege y contiene, no avanza ni ataca. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo orion, comparación Héctor; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Eneas.**
+
+| | Orión | Eneas |
+|---|---|---|
+| Cabello | negro | castaño muy oscuro |
+| Textura | corto áspero | corto |
+| Piel | castaña media | canela |
+| Ojos | gris | gris oscuro |
+
+Silueta de Eneas, para no repetirla: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero.
+
+Pose de Eneas, para no repetirla: camina o avanza como viajero fundador, no combate.
+
+Ejes numéricos que ya los separan: dinamismo de pose 2 contra 6, dependencia del identificador 8 contra 5, rigidez de materiales 5 contra 8, escala aparente 9 contra 7.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos altos de equipo antiguo; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.095; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo orion, comparación Eneas; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Atlas. Diferenciar por altura esbelta, eje horizontal y ausencia de carga.
 

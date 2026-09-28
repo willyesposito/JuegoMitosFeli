@@ -97,6 +97,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Rómulo y Remo.**
 
 Silueta de Rómulo y Remo, para no repetirla: dos ejes corporales distintos + loba baja entre ambos o detrás; uno más ancho/frontal y el otro más delgado/lateral.
@@ -106,6 +108,49 @@ Pose de Rómulo y Remo, para no repetirla: uno señala el terreno y el otro obse
 Ejes numéricos que ya los separan: dinamismo de pose 2 contra 5, dependencia del identificador 6 contra 9, protagonismo de fondo 6 contra 9, apertura corporal 6 contra 8.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** duplas oficiales de gemelos adultos.
+**Filtro numérico:** distancia ponderada 1.302; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Cástor y Pólux: dos cuerpos paralelos con inclinaciones opuestas + dos estrellas altas separadas. Cuerpo: gemelos jóvenes con parecido familiar, uno más terrestre/robusto y otro más ligero/luminoso. Frente a Rómulo y Remo: dos ejes corporales distintos + loba baja entre ambos o detrás; uno más ancho/frontal y el otro más delgado/lateral. Cuerpo: gemelos adultos jóvenes con similitud familiar real pero no clones; contexturas deliberadamente distintas. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cástor y Pólux: ambos de pie, hombros tocándose o conectados por gesto; nunca espejo exacto. Frente a Rómulo y Remo: uno señala el terreno y el otro observa la colina; ambos coprotagonistas. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Cástor y Pólux: las dos estrellas deben quedar separadas sobre cada sujeto y ambos rostros tener aire propio. Frente a Rómulo y Remo: triángulo visual con loba baja y colina/surco subordinado; espacio suficiente entre cabezas para que el avatar no las fusione. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo castor_polux, comparación Rómulo y Remo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Las Valquirias.**
+
+Silueta de Las Valquirias, para no repetirla: tres jinetes principales en alturas distintas + armaduras brillantes + diagonales de monturas; nunca formación militar simétrica.
+
+Pose de Las Valquirias, para no repetirla: una dirige y dos completan la lectura con acciones propias; todas montadas y activas.
+
+Ejes numéricos que ya los separan: dinamismo de pose 2 contra 9, rigidez de materiales 5 contra 9, contorno superior 3 contra 6, apertura corporal 6 contra 9.
+
+**Por qué se controla este par:** colectivo que exige varias identidades en avatar.
+**Filtro numérico:** distancia ponderada 2.330; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Cástor y Pólux: dos cuerpos paralelos con inclinaciones opuestas + dos estrellas altas separadas. Cuerpo: gemelos jóvenes con parecido familiar, uno más terrestre/robusto y otro más ligero/luminoso. Frente a Las Valquirias: tres jinetes principales en alturas distintas + armaduras brillantes + diagonales de monturas; nunca formación militar simétrica. Cuerpo: tres figuras adultas con edades aparentes/contexturas diferentes para comunicar colectivo sin copias. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cástor y Pólux: ambos de pie, hombros tocándose o conectados por gesto; nunca espejo exacto. Frente a Las Valquirias: una dirige y dos completan la lectura con acciones propias; todas montadas y activas. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Cástor y Pólux: las dos estrellas deben quedar separadas sobre cada sujeto y ambos rostros tener aire propio. Frente a Las Valquirias: aurora arriba/fondo y tres niveles de altura; conservar separaciones claras entre rostros, monturas y diagonales. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo castor_polux, comparación Las Valquirias; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Cerbero.**
+
+Silueta de Cerbero, para no repetirla: tres perfiles de cabeza escalonados en altura + cuerpo único ancho.
+
+Pose de Cerbero, para no repetirla: sentado o quieto ante una entrada.
+
+Ejes numéricos que ya los separan: masa corporal 5 contra 10, oscuridad 2 contra 7, dependencia del identificador 6 contra 1, anchura de hombros 5 contra 10.
+
+**Por qué se controla este par:** múltiples focos cefálicos que deben sobrevivir juntos al avatar; control compositivo de multiplicidad, no clon anatómico.
+**Filtro numérico:** distancia ponderada 2.709; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Cástor y Pólux: dos cuerpos paralelos con inclinaciones opuestas + dos estrellas altas separadas. Cuerpo: gemelos jóvenes con parecido familiar, uno más terrestre/robusto y otro más ligero/luminoso. Frente a Cerbero: tres perfiles de cabeza escalonados en altura + cuerpo único ancho. Cuerpo: perro adulto enorme, robusto y de patas pesadas. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cástor y Pólux: ambos de pie, hombros tocándose o conectados por gesto; nunca espejo exacto. Frente a Cerbero: sentado o quieto ante una entrada. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Cástor y Pólux: las dos estrellas deben quedar separadas sobre cada sujeto y ambos rostros tener aire propio. Frente a Cerbero: escalonar las tres cabezas para evitar solapamiento; entrada subordinada y aire suficiente entre perfiles. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo castor_polux, comparación Cerbero; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Rómulo y Remo. Diferenciar por eje celeste, ausencia de loba y mayor simetría afectiva.
 

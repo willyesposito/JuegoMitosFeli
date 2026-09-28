@@ -97,6 +97,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Ares.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Thor.**
 
 | | Tyr | Thor |
@@ -114,6 +116,15 @@ Ejes numéricos que ya los separan: contorno superior 2 contra 7, apertura corpo
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** varones nórdicos fuertes que pueden converger en guardia.
+**Filtro numérico:** distancia ponderada 1.866; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Tyr: asimetría clara de brazos sin detalle gráfico + cinta de Fenrir formando una curva externa. Cuerpo: adulto maduro; fuerte pero seco. Frente a Thor: Mjölnir separado del cuerpo + capa corta o pieles que ensanchan la parte alta + piernas firmes. Cuerpo: adulto maduro; muy ancho de hombros, masa alta pero menor que Heracles. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Tyr: postura firme y voluntaria junto al lobo; no ataque ni herida explícita. Frente a Thor: martillo bajo o lateral listo pero sin golpear; cuerpo preparado, no agresivo hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Tyr: curva de la cinta separada del torso y espacio limpio entre Tyr y Fenrir. Frente a Thor: separar la cabeza del martillo de la masa del torso y reservar aire lateral; electricidad ambiental controlada. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo tyr, comparación Thor; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Ares.**
 
 | | Tyr | Ares |
@@ -123,13 +134,48 @@ Ejes numéricos que ya los separan: contorno superior 2 contra 7, apertura corpo
 | Piel | clara rosada | oliva media |
 | Ojos | azul gris | marrón muy oscuro |
 
-Silueta de Ares, para no repetirla: armadura voluminosa + postura de guardia cuadrada + arma en reposo lateral.
+Silueta de Ares, para no repetirla: casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso.
 
-Pose de Ares, para no repetirla: guardia estática y tensa; arma nunca en ataque hacia cámara.
+Pose de Ares, para no repetirla: guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara.
 
 Ejes numéricos que ya los separan: masa corporal 6 contra 9, dependencia del identificador 9 contra 6, anchura de hombros 6 contra 9, protagonismo de fondo 5 contra 2.
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** guardia de guerrero antiguo; par de Espejo.
+**Filtro numérico:** distancia ponderada 1.486; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Tyr: asimetría clara de brazos sin detalle gráfico + cinta de Fenrir formando una curva externa. Cuerpo: adulto maduro; fuerte pero seco. Frente a Ares: casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso. Cuerpo: adulto maduro; musculoso compacto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Tyr: postura firme y voluntaria junto al lobo; no ataque ni herida explícita. Frente a Ares: guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Tyr: curva de la cinta separada del torso y espacio limpio entre Tyr y Fenrir. Frente a Ares: fondo mínimo para que mande la masa corporal; lanza y escudo separados del torso y entre sí para conservar sus contornos. Mantener el rostro legible bajo el casco y evitar que el escudo lo tape. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo tyr, comparación Ares; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Sigurd.**
+
+| | Tyr | Sigurd |
+|---|---|---|
+| Cabello | rubio oscuro | castaño claro |
+| Textura | corto | medio práctico |
+| Piel | clara rosada | clara dorada |
+| Ojos | azul gris | verde gris |
+
+Silueta de Sigurd, para no repetirla: cuerpo inclinado + aves sobre un hombro + gran masa de dragón alejada en fondo.
+
+Pose de Sigurd, para no repetirla: escucha a los pájaros después del desafío; no escena de combate.
+
+Ejes numéricos que ya los separan: dependencia del identificador 9 contra 5, contorno superior 2 contra 4, protagonismo de fondo 5 contra 7.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones angulares de masa media y materiales rígidos; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.821; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Tyr: asimetría clara de brazos sin detalle gráfico + cinta de Fenrir formando una curva externa. Cuerpo: adulto maduro; fuerte pero seco. Frente a Sigurd: cuerpo inclinado + aves sobre un hombro + gran masa de dragón alejada en fondo. Cuerpo: adulto joven-maduro; atlético fuerte. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Tyr: postura firme y voluntaria junto al lobo; no ataque ni herida explícita. Frente a Sigurd: escucha a los pájaros después del desafío; no escena de combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Tyr: curva de la cinta separada del torso y espacio limpio entre Tyr y Fenrir. Frente a Sigurd: aves cerca del rostro y Fafnir subordinado en fondo para que no absorba la lectura del personaje. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo tyr, comparación Sigurd; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Thor. Diferenciar por menor masa, ausencia de martillo y gesto de sacrificio controlado.
 

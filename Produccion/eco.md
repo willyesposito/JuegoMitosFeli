@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Iris.**
 
 | | Eco | Iris |
@@ -107,6 +109,15 @@ Silueta de Iris, para no repetirla: telas/velo en arco + cuerpo diagonal rápido
 Pose de Iris, para no repetirla: movimiento de mensajera aérea; no carrera terrestre.
 
 Ejes numéricos que ya los separan: dinamismo de pose 2 contra 9, apertura corporal 4 contra 9, protagonismo de fondo 9 contra 4, dependencia del identificador 6 contra 10.
+
+**Por qué se controla este par:** mensajeras ligeras asociadas a trayectoria visible.
+**Filtro numérico:** distancia ponderada 2.352; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Eco: cuerpo parcialmente oculto por roca/vegetación + ondas de sonido rompiendo el contorno hacia dos lados. Cuerpo: adulta joven; pequeña y ligera. Frente a Iris: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección. Cuerpo: adulta joven; ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Eco: mano cerca de la boca sin gesto exagerado; cuerpo quieto. Frente a Iris: movimiento de mensajera aérea; no carrera terrestre. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Eco: reservar aire para dos o tres ondas concéntricas claras y mantener roca/vegetación subordinadas. Frente a Iris: arcoíris funciona como camino y curva compositiva, con aire delante de la trayectoria y sin encerrar la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eco, comparación Iris; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Hermes.**
 
@@ -125,6 +136,15 @@ Ejes numéricos que ya los separan: dinamismo de pose 2 contra 10, protagonismo 
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** figura de comunicación y cuerpo liviano.
+**Filtro numérico:** distancia ponderada 2.151; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Eco: cuerpo parcialmente oculto por roca/vegetación + ondas de sonido rompiendo el contorno hacia dos lados. Cuerpo: adulta joven; pequeña y ligera. Frente a Hermes: sandalias aladas abajo + paso largo + caduceo en alto en la mano adelantada mientras el otro brazo va en carrera, con diagonal corporal limpia. Cuerpo: adulto joven; delgado y elástico. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Eco: mano cerca de la boca sin gesto exagerado; cuerpo quieto. Frente a Hermes: carrera terrestre, no vuelo frontal. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Eco: reservar aire para dos o tres ondas concéntricas claras y mantener roca/vegetación subordinadas. Frente a Hermes: fondo barrido y simple; aire por delante de la carrera y suficiente margen abajo para que las sandalias entren completas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eco, comparación Hermes; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Narciso.**
 
 | | Eco | Narciso |
@@ -141,6 +161,15 @@ Pose de Narciso, para no repetirla: agachado mirando el reflejo.
 Ejes numéricos que ya los separan: verticalidad 5 contra 2, apertura corporal 4 contra 2, oscuridad 4 contra 2, protagonismo de fondo 9 contra 7.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figuras humanas leves ligadas a entorno íntimo; Espejo.
+**Filtro numérico:** distancia ponderada 1.101; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Eco: cuerpo parcialmente oculto por roca/vegetación + ondas de sonido rompiendo el contorno hacia dos lados. Cuerpo: adulta joven; pequeña y ligera. Frente a Narciso: cuerpo inclinado sobre agua + reflejo creando una segunda forma invertida + flor pequeña cerca del borde. Cuerpo: adulto joven; delgado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Eco: mano cerca de la boca sin gesto exagerado; cuerpo quieto. Frente a Narciso: agachado mirando el reflejo. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Eco: reservar aire para dos o tres ondas concéntricas claras y mantener roca/vegetación subordinadas. Frente a Narciso: composición vertical duplicada por el agua; reservar superficie limpia para que el reflejo sea legible. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eco, comparación Narciso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Iris, Hermes y Narciso. Diferenciar por quietud, ausencia de objeto y sonido como forma gráfica principal.
 

@@ -95,6 +95,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Héctor.**
 
 | | Eneas | Héctor |
@@ -112,6 +114,15 @@ Ejes numéricos que ya los separan: angulosidad facial 7 contra 4, dinamismo de 
 
 **Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** adultos fuertes con equipo antiguo; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.844; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Eneas: camina o avanza como viajero fundador, no combate. Frente a Héctor: protege y contiene, no avanza ni ataca. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eneas, comparación Héctor; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Agamenón.**
 
 | | Eneas | Agamenón |
@@ -128,6 +139,67 @@ Pose de Agamenón, para no repetirla: cetro bajo y mano extendida hacia una flot
 Ejes numéricos que ya los separan: dinamismo de pose 6 contra 3, verticalidad 5 contra 8, dependencia del identificador 5 contra 8, apertura corporal 5 contra 7.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos con equipo antiguo y contexto de expedición.
+**Filtro numérico:** distancia ponderada 1.117; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Agamenón: cetro vertical + capa pesada + pecho ancho, con composición de comandante. Cuerpo: adulto maduro; robusto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Eneas: camina o avanza como viajero fundador, no combate. Frente a Agamenón: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Agamenón: flota en segundo plano y aire hacia la mano que dirige; evitar que el cetro quede al pecho como plantilla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eneas, comparación Agamenón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Hefesto.**
+
+| | Eneas | Hefesto |
+|---|---|---|
+| Cabello | castaño muy oscuro ⚠ igual | castaño muy oscuro |
+| Textura | corto | corto áspero |
+| Piel | canela | canela con hollín |
+| Ojos | gris oscuro | ámbar |
+
+Silueta de Hefesto, para no repetirla: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico.
+
+Pose de Hefesto, para no repetirla: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir.
+
+Ejes numéricos que ya los separan: oscuridad 4 contra 6, dependencia del identificador 5 contra 7.
+
+**Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos robustos y materiales rígidos; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.821; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Cuerpo: adulto maduro; torso robusto y brazos de trabajador. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Eneas: camina o avanza como viajero fundador, no combate. Frente a Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eneas, comparación Hefesto; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Aquiles.**
+
+| | Eneas | Aquiles |
+|---|---|---|
+| Cabello | castaño muy oscuro | rubio miel |
+| Textura | corto | ondulado suave |
+| Piel | canela | clara dorada |
+| Ojos | gris oscuro | gris |
+
+Silueta de Aquiles, para no repetirla: escudo grande desplazado + piernas largas + torso inclinado hacia adelante, con sensación de velocidad incluso quieto.
+
+Pose de Aquiles, para no repetirla: pausa tensa como a punto de moverse; evitar combate directo.
+
+Ejes numéricos que ya los separan: contorno superior 2 contra 6, protagonismo de fondo 8 contra 4, edad visual 7 contra 4, dependencia del identificador 5 contra 7.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** atléticos equipados; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.894; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Aquiles: escudo grande desplazado + piernas largas + torso inclinado hacia adelante, con sensación de velocidad incluso quieto. Cuerpo: adulto joven; musculatura definida pero más estilizada que Heracles. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Eneas: camina o avanza como viajero fundador, no combate. Frente a Aquiles: pausa tensa como a punto de moverse; evitar combate directo. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Aquiles: mantener visible el talón en la imagen completa sin convertirlo en único foco; aire delante del eje corporal para sostener la sensación de impulso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eneas, comparación Aquiles; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Héctor y Agamenón. Diferenciar por condición de viajero fundador, eje de marcha y vocabulario romano preimperial.
 

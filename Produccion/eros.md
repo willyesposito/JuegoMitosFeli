@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Artemisa.**
 
 | | Eros | Artemisa |
@@ -107,6 +109,15 @@ Silueta de Artemisa, para no repetirla: arco largo rompiendo un lateral + cuerpo
 Pose de Artemisa, para no repetirla: arco en reposo hacia abajo; calma vigilante, no disparo ni combate.
 
 Ejes numéricos que ya los separan: protagonismo de fondo 2 contra 6, angulosidad facial 2 contra 5, apertura corporal 7 contra 4, dinamismo de pose 6 contra 3.
+
+**Por qué se controla este par:** arco en figura humana ligera.
+**Filtro numérico:** distancia ponderada 1.821; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Eros: arco curvo + flecha diagonal + cuerpo ligero; alas sólo si ya están autorizadas por la implementación visual del personaje. Cuerpo: adulto joven de aspecto claramente juvenil pero no infantil; delgado. Frente a Artemisa: arco largo rompiendo un lateral + cuerpo de cazadora en eje diagonal + capa corta o faldón práctico. Cuerpo: adulta joven; atlética ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Eros: apunta sin tensión bélica; gesto travieso-amable. Frente a Artemisa: arco en reposo hacia abajo; calma vigilante, no disparo ni combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Eros: dejar aire delante de la flecha; evitar que arco y cuerpo formen una masa cerrada. Frente a Artemisa: espacio negativo claro delante de la mirada; el arco debe romper el contorno sin encerrarla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eros, comparación Artemisa; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Psique.**
 
@@ -124,6 +135,41 @@ Pose de Psique, para no repetirla: avanza entre pruebas con cautela y perseveran
 Ejes numéricos que ya los separan: protagonismo de fondo 2 contra 7, contorno superior 4 contra 6, apertura corporal 7 contra 5, dinamismo de pose 6 contra 4.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** juventud ligera y vínculo narrativo; Espejo.
+**Filtro numérico:** distancia ponderada 1.050; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Eros: arco curvo + flecha diagonal + cuerpo ligero; alas sólo si ya están autorizadas por la implementación visual del personaje. Cuerpo: adulto joven de aspecto claramente juvenil pero no infantil; delgado. Frente a Psique: mariposa o motivo de mariposa cerca del hombro + postura de avance cauteloso. Cuerpo: adulta joven; delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Eros: apunta sin tensión bélica; gesto travieso-amable. Frente a Psique: avanza entre pruebas con cautela y perseverancia. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Eros: dejar aire delante de la flecha; evitar que arco y cuerpo formen una masa cerrada. Frente a Psique: dejar aire en la dirección de avance; pruebas se sugieren de forma abstracta y no saturan el fondo. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eros, comparación Psique; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Hermes.**
+
+| | Eros | Hermes |
+|---|---|---|
+| Cabello | castaño claro | cobrizo |
+| Textura | rizado abierto ⚠ igual | rizado abierto |
+| Piel | clara neutra | clara dorada con pecas |
+| Ojos | azul claro | verde oliva |
+
+Silueta de Hermes, para no repetirla: sandalias aladas abajo + paso largo + caduceo en alto en la mano adelantada mientras el otro brazo va en carrera, con diagonal corporal limpia. **Corrección del 2026-09-14:** decía "brazos opuestos en carrera", o sea los dos puños cerrados, y eso dejaba a Hermes sin mano para el caduceo. Tres imágenes seguidas salieron sin él resolviendo el choque a favor de la silueta, que es lo que la orden manda. El brazo que lleva el caduceo conserva el contrabalanceo de la carrera; no es una pose de presentación.
+
+Pose de Hermes, para no repetirla: carrera terrestre, no vuelo frontal.
+
+Ejes numéricos que ya los separan: dinamismo de pose 6 contra 10.
+
+**Atención: 14 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones juveniles ligeros de acción dinámica.
+**Filtro numérico:** distancia ponderada 0.933; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Eros: arco curvo + flecha diagonal + cuerpo ligero; alas sólo si ya están autorizadas por la implementación visual del personaje. Cuerpo: adulto joven de aspecto claramente juvenil pero no infantil; delgado. Frente a Hermes: sandalias aladas abajo + paso largo + caduceo en alto en la mano adelantada mientras el otro brazo va en carrera, con diagonal corporal limpia. Cuerpo: adulto joven; delgado y elástico. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Eros: apunta sin tensión bélica; gesto travieso-amable. Frente a Hermes: carrera terrestre, no vuelo frontal. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Eros: dejar aire delante de la flecha; evitar que arco y cuerpo formen una masa cerrada. Frente a Hermes: fondo barrido y simple; aire por delante de la carrera y suficiente margen abajo para que las sandalias entren completas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eros, comparación Hermes; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Artemisa y Psique. Diferenciar de Artemisa por escala corporal y energía juguetona; de Psique por arco protagonista.
 

@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Medea.**
 
 | | Casandra | Medea |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: apertura corporal 8 contra 3, contorno super
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** mujeres angulares con manos activas; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.263; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Casandra: cuerpo inclinado hacia adelante + una mano señalando lejos + otra abierta en frustración contenida. Cuerpo: adulta joven; delgada. Frente a Medea: cuerpo bajo y calculador + manos activas cerca de una solución mágica/táctica + telas cerradas. Cuerpo: adulta joven-madura; delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Casandra: advertencia activa mediante mirada y manos; ninguna magia lanzada. Frente a Medea: agachada o inclinada resolviendo la situación del dragón dormido; no pose de hechicera genérica hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Casandra: reservar espacio en la dirección señalada para que la advertencia tenga destino visual; Troya queda como contexto. Frente a Medea: el foco está en la relación entre manos, solución y problema; mantener el dragón subordinado y no terrorífico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo casandra, comparación Medea; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Helena.**
 
 | | Casandra | Helena |
@@ -126,6 +137,41 @@ Pose de Helena, para no repetirla: quietud contemplativa con mirada lejana; atm�
 Ejes numéricos que ya los separan: angulosidad facial 8 contra 3, apertura corporal 8 contra 3, dinamismo de pose 6 contra 1, verticalidad 6 contra 9.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres troyanas de contorno largo y gesto contenido.
+**Filtro numérico:** distancia ponderada 1.961; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Casandra: cuerpo inclinado hacia adelante + una mano señalando lejos + otra abierta en frustración contenida. Cuerpo: adulta joven; delgada. Frente a Helena: telas amplias y verticales + postura casi inmóvil; sin depender de accesorios de belleza. Cuerpo: adulta joven-madura; alta y esbelta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Casandra: advertencia activa mediante mirada y manos; ninguna magia lanzada. Frente a Helena: quietud contemplativa con mirada lejana; atmósfera de consecuencia, no romance. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Casandra: reservar espacio en la dirección señalada para que la advertencia tenga destino visual; Troya queda como contexto. Frente a Helena: velas o arquitectura de Troya muy subordinadas; mucho aire alrededor de una figura austera. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo casandra, comparación Helena; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Ariadna.**
+
+| | Casandra | Ariadna |
+|---|---|---|
+| Cabello | negro | castaño claro |
+| Textura | lacio largo de poco volumen | ondulado medio |
+| Piel | oliva media ⚠ igual | oliva media |
+| Ojos | marrón muy oscuro | avellana |
+
+Silueta de Ariadna, para no repetirla: ovillo redondo en una mano + hilo largo dibujando curva externa + postura de guía.
+
+Pose de Ariadna, para no repetirla: entrega o sigue el hilo hacia fuera del cuadro; guía desde la solución.
+
+Ejes numéricos que ya los separan: dependencia del identificador 3 contra 9, angulosidad facial 8 contra 4, oscuridad 7 contra 3, contorno superior 6 contra 4.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** gesto de guía/advertencia hacia fuera de cuadro.
+**Filtro numérico:** distancia ponderada 1.441; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Casandra: cuerpo inclinado hacia adelante + una mano señalando lejos + otra abierta en frustración contenida. Cuerpo: adulta joven; delgada. Frente a Ariadna: ovillo redondo en una mano + hilo largo dibujando curva externa + postura de guía. Cuerpo: adulta joven; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Casandra: advertencia activa mediante mirada y manos; ninguna magia lanzada. Frente a Ariadna: entrega o sigue el hilo hacia fuera del cuadro; guía desde la solución. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Casandra: reservar espacio en la dirección señalada para que la advertencia tenga destino visual; Troya queda como contexto. Frente a Ariadna: laberinto queda como patrón bajo y el hilo cruza aire limpio para ser legible. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo casandra, comparación Ariadna; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Medea y Helena. Diferenciar por ausencia de magia activa, cuerpo proyectado hacia adelante y urgencia inequívoca.
 

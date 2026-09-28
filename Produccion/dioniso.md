@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Apolo.**
 
 | | Dioniso | Apolo |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: contorno superior 9 contra 5, apertura corpo
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** varones ligados a actuación artística.
+**Filtro numérico:** distancia ponderada 1.849; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dioniso: racimos/vides y tela teatral creando contorno orgánico + postura abierta de anfitrión. Cuerpo: adulto joven-maduro; contextura media. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dioniso: una mano invita y otra sostiene máscara teatral o elemento de escena; celebración sin alcohol protagonista. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dioniso: formas orgánicas rodean sin cerrar el cuerpo; reservar aire para el gesto de invitación. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dioniso, comparación Apolo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Orfeo.**
 
 | | Dioniso | Orfeo |
@@ -126,6 +137,41 @@ Pose de Orfeo, para no repetirla: sentado o apoyado tocando la lira.
 Ejes numéricos que ya los separan: apertura corporal 9 contra 4, densidad visual 8 contra 4, contorno superior 9 contra 6, dependencia del identificador 6 contra 9.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figura artística rodeada por respuesta del entorno.
+**Filtro numérico:** distancia ponderada 1.547; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dioniso: racimos/vides y tela teatral creando contorno orgánico + postura abierta de anfitrión. Cuerpo: adulto joven-maduro; contextura media. Frente a Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dioniso: una mano invita y otra sostiene máscara teatral o elemento de escena; celebración sin alcohol protagonista. Frente a Orfeo: sentado o apoyado tocando la lira. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dioniso: formas orgánicas rodean sin cerrar el cuerpo; reservar aire para el gesto de invitación. Frente a Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dioniso, comparación Orfeo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Pan.**
+
+| | Dioniso | Pan |
+|---|---|---|
+| Cabello | negro | castaño muy oscuro |
+| Textura | largo rizado suelto | rizado abundante |
+| Piel | oliva media | canela |
+| Ojos | marrón cálido | ámbar |
+
+Silueta de Pan, para no repetirla: flauta de caña horizontal + cuerpo compacto + vegetación de bosque; no agregar patas, cuernos u otros rasgos anatómicos si la ficha visual no los autoriza expresamente.
+
+Pose de Pan, para no repetirla: sentado o apoyado tocando la flauta.
+
+Ejes numéricos que ya los separan: apertura corporal 9 contra 5, dependencia del identificador 6 contra 9, escala aparente 6 contra 4, dinamismo de pose 3 contra 1.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** músicos con contorno orgánico y contexto vegetal.
+**Filtro numérico:** distancia ponderada 1.341; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dioniso: racimos/vides y tela teatral creando contorno orgánico + postura abierta de anfitrión. Cuerpo: adulto joven-maduro; contextura media. Frente a Pan: flauta de caña horizontal + cuerpo compacto + vegetación de bosque; no agregar patas, cuernos u otros rasgos anatómicos si la ficha visual no los autoriza expresamente. Cuerpo: adulto maduro; bajo y compacto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dioniso: una mano invita y otra sostiene máscara teatral o elemento de escena; celebración sin alcohol protagonista. Frente a Pan: sentado o apoyado tocando la flauta. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dioniso: formas orgánicas rodean sin cerrar el cuerpo; reservar aire para el gesto de invitación. Frente a Pan: composición baja con bosque lateral; aire alrededor de las cañas para que el instrumento sea legible. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dioniso, comparación Pan; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Apolo y Orfeo. Diferenciar por energía social, cabello más suelto y formas orgánicas, no pose artística íntima ni lira protagonista.
 

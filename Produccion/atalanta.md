@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Artemisa.**
 
 | | Atalanta | Artemisa |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: dinamismo de pose 10 contra 3, apertura corp
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** cazadoras jóvenes con arco.
+**Filtro numérico:** distancia ponderada 1.369; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Atalanta: piernas largas en carrera + arco bajo + una manzana de oro como punto lateral. Cuerpo: adulta joven; atlética ligera. Frente a Artemisa: arco largo rompiendo un lateral + cuerpo de cazadora en eje diagonal + capa corta o faldón práctico. Cuerpo: adulta joven; atlética ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Atalanta: cuerpo inclinado en carrera física; arco bajo, no en uso. Frente a Artemisa: arco en reposo hacia abajo; calma vigilante, no disparo ni combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Atalanta: composición baja/horizontal dentro del 3:4; tres manzanas pueden formar trayectoria sin dominar. Frente a Artemisa: espacio negativo claro delante de la mirada; el arco debe romper el contorno sin encerrarla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo atalanta, comparación Artemisa; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Hermes.**
 
 | | Atalanta | Hermes |
@@ -126,6 +137,41 @@ Pose de Hermes, para no repetirla: carrera terrestre, no vuelo frontal.
 Ejes numéricos que ya los separan: contorno superior 2 contra 4, densidad visual 7 contra 5, rigidez de materiales 6 contra 4.
 
 **Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** corredores ligeros de máximo dinamismo.
+**Filtro numérico:** distancia ponderada 0.860; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Atalanta: piernas largas en carrera + arco bajo + una manzana de oro como punto lateral. Cuerpo: adulta joven; atlética ligera. Frente a Hermes: sandalias aladas abajo + paso largo + caduceo en alto en la mano adelantada mientras el otro brazo va en carrera, con diagonal corporal limpia. Cuerpo: adulto joven; delgado y elástico. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Atalanta: cuerpo inclinado en carrera física; arco bajo, no en uso. Frente a Hermes: carrera terrestre, no vuelo frontal. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Atalanta: composición baja/horizontal dentro del 3:4; tres manzanas pueden formar trayectoria sin dominar. Frente a Hermes: fondo barrido y simple; aire por delante de la carrera y suficiente margen abajo para que las sandalias entren completas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo atalanta, comparación Hermes; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Iris.**
+
+| | Atalanta | Iris |
+|---|---|---|
+| Cabello | negro | castaño claro |
+| Textura | crespo recogido alto | largo recogido parcialmente |
+| Piel | castaña media | canela |
+| Ojos | marrón muy oscuro | avellana |
+
+Silueta de Iris, para no repetirla: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección.
+
+Pose de Iris, para no repetirla: movimiento de mensajera aérea; no carrera terrestre.
+
+Ejes numéricos que ya los separan: contorno superior 2 contra 7, verticalidad 4 contra 8, rigidez de materiales 6 contra 2, angulosidad facial 4 contra 2.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** trayectoria veloz lateral/diagonal de figura ligera.
+**Filtro numérico:** distancia ponderada 1.497; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Atalanta: piernas largas en carrera + arco bajo + una manzana de oro como punto lateral. Cuerpo: adulta joven; atlética ligera. Frente a Iris: telas/velo en arco + cuerpo diagonal rápido + arcoíris acompañando la dirección. Cuerpo: adulta joven; ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Atalanta: cuerpo inclinado en carrera física; arco bajo, no en uso. Frente a Iris: movimiento de mensajera aérea; no carrera terrestre. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Atalanta: composición baja/horizontal dentro del 3:4; tres manzanas pueden formar trayectoria sin dominar. Frente a Iris: arcoíris funciona como camino y curva compositiva, con aire delante de la trayectoria y sin encerrar la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo atalanta, comparación Iris; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Artemisa y Hermes. Diferenciar por carrera humana atlética, manzanas y arco bajo, no vigilancia estática ni sandalias aladas.
 

@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Penélope.**
 
 | | Aracne | Penélope |
@@ -109,6 +111,63 @@ Pose de Penélope, para no repetirla: trabajando con el hilo, sentada o de pie l
 Ejes numéricos que ya los separan: angulosidad facial 7 contra 2, edad visual 4 contra 7, oscuridad 6 contra 3, rareza anatómica 4 contra 1.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** trabajo de manos ante telar.
+**Filtro numérico:** distancia ponderada 1.587; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Aracne: telar diagonal + hilos saliendo del marco corporal + pequeña araña/patrón radial rompiendo el contorno. Cuerpo: adulta joven; contextura pequeña. Frente a Penélope: telar formando un marco vertical parcial + brazos ocupados a distinta altura. Cuerpo: adulta madura; contextura media-pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Aracne: trabaja con precisión, con manos separadas en tareas distintas. Frente a Penélope: trabajando con el hilo, sentada o de pie lateral; mirada fuera de cuadro en una pausa pensativa. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Aracne: hilos crean geometría radial sin tapar rostro; telar ocupa una diagonal y deja un área limpia opuesta. Frente a Penélope: telar estructura la imagen sin encerrar por completo el cuerpo; escena doméstica activa, no pasiva. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo aracne, comparación Penélope; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Dafne.**
+
+| | Aracne | Dafne |
+|---|---|---|
+| Cabello | castaño oscuro | castaño claro |
+| Textura | recogido alto | largo mezclándose con hojas |
+| Piel | oliva clara | clara dorada |
+| Ojos | gris | verde oliva |
+
+Silueta de Dafne, para no repetirla: brazos convertidos en ramas + pies/parte baja en raíces, con transición clara y no terrorífica.
+
+Pose de Dafne, para no repetirla: el cuerpo crece y se transforma, en vez de huir.
+
+Ejes numéricos que ya los separan: contorno superior 1 contra 9, dependencia del identificador 8 contra 2, angulosidad facial 7 contra 3, verticalidad 5 contra 9.
+
+**Por qué se controla este par:** transformación femenina y contorno orgánico añadido.
+**Filtro numérico:** distancia ponderada 2.402; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Aracne: telar diagonal + hilos saliendo del marco corporal + pequeña araña/patrón radial rompiendo el contorno. Cuerpo: adulta joven; contextura pequeña. Frente a Dafne: brazos convertidos en ramas + pies/parte baja en raíces, con transición clara y no terrorífica. Cuerpo: adulta joven; delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Aracne: trabaja con precisión, con manos separadas en tareas distintas. Frente a Dafne: el cuerpo crece y se transforma, en vez de huir. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Aracne: hilos crean geometría radial sin tapar rostro; telar ocupa una diagonal y deja un área limpia opuesta. Frente a Dafne: río/bosque simple; ramas deben abrirse hacia aire limpio y raíces quedar completas en la imagen maestra. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo aracne, comparación Dafne; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Medusa.**
+
+| | Aracne | Medusa |
+|---|---|---|
+| Cabello | castaño oscuro | serpientes en lugar de cabello |
+| Textura | recogido alto | volúmenes y direcciones diferenciadas |
+| Piel | oliva clara | oliva media |
+| Ojos | gris | ámbar |
+
+Silueta de Medusa, para no repetirla: cabello de serpientes como firma total, con cabezas orientadas en direcciones variadas para evitar casco simétrico.
+
+Pose de Medusa, para no repetirla: quietud controlada; nunca amenaza dirigida a cámara.
+
+Ejes numéricos que ya los separan: contorno superior 1 contra 10, dependencia del identificador 8 contra 2, edad visual 4 contra 7, rareza anatómica 4 contra 7.
+
+**Por qué se controla este par:** figura femenina con transformación anatómica identificatoria.
+**Filtro numérico:** distancia ponderada 2.374; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Aracne: telar diagonal + hilos saliendo del marco corporal + pequeña araña/patrón radial rompiendo el contorno. Cuerpo: adulta joven; contextura pequeña. Frente a Medusa: cabello de serpientes como firma total, con cabezas orientadas en direcciones variadas para evitar casco simétrico. Cuerpo: adulta madura; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Aracne: trabaja con precisión, con manos separadas en tareas distintas. Frente a Medusa: quietud controlada; nunca amenaza dirigida a cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Aracne: hilos crean geometría radial sin tapar rostro; telar ocupa una diagonal y deja un área limpia opuesta. Frente a Medusa: piedras en fondo como pista y aire alrededor de las serpientes para que cada masa se lea; cero horror. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo aracne, comparación Medusa; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Penélope. Diferenciar por tensión competitiva, geometría radial y araña.
 

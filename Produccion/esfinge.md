@@ -89,6 +89,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Medusa.**
 
 Silueta de Medusa, para no repetirla: cabello de serpientes como firma total, con cabezas orientadas en direcciones variadas para evitar casco simétrico.
@@ -98,6 +100,53 @@ Pose de Medusa, para no repetirla: quietud controlada; nunca amenaza dirigida a 
 Ejes numéricos que ya los separan: contorno superior 5 contra 10, angulosidad facial 5 contra 8, rigidez de materiales 5 contra 2, masa corporal 7 contra 5.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figura femenina fantástica detenida y mirada no dirigida al espectador.
+**Filtro numérico:** distancia ponderada 1.570; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Esfinge: cabeza humana alta + pecho y patas de león en reposo; no sumar alas si no están autorizadas. Cuerpo: figura híbrida adulta; cuerpo de león robusto y presencia majestuosa. Frente a Medusa: cabello de serpientes como firma total, con cabezas orientadas en direcciones variadas para evitar casco simétrico. Cuerpo: adulta madura; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Esfinge: mira con curiosidad a quien responde; quietud de acertijo, no amenaza. Frente a Medusa: quietud controlada; nunca amenaza dirigida a cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Esfinge: camino bloqueado queda visible y el cuerpo leonino debe leerse completo; aire alrededor del rostro humano. Frente a Medusa: piedras en fondo como pista y aire alrededor de las serpientes para que cada masa se lea; cero horror. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo esfinge, comparación Medusa; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Quirón.**
+
+Silueta de Quirón, para no repetirla: cuerpo de centauro + arco o instrumento de enseñanza en diagonal + postura abierta de maestro.
+
+Pose de Quirón, para no repetirla: enseña o indica; no corre.
+
+Ejes numéricos que ya los separan: apertura corporal 3 contra 7, oscuridad 6 contra 3, escala aparente 6 contra 8.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** rostro humano sobre cuerpo cuadrúpedo híbrido.
+**Filtro numérico:** distancia ponderada 0.944; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Esfinge: cabeza humana alta + pecho y patas de león en reposo; no sumar alas si no están autorizadas. Cuerpo: figura híbrida adulta; cuerpo de león robusto y presencia majestuosa. Frente a Quirón: cuerpo de centauro + arco o instrumento de enseñanza en diagonal + postura abierta de maestro. Cuerpo: parte humana de adulto mayor con torso atlético moderado; parte equina completa y estable. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Esfinge: mira con curiosidad a quien responde; quietud de acertijo, no amenaza. Frente a Quirón: enseña o indica; no corre. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Esfinge: camino bloqueado queda visible y el cuerpo leonino debe leerse completo; aire alrededor del rostro humano. Frente a Quirón: espacio negativo frente al gesto docente; cuerpo equino completo para que la hibridez no quede escondida. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo esfinge, comparación Quirón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Minotauro.**
+
+Silueta de Minotauro, para no repetirla: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano.
+
+Pose de Minotauro, para no repetirla: observa o decide camino; no carga hacia cámara.
+
+Ejes numéricos que ya los separan: masa corporal 7 contra 10, anchura de hombros 7 contra 10, escala aparente 6 contra 8, angulosidad facial 5 contra 7.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** híbridos masivos detenidos.
+**Filtro numérico:** distancia ponderada 1.101; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Esfinge: cabeza humana alta + pecho y patas de león en reposo; no sumar alas si no están autorizadas. Cuerpo: figura híbrida adulta; cuerpo de león robusto y presencia majestuosa. Frente a Minotauro: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano. Cuerpo: adulto híbrido; torso humanoide muy ancho y pesado, con piernas taurinas terminadas en pezuñas. Sin piernas ni pies humanos. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Esfinge: mira con curiosidad a quien responde; quietud de acertijo, no amenaza. Frente a Minotauro: observa o decide camino; no carga hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Esfinge: camino bloqueado queda visible y el cuerpo leonino debe leerse completo; aire alrededor del rostro humano. Frente a Minotauro: transición anatómica completa en imagen maestra; laberinto subordinado y aire alrededor de ambos cuernos. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo esfinge, comparación Minotauro; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Medusa. Diferenciar por quietud pétrea, anatomía leonina y ausencia de serpientes.
 

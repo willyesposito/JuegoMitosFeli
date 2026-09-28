@@ -99,6 +99,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Hera.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Hera.**
 
 | | Frigg | Hera |
@@ -115,6 +117,67 @@ Pose de Hera, para no repetirla: una mano relajada y otra sobre el manto; cero g
 Ejes numéricos que ya los separan: densidad visual 3 contra 8, dependencia del identificador 2 contra 7, apertura corporal 2 contra 5, protagonismo de fondo 2 contra 5.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** autoridad femenina madura de eje vertical.
+**Filtro numérico:** distancia ponderada 1.341; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Hera: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno. Cuerpo: adulta madura; alta y de postura regia. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hera: pavo real lateral para quebrar la verticalidad sin competir con el rostro; fondo contenido. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo frigg, comparación Hera; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Casiopea.**
+
+| | Frigg | Casiopea |
+|---|---|---|
+| Cabello | rubio ceniza con canas | negro |
+| Textura | trenzas simples | estructurado alto |
+| Piel | clara rosada | castaña media |
+| Ojos | azul gris | ámbar |
+
+Silueta de Casiopea, para no repetirla: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles.
+
+Pose de Casiopea, para no repetirla: quietud orgullosa sobre el trono.
+
+Ejes numéricos que ya los separan: protagonismo de fondo 2 contra 9, dependencia del identificador 2 contra 7, densidad visual 3 contra 7, verticalidad 9 contra 6.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres maduras contenidas; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.168; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. Frente a Casiopea: quietud orgullosa sobre el trono. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo frigg, comparación Casiopea; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Hel.**
+
+| | Frigg | Hel |
+|---|---|---|
+| Cabello | rubio ceniza con canas | negro |
+| Textura | trenzas simples | lacio contenido |
+| Piel | clara rosada | muy pálida |
+| Ojos | azul gris | gris muy claro |
+
+Silueta de Hel, para no repetirla: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco.
+
+Pose de Hel, para no repetirla: manos bajas y ordenadas; sensación administrativa y justa, no siniestra.
+
+Ejes numéricos que ya los separan: oscuridad 4 contra 9, protagonismo de fondo 2 contra 6, masa corporal 4 contra 2, angulosidad facial 7 contra 9.
+
+**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres maduras cerradas y verticales; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.279; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Cuerpo: adulta madura; alta y muy delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. Frente a Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo frigg, comparación Hel; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Hera. Diferenciar por ausencia de animal/regalia, menor densidad y energía silenciosa.
 

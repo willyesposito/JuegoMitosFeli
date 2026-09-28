@@ -95,6 +95,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Atlas.**
 
 | | Cronos | Atlas |
@@ -111,6 +113,67 @@ Pose de Atlas, para no repetirla: piernas muy separadas y brazos sosteniendo fí
 Ejes numéricos que ya los separan: dependencia del identificador 3 contra 10, dinamismo de pose 1 contra 5, contorno superior 7 contra 4, protagonismo de fondo 5 contra 8.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figuras monumentales pesadas.
+**Filtro numérico:** distancia ponderada 1.765; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Atlas: arco de la bóveda celeste sobre hombros/brazos, una forma única que domina el contorno. Cuerpo: titán enorme; torso y brazos masivos, cabeza relativamente pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cronos: cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo. Frente a Atlas: piernas muy separadas y brazos sosteniendo físicamente la bóveda. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Cronos: manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo. Frente a Atlas: paisaje pequeño refuerza escala; la curva celeste debe quedar separada del cráneo para conservar la firma en negro puro. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo cronos, comparación Atlas; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Odín.**
+
+| | Cronos | Odín |
+|---|---|---|
+| Cabello | gris oscuro | blanco |
+| Textura | amplio | lacio largo |
+| Piel | oliva clara | clara curtida |
+| Ojos | negro | azul gris |
+
+Silueta de Odín, para no repetirla: dos cuervos en alturas distintas + cuerpo vertical fino + capa larga.
+
+Pose de Odín, para no repetirla: una mano cerca del rostro y otra baja; observa más de lo que manda.
+
+Ejes numéricos que ya los separan: masa corporal 9 contra 5, dependencia del identificador 3 contra 7, anchura de hombros 9 contra 5, escala aparente 10 contra 8.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones ancianos verticales de baja acción.
+**Filtro numérico:** distancia ponderada 1.436; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Odín: dos cuervos en alturas distintas + cuerpo vertical fino + capa larga. Cuerpo: adulto mayor vigoroso; alto y estrecho. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cronos: cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo. Frente a Odín: una mano cerca del rostro y otra baja; observa más de lo que manda. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Cronos: manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo. Frente a Odín: mantener a los cuervos separados entre sí y del rostro; verticalidad fina y aire alrededor de la capa para evitar el triángulo hombros-barba de Zeus. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo cronos, comparación Odín; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Hades.**
+
+| | Cronos | Hades |
+|---|---|---|
+| Cabello | gris oscuro | negro |
+| Textura | amplio | lacio ordenado |
+| Piel | oliva clara | clara neutra |
+| Ojos | negro | gris |
+
+Silueta de Hades, para no repetirla: cuerpo casi columnar + manto pesado cerrado + casco de invisibilidad sostenido a un costado cuando llevarlo puesto perjudique el rostro.
+
+Pose de Hades, para no repetirla: manos controladas y cuerpo quieto; autoridad cerrada sin gesto expansivo.
+
+Ejes numéricos que ya los separan: contorno superior 7 contra 3, densidad visual 8 contra 4, masa corporal 9 contra 6, dependencia del identificador 3 contra 6.
+
+**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** autoridad masculina cerrada, vertical y severa.
+**Filtro numérico:** distancia ponderada 1.665; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Hades: cuerpo casi columnar + manto pesado cerrado + casco de invisibilidad sostenido a un costado cuando llevarlo puesto perjudique el rostro. Cuerpo: adulto maduro; alto pero menos ancho que Zeus y Poseidón. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cronos: cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo. Frente a Hades: manos controladas y cuerpo quieto; autoridad cerrada sin gesto expansivo. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Cronos: manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo. Frente a Hades: fondo subterráneo simple, luminosidad mineral baja y espacio limpio alrededor de la figura; nada terrorífico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo cronos, comparación Hades; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Atlas. Diferenciar por no cargar el cielo, postura cerrada de autoridad y silueta más bloque que arco de esfuerzo.
 

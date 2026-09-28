@@ -99,6 +99,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Hades.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Hades.**
 
 | | Hel | Hades |
@@ -116,6 +118,15 @@ Ejes numéricos que ya los separan: masa corporal 2 contra 6, anchura de hombros
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** autoridad del inframundo de eje vertical.
+**Filtro numérico:** distancia ponderada 1.006; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Cuerpo: adulta madura; alta y muy delgada. Frente a Hades: cuerpo casi columnar + manto pesado cerrado + casco de invisibilidad sostenido a un costado cuando llevarlo puesto perjudique el rostro. Cuerpo: adulto maduro; alto pero menos ancho que Zeus y Poseidón. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Frente a Hades: manos controladas y cuerpo quieto; autoridad cerrada sin gesto expansivo. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Frente a Hades: fondo subterráneo simple, luminosidad mineral baja y espacio limpio alrededor de la figura; nada terrorífico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hel, comparación Hades; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Perséfone.**
 
 | | Hel | Perséfone |
@@ -130,6 +141,41 @@ Silueta de Perséfone, para no repetirla: mitad superior ligera con flores/veget
 Pose de Perséfone, para no repetirla: un pie en cada zona visual; pose de frontera, no trabajo agrícola ni teatralidad oscura.
 
 Ejes numéricos que ya los separan: angulosidad facial 9 contra 3, contorno superior 1 contra 5, protagonismo de fondo 6 contra 10, edad visual 7 contra 4.
+
+**Por qué se controla este par:** mujeres ligadas al inframundo.
+**Filtro numérico:** distancia ponderada 2.285; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Cuerpo: adulta madura; alta y muy delgada. Frente a Perséfone: mitad superior ligera con flores/vegetación + parte baja más pesada por telas oscuras; dualidad vertical sin rostro partido. Cuerpo: adulta joven; cuerpo esbelto medio. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Frente a Perséfone: un pie en cada zona visual; pose de frontera, no trabajo agrícola ni teatralidad oscura. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Frente a Perséfone: separar claramente superficie y mundo subterráneo sin partir la cara; equilibrar una zona ligera y otra pesada. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hel, comparación Perséfone; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Frigg.**
+
+| | Hel | Frigg |
+|---|---|---|
+| Cabello | negro | rubio ceniza con canas |
+| Textura | lacio contenido | trenzas simples |
+| Piel | muy pálida | clara rosada |
+| Ojos | gris muy claro | azul gris |
+
+Silueta de Frigg, para no repetirla: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.
+
+Pose de Frigg, para no repetirla: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético.
+
+Ejes numéricos que ya los separan: oscuridad 9 contra 4, protagonismo de fondo 6 contra 2, masa corporal 2 contra 4, angulosidad facial 9 contra 7.
+
+**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres maduras cerradas y de baja acción; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.279; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Cuerpo: adulta madura; alta y muy delgada. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Frente a Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hel, comparación Frigg; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Hades y Perséfone. Diferenciar de Hades por silueta más fina y materiales nórdicos; de Perséfone por ausencia de dualidad primaveral.
 

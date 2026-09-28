@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Aquiles.**
 
 | | Héctor | Aquiles |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: contorno superior 2 contra 6, dinamismo de p
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** guerreros con escudo.
+**Filtro numérico:** distancia ponderada 1.257; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Aquiles: escudo grande desplazado + piernas largas + torso inclinado hacia adelante, con sensación de velocidad incluso quieto. Cuerpo: adulto joven; musculatura definida pero más estilizada que Heracles. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Héctor: protege y contiene, no avanza ni ataca. Frente a Aquiles: pausa tensa como a punto de moverse; evitar combate directo. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Frente a Aquiles: mantener visible el talón en la imagen completa sin convertirlo en único foco; aire delante del eje corporal para sostener la sensación de impulso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hector, comparación Aquiles; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Ares.**
 
 | | Héctor | Ares |
@@ -119,13 +130,22 @@ Ejes numéricos que ya los separan: contorno superior 2 contra 6, dinamismo de p
 | Piel | oliva media ⚠ igual | oliva media |
 | Ojos | marrón cálido | marrón muy oscuro |
 
-Silueta de Ares, para no repetirla: armadura voluminosa + postura de guardia cuadrada + arma en reposo lateral.
+Silueta de Ares, para no repetirla: casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso.
 
-Pose de Ares, para no repetirla: guardia estática y tensa; arma nunca en ataque hacia cámara.
+Pose de Ares, para no repetirla: guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara.
 
 Ejes numéricos que ya los separan: protagonismo de fondo 8 contra 2, angulosidad facial 4 contra 8, masa corporal 7 contra 9, apertura corporal 6 contra 4.
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** guardia de guerrero antiguo.
+**Filtro numérico:** distancia ponderada 1.609; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Ares: casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso. Cuerpo: adulto maduro; musculoso compacto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Héctor: protege y contiene, no avanza ni ataca. Frente a Ares: guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Frente a Ares: fondo mínimo para que mande la masa corporal; lanza y escudo separados del torso y entre sí para conservar sus contornos. Mantener el rostro legible bajo el casco y evitar que el escudo lo tape. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hector, comparación Ares; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Heracles.**
 
@@ -141,6 +161,93 @@ Silueta de Heracles, para no repetirla: espalda muy ancha + piel del león de Ne
 Pose de Heracles, para no repetirla: cargando o desplazando peso en vez de posar; gesto laborioso más que guerrero perfecto.
 
 Ejes numéricos que ya los separan: contorno superior 2 contra 7, dinamismo de pose 3 contra 8, protagonismo de fondo 8 contra 3, rigidez de materiales 8 contra 4.
+
+**Por qué se controla este par:** volumen y brazos de héroe.
+**Filtro numérico:** distancia ponderada 2.263; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Heracles: espalda muy ancha + piel del león de Nemea rompiendo el contorno de hombros + brazos separados del torso. Cuerpo: adulto joven-maduro; el cuerpo humano más macizo del roster, cuello ancho y centro de gravedad bajo. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Héctor: protege y contiene, no avanza ni ataca. Frente a Heracles: cargando o desplazando peso en vez de posar; gesto laborioso más que guerrero perfecto. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Frente a Heracles: masa corporal dominante, con brazos separados para que la silueta respire y la piel del león se lea sin collage de trabajos. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hector, comparación Heracles; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Eneas.**
+
+| | Héctor | Eneas |
+|---|---|---|
+| Cabello | castaño oscuro | castaño muy oscuro |
+| Textura | corto ⚠ igual | corto |
+| Piel | oliva media | canela |
+| Ojos | marrón cálido | gris oscuro |
+
+Silueta de Eneas, para no repetirla: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero.
+
+Pose de Eneas, para no repetirla: camina o avanza como viajero fundador, no combate.
+
+Ejes numéricos que ya los separan: angulosidad facial 4 contra 7, dinamismo de pose 3 contra 6, dependencia del identificador 7 contra 5.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos fuertes de equipo antiguo; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.844; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Héctor: protege y contiene, no avanza ni ataca. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hector, comparación Eneas; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Agamenón.**
+
+| | Héctor | Agamenón |
+|---|---|---|
+| Cabello | castaño oscuro | rubio |
+| Textura | corto ⚠ igual | corto |
+| Piel | oliva media | oliva clara |
+| Ojos | marrón cálido | avellana |
+
+Silueta de Agamenón, para no repetirla: cetro vertical + capa pesada + pecho ancho, con composición de comandante.
+
+Pose de Agamenón, para no repetirla: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate.
+
+Ejes numéricos que ya los separan: angulosidad facial 4 contra 8, verticalidad 6 contra 8.
+
+**Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** líderes maduros con equipo rígido; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.866; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Agamenón: cetro vertical + capa pesada + pecho ancho, con composición de comandante. Cuerpo: adulto maduro; robusto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Héctor: protege y contiene, no avanza ni ataca. Frente a Agamenón: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Frente a Agamenón: flota en segundo plano y aire hacia la mano que dirige; evitar que el cetro quede al pecho como plantilla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hector, comparación Agamenón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Orión.**
+
+| | Héctor | Orión |
+|---|---|---|
+| Cabello | castaño oscuro | negro |
+| Textura | corto | corto áspero |
+| Piel | oliva media | castaña media |
+| Ojos | marrón cálido | gris |
+
+Silueta de Orión, para no repetirla: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta.
+
+Pose de Orión, para no repetirla: mira el cielo en dirección opuesta al escorpión; no caza activamente.
+
+Ejes numéricos que ya los separan: rigidez de materiales 8 contra 5, escala aparente 7 contra 9, angulosidad facial 4 contra 6.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos altos y fuertes; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.866; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Héctor: protege y contiene, no avanza ni ataca. Frente a Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Frente a Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hector, comparación Orión; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Aquiles, Ares y Heracles. Diferenciar por eje protector hacia atrás, rostro menos agresivo y masa contenida.
 

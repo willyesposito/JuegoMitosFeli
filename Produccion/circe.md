@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Medea.**
 
 | | Circe | Medea |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: contorno superior 9 contra 3, verticalidad 9
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** figuras femeninas de acción mágica.
+**Filtro numérico:** distancia ponderada 2.061; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Circe: vara mágica fuera del eje + manto amplio + mano libre en gesto de transformación. Cuerpo: adulta madura; alta y esbelta. Frente a Medea: cuerpo bajo y calculador + manos activas cerca de una solución mágica/táctica + telas cerradas. Cuerpo: adulta joven-madura; delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Circe: cuerpo casi quieto mientras la magia produce cambio alrededor. Frente a Medea: agachada o inclinada resolviendo la situación del dragón dormido; no pose de hechicera genérica hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Circe: isla remota en fondo; espacio alrededor de la vara y de la mano libre para sostener la teatralidad sin saturar. Frente a Medea: el foco está en la relación entre manos, solución y problema; mantener el dragón subordinado y no terrorífico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo circe, comparación Medea; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Calipso.**
 
 | | Circe | Calipso |
@@ -124,6 +135,41 @@ Silueta de Calipso, para no repetirla: figura aislada + telas largas verticales 
 Pose de Calipso, para no repetirla: contemplación inmóvil desde la isla.
 
 Ejes numéricos que ya los separan: dependencia del identificador 9 contra 2, angulosidad facial 7 contra 2, densidad visual 8 contra 3, apertura corporal 7 contra 3.
+
+**Por qué se controla este par:** mujeres de contorno largo expansivo en isla.
+**Filtro numérico:** distancia ponderada 2.168; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Circe: vara mágica fuera del eje + manto amplio + mano libre en gesto de transformación. Cuerpo: adulta madura; alta y esbelta. Frente a Calipso: figura aislada + telas largas verticales + vegetación insular lateral; sin objeto mágico inventado. Cuerpo: adulta madura; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Circe: cuerpo casi quieto mientras la magia produce cambio alrededor. Frente a Calipso: contemplación inmóvil desde la isla. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Circe: isla remota en fondo; espacio alrededor de la vara y de la mano libre para sostener la teatralidad sin saturar. Frente a Calipso: mucho espacio negativo de mar; vegetación insular sólo rompe un lateral. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo circe, comparación Calipso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Freya.**
+
+| | Circe | Freya |
+|---|---|---|
+| Cabello | castaño muy oscuro rojizo | cobrizo oscuro |
+| Textura | largo con volumen lateral | largo voluminoso |
+| Piel | oliva clara | clara dorada |
+| Ojos | ámbar | verde oliva |
+
+Silueta de Freya, para no repetirla: capa de halcón amplia + uno o dos gatos como masas bajas secundarias.
+
+Pose de Freya, para no repetirla: capa abriéndose como si fuera a elevarse; gesto seguro, no coqueto ni guerrero genérico.
+
+Ejes numéricos que ya los separan: angulosidad facial 7 contra 3, dinamismo de pose 4 contra 7, oscuridad 6 contra 3, edad visual 7 contra 5.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres de contorno expansivo y atributos mágicos.
+**Filtro numérico:** distancia ponderada 1.358; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Circe: vara mágica fuera del eje + manto amplio + mano libre en gesto de transformación. Cuerpo: adulta madura; alta y esbelta. Frente a Freya: capa de halcón amplia + uno o dos gatos como masas bajas secundarias. Cuerpo: adulta joven-madura; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Circe: cuerpo casi quieto mientras la magia produce cambio alrededor. Frente a Freya: capa abriéndose como si fuera a elevarse; gesto seguro, no coqueto ni guerrero genérico. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Circe: isla remota en fondo; espacio alrededor de la vara y de la mano libre para sostener la teatralidad sin saturar. Frente a Freya: plumas crean una masa amplia arriba/lateral y gatos quedan bajos sin competir; aire delante del movimiento de la capa. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo circe, comparación Freya; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Medea y Calipso. Diferenciar por verticalidad, seguridad escénica y magia activa.
 

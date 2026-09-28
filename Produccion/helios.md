@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Apolo.**
 
 | | Helios | Apolo |
@@ -107,6 +109,15 @@ Silueta de Apolo, para no repetirla: lira separada del torso + línea corporal m
 Pose de Apolo, para no repetirla: tocando o afinando la lira; gesto artístico, no pose heroica.
 
 Ejes numéricos que ya los separan: dinamismo de pose 8 contra 3, densidad visual 9 contra 5, rareza anatómica 5 contra 1, apertura corporal 8 contra 5.
+
+**Por qué se controla este par:** figura solar masculina.
+**Filtro numérico:** distancia ponderada 2.358; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Helios: conduce el carro, erguido y estable. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo helios, comparación Apolo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Selene.**
 
@@ -125,6 +136,15 @@ Ejes numéricos que ya los separan: oscuridad 1 contra 4, masa corporal 6 contra
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** vehículo celeste lateral.
+**Filtro numérico:** distancia ponderada 1.101; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Frente a Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Cuerpo: adulta madura; alta y esbelta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Helios: conduce el carro, erguido y estable. Frente a Selene: conduce el carro con ritmo elegante y silencioso. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Frente a Selene: creciente desplazado y telas horizontales; aire delante del carro y temperatura fría coherente. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo helios, comparación Selene; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Prometeo.**
 
 | | Helios | Prometeo |
@@ -141,6 +161,15 @@ Pose de Prometeo, para no repetirla: brazo extendido ofreciendo el fuego, nunca 
 Ejes numéricos que ya los separan: angulosidad facial 4 contra 8, oscuridad 1 contra 5, rareza anatómica 5 contra 1, densidad visual 9 contra 6.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figura masculina asociada al fuego/luz.
+**Filtro numérico:** distancia ponderada 1.743; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Frente a Prometeo: llama separada de la mano + cuerpo inclinado protegiéndola del viento + manto corto hacia atrás. Cuerpo: adulto maduro; alto y fibroso. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Helios: conduce el carro, erguido y estable. Frente a Prometeo: brazo extendido ofreciendo el fuego, nunca objeto al pecho. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Frente a Prometeo: aire delante de la llama y del brazo extendido; el fuego pequeño debe leerse sin transformarse en sol monumental. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo helios, comparación Prometeo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Apolo, Selene y Prometeo. Diferenciar por movimiento vehicular, luz cálida y escala solar.
 

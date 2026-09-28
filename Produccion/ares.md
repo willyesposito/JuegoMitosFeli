@@ -95,6 +95,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Tyr.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Atenea.**
 
 | | Ares | Atenea |
@@ -111,6 +113,15 @@ Pose de Atenea, para no repetirla: escudo en diagonal baja y mano libre indicand
 Ejes numéricos que ya los separan: masa corporal 9 contra 5, anchura de hombros 9 contra 5, oscuridad 6 contra 3.
 
 **Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figura armada rígida con guardia contenida.
+**Filtro numérico:** distancia ponderada 1.330; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ares: casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso. Cuerpo: adulto maduro; musculoso compacto. Frente a Atenea: casco/cresta + escudo desplazado + línea de lanza o arma defensiva sólo si la referencia aprobada la conserva. Cuerpo: adulta joven-madura; atlética sin hipermusculatura. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ares: guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara. Frente a Atenea: escudo en diagonal baja y mano libre indicando estrategia; no combate ni simetría de estatua. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ares: fondo mínimo para que mande la masa corporal; lanza y escudo separados del torso y entre sí para conservar sus contornos. Mantener el rostro legible bajo el casco y evitar que el escudo lo tape. Frente a Atenea: arquitectura corporal firme con aire alrededor del escudo y de la mano que guía la lectura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ares, comparación Atenea; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Pentesilea.**
 
@@ -129,6 +140,15 @@ Ejes numéricos que ya los separan: apertura corporal 4 contra 7, masa corporal 
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** figuras armadas rígidas con escudo; riesgo vigente en ADN.
+**Filtro numérico:** distancia ponderada 1.128; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ares: casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso. Cuerpo: adulto maduro; musculoso compacto. Frente a Pentesilea: escudo de amazona separado del torso + postura amplia + armadura con geometría distinta a Atenea. Cuerpo: adulta madura; atlética fuerte. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ares: guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara. Frente a Pentesilea: mirada hacia fuera de cuadro y postura de campo; no combate explícito. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ares: fondo mínimo para que mande la masa corporal; lanza y escudo separados del torso y entre sí para conservar sus contornos. Mantener el rostro legible bajo el casco y evitar que el escudo lo tape. Frente a Pentesilea: escudo ocupa un lateral y la postura amplia abre la base; evitar simetría arquitectónica de Atenea. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ares, comparación Pentesilea; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Agamenón.**
 
 | | Ares | Agamenón |
@@ -145,6 +165,15 @@ Pose de Agamenón, para no repetirla: cetro bajo y mano extendida hacia una flot
 Ejes numéricos que ya los separan: protagonismo de fondo 2 contra 8, apertura corporal 4 contra 7, dependencia del identificador 6 contra 8, rigidez de materiales 10 contra 8.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos anchos de equipo rígido y eje de autoridad.
+**Filtro numérico:** distancia ponderada 1.123; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ares: casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso. Cuerpo: adulto maduro; musculoso compacto. Frente a Agamenón: cetro vertical + capa pesada + pecho ancho, con composición de comandante. Cuerpo: adulto maduro; robusto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ares: guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara. Frente a Agamenón: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ares: fondo mínimo para que mande la masa corporal; lanza y escudo separados del torso y entre sí para conservar sus contornos. Mantener el rostro legible bajo el casco y evitar que el escudo lo tape. Frente a Agamenón: flota en segundo plano y aire hacia la mano que dirige; evitar que el cetro quede al pecho como plantilla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ares, comparación Agamenón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Héctor.**
 
@@ -163,6 +192,15 @@ Ejes numéricos que ya los separan: protagonismo de fondo 2 contra 8, angulosida
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** guerreros antiguos con armadura y base firme.
+**Filtro numérico:** distancia ponderada 1.609; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ares: casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso. Cuerpo: adulto maduro; musculoso compacto. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ares: guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara. Frente a Héctor: protege y contiene, no avanza ni ataca. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ares: fondo mínimo para que mande la masa corporal; lanza y escudo separados del torso y entre sí para conservar sus contornos. Mantener el rostro legible bajo el casco y evitar que el escudo lo tape. Frente a Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ares, comparación Héctor; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Tyr.**
 
 | | Ares | Tyr |
@@ -179,6 +217,15 @@ Pose de Tyr, para no repetirla: postura firme y voluntaria junto al lobo; no ata
 Ejes numéricos que ya los separan: masa corporal 9 contra 6, dependencia del identificador 6 contra 9, anchura de hombros 9 contra 6, protagonismo de fondo 2 contra 5.
 
 **Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** guardia firme; Espejo.
+**Filtro numérico:** distancia ponderada 1.486; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ares: casco liso y armadura voluminosa + postura de guardia cuadrada + lanza baja en reposo lateral + escudo separado del torso. Cuerpo: adulto maduro; musculoso compacto. Frente a Tyr: asimetría clara de brazos sin detalle gráfico + cinta de Fenrir formando una curva externa. Cuerpo: adulto maduro; fuerte pero seco. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ares: guardia estática y tensa; una mano sostiene la lanza baja en reposo lateral y la otra sostiene el escudo. Sin gesto de ataque ni lanza dirigida hacia cámara. Frente a Tyr: postura firme y voluntaria junto al lobo; no ataque ni herida explícita. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ares: fondo mínimo para que mande la masa corporal; lanza y escudo separados del torso y entre sí para conservar sus contornos. Mantener el rostro legible bajo el casco y evitar que el escudo lo tape. Frente a Tyr: curva de la cinta separada del torso y espacio limpio entre Tyr y Fenrir. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ares, comparación Tyr; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Atenea, Pentesilea, Agamenón, Héctor y Tyr. Separar por masa y apertura corporal, guardia frontal con ambas manos ocupadas y composición concentrada en el bloque corporal, sin gesto estratégico, mando de flota o contexto protector.
 

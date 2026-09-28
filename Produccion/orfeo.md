@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Apolo.**
 
 | | Orfeo | Apolo |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: verticalidad 4 contra 8, angulosidad facial 
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** músicos jóvenes con lira.
+**Filtro numérico:** distancia ponderada 1.385; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Orfeo: sentado o apoyado tocando la lira. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo orfeo, comparación Apolo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Dioniso.**
 
 | | Orfeo | Dioniso |
@@ -126,6 +137,41 @@ Pose de Dioniso, para no repetirla: una mano invita y otra sostiene máscara tea
 Ejes numéricos que ya los separan: apertura corporal 4 contra 9, densidad visual 4 contra 8, contorno superior 6 contra 9, dependencia del identificador 9 contra 6.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figuras artísticas con respuesta del entorno.
+**Filtro numérico:** distancia ponderada 1.547; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Frente a Dioniso: racimos/vides y tela teatral creando contorno orgánico + postura abierta de anfitrión. Cuerpo: adulto joven-maduro; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Orfeo: sentado o apoyado tocando la lira. Frente a Dioniso: una mano invita y otra sostiene máscara teatral o elemento de escena; celebración sin alcohol protagonista. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Frente a Dioniso: formas orgánicas rodean sin cerrar el cuerpo; reservar aire para el gesto de invitación. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo orfeo, comparación Dioniso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Narciso.**
+
+| | Orfeo | Narciso |
+|---|---|---|
+| Cabello | castaño muy oscuro | castaño oscuro |
+| Textura | ondulado marcado | ondulado suave |
+| Piel | oliva clara | clara dorada |
+| Ojos | avellana | verde oliva |
+
+Silueta de Narciso, para no repetirla: cuerpo inclinado sobre agua + reflejo creando una segunda forma invertida + flor pequeña cerca del borde.
+
+Pose de Narciso, para no repetirla: agachado mirando el reflejo.
+
+Ejes numéricos que ya los separan: contorno superior 6 contra 4, apertura corporal 4 contra 2, verticalidad 4 contra 2, oscuridad 4 contra 2.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones jóvenes livianos y de baja acción; riesgo alto con EV actualizado.
+**Filtro numérico:** distancia ponderada 0.872; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Frente a Narciso: cuerpo inclinado sobre agua + reflejo creando una segunda forma invertida + flor pequeña cerca del borde. Cuerpo: adulto joven; delgado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Orfeo: sentado o apoyado tocando la lira. Frente a Narciso: agachado mirando el reflejo. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Frente a Narciso: composición vertical duplicada por el agua; reservar superficie limpia para que el reflejo sea legible. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo orfeo, comparación Narciso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Apolo y Dioniso. Diferenciar por pose íntima, cuerpo menos idealizado y ambiente emocional antes que solar o social.
 

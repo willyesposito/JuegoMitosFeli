@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Helena.**
 
 | | Andrómeda | Helena |
@@ -109,6 +111,67 @@ Pose de Helena, para no repetirla: quietud contemplativa con mirada lejana; atm�
 Ejes numéricos que ya los separan: dependencia del identificador 8 contra 3, contorno superior 9 contra 7, verticalidad 7 contra 9, protagonismo de fondo 9 contra 7.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres jóvenes de postura contenida.
+**Filtro numérico:** distancia ponderada 1.218; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Andrómeda: cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada. Cuerpo: adulta joven; esbelta. Frente a Helena: telas amplias y verticales + postura casi inmóvil; sin depender de accesorios de belleza. Cuerpo: adulta joven-madura; alta y esbelta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Andrómeda: tensión contenida sobre la roca; mirada activa, no terror. Frente a Helena: quietud contemplativa con mirada lejana; atmósfera de consecuencia, no romance. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Andrómeda: mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura. Frente a Helena: velas o arquitectura de Troya muy subordinadas; mucho aire alrededor de una figura austera. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo andromeda, comparación Helena; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Psique.**
+
+| | Andrómeda | Psique |
+|---|---|---|
+| Cabello | negro | castaño oscuro |
+| Textura | crespo largo | ondulado marcado |
+| Piel | castaña oscura | oliva clara |
+| Ojos | marrón muy oscuro | marrón cálido |
+
+Silueta de Psique, para no repetirla: mariposa o motivo de mariposa cerca del hombro + postura de avance cauteloso.
+
+Pose de Psique, para no repetirla: avanza entre pruebas con cautela y perseverancia.
+
+Ejes numéricos que ya los separan: contorno superior 9 contra 6, oscuridad 5 contra 2, dinamismo de pose 2 contra 4, protagonismo de fondo 9 contra 7.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres ligeras de lectura aérea; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.888; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Andrómeda: cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada. Cuerpo: adulta joven; esbelta. Frente a Psique: mariposa o motivo de mariposa cerca del hombro + postura de avance cauteloso. Cuerpo: adulta joven; delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Andrómeda: tensión contenida sobre la roca; mirada activa, no terror. Frente a Psique: avanza entre pruebas con cautela y perseverancia. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Andrómeda: mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura. Frente a Psique: dejar aire en la dirección de avance; pruebas se sugieren de forma abstracta y no saturan el fondo. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo andromeda, comparación Psique; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Calipso.**
+
+| | Andrómeda | Calipso |
+|---|---|---|
+| Cabello | negro | castaño medio |
+| Textura | crespo largo | largo suelto ondulado por humedad |
+| Piel | castaña oscura | canela |
+| Ojos | marrón muy oscuro | marrón cálido |
+
+Silueta de Calipso, para no repetirla: figura aislada + telas largas verticales + vegetación insular lateral; sin objeto mágico inventado.
+
+Pose de Calipso, para no repetirla: contemplación inmóvil desde la isla.
+
+Ejes numéricos que ya los separan: dependencia del identificador 8 contra 2, edad visual 4 contra 7, densidad visual 5 contra 3, oscuridad 5 contra 3.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujer de contorno largo en ambiente marino.
+**Filtro numérico:** distancia ponderada 1.184; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Andrómeda: cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada. Cuerpo: adulta joven; esbelta. Frente a Calipso: figura aislada + telas largas verticales + vegetación insular lateral; sin objeto mágico inventado. Cuerpo: adulta madura; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Andrómeda: tensión contenida sobre la roca; mirada activa, no terror. Frente a Calipso: contemplación inmóvil desde la isla. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Andrómeda: mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura. Frente a Calipso: mucho espacio negativo de mar; vegetación insular sólo rompe un lateral. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo andromeda, comparación Calipso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Helena. Diferenciar por tensión física, cadenas y contexto celeste-marino, no quietud austera.
 

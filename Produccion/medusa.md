@@ -94,7 +94,83 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
-La ficha no nombra un riesgo de parecido concreto: Cualquier figura femenina humana del roster. La silueta capilar debe volverla inequívoca incluso sin color.
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
+**Contra Dafne.**
+
+| | Medusa | Dafne |
+|---|---|---|
+| Cabello | serpientes en lugar de cabello | castaño claro |
+| Textura | volúmenes y direcciones diferenciadas | largo mezclándose con hojas |
+| Piel | oliva media | clara dorada |
+| Ojos | ámbar | verde oliva |
+
+Silueta de Dafne, para no repetirla: brazos convertidos en ramas + pies/parte baja en raíces, con transición clara y no terrorífica.
+
+Pose de Dafne, para no repetirla: el cuerpo crece y se transforma, en vez de huir.
+
+Ejes numéricos que ya los separan: angulosidad facial 8 contra 3, dinamismo de pose 2 contra 6, oscuridad 7 contra 3, edad visual 7 contra 4.
+
+**Por qué se controla este par:** figuras femeninas de anatomía transformada y contorno orgánico.
+**Filtro numérico:** distancia ponderada 1.961; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Medusa: cabello de serpientes como firma total, con cabezas orientadas en direcciones variadas para evitar casco simétrico. Cuerpo: adulta madura; contextura media. Frente a Dafne: brazos convertidos en ramas + pies/parte baja en raíces, con transición clara y no terrorífica. Cuerpo: adulta joven; delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Medusa: quietud controlada; nunca amenaza dirigida a cámara. Frente a Dafne: el cuerpo crece y se transforma, en vez de huir. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Medusa: piedras en fondo como pista y aire alrededor de las serpientes para que cada masa se lea; cero horror. Frente a Dafne: río/bosque simple; ramas deben abrirse hacia aire limpio y raíces quedar completas en la imagen maestra. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo medusa, comparación Dafne; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Aracne.**
+
+| | Medusa | Aracne |
+|---|---|---|
+| Cabello | serpientes en lugar de cabello | castaño oscuro |
+| Textura | volúmenes y direcciones diferenciadas | recogido alto |
+| Piel | oliva media | oliva clara |
+| Ojos | ámbar | gris |
+
+Silueta de Aracne, para no repetirla: telar diagonal + hilos saliendo del marco corporal + pequeña araña/patrón radial rompiendo el contorno.
+
+Pose de Aracne, para no repetirla: trabaja con precisión, con manos separadas en tareas distintas.
+
+Ejes numéricos que ya los separan: contorno superior 10 contra 1, dependencia del identificador 2 contra 8, edad visual 7 contra 4, rareza anatómica 7 contra 4.
+
+**Por qué se controla este par:** transformación femenina con estructura radial.
+**Filtro numérico:** distancia ponderada 2.374; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Medusa: cabello de serpientes como firma total, con cabezas orientadas en direcciones variadas para evitar casco simétrico. Cuerpo: adulta madura; contextura media. Frente a Aracne: telar diagonal + hilos saliendo del marco corporal + pequeña araña/patrón radial rompiendo el contorno. Cuerpo: adulta joven; contextura pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Medusa: quietud controlada; nunca amenaza dirigida a cámara. Frente a Aracne: trabaja con precisión, con manos separadas en tareas distintas. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Medusa: piedras en fondo como pista y aire alrededor de las serpientes para que cada masa se lea; cero horror. Frente a Aracne: hilos crean geometría radial sin tapar rostro; telar ocupa una diagonal y deja un área limpia opuesta. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo medusa, comparación Aracne; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Sif.**
+
+| | Medusa | Sif |
+|---|---|---|
+| Cabello | serpientes en lugar de cabello | oro verdadero |
+| Textura | volúmenes y direcciones diferenciadas | extremadamente largo y pesado |
+| Piel | oliva media | clara dorada |
+| Ojos | ámbar ⚠ igual | ámbar |
+
+Silueta de Sif, para no repetirla: masa dorada de cabello ocupando un lateral completo y cayendo hasta romper el contorno del cuerpo.
+
+Pose de Sif, para no repetirla: una mano levanta parte del cabello para mostrar materialidad y peso.
+
+Ejes numéricos que ya los separan: dependencia del identificador 2 contra 10, rareza anatómica 7 contra 1, angulosidad facial 8 contra 3, oscuridad 7 contra 2.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** contorno superior máximo puede convertirse en una sola masa de cabello.
+**Filtro numérico:** distancia ponderada 1.933; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Medusa: cabello de serpientes como firma total, con cabezas orientadas en direcciones variadas para evitar casco simétrico. Cuerpo: adulta madura; contextura media. Frente a Sif: masa dorada de cabello ocupando un lateral completo y cayendo hasta romper el contorno del cuerpo. Cuerpo: adulta joven-madura; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Medusa: quietud controlada; nunca amenaza dirigida a cámara. Frente a Sif: una mano levanta parte del cabello para mostrar materialidad y peso. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Medusa: piedras en fondo como pista y aire alrededor de las serpientes para que cada masa se lea; cero horror. Frente a Sif: el cabello forma una gran masa lateral y el lado opuesto queda más limpio; campo de trigo subordinado. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo medusa, comparación Sif; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+Criterio de la ficha: Cualquier figura femenina humana del roster. La silueta capilar debe volverla inequívoca incluso sin color.
 
 La diferencia no puede depender sólo del color, del fondo, del objeto sostenido, del peinado ni de una prenda. Matriz §4.1: el objeto no salva un clon.
 

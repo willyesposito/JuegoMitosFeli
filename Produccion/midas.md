@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Jasón.**
 
 | | Midas | Jasón |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: contorno superior 2 contra 5, apertura corpo
 
 **Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** masa dorada lateral y cuerpo abierto; Espejo.
+**Filtro numérico:** distancia ponderada 1.050; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Midas: una mano extendida separada del torso + objetos parcialmente dorados creando ritmo lateral. Cuerpo: adulto maduro; contextura media. Frente a Jasón: Vellocino de Oro como gran masa irregular sobre un brazo/hombro + dirección de capitán hacia un lateral. Cuerpo: adulto joven-maduro; cuerpo atlético medio. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Midas: mira comida/agua convertida en oro con gesto de comprender el problema. Frente a Jasón: mano libre indicando rumbo; liderazgo colaborativo, no regia estática. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Midas: mano y objetos quedan separados del torso; el oro aparece por transformación parcial y no como fondo decorativo. Frente a Jasón: el Vellocino ocupa una masa clara sin tapar rostro; el Argo queda pequeño en contexto y el aire acompaña la dirección señalada. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo midas, comparación Jasón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Paris.**
 
 | | Midas | Paris |
@@ -126,6 +137,41 @@ Pose de Paris, para no repetirla: sostiene la manzana baja y mira lateralmente; 
 Ejes numéricos que ya los separan: edad visual 6 contra 4, contorno superior 2 contra 4, apertura corporal 6 contra 4, dinamismo de pose 4 contra 2.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** manzana/objeto dorado en mano de varón.
+**Filtro numérico:** distancia ponderada 1.084; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Midas: una mano extendida separada del torso + objetos parcialmente dorados creando ritmo lateral. Cuerpo: adulto maduro; contextura media. Frente a Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Midas: mira comida/agua convertida en oro con gesto de comprender el problema. Frente a Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Midas: mano y objetos quedan separados del torso; el oro aparece por transformación parcial y no como fondo decorativo. Frente a Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo midas, comparación Paris; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Héctor.**
+
+| | Midas | Héctor |
+|---|---|---|
+| Cabello | castaño ceniza | castaño oscuro |
+| Textura | corto ⚠ igual | corto |
+| Piel | oliva media ⚠ igual | oliva media |
+| Ojos | gris | marrón cálido |
+
+Silueta de Héctor, para no repetirla: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior.
+
+Pose de Héctor, para no repetirla: protege y contiene, no avanza ni ataca.
+
+Ejes numéricos que ya los separan: rigidez de materiales 4 contra 8, dependencia del identificador 10 contra 7, protagonismo de fondo 5 contra 8, masa corporal 5 contra 7.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos de contextura media-fuerte y acción contenida; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.061; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Midas: una mano extendida separada del torso + objetos parcialmente dorados creando ritmo lateral. Cuerpo: adulto maduro; contextura media. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Midas: mira comida/agua convertida en oro con gesto de comprender el problema. Frente a Héctor: protege y contiene, no avanza ni ataca. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Midas: mano y objetos quedan separados del torso; el oro aparece por transformación parcial y no como fondo decorativo. Frente a Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo midas, comparación Héctor; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Jasón y Paris. Diferenciar por oro problemático en varios objetos, no vellocino heroico ni una única manzana de elección.
 

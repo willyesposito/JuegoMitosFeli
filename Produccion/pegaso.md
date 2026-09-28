@@ -89,6 +89,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Belerofonte.**
 
 Silueta de Belerofonte, para no repetirla: jinete + alas de Pegaso creando contorno horizontal ancho dentro del 3:4 + brida de oro visible cerca de la mano.
@@ -98,6 +100,53 @@ Pose de Belerofonte, para no repetirla: montado en vuelo, no vuelo corporal prop
 Ejes numéricos que ya los separan: dependencia del identificador 1 contra 10, contorno superior 7 contra 3, rigidez de materiales 2 contra 6, protagonismo de fondo 4 contra 7.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** misma anatomía equina alada; riesgo de agregar jinete.
+**Filtro numérico:** distancia ponderada 1.642; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Pegaso: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena. Cuerpo: caballo adulto de proporciones elegantes y atléticas. Frente a Belerofonte: jinete + alas de Pegaso creando contorno horizontal ancho dentro del 3:4 + brida de oro visible cerca de la mano. Cuerpo: adulto joven; atlético ligero. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Pegaso: vuelo o elevación controlada, no picada heroica. Frente a Belerofonte: montado en vuelo, no vuelo corporal propio. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Pegaso: cuerpo completo cuando la escala lo permita; aire entre alas y borde del cuadro para no perder la firma. Frente a Belerofonte: Belerofonte y Pegaso deben leerse como una unidad; reservar ancho para alas sin cortar la zona segura del avatar. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo pegaso, comparación Belerofonte; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Fénix.**
+
+Silueta de Fénix, para no repetirla: alas en arco desigual + cola amplia cuyas plumas se fragmentan visualmente en fuego/ceniza.
+
+Pose de Fénix, para no repetirla: renace o se eleva desde ceniza; no vuelo horizontal.
+
+Ejes numéricos que ya los separan: angulosidad facial 3 contra 6, contorno superior 7 contra 10, verticalidad 8 contra 10.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** alas y elevación de criatura.
+**Filtro numérico:** distancia ponderada 0.972; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Pegaso: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena. Cuerpo: caballo adulto de proporciones elegantes y atléticas. Frente a Fénix: alas en arco desigual + cola amplia cuyas plumas se fragmentan visualmente en fuego/ceniza. Cuerpo: ave adulta grande, de alas largas, cabeza relativamente pequeña y cola amplia. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Pegaso: vuelo o elevación controlada, no picada heroica. Frente a Fénix: renace o se eleva desde ceniza; no vuelo horizontal. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Pegaso: cuerpo completo cuando la escala lo permita; aire entre alas y borde del cuadro para no perder la firma. Frente a Fénix: base de ceniza abajo y gran aire superior para la trayectoria ascendente; fuego sin convertir la escena en amenaza. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo pegaso, comparación Fénix; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Nike.**
+
+Silueta de Nike, para no repetirla: alas grandes en V asimétrica + cuerpo inclinado hacia adelante, con contorno de velocidad.
+
+Pose de Nike, para no repetirla: movimiento de llegada; manos libres o gesto de coronación sin texto.
+
+Ejes numéricos que ya los separan: masa corporal 6 contra 4, angulosidad facial 3 contra 5, anchura de hombros 6 contra 4.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** alas abiertas y diagonal ascendente.
+**Filtro numérico:** distancia ponderada 1.184; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Pegaso: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena. Cuerpo: caballo adulto de proporciones elegantes y atléticas. Frente a Nike: alas grandes en V asimétrica + cuerpo inclinado hacia adelante, con contorno de velocidad. Cuerpo: adulta joven; atlética ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Pegaso: vuelo o elevación controlada, no picada heroica. Frente a Nike: movimiento de llegada; manos libres o gesto de coronación sin texto. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Pegaso: cuerpo completo cuando la escala lo permita; aire entre alas y borde del cuadro para no perder la firma. Frente a Nike: nacimiento de ambas alas debe quedar limpio en la zona alta y conservar aire hacia la trayectoria. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo pegaso, comparación Nike; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Belerofonte. El avatar y la imagen individual no deben incluir jinete.
 

@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Heracles.**
 
 | | Hefesto | Heracles |
@@ -107,6 +109,67 @@ Silueta de Heracles, para no repetirla: espalda muy ancha + piel del león de Ne
 Pose de Heracles, para no repetirla: cargando o desplazando peso en vez de posar; gesto laborioso más que guerrero perfecto.
 
 Ejes numéricos que ya los separan: contorno superior 3 contra 7, protagonismo de fondo 7 contra 3, rigidez de materiales 8 contra 4, apertura corporal 4 contra 7.
+
+**Por qué se controla este par:** torso robusto y brazos de esfuerzo.
+**Filtro numérico:** distancia ponderada 1.872; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Cuerpo: adulto maduro; torso robusto y brazos de trabajador. Frente a Heracles: espalda muy ancha + piel del león de Nemea rompiendo el contorno de hombros + brazos separados del torso. Cuerpo: adulto joven-maduro; el cuerpo humano más macizo del roster, cuello ancho y centro de gravedad bajo. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. Frente a Heracles: cargando o desplazando peso en vez de posar; gesto laborioso más que guerrero perfecto. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Frente a Heracles: masa corporal dominante, con brazos separados para que la silueta respire y la piel del león se lea sin collage de trabajos. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hefesto, comparación Heracles; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Eneas.**
+
+| | Hefesto | Eneas |
+|---|---|---|
+| Cabello | castaño muy oscuro ⚠ igual | castaño muy oscuro |
+| Textura | corto áspero | corto |
+| Piel | canela con hollín | canela |
+| Ojos | ámbar | gris oscuro |
+
+Silueta de Eneas, para no repetirla: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero.
+
+Pose de Eneas, para no repetirla: camina o avanza como viajero fundador, no combate.
+
+Ejes numéricos que ya los separan: oscuridad 6 contra 4, dependencia del identificador 7 contra 5.
+
+**Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos robustos con materiales rígidos; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.821; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Cuerpo: adulto maduro; torso robusto y brazos de trabajador. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hefesto, comparación Eneas; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Agamenón.**
+
+| | Hefesto | Agamenón |
+|---|---|---|
+| Cabello | castaño muy oscuro | rubio |
+| Textura | corto áspero | corto |
+| Piel | canela con hollín | oliva clara |
+| Ojos | ámbar | avellana |
+
+Silueta de Agamenón, para no repetirla: cetro vertical + capa pesada + pecho ancho, con composición de comandante.
+
+Pose de Agamenón, para no repetirla: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate.
+
+Ejes numéricos que ya los separan: verticalidad 4 contra 8, apertura corporal 4 contra 7, dinamismo de pose 5 contra 3.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos fuertes angulares de alta densidad y rigidez.
+**Filtro numérico:** distancia ponderada 1.045; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Cuerpo: adulto maduro; torso robusto y brazos de trabajador. Frente a Agamenón: cetro vertical + capa pesada + pecho ancho, con composición de comandante. Cuerpo: adulto maduro; robusto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. Frente a Agamenón: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Frente a Agamenón: flota en segundo plano y aire hacia la mano que dirige; evitar que el cetro quede al pecho como plantilla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hefesto, comparación Agamenón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Heracles. Separarlo por cuerpo de oficio, asimetría funcional y manos construyendo en vez de masa heroica y piel de león.
 

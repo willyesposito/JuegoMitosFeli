@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Teseo.**
 
 | | Odiseo | Teseo |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: angulosidad facial 8 contra 4, dependencia d
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** héroes de viaje/exploración con mano activa.
+**Filtro numérico:** distancia ponderada 1.408; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Odiseo: capa o tela de viaje inclinada + postura levemente adelantada + mano activa señalando o calculando. Cuerpo: adulto maduro; cuerpo fibroso, viajado y menos ceremonial que otros héroes. Frente a Teseo: hilo visible que sale de una mano y dibuja una curva externa + cuerpo ágil de explorador. Cuerpo: adulto joven; atlético medio y ágil. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Odiseo: gesto mental y de cálculo; mano activa antes que arma protagonista. Frente a Teseo: una mano guía el hilo y la otra queda libre; exploración activa, no pose heroica frontal. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Odiseo: reservar aire hacia la dirección donde piensa avanzar; menos armadura y menos frontalidad que los héroes guerreros. Frente a Teseo: laberinto subordinado en fondo; aire en la dirección del hilo para que su curva sea legible. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo odiseo, comparación Teseo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Edipo.**
 
 | | Odiseo | Edipo |
@@ -126,6 +137,41 @@ Pose de Edipo, para no repetirla: observa y resuelve; postura estática de pregu
 Ejes numéricos que ya los separan: dinamismo de pose 4 contra 1, dependencia del identificador 3 contra 6, contorno superior 4 contra 2, apertura corporal 5 contra 3.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos pensantes de pie; cercanía numérica y gesto de cálculo.
+**Filtro numérico:** distancia ponderada 0.933; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Odiseo: capa o tela de viaje inclinada + postura levemente adelantada + mano activa señalando o calculando. Cuerpo: adulto maduro; cuerpo fibroso, viajado y menos ceremonial que otros héroes. Frente a Edipo: figura pensante de pie + mano en mentón y Esfinge fuera de eje; bastón sólo si funciona como símbolo general del acertijo humano y no como atributo personal inventado. Cuerpo: adulto maduro; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Odiseo: gesto mental y de cálculo; mano activa antes que arma protagonista. Frente a Edipo: observa y resuelve; postura estática de pregunta, no viaje ni amenaza. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Odiseo: reservar aire hacia la dirección donde piensa avanzar; menos armadura y menos frontalidad que los héroes guerreros. Frente a Edipo: distancia clara entre Edipo y Esfinge; el vacío entre ambos funciona como espacio del acertijo. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo odiseo, comparación Edipo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Prometeo.**
+
+| | Odiseo | Prometeo |
+|---|---|---|
+| Cabello | castaño oscuro con canas | castaño muy oscuro |
+| Textura | ondulado marcado | medio |
+| Piel | canela curtida | oliva media |
+| Ojos | gris verdoso | gris |
+
+Silueta de Prometeo, para no repetirla: llama separada de la mano + cuerpo inclinado protegiéndola del viento + manto corto hacia atrás.
+
+Pose de Prometeo, para no repetirla: brazo extendido ofreciendo el fuego, nunca objeto al pecho.
+
+Ejes numéricos que ya los separan: dependencia del identificador 3 contra 9, apertura corporal 5 contra 8, dinamismo de pose 4 contra 6.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos fibrosos de rostro largo inclinados y con un brazo activo.
+**Filtro numérico:** distancia ponderada 1.011; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Odiseo: capa o tela de viaje inclinada + postura levemente adelantada + mano activa señalando o calculando. Cuerpo: adulto maduro; cuerpo fibroso, viajado y menos ceremonial que otros héroes. Frente a Prometeo: llama separada de la mano + cuerpo inclinado protegiéndola del viento + manto corto hacia atrás. Cuerpo: adulto maduro; alto y fibroso. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Odiseo: gesto mental y de cálculo; mano activa antes que arma protagonista. Frente a Prometeo: brazo extendido ofreciendo el fuego, nunca objeto al pecho. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Odiseo: reservar aire hacia la dirección donde piensa avanzar; menos armadura y menos frontalidad que los héroes guerreros. Frente a Prometeo: aire delante de la llama y del brazo extendido; el fuego pequeño debe leerse sin transformarse en sol monumental. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo odiseo, comparación Prometeo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Teseo y Edipo. Separarlo por mayor edad, movimiento de viaje y gesto de estrategia antes que exploración o acertijo estático.
 

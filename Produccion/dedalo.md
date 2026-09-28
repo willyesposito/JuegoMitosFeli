@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Perseo.**
 
 | | Dédalo | Perseo |
@@ -108,6 +110,15 @@ Pose de Perseo, para no repetirla: mira el reflejo del escudo en vez de dirigir 
 
 Ejes numéricos que ya los separan: edad visual 9 contra 4, angulosidad facial 8 contra 4, apertura corporal 3 contra 7, dinamismo de pose 4 contra 8.
 
+**Por qué se controla este par:** plumas y equipamiento de vuelo pueden convertirse en una misma diagonal aérea.
+**Filtro numérico:** distancia ponderada 2.341; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dédalo: alas de plumas parcialmente abiertas + herramientas pequeñas en cinturón + postura encorvada de inventor. Cuerpo: adulto mayor; delgado. Frente a Perseo: escudo espejo en diagonal + sandalias aladas rompiendo el contorno bajo + casco separado del eje facial. Cuerpo: adulto joven; cuerpo ágil y ligero. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dédalo: trabaja con las manos; no vuela. Frente a Perseo: mira el reflejo del escudo en vez de dirigir la mirada al peligro; sensación de vuelo propio. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dédalo: ala ocupa un lateral y laberinto aparece como patrón simple de fondo; separar plumas de herramientas para no saturar. Frente a Perseo: escudo desplazado para leer su superficie y aire en la dirección ascendente; las sandalias deben entrar completas en la imagen maestra. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dedalo, comparación Perseo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Nike.**
 
 | | Dédalo | Nike |
@@ -122,6 +133,41 @@ Silueta de Nike, para no repetirla: alas grandes en V asimétrica + cuerpo incli
 Pose de Nike, para no repetirla: movimiento de llegada; manos libres o gesto de coronación sin texto.
 
 Ejes numéricos que ya los separan: dependencia del identificador 9 contra 2, apertura corporal 3 contra 9, edad visual 9 contra 4, dinamismo de pose 4 contra 9.
+
+**Por qué se controla este par:** alas abiertas junto a figura humana.
+**Filtro numérico:** distancia ponderada 3.151; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dédalo: alas de plumas parcialmente abiertas + herramientas pequeñas en cinturón + postura encorvada de inventor. Cuerpo: adulto mayor; delgado. Frente a Nike: alas grandes en V asimétrica + cuerpo inclinado hacia adelante, con contorno de velocidad. Cuerpo: adulta joven; atlética ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dédalo: trabaja con las manos; no vuela. Frente a Nike: movimiento de llegada; manos libres o gesto de coronación sin texto. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dédalo: ala ocupa un lateral y laberinto aparece como patrón simple de fondo; separar plumas de herramientas para no saturar. Frente a Nike: nacimiento de ambas alas debe quedar limpio en la zona alta y conservar aire hacia la trayectoria. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dedalo, comparación Nike; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Hefesto.**
+
+| | Dédalo | Hefesto |
+|---|---|---|
+| Cabello | gris | castaño muy oscuro |
+| Textura | corto desordenado | corto áspero |
+| Piel | oliva clara | canela con hollín |
+| Ojos | avellana | ámbar |
+
+Silueta de Hefesto, para no repetirla: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico.
+
+Pose de Hefesto, para no repetirla: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir.
+
+Ejes numéricos que ya los separan: masa corporal 3 contra 8, anchura de hombros 3 contra 8, rigidez de materiales 4 contra 8, edad visual 9 contra 7.
+
+**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** adultos artesanos trabajando con ambas manos y herramientas.
+**Filtro numérico:** distancia ponderada 1.899; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dédalo: alas de plumas parcialmente abiertas + herramientas pequeñas en cinturón + postura encorvada de inventor. Cuerpo: adulto mayor; delgado. Frente a Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Cuerpo: adulto maduro; torso robusto y brazos de trabajador. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dédalo: trabaja con las manos; no vuela. Frente a Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dédalo: ala ocupa un lateral y laberinto aparece como patrón simple de fondo; separar plumas de herramientas para no saturar. Frente a Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dedalo, comparación Hefesto; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Perseo y Nike. Diferenciar por tecnología fabricada, edad mayor y pose de trabajo en tierra, no vuelo mágico o anatómico.
 

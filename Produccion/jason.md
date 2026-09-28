@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Agamenón.**
 
 | | Jasón | Agamenón |
@@ -107,6 +109,15 @@ Silueta de Agamenón, para no repetirla: cetro vertical + capa pesada + pecho an
 Pose de Agamenón, para no repetirla: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate.
 
 Ejes numéricos que ya los separan: angulosidad facial 4 contra 8, contorno superior 5 contra 2, rigidez de materiales 5 contra 8, edad visual 5 contra 7.
+
+**Por qué se controla este par:** liderazgo y contexto de expedición.
+**Filtro numérico:** distancia ponderada 1.715; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Jasón: Vellocino de Oro como gran masa irregular sobre un brazo/hombro + dirección de capitán hacia un lateral. Cuerpo: adulto joven-maduro; cuerpo atlético medio. Frente a Agamenón: cetro vertical + capa pesada + pecho ancho, con composición de comandante. Cuerpo: adulto maduro; robusto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Jasón: mano libre indicando rumbo; liderazgo colaborativo, no regia estática. Frente a Agamenón: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Jasón: el Vellocino ocupa una masa clara sin tapar rostro; el Argo queda pequeño en contexto y el aire acompaña la dirección señalada. Frente a Agamenón: flota en segundo plano y aire hacia la mano que dirige; evitar que el cetro quede al pecho como plantilla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo jason, comparación Agamenón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Midas.**
 
@@ -124,6 +135,67 @@ Pose de Midas, para no repetirla: mira comida/agua convertida en oro con gesto d
 Ejes numéricos que ya los separan: contorno superior 5 contra 2, apertura corporal 8 contra 6.
 
 **Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones con masa dorada lateral.
+**Filtro numérico:** distancia ponderada 1.050; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Jasón: Vellocino de Oro como gran masa irregular sobre un brazo/hombro + dirección de capitán hacia un lateral. Cuerpo: adulto joven-maduro; cuerpo atlético medio. Frente a Midas: una mano extendida separada del torso + objetos parcialmente dorados creando ritmo lateral. Cuerpo: adulto maduro; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Jasón: mano libre indicando rumbo; liderazgo colaborativo, no regia estática. Frente a Midas: mira comida/agua convertida en oro con gesto de comprender el problema. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Jasón: el Vellocino ocupa una masa clara sin tapar rostro; el Argo queda pequeño en contexto y el aire acompaña la dirección señalada. Frente a Midas: mano y objetos quedan separados del torso; el oro aparece por transformación parcial y no como fondo decorativo. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo jason, comparación Midas; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Teseo.**
+
+| | Jasón | Teseo |
+|---|---|---|
+| Cabello | castaño claro | castaño oscuro |
+| Textura | ondulado marcado | rizado cerrado |
+| Piel | dorada media | oliva media |
+| Ojos | avellana | marrón cálido |
+
+Silueta de Teseo, para no repetirla: hilo visible que sale de una mano y dibuja una curva externa + cuerpo ágil de explorador.
+
+Pose de Teseo, para no repetirla: una mano guía el hilo y la otra queda libre; exploración activa, no pose heroica frontal.
+
+Ejes numéricos que ya los separan: verticalidad 7 contra 4, apertura corporal 8 contra 6, densidad visual 7 contra 5, dependencia del identificador 9 contra 7.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** héroes jóvenes de masa media; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.849; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Jasón: Vellocino de Oro como gran masa irregular sobre un brazo/hombro + dirección de capitán hacia un lateral. Cuerpo: adulto joven-maduro; cuerpo atlético medio. Frente a Teseo: hilo visible que sale de una mano y dibuja una curva externa + cuerpo ágil de explorador. Cuerpo: adulto joven; atlético medio y ágil. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Jasón: mano libre indicando rumbo; liderazgo colaborativo, no regia estática. Frente a Teseo: una mano guía el hilo y la otra queda libre; exploración activa, no pose heroica frontal. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Jasón: el Vellocino ocupa una masa clara sin tapar rostro; el Argo queda pequeño en contexto y el aire acompaña la dirección señalada. Frente a Teseo: laberinto subordinado en fondo; aire en la dirección del hilo para que su curva sea legible. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo jason, comparación Teseo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Perseo.**
+
+| | Jasón | Perseo |
+|---|---|---|
+| Cabello | castaño claro | negro |
+| Textura | ondulado marcado ⚠ igual | ondulado marcado |
+| Piel | dorada media | canela |
+| Ojos | avellana | negro |
+
+Silueta de Perseo, para no repetirla: escudo espejo en diagonal + sandalias aladas rompiendo el contorno bajo + casco separado del eje facial.
+
+Pose de Perseo, para no repetirla: mira el reflejo del escudo en vez de dirigir la mirada al peligro; sensación de vuelo propio.
+
+Ejes numéricos que ya los separan: dinamismo de pose 5 contra 8, protagonismo de fondo 6 contra 4.
+
+**Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** héroes jóvenes dinámicos; cercanía numérica.
+**Filtro numérico:** distancia ponderada 0.955; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Jasón: Vellocino de Oro como gran masa irregular sobre un brazo/hombro + dirección de capitán hacia un lateral. Cuerpo: adulto joven-maduro; cuerpo atlético medio. Frente a Perseo: escudo espejo en diagonal + sandalias aladas rompiendo el contorno bajo + casco separado del eje facial. Cuerpo: adulto joven; cuerpo ágil y ligero. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Jasón: mano libre indicando rumbo; liderazgo colaborativo, no regia estática. Frente a Perseo: mira el reflejo del escudo en vez de dirigir la mirada al peligro; sensación de vuelo propio. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Jasón: el Vellocino ocupa una masa clara sin tapar rostro; el Argo queda pequeño en contexto y el aire acompaña la dirección señalada. Frente a Perseo: escudo desplazado para leer su superficie y aire en la dirección ascendente; las sandalias deben entrar completas en la imagen maestra. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo jason, comparación Perseo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Agamenón y Midas. Separarlo por pose abierta de capitán y oro textil orgánico, no cetro regio ni transformación accidental de objetos.
 

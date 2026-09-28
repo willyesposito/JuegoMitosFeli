@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Perseo.**
 
 | | Belerofonte | Perseo |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: rareza anatómica 7 contra 1, protagonismo d
 
 **Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** héroes jóvenes en vuelo.
+**Filtro numérico:** distancia ponderada 0.899; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Belerofonte: jinete + alas de Pegaso creando contorno horizontal ancho dentro del 3:4 + brida de oro visible cerca de la mano. Cuerpo: adulto joven; atlético ligero. Frente a Perseo: escudo espejo en diagonal + sandalias aladas rompiendo el contorno bajo + casco separado del eje facial. Cuerpo: adulto joven; cuerpo ágil y ligero. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Belerofonte: montado en vuelo, no vuelo corporal propio. Frente a Perseo: mira el reflejo del escudo en vez de dirigir la mirada al peligro; sensación de vuelo propio. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Belerofonte: Belerofonte y Pegaso deben leerse como una unidad; reservar ancho para alas sin cortar la zona segura del avatar. Frente a Perseo: escudo desplazado para leer su superficie y aire en la dirección ascendente; las sandalias deben entrar completas en la imagen maestra. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo belerofonte, comparación Perseo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Pegaso.**
 
 Silueta de Pegaso, para no repetirla: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena.
@@ -119,6 +130,41 @@ Pose de Pegaso, para no repetirla: vuelo o elevación controlada, no picada hero
 Ejes numéricos que ya los separan: dependencia del identificador 10 contra 1, contorno superior 3 contra 7, rigidez de materiales 6 contra 2, protagonismo de fondo 7 contra 4.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** misma montura como foco; riesgo de perder al jinete.
+**Filtro numérico:** distancia ponderada 1.642; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Belerofonte: jinete + alas de Pegaso creando contorno horizontal ancho dentro del 3:4 + brida de oro visible cerca de la mano. Cuerpo: adulto joven; atlético ligero. Frente a Pegaso: dos alas abiertas en alturas diferentes + cuello arqueado + patas recogidas o una apoyada según escena. Cuerpo: caballo adulto de proporciones elegantes y atléticas. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Belerofonte: montado en vuelo, no vuelo corporal propio. Frente a Pegaso: vuelo o elevación controlada, no picada heroica. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Belerofonte: Belerofonte y Pegaso deben leerse como una unidad; reservar ancho para alas sin cortar la zona segura del avatar. Frente a Pegaso: cuerpo completo cuando la escala lo permita; aire entre alas y borde del cuadro para no perder la firma. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo belerofonte, comparación Pegaso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Helios.**
+
+| | Belerofonte | Helios |
+|---|---|---|
+| Cabello | castaño ceniza | rubio cobrizo |
+| Textura | lacio | corto barrido |
+| Piel | oliva clara | dorada media |
+| Ojos | azul gris | ámbar |
+
+Silueta de Helios, para no repetirla: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro.
+
+Pose de Helios, para no repetirla: conduce el carro, erguido y estable.
+
+Ejes numéricos que ya los separan: contorno superior 3 contra 6, edad visual 4 contra 6, verticalidad 8 contra 6, oscuridad 3 contra 1.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figura humana transportada con conjunto ancho y dinamismo alto.
+**Filtro numérico:** distancia ponderada 1.257; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Belerofonte: jinete + alas de Pegaso creando contorno horizontal ancho dentro del 3:4 + brida de oro visible cerca de la mano. Cuerpo: adulto joven; atlético ligero. Frente a Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Belerofonte: montado en vuelo, no vuelo corporal propio. Frente a Helios: conduce el carro, erguido y estable. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Belerofonte: Belerofonte y Pegaso deben leerse como una unidad; reservar ancho para alas sin cortar la zona segura del avatar. Frente a Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo belerofonte, comparación Helios; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Perseo y Pegaso. Diferenciar de Perseo por dupla jinete-montura; del Pegaso individual por presencia inequívoca del jinete.
 

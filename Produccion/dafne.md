@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Deméter.**
 
 | | Dafne | Deméter |
@@ -107,6 +109,63 @@ Silueta de Deméter, para no repetirla: espigas/cosecha formando una masa latera
 Pose de Deméter, para no repetirla: manos activas trabajando con plantas o semillas.
 
 Ejes numéricos que ya los separan: contorno superior 9 contra 2, rareza anatómica 7 contra 1, verticalidad 9 contra 5, dependencia del identificador 2 contra 6.
+
+**Por qué se controla este par:** figura femenina asociada a vegetación.
+**Filtro numérico:** distancia ponderada 2.749; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dafne: brazos convertidos en ramas + pies/parte baja en raíces, con transición clara y no terrorífica. Cuerpo: adulta joven; delgada. Frente a Deméter: espigas/cosecha formando una masa lateral + falda o túnica amplia cerca del suelo. Cuerpo: adulta madura; cuerpo fuerte de trabajo sin musculatura heroica. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dafne: el cuerpo crece y se transforma, en vez de huir. Frente a Deméter: manos activas trabajando con plantas o semillas. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dafne: río/bosque simple; ramas deben abrirse hacia aire limpio y raíces quedar completas en la imagen maestra. Frente a Deméter: crecimiento controlado alrededor de la figura, con una masa vegetal lateral y espacio limpio en el lado opuesto. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dafne, comparación Deméter; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Aracne.**
+
+| | Dafne | Aracne |
+|---|---|---|
+| Cabello | castaño claro | castaño oscuro |
+| Textura | largo mezclándose con hojas | recogido alto |
+| Piel | clara dorada | oliva clara |
+| Ojos | verde oliva | gris |
+
+Silueta de Aracne, para no repetirla: telar diagonal + hilos saliendo del marco corporal + pequeña araña/patrón radial rompiendo el contorno.
+
+Pose de Aracne, para no repetirla: trabaja con precisión, con manos separadas en tareas distintas.
+
+Ejes numéricos que ya los separan: contorno superior 9 contra 1, dependencia del identificador 2 contra 8, angulosidad facial 3 contra 7, verticalidad 9 contra 5.
+
+**Por qué se controla este par:** transformación femenina visible.
+**Filtro numérico:** distancia ponderada 2.402; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dafne: brazos convertidos en ramas + pies/parte baja en raíces, con transición clara y no terrorífica. Cuerpo: adulta joven; delgada. Frente a Aracne: telar diagonal + hilos saliendo del marco corporal + pequeña araña/patrón radial rompiendo el contorno. Cuerpo: adulta joven; contextura pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dafne: el cuerpo crece y se transforma, en vez de huir. Frente a Aracne: trabaja con precisión, con manos separadas en tareas distintas. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dafne: río/bosque simple; ramas deben abrirse hacia aire limpio y raíces quedar completas en la imagen maestra. Frente a Aracne: hilos crean geometría radial sin tapar rostro; telar ocupa una diagonal y deja un área limpia opuesta. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dafne, comparación Aracne; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Medusa.**
+
+| | Dafne | Medusa |
+|---|---|---|
+| Cabello | castaño claro | serpientes en lugar de cabello |
+| Textura | largo mezclándose con hojas | volúmenes y direcciones diferenciadas |
+| Piel | clara dorada | oliva media |
+| Ojos | verde oliva | ámbar |
+
+Silueta de Medusa, para no repetirla: cabello de serpientes como firma total, con cabezas orientadas en direcciones variadas para evitar casco simétrico.
+
+Pose de Medusa, para no repetirla: quietud controlada; nunca amenaza dirigida a cámara.
+
+Ejes numéricos que ya los separan: angulosidad facial 3 contra 8, dinamismo de pose 6 contra 2, oscuridad 3 contra 7, edad visual 4 contra 7.
+
+**Por qué se controla este par:** figura femenina transformada de contorno orgánico.
+**Filtro numérico:** distancia ponderada 1.961; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Dafne: brazos convertidos en ramas + pies/parte baja en raíces, con transición clara y no terrorífica. Cuerpo: adulta joven; delgada. Frente a Medusa: cabello de serpientes como firma total, con cabezas orientadas en direcciones variadas para evitar casco simétrico. Cuerpo: adulta madura; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Dafne: el cuerpo crece y se transforma, en vez de huir. Frente a Medusa: quietud controlada; nunca amenaza dirigida a cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Dafne: río/bosque simple; ramas deben abrirse hacia aire limpio y raíces quedar completas en la imagen maestra. Frente a Medusa: piedras en fondo como pista y aire alrededor de las serpientes para que cada masa se lea; cero horror. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo dafne, comparación Medusa; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Deméter. Diferenciar por transformación corporal y silueta de ramas, no agricultura.
 

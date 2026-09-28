@@ -95,6 +95,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Njörd.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Zeus.**
 
 | | Poseidón | Zeus |
@@ -112,6 +114,15 @@ Ejes numéricos que ya los separan: contorno superior 9 contra 5, verticalidad 6
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** adultos robustos con atributo alto y gesto de autoridad.
+**Filtro numérico:** distancia ponderada 1.385; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Poseidón: tridente alto fuera del eje corporal + manto o tela empujada lateralmente como por viento marino. Cuerpo: adulto maduro; cuerpo largo y robusto, menos compacto que Zeus. Frente a Zeus: hombros amplios + brazo del rayo separado del torso + manto que cae en una sola masa lateral. Cuerpo: adulto maduro; torso ancho, compacto y de presencia dominante sin llegar a la masa extrema de Heracles. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Poseidón: pies bien apoyados; sostiene o presenta el tridente en eje alto sin atacar. Frente a Zeus: una mano baja estabiliza y la otra presenta el rayo hacia afuera; gesto de mando abierto, no pose estática con objeto al pecho. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Poseidón: movimiento horizontal de agua en fondo contra la vertical del tridente; aire lateral suficiente para que el arma no se pegue al cuerpo. Frente a Zeus: figura centrada pero asimétrica, con aire claro sobre y alrededor del lado del rayo para que éste tenga lectura propia. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo poseidon, comparación Zeus; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Njörd.**
 
 | | Poseidón | Njörd |
@@ -126,6 +137,41 @@ Silueta de Njörd, para no repetirla: capa horizontal empujada por viento + braz
 Pose de Njörd, para no repetirla: brazos bajos abiertos; quietud receptiva, no dominio armado.
 
 Ejes numéricos que ya los separan: dependencia del identificador 9 contra 3, dinamismo de pose 7 contra 2, angulosidad facial 8 contra 4, contorno superior 9 contra 6.
+
+**Por qué se controla este par:** varones maduros asociados al mar y telas al viento; Espejo.
+**Filtro numérico:** distancia ponderada 2.268; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Poseidón: tridente alto fuera del eje corporal + manto o tela empujada lateralmente como por viento marino. Cuerpo: adulto maduro; cuerpo largo y robusto, menos compacto que Zeus. Frente a Njörd: capa horizontal empujada por viento + brazos bajos abiertos hacia el mar; ninguna arma. Cuerpo: adulto mayor; alto y ancho moderado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Poseidón: pies bien apoyados; sostiene o presenta el tridente en eje alto sin atacar. Frente a Njörd: brazos bajos abiertos; quietud receptiva, no dominio armado. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Poseidón: movimiento horizontal de agua en fondo contra la vertical del tridente; aire lateral suficiente para que el arma no se pegue al cuerpo. Frente a Njörd: eje horizontal suave con horizonte marino y gran aire alrededor de la capa movida por viento. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo poseidon, comparación Njörd; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Thor.**
+
+| | Poseidón | Thor |
+|---|---|---|
+| Cabello | gris acero | cobrizo |
+| Textura | ondulado largo barrido | ondulado grueso |
+| Piel | canela | clara rosada curtida |
+| Ojos | verde gris | azul claro |
+
+Silueta de Thor, para no repetirla: Mjölnir separado del cuerpo + capa corta o pieles que ensanchan la parte alta + piernas firmes.
+
+Pose de Thor, para no repetirla: martillo bajo o lateral listo pero sin golpear; cuerpo preparado, no agresivo hacia cámara.
+
+Ejes numéricos que ya los separan: protagonismo de fondo 8 contra 4, rigidez de materiales 5 contra 8, angulosidad facial 8 contra 6, contorno superior 9 contra 7.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** hombros y masa altos, contorno amplio y objeto exterior.
+**Filtro numérico:** distancia ponderada 0.922; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Poseidón: tridente alto fuera del eje corporal + manto o tela empujada lateralmente como por viento marino. Cuerpo: adulto maduro; cuerpo largo y robusto, menos compacto que Zeus. Frente a Thor: Mjölnir separado del cuerpo + capa corta o pieles que ensanchan la parte alta + piernas firmes. Cuerpo: adulto maduro; muy ancho de hombros, masa alta pero menor que Heracles. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Poseidón: pies bien apoyados; sostiene o presenta el tridente en eje alto sin atacar. Frente a Thor: martillo bajo o lateral listo pero sin golpear; cuerpo preparado, no agresivo hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Poseidón: movimiento horizontal de agua en fondo contra la vertical del tridente; aire lateral suficiente para que el arma no se pegue al cuerpo. Frente a Thor: separar la cabeza del martillo de la masa del torso y reservar aire lateral; electricidad ambiental controlada. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo poseidon, comparación Thor; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Zeus y Njörd. No repetir el encuadre frontal majestuoso de Zeus ni la calma marítima y ausencia de arma de Njörd.
 

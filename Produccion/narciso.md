@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Eco.**
 
 | | Narciso | Eco |
@@ -109,6 +111,67 @@ Pose de Eco, para no repetirla: mano cerca de la boca sin gesto exagerado; cuerp
 Ejes numéricos que ya los separan: verticalidad 2 contra 5, apertura corporal 2 contra 4, oscuridad 2 contra 4, protagonismo de fondo 7 contra 9.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figuras leves en entorno íntimo; Espejo.
+**Filtro numérico:** distancia ponderada 1.101; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Narciso: cuerpo inclinado sobre agua + reflejo creando una segunda forma invertida + flor pequeña cerca del borde. Cuerpo: adulto joven; delgado. Frente a Eco: cuerpo parcialmente oculto por roca/vegetación + ondas de sonido rompiendo el contorno hacia dos lados. Cuerpo: adulta joven; pequeña y ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Narciso: agachado mirando el reflejo. Frente a Eco: mano cerca de la boca sin gesto exagerado; cuerpo quieto. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Narciso: composición vertical duplicada por el agua; reservar superficie limpia para que el reflejo sea legible. Frente a Eco: reservar aire para dos o tres ondas concéntricas claras y mantener roca/vegetación subordinadas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo narciso, comparación Eco; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Orfeo.**
+
+| | Narciso | Orfeo |
+|---|---|---|
+| Cabello | castaño oscuro | castaño muy oscuro |
+| Textura | ondulado suave | ondulado marcado |
+| Piel | clara dorada | oliva clara |
+| Ojos | verde oliva | avellana |
+
+Silueta de Orfeo, para no repetirla: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas.
+
+Pose de Orfeo, para no repetirla: sentado o apoyado tocando la lira.
+
+Ejes numéricos que ya los separan: contorno superior 4 contra 6, apertura corporal 2 contra 4, verticalidad 2 contra 4, oscuridad 2 contra 4.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones jóvenes livianos de baja acción; riesgo alto con EV actualizado.
+**Filtro numérico:** distancia ponderada 0.872; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Narciso: cuerpo inclinado sobre agua + reflejo creando una segunda forma invertida + flor pequeña cerca del borde. Cuerpo: adulto joven; delgado. Frente a Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Narciso: agachado mirando el reflejo. Frente a Orfeo: sentado o apoyado tocando la lira. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Narciso: composición vertical duplicada por el agua; reservar superficie limpia para que el reflejo sea legible. Frente a Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo narciso, comparación Orfeo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Paris.**
+
+| | Narciso | Paris |
+|---|---|---|
+| Cabello | castaño oscuro | castaño medio |
+| Textura | ondulado suave | lacio |
+| Piel | clara dorada | oliva media |
+| Ojos | verde oliva | verde gris |
+
+Silueta de Paris, para no repetirla: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección.
+
+Pose de Paris, para no repetirla: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria.
+
+Ejes numéricos que ya los separan: verticalidad 2 contra 7, dependencia del identificador 7 contra 10, apertura corporal 2 contra 4, densidad visual 3 contra 5.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones jóvenes de gesto contemplativo; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.380; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Narciso: cuerpo inclinado sobre agua + reflejo creando una segunda forma invertida + flor pequeña cerca del borde. Cuerpo: adulto joven; delgado. Frente a Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Narciso: agachado mirando el reflejo. Frente a Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Narciso: composición vertical duplicada por el agua; reservar superficie limpia para que el reflejo sea legible. Frente a Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo narciso, comparación Paris; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Eco. Diferenciar por mirada hacia abajo, duplicación por reflejo y ausencia de ondas de sonido.
 

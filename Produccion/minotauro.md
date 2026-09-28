@@ -91,6 +91,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Pan.**
 
 Silueta de Pan, para no repetirla: flauta de caña horizontal + cuerpo compacto + vegetación de bosque; no agregar patas, cuernos u otros rasgos anatómicos si la ficha visual no los autoriza expresamente.
@@ -98,6 +100,53 @@ Silueta de Pan, para no repetirla: flauta de caña horizontal + cuerpo compacto 
 Pose de Pan, para no repetirla: sentado o apoyado tocando la flauta.
 
 Ejes numéricos que ya los separan: dependencia del identificador 1 contra 9, rareza anatómica 9 contra 1, masa corporal 10 contra 6, escala aparente 8 contra 4.
+
+**Por qué se controla este par:** riesgo taurino/caprino documentado; no introducir patas ni cuernos en Pan.
+**Filtro numérico:** distancia ponderada 3.408; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Minotauro: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano. Cuerpo: adulto híbrido; torso humanoide muy ancho y pesado, con piernas taurinas terminadas en pezuñas. Sin piernas ni pies humanos. Frente a Pan: flauta de caña horizontal + cuerpo compacto + vegetación de bosque; no agregar patas, cuernos u otros rasgos anatómicos si la ficha visual no los autoriza expresamente. Cuerpo: adulto maduro; bajo y compacto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Minotauro: observa o decide camino; no carga hacia cámara. Frente a Pan: sentado o apoyado tocando la flauta. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Minotauro: transición anatómica completa en imagen maestra; laberinto subordinado y aire alrededor de ambos cuernos. Frente a Pan: composición baja con bosque lateral; aire alrededor de las cañas para que el instrumento sea legible. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo minotauro, comparación Pan; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Quirón.**
+
+Silueta de Quirón, para no repetirla: cuerpo de centauro + arco o instrumento de enseñanza en diagonal + postura abierta de maestro.
+
+Pose de Quirón, para no repetirla: enseña o indica; no corre.
+
+Ejes numéricos que ya los separan: masa corporal 10 contra 7, apertura corporal 4 contra 7, oscuridad 6 contra 3, anchura de hombros 10 contra 7.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** híbridos grandes con torso humanoide.
+**Filtro numérico:** distancia ponderada 1.352; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Minotauro: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano. Cuerpo: adulto híbrido; torso humanoide muy ancho y pesado, con piernas taurinas terminadas en pezuñas. Sin piernas ni pies humanos. Frente a Quirón: cuerpo de centauro + arco o instrumento de enseñanza en diagonal + postura abierta de maestro. Cuerpo: parte humana de adulto mayor con torso atlético moderado; parte equina completa y estable. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Minotauro: observa o decide camino; no carga hacia cámara. Frente a Quirón: enseña o indica; no corre. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Minotauro: transición anatómica completa en imagen maestra; laberinto subordinado y aire alrededor de ambos cuernos. Frente a Quirón: espacio negativo frente al gesto docente; cuerpo equino completo para que la hibridez no quede escondida. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo minotauro, comparación Quirón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Cerbero.**
+
+Silueta de Cerbero, para no repetirla: tres perfiles de cabeza escalonados en altura + cuerpo único ancho.
+
+Pose de Cerbero, para no repetirla: sentado o quieto ante una entrada.
+
+Ejes numéricos que ya los separan: angulosidad facial 7 contra 5, contorno superior 5 contra 7, verticalidad 7 contra 5.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** criaturas muy masivas detenidas con contorno cefálico excepcional.
+**Filtro numérico:** distancia ponderada 0.821; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Minotauro: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano. Cuerpo: adulto híbrido; torso humanoide muy ancho y pesado, con piernas taurinas terminadas en pezuñas. Sin piernas ni pies humanos. Frente a Cerbero: tres perfiles de cabeza escalonados en altura + cuerpo único ancho. Cuerpo: perro adulto enorme, robusto y de patas pesadas. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Minotauro: observa o decide camino; no carga hacia cámara. Frente a Cerbero: sentado o quieto ante una entrada. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Minotauro: transición anatómica completa en imagen maestra; laberinto subordinado y aire alrededor de ambos cuernos. Frente a Cerbero: escalonar las tres cabezas para evitar solapamiento; entrada subordinada y aire suficiente entre perfiles. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo minotauro, comparación Cerbero; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Pan. Evitar sumar rasgos caprinos no autorizados a Pan y mantener al Minotauro inequívocamente taurino y masivo.
 

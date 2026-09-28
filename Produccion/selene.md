@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Artemisa.**
 
 | | Selene | Artemisa |
@@ -107,6 +109,15 @@ Silueta de Artemisa, para no repetirla: arco largo rompiendo un lateral + cuerpo
 Pose de Artemisa, para no repetirla: arco en reposo hacia abajo; calma vigilante, no disparo ni combate.
 
 Ejes numéricos que ya los separan: contorno superior 8 contra 2, rareza anatómica 5 contra 1, edad visual 7 contra 4, apertura corporal 7 contra 4.
+
+**Por qué se controla este par:** mujeres altas de lectura lunar y cuerpo contenido.
+**Filtro numérico:** distancia ponderada 1.989; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Cuerpo: adulta madura; alta y esbelta. Frente a Artemisa: arco largo rompiendo un lateral + cuerpo de cazadora en eje diagonal + capa corta o faldón práctico. Cuerpo: adulta joven; atlética ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Selene: conduce el carro con ritmo elegante y silencioso. Frente a Artemisa: arco en reposo hacia abajo; calma vigilante, no disparo ni combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Selene: creciente desplazado y telas horizontales; aire delante del carro y temperatura fría coherente. Frente a Artemisa: espacio negativo claro delante de la mirada; el arco debe romper el contorno sin encerrarla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo selene, comparación Artemisa; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Helios.**
 
@@ -124,6 +135,41 @@ Pose de Helios, para no repetirla: conduce el carro, erguido y estable.
 Ejes numéricos que ya los separan: oscuridad 4 contra 1, masa corporal 4 contra 6, contorno superior 8 contra 6, dinamismo de pose 6 contra 8.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** vehículo celeste lateral.
+**Filtro numérico:** distancia ponderada 1.101; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Cuerpo: adulta madura; alta y esbelta. Frente a Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Selene: conduce el carro con ritmo elegante y silencioso. Frente a Helios: conduce el carro, erguido y estable. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Selene: creciente desplazado y telas horizontales; aire delante del carro y temperatura fría coherente. Frente a Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo selene, comparación Helios; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Circe.**
+
+| | Selene | Circe |
+|---|---|---|
+| Cabello | negro azulado | castaño muy oscuro rojizo |
+| Textura | largo lacio | largo con volumen lateral |
+| Piel | muy pálida | oliva clara |
+| Ojos | gris plata | ámbar |
+
+Silueta de Circe, para no repetirla: vara mágica fuera del eje + manto amplio + mano libre en gesto de transformación.
+
+Pose de Circe, para no repetirla: cuerpo casi quieto mientras la magia produce cambio alrededor.
+
+Ejes numéricos que ya los separan: rareza anatómica 5 contra 1, angulosidad facial 4 contra 7, verticalidad 6 contra 9, dinamismo de pose 6 contra 4.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres maduras con contorno largo expansivo y gesto vertical.
+**Filtro numérico:** distancia ponderada 1.324; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Cuerpo: adulta madura; alta y esbelta. Frente a Circe: vara mágica fuera del eje + manto amplio + mano libre en gesto de transformación. Cuerpo: adulta madura; alta y esbelta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Selene: conduce el carro con ritmo elegante y silencioso. Frente a Circe: cuerpo casi quieto mientras la magia produce cambio alrededor. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Selene: creciente desplazado y telas horizontales; aire delante del carro y temperatura fría coherente. Frente a Circe: isla remota en fondo; espacio alrededor de la vara y de la mano libre para sostener la teatralidad sin saturar. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo selene, comparación Circe; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Artemisa y Helios. Diferenciar de Artemisa por carro; de Helios por luz fría y ritmo pausado.
 

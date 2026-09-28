@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Circe.**
 
 | | Medea | Circe |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: contorno superior 3 contra 9, verticalidad 3
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** magia y figura femenina adulta.
+**Filtro numérico:** distancia ponderada 2.061; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Medea: cuerpo bajo y calculador + manos activas cerca de una solución mágica/táctica + telas cerradas. Cuerpo: adulta joven-madura; delgada. Frente a Circe: vara mágica fuera del eje + manto amplio + mano libre en gesto de transformación. Cuerpo: adulta madura; alta y esbelta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Medea: agachada o inclinada resolviendo la situación del dragón dormido; no pose de hechicera genérica hacia cámara. Frente a Circe: cuerpo casi quieto mientras la magia produce cambio alrededor. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Medea: el foco está en la relación entre manos, solución y problema; mantener el dragón subordinado y no terrorífico. Frente a Circe: isla remota en fondo; espacio alrededor de la vara y de la mano libre para sostener la teatralidad sin saturar. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo medea, comparación Circe; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Casandra.**
 
 | | Medea | Casandra |
@@ -126,6 +137,41 @@ Pose de Casandra, para no repetirla: advertencia activa mediante mirada y manos;
 Ejes numéricos que ya los separan: apertura corporal 3 contra 8, contorno superior 3 contra 6, verticalidad 3 contra 6, densidad visual 7 contra 5.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres angulares concentradas de manos activas.
+**Filtro numérico:** distancia ponderada 1.263; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Medea: cuerpo bajo y calculador + manos activas cerca de una solución mágica/táctica + telas cerradas. Cuerpo: adulta joven-madura; delgada. Frente a Casandra: cuerpo inclinado hacia adelante + una mano señalando lejos + otra abierta en frustración contenida. Cuerpo: adulta joven; delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Medea: agachada o inclinada resolviendo la situación del dragón dormido; no pose de hechicera genérica hacia cámara. Frente a Casandra: advertencia activa mediante mirada y manos; ninguna magia lanzada. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Medea: el foco está en la relación entre manos, solución y problema; mantener el dragón subordinado y no terrorífico. Frente a Casandra: reservar espacio en la dirección señalada para que la advertencia tenga destino visual; Troya queda como contexto. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo medea, comparación Casandra; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Artemisa.**
+
+| | Medea | Artemisa |
+|---|---|---|
+| Cabello | castaño muy oscuro ⚠ igual | castaño muy oscuro |
+| Textura | grueso recogido práctico | lacio recogido alto |
+| Piel | oliva media | canela |
+| Ojos | negro | ámbar |
+
+Silueta de Artemisa, para no repetirla: arco largo rompiendo un lateral + cuerpo de cazadora en eje diagonal + capa corta o faldón práctico.
+
+Pose de Artemisa, para no repetirla: arco en reposo hacia abajo; calma vigilante, no disparo ni combate.
+
+Ejes numéricos que ya los separan: angulosidad facial 8 contra 5, verticalidad 3 contra 6, oscuridad 7 contra 4, dependencia del identificador 5 contra 8.
+
+**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figuras femeninas contenidas de rostro angular; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.486; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Medea: cuerpo bajo y calculador + manos activas cerca de una solución mágica/táctica + telas cerradas. Cuerpo: adulta joven-madura; delgada. Frente a Artemisa: arco largo rompiendo un lateral + cuerpo de cazadora en eje diagonal + capa corta o faldón práctico. Cuerpo: adulta joven; atlética ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Medea: agachada o inclinada resolviendo la situación del dragón dormido; no pose de hechicera genérica hacia cámara. Frente a Artemisa: arco en reposo hacia abajo; calma vigilante, no disparo ni combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Medea: el foco está en la relación entre manos, solución y problema; mantener el dragón subordinado y no terrorífico. Frente a Artemisa: espacio negativo claro delante de la mirada; el arco debe romper el contorno sin encerrarla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo medea, comparación Artemisa; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Circe y Casandra. Diferenciar por postura baja de resolución, no verticalidad teatral ni simple advertencia.
 

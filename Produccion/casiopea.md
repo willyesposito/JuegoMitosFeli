@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Hera.**
 
 | | Casiopea | Hera |
@@ -109,6 +111,67 @@ Pose de Hera, para no repetirla: una mano relajada y otra sobre el manto; cero g
 Ejes numéricos que ya los separan: protagonismo de fondo 9 contra 5, apertura corporal 2 contra 5, verticalidad 6 contra 9, oscuridad 5 contra 3.
 
 **Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** autoridad femenina madura.
+**Filtro numérico:** distancia ponderada 1.056; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Frente a Hera: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno. Cuerpo: adulta madura; alta y de postura regia. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Casiopea: quietud orgullosa sobre el trono. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Hera: pavo real lateral para quebrar la verticalidad sin competir con el rostro; fondo contenido. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo casiopea, comparación Hera; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Frigg.**
+
+| | Casiopea | Frigg |
+|---|---|---|
+| Cabello | negro | rubio ceniza con canas |
+| Textura | estructurado alto | trenzas simples |
+| Piel | castaña media | clara rosada |
+| Ojos | ámbar | azul gris |
+
+Silueta de Frigg, para no repetirla: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.
+
+Pose de Frigg, para no repetirla: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético.
+
+Ejes numéricos que ya los separan: protagonismo de fondo 9 contra 2, dependencia del identificador 7 contra 2, densidad visual 7 contra 3, verticalidad 6 contra 9.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres maduras contenidas; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.168; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Casiopea: quietud orgullosa sobre el trono. Frente a Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo casiopea, comparación Frigg; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Dido.**
+
+| | Casiopea | Dido |
+|---|---|---|
+| Cabello | negro ⚠ igual | negro |
+| Textura | estructurado alto | recogido de volumen controlado |
+| Piel | castaña media ⚠ igual | castaña media |
+| Ojos | ámbar | marrón muy oscuro |
+
+Silueta de Dido, para no repetirla: manto/púrpura de Tiro + gesto de planificación + muralla en construcción como forma secundaria; evitar estética de emperatriz romana.
+
+Pose de Dido, para no repetirla: señala el trazado de Cartago o supervisa obra; actividad fundadora, no pose regia estática.
+
+Ejes numéricos que ya los separan: apertura corporal 2 contra 8, dinamismo de pose 1 contra 4, dependencia del identificador 7 contra 4, verticalidad 6 contra 8.
+
+**Atención: 11 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figura madura de autoridad y arquitectura; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.274; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Frente a Dido: manto/púrpura de Tiro + gesto de planificación + muralla en construcción como forma secundaria; evitar estética de emperatriz romana. Cuerpo: adulta madura; alta y de contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Casiopea: quietud orgullosa sobre el trono. Frente a Dido: señala el trazado de Cartago o supervisa obra; actividad fundadora, no pose regia estática. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Dido: muralla/puerto mediterráneo subordinados; aire en la dirección del gesto de planificación. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo casiopea, comparación Dido; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Hera. Diferenciar por postura sentada y geometría de constelación, no manto vertical ni pavo real.
 

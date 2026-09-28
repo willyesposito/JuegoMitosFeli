@@ -97,6 +97,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Poseidón.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Poseidón.**
 
 | | Njörd | Poseidón |
@@ -111,6 +113,65 @@ Silueta de Poseidón, para no repetirla: tridente alto fuera del eje corporal + 
 Pose de Poseidón, para no repetirla: pies bien apoyados; sostiene o presenta el tridente en eje alto sin atacar.
 
 Ejes numéricos que ya los separan: dependencia del identificador 3 contra 9, dinamismo de pose 2 contra 7, angulosidad facial 4 contra 8, contorno superior 6 contra 9.
+
+**Por qué se controla este par:** varones maduros marinos; Espejo.
+**Filtro numérico:** distancia ponderada 2.268; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Njörd: capa horizontal empujada por viento + brazos bajos abiertos hacia el mar; ninguna arma. Cuerpo: adulto mayor; alto y ancho moderado. Frente a Poseidón: tridente alto fuera del eje corporal + manto o tela empujada lateralmente como por viento marino. Cuerpo: adulto maduro; cuerpo largo y robusto, menos compacto que Zeus. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Njörd: brazos bajos abiertos; quietud receptiva, no dominio armado. Frente a Poseidón: pies bien apoyados; sostiene o presenta el tridente en eje alto sin atacar. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Njörd: eje horizontal suave con horizonte marino y gran aire alrededor de la capa movida por viento. Frente a Poseidón: movimiento horizontal de agua en fondo contra la vertical del tridente; aire lateral suficiente para que el arma no se pegue al cuerpo. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo njord, comparación Poseidón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Jasón.**
+
+| | Njörd | Jasón |
+|---|---|---|
+| Cabello | gris | castaño claro |
+| Textura | barrido por viento | ondulado marcado |
+| Piel | clara curtida | dorada media |
+| Ojos | azul gris | avellana |
+
+Silueta de Jasón, para no repetirla: Vellocino de Oro como gran masa irregular sobre un brazo/hombro + dirección de capitán hacia un lateral.
+
+Pose de Jasón, para no repetirla: mano libre indicando rumbo; liderazgo colaborativo, no regia estática.
+
+Ejes numéricos que ya los separan: dependencia del identificador 3 contra 9, edad visual 8 contra 5, dinamismo de pose 2 contra 5, verticalidad 5 contra 7.
+
+**Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones de contexto de navegación y apertura alta; cercanía numérica.
+**Filtro numérico:** distancia ponderada 1.246; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Njörd: capa horizontal empujada por viento + brazos bajos abiertos hacia el mar; ninguna arma. Cuerpo: adulto mayor; alto y ancho moderado. Frente a Jasón: Vellocino de Oro como gran masa irregular sobre un brazo/hombro + dirección de capitán hacia un lateral. Cuerpo: adulto joven-maduro; cuerpo atlético medio. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Njörd: brazos bajos abiertos; quietud receptiva, no dominio armado. Frente a Jasón: mano libre indicando rumbo; liderazgo colaborativo, no regia estática. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Njörd: eje horizontal suave con horizonte marino y gran aire alrededor de la capa movida por viento. Frente a Jasón: el Vellocino ocupa una masa clara sin tapar rostro; el Argo queda pequeño en contexto y el aire acompaña la dirección señalada. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo njord, comparación Jasón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Odín.**
+
+| | Njörd | Odín |
+|---|---|---|
+| Cabello | gris | blanco |
+| Textura | barrido por viento | lacio largo |
+| Piel | clara curtida ⚠ igual | clara curtida |
+| Ojos | azul gris ⚠ igual | azul gris |
+
+Silueta de Odín, para no repetirla: dos cuervos en alturas distintas + cuerpo vertical fino + capa larga.
+
+Pose de Odín, para no repetirla: una mano cerca del rostro y otra baja; observa más de lo que manda.
+
+Ejes numéricos que ya los separan: angulosidad facial 4 contra 9, apertura corporal 8 contra 3, oscuridad 2 contra 7, verticalidad 5 contra 9.
+
+**Por qué se controla este par:** varones mayores nórdicos con capa y poca acción.
+**Filtro numérico:** distancia ponderada 2.279; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Njörd: capa horizontal empujada por viento + brazos bajos abiertos hacia el mar; ninguna arma. Cuerpo: adulto mayor; alto y ancho moderado. Frente a Odín: dos cuervos en alturas distintas + cuerpo vertical fino + capa larga. Cuerpo: adulto mayor vigoroso; alto y estrecho. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Njörd: brazos bajos abiertos; quietud receptiva, no dominio armado. Frente a Odín: una mano cerca del rostro y otra baja; observa más de lo que manda. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Njörd: eje horizontal suave con horizonte marino y gran aire alrededor de la capa movida por viento. Frente a Odín: mantener a los cuervos separados entre sí y del rostro; verticalidad fina y aire alrededor de la capa para evitar el triángulo hombros-barba de Zeus. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo njord, comparación Odín; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Poseidón. Diferenciar por calma, ausencia de tridente y mayor edad aparente.
 

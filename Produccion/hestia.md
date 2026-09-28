@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Prometeo.**
 
 | | Hestia | Prometeo |
@@ -107,6 +109,67 @@ Silueta de Prometeo, para no repetirla: llama separada de la mano + cuerpo incli
 Pose de Prometeo, para no repetirla: brazo extendido ofreciendo el fuego, nunca objeto al pecho.
 
 Ejes numéricos que ya los separan: angulosidad facial 2 contra 8, apertura corporal 2 contra 8, dinamismo de pose 1 contra 6, contorno superior 1 contra 5.
+
+**Por qué se controla este par:** fuego como foco puede producir la misma figura iluminada.
+**Filtro numérico:** distancia ponderada 2.626; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Hestia: cuerpo compacto sentado o arrodillado + llama del hogar a un costado + telas suaves sin objetos de poder. Cuerpo: adulta madura; contextura media-pequeña. Frente a Prometeo: llama separada de la mano + cuerpo inclinado protegiéndola del viento + manto corto hacia atrás. Cuerpo: adulto maduro; alto y fibroso. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Hestia: cuida la llama en calma. Frente a Prometeo: brazo extendido ofreciendo el fuego, nunca objeto al pecho. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Hestia: composición baja y contenida, con aire cálido alrededor de la llama y fondo doméstico simple. Frente a Prometeo: aire delante de la llama y del brazo extendido; el fuego pequeño debe leerse sin transformarse en sol monumental. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hestia, comparación Prometeo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Penélope.**
+
+| | Hestia | Penélope |
+|---|---|---|
+| Cabello | castaño ceniza | castaño oscuro con hilos grises |
+| Textura | recogido simple | recogido bajo |
+| Piel | dorada media | oliva media |
+| Ojos | marrón cálido ⚠ igual | marrón cálido |
+
+Silueta de Penélope, para no repetirla: telar formando un marco vertical parcial + brazos ocupados a distinta altura.
+
+Pose de Penélope, para no repetirla: trabajando con el hilo, sentada o de pie lateral; mirada fuera de cuadro en una pausa pensativa.
+
+Ejes numéricos que ya los separan: verticalidad 3 contra 6, dinamismo de pose 1 contra 3, densidad visual 3 contra 5, oscuridad 1 contra 3.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres maduras contenidas en actividad doméstica; cercanía numérica.
+**Filtro numérico:** distancia ponderada 0.939; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Hestia: cuerpo compacto sentado o arrodillado + llama del hogar a un costado + telas suaves sin objetos de poder. Cuerpo: adulta madura; contextura media-pequeña. Frente a Penélope: telar formando un marco vertical parcial + brazos ocupados a distinta altura. Cuerpo: adulta madura; contextura media-pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Hestia: cuida la llama en calma. Frente a Penélope: trabajando con el hilo, sentada o de pie lateral; mirada fuera de cuadro en una pausa pensativa. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Hestia: composición baja y contenida, con aire cálido alrededor de la llama y fondo doméstico simple. Frente a Penélope: telar estructura la imagen sin encerrar por completo el cuerpo; escena doméstica activa, no pasiva. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hestia, comparación Penélope; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Frigg.**
+
+| | Hestia | Frigg |
+|---|---|---|
+| Cabello | castaño ceniza | rubio ceniza con canas |
+| Textura | recogido simple | trenzas simples |
+| Piel | dorada media | clara rosada |
+| Ojos | marrón cálido | azul gris |
+
+Silueta de Frigg, para no repetirla: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.
+
+Pose de Frigg, para no repetirla: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético.
+
+Ejes numéricos que ya los separan: dependencia del identificador 9 contra 2, verticalidad 3 contra 9, angulosidad facial 2 contra 7, escala aparente 4 contra 7.
+
+**Atención: 8 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** figuras maduras cerradas, serenas y de baja densidad.
+**Filtro numérico:** distancia ponderada 1.754; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Hestia: cuerpo compacto sentado o arrodillado + llama del hogar a un costado + telas suaves sin objetos de poder. Cuerpo: adulta madura; contextura media-pequeña. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Hestia: cuida la llama en calma. Frente a Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Hestia: composición baja y contenida, con aire cálido alrededor de la llama y fondo doméstico simple. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hestia, comparación Frigg; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Prometeo. Diferenciar porque el fuego se conserva y cuida, no se transporta ni se entrega.
 

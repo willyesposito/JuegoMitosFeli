@@ -89,6 +89,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Fenrir.**
 
 Silueta de Fenrir, para no repetirla: lomo horizontal + cinta mágica fina contrastando con el gran tamaño + patas separadas y firmes.
@@ -98,6 +100,51 @@ Pose de Fenrir, para no repetirla: detenido y observando; nunca abalanzándose.
 Ejes numéricos que ya los separan: angulosidad facial 5 contra 8, rareza anatómica 10 contra 8.
 
 **Atención: 13 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** caninos enormes de guardia.
+**Filtro numérico:** distancia ponderada 0.983; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Cerbero: tres perfiles de cabeza escalonados en altura + cuerpo único ancho. Cuerpo: perro adulto enorme, robusto y de patas pesadas. Frente a Fenrir: lomo horizontal + cinta mágica fina contrastando con el gran tamaño + patas separadas y firmes. Cuerpo: lobo adulto gigante; cuerpo largo, musculoso y de cabeza grande. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cerbero: sentado o quieto ante una entrada. Frente a Fenrir: detenido y observando; nunca abalanzándose. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Cerbero: escalonar las tres cabezas para evitar solapamiento; entrada subordinada y aire suficiente entre perfiles. Frente a Fenrir: la cinta debe verse claramente contra la masa del lobo y existir aire delante del hocico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo cerbero, comparación Fenrir; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Calisto.**
+
+Silueta de Calisto, para no repetirla: gran cuerpo de osa + arco de estrellas de Osa Mayor arriba + perfil ancho y patas firmes.
+
+Pose de Calisto, para no repetirla: quieta mirando las estrellas, nunca rugiendo.
+
+Ejes numéricos que ya los separan: dependencia del identificador 1 contra 7, densidad visual 9 contra 6, oscuridad 7 contra 4, masa corporal 10 contra 8.
+
+**Por qué se controla este par:** cuadrúpedos pesados detenidos.
+**Filtro numérico:** distancia ponderada 1.480; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Cerbero: tres perfiles de cabeza escalonados en altura + cuerpo único ancho. Cuerpo: perro adulto enorme, robusto y de patas pesadas. Frente a Calisto: gran cuerpo de osa + arco de estrellas de Osa Mayor arriba + perfil ancho y patas firmes. Cuerpo: osa adulta, amable e imponente; cuerpo pesado y estable. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cerbero: sentado o quieto ante una entrada. Frente a Calisto: quieta mirando las estrellas, nunca rugiendo. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Cerbero: escalonar las tres cabezas para evitar solapamiento; entrada subordinada y aire suficiente entre perfiles. Frente a Calisto: paisaje nocturno limpio y arco estelar por encima, con aire suficiente entre lomo y constelación. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo cerbero, comparación Calisto; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Minotauro.**
+
+Silueta de Minotauro, para no repetirla: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano.
+
+Pose de Minotauro, para no repetirla: observa o decide camino; no carga hacia cámara.
+
+Ejes numéricos que ya los separan: angulosidad facial 5 contra 7, contorno superior 7 contra 5, verticalidad 5 contra 7.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** criaturas muy masivas con contorno cefálico excepcional.
+**Filtro numérico:** distancia ponderada 0.821; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Cerbero: tres perfiles de cabeza escalonados en altura + cuerpo único ancho. Cuerpo: perro adulto enorme, robusto y de patas pesadas. Frente a Minotauro: cuernos largos + hombros enormes + postura ligeramente encorvada sobre anatomía toro-humano. Cuerpo: adulto híbrido; torso humanoide muy ancho y pesado, con piernas taurinas terminadas en pezuñas. Sin piernas ni pies humanos. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cerbero: sentado o quieto ante una entrada. Frente a Minotauro: observa o decide camino; no carga hacia cámara. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Cerbero: escalonar las tres cabezas para evitar solapamiento; entrada subordinada y aire suficiente entre perfiles. Frente a Minotauro: transición anatómica completa en imagen maestra; laberinto subordinado y aire alrededor de ambos cuernos. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo cerbero, comparación Minotauro; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Fenrir. Diferenciar por multiplicidad, postura quieta y cuerpo más ancho.
 

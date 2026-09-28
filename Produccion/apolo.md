@@ -95,6 +95,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Balder.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Balder.**
 
 | | Apolo | Balder |
@@ -112,6 +114,15 @@ Ejes numéricos que ya los separan: dependencia del identificador 8 contra 3, ap
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** varones jóvenes esbeltos y luminosos.
+**Filtro numérico:** distancia ponderada 1.413; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Balder: cuerpo abierto y limpio + luminosidad propia contenida; ninguna armadura pesada. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Balder: manos visibles y bajas; quietud abierta. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo apolo, comparación Balder; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Helios.**
 
 | | Apolo | Helios |
@@ -126,6 +137,15 @@ Silueta de Helios, para no repetirla: carro y ruedas formando base curva + líne
 Pose de Helios, para no repetirla: conduce el carro, erguido y estable.
 
 Ejes numéricos que ya los separan: dinamismo de pose 3 contra 8, densidad visual 5 contra 9, rareza anatómica 1 contra 5, apertura corporal 5 contra 8.
+
+**Por qué se controla este par:** luminosidad solar y varón alto pueden producir un mismo héroe vertical.
+**Filtro numérico:** distancia ponderada 2.358; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Helios: conduce el carro, erguido y estable. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo apolo, comparación Helios; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 **Contra Orfeo.**
 
@@ -143,6 +163,41 @@ Pose de Orfeo, para no repetirla: sentado o apoyado tocando la lira.
 Ejes numéricos que ya los separan: verticalidad 8 contra 4, angulosidad facial 5 contra 2, escala aparente 7 contra 5, oscuridad 2 contra 4.
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** músicos jóvenes con lira.
+**Filtro numérico:** distancia ponderada 1.385; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Orfeo: sentado o apoyado tocando la lira. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo apolo, comparación Orfeo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Paris.**
+
+| | Apolo | Paris |
+|---|---|---|
+| Cabello | rubio oscuro | castaño medio |
+| Textura | ondulado suave | lacio |
+| Piel | clara dorada | oliva media |
+| Ojos | ámbar | verde gris |
+
+Silueta de Paris, para no repetirla: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección.
+
+Pose de Paris, para no repetirla: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria.
+
+Ejes numéricos que ya los separan: protagonismo de fondo 4 contra 7, angulosidad facial 5 contra 3, dependencia del identificador 8 contra 10.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones jóvenes esbeltos de rasgos suaves; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.855; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo apolo, comparación Paris; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Balder, Helios y Orfeo. Separarlo por objeto musical, porte más idealizado y ausencia de carro o intimidad sentada.
 

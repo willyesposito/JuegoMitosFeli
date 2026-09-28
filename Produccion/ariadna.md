@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Teseo.**
 
 | | Ariadna | Teseo |
@@ -109,6 +111,67 @@ Pose de Teseo, para no repetirla: una mano guía el hilo y la otra queda libre; 
 Ejes numéricos que ya los separan: masa corporal 4 contra 6, apertura corporal 8 contra 6, dinamismo de pose 4 contra 6, dependencia del identificador 9 contra 7.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** hilo y laberinto pueden inducir la misma pose de exploración.
+**Filtro numérico:** distancia ponderada 1.095; morfología o lectura distinta: control semántico/compositivo, no colisión anatómica. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ariadna: ovillo redondo en una mano + hilo largo dibujando curva externa + postura de guía. Cuerpo: adulta joven; contextura media. Frente a Teseo: hilo visible que sale de una mano y dibuja una curva externa + cuerpo ágil de explorador. Cuerpo: adulto joven; atlético medio y ágil. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ariadna: entrega o sigue el hilo hacia fuera del cuadro; guía desde la solución. Frente a Teseo: una mano guía el hilo y la otra queda libre; exploración activa, no pose heroica frontal. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ariadna: laberinto queda como patrón bajo y el hilo cruza aire limpio para ser legible. Frente a Teseo: laberinto subordinado en fondo; aire en la dirección del hilo para que su curva sea legible. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ariadna, comparación Teseo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Psique.**
+
+| | Ariadna | Psique |
+|---|---|---|
+| Cabello | castaño claro | castaño oscuro |
+| Textura | ondulado medio | ondulado marcado |
+| Piel | oliva media | oliva clara |
+| Ojos | avellana | marrón cálido |
+
+Silueta de Psique, para no repetirla: mariposa o motivo de mariposa cerca del hombro + postura de avance cauteloso.
+
+Pose de Psique, para no repetirla: avanza entre pruebas con cautela y perseverancia.
+
+Ejes numéricos que ya los separan: apertura corporal 8 contra 5, angulosidad facial 4 contra 2, contorno superior 4 contra 6.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres jóvenes ligeras de gesto cauteloso/activo; cercanía numérica.
+**Filtro numérico:** distancia ponderada 0.950; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ariadna: ovillo redondo en una mano + hilo largo dibujando curva externa + postura de guía. Cuerpo: adulta joven; contextura media. Frente a Psique: mariposa o motivo de mariposa cerca del hombro + postura de avance cauteloso. Cuerpo: adulta joven; delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ariadna: entrega o sigue el hilo hacia fuera del cuadro; guía desde la solución. Frente a Psique: avanza entre pruebas con cautela y perseverancia. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ariadna: laberinto queda como patrón bajo y el hilo cruza aire limpio para ser legible. Frente a Psique: dejar aire en la dirección de avance; pruebas se sugieren de forma abstracta y no saturan el fondo. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ariadna, comparación Psique; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Pandora.**
+
+| | Ariadna | Pandora |
+|---|---|---|
+| Cabello | castaño claro | pelirrojo |
+| Textura | ondulado medio | rizado abierto |
+| Piel | oliva media | clara rosada con pecas |
+| Ojos | avellana | verde oliva |
+
+Silueta de Pandora, para no repetirla: gran jarra a un lado + cuerpo inclinado hacia ella + tapa/gesto generando diagonal.
+
+Pose de Pandora, para no repetirla: agachada observando la jarra con curiosidad, no terror.
+
+Ejes numéricos que ya los separan: apertura corporal 8 contra 5, verticalidad 5 contra 2, protagonismo de fondo 8 contra 5, angulosidad facial 4 contra 2.
+
+**Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** mujeres jóvenes con manos dirigidas a objeto; cercanía numérica.
+**Filtro numérico:** distancia ponderada 0.950; misma morfología y lectura; riesgo numérico medio. No sustituye la comparación textual.
+
+- **Separador de silueta:** Ariadna: ovillo redondo en una mano + hilo largo dibujando curva externa + postura de guía. Cuerpo: adulta joven; contextura media. Frente a Pandora: gran jarra a un lado + cuerpo inclinado hacia ella + tapa/gesto generando diagonal. Cuerpo: adulta joven; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Ariadna: entrega o sigue el hilo hacia fuera del cuadro; guía desde la solución. Frente a Pandora: agachada observando la jarra con curiosidad, no terror. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Ariadna: laberinto queda como patrón bajo y el hilo cruza aire limpio para ser legible. Frente a Pandora: elementos que salen son abstractos y suaves; un punto de luz de esperanza debe conservarse sin saturar la zona superior. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo ariadna, comparación Pandora; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Teseo. Diferenciar porque ella guía desde la solución y no explora físicamente el laberinto.
 

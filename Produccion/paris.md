@@ -93,6 +93,8 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 ## 7. Separación obligatoria
 
+**Preparación textual anti-clonación: DOCUMENTADA.** Tres o más riesgos justificados y separadores de silueta, pose y composición; la prueba visual de silueta, pose y avatar sigue pendiente.
+
 **Contra Midas.**
 
 | | Paris | Midas |
@@ -110,6 +112,15 @@ Ejes numéricos que ya los separan: edad visual 4 contra 6, contorno superior 4 
 
 **Atención: 10 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
 
+**Por qué se controla este par:** objeto/manzana dorada en mano.
+**Filtro numérico:** distancia ponderada 1.084; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Frente a Midas: una mano extendida separada del torso + objetos parcialmente dorados creando ritmo lateral. Cuerpo: adulto maduro; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. Frente a Midas: mira comida/agua convertida en oro con gesto de comprender el problema. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Frente a Midas: mano y objetos quedan separados del torso; el oro aparece por transformación parcial y no como fondo decorativo. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo paris, comparación Midas; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
 **Contra Eros.**
 
 | | Paris | Eros |
@@ -126,6 +137,41 @@ Pose de Eros, para no repetirla: apunta sin tensión bélica; gesto travieso-ama
 Ejes numéricos que ya los separan: protagonismo de fondo 7 contra 2, dinamismo de pose 2 contra 6, apertura corporal 4 contra 7, masa corporal 4 contra 2.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** varones jóvenes ligeros con gesto dirigido.
+**Filtro numérico:** distancia ponderada 1.587; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
+
+- **Separador de silueta:** Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Frente a Eros: arco curvo + flecha diagonal + cuerpo ligero; alas sólo si ya están autorizadas por la implementación visual del personaje. Cuerpo: adulto joven de aspecto claramente juvenil pero no infantil; delgado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. Frente a Eros: apunta sin tensión bélica; gesto travieso-amable. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Frente a Eros: dejar aire delante de la flecha; evitar que arco y cuerpo formen una masa cerrada. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo paris, comparación Eros; contrastes derivados del ADN y la matriz, sin nuevo diseño.
+
+**Contra Apolo.**
+
+| | Paris | Apolo |
+|---|---|---|
+| Cabello | castaño medio | rubio oscuro |
+| Textura | lacio | ondulado suave |
+| Piel | oliva media | clara dorada |
+| Ojos | verde gris | ámbar |
+
+Silueta de Apolo, para no repetirla: lira separada del torso + línea corporal muy vertical y ligera.
+
+Pose de Apolo, para no repetirla: tocando o afinando la lira; gesto artístico, no pose heroica.
+
+Ejes numéricos que ya los separan: protagonismo de fondo 7 contra 4, angulosidad facial 3 contra 5, dependencia del identificador 10 contra 8.
+
+**Atención: 12 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Por qué se controla este par:** jóvenes esbeltos de rasgos suaves; par de riesgo alto.
+**Filtro numérico:** distancia ponderada 0.855; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
+
+- **Separador de silueta:** Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.
+- **Separador de composición:** Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+
+**Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo paris, comparación Apolo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
 Criterio de la ficha: Midas y Eros. Diferenciar por un único objeto dorado y ausencia de arco.
 
