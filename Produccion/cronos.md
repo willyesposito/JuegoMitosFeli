@@ -33,7 +33,8 @@ Dones declarados en `personajes.json`: Titán del tiempo; Gobernó el mundo ante
 
 Ícono de la carta en la colección: `reloj_arena`. Dependencia del identificador en la matriz: 3 de 10.
 
-> **[REVISAR] Identificador abstracto.** Esta ficha no nombra un objeto concreto: el reconocimiento depende del ambiente o del comportamiento. Es el caso más frágil del roster, porque una carta sin objeto propio se vuelve genérica. Antes de generar, confirmar con el lote correspondiente de `Documentacion/prompt_investigacion_85.md` si hay un detalle mundialmente reconocible atestiguado que convenga incorporar a la ficha. No inventarlo acá.
+> **[REVISAR] Control de reconocimiento pendiente.** Escala de titán, hombros masivos y manto en bloque definen la puesta. Comprobar que esa autoridad cerrada se distinga de otro anciano monumental y que se lea la tensión generacional; no hay un faltante material confirmado. No agregar hoz, relojes, arena ni símbolos de tiempo para eliminar la alerta. La validación visual sigue pendiente.
+> Fuente de la revisión: `Documentacion/revision_identificadores_lote_2026-09-28.json`, objetivo `cronos`. Evidencia de acción, silueta, composición, pistas y avatar del ADN.
 
 ## 3. Acción y pose
 

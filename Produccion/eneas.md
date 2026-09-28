@@ -33,7 +33,8 @@ Dones declarados en `personajes.json`: Guerrero troyano sobreviviente; Fundador 
 
 Ícono de la carta en la colección: `padre_hombros`. Dependencia del identificador en la matriz: 5 de 10.
 
-> **[REVISAR] Identificador abstracto.** Esta ficha no nombra un objeto concreto: el reconocimiento depende del ambiente o del comportamiento. Es el caso más frágil del roster, porque una carta sin objeto propio se vuelve genérica. Antes de generar, confirmar con el lote correspondiente de `Documentacion/prompt_investigacion_85.md` si hay un detalle mundialmente reconocible atestiguado que convenga incorporar a la ficha. No inventarlo acá.
+> **Reconocimiento textual: DOCUMENTADO.** Marcha de viajero fundador, escudo de bronce y costa/barco concretan la acción. El equipo preimperial y el avatar con escudo ya tienen respaldo; el ícono de la carta no autoriza agregar otro sujeto. La validación visual sigue pendiente.
+> Fuente de la revisión: `Documentacion/revision_identificadores_lote_2026-09-28.json`, objetivo `eneas`. Evidencia de acción, silueta, composición, pistas y avatar del ADN.
 
 ## 3. Acción y pose
 

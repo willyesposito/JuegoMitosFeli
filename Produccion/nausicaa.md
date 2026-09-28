@@ -33,7 +33,8 @@ Dones declarados en `personajes.json`: Generosidad y hospitalidad; Princesa de l
 
 Ícono de la carta en la colección: `vasija_agua`. Dependencia del identificador en la matriz: 4 de 10.
 
-> **[REVISAR] Identificador abstracto.** Esta ficha no nombra un objeto concreto: el reconocimiento depende del ambiente o del comportamiento. Es el caso más frágil del roster, porque una carta sin objeto propio se vuelve genérica. Antes de generar, confirmar con el lote correspondiente de `Documentacion/prompt_investigacion_85.md` si hay un detalle mundialmente reconocible atestiguado que convenga incorporar a la ficha. No inventarlo acá.
+> **Reconocimiento textual: DOCUMENTADO.** Gesto activo de ayuda, vasija, tela y costa tranquila concretan la hospitalidad. El avatar conserva vasija o tela y la silueta mantiene las alternativas autorizadas; no hace falta regalia de princesa. La validación visual sigue pendiente.
+> Fuente de la revisión: `Documentacion/revision_identificadores_lote_2026-09-28.json`, objetivo `nausicaa`. Evidencia de acción, silueta, composición, pistas y avatar del ADN.
 
 ## 3. Acción y pose
 

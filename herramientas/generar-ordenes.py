@@ -118,6 +118,7 @@ def cargar():
                 # La decisión vive en el bloque común, no en 57 fichas duplicadas.
                 ficha['_regla_vestimenta_funcional'] = regla
     cargar_anti_clonacion(adn, mat, pj)
+    cargar_revision_identificadores(adn, pj)
     return adn, mat, pj
 
 def leer_regla_vestimenta(texto):
@@ -233,6 +234,63 @@ def problemas_mecanicos(nombre, adn, mat, pj):
         if identidad is not None and (len(identidad) != 5 or not all(str(v).strip() for v in identidad)):
             problemas.append('identidad de referencia incompleta: ' + referencia)
     return problemas
+
+FUENTE_REVISION_IDENTIFICADORES = 'Documentacion/revision_identificadores_lote_2026-09-28.json'
+CAMPOS_RECONOCIMIENTO = ('identificador', 'accion', 'direccion', 'silueta',
+                         'composicion', 'pistas', 'avatar')
+
+def cargar_revision_identificadores(adn, pj):
+    """Carga las revisiones textuales; una ficha cambiada vuelve a control pendiente."""
+    ruta = r(*FUENTE_REVISION_IDENTIFICADORES.split('/'))
+    if not os.path.exists(ruta):
+        return
+    with open(ruta, encoding='utf-8') as archivo:
+        fuente = json.load(archivo)
+    if fuente.get('version') != 1:
+        raise ValueError('Versión inválida de revisión de identificadores')
+    for sid, revision in fuente['objetivos'].items():
+        nombre = revision['nombre']
+        if nombre not in adn or pj.get(nombre, {}).get('id') != sid:
+            raise ValueError('Revisión de identificador desalineada: ' + sid)
+        if revision['estado'] not in ('DOCUMENTADO', 'CONTROL_PENDIENTE'):
+            raise ValueError('Estado inválido de revisión: ' + sid)
+        if (not revision['conclusion'].strip()
+                or set(revision['campos_revisados']) != set(CAMPOS_RECONOCIMIENTO)):
+            raise ValueError('Revisión sin evidencia completa: ' + sid)
+        cambios = [campo for campo in CAMPOS_RECONOCIMIENTO
+                   if limpiar_fuente(adn[nombre].get(campo, ''))
+                   != limpiar_fuente(revision['campos_revisados'][campo])]
+        control = dict(revision)
+        control['id'] = sid
+        if cambios:
+            control['estado'] = 'CONTROL_PENDIENTE'
+            control['conclusion'] = ('La evidencia revisada cambió en: ' + ', '.join(cambios)
+                                     + '. Repetir el control textual; no conservar la conclusión anterior.')
+        adn[nombre]['_revision_identificador'] = control
+
+def control_identificador(ficha):
+    """Una palabra sólo selecciona candidatos; no demuestra falta de identidad."""
+    if '_revision_identificador' in ficha:
+        return ficha['_revision_identificador']
+    identificador = limpiar_fuente(ficha.get('identificador', ''))
+    if re.search(r'expresad|expresión|condición|capacidad|mediante|por contexto', identificador, re.I):
+        return {'estado': 'CONTROL_PENDIENTE',
+                'conclusion': 'Coincidencia léxica sin evaluación textual documentada. Revisar acción, '
+                              'silueta, ambiente, pistas y avatar antes de concluir si hay un faltante '
+                              'material. No exige un objeto nuevo ni investigación externa.'}
+    return None
+
+def lineas_control_identificador(control):
+    """Muestra la evidencia y separa preparación textual de validación visual."""
+    etiqueta = ('**Reconocimiento textual: DOCUMENTADO.**' if control['estado'] == 'DOCUMENTADO'
+                else '**[REVISAR] Control de reconocimiento pendiente.**')
+    lineas = ['> ' + etiqueta + ' ' + control['conclusion']
+              + ' La validación visual sigue pendiente.']
+    if control.get('id'):
+        lineas.append('> Fuente de la revisión: `' + FUENTE_REVISION_IDENTIFICADORES
+                      + '`, objetivo `' + control['id']
+                      + '`. Evidencia de acción, silueta, composición, pistas y avatar del ADN.')
+    return lineas
 
 FUENTE_ANTI_CLONACION = 'Documentacion/anti_clonacion_lote_2026-09-28.json'
 
@@ -444,7 +502,7 @@ def orden(nombre, adn, mat, pj):
     L.append('## 2. Detalle reconocible')
     L.append('')
     idt = limpiar_fuente(f['identificador'])
-    abstracto = bool(re.search(r'expresad|expresión|condición|capacidad|mediante|por contexto', idt, re.I))
+    control_reconocimiento = control_identificador(f)
     L.append(f'**{may(idt)}**')
     L.append('')
     if c.get('dones'):
@@ -453,13 +511,8 @@ def orden(nombre, adn, mat, pj):
     L.append(f"Ícono de la carta en la colección: `{c.get('icono','—')}`. Dependencia del "
              f"identificador en la matriz: {m['DI']} de 10.")
     L.append('')
-    if abstracto:
-        L.append('> **[REVISAR] Identificador abstracto.** Esta ficha no nombra un objeto concreto: '
-                 'el reconocimiento depende del ambiente o del comportamiento. Es el caso más frágil '
-                 'del roster, porque una carta sin objeto propio se vuelve genérica. Antes de generar, '
-                 'confirmar con el lote correspondiente de `Documentacion/prompt_investigacion_85.md` '
-                 'si hay un detalle mundialmente reconocible atestiguado que convenga incorporar a la '
-                 'ficha. No inventarlo acá.')
+    if control_reconocimiento:
+        L.extend(lineas_control_identificador(control_reconocimiento))
         L.append('')
 
     # 3. Acción
@@ -724,7 +777,7 @@ def indice(adn, mat, pj):
          '| Personaje | Tier | Mit. | Cabello | Textura | Piel | Ojos | Origen | Imagen | Notas |',
          '|---|---|---|---|---|---|---|---|---|---|']
     ETQ = {'ADN':'ADN','APROBADA':'aprobada','FUENTE':'fuente','DISENO':'diseño'}
-    n_rev = n_pop = 0
+    n_rev = n_doc = n_pop = 0
     for nombre in adn:
         f, m, c = adn[nombre], mat[nombre], pj[nombre]
         sid = slug(nombre)
@@ -740,8 +793,12 @@ def indice(adn, mat, pj):
             org = 'ADN'
         notas = []
         idt = limpiar_fuente(f['identificador'])
-        if re.search(r'expresad|expresión|condición|capacidad|mediante|por contexto', idt, re.I):
-            notas.append('identificador abstracto'); n_rev += 1
+        control = control_identificador(f)
+        if control:
+            if control['estado'] == 'DOCUMENTADO':
+                notas.append('reconocimiento textual documentado'); n_doc += 1
+            else:
+                notas.append('control de reconocimiento pendiente'); n_rev += 1
         if nombre not in POP and not limpiar_fuente(f.get('contaminacion', '')):
             notas.append('contaminación pop pendiente'); n_pop += 1
         if nombre in IV.RIESGOS_OBSERVADOS:
@@ -750,9 +807,9 @@ def indice(adn, mat, pj):
         L.append(f"| [{nombre}](../Produccion/{sid}.md) | {c['tier']} | {c['mitologia']} | {col} | "
                  f"{tex} | {piel} | {ojos} | {org} | {img} | {'; '.join(notas) or '—'} |")
     L += ['', '---', '',
-          f'**{n_rev} identificadores abstractos.** No nombran un objeto concreto: el reconocimiento '
-          'depende del ambiente o del comportamiento. Es el caso más frágil del roster, porque una carta '
-          'sin objeto propio se vuelve genérica. Cada orden lo marca con `[REVISAR]`.', '',
+          f'**{n_rev} controles de reconocimiento pendientes.** Una coincidencia léxica no '
+          'demuestra un faltante material ni obliga a incorporar un objeto o investigar.', '',
+          f'**{n_doc} reconocimientos textuales documentados.** La validación visual sigue pendiente.', '',
           f'**{n_pop} contaminaciones pop pendientes** de la investigación. No bloquean, pero dejarlas '
           'vacías es aceptar el riesgo a ciegas: fue la falla más frecuente de la tanda anterior.', '',
           '**15 pares de clon comprobados** en la auditoría del 2026-09-14, ninguno de los cuales '

@@ -33,7 +33,8 @@ Dones declarados en `personajes.json`: Gobierna el reino de los que mueren de en
 
 Ícono de la carta en la colección: `sombras`. Dependencia del identificador en la matriz: 4 de 10.
 
-> **[REVISAR] Identificador abstracto.** Esta ficha no nombra un objeto concreto: el reconocimiento depende del ambiente o del comportamiento. Es el caso más frágil del roster, porque una carta sin objeto propio se vuelve genérica. Antes de generar, confirmar con el lote correspondiente de `Documentacion/prompt_investigacion_85.md` si hay un detalle mundialmente reconocible atestiguado que convenga incorporar a la ficha. No inventarlo acá.
+> **Reconocimiento textual: DOCUMENTADO.** Manto oscuro cerrado, silueta muy fina, sombras estructuradas y salón, con manos bajas y ordenadas, concretan ambiente y comportamiento. El avatar conserva manto/sombra; no hace falta un objeto profético ni iconografía de horror. La validación visual sigue pendiente.
+> Fuente de la revisión: `Documentacion/revision_identificadores_lote_2026-09-28.json`, objetivo `hel`. Evidencia de acción, silueta, composición, pistas y avatar del ADN.
 
 ## 3. Acción y pose
 
