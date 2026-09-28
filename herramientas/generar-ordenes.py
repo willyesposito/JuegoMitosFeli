@@ -11,11 +11,11 @@ Fuentes:
   personajes.json                                canon, tier, ícono, dones, historia
   herramientas/identidad_visual.py               pelo, piel y ojos coordinados
 
-Uso: python3 herramientas/generar-ordenes.py
-Reescribe todas las órdenes. Si editaste una a mano, el cambio se pierde: la edición
-va en la fuente, no en la salida.
+Uso: python3 herramientas/generar-ordenes.py --control control.json --ids thor tyr
+Sólo escribe los destinos seleccionados del control, si cambian. No actualiza el índice.
+Si editaste una orden a mano, el cambio se pierde: la edición va en la fuente.
 """
-import json, re, sys, os, unicodedata
+import argparse, json, re, sys, os, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import identidad_visual as IV
 
@@ -83,25 +83,29 @@ def slug(s):
     return re.sub(r'[^a-z0-9]+','_', s.lower()).strip('_')
 
 def cargar():
-    txt = open(r('Documentacion','adn_visual_personajes_v1.md'), encoding='utf-8').read()
+    with open(r('Documentacion','adn_visual_personajes_v1.md'), encoding='utf-8') as archivo:
+        txt = archivo.read()
     adn = {}
     for b in re.split(r'\n### ', txt)[1:]:
         nombre = b.split('\n')[0].strip()
         if nombre.startswith('Pruebas'): continue
         d = {'nombre': nombre}
-        for m in re.finditer(r'- \*\*(.+?):\*\* (.+?)(?=\n- \*\*|\n#|\n---|\Z)', b.split('\n---\n')[0], re.S):
+        for m in re.finditer(r'- \*\*(.+?):\*\*[ \t]*(.*?)(?=\n- \*\*|\n#|\n---|\Z)', b.split('\n---\n')[0], re.S):
             k = m.group(1).strip()
             if k in CAMPOS: d[CAMPOS[k]] = ' '.join(m.group(2).split())
         adn[nombre] = d
     mat = {}
-    for line in open(r('Documentacion','matriz_adn_visual_numerica_v1.md'), encoding='utf-8'):
+    with open(r('Documentacion','matriz_adn_visual_numerica_v1.md'), encoding='utf-8') as archivo:
+        lineas_matriz = archivo.readlines()
+    for line in lineas_matriz:
         if not line.startswith('| '): continue
         c = [x.strip() for x in line.strip().strip('|').split('|')]
         if len(c) != 20 or c[1] not in ('Dorado','Plateado','Normal'): continue
         try: nums = [int(x) for x in c[5:20]]
         except ValueError: continue
         mat[c[0]] = {'tier':c[1],'mit':c[2],'morf':c[3],'lect':c[4], **dict(zip(EJES, nums))}
-    pj = {c['nombre']: c for c in json.load(open(r('personajes.json'), encoding='utf-8'))}
+    with open(r('personajes.json'), encoding='utf-8') as archivo:
+        pj = {c['nombre']: c for c in json.load(archivo)}
     return adn, mat, pj
 
 GENTILICIO = {'griega':'griego', 'nordica':'nórdico', 'romana':'romano'}
@@ -112,14 +116,76 @@ def may(s):
 
 def limpiar_fuente(s):
     """Saca las notas de Criterio de fuente, que van citadas aparte."""
-    return re.sub(r'\*\*Criterio de fuente:\*\*.*', '', s).strip().rstrip('.').strip() + '.'
+    texto = re.sub(r'\*\*Criterio de fuente:\*\*.*', '', s).strip().rstrip('.').strip()
+    return texto + '.' if texto else ''
+
+def problemas_mecanicos(nombre, adn, mat, pj):
+    """Comprueba datos y referencias; no aprueba decisiones ni pruebas visuales."""
+    problemas = []
+    for etiqueta, datos in (('ADN', adn), ('matriz', mat), ('personajes.json', pj)):
+        if nombre not in datos:
+            problemas.append('registro ausente en ' + etiqueta)
+    if problemas:
+        return problemas
+    f, m, c = adn[nombre], mat[nombre], pj[nombre]
+    for campo in CAMPOS.values():
+        if campo != 'vestimenta' and (not limpiar_fuente(f.get(campo, ''))
+                                     or '[FALTA:' in f.get(campo, '')):
+            problemas.append('campo ADN vacío: ' + campo)
+    for campo in ('id', 'nombre', 'mitologia', 'tier'):
+        if not str(c.get(campo, '')).strip():
+            problemas.append('campo de personaje vacío: ' + campo)
+    for eje in EJES:
+        if type(m.get(eje)) is not int or not 1 <= m[eje] <= 10:
+            problemas.append('eje inválido: ' + eje)
+    if c.get('mitologia') not in GENTILICIO:
+        problemas.append('mitología sin vocabulario definido')
+    if str(m.get('tier', '')).lower() != c.get('tier'):
+        problemas.append('tier desalineado entre matriz y personaje')
+    if m.get('mit') != c.get('mitologia'):
+        # La matriz usa los nombres con mayúscula y acento.
+        if slug(str(m.get('mit', ''))) != c.get('mitologia'):
+            problemas.append('mitología desalineada entre matriz y personaje')
+    ident = IV.IDENTIDAD.get(nombre)
+    grupo = IV.INTEGRANTES.get(nombre)
+    if ident is not None:
+        if len(ident) != 5 or not all(str(v).strip() for v in ident) or ident[-1] not in IV.ORIGEN_TEXTO:
+            problemas.append('identidad incompleta o sin origen válido')
+    elif grupo is not None:
+        if not grupo or any(len(g) != 5 or not all(str(v).strip() for v in g) for g in grupo):
+            problemas.append('integrantes incompletos')
+    elif nombre not in IV.NO_HUMANOS:
+        problemas.append('identidad sin asignar')
+    referencias = riesgos_nombrados(f.get('riesgos', ''), set(adn))
+    referencias += [x for x, _ in IV.RIESGOS_OBSERVADOS.get(nombre, [])]
+    espejo = c.get('espejo')
+    if espejo:
+        contraparte = next((n for n in pj if pj[n].get('id') == espejo), None)
+        if contraparte:
+            referencias.append(contraparte)
+        else:
+            problemas.append('referencia de espejo ausente: ' + espejo)
+    for referencia in sorted(set(referencias) - {nombre}):
+        if referencia not in adn or referencia not in mat:
+            problemas.append('referencia de separación ausente: ' + referencia)
+            continue
+        for campo in ('silueta', 'accion'):
+            if not limpiar_fuente(adn[referencia].get(campo, '')):
+                problemas.append('referencia incompleta: ' + referencia + '/' + campo)
+        if any(type(mat[referencia].get(e)) is not int or not 1 <= mat[referencia][e] <= 10 for e in EJES):
+            problemas.append('matriz de referencia inválida: ' + referencia)
+        identidad = IV.IDENTIDAD.get(referencia)
+        if identidad is not None and (len(identidad) != 5 or not all(str(v).strip() for v in identidad)):
+            problemas.append('identidad de referencia incompleta: ' + referencia)
+    return problemas
 
 def riesgos_nombrados(texto, todos):
     hallados = []
-    for n in sorted(todos, key=len, reverse=True):
+    for n in sorted(todos, key=lambda n: (-len(n), n)):
         if re.search(r'\b' + re.escape(n) + r'\b', texto) and not any(n in h for h in hallados):
             hallados.append(n)
-    return hallados
+    # Respeta el orden de la fuente; no depende del orden aleatorio de un conjunto.
+    return sorted(hallados, key=lambda n: re.search(r'\b' + re.escape(n) + r'\b', texto).start())
 
 def tabla_separacion(nombre, riesgo, mat, adn):
     a, b = mat[nombre], mat[riesgo]
@@ -180,6 +246,14 @@ def cuerpo_en_palabras(m):
 
 
 def orden(nombre, adn, mat, pj):
+    problemas = problemas_mecanicos(nombre, adn, mat, pj)
+    if problemas:
+        return slug(nombre), '\n'.join([
+            f'# Orden de producción — {nombre}', '',
+            '**Completitud mecánica: INCOMPLETA.**',
+            '**Validación visual: PENDIENTE.** No generar a partir de esta salida incompleta.', '',
+            '> Generada por `herramientas/generar-ordenes.py`. Corregir las fuentes y recompilar.', '',
+            *('[FALTA: ' + problema + ']' for problema in problemas), ''])
     f, m = adn[nombre], mat[nombre]
     c = pj[nombre]
     sid = slug(nombre)
@@ -189,7 +263,10 @@ def orden(nombre, adn, mat, pj):
     img = c.get('imagen')
 
     L = [f'# Orden de producción — {nombre}', '']
-    L.append('**Estado: LISTA.** Identidad cerrada, inventario cerrado, separación resuelta.')
+    L.append('**Completitud mecánica: COMPLETA.** Campos obligatorios y referencias comprobados; '
+             'vestimenta opcional con alternativa general cuando falta.')
+    L.append('**Validación visual: PENDIENTE.** Compilar no acredita silueta, pose, composición, '
+             'avatar ni colisión; tampoco aprueba identidad, inventario o separación.')
     L.append('')
     if img:
         L.append(f'**Imagen actual:** `{img}`, **a reemplazar.** Es de un estilo anterior: la '
@@ -276,12 +353,13 @@ def orden(nombre, adn, mat, pj):
     L.append('Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin '
              'agregar un objeto que no está en el inventario de la §5, frenar y avisar.')
     L.append('')
-    L.append('**Y al revés, que es el caso que falló tres veces:** si un objeto autorizado de la §5 '
+    L.append('**Y al revés, que es el caso que falló tres veces:** si un objeto exigido de la §5 '
              'no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta '
              'la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. '
              'Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la '
              'salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el '
-             'preflight.')
+             'preflight. Una pista condicional sólo se exige si se cumple su condición; '
+             'las alternativas con «o» se conservan como alternativas, sin exigir todas a la vez.')
     L.append('')
 
     # 4. Silueta
@@ -322,10 +400,12 @@ def orden(nombre, adn, mat, pj):
     L.append('')
     L.append(f"1. **{may(idt).rstrip('.')}** — identificador principal. ADN.")
     pistas = limpiar_fuente(f['pistas'])
-    hay_pistas = not (pistas.lower().startswith('ning') or 'no aplica' in pistas.lower())
+    hay_pistas = bool(pistas) and not pistas.lower().startswith(('ning', 'no aplica'))
     if hay_pistas:
-        L.append(f'2. **Pistas secundarias autorizadas, y van en la imagen:** {may(pistas)} ADN. '
-                 'Subordinadas al identificador, nunca compitiendo con él, pero presentes.')
+        L.append(f'2. **Pistas secundarias autorizadas:** {pistas} ADN. '
+                 'Subordinadas al identificador. Respetar las condiciones y alternativas del texto: '
+                 '«si hace falta» y «cuando corresponda» no exigen presencia incondicional; '
+                 '«o» no exige ambas opciones.')
     else:
         L.append('2. Sin pistas secundarias autorizadas.')
     if not es_nh:
@@ -345,13 +425,12 @@ def orden(nombre, adn, mat, pj):
              '**sin** pseudo-texto, **sin** calzado con decisión no trazada.')
     L.append('')
     if hay_pistas:
-        L.append('**Esta lista es para mostrar, no sólo para permitir.** El inventario está cerrado '
-                 'hacia arriba, no hacia abajo: lo que no figura no entra, y lo que figura tiene que '
-                 'entrar. Un personaje que llega a la imagen sin ninguno de sus atributos '
-                 'característicos es una carta fallada, aunque no haya inventado nada. **Ante la duda '
-                 'entre una carta pelada y una con tres objetos autorizados, van los tres.** El único '
-                 'límite es la jerarquía: el identificador principal manda, las pistas acompañan, y '
-                 'nada tapa la cara ni el identificador.')
+        L.append('**Inventario por exceso y por omisión.** Lo que no figura no entra. '
+                 'Mostrar los elementos exigidos por el ADN, aplicar las pistas condicionales '
+                 'sólo cuando se cumpla su condición y conservar las alternativas como tales. '
+                 'El identificador principal manda, las pistas acompañan y nada tapa la cara '
+                 'ni el identificador. En el preflight, declarar qué condiciones se cumplen '
+                 'y qué alternativa se usa, sin agregar decisiones ajenas a la fuente.')
         L.append('')
 
     L.append('**La magia es obligatoria y sale del identificador.** El detalle reconocible de la '
@@ -477,8 +556,9 @@ def orden(nombre, adn, mat, pj):
              'sale el escenario.')
     L.append('')
     L.append('Después de generar, declarar cuatro cosas: qué objetos quedaron en la imagen que no '
-             'estaban en el inventario; **qué elementos autorizados de la §5 no aparecieron y por '
-             'qué**; qué campos de esta orden no se cumplieron; y los once puntos del gate de '
+             'estaban en el inventario; **qué elementos exigidos de la §5 no aparecieron y por '
+             'qué, qué condiciones no se cumplieron y qué alternativas se usaron**; qué campos '
+             'de esta orden no se cumplieron; y los once puntos del gate de '
              '`estilo_visual_aprobado.md` §9, que ahora son doce.')
     L.append('')
     L.append('El segundo control es tan importante como el primero y es el que faltaba hasta el '
@@ -542,23 +622,53 @@ def indice(adn, mat, pj):
           'figuraba en el campo de riesgos del ADN. Van en la §7 de cada orden afectada.']
     return '\n'.join(L)
 
-def main():
+def seleccionar(control, ids, pj):
+    """Valida toda la selección antes de escribir; usa el destino declarado en el lote."""
+    entradas = control.get('personajes', [])
+    por_id = {e['id']: e for e in entradas}
+    if len(por_id) != len(entradas) or len(ids) != len(set(ids)):
+        raise ValueError('IDs duplicados en el control o la selección')
+    if not ids or any(i not in por_id for i in ids):
+        raise ValueError('La selección debe contener sólo IDs explícitos del control')
+    nombres = {c['id']: n for n, c in pj.items()}
+    seleccion = []
+    for sid in ids:
+        entrada = por_id[sid]
+        destino = entrada['orden_produccion']
+        if (not re.fullmatch(r'Produccion/[a-z0-9_]+\.md', destino)
+                or sid not in nombres or entrada['nombre'] != nombres[sid]):
+            raise ValueError('Entrada desalineada o destino inválido: ' + sid)
+        seleccion.append((nombres[sid], destino))
+    if len({destino for _, destino in seleccion}) != len(seleccion):
+        raise ValueError('Destinos duplicados en la selección')
+    return seleccion
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description='Compila sólo una selección explícita de un control.')
+    parser.add_argument('--control', required=True, help='JSON de control; se lee sin modificarlo')
+    parser.add_argument('--ids', nargs='+', required=True, help='IDs del control que se recompilan')
+    args = parser.parse_args(argv)
     adn, mat, pj = cargar()
-    faltan = [n for n in adn if n not in mat or n not in pj]
-    if faltan:
-        sys.exit('Fuentes desalineadas: ' + ', '.join(faltan))
-    sin_ident = [n for n in adn if n not in IV.IDENTIDAD and n not in IV.INTEGRANTES and n not in IV.NO_HUMANOS]
-    if sin_ident:
-        sys.exit('Sin identidad asignada en identidad_visual.py: ' + ', '.join(sin_ident))
+    with open(args.control, encoding='utf-8') as archivo:
+        control = json.load(archivo)
+    try:
+        seleccion = seleccionar(control, args.ids, pj)
+    except (ValueError, KeyError) as error:
+        parser.error(str(error))
+    # Primero compila en memoria; un error no deja una tanda escrita a medias.
+    salidas = [(destino, orden(nombre, adn, mat, pj)[1]) for nombre, destino in seleccion]
     os.makedirs(r('Produccion'), exist_ok=True)
     n = 0
-    for nombre in adn:
-        sid, texto = orden(nombre, adn, mat, pj)
-        open(r('Produccion', sid + '.md'), 'w', encoding='utf-8').write(texto)
+    for destino, texto in salidas:
+        ruta = r(*destino.split('/'))
+        if os.path.exists(ruta):
+            with open(ruta, encoding='utf-8') as archivo:
+                if archivo.read() == texto:
+                    continue
+        with open(ruta, 'w', encoding='utf-8', newline='\n') as archivo:
+            archivo.write(texto)
         n += 1
-    open(r('Documentacion', 'indice_ordenes_produccion.md'), 'w', encoding='utf-8').write(
-        indice(adn, mat, pj) + '\n')
-    print(f'{n} órdenes escritas en Produccion/ + Documentacion/indice_ordenes_produccion.md')
+    print(f'{n} órdenes actualizadas de {len(seleccion)} seleccionadas. Índice sin cambios.')
 
 if __name__ == '__main__':
     main()

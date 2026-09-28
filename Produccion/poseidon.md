@@ -1,6 +1,7 @@
 # Orden de producción — Poseidón
 
-**Estado: LISTA.** Identidad cerrada, inventario cerrado, separación resuelta.
+**Completitud mecánica: COMPLETA.** Campos obligatorios y referencias comprobados; vestimenta opcional con alternativa general cuando falta.
+**Validación visual: PENDIENTE.** Compilar no acredita silueta, pose, composición, avatar ni colisión; tampoco aprueba identidad, inventario o separación.
 
 **Imagen actual:** ninguna. La carta funciona igual, mostrando el nombre con el tratamiento de su mitología.
 
@@ -40,7 +41,7 @@ Dirección corporal: Diagonal baja, con torso girado hacia el tridente.
 
 Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
 
-**Y al revés, que es el caso que falló tres veces:** si un objeto autorizado de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight.
+**Y al revés, que es el caso que falló tres veces:** si un objeto exigido de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight. Una pista condicional sólo se exige si se cumple su condición; las alternativas con «o» se conservan como alternativas, sin exigir todas a la vez.
 
 ## 4. Silueta y composición
 
@@ -65,12 +66,12 @@ Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de
 Lo único que puede verse:
 
 1. **Tridente** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas, y van en la imagen:** Mar agitado y caballo. ADN. Subordinadas al identificador, nunca compitiendo con él, pero presentes.
-3. **Vestimenta autorizada:** . ADN. Sin adornos más allá de lo que dice esa línea.
+2. **Pistas secundarias autorizadas:** mar agitado y caballo. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
+3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
 
 Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
 
-**Esta lista es para mostrar, no sólo para permitir.** El inventario está cerrado hacia arriba, no hacia abajo: lo que no figura no entra, y lo que figura tiene que entrar. Un personaje que llega a la imagen sin ninguno de sus atributos característicos es una carta fallada, aunque no haya inventado nada. **Ante la duda entre una carta pelada y una con tres objetos autorizados, van los tres.** El único límite es la jerarquía: el identificador principal manda, las pistas acompañan, y nada tapa la cara ni el identificador.
+**Inventario por exceso y por omisión.** Lo que no figura no entra. Mostrar los elementos exigidos por el ADN, aplicar las pistas condicionales sólo cuando se cumpla su condición y conservar las alternativas como tales. El identificador principal manda, las pistas acompañan y nada tapa la cara ni el identificador. En el preflight, declarar qué condiciones se cumplen y qué alternativa se usa, sin agregar decisiones ajenas a la fuente.
 
 **La magia es obligatoria y sale del identificador.** El detalle reconocible de la §2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina de verdad, deformación del aire, materia que responde: todo eso está autorizado y va sin timidez. Esto no agrega ningún objeto al inventario de arriba, porque lo que se enciende es lo que el personaje ya tiene.
 
@@ -90,21 +91,6 @@ El fondo va con profundidad de campo real: menos nitidez y menos contraste que e
 
 **Par de Espejo: Njörd.** El módulo Espejo de los Mundos los muestra enfrentados en pantalla, así que las dos cartas tienen que separarse solas a simple vista. Es el par donde un parecido cuesta doble.
 
-**Contra Njörd.**
-
-| | Poseidón | Njörd |
-|---|---|---|
-| Cabello | gris acero | gris |
-| Textura | ondulado largo barrido | barrido por viento |
-| Piel | canela | clara curtida |
-| Ojos | verde gris | azul gris |
-
-Silueta de Njörd, para no repetirla: capa horizontal empujada por viento + brazos bajos abiertos hacia el mar; ninguna arma.
-
-Pose de Njörd, para no repetirla: brazos bajos abiertos; quietud receptiva, no dominio armado.
-
-Ejes numéricos que ya los separan: dependencia del identificador 9 contra 3, dinamismo de pose 7 contra 2, angulosidad facial 8 contra 4, contorno superior 9 contra 6.
-
 **Contra Zeus.**
 
 | | Poseidón | Zeus |
@@ -121,6 +107,21 @@ Pose de Zeus, para no repetirla: una mano baja estabiliza y la otra presenta el 
 Ejes numéricos que ya los separan: contorno superior 9 contra 5, verticalidad 6 contra 10, protagonismo de fondo 8 contra 4, apertura corporal 6 contra 9.
 
 **Atención: 9 de 15 ejes están dentro de un punto.** Son personajes genuinamente cercanos y la diferencia tiene que venir de identidad, silueta y pose, no de los números.
+
+**Contra Njörd.**
+
+| | Poseidón | Njörd |
+|---|---|---|
+| Cabello | gris acero | gris |
+| Textura | ondulado largo barrido | barrido por viento |
+| Piel | canela | clara curtida |
+| Ojos | verde gris | azul gris |
+
+Silueta de Njörd, para no repetirla: capa horizontal empujada por viento + brazos bajos abiertos hacia el mar; ninguna arma.
+
+Pose de Njörd, para no repetirla: brazos bajos abiertos; quietud receptiva, no dominio armado.
+
+Ejes numéricos que ya los separan: dependencia del identificador 9 contra 3, dinamismo de pose 7 contra 2, angulosidad facial 8 contra 4, contorno superior 9 contra 6.
 
 Criterio de la ficha: Zeus y Njörd. No repetir el encuadre frontal majestuoso de Zeus ni la calma marítima y ausencia de arma de Njörd.
 
@@ -146,6 +147,6 @@ Nada de Marvel, Disney, DC, anime conocido ni videojuegos, sea o no de esta list
 
 Mostrar cinco líneas y esperar OK: qué se ve, cuál es el detalle reconocible, el inventario con su fuente, contra quién se separa y con qué diferencia concreta, y de dónde sale el escenario.
 
-Después de generar, declarar cuatro cosas: qué objetos quedaron en la imagen que no estaban en el inventario; **qué elementos autorizados de la §5 no aparecieron y por qué**; qué campos de esta orden no se cumplieron; y los once puntos del gate de `estilo_visual_aprobado.md` §9, que ahora son doce.
+Después de generar, declarar cuatro cosas: qué objetos quedaron en la imagen que no estaban en el inventario; **qué elementos exigidos de la §5 no aparecieron y por qué, qué condiciones no se cumplieron y qué alternativas se usaron**; qué campos de esta orden no se cumplieron; y los once puntos del gate de `estilo_visual_aprobado.md` §9, que ahora son doce.
 
 El segundo control es tan importante como el primero y es el que faltaba hasta el 2026-09-14: una imagen puede cumplir el inventario cerrado al pie de la letra y seguir siendo una carta fallada por no mostrar nada de lo que hace reconocible al personaje.
