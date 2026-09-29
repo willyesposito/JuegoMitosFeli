@@ -117,7 +117,7 @@ Ejes numéricos que ya los separan: verticalidad 4 contra 8, angulosidad facial 
 
 - **Separador de silueta:** Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
 - **Separador de pose:** Orfeo: sentado o apoyado tocando la lira. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de composición:** Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo orfeo, comparación Apolo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 

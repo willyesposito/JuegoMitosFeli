@@ -525,7 +525,7 @@
     },
     "Apolo": {
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
-      "blob": "28a806bab423a3b8785d93b204112bcc90a5295b",
+      "blob": "4c7fe743a59f5c7a5c14635f2dae92d22e199091",
       "lineas_campos": {
         "silueta": 443,
         "edad": 446,
@@ -536,7 +536,7 @@
         "silueta": "lira separada del torso + línea corporal muy vertical y ligera.",
         "edad": "adulto joven; alto y esbelto.",
         "accion": "tocando o afinando la lira; gesto artístico, no pose heroica.",
-        "composicion": "luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático."
+        "composicion": "luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático."
       },
       "matriz": {
         "EV": 4,
@@ -723,7 +723,7 @@
     },
     "Cronos": {
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
-      "blob": "28a806bab423a3b8785d93b204112bcc90a5295b",
+      "blob": "4c7fe743a59f5c7a5c14635f2dae92d22e199091",
       "lineas_campos": {
         "silueta": 546,
         "edad": 549,
@@ -731,9 +731,9 @@
         "composicion": 553
       },
       "campos": {
-        "silueta": "gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala.",
+        "silueta": "gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala + hoz de mango corto separada del manto en un lateral bajo.",
         "edad": "titán adulto mayor; muy alto y pesado.",
-        "accion": "cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo.",
+        "accion": "cuerpo quieto, autoridad cerrada; una mano baja sostiene la hoz en reposo, con filo apartado del cuerpo y de cualquier otra figura; sin ataque ni escena violenta.",
         "composicion": "manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo."
       },
       "matriz": {
@@ -1218,7 +1218,7 @@
     },
     "Orión": {
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
-      "blob": "28a806bab423a3b8785d93b204112bcc90a5295b",
+      "blob": "4c7fe743a59f5c7a5c14635f2dae92d22e199091",
       "lineas_campos": {
         "silueta": 756,
         "edad": 759,
@@ -1226,9 +1226,9 @@
         "composicion": 763
       },
       "campos": {
-        "silueta": "cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta.",
+        "silueta": "cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta.",
         "edad": "adulto maduro; muy alto y atlético.",
-        "accion": "mira el cielo en dirección opuesta al escorpión; no caza activamente.",
+        "accion": "mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar.",
         "composicion": "reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso."
       },
       "matriz": {
@@ -1284,7 +1284,7 @@
     },
     "Frigg": {
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
-      "blob": "28a806bab423a3b8785d93b204112bcc90a5295b",
+      "blob": "4c7fe743a59f5c7a5c14635f2dae92d22e199091",
       "lineas_campos": {
         "silueta": 786,
         "edad": 789,
@@ -1294,7 +1294,7 @@
       "campos": {
         "silueta": "figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.",
         "edad": "adulta madura; alta y de presencia serena.",
-        "accion": "parece saber algo que no va a decir; manos controladas y ausencia de objeto profético.",
+        "accion": "parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético.",
         "composicion": "fondo muy simple y amplio alrededor del eje vertical."
       },
       "matriz": {
@@ -3059,7 +3059,7 @@
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
             "silueta": "Hestia: cuerpo compacto sentado o arrodillado + llama del hogar a un costado + telas suaves sin objetos de poder. Cuerpo: adulta madura; contextura media-pequeña. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Hestia: cuida la llama en calma. Frente a Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.",
+            "pose": "Hestia: cuida la llama en calma. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Hestia: composición baja y contenida, con aire cálido alrededor de la llama y fondo doméstico simple. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         }
@@ -3080,7 +3080,7 @@
           "separadores": {
             "silueta": "Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
             "pose": "Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Helios: conduce el carro, erguido y estable. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "composicion": "Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Frente a Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
         {
@@ -3091,7 +3091,7 @@
           "separadores": {
             "silueta": "Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Balder: cuerpo abierto y limpio + luminosidad propia contenida; ninguna armadura pesada. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
             "pose": "Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Balder: manos visibles y bajas; quietud abierta. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "composicion": "Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Frente a Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
         {
@@ -3102,7 +3102,7 @@
           "separadores": {
             "silueta": "Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
             "pose": "Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Orfeo: sentado o apoyado tocando la lira. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "composicion": "Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Frente a Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
         {
@@ -3113,7 +3113,7 @@
           "separadores": {
             "silueta": "Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
             "pose": "Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "composicion": "Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Frente a Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         }
       ]
@@ -3239,7 +3239,7 @@
           "separadores": {
             "silueta": "Dioniso: racimos/vides y tela teatral creando contorno orgánico + postura abierta de anfitrión. Cuerpo: adulto joven-maduro; contextura media. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
             "pose": "Dioniso: una mano invita y otra sostiene máscara teatral o elemento de escena; celebración sin alcohol protagonista. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Dioniso: formas orgánicas rodean sin cerrar el cuerpo; reservar aire para el gesto de invitación. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "composicion": "Dioniso: formas orgánicas rodean sin cerrar el cuerpo; reservar aire para el gesto de invitación. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
         {
@@ -3323,7 +3323,7 @@
           "separadores": {
             "silueta": "Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
             "pose": "Helios: conduce el carro, erguido y estable. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "composicion": "Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
         {
@@ -3597,8 +3597,8 @@
           "distancia": 0.865922,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico alto",
           "separadores": {
-            "silueta": "Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Héctor: protege y contiene, no avanza ni ataca. Frente a Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. No sustituir la acción del objetivo por la del comparador.",
+            "silueta": "Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
+            "pose": "Héctor: protege y contiene, no avanza ni ataca. Frente a Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Frente a Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         }
@@ -3672,7 +3672,7 @@
           "separadores": {
             "silueta": "Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
             "pose": "Orfeo: sentado o apoyado tocando la lira. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "composicion": "Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
         {
@@ -4217,7 +4217,7 @@
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
             "silueta": "Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Hera: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno. Cuerpo: adulta madura; alta y de postura regia. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. No sustituir la acción del objetivo por la del comparador.",
+            "pose": "Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hera: pavo real lateral para quebrar la verticalidad sin competir con el rostro; fondo contenido. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
@@ -4228,7 +4228,7 @@
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
             "silueta": "Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. Frente a Casiopea: quietud orgullosa sobre el trono. No sustituir la acción del objetivo por la del comparador.",
+            "pose": "Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Casiopea: quietud orgullosa sobre el trono. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
@@ -4239,7 +4239,7 @@
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
             "silueta": "Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Cuerpo: adulta madura; alta y muy delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. Frente a Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. No sustituir la acción del objetivo por la del comparador.",
+            "pose": "Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         }
@@ -4260,7 +4260,7 @@
           "separadores": {
             "silueta": "Balder: cuerpo abierto y limpio + luminosidad propia contenida; ninguna armadura pesada. Cuerpo: adulto joven; alto y esbelto. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
             "pose": "Balder: manos visibles y bajas; quietud abierta. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "composicion": "Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
         {
@@ -4468,8 +4468,8 @@
           "distancia": 1.765363,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Atlas: arco de la bóveda celeste sobre hombros/brazos, una forma única que domina el contorno. Cuerpo: titán enorme; torso y brazos masivos, cabeza relativamente pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Cronos: cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo. Frente a Atlas: piernas muy separadas y brazos sosteniendo físicamente la bóveda. No sustituir la acción del objetivo por la del comparador.",
+            "silueta": "Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala + hoz de mango corto separada del manto en un lateral bajo. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Atlas: arco de la bóveda celeste sobre hombros/brazos, una forma única que domina el contorno. Cuerpo: titán enorme; torso y brazos masivos, cabeza relativamente pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
+            "pose": "Cronos: cuerpo quieto, autoridad cerrada; una mano baja sostiene la hoz en reposo, con filo apartado del cuerpo y de cualquier otra figura; sin ataque ni escena violenta. Frente a Atlas: piernas muy separadas y brazos sosteniendo físicamente la bóveda. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Cronos: manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo. Frente a Atlas: paisaje pequeño refuerza escala; la curva celeste debe quedar separada del cráneo para conservar la firma en negro puro. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
@@ -4479,8 +4479,8 @@
           "distancia": 1.435754,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Odín: dos cuervos en alturas distintas + cuerpo vertical fino + capa larga. Cuerpo: adulto mayor vigoroso; alto y estrecho. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Cronos: cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo. Frente a Odín: una mano cerca del rostro y otra baja; observa más de lo que manda. No sustituir la acción del objetivo por la del comparador.",
+            "silueta": "Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala + hoz de mango corto separada del manto en un lateral bajo. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Odín: dos cuervos en alturas distintas + cuerpo vertical fino + capa larga. Cuerpo: adulto mayor vigoroso; alto y estrecho. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
+            "pose": "Cronos: cuerpo quieto, autoridad cerrada; una mano baja sostiene la hoz en reposo, con filo apartado del cuerpo y de cualquier otra figura; sin ataque ni escena violenta. Frente a Odín: una mano cerca del rostro y otra baja; observa más de lo que manda. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Cronos: manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo. Frente a Odín: mantener a los cuervos separados entre sí y del rostro; verticalidad fina y aire alrededor de la capa para evitar el triángulo hombros-barba de Zeus. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
@@ -4490,8 +4490,8 @@
           "distancia": 1.664804,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Hades: cuerpo casi columnar + manto pesado cerrado + casco de invisibilidad sostenido a un costado cuando llevarlo puesto perjudique el rostro. Cuerpo: adulto maduro; alto pero menos ancho que Zeus y Poseidón. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Cronos: cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo. Frente a Hades: manos controladas y cuerpo quieto; autoridad cerrada sin gesto expansivo. No sustituir la acción del objetivo por la del comparador.",
+            "silueta": "Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala + hoz de mango corto separada del manto en un lateral bajo. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Hades: cuerpo casi columnar + manto pesado cerrado + casco de invisibilidad sostenido a un costado cuando llevarlo puesto perjudique el rostro. Cuerpo: adulto maduro; alto pero menos ancho que Zeus y Poseidón. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
+            "pose": "Cronos: cuerpo quieto, autoridad cerrada; una mano baja sostiene la hoz en reposo, con filo apartado del cuerpo y de cualquier otra figura; sin ataque ni escena violenta. Frente a Hades: manos controladas y cuerpo quieto; autoridad cerrada sin gesto expansivo. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Cronos: manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo. Frente a Hades: fondo subterráneo simple, luminosidad mineral baja y espacio limpio alrededor de la figura; nada terrorífico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         }
@@ -4575,7 +4575,7 @@
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
             "silueta": "Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Cuerpo: adulta madura; alta y muy delgada. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Frente a Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.",
+            "pose": "Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         }
@@ -5133,7 +5133,7 @@
           "separadores": {
             "silueta": "Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
             "pose": "Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "composicion": "Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         }
       ]
@@ -5205,7 +5205,7 @@
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
             "silueta": "Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Casiopea: quietud orgullosa sobre el trono. Frente a Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.",
+            "pose": "Casiopea: quietud orgullosa sobre el trono. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
@@ -5235,8 +5235,8 @@
           "distancia": 2.027933,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Atlas: arco de la bóveda celeste sobre hombros/brazos, una forma única que domina el contorno. Cuerpo: titán enorme; torso y brazos masivos, cabeza relativamente pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. Frente a Atlas: piernas muy separadas y brazos sosteniendo físicamente la bóveda. No sustituir la acción del objetivo por la del comparador.",
+            "silueta": "Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Atlas: arco de la bóveda celeste sobre hombros/brazos, una forma única que domina el contorno. Cuerpo: titán enorme; torso y brazos masivos, cabeza relativamente pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
+            "pose": "Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar. Frente a Atlas: piernas muy separadas y brazos sosteniendo físicamente la bóveda. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Atlas: paisaje pequeño refuerza escala; la curva celeste debe quedar separada del cráneo para conservar la firma en negro puro. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
@@ -5246,8 +5246,8 @@
           "distancia": 0.865922,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico alto",
           "separadores": {
-            "silueta": "Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. Frente a Héctor: protege y contiene, no avanza ni ataca. No sustituir la acción del objetivo por la del comparador.",
+            "silueta": "Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
+            "pose": "Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar. Frente a Héctor: protege y contiene, no avanza ni ataca. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         },
@@ -5257,8 +5257,8 @@
           "distancia": 1.094972,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.",
+            "silueta": "Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
+            "pose": "Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.",
             "composicion": "Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
           }
         }

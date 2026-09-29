@@ -169,7 +169,7 @@ Ejes numéricos que ya los separan: protagonismo de fondo 7 contra 4, angulosida
 
 - **Separador de silueta:** Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
 - **Separador de pose:** Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de composición:** Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo paris, comparación Apolo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 

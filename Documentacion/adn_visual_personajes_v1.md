@@ -447,9 +447,9 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Geometría general de rostro y cabello:** rostro simétrico fino; cabello medio ondulado y ordenado.
 - **Dirección corporal:** perfil tres cuartos, vertical y sereno.
 - **Acción y pose:** tocando o afinando la lira; gesto artístico, no pose heroica.
-- **Composición y espacio negativo:** luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático.
+- **Composición y espacio negativo:** luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático.
 - **Identificador principal:** lira.
-- **Pistas secundarias autorizadas:** sol y oráculo, discretos.
+- **Pistas secundarias autorizadas:** sol mediante luz lateral y oráculo mediante un trípode délfico de tres patas con cuenco superior, pequeño y discreto; sin sacerdotisa, templo ni escritura.
 - **Avatar circular:** rostro + curva reconocible de la lira.
 - **Riesgos de parecido:** Balder, Helios y Orfeo. Separarlo por objeto musical, porte más idealizado y ausencia de carro o intimidad sentada.
 
@@ -543,17 +543,17 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Riesgos de parecido:** Apolo y Orfeo. Diferenciar por energía social, cabello más suelto y formas orgánicas, no pose artística íntima ni lira protagonista.
 
 ### Cronos
-- **Firma de silueta:** gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala.
+- **Firma de silueta:** gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala + hoz de mango corto separada del manto en un lateral bajo.
 - **Familia de encuadre:** escala grande / figura humana.
 - **Densidad visual:** alta.
 - **Edad aparente y contextura:** titán adulto mayor; muy alto y pesado.
 - **Geometría general de rostro y cabello:** rostro largo severo y cabello gris oscuro amplio.
 - **Dirección corporal:** frontal desplazado con eje vertical pesado.
-- **Acción y pose:** cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo.
+- **Acción y pose:** cuerpo quieto, autoridad cerrada; una mano baja sostiene la hoz en reposo, con filo apartado del cuerpo y de cualquier otra figura; sin ataque ni escena violenta.
 - **Composición y espacio negativo:** manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo.
-- **Identificador principal:** condición de titán y tensión de reemplazo expresadas mediante escala y presencia.
-- **Pistas secundarias autorizadas:** sólo contexto ya existente; no agregar hoz ni objeto canónico externo si no está autorizado en el repo.
-- **Avatar circular:** rostro severo + borde monumental del manto.
+- **Identificador principal:** titán del conflicto generacional, identificado por escala monumental y hoz de mango corto en reposo.
+- **Pistas secundarias autorizadas:** hoz de mango corto y hoja curva gris con dientes simplificados, vinculada al derrocamiento de Urano; sin guadaña de mango largo, relojes, arena ni símbolos de tiempo.
+- **Avatar circular:** rostro severo + borde monumental del manto + pequeño arco legible de la hoja de la hoz en el borde lateral, sin tapar la cara.
 - **Riesgos de parecido:** Atlas. Diferenciar por no cargar el cielo, postura cerrada de autoridad y silueta más bloque que arco de esfuerzo.
 
 ### Prometeo
@@ -753,16 +753,16 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Riesgos de parecido:** Perseo y Nike. Diferenciar por tecnología fabricada, edad mayor y pose de trabajo en tierra, no vuelo mágico o anatómico.
 
 ### Orión
-- **Firma de silueta:** cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta.
+- **Firma de silueta:** cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta.
 - **Familia de encuadre:** escala grande / figura humana.
 - **Densidad visual:** media-alta.
 - **Edad aparente y contextura:** adulto maduro; muy alto y atlético.
 - **Geometría general de rostro y cabello:** rostro ancho y cabello corto áspero.
 - **Dirección corporal:** perfil lateral con eje horizontal dentro del marco vertical.
-- **Acción y pose:** mira el cielo en dirección opuesta al escorpión; no caza activamente.
+- **Acción y pose:** mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar.
 - **Composición y espacio negativo:** reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso.
 - **Identificador principal:** cinturón de tres estrellas.
-- **Pistas secundarias autorizadas:** relación visual con Escorpio y herramienta de caza en reposo.
+- **Pistas secundarias autorizadas:** relación visual con Escorpio y, sólo si hace falta para leer al cazador sin competir con las tres estrellas, una maza de madera simple en reposo; no agregar arco, espada ni piel de león.
 - **Avatar circular:** rostro + tres estrellas alineadas cerca del pecho superior.
 - **Riesgos de parecido:** Atlas. Diferenciar por altura esbelta, eje horizontal y ausencia de carga.
 
@@ -789,7 +789,7 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Edad aparente y contextura:** adulta madura; alta y de presencia serena.
 - **Geometría general de rostro y cabello:** rostro largo sereno; cabello recogido en trenzas simples.
 - **Dirección corporal:** frontal tres cuartos con mirada lateral.
-- **Acción y pose:** parece saber algo que no va a decir; manos controladas y ausencia de objeto profético.
+- **Acción y pose:** parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético.
 - **Composición y espacio negativo:** fondo muy simple y amplio alrededor del eje vertical.
 - **Identificador principal:** conocimiento del destino expresado por comportamiento.
 - **Pistas secundarias autorizadas:** manto y gesto silencioso; no inventar objetos de adivinación.

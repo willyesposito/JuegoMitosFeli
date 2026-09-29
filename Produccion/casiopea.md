@@ -132,7 +132,7 @@ Ejes numéricos que ya los separan: protagonismo de fondo 9 contra 5, apertura c
 
 Silueta de Frigg, para no repetirla: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.
 
-Pose de Frigg, para no repetirla: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético.
+Pose de Frigg, para no repetirla: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético.
 
 Ejes numéricos que ya los separan: protagonismo de fondo 9 contra 2, dependencia del identificador 7 contra 2, densidad visual 7 contra 3, verticalidad 6 contra 9.
 
@@ -142,7 +142,7 @@ Ejes numéricos que ya los separan: protagonismo de fondo 9 contra 2, dependenci
 **Filtro numérico:** distancia ponderada 1.168; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
 - **Separador de silueta:** Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Casiopea: quietud orgullosa sobre el trono. Frente a Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.
+- **Separador de pose:** Casiopea: quietud orgullosa sobre el trono. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.
 - **Separador de composición:** Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo casiopea, comparación Frigg; contrastes derivados del ADN y la matriz, sin nuevo diseño.

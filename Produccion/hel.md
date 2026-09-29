@@ -163,7 +163,7 @@ Ejes numéricos que ya los separan: angulosidad facial 9 contra 3, contorno supe
 
 Silueta de Frigg, para no repetirla: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.
 
-Pose de Frigg, para no repetirla: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético.
+Pose de Frigg, para no repetirla: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético.
 
 Ejes numéricos que ya los separan: oscuridad 9 contra 4, protagonismo de fondo 6 contra 2, masa corporal 2 contra 4, angulosidad facial 9 contra 7.
 
@@ -173,7 +173,7 @@ Ejes numéricos que ya los separan: oscuridad 9 contra 4, protagonismo de fondo 
 **Filtro numérico:** distancia ponderada 1.279; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
 - **Separador de silueta:** Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Cuerpo: adulta madura; alta y muy delgada. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Frente a Frigg: parece saber algo que no va a decir; manos controladas y ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.
+- **Separador de pose:** Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.
 - **Separador de composición:** Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hel, comparación Frigg; contrastes derivados del ADN y la matriz, sin nuevo diseño.

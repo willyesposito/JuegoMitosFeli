@@ -27,18 +27,18 @@
 
 ## 2. Detalle reconocible
 
-**Condición de titán y tensión de reemplazo expresadas mediante escala y presencia.**
+**Titán del conflicto generacional, identificado por escala monumental y hoz de mango corto en reposo.**
 
 Dones declarados en `personajes.json`: Titán del tiempo; Gobernó el mundo antes que los dioses del Olimpo.
 
 Ícono de la carta en la colección: `reloj_arena`. Dependencia del identificador en la matriz: 3 de 10.
 
-> **[REVISAR] Control de reconocimiento pendiente.** Escala de titán, hombros masivos y manto en bloque definen la puesta. Comprobar que esa autoridad cerrada se distinga de otro anciano monumental y que se lea la tensión generacional; no hay un faltante material confirmado. No agregar hoz, relojes, arena ni símbolos de tiempo para eliminar la alerta. La validación visual sigue pendiente.
+> **Reconocimiento textual: DOCUMENTADO.** La hoz del conflicto generacional está respaldada por Teogonía 154-182 y autorizada por la decisión delegada. Mango corto y posición baja en reposo son decisiones de adaptación visual; no se usa iconografía del tiempo. Reconocimiento en imagen pendiente. La validación visual sigue pendiente.
 > Fuente de la revisión: `Documentacion/revision_identificadores_lote_2026-09-28.json`, objetivo `cronos`. Evidencia de acción, silueta, composición, pistas y avatar del ADN.
 
 ## 3. Acción y pose
 
-Cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo.
+Cuerpo quieto, autoridad cerrada; una mano baja sostiene la hoz en reposo, con filo apartado del cuerpo y de cualquier otra figura; sin ataque ni escena violenta.
 
 Dirección corporal: Frontal desplazado con eje vertical pesado.
 
@@ -48,7 +48,7 @@ Es la acción de la ficha y no se cambia. Si la acción no se puede representar 
 
 ## 4. Silueta y composición
 
-- **Firma de silueta:** Gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala.
+- **Firma de silueta:** Gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala + hoz de mango corto separada del manto en un lateral bajo.
 - **Composición:** Manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo.
 - **Densidad visual:** alta (matriz: 8 de 10).
 
@@ -68,8 +68,8 @@ Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de
 
 Lo único que puede verse:
 
-1. **Condición de titán y tensión de reemplazo expresadas mediante escala y presencia** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas:** sólo contexto ya existente; no agregar hoz ni objeto canónico externo si no está autorizado en el repo. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
+1. **Titán del conflicto generacional, identificado por escala monumental y hoz de mango corto en reposo** — identificador principal. ADN.
+2. **Pistas secundarias autorizadas:** hoz de mango corto y hoja curva gris con dientes simplificados, vinculada al derrocamiento de Urano; sin guadaña de mango largo, relojes, arena ni símbolos de tiempo. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
 3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
 4. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
    - **Vestimenta funcional:** Túnica lisa de corte sencillo, ajustada a la acción y a la silueta.
@@ -118,8 +118,8 @@ Ejes numéricos que ya los separan: dependencia del identificador 3 contra 10, d
 **Por qué se controla este par:** figuras monumentales pesadas.
 **Filtro numérico:** distancia ponderada 1.765; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Atlas: arco de la bóveda celeste sobre hombros/brazos, una forma única que domina el contorno. Cuerpo: titán enorme; torso y brazos masivos, cabeza relativamente pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Cronos: cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo. Frente a Atlas: piernas muy separadas y brazos sosteniendo físicamente la bóveda. No sustituir la acción del objetivo por la del comparador.
+- **Separador de silueta:** Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala + hoz de mango corto separada del manto en un lateral bajo. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Atlas: arco de la bóveda celeste sobre hombros/brazos, una forma única que domina el contorno. Cuerpo: titán enorme; torso y brazos masivos, cabeza relativamente pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cronos: cuerpo quieto, autoridad cerrada; una mano baja sostiene la hoz en reposo, con filo apartado del cuerpo y de cualquier otra figura; sin ataque ni escena violenta. Frente a Atlas: piernas muy separadas y brazos sosteniendo físicamente la bóveda. No sustituir la acción del objetivo por la del comparador.
 - **Separador de composición:** Cronos: manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo. Frente a Atlas: paisaje pequeño refuerza escala; la curva celeste debe quedar separada del cráneo para conservar la firma en negro puro. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo cronos, comparación Atlas; contrastes derivados del ADN y la matriz, sin nuevo diseño.
@@ -144,8 +144,8 @@ Ejes numéricos que ya los separan: masa corporal 9 contra 5, dependencia del id
 **Por qué se controla este par:** varones ancianos verticales de baja acción.
 **Filtro numérico:** distancia ponderada 1.436; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Odín: dos cuervos en alturas distintas + cuerpo vertical fino + capa larga. Cuerpo: adulto mayor vigoroso; alto y estrecho. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Cronos: cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo. Frente a Odín: una mano cerca del rostro y otra baja; observa más de lo que manda. No sustituir la acción del objetivo por la del comparador.
+- **Separador de silueta:** Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala + hoz de mango corto separada del manto en un lateral bajo. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Odín: dos cuervos en alturas distintas + cuerpo vertical fino + capa larga. Cuerpo: adulto mayor vigoroso; alto y estrecho. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cronos: cuerpo quieto, autoridad cerrada; una mano baja sostiene la hoz en reposo, con filo apartado del cuerpo y de cualquier otra figura; sin ataque ni escena violenta. Frente a Odín: una mano cerca del rostro y otra baja; observa más de lo que manda. No sustituir la acción del objetivo por la del comparador.
 - **Separador de composición:** Cronos: manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo. Frente a Odín: mantener a los cuervos separados entre sí y del rostro; verticalidad fina y aire alrededor de la capa para evitar el triángulo hombros-barba de Zeus. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo cronos, comparación Odín; contrastes derivados del ADN y la matriz, sin nuevo diseño.
@@ -170,8 +170,8 @@ Ejes numéricos que ya los separan: contorno superior 7 contra 3, densidad visua
 **Por qué se controla este par:** autoridad masculina cerrada, vertical y severa.
 **Filtro numérico:** distancia ponderada 1.665; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Hades: cuerpo casi columnar + manto pesado cerrado + casco de invisibilidad sostenido a un costado cuando llevarlo puesto perjudique el rostro. Cuerpo: adulto maduro; alto pero menos ancho que Zeus y Poseidón. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Cronos: cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo. Frente a Hades: manos controladas y cuerpo quieto; autoridad cerrada sin gesto expansivo. No sustituir la acción del objetivo por la del comparador.
+- **Separador de silueta:** Cronos: gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala + hoz de mango corto separada del manto en un lateral bajo. Cuerpo: titán adulto mayor; muy alto y pesado. Frente a Hades: cuerpo casi columnar + manto pesado cerrado + casco de invisibilidad sostenido a un costado cuando llevarlo puesto perjudique el rostro. Cuerpo: adulto maduro; alto pero menos ancho que Zeus y Poseidón. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Cronos: cuerpo quieto, autoridad cerrada; una mano baja sostiene la hoz en reposo, con filo apartado del cuerpo y de cualquier otra figura; sin ataque ni escena violenta. Frente a Hades: manos controladas y cuerpo quieto; autoridad cerrada sin gesto expansivo. No sustituir la acción del objetivo por la del comparador.
 - **Separador de composición:** Cronos: manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo. Frente a Hades: fondo subterráneo simple, luminosidad mineral baja y espacio limpio alrededor de la figura; nada terrorífico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo cronos, comparación Hades; contrastes derivados del ADN y la matriz, sin nuevo diseño.
@@ -184,7 +184,7 @@ La diferencia no puede depender sólo del color, del fondo, del objeto sostenido
 
 Vertical 3:4. Figura al 70–80% del alto del cuadro. Zona limpia detrás de la cabeza o del foco principal.
 
-Avatar circular, como restricción invisible: Rostro severo + borde monumental del manto. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
+Avatar circular, como restricción invisible: Rostro severo + borde monumental del manto + pequeño arco legible de la hoja de la hoz en el borde lateral, sin tapar la cara. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
 
 ## 9. Registro
 

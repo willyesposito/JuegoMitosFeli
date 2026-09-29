@@ -115,7 +115,7 @@ Ejes numéricos que ya los separan: dinamismo de pose 8 contra 3, densidad visua
 
 - **Separador de silueta:** Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
 - **Separador de pose:** Helios: conduce el carro, erguido y estable. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de composición:** Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo helios, comparación Apolo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 

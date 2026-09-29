@@ -124,7 +124,7 @@ Ejes numéricos que ya los separan: dependencia del identificador 3 contra 8, ap
 
 - **Separador de silueta:** Balder: cuerpo abierto y limpio + luminosidad propia contenida; ninguna armadura pesada. Cuerpo: adulto joven; alto y esbelto. Frente a Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
 - **Separador de pose:** Balder: manos visibles y bajas; quietud abierta. Frente a Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de composición:** Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Frente a Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo balder, comparación Apolo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 

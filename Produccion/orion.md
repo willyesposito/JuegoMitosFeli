@@ -35,7 +35,7 @@ Dones declarados en `personajes.json`: Cazador gigante; Cinturón de tres estrel
 
 ## 3. Acción y pose
 
-Mira el cielo en dirección opuesta al escorpión; no caza activamente.
+Mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar.
 
 Dirección corporal: Perfil lateral con eje horizontal dentro del marco vertical.
 
@@ -45,7 +45,7 @@ Es la acción de la ficha y no se cambia. Si la acción no se puede representar 
 
 ## 4. Silueta y composición
 
-- **Firma de silueta:** Cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta.
+- **Firma de silueta:** Cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta.
 - **Composición:** Reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso.
 - **Densidad visual:** media-alta (matriz: 6 de 10).
 
@@ -66,7 +66,7 @@ Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de
 Lo único que puede verse:
 
 1. **Cinturón de tres estrellas** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas:** relación visual con Escorpio y herramienta de caza en reposo. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
+2. **Pistas secundarias autorizadas:** relación visual con Escorpio y, sólo si hace falta para leer al cazador sin competir con las tres estrellas, una maza de madera simple en reposo; no agregar arco, espada ni piel de león. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
 3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
 4. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
    - **Vestimenta funcional:** Túnica lisa de corte sencillo, ajustada a la acción y a la silueta.
@@ -113,8 +113,8 @@ Ejes numéricos que ya los separan: verticalidad 5 contra 9, masa corporal 7 con
 **Por qué se controla este par:** figuras enormes bajo cielo.
 **Filtro numérico:** distancia ponderada 2.028; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Atlas: arco de la bóveda celeste sobre hombros/brazos, una forma única que domina el contorno. Cuerpo: titán enorme; torso y brazos masivos, cabeza relativamente pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. Frente a Atlas: piernas muy separadas y brazos sosteniendo físicamente la bóveda. No sustituir la acción del objetivo por la del comparador.
+- **Separador de silueta:** Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Atlas: arco de la bóveda celeste sobre hombros/brazos, una forma única que domina el contorno. Cuerpo: titán enorme; torso y brazos masivos, cabeza relativamente pequeña. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar. Frente a Atlas: piernas muy separadas y brazos sosteniendo físicamente la bóveda. No sustituir la acción del objetivo por la del comparador.
 - **Separador de composición:** Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Atlas: paisaje pequeño refuerza escala; la curva celeste debe quedar separada del cráneo para conservar la firma en negro puro. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo orion, comparación Atlas; contrastes derivados del ADN y la matriz, sin nuevo diseño.
@@ -139,8 +139,8 @@ Ejes numéricos que ya los separan: rigidez de materiales 5 contra 8, escala apa
 **Por qué se controla este par:** varones altos maduros fuertes; par de riesgo alto.
 **Filtro numérico:** distancia ponderada 0.866; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
 
-- **Separador de silueta:** Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. Frente a Héctor: protege y contiene, no avanza ni ataca. No sustituir la acción del objetivo por la del comparador.
+- **Separador de silueta:** Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar. Frente a Héctor: protege y contiene, no avanza ni ataca. No sustituir la acción del objetivo por la del comparador.
 - **Separador de composición:** Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo orion, comparación Héctor; contrastes derivados del ADN y la matriz, sin nuevo diseño.
@@ -165,8 +165,8 @@ Ejes numéricos que ya los separan: dinamismo de pose 2 contra 6, dependencia de
 **Por qué se controla este par:** adultos altos de equipo antiguo; cercanía numérica.
 **Filtro numérico:** distancia ponderada 1.095; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.
+- **Separador de silueta:** Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.
 - **Separador de composición:** Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo orion, comparación Eneas; contrastes derivados del ADN y la matriz, sin nuevo diseño.

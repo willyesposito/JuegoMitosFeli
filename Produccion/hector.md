@@ -232,9 +232,9 @@ Ejes numéricos que ya los separan: angulosidad facial 4 contra 8, verticalidad 
 | Piel | oliva media | castaña media |
 | Ojos | marrón cálido | gris |
 
-Silueta de Orión, para no repetirla: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta.
+Silueta de Orión, para no repetirla: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta.
 
-Pose de Orión, para no repetirla: mira el cielo en dirección opuesta al escorpión; no caza activamente.
+Pose de Orión, para no repetirla: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar.
 
 Ejes numéricos que ya los separan: rigidez de materiales 8 contra 5, escala aparente 7 contra 9, angulosidad facial 4 contra 6.
 
@@ -243,8 +243,8 @@ Ejes numéricos que ya los separan: rigidez de materiales 8 contra 5, escala apa
 **Por qué se controla este par:** adultos altos y fuertes; par de riesgo alto.
 **Filtro numérico:** distancia ponderada 0.866; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
 
-- **Separador de silueta:** Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + herramienta de caza en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Héctor: protege y contiene, no avanza ni ataca. Frente a Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente. No sustituir la acción del objetivo por la del comparador.
+- **Separador de silueta:** Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
+- **Separador de pose:** Héctor: protege y contiene, no avanza ni ataca. Frente a Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar. No sustituir la acción del objetivo por la del comparador.
 - **Separador de composición:** Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Frente a Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hector, comparación Orión; contrastes derivados del ADN y la matriz, sin nuevo diseño.

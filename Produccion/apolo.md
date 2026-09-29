@@ -46,7 +46,7 @@ Es la acción de la ficha y no se cambia. Si la acción no se puede representar 
 ## 4. Silueta y composición
 
 - **Firma de silueta:** Lira separada del torso + línea corporal muy vertical y ligera.
-- **Composición:** Luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático.
+- **Composición:** Luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático.
 - **Densidad visual:** media (matriz: 5 de 10).
 
 - **Cuerpo, y esto manda sobre cualquier intuición:** joven, delgado y liviano, sin masa muscular marcada, hombros de ancho medio, de escala algo mayor que humana.
@@ -66,7 +66,7 @@ Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de
 Lo único que puede verse:
 
 1. **Lira** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas:** sol y oráculo, discretos. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
+2. **Pistas secundarias autorizadas:** sol mediante luz lateral y oráculo mediante un trípode délfico de tres patas con cuenco superior, pequeño y discreto; sin sacerdotisa, templo ni escritura. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
 3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
 4. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
    - **Vestimenta funcional:** Túnica lisa de corte sencillo, ajustada a la acción y a la silueta.
@@ -119,7 +119,7 @@ Ejes numéricos que ya los separan: dependencia del identificador 8 contra 3, ap
 
 - **Separador de silueta:** Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Balder: cuerpo abierto y limpio + luminosidad propia contenida; ninguna armadura pesada. Cuerpo: adulto joven; alto y esbelto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
 - **Separador de pose:** Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Balder: manos visibles y bajas; quietud abierta. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Frente a Balder: fondo claro y limpio, con luz propia que no se convierta en halo solar genérico. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo apolo, comparación Balder; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -143,7 +143,7 @@ Ejes numéricos que ya los separan: dinamismo de pose 3 contra 8, densidad visua
 
 - **Separador de silueta:** Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
 - **Separador de pose:** Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Helios: conduce el carro, erguido y estable. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Frente a Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo apolo, comparación Helios; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -169,7 +169,7 @@ Ejes numéricos que ya los separan: verticalidad 8 contra 4, angulosidad facial 
 
 - **Separador de silueta:** Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Orfeo: lira amplia cruzada en diagonal baja + hombros relajados + manos finas activas. Cuerpo: adulto joven; delgado. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
 - **Separador de pose:** Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Orfeo: sentado o apoyado tocando la lira. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Frente a Orfeo: pequeños elementos del entorno pueden orientarse hacia la música; mantener aire íntimo alrededor de la figura. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo apolo, comparación Orfeo; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -195,7 +195,7 @@ Ejes numéricos que ya los separan: protagonismo de fondo 4 contra 7, angulosida
 
 - **Separador de silueta:** Apolo: lira separada del torso + línea corporal muy vertical y ligera. Cuerpo: adulto joven; alto y esbelto. Frente a Paris: manzana dorada separada de la mano + cuerpo girado entre dos direcciones, visualizando una elección. Cuerpo: adulto joven; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
 - **Separador de pose:** Apolo: tocando o afinando la lira; gesto artístico, no pose heroica. Frente a Paris: sostiene la manzana baja y mira lateralmente; gesto de elección, no victoria. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; evitar halo automático. Frente a Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de composición:** Apolo: luz solar lateral y aire alrededor de la curva de la lira; trípode délfico pequeño en el suelo a un lateral, separado de la lira y subordinado a ella; evitar halo automático. Frente a Paris: la manzana queda aislada del torso; si aparecen las tres diosas, deben permanecer subordinadas y no convertirse en coprotagonistas. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo apolo, comparación Paris; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 

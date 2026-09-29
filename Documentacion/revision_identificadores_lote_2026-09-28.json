@@ -1,24 +1,25 @@
 {
   "version": 1,
   "fecha": "2026-09-28",
-  "alcance": "Evaluación textual de siete alertas del lote; no aprueba imágenes ni modifica diseño o canon.",
+  "alcance": "Evaluación textual y decisiones de diseño delegadas; no aprueba imágenes ni modifica estados del control.",
   "base_commit": "3668a2c67464881e867e3bd779bd095013b9836b",
   "objetivos": {
     "frigg": {
       "nombre": "Frigg",
-      "estado": "CONTROL_PENDIENTE",
-      "conclusion": "La ausencia de objeto profético es deliberada. Manto limpio, manos controladas y mirada lateral definen la puesta; comprobar que el conocimiento silencioso se lea frente a otras figuras de autoridad. No hay un faltante material confirmado ni autorización para agregar objetos de adivinación.",
+      "estado": "DOCUMENTADO",
+      "conclusion": "El conocimiento silencioso está respaldado por Gylfaginning XX. Boca cerrada, mirada lateral y manos juntas concretan la decisión delegada; no se agrega objeto profético. Reconocimiento en imagen pendiente.",
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
       "campos_revisados": {
         "identificador": "conocimiento del destino expresado por comportamiento.",
-        "accion": "parece saber algo que no va a decir; manos controladas y ausencia de objeto profético.",
+        "accion": "parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético.",
         "direccion": "frontal tres cuartos con mirada lateral.",
         "silueta": "figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.",
         "composicion": "fondo muy simple y amplio alrededor del eje vertical.",
         "pistas": "manto y gesto silencioso; no inventar objetos de adivinación.",
         "avatar": "rostro + mirada lateral claramente legible."
       },
-      "validacion_visual": "PENDIENTE"
+      "validacion_visual": "PENDIENTE",
+      "decision": "Documentacion/decisiones_apolo_orion_frigg_cronos_2026-09-29.md"
     },
     "balder": {
       "nombre": "Balder",
@@ -38,19 +39,20 @@
     },
     "cronos": {
       "nombre": "Cronos",
-      "estado": "CONTROL_PENDIENTE",
-      "conclusion": "Escala de titán, hombros masivos y manto en bloque definen la puesta. Comprobar que esa autoridad cerrada se distinga de otro anciano monumental y que se lea la tensión generacional; no hay un faltante material confirmado. No agregar hoz, relojes, arena ni símbolos de tiempo para eliminar la alerta.",
+      "estado": "DOCUMENTADO",
+      "conclusion": "La hoz del conflicto generacional está respaldada por Teogonía 154-182 y autorizada por la decisión delegada. Mango corto y posición baja en reposo son decisiones de adaptación visual; no se usa iconografía del tiempo. Reconocimiento en imagen pendiente.",
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
       "campos_revisados": {
-        "identificador": "condición de titán y tensión de reemplazo expresadas mediante escala y presencia.",
-        "accion": "cuerpo quieto, autoridad cerrada; el entorno sugiere conflicto generacional sin teatralizarlo.",
+        "identificador": "titán del conflicto generacional, identificado por escala monumental y hoz de mango corto en reposo.",
+        "accion": "cuerpo quieto, autoridad cerrada; una mano baja sostiene la hoz en reposo, con filo apartado del cuerpo y de cualquier otra figura; sin ataque ni escena violenta.",
         "direccion": "frontal desplazado con eje vertical pesado.",
-        "silueta": "gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala.",
+        "silueta": "gran masa de hombros + manto antiguo cayendo en bloque + cabeza relativamente pequeña para enfatizar escala + hoz de mango corto separada del manto en un lateral bajo.",
         "composicion": "manto monumental domina abajo y laterales; evitar relojes, arena o símbolos de tiempo.",
-        "pistas": "sólo contexto ya existente; no agregar hoz ni objeto canónico externo si no está autorizado en el repo.",
-        "avatar": "rostro severo + borde monumental del manto."
+        "pistas": "hoz de mango corto y hoja curva gris con dientes simplificados, vinculada al derrocamiento de Urano; sin guadaña de mango largo, relojes, arena ni símbolos de tiempo.",
+        "avatar": "rostro severo + borde monumental del manto + pequeño arco legible de la hoja de la hoz en el borde lateral, sin tapar la cara."
       },
-      "validacion_visual": "PENDIENTE"
+      "validacion_visual": "PENDIENTE",
+      "decision": "Documentacion/decisiones_apolo_orion_frigg_cronos_2026-09-29.md"
     },
     "hel": {
       "nombre": "Hel",
