@@ -684,3 +684,16 @@ Al escribir esta corrección se renombró el campo "Pistas secundarias autorizad
 agregarle una aclaración, y el generador falló con `KeyError: 'pistas'`: los nombres de los campos
 son estructura y `generar-ordenes.py` los busca literalmente. Las aclaraciones van dentro del valor.
 Queda anotado en la cabecera del ADN.
+
+## Apolo — intento del 2026-09-29 — FALLIDO
+
+Una generación desde texto y desde cero con la herramienta integrada, tras decisión delegada por Willy sobre Apolo, Orión, Frigg y Cronos e incorporación de fuentes al ADN. Rama `claude/game-setup-v98pr1`, fuentes en commit `66e058ed4d471360c67472592206f08531f26bd2`. Historial completo, skill, estilo y orden leídos. No se abrió ninguna imagen de otro personaje.
+
+Evidencia: `exec-0f10093d-f5f5-45d4-9d03-8e47da3ff6b2.png`, 1086 × 1448, SHA-256 `73443d11c78e6a1874e23eb9cc97650561703dbeb292ca5e8e247f1d5b85941a`. Copia local `output/apolo-20260929/apolo-intento-1.png`; no publicada ni registrada en el juego. No asumir que otro chat accede al archivo.
+
+Fallas visibles: cierre ornamental en el hombro y decoración circular/floral de la base de la lira sin trazabilidad; microtextura dominante de tela y suelo; panorama amplio pese a escenario mínimo; figura aproximadamente 87,5% frente a 70–80%. El oráculo ya no es un faltante: el trípode está presente y separado de la lira. También aparecen lira en actividad, luz solar lateral, túnica y sandalias. Formato 3:4 medido, sin texto ni duplicados. La resonancia se traza a las cuerdas. Estos aciertos no compensan los fallos.
+
+Se inspeccionó imagen completa y recorte rectangular de rostro/lira; el recorte circular final quedó NO VERIFICADO. No se declaró aprobación ni se generó otra variante. Reseña completa: `Produccion/resultados_decisiones_2026-09-29/apolo/revision.md`.
+
+Hipótesis: el escenario solar favoreció el panorama de atardecer y la materialidad realista; no se establece causalidad. Antes de otro intento, resolver escala comprobable, cierre y lira sin motivos no trazados, materiales estilizados y fondo mínimo. No cambiar el canon ni relajar gates para salvar el resultado. Los estados del control y la automatización permanecieron intactos.
+
