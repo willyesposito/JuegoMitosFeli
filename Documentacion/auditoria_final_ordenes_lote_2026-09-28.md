@@ -1,5 +1,8 @@
 # Auditoría final de órdenes — lote 2026-09-28
 
+> **Informe histórico (base `356f90a75b30b15afef2adbb9ba7390daa9d61a9`).** Sus dos bloqueos materiales, Apolo y Orión, quedaron resueltos por las [decisiones del 29/9](decisiones_apolo_orion_frigg_cronos_2026-09-29.md). El resultado fallido posterior de Apolo y el control vigente se resumen en [continuidad del lote](continuidad_lote_57.md). El diagnóstico siguiente se conserva como evidencia de su fecha; no describe los pendientes actuales.
+
+
 ## Alcance y resultado
 
 Snapshot auditado: `356f90a75b30b15afef2adbb9ba7390daa9d61a9`, rama `claude/game-setup-v98pr1`.
