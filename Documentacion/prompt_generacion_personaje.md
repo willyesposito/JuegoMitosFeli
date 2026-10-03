@@ -56,15 +56,66 @@ Antes de llamar al generador, mostrar y **esperar OK**:
 
 Es el control más barato del proceso. Cinco líneas leídas evitan una generación gastada.
 
+**Ejecuciones automatizadas con aprobación preautorizada:** si la tarea que invoca este archivo
+declara de forma explícita que el OK ya está otorgado, el preflight se hace igual pero no se
+detiene la ejecución para esperar respuesta.
+
+### 3.1. Compilar antes de generar
+
+La orden de producción es la fuente de verdad, pero **no se copia entera al generador**. El modelo
+que lee el repo la comprime primero en un prompt visual corto. El generador recibe sólo lo que
+tiene que dibujar, en este orden:
+
+1. estilo fijo de la colección, en 2 o 3 frases;
+2. cuerpo, edad, rostro y cabello;
+3. pose, silueta y encuadre;
+4. identificador principal y hasta dos pistas secundarias;
+5. vestimenta, en **una sola frase corta**;
+6. escenario y fenómeno mágico;
+7. hasta cinco prohibiciones críticas que hayan fallado de verdad en ese personaje.
+
+No volcar al prompt tablas, historia del método, comparaciones numéricas, listas largas de
+prohibiciones ni explicaciones de por qué existe una regla. Eso sirve para decidir y auditar,
+no para dibujar.
+
+### 3.2. Vestimenta: mínima, concreta y no uniforme
+
+La vestimenta es secundaria salvo que la orden la declare parte del identificador o de la firma
+de silueta.
+
+- Si la orden trae una prenda concreta, usarla y describirla en una sola frase.
+- Si la vestimenta está vacía o sólo trae una base funcional genérica, **no es un [FALTA]**:
+  resolver una vestimenta simple y funcional, subordinada a la acción y a la silueta.
+- No convertir por defecto «griego» en **túnica blanca**, «nórdico» en túnica con piel ni
+  «romano» en uniforme imperial.
+- **Blanco o crema no son el color por defecto.** Sólo usarlos cuando la orden los fije o cuando
+  sean necesarios para una decisión visual ya trazada. Si el color no está fijado, elegir un
+  único color dominante sobrio compatible con la escena y mantenerlo sin adornos.
+- Máximo dos prendas principales visibles y un color dominante más un neutro. Sin capas,
+  broches, cinturones ornamentales, joyas o accesorios salvo autorización explícita.
+- La ropa no debe convertirse en el rasgo que hace reconocible al personaje si la orden no lo
+  dice. Su trabajo es vestir, ayudar a la silueta y dejar respirar al identificador.
+
+La frase de vestimenta del prompt debe ser concreta y corta. Ejemplo de nivel de detalle:
+«ropa griega simple azul grisáceo, sin adornos, adaptada al movimiento». No describir costuras,
+cierres, pliegues, materiales y accesorios salvo que sean parte de la identidad.
+
 ## 4. Generación
 
-Una sola imagen. Vertical 3:4. Figura al 70–80% del alto del cuadro, pies incluidos cuando
-la familia de encuadre lo pida, zona limpia detrás de la cabeza. Sin texto ni pseudo-texto,
-sin marcos, sin paneles, sin inset, sin retrato secundario, sin nada que parezca interfaz.
-La preparación para el recorte circular es una restricción invisible de encuadre: **nunca se
-pide un avatar como contenido visible.**
+Cada intento produce una sola imagen. Vertical 3:4. Figura al 70–80% del alto del cuadro, pies
+incluidos cuando la familia de encuadre lo pida, zona limpia detrás de la cabeza. Sin texto ni
+pseudo-texto, sin marcos, sin paneles, sin inset, sin retrato secundario, sin nada que parezca
+interfaz. La preparación para el recorte circular es una restricción invisible de encuadre:
+**nunca se pide un avatar como contenido visible.**
 
-No generar una segunda imagen automáticamente para corregir la primera.
+El objetivo de una sesión es **terminar un personaje**, no terminar un intento. Si la imagen
+falla el control posterior por un problema corregible de generación, ajustar sólo las
+instrucciones responsables del fallo y generar otro intento del **mismo personaje**. No pasar a
+otro personaje hasta aprobar éste.
+
+No regenerar a ciegas con el mismo prompt. Cada reintento tiene que declarar internamente qué
+falló y qué cambió. Frenar sólo ante una contradicción real de las fuentes, un [FALTA] necesario
+o una limitación técnica que impida continuar.
 
 ## 5. Declaración posterior
 
@@ -75,8 +126,11 @@ Después de generar, con la imagen abierta y mirada de verdad:
 3. los doce puntos del gate de estilo de `estilo_visual_aprobado.md` §9.
 4. qué elementos autorizados de la orden no aparecieron en la imagen, y por qué.
 
-Un `NO` o un `NO VERIFICADO` en cualquiera detiene la ejecución. No retocar, no regenerar,
-no reinterpretar el canon para salvar el resultado.
+Un `NO` o un `NO VERIFICADO` impide aprobar esa imagen, pero **no detiene por sí solo la
+sesión**. Si el fallo es corregible desde el prompt o mediante edición de la misma imagen,
+corregir y volver a evaluar al mismo personaje. No reinterpretar el canon para salvar el
+resultado ni pasar a otro personaje. La sesión se detiene sin imagen aprobada sólo por un
+bloqueo real de fuente o una limitación técnica.
 
 ## 6. Blacklist permanente
 
