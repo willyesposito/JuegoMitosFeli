@@ -1,12 +1,13 @@
 # Apolo — producción individual del 2026-10-02
-**Resultado: PASA LA REVISIÓN DEL AGENTE. Aprobación visual de Willy: PENDIENTE.**
+**Resultado: PASA LA REVISIÓN DEL AGENTE. APROBADA VISUALMENTE POR WILLY.**
+Aprobación explícita recibida en este chat: «Aprobar esta versión», 2026-10-03 02:23:45 UTC. Corresponde al tercer resultado de esta producción y al PNG identificado por sus hashes abajo.
 Imagen final: imagenes/apolo.png. PNG nativo completo 1086 × 1448 (3:4).
 SHA-256: 1552165c1e4c02aeae6c4823835aed884bc2291d4677d0a642d6d71c406d4bb0.
 Blob Git esperado: 5d26376528e428118b96a6cbf4d9fcfe6e95c5b2.
 
 ## Autorización y alcance
 Willy pidió en este chat: «revisa los nuevos cambios del repo y genera la imagen hasta que quede aprobada y subilo».
-Se retoma únicamente Apolo en claude/game-setup-v98pr1. Esta producción individual permite correcciones sucesivas hasta superar controles; no reanuda la automatización ni reinicia los contadores del lote anterior. Tres llamadas en esta producción; existe un intento anterior documentado del 29/9. No se modifica el juego, personajes.json, sw.js, canon, órdenes, fichas, skills, MEMORY.md, historial ni control del lote. La revisión del agente no se registra como aprobación de Willy.
+Se retoma únicamente Apolo en claude/game-setup-v98pr1. Esta producción individual permite correcciones sucesivas hasta superar controles; no reanuda la automatización ni reinicia los contadores del lote anterior. Tres llamadas en esta producción; existe un intento anterior documentado del 29/9. No se modifica el juego, personajes.json, sw.js, canon, órdenes, fichas, skills, MEMORY.md, historial ni control del lote. La revisión del agente y la aprobación explícita posterior de Willy se registran por separado.
 
 ## Fuentes actuales y cambios revisados
 Base de producción: d1e4e8f82fa76fd57975502734c91de9c1bf5e24. Se comparó la rama con 5601b97dc52b248ba52438e6af8f36747b66eb2a: 20 commits posteriores. Para esta imagen se revisaron las fuentes visuales y cambios pertinentes, no se hizo una auditoría general de todo el código.
@@ -76,7 +77,7 @@ SÍ indica cumplimiento del control inspeccionado por el agente; no aprobación 
 
 ## Inspección y preservación
 Se abrió imagen completa y se inspeccionaron a tamaño propio: rostro x400 y180 220×250; manos/lira x530 y315 250×330; piel/tela x345 y380 300×565; pies/trípode x310 y925 620×425; copia circular descrita. Trípode: cuenco y exactamente tres patas claramente separadas hasta suelo. Bordes revisados en imagen completa. Original y PNG final idénticos según SHA256; ninguna modificación de píxeles del activo. Los recortes usan copias temporales de inspección y no se publican.
-Método de publicación: exclusivamente imagenes/apolo.png y esta reseña juntos en un commit sobre tip actual, preservando árbol y con force=false; confirmar ref y ambos blobs después. No se sobrescribe un activo remoto preexistente.
+Publicación del PNG y esta reseña verificada en commit ec079fcb31efea61c4cfdc7b671009f3f61daee8: ref de rama y ambos blobs coinciden con los esperados. El primer avance de ref fue rechazado porque entró el commit ffa0316c88deb02bf158820616e4afc417d0a1c5 con Ares; un único retry sobre ese tip preservó su trabajo, sin force. Sólo se añadieron imagenes/apolo.png y esta reseña. Esta actualización posterior registra la aprobación de Willy sin cambiar el PNG.
 
 ## Prompt final exacto
 Generador integrado, texto desde cero, sin referencias:
