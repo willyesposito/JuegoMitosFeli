@@ -18,3 +18,6 @@ El bloqueo material de Apolo (oráculo sin forma/ubicación) y el de Orión (her
 La auditoría anterior es un registro de la base anterior, no una afirmación vigente sobre estos cuatro puntos. Continúan pendientes las pruebas visuales y los controles de contaminación pop que no fueron objeto de estas decisiones. El canon del juego no se reescribe: la mención “Titán del tiempo” y el icono reloj_arena de personajes.json no autorizan introducir relojes o arena en Cronos; la orden distingue expresamente icono de interfaz e inventario de ilustración.
 
 Antes de cualquier generación: leer completo el historial de fallas vigente, reutilizar la skill y el estilo ya leídos, usar la nueva orden y hacer preflight. No usar imágenes de otros personajes. El control local y las automatizaciones permanecen intactos.
+
+## Estado operativo vigente
+La [continuidad del lote de 57](continuidad_lote_57.md) separa preparación textual, resultados, intentos y elegibilidad después del intento fallido de Apolo. Esta nota registra decisiones de diseño del 29/9 y no autoriza por sí sola nuevas generaciones.
