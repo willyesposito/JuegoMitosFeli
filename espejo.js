@@ -10,6 +10,7 @@
    paso: las cartas o la pregunta vuelven a ofrecerse con una pista suave, sin
    límite de intentos.
 
+   El módulo se abre con ESPEJO_MIN_PARES pares jugables (nucleo.js).
    Solo aparecen pares donde los DOS personajes ya fueron descubiertos — el
    módulo nunca spoilea (regla de disponibilidad del doc) y, además, todo lo
    que se ve en el tablero aparea. Un personaje cuyo reflejo todavía no fue
@@ -347,8 +348,10 @@ async function iniciar() {
   // descubiertos. El módulo enciende capítulos, no descubre — nunca spoilea.
   catalogo = publicadosTodos.filter(par => estaDesbloqueada(par.griego) && estaDesbloqueada(par.nordico));
 
-  // Con menos de 2 pares disponibles el espejo "todavía está empañado".
-  if (catalogo.length < 2) {
+  // Con menos de ESPEJO_MIN_PARES pares disponibles el espejo "todavía está
+  // empañado" (nucleo.js): el módulo no se abre hasta tener un tablero con
+  // suficientes cartas como para que aparear sea pensar y no descartar.
+  if (catalogo.length < ESPEJO_MIN_PARES) {
     document.getElementById("espejo-vacio").classList.remove("oculto");
     document.getElementById("espejo-contador").classList.add("oculto");
     return;
