@@ -73,8 +73,10 @@ async function progresoOrdena() {
 
 async function progresoEspejo() {
   try {
-    const todos = await (await fetch("espejos.json")).json();
-    const disponibles = todos.filter(par => par.estado === "publicado" && estaDesbloqueada(par.griego) && estaDesbloqueada(par.nordico));
+    const todos = await cargarParesEspejo();
+    if (!todos) return "por abrir";
+    if (!espejoAbierto()) return "empañado";
+    const disponibles = todos.filter(par => estaDesbloqueada(par.griego) && estaDesbloqueada(par.nordico));
     const completados = (estado.espejo?.completados || []).filter(id => disponibles.some(par => par.id === id)).length;
     return fraccion(completados, disponibles.length, "por abrir");
   } catch (e) { return "por abrir"; }
@@ -167,6 +169,7 @@ function renderProxima() {
 }
 
 async function actualizarTodo() {
+  await cargarParesEspejo(); // para que la sugerencia de "próxima aventura" sepa si el Espejo está abierto
   renderHeader();
   await renderConstelacion();
   renderProxima();

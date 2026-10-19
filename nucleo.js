@@ -528,12 +528,41 @@ function pistaCapituloVelado(capitulo, encendido, nombresConstelaciones, persona
     if (!estaDesbloqueada(condicion)) {
       return `Alguien ${zona} cuenta la misma idea que ${pronombre}, pero todavía no lo descubriste. Consultá al Oráculo.`;
     }
+    // El reflejo ya está descubierto, pero el Espejo sigue empañado.
+    if (!espejoAbierto()) {
+      return `Alguien ${zona} cuenta la misma idea que ${pronombre}. El Espejo de los Mundos se abre cuando descubras más héroes de los dos mundos. Consultá al Oráculo.`;
+    }
     return `Alguien ${zona} cuenta la misma idea que ${pronombre}. ${busca} en Espejo de los Mundos.`;
   }
   const nombre = NOMBRE_MODULO_FUENTE[modulo];
   return nombre
     ? `Se enciende jugando ${nombre} (llega en una próxima ola).`
     : "Se enciende jugando otro módulo (llega en una próxima ola).";
+}
+
+/* El Espejo se abre recién con ESPEJO_MIN_PARES pares completos descubiertos
+   (los dos personajes del par). Antes de eso el tablero tiene tan pocas cartas
+   que encontrar al reflejo de alguien es cuestión de descarte, y se siente
+   como una trampa. Decisión de Willy, octubre 2026: el módulo queda cerrado
+   (espejo empañado, sin cuenta) hasta llegar al mínimo. */
+const ESPEJO_MIN_PARES = 6;
+let paresEspejoPublicados = null;
+
+async function cargarParesEspejo() {
+  if (paresEspejoPublicados) return paresEspejoPublicados;
+  try {
+    const arr = await (await fetch("espejos.json")).json();
+    paresEspejoPublicados = arr.filter(par => par.estado === "publicado");
+  } catch (e) { paresEspejoPublicados = null; }
+  return paresEspejoPublicados;
+}
+
+/* Sin la lista cargada no bloqueamos (mismo criterio que los catálogos de
+   destino: ante la duda se conserva el comportamiento previo). */
+function espejoAbierto() {
+  if (!paresEspejoPublicados) return true;
+  const jugables = paresEspejoPublicados.filter(par => estaDesbloqueada(par.griego) && estaDesbloqueada(par.nordico));
+  return jugables.length >= ESPEJO_MIN_PARES;
 }
 
 /* Catálogos de destino: ids publicados de cada módulo de trazado/secuencia,
@@ -567,7 +596,7 @@ async function cargarCatalogosDestino() {
     } catch (e) { return null; }
   };
   const [cielo, ordena, mapa] = await Promise.all([
-    leerCielo(), leer("mitos_ordena.json"), leer("viajes.json")
+    leerCielo(), leer("mitos_ordena.json"), leer("viajes.json"), cargarParesEspejo()
   ]);
   catalogosDestino = { cielo, ordena, mapa };
   return catalogosDestino;
@@ -598,7 +627,9 @@ function destinoCapituloVelado(capitulo) {
   // El Espejo solo aparea pares con los DOS personajes descubiertos. Si el
   // reflejo todavía está velado, la carta no abre el módulo (no habría a
   // quién aparear): manda al Oráculo, igual que "vinculo".
-  if (modulo === "espejo") return estaDesbloqueada(condicion) ? "espejo.html" : "oraculo.html";
+  // Si además el módulo todavía está cerrado (menos de ESPEJO_MIN_PARES pares),
+  // abrirlo mostraría el espejo empañado: el camino es el mismo, el Oráculo.
+  if (modulo === "espejo") return estaDesbloqueada(condicion) && espejoAbierto() ? "espejo.html" : "oraculo.html";
   if (modulo === "vinculo") {
     return estaDesbloqueada(condicion) ? `coleccion.html?ver=${encodeURIComponent(condicion)}` : "oraculo.html";
   }

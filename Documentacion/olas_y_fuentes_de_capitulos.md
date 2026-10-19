@@ -113,7 +113,7 @@ Alcance ya spec'd (hub, perfiles, Colección refactor, Oráculo 2 modos, Cielo, 
 
 **Mecánica:** matching simple. Acertar un par lo ilumina con una animación de espejo y enciende **un capítulo en ambas cartas**: la misma idea humana contada dos veces ("dos pueblos que nunca se conocieron inventaron un dios del trueno — ¿por qué?"). Errar no castiga: las cartas vuelven a su lugar con una pista suave.
 
-**Regla de disponibilidad:** solo aparecen en las columnas los pares donde **ambos** personajes están descubiertos. El módulo nunca muestra personajes velados (evita spoilear descubrimientos). Si hay menos de 2 pares disponibles, el módulo muestra un mensaje de misterio ("El espejo todavía está empañado — descubrí más héroes de los dos mundos").
+**Regla de disponibilidad:** solo aparecen en las columnas los pares donde **ambos** personajes están descubiertos. El módulo nunca muestra personajes velados (evita spoilear descubrimientos). Si hay menos de 6 pares disponibles (`ESPEJO_MIN_PARES` en `nucleo.js`, decisión de Willy de octubre 2026), el módulo queda cerrado y muestra un mensaje de misterio sin cuenta ("El espejo todavía está empañado — descubrí más héroes de los dos mundos").
 
 **Datos:** usa el campo `espejo` (ya existente en el contrato) más un catálogo propio, `espejos.json`: `{ id, nombre, griego, nordico, capituloGriego, capituloNordico, porque, estado }`. Cada par define su capítulo espejo en cada carta (mismo concepto, adaptado) con su "¿Por qué?" comparativo, y el `porque` del par (el gancho comparativo que muestra la ceremonia).
 
