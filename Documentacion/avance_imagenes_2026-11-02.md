@@ -467,3 +467,19 @@ Las pruebas locales de las dos imágenes se hicieron con el capturador existente
 Llamadas reales de esta ejecución: **DOS**, una por personaje, cero reintentos/rechazos/429. Intervalos de herramienta registrados: Dédalo pre-registro 2026-11-02 18:31:32 UTC y resultado 2026-11-02 18:32:42 UTC; Dido pre-registro 2026-11-02 18:34:22 UTC y resultado 2026-11-02 18:35:32 UTC. Incluyen preparación/publicación del pre-registro, no son tiempos internos exactos del servidor de generación. Ventana móvil conservadora actual: **ocho** contando seis históricas. Para próximas ejecuciones retener estas dos llamadas hasta cinco horas después de su respectivo resultado (23:32:42 y 23:35:32 UTC), o usar el registro de herramienta más preciso. No reiniciar contador por tarea/ejecución.
 
 Estado auditado: **63/85 imágenes integradas**, 22 pendientes; **16/57 cartas verificadas publicadas**, 41 pendientes. Próximos objetivos por cola: dioniso y hestia. Lista exacta de faltantes: dioniso, hestia, jason, medea, medusa, midas, minotauro, njord, orfeo, orion, pan, paris, pegaso, pentesilea, poseidon, prometeo, quiron, ratatosk, selene, skadi, thor, tyr. Sólo se modificaron campos imagen de dedalo/dido y sw v3.5.22, más documentación/evidencias; historias y módulos intactos. Campaña NO completa; anterior deshabilitada y actual continúa.
+
+
+## Reserva — recuperacion-20261102T192626Z — 2026-11-02 19:28:32 UTC
+
+HEAD base 73b6d15aeb4336d7dd45c28a654214a4f76c11b6; árbol completo 376 rutas. 85 personajes, 63 referencias y 63 imágenes versionadas, Dioniso/Hestia sin referencia ni archivo. Reservas previas Dédalo/Dido cerradas. Tarea anterior consultada: deshabilitada, último intento completado 15:59:37 UTC; sin avance concurrente nuevo observado.
+
+Ventana móvil conservadora: ocho llamadas previas (tanda13 tres, recuperación5 tres, Dédalo y Dido dos), margen para DOS intentos, total máximo diez. No se conoce cuota real. Cero nuevas al reservar. No se usarán variantes ni correcciones cosméticas.
+
+| Personaje | Ejecución | Inicio UTC | Estado | Ruta |
+|---|---|---|---|---|
+| dioniso | recuperacion-20261102T192626Z | 2026-11-02 19:28:32 UTC | reservado; intento 1 pre-registrado, resultado pendiente | imagenes/dioniso.png |
+| hestia | recuperacion-20261102T192626Z | 2026-11-02 19:28:32 UTC | reservado; sin intento todavía | imagenes/hestia.png |
+
+Preflight interno autorizado, órdenes y estilo/método leídos. Dioniso: adulto de contextura media sin músculos de gimnasio, oliva media, pelo negro largo rizado, rostro expresivo y ojos marrón cálido; diagonal abierta, una mano invita y la otra máscara teatral. Teatro y viñas juntos: máscara, racimos, hojas y tela teatral. Túnica lisa verde oscuro y sandalias simples como decisión provisional; vegetación reacciona al gesto desde la vid, no aura. Se separa de Apolo/Orfeo por energía social sin lira ni pose íntima, de Pan por postura abierta de anfitrión y máscara sin flauta. Escenario derivado de teatro y viña, sin templo genérico. Redondez facial específica de ficha resuelta moderada, sin cabeza de muñeco.
+
+Hestia: adulta madura compacta y liviana, piel dorada media, ojos marrón cálido, pelo castaño ceniza recogido simple; arrodillada levemente lateral cuidando llama doméstica a un costado, telas simples y hogar contenido. Túnica lisa terracota y sandalias como decisión provisional; fuego ilumina manos/tela y curva su llama suavemente desde el hogar. Se separa de Prometeo porque conserva fuego sin ofrecerlo/transportarlo, de Penélope sin telar y de Frigg por composición baja sin manto vertical. La decisión de color y matices de madurez no se presentan como atestación mitológica. Dudas a archivo único.
