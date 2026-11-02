@@ -1,0 +1,19 @@
+{
+  "intento_inicial": "404 en los tres PNG",
+  "relectura": [
+    {
+      "id": "hefesto",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "hel",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "helios",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "navegador": "ERR_CERT_AUTHORITY_INVALID, sin desactivar TLS",
+  "visual_publicado": false
+}

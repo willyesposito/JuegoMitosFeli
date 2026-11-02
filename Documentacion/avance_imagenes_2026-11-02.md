@@ -324,3 +324,9 @@ Auditoría Pillow completa: JSON válido, 85 personajes, 55 referencias existent
 | helios | generado, corregido y verificado local, subida por confirmar en cierre | imagenes/helios.png | 2/1 | cierre siguiente | click, decode y captura inspeccionada; 2026-11-02 |
 
 Campaña NO completa: restan 30 imágenes y auditoría integral/publicación visual. Próxima tanda: hestia, jason, medea. No duplicar estas imágenes en recuperación. Transferencia y publicación se confirmarán en cierre.
+
+### Cierre confirmado de tanda 10 — 2026-11-02
+
+Commit de imágenes/integración/pruebas confirmado en remoto: `23149f4f8136e6eee1b533b91ed04f3eeb5b7722`. Fetch remoto y comparación de 13/13 archivos byte por byte: todos idénticos. Ese SHA corresponde a las tres filas anteriores. PNG completos: Hefesto 2263759 bytes, Hel 1996641 bytes, Helios 1862688 bytes. Estado definitivo: **los tres generados, subidos y verificados visualmente en el juego local**, con dudas editoriales declaradas. Evidencia: transferencia_tanda10.json. Campaña NO completa: 55/85, restan 30 imágenes y auditoría integral.
+
+El navegador del sitio publicado falló con ERR_CERT_AUTHORITY_INVALID, sin desactivar TLS. Primera consulta HTTP de los tres PNG devolvió 404; se realizó relectura y se conserva su resultado exacto en resultado_tanda10_publicado.json. **No se acredita apertura visual de las cartas publicadas**. Recuperar esa comprobación para el cierre, mantener campaña activa y no regenerar las imágenes existentes.

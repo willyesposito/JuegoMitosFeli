@@ -1,0 +1,70 @@
+{
+  "commit": "23149f4f8136e6eee1b533b91ed04f3eeb5b7722",
+  "archivos": [
+    {
+      "ruta": "Documentacion/avance_imagenes_2026-11-02.md",
+      "bytes": 50294,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/dudas_imagenes_2026-11-02.md",
+      "bytes": 11941,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_tanda10.json",
+      "bytes": 7684,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/hefesto.png",
+      "bytes": 334947,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/hel.png",
+      "bytes": 278712,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/helios.png",
+      "bytes": 272509,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/resultado_tanda10_local.json",
+      "bytes": 867,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/tanda10_produccion.json",
+      "bytes": 4217,
+      "identico": true
+    },
+    {
+      "ruta": "imagenes/hefesto.png",
+      "bytes": 2263759,
+      "identico": true
+    },
+    {
+      "ruta": "imagenes/hel.png",
+      "bytes": 1996641,
+      "identico": true
+    },
+    {
+      "ruta": "imagenes/helios.png",
+      "bytes": 1862688,
+      "identico": true
+    },
+    {
+      "ruta": "personajes.json",
+      "bytes": 335365,
+      "identico": true
+    },
+    {
+      "ruta": "sw.js",
+      "bytes": 2195,
+      "identico": true
+    }
+  ]
+}
