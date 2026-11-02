@@ -1,0 +1,41 @@
+{
+  "fecha_real": "2026-11-02",
+  "archivos": [
+    {
+      "id": "eros",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/eros.png?v=tanda8-cierre",
+      "status": 200,
+      "bytes": 2038320,
+      "identico": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "esfinge",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/esfinge.png?v=tanda8-cierre",
+      "status": 200,
+      "bytes": 2687216,
+      "identico": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "fenix",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/fenix.png?v=tanda8-cierre",
+      "status": 200,
+      "bytes": 2244671,
+      "identico": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    }
+  ],
+  "visual_publicada": false,
+  "primer_intento": "404 en los tres archivos; relectura al cierre",
+  "error_navegador": "ERR_CERT_AUTHORITY_INVALID; no se desactiv\u00f3 TLS"
+}

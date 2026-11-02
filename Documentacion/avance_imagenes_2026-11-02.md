@@ -269,3 +269,10 @@ Auditoría completa: 85 personajes, 49 referencias existentes y completamente de
 | fenix | generado y verificado local; subida en este commit | imagenes/fenix.png | 1/0 | confirmar en cierre | click, decode y captura inspeccionada; 2026-11-02 |
 
 Publicación remota por confirmar en cierre; verificación visual publicada aún pendiente. Campaña NO completa. Próxima tanda asignada: fenrir, frigg, hector; recuperar también circe, cronos, dafne, dedalo, dido, dioniso.
+
+
+### Cierre confirmado de tanda 8 — 2026-11-02
+
+Commit de imágenes, integración y evidencias confirmado en remoto: `619500e3cac4616c49a132592a10b52d24a9ab12`. Recuperado mediante git fetch; 13/13 archivos comparados byte por byte con los locales, todos coinciden. Ese SHA corresponde al commit de las tres filas anteriores. PNG completos: Eros 2038320 bytes, Esfinge 2687216 bytes y Fénix 2244671 bytes. Estado definitivo: **Eros, Esfinge y Fénix generados, subidos y verificados visualmente en juego local**. Evidencia: transferencia_tanda8.json. Tanda 8 completa en local; campaña NO completa: 49/85, restan 36 imágenes y auditoría final.
+
+PNG publicados con HTTP 200, bytes idénticos a los locales y decodificación completa a 1086×1448. Primer intento dio 404 durante actualización; relectura de cierre obtuvo los tres archivos completos. Evidencia: resultado_tanda8_publicado.json. Intento de navegador publicado volvió a fallar por ERR_CERT_AUTHORITY_INVALID del proxy, sin desactivar validación TLS. **No se acredita apertura visual de las cartas publicadas**; recuperar esa comprobación para cierre integral. Mantener campaña activa, sin regenerar imágenes existentes.
