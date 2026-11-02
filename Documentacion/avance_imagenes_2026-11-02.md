@@ -416,3 +416,19 @@ Capturas individuales abiertas e inspeccionadas: `Documentacion/pruebas_imagenes
 Acumulado publicado: **11/57** (las cinco pruebas previas más estas seis), quedan **46**; lista exacta trazable en JSON. Sin nuevas pruebas visuales locales; las evidencias previas se preservan. Auditoría completa repetida desde HEAD: JSON válido, 85 personajes, 61 referencias existentes completamente decodificadas con Pillow; cero rutas rotas. **61/85 integradas; 24 por generar**, sin nuevas integraciones ni cambios a personajes.json/sw.js/historias/módulos.
 
 Pendientes de generación en prioridad: dedalo, dido, dioniso, hestia, jason, medea, medusa, midas, minotauro, njord, orfeo, orion, pan, paris, pegaso, pentesilea, poseidon, prometeo, quiron, ratatosk, selene, skadi, thor, tyr. Retomar dedalo y dido sólo con reserva HEAD/lease y presupuesto comprobado. Campaña NO completa; tarea actual sigue activa y anterior deshabilitada.
+
+
+## Reserva de producción — recuperacion-20261102T182626Z — 2026-11-02 18:30:10 UTC
+
+HEAD base `96a1e12d30ba4942a451461f3689c77eebb54bcb`, árbol completo 362 rutas; 85 personajes, 61 referencias y 61 imágenes versionadas. Dédalo y Dido siguen sin imagen referenciada ni archivo en HEAD. No hay reservas recientes ajenas. Tarea anterior confirmada deshabilitada y último intento completado 15:59:37 UTC; no hay commits nuevos suyos.
+
+Presupuesto conservador en ventana 13:30:10–18:30:10 UTC: seis llamadas históricas (tanda 13 tres, recuperación 5 tres), cero nuevas hasta esta reserva. Margen para dos intentos secuenciales, incluidos rechazos; total máximo previsto ocho. No se conoce cupo real. No regenerar por cosmética.
+
+| Personaje | Ejecución | Inicio UTC | Estado | Ruta |
+|---|---|---|---|---|
+| dedalo | recuperacion-20261102T182626Z | 2026-11-02T18:30:10Z | reservado; generación todavía no iniciada | imagenes/dedalo.png |
+| dido | recuperacion-20261102T182626Z | 2026-11-02T18:30:10Z | reservado; generación todavía no iniciada | imagenes/dido.png |
+
+Preflight interno preautorizado, órdenes completas/estilo/método leídos. Dédalo: anciano delgado oliva clara, pelo gris corto desordenado y ojos avellana; encorvado lateral trabajando con ambas manos en alas fabricadas parcialmente abiertas, herramientas al cinturón y patrón simple de laberinto detrás. Alas en actividad por ajuste y aire/plumas que responden, sin inventar poder luminoso ni vuelo. Separación textual de Perseo/Nike por edad, técnica y apoyo en tierra, de Hefesto por cuerpo estrecho y plumas sin forja. Color provisional de túnica azul grisáceo, sandalias simples.
+
+Dido: adulta madura alta de contextura media, rostro largo decidido, piel castaña media, ojos marrón muy oscuro y pelo negro recogido de volumen controlado; tres cuartos señalando trazado de Cartago, manto púrpura de Tiro, muralla en construcción y puerto mediterráneo. Capas de actividad/entorno por viento en manto, polvo de obra y movimiento de agua, sin inventar telequinesis. Separada de Hera/Casiopea por acción en pie sin trono ni regalia y de Atenea por fundación civil sin armas. Se resuelve contradicción romano/fenicio priorizando la base funcional subordinada al vocabulario fenicio, conforme §5 de la orden. Decisiones y dudas se registran en archivo único.
