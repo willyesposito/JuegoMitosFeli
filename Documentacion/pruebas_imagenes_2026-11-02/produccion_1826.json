@@ -1,0 +1,42 @@
+{
+  "ejecucion": "recuperacion-20261102T212626Z",
+  "herramienta": "image_gen incorporada",
+  "intentos": [
+    {
+      "id": "jason",
+      "inicio_herramienta_utc": "2026-11-02T21:30:39Z",
+      "resultado_utc": "2026-11-02T21:31:13Z",
+      "ruta": "imagenes/jason.png",
+      "commit": "028593cde97b377f967a1263e47064169a076bd5",
+      "reintento": false
+    },
+    {
+      "id": "medea",
+      "inicio_herramienta_utc": "2026-11-02T21:33:15Z",
+      "resultado_utc": "2026-11-02T21:33:48Z",
+      "ruta": "imagenes/medea.png",
+      "commit": "a4ce9d5ee267cd7dce27568a35f7786a623c11a8",
+      "reintento": false
+    }
+  ],
+  "gate_12": {
+    "1_fotografia": "no, ambos se leen animación",
+    "2_pintura": "no",
+    "3_2d": "no",
+    "4_muneco": "no; Jasón más juvenil de lo previsto",
+    "5_musculatura": "moderada, sin definición de gimnasio",
+    "6_identidad": "contraste textual comprobado; sin abrir ilustraciones de otros para referencia estética, no comparación visual exhaustiva",
+    "7_fondo": "subordinado, Jasón más detallado",
+    "8_magia": "vellocino emite luz propia; Medea manos y hechizo de sueño",
+    "9_inventario": "identificadores, pistas y calzado presentes; luna incidental Medea; detalles de barco no acreditados históricamente",
+    "10_trazabilidad": "efectos nacen de vellocino/manos, sin aura, runas ni halo",
+    "11_expresion": "cálida y atenta; sin amenaza",
+    "12_dorado": "limitado al vellocino, justificado"
+  },
+  "aceptacion": "provisional por autorización de campaña, no aprobación estética; desviaciones en archivo único",
+  "llamadas_ventana_conservadora": 6,
+  "retener_hasta_utc": {
+    "jason": "2026-11-03T02:31:13Z",
+    "medea": "2026-11-03T02:33:48Z"
+  }
+}
