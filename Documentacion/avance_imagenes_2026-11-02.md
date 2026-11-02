@@ -352,3 +352,9 @@ Auditoría completa con Pillow: JSON válido, 85 personajes, 58 referencias exis
 | nike | generado y verificado local; subida por confirmar | imagenes/nike.png | 1/0 | cierre siguiente | click, decode y captura inspeccionada; 2026-11-02 |
 
 Campaña NO completa: 27 imágenes más auditoría integral y prueba visual publicada. Tandas pendientes de recuperación: circe/cronos/dafne, dedalo/dido/dioniso, hestia/jason/medea, medusa/midas/minotauro. Próxima asignación: njord/orfeo/orion. Con 12 pendientes anteriores, las cuatro tandas de recuperación quedarían ocupadas: conservar ritmo y no duplicar resultados. Cierre remoto y comprobación publicada se registran después de transferencia.
+
+### Cierre confirmado de tanda 13 — 2026-11-02
+
+Commit de imágenes/integración/evidencias confirmado en remoto: `4b845884fcba73badc20143d2907ae045e12bea6`. Recuperado mediante fetch: 13/13 archivos idénticos byte por byte a los probados. Ese SHA corresponde a las tres filas de la tanda. PNG completos: Narciso 1918575 bytes, Nausícaa 2165833 bytes, Nike 1805402 bytes. **Tres personajes generados, subidos y verificados visualmente en juego local**, con dudas de diseño registradas. Evidencia: transferencia_tanda13.json.
+
+El intento de cartas publicadas falló por ERR_CERT_AUTHORITY_INVALID, sin desactivar TLS. La primera consulta de los tres PNG devolvió HTTP 404; resultado y relectura se conservan en resultado_tanda13_publicado.json. No se acredita visualización publicada. La campaña sigue activa y NO completa: 58/85, 27 imágenes pendientes y auditoría final. No regenerar esta tanda en recuperación.

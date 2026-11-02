@@ -1,0 +1,33 @@
+{
+  "fecha_contexto": "2026-11-02",
+  "archivos": [
+    {
+      "id": "narciso",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "nausicaa",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "nike",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "visual_publicado": false,
+  "relectura": [
+    {
+      "id": "narciso",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "nausicaa",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "nike",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "navegador": "ERR_CERT_AUTHORITY_INVALID; TLS no desactivado"
+}

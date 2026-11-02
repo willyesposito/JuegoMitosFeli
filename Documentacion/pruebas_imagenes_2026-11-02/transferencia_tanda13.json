@@ -1,0 +1,70 @@
+{
+  "commit": "4b845884fcba73badc20143d2907ae045e12bea6",
+  "archivos": [
+    {
+      "ruta": "Documentacion/avance_imagenes_2026-11-02.md",
+      "bytes": 56216,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/dudas_imagenes_2026-11-02.md",
+      "bytes": 13188,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_tanda13.json",
+      "bytes": 8033,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/narciso.png",
+      "bytes": 296409,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/nausicaa.png",
+      "bytes": 320865,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/nike.png",
+      "bytes": 247944,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/resultado_tanda13_local.json",
+      "bytes": 873,
+      "identico": true
+    },
+    {
+      "ruta": "Documentacion/pruebas_imagenes_2026-11-02/tanda13_produccion.json",
+      "bytes": 4174,
+      "identico": true
+    },
+    {
+      "ruta": "imagenes/narciso.png",
+      "bytes": 1918575,
+      "identico": true
+    },
+    {
+      "ruta": "imagenes/nausicaa.png",
+      "bytes": 2165833,
+      "identico": true
+    },
+    {
+      "ruta": "imagenes/nike.png",
+      "bytes": 1805402,
+      "identico": true
+    },
+    {
+      "ruta": "personajes.json",
+      "bytes": 335477,
+      "identico": true
+    },
+    {
+      "ruta": "sw.js",
+      "bytes": 2195,
+      "identico": true
+    }
+  ]
+}
