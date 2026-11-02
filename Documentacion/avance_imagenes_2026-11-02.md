@@ -104,3 +104,22 @@ Auditoría de datos: JSON válido, 85 personajes, 34 referencias a imágenes exi
 | casiopea | pendiente | imagenes/casiopea.png | sin generación/subida/prueba |
 | orion | pendiente | imagenes/orion.png | sin generación/subida/prueba |
 | castor_polux | pendiente | imagenes/castor_polux.png | sin generación/subida/prueba |
+
+## Cierre de recuperación — 2026-11-02 01:02 -03:00
+
+**Tanda 1 generada, subida y verificada visualmente en el juego local**, con excepciones editoriales provisionales registradas en el archivo único de dudas. La campaña completa sigue pendiente: 51 imágenes.
+
+Commit de imágenes/integración/evidencias confirmado en la rama remota: `fb0f46a5fb6a184dacd0d25e5102cc5e6a0edcd2`. Se recuperó mediante git fetch y se comprobaron los SHA de los tres blobs contra los bytes locales; coinciden.
+
+| Personaje | Estado de entrega | Ruta | Commit | Prueba y fecha |
+|---|---|---|---|---|
+| andromeda | verificado local, subido | imagenes/andromeda.png | fb0f46a5fb6a184dacd0d25e5102cc5e6a0edcd2 | carta abierta y captura; decode 1086×1448; HTTP publicado 200 y bytes idénticos; 2026-11-02 |
+| aquiles | verificado local, subido | imagenes/aquiles.png | fb0f46a5fb6a184dacd0d25e5102cc5e6a0edcd2 | carta abierta y captura; decode 1086×1448; HTTP publicado 200 y bytes idénticos; 2026-11-02 |
+| aracne | verificado local, subido | imagenes/aracne.png | fb0f46a5fb6a184dacd0d25e5102cc5e6a0edcd2 | carta abierta y captura; decode 1086×1448; HTTP publicado 200 y bytes idénticos; 2026-11-02 |
+| odiseo | integración verificada local, subida | imagenes/odiseo.png | fb0f46a5fb6a184dacd0d25e5102cc5e6a0edcd2 | carta abierta y captura; HTTP publicado 200 y bytes idénticos; 2026-11-02 |
+| apolo | integración verificada local, subida | imagenes/apolo.png | fb0f46a5fb6a184dacd0d25e5102cc5e6a0edcd2 | carta abierta y captura; HTTP publicado 200 y bytes idénticos; 2026-11-02 |
+| ares | integración verificada local, subida | imagenes/ares.png | fb0f46a5fb6a184dacd0d25e5102cc5e6a0edcd2 | carta abierta y captura; HTTP publicado 200 y bytes idénticos; 2026-11-02 |
+
+Sitio disponible: https://willyesposito.github.io/JuegoMitosFeli/ . Se abrió el hub publicado en navegador remoto y se leyó el JSON publicado con 34 referencias. Los seis PNG publicados responden HTTP 200, se decodifican y coinciden byte por byte con los usados en las cartas locales; hashes en `Documentacion/pruebas_imagenes_2026-11-02/resultado_publicado.json`. **No se acreditó apertura visual de las seis cartas en el sitio publicado**: el Chromium local usado para sembrar el perfil de prueba rechazó el certificado del proxy; no se omitió validación TLS. La verificación visual completa de esta tanda es local y conserva capturas en repo.
+
+Siguiente tanda programada: ariadna, atalanta, balder. No regenerar la tanda 1 ni reemplazar imágenes existentes por marcas históricas. Reutilizar evidencia remota; los pendientes editoriales no bloquean las tandas siguientes.

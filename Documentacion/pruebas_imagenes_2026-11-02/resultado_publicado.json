@@ -1,0 +1,74 @@
+{
+  "fecha": "2026-11-02T04:01:00Z",
+  "tipo": "HTTP y bytes publicados; NO es prueba visual en navegador publicado",
+  "base": "https://willyesposito.github.io/JuegoMitosFeli/",
+  "results": [
+    {
+      "id": "andromeda",
+      "http": 200,
+      "bytes": 2162830,
+      "sha256": "23e4732bb1e34dc074fae9092e8a3ed7ebc96d0d8137405ba6faa446372f006f",
+      "identica_a_prueba_local": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "aquiles",
+      "http": 200,
+      "bytes": 2089605,
+      "sha256": "84e7c9b07c1d7c538898525aeff8439adae24464f74b4678e78e5266813c52bb",
+      "identica_a_prueba_local": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "aracne",
+      "http": 200,
+      "bytes": 2304569,
+      "sha256": "3bfade1d1b25269e1e8c1b785a22b9278105c435b8e3e99cd6cd8bd281d471f8",
+      "identica_a_prueba_local": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "odiseo",
+      "http": 200,
+      "bytes": 1905066,
+      "sha256": "07674b4ab6e7ac9f397ac5f2e0a75bbdf401e43e3106831eea08d1d4792fc7fb",
+      "identica_a_prueba_local": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "apolo",
+      "http": 200,
+      "bytes": 1445650,
+      "sha256": "1552165c1e4c02aeae6c4823835aed884bc2291d4677d0a642d6d71c406d4bb0",
+      "identica_a_prueba_local": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "ares",
+      "http": 200,
+      "bytes": 1582561,
+      "sha256": "dd55405c584ffb6cab4791341850e631b54b45b13bc2b26dfe45a58f7e49738e",
+      "identica_a_prueba_local": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    }
+  ],
+  "limite": "Chromium de prueba no confía en certificado del proxy; no se omitió validación TLS."
+}
