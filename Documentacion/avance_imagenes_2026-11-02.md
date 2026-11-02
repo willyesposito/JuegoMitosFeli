@@ -276,3 +276,22 @@ Publicación remota por confirmar en cierre; verificación visual publicada aún
 Commit de imágenes, integración y evidencias confirmado en remoto: `619500e3cac4616c49a132592a10b52d24a9ab12`. Recuperado mediante git fetch; 13/13 archivos comparados byte por byte con los locales, todos coinciden. Ese SHA corresponde al commit de las tres filas anteriores. PNG completos: Eros 2038320 bytes, Esfinge 2687216 bytes y Fénix 2244671 bytes. Estado definitivo: **Eros, Esfinge y Fénix generados, subidos y verificados visualmente en juego local**. Evidencia: transferencia_tanda8.json. Tanda 8 completa en local; campaña NO completa: 49/85, restan 36 imágenes y auditoría final.
 
 PNG publicados con HTTP 200, bytes idénticos a los locales y decodificación completa a 1086×1448. Primer intento dio 404 durante actualización; relectura de cierre obtuvo los tres archivos completos. Evidencia: resultado_tanda8_publicado.json. Intento de navegador publicado volvió a fallar por ERR_CERT_AUTHORITY_INVALID del proxy, sin desactivar validación TLS. **No se acredita apertura visual de las cartas publicadas**; recuperar esa comprobación para cierre integral. Mantener campaña activa, sin regenerar imágenes existentes.
+
+
+## Tanda 9 — 2026-11-02 08:37 -03:00
+
+Base remota preservada: `ff5c06946d776fa5a41cb085b5af9a3665fe4e14`. n=9 según hora de ejecución del contexto y primera ejecución 00:35. Checkout aislado; no se pisaron cambios de sesiones previas. Tandas 5/6 pendientes para recuperación. Leídas órdenes completas, estilo, método, CLAUDE.md y MEMORY.md. Preflight interno y prompts en tanda9_produccion.json; ninguna imagen de otro personaje se usó como referencia.
+
+Cinco llamadas reales secuenciales a imagegen: tres originales generados y dos correcciones de Frigg rechazadas HTTP 400 moderation_blocked en salida; sin 429 ni indicador de cuota. Total documentado de campaña: 26 llamadas. No se insiste tras segundo rechazo. Frigg original permitido se conserva con desviación de estilo explícita bajo la autorización editorial; NO se declara aprobación estética ni cumplimiento completo del gate. Fenrir presenta también exceso de realismo en texturas. Revisión de inventario, omisiones y doce puntos en JSON de producción y archivo único de dudas.
+
+PNG completos 1086×1448 (3:4), totalmente decodificados con Pillow. Auditoría de 85: 52 referencias existentes y cargables, cero rutas rotas, 33 pendientes; lista exacta en auditoria_tanda9.json. Comparación contra base: sólo se agrega imagen a los tres objetivos, sin cambios de historias ni otros campos. sw.js v3.5.17.
+
+Prueba concreta local: servidor Node y Chromium/Playwright, móvil 390×844, perfil sintético aislado; click real en cada carta, img.decode(), captura individual abierta e inspeccionada. Las tres cargan a 1086×1448 en caja 352.5×470 sin recorte CSS adicional, cero errores JS/HTTP. Fenrir conserva patas y cinta, oreja al borde ya en archivo; Frigg pies y gesto; Héctor sandalias y escudo. Evidencias en fenrir.png, frigg.png, hector.png y resultado_tanda9_local.json dentro de carpeta de pruebas. Reloj del host desfasado, fecha real tomada del contexto y reloj UTC.
+
+| Personaje | Estado | Ruta | Llamadas / reintentos | Commit | Prueba y fecha |
+|---|---|---|---|---|---|
+| fenrir | generado y verificado local, subida en este commit | imagenes/fenrir.png | 1 / 0 | confirmar en cierre | click, decode y captura inspeccionada; 2026-11-02 |
+| frigg | generado y verificado local, desviación editorial registrada, subida en este commit | imagenes/frigg.png | 3 / 2 rechazos | confirmar en cierre | click, decode y captura inspeccionada; 2026-11-02 |
+| hector | generado y verificado local, subida en este commit | imagenes/hector.png | 1 / 0 | confirmar en cierre | click, decode y captura inspeccionada; 2026-11-02 |
+
+Publicación remota por confirmar en cierre. Verificación visual publicada pendiente: no confundir con prueba local. Campaña NO completa; restan 33 imágenes y auditoría final. Próxima tanda: hefesto, hel, helios.

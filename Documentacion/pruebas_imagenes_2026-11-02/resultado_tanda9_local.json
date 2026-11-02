@@ -1,0 +1,44 @@
+{
+  "fecha": "2026-11-02T11:43:36.613Z",
+  "viewport": "390x844",
+  "prueba": "Cartas reales abiertas mediante click; decode de imagen y captura individual",
+  "results": [
+    {
+      "id": "fenrir",
+      "src": "imagenes/fenrir.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "frigg",
+      "src": "imagenes/frigg.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hector",
+      "src": "imagenes/hector.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    }
+  ],
+  "errors": []
+}

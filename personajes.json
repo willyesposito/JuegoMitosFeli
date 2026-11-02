@@ -3086,6 +3086,7 @@
   },
   {
     "id": "hector",
+    "imagen": "imagenes/hector.png",
     "nombre": "Héctor",
     "mitologia": "griega",
     "titulo": "El defensor de Troya",
@@ -4281,6 +4282,7 @@
   },
   {
     "id": "frigg",
+    "imagen": "imagenes/frigg.png",
     "nombre": "Frigg",
     "mitologia": "nordica",
     "titulo": "La reina de Asgard",
@@ -4838,6 +4840,7 @@
   },
   {
     "id": "fenrir",
+    "imagen": "imagenes/fenrir.png",
     "nombre": "Fenrir",
     "mitologia": "nordica",
     "titulo": "El lobo gigante",

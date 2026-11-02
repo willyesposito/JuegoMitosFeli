@@ -70,3 +70,12 @@ Tres cartas inspeccionadas en el juego local; ninguna entrada acredita aprobaci�
 | Eros | Edad aparente muy juvenil, trama de tela y fondo más detallados; arco toca borde superior, figura supera 80%. Punta en corazón y rosa son interpretación visual del don, no hecho mitológico. | Conservar por cuerpo ligero, arco/flecha activos, pies completos y expresión amable; sin alas al no acreditarse condición. No se incluye Psique al ser escena individual. | imagenes/eros.png |
 | Esfinge | Pelo y pelaje con microdetalle; fondo rocoso más presente; rostro menos envejecido que §4. Pelo gris y pelaje ocre son decisiones de diseño provisionales. | Conservar anatomía leonina completa, rostro humano y quietud interrogativa. Sin alas al no existir autorización explícita, sin ornamentos egipcios. El acertijo se expresa por mirada, no escritura ni poder inventado. | imagenes/esfinge.png |
 | Fénix | Extremo del ala alta corta levemente el borde superior; tamaño mayor al 80%, algo menos de aire superior y paisaje más presente. | Conservar la lectura de ascenso y renacimiento, anatomía aviar, cola de fuego/ceniza y alas desiguales. Es recorte del archivo, no CSS; sin reintento cosmético. Paleta coral/naranja es diseño, no atestación. | imagenes/fenix.png |
+
+
+## Tanda 9 — 2026-11-02
+
+| Personaje | Duda | Decisión provisional | Ruta |
+|---|---|---|---|
+| Fenrir | Pelaje y paisaje semirrealistas, figura mayor al 80%, oreja derecha al borde; color no fijado | Conservar imagen real funcional de la campaña sin afirmar aprobación estética. Carbón y cinta azul plateada son decisiones visuales, no datos mitológicos. Tyr condicional no aparece en escena individual | imagenes/fenrir.png |
+| Frigg | Imagen demasiado fotográfica y paisaje excesivo; dos intentos de corrección rechazados por seguridad de salida | Conservar original permitido con incumplimiento editorial explícito; no seguir insistiendo. Azul pizarra es diseño, no atestación. No agregar objetos ni fenómenos proféticos | imagenes/frigg.png |
+| Héctor | Barba mayor que mínima, trama/piedra excesiva, cierre y paño de hombro incidentales; figura mayor al 80% | Conservar provisionalmente por identidad, escudo defensivo y ciudad legibles. Terracota es diseño; polvo ambiental no implica poder mitológico. Sin contexto familiar por condición no definida | imagenes/hector.png |
