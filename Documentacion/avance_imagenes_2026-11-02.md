@@ -15,3 +15,7 @@ Los dos resultados están en la conversación de esta ejecución; NO están pres
 Bloqueo técnico comprobado: git clone funciona, git push --dry-run falla con `could not read Username for https://github.com`. El conector GitHub disponible escribe archivos UTF-8, no admite carga binaria PNG. Falta un canal autenticado de escritura binaria para completar subida y verificación remota. No se intentó eludir autenticación.
 
 Pendientes de campaña: 54 imágenes ausentes en repo y revisión de las 3 integraciones existentes. Tarea pausada por bloqueo de entrega; no por finalización. Sin prueba local ni publicada acreditada.
+
+## Acceso restablecido y método verificado
+
+El conector GitHub admite escritura binaria mediante create_blob con encoding base64: prueba exitosa SHA a4b25763a3e395090f027ca04a7eccdc214ee3b7, sin incorporar el objeto de prueba al árbol de la rama. La afirmación anterior de que el conector solo escribe texto era incorrecta. Usar create_blob + create_tree + create_commit + update_ref para subir ilustraciones reales; no requiere autenticación del git local. Tarea reactivada con instrucciones corregidas y recuperación de tanda 1. No se cuenta ninguna imagen nueva como subida ni verificada por esta prueba.
