@@ -577,3 +577,10 @@ Medusa: prueba local con click real y img.decode(), captura local_1926_medusa.pn
 
 ### Midas — intento 2 pre-registrado — 2026-11-02 22:31:55 UTC
 Segunda y última llamada prevista, cero reintentos. Siete llamadas conservadoras actuales, máximo posterior ocho. Reserva vigente.
+
+Medusa subida confirmada en 8a21d53e395e95d30a5f8489a23a9b840d71c710; blob coincide con hash-object de los bytes originales. Publicado pendiente.
+
+### Midas — intento 2 resultado — 2026-11-02 22:33:48 UTC
+Segunda y última llamada image_gen, sin reintentos/rechazos/429. PNG real completo 1086×1448. Ocho llamadas conservadoras en ventana. Rostro maduro sorprendido, mano separada, pan/cuenco/agua parcialmente dorados, efecto desde contacto presentes. Desviaciones: dedos también dorados, mesa tapa parcialmente un pie, figura mayor al 80%, barba más abundante y microtexturas de tela/piel/mesa, objetos de fondo muy desenfocados. Mantener provisionalmente sin variante cosmética, no aprobación estética. Sólo imagen de Midas y sw v3.5.28; local/publicado pendientes.
+
+Midas: prueba local completada con click real y img.decode(), captura local_1926_midas.png abierta e inspeccionada; naturales 1086×1448, caja 352.5×470, cero errores JS/HTTP. Un pie parcialmente oculto por mesa en imagen original, sin recorte adicional CSS. Auditoría completa: JSON válido, 85 personajes, 69 referencias existentes completamente decodificadas, 16 pendientes. Generado/verificado local, subida siguiente.

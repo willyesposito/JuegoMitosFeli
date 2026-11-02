@@ -133,3 +133,6 @@ Ruta imagenes/medea.png. Túnica ciruela, magia verde controlada, claro nocturno
 
 ## Medusa — recuperacion-20261102T222626Z
 Ruta imagenes/medusa.png. Túnica berenjena, serpientes verde apagado y efecto mineral frío: decisiones provisionales de diseño. Resultado: encuadre cerrado, serpiente cerca del borde superior, base gris parece pelo humano y cristalización parece hielo; microtexturas. Conservar sin cosmética, sin aprobación estética ni afirmación de atestación del color. No víctimas ni amenaza a cámara.
+
+## Midas — recuperacion-20261102T222626Z
+Ruta imagenes/midas.png. Túnica verde petróleo, mesa/cuenco/pan como concreción funcional de comida/agua autorizadas; no dato histórico. Resultado: dedos también dorados, pie parcialmente oculto por mesa, barba algo abundante, figura grande y microtexturas; objetos incidentales de fondo ilegibles. Conservar sin cosmética ni aprobación estética atribuida; transformación parcial de varios objetos inequívoca.

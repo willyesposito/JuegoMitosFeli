@@ -3720,6 +3720,7 @@
   },
   {
     "id": "midas",
+    "imagen": "imagenes/midas.png",
     "nombre": "Midas",
     "mitologia": "griega",
     "titulo": "El rey del toque de oro",
