@@ -2,7 +2,7 @@
   {
     "id": "belerofonte",
     "prompt_resumido": "Animación 3D familiar; joven castaño ceniza oliva clara, túnica azul gris lisa; montado en Pegaso en diagonal ascendente; brida dorada visible, alas en actividad, entorno violeta subordinado; sin armas ni adornos.",
-    "blob": "dc2502bfe3d8644cc17af7d877be95235817519b",
+    "blob": "3a92d0ef7c9444b86fb9a2cdbfa433cdcf47851f",
     "ruta": "imagenes/belerofonte.png",
     "herramienta": "image_gen.imagegen",
     "llamadas": 1,
@@ -16,7 +16,7 @@
   {
     "id": "calisto",
     "prompt_resumido": "Animación 3D familiar; osa adulta corpulenta entera, lateral estable mirando Osa Mayor; hocico corto, siete estrellas del carro y claro nocturno; sin humanos ni accesorios.",
-    "blob": "e3ae6f1a7a1817868a5fe466225560b6211939c5",
+    "blob": "094c7e939c26707447934efb53b0ae9c5ab926dd",
     "ruta": "imagenes/calisto.png",
     "herramienta": "image_gen.imagegen",
     "llamadas": 1,
@@ -30,7 +30,7 @@
   {
     "id": "casandra",
     "prompt_resumido": "Animación 3D familiar; joven delgada oliva media, pelo negro lacio largo, túnica ciruela lisa; inclinada señalando fuera de cuadro, otra mano abierta; muralla de Troya subordinada, sin magia lanzada ni herramientas proféticas.",
-    "blob": "91e1e10e01f36fbad172883b223d881f790ed318",
+    "blob": "ce1e6c18137e0e375155a5abdcdaa469aaa77ab7",
     "ruta": "imagenes/casandra.png",
     "herramienta": "image_gen.imagegen",
     "llamadas": 1,

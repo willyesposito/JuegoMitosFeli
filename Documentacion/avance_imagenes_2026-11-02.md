@@ -178,3 +178,9 @@ Auditoría: JSON válido, 85 personajes, 40 referencias a archivos existentes y 
 | balder | subido; verificado local recuperado | imagenes/balder.png | 0 nuevas / 0 | imagen b096580; evidencia en este commit | click, decode y captura en juego local; 2026-11-02 |
 
 Prueba publicada intentada: Chromium rechazó navegación por `net::ERR_CERT_AUTHORITY_INVALID` del proxy. No se desactivó validación TLS. **No se acredita verificación visual del sitio publicado**; sí de las seis cartas locales. No es bloqueo para generar las tandas siguientes. Antes de cierre integral debe verificarse publicación visual; campaña sigue activa. Restan 45 imágenes nuevas; no regenerar las 40 existentes. Siguiente tanda asignada: casiopea, castor_polux (orden castor_y_polux), cerbero.
+
+### Control de transferencia y corrección de tanda 3
+
+El primer commit `0069500f755283531e35c7dd175ba4de52e2b247` incorporó integración, documentos y capturas correctos, pero la comparación de bytes remotos detectó truncamiento de los tres PNG nuevos a aproximadamente 786 KB por límite de salida del comando que extraía base64. **Ese commit no acredita entrega válida de imágenes**. Se corrigió la extracción leyendo bloques de 300000 bytes (múltiplo de tres), concatenando base64 completo y creando de nuevo los blobs; no hubo nuevas generaciones ni consumo adicional de imagegen. Se verificó que los otros 14 archivos subidos coinciden exactamente con los locales.
+
+Blobs completos esperados y contrastados con git hash-object local: Belerofonte `3a92d0ef7c9444b86fb9a2cdbfa433cdcf47851f` (2122696 bytes), Calisto `094c7e939c26707447934efb53b0ae9c5ab926dd` (2231179 bytes), Casandra `ce1e6c18137e0e375155a5abdcdaa469aaa77ab7` (2028774 bytes). La publicación válida corresponde al commit corrector que contiene esta sección; confirmar SHA exacto en el cierre siguiente. Las pruebas locales usaron siempre los bytes completos y siguen siendo válidas.
