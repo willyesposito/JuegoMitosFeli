@@ -104,3 +104,8 @@ Tres cartas inspeccionadas en el juego local; ninguna entrada acredita aprobaci�
 | Circe | No se fija objetivo de transformación ni color de ropa. Salida incorpora arquitectura lejana no autorizada, edad aparente más joven, figura >80% | Transformación vegetal abstracta y túnica ciruela elegidas como adaptación visual, no hechos mitológicos. Conservar resultado funcional y registrar arquitectura/edad/encuadre para revisión, sin aprobación del usuario | imagenes/circe.png |
 | Cronos | Orden impide símbolos temporales aunque JSON conserva don temporal; barba no definida y tela con microtextura; severidad | Seguir identificador de hoz corta en reposo y escala monumental. Sin magia temporal inventada; reacción del suelo al peso como recurso visual. Conservar barba/gris violáceo como decisiones provisionales de diseño, no canon | imagenes/cronos.png |
 | Dafne | Color no fijado; edad juvenil, tela/madera con microtextura y hojas cerca del borde superior | Túnica verde grisácea, transformación suave completamente vestida; conservar raíces y ramas visibles, sin calzado; registrar desviaciones de acabado/encuadre | imagenes/dafne.png |
+
+
+## 2026-11-02 — Dédalo — recuperación 15:26
+
+Ruta: imagenes/dedalo.png. Decisiones provisionales: túnica azul grisáceo lisa; artefacto en actividad con aire/plumas y sin luz inventada; soporte de madera interpretado funcional a las alas. Dudas tras inspección: figura mayor al 80%, extremo derecho del ala recortado, pelo más ondulado y microtextura de ropa/suelo. Alas, herramientas, laberinto y pies presentes. Se conserva el único resultado para integración; no equivale a aprobación estética.

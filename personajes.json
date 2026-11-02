@@ -742,7 +742,8 @@
       "Un inventor griego fue encerrado en una isla y buscó una manera de escapar por el aire.",
       "Su astucia toca el máximo de la escala; su fuerza es de las más bajas.",
       "Construyó con sus propias manos el laberinto que un héroe después logró atravesar."
-    ]
+    ],
+    "imagen": "imagenes/dedalo.png"
   },
   {
     "id": "thor",

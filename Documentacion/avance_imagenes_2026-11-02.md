@@ -436,3 +436,9 @@ Dido: adulta madura alta de contextura media, rostro largo decidido, piel casta�
 ### Intento 1 — Dédalo — pre-registro UTC 2026-11-02 18:31:32 UTC
 
 Una llamada image_gen prevista; resultado pendiente. Primera llamada de esta ejecución, cero reintentos. Reserva vigente en fda9c5667cdebb16db61d80de754aa89e6f450ca.
+
+### Dédalo — resultado del intento 1, UTC 2026-11-02 18:32:42
+
+image_gen generó PNG real 1086×1448, decodificado completamente. Una llamada, cero reintentos; ventana conservadora siete llamadas. Figura de anciano y ambos pies, herramientas, ala fabricada, laberinto y aire reactivo reconocibles. Desviaciones: figura supera 80% y extremo lateral del ala queda cortado; aparece soporte funcional de madera y pelo más ondulado que corto desordenado. Se conserva provisionalmente sin regenerar por cosmética; no se afirma aprobación estética ni cumplimiento pleno. Dudas en archivo único. Integración preparada sólo campo imagen de dedalo y sw v3.5.21; prueba local a continuación.
+
+Dédalo: prueba local realizada con herramienta de captura existente adaptada, servidor estático y Chromium móvil 390×844, perfil sintético. Click real, img.decode(), captura abierta e inspeccionada: imagen 1086×1448, caja 352.5×470, cero errores JS/HTTP. Evidencias local_1526_dedalo.png y resultado_dedalo_1526_local.json. Sólo campo imagen de Dédalo cambiado; prueba publicada pendiente. Reserva pasa a generado y verificado local, subida a confirmar en commit siguiente.
