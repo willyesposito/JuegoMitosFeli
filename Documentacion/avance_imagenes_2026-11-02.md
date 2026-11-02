@@ -432,3 +432,7 @@ Presupuesto conservador en ventana 13:30:10–18:30:10 UTC: seis llamadas histó
 Preflight interno preautorizado, órdenes completas/estilo/método leídos. Dédalo: anciano delgado oliva clara, pelo gris corto desordenado y ojos avellana; encorvado lateral trabajando con ambas manos en alas fabricadas parcialmente abiertas, herramientas al cinturón y patrón simple de laberinto detrás. Alas en actividad por ajuste y aire/plumas que responden, sin inventar poder luminoso ni vuelo. Separación textual de Perseo/Nike por edad, técnica y apoyo en tierra, de Hefesto por cuerpo estrecho y plumas sin forja. Color provisional de túnica azul grisáceo, sandalias simples.
 
 Dido: adulta madura alta de contextura media, rostro largo decidido, piel castaña media, ojos marrón muy oscuro y pelo negro recogido de volumen controlado; tres cuartos señalando trazado de Cartago, manto púrpura de Tiro, muralla en construcción y puerto mediterráneo. Capas de actividad/entorno por viento en manto, polvo de obra y movimiento de agua, sin inventar telequinesis. Separada de Hera/Casiopea por acción en pie sin trono ni regalia y de Atenea por fundación civil sin armas. Se resuelve contradicción romano/fenicio priorizando la base funcional subordinada al vocabulario fenicio, conforme §5 de la orden. Decisiones y dudas se registran en archivo único.
+
+### Intento 1 — Dédalo — inicio UTC 2026-11-02T18:31:30Z
+
+Una llamada image_gen prevista; resultado pendiente. Primera llamada de esta ejecución, cero reintentos. Reserva vigente en fda9c5667cdebb16db61d80de754aa89e6f450ca.
