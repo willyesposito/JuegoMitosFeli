@@ -145,3 +145,9 @@ JSON parseado válido, 85 personajes, 37 referencias tras integrar; sólo se añ
 | balder | generado; subida preparada; NO verificado en juego | imagenes/balder.png | 1 / 0 | commit de esta sección, confirmar en cierre | inspección de archivo; firma/IHDR, 2026-11-02 |
 
 Pendientes tras subir: 48 imágenes por generar/incorporar; estas 3 cartas por decodificar y verificar visualmente en juego. Los estados pendientes históricos de estas tres quedan superados por esta sección. Antes de cerrar campaña: recuperar prueba de tanda 2 y apertura visual publicada de tanda 1. Evidencia estructural en Documentacion/pruebas_imagenes_2026-11-02/tanda2_estructura.json.
+
+### Confirmación remota de tanda 2 — 2026-11-02
+
+Commit de imágenes e integración confirmado en HEAD remoto: b096580696e0c0b494f0538b1984e927a8644ed4. Lectura del árbol remoto confirma los tres PNG con tamaños reales: Ariadna 2197752 bytes (blob e1aa9dbe02fbac5148b51dde36e2a2a753fcf0d0), Atalanta 2443167 bytes (blob d922de963d866640d98cebc2aed5186d66bb752e), Balder 2173942 bytes (blob 013cac486edbc8d794e55de8263b19e514920c29).
+
+Estado definitivo de los tres: **generado y subido, NO verificado en juego**. Commit de las tres filas anteriores: b096580696e0c0b494f0538b1984e927a8644ed4. Tanda INCOMPLETA exclusivamente por decodificación/pruebas de cartas pendientes; imágenes existentes no deben regenerarse. Restan 48 imágenes por generar y estas 3 verificaciones en juego, además de la auditoría final.
