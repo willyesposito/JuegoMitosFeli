@@ -3168,6 +3168,7 @@
   },
   {
     "id": "jason",
+    "imagen": "imagenes/jason.png",
     "nombre": "Jasón",
     "mitologia": "griega",
     "titulo": "El capitán de los Argonautas",

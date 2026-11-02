@@ -526,3 +526,11 @@ HEAD base dd65513f23d247f99f87e4754f6d47481959c7ca; árbol completo reconstruido
 Preflight autorizado: Jasón adulto de edad media, atlético medio sin gimnasio, rostro ancho amable, castaño claro ondulado, piel dorada media, ojos avellana; tres cuartos abierto, vellocino sobre un brazo y otra mano indicando rumbo. Argo pequeño, equipo de viaje mínimo; túnica lisa azul profundo y sandalias como elección provisional. Vellocino con luz propia que ilumina mano/tela y viento direccional, sin aureola. Distinto de Agamenón por cuerpo y gesto colaborativo sin cetro, de Midas por oro textil, de Teseo/Perseo por peso y dirección sin hilo ni vuelo.
 
 Medea adulta delgada de hombros estrechos, rostro angular, pelo castaño muy oscuro grueso recogido, piel oliva media, ojos negros. Pose lateral baja, manos resolviendo suavemente sueño de dragón subordinado no terrorífico. Túnica cerrada lisa ciruela y sandalias; brillo controlado desde magia de las manos, sin vara ni poción física no autorizada. Suelo de claro tranquilo derivado del problema, fondo desenfocado. Separada de Circe por silueta baja sin manto/vara, Casandra por manos cercanas al problema, Artemisa por postura sin arco. Dudas y decisiones no son hechos mitológicos ni aprobación estética.
+
+### Jasón — intento 1 resultado 2026-11-02 21:31:13 UTC
+Una llamada real image_gen, sin reintentos/rechazos/429; PNG completo. Ventana conservadora cinco llamadas. Figura y pies completos, vellocino luminoso, Argo y bolsa de viaje, gesto de rumbo presentes. Desviaciones: figura más grande que 80%, edad algo menor, textura de tela y cielo azul nuboso incidental. Vellocino se lee lana dorada pero cabeza de carnero no explícita; no se declara omisión de elemento no exigido. Se conserva sin variante cosmética. No es aprobación estética. Local y publicado pendientes.
+
+Jasón prueba local realizada: click real en carta, img.decode(), captura local_1826_jason.png abierta e inspeccionada; PNG 1086×1448 en caja 352.5×470, sin errores JS/HTTP. Sólo imagen de Jasón y sw v3.5.25. Generado/verificado local; subida a confirmar.
+
+### Medea — intento 2 pre-registro — 2026-11-02 21:32:13 UTC
+Segunda y última llamada de esta ejecución; cero reintentos. Cuatro previas más Jasón: cinco, máximo posterior seis. Reserva propia vigente.

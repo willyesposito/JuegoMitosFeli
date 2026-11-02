@@ -124,3 +124,6 @@ Ruta imagenes/dioniso.png. Decisiones provisionales: túnica lisa verde oscuro, 
 ## 2026-11-02 — Hestia — recuperación 16:26
 
 Ruta imagenes/hestia.png. Decisión provisional: túnica terracota, hogar doméstico pétreo y llama que se curva hacia las manos; resolución visual del don, sin atribuir episodio mitológico específico. Dudas: figura casi llena altura en vez de 70–80%, hogar lateral al borde, textura de piel/tela/piedra más realista que pulida; edad madura se conserva con cabello entrecano. Sin objetos extra destacados ni omisiones de llama/hogar/sandalias. Se conserva una variante, no aprobación estética.
+
+## Jasón — recuperacion-20261102T212626Z
+Ruta imagenes/jason.png. Color azul profundo de túnica y bolsa funcional: decisión provisional de diseño, no dato histórico. Resultado: encuadre mayor a 80%, edad más juvenil, microtextura y cielo nuboso de fondo. Mantener sin regeneración cosmética. Identificador luminoso trazable al vellocino, pose abierta y pies enteros; no se afirma aprobación estética.
