@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-11-02",
+  "herramienta": "image_gen integrada",
+  "llamadas": 3,
+  "reintentos": 0,
+  "prompts": [
+    {
+      "id": "eros",
+      "prompt": "Fotograma de cine de animación 3D familiar, volumen pulido, materiales simplificados, ojos expresivos y cejas actuadas, no fotografía. Eros como adulto joven claramente mayor de edad, muy delgado y de hombros estrechos, rostro pequeño, pelo corto castaño claro de rizos abiertos, piel clara neutra y ojos azul claro. De cuerpo entero en tres cuartos de perfil, apunta su arco curvo y una flecha diagonal hacia espacio vacío con gesto travieso amable, sin tensión de combate. Túnica lisa azul grisáceo completamente vestida y sandalias simples de cuero. La punta de su flecha del amor emite luz rosada pequeña y una estela corta que ilumina la mano, sin tapar rostro ni arco. Fondo mínimo desenfocado de suelo natural, luz lateral fresca. Composición vertical 3:4, figura 75% del alto, pies y arco completos, aire delante de la flecha. Sin alas, personas adicionales, joyas, textos, marcos ni halos."
+    },
+    {
+      "id": "esfinge",
+      "prompt": "Fotograma de película de animación 3D familiar, formas tridimensionales pulidas, materiales estilizados, mirada expresiva y cejas actuadas. La Esfinge griega: criatura adulta mayor con rostro de mujer maduro integrado limpiamente a cuello y pecho de león, cuerpo leonino corpulento y ancho de pelaje ocre, cuatro patas de león y cola. Sentada en tres cuartos de perfil atravesando un camino estrecho, mirada curiosa y ceja ligeramente alzada como esperando la respuesta a un acertijo, boca cerrada amable. Anatomía fantástica claramente visible, sin torso humano; la maravilla es la propia criatura, sin magia inventada. Cuerpo y patas completos, cabeza alta con aire alrededor, figura 75% del alto. Camino visible por detrás y delante, fondo natural desenfocado de tonos violetas y piedra mate, luz lateral fresca. Vertical 3:4, sin alas, tocado egipcio, ornamentos, personajes adicionales, letras, símbolos, marcos ni halo."
+    },
+    {
+      "id": "fenix",
+      "prompt": "Fotograma de película de animación 3D familiar, volumen pulido y plumas agrupadas en formas estilizadas, luz cinematográfica y expresión aviar despierta. Un Fénix original: ave adulta grande, cabeza relativamente pequeña con pico limpio y ojos vivaces, alas largas en arco desigual y cola amplia cuyas puntas se transforman en llama y ceniza. Se eleva verticalmente desde una pequeña base de ceniza en el suelo, alas completas dentro del encuadre, anatomía enteramente aviar, sin forma humana. Plumas rojo coral y naranja de fuego con sombras granate; llama luminosa nacida de las plumas ilumina cuerpo y ceniza, partículas de ceniza ascienden siguiendo el renacimiento. Ambiente natural oscuro y suave desenfocado, sin arquitectura, fuego acogedor sin peligro. Vertical 3:4, ave al 70–80% del alto con aire encima y a ambos lados de las alas. Sin corona, ropa, accesorios, letras, marcos, halos ni semejanza con personajes de franquicias."
+    }
+  ]
+}

@@ -3990,7 +3990,8 @@
       "No cruzó jamás el arcoíris de Asgard: vive entre las llamas de los mitos griegos.",
       "Su magia es máxima, cinco veces mayor que su liderazgo.",
       "Cuando su vida termina, vuelve a nacer de sus propias cenizas, con las plumas más brillantes."
-    ]
+    ],
+    "imagen": "imagenes/fenix.png"
   },
   {
     "id": "cerbero",
@@ -4200,7 +4201,8 @@
       "No llegó desde los hielos del norte: desafía con ingenio en los mitos griegos.",
       "Su astucia es máxima, y su valentía es exactamente el doble de su liderazgo.",
       "Solo dejaba pasar a quien resolviera su acertijo sobre las tres edades del ser humano."
-    ]
+    ],
+    "imagen": "imagenes/esfinge.png"
   },
   {
     "id": "minotauro",
@@ -5755,7 +5757,8 @@
       "No es nórdico: es hijo de una diosa muy poderosa y nunca pelea con espada.",
       "Su magia es más de cuatro veces su fuerza.",
       "Se enamoró en secreto de una mortal: su historia tiene pruebas, curiosidad y un reencuentro final."
-    ]
+    ],
+    "imagen": "imagenes/eros.png"
   },
   {
     "id": "dido",

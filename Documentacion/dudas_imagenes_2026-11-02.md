@@ -61,3 +61,12 @@ Las tres decisiones son provisionales de representación, no aprobación estéti
 | Eneas | Microtextura y anatomía más realistas de lo pedido; capa, broche y ceñidor no autorizados; no hay coraza preimperial explícita; figura mayor al 80% | Conservar marcha corpulenta, escudo de bronce y costa/barco; registrar accesorios como desviación, sin atribución al mito. Óxido es decisión de paleta | imagenes/eneas.png |
 
 Tres cartas inspeccionadas en el juego local; ninguna entrada acredita aprobación estética del usuario ni exactitud histórica del equipo. Sin reintentos cosméticos.
+
+
+## Tanda 8 — 2026-11-02
+
+| Personaje | Duda | Decisión provisional | Ruta |
+|---|---|---|---|
+| Eros | Edad aparente muy juvenil, trama de tela y fondo más detallados; arco toca borde superior, figura supera 80%. Punta en corazón y rosa son interpretación visual del don, no hecho mitológico. | Conservar por cuerpo ligero, arco/flecha activos, pies completos y expresión amable; sin alas al no acreditarse condición. No se incluye Psique al ser escena individual. | imagenes/eros.png |
+| Esfinge | Pelo y pelaje con microdetalle; fondo rocoso más presente; rostro menos envejecido que §4. Pelo gris y pelaje ocre son decisiones de diseño provisionales. | Conservar anatomía leonina completa, rostro humano y quietud interrogativa. Sin alas al no existir autorización explícita, sin ornamentos egipcios. El acertijo se expresa por mirada, no escritura ni poder inventado. | imagenes/esfinge.png |
+| Fénix | Extremo del ala alta corta levemente el borde superior; tamaño mayor al 80%, algo menos de aire superior y paisaje más presente. | Conservar la lectura de ascenso y renacimiento, anatomía aviar, cola de fuego/ceniza y alas desiguales. Es recorte del archivo, no CSS; sin reintento cosmético. Paleta coral/naranja es diseño, no atestación. | imagenes/fenix.png |
