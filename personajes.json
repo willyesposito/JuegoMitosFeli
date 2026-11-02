@@ -370,6 +370,7 @@
   },
   {
     "id": "odiseo",
+    "imagen": "imagenes/odiseo.png",
     "nombre": "Odiseo",
     "mitologia": "griega",
     "titulo": "El más astuto de los griegos",
@@ -1976,6 +1977,7 @@
   },
   {
     "id": "apolo",
+    "imagen": "imagenes/apolo.png",
     "nombre": "Apolo",
     "mitologia": "griega",
     "titulo": "El dios del sol y la música",
@@ -2146,6 +2148,7 @@
   },
   {
     "id": "ares",
+    "imagen": "imagenes/ares.png",
     "nombre": "Ares",
     "mitologia": "griega",
     "titulo": "El dios de la guerra",
@@ -2982,6 +2985,7 @@
   },
   {
     "id": "aquiles",
+    "imagen": "imagenes/aquiles.png",
     "nombre": "Aquiles",
     "mitologia": "griega",
     "titulo": "El guerrero casi invencible",
@@ -3630,6 +3634,7 @@
   },
   {
     "id": "aracne",
+    "imagen": "imagenes/aracne.png",
     "nombre": "Aracne",
     "mitologia": "griega",
     "titulo": "La mejor tejedora del mundo",
@@ -5813,6 +5818,7 @@
   },
   {
     "id": "andromeda",
+    "imagen": "imagenes/andromeda.png",
     "nombre": "Andrómeda",
     "mitologia": "griega",
     "titulo": "La princesa que llegó a las estrellas",
