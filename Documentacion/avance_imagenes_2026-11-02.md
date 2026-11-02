@@ -556,3 +556,16 @@ Dos llamadas reales secuenciales, sin reintentos, rechazos ni 429. Horas reales 
 Auditoría completa: **67/85 imágenes integradas**, JSON válido, rutas existentes y todos los archivos completamente decodificados; 18 pendientes. **26/57 cartas verificadas visualmente publicadas**, 31 pendientes; lista exacta trazable en resultado_1826_publicado.json, objetivo heredado del avance/commits sin redefinirlo. Dudas nuevas de encuadre, edad y texturas de Jasón, luna/peinado/texturas de Medea registradas en archivo único. No hay aprobación estética atribuida. Gate de 12 puntos y registro real de intentos en produccion_1826.json.
 
 Siguientes dos: medusa y midas. Faltantes exactos por prioridad: medusa, midas, minotauro, njord, orfeo, orion, pan, paris, pegaso, pentesilea, poseidon, prometeo, quiron, ratatosk, selene, skadi, thor, tyr. Sólo campos imagen de Jasón/Medea y sw v3.5.26 cambiados, más documentación/evidencias; historias y módulos intactos. Campaña NO completa; tarea actual sigue activa y anterior deshabilitada.
+
+
+## Reserva — recuperacion-20261102T222626Z — 2026-11-02 22:29:20 UTC
+HEAD base 30218058bb8bc4e470f3ba2a34f542ebe19a2a93. Árbol completo y personajes.json reconstruidos; 85 personajes, 67 referencias, Medusa y Midas sin archivo ni referencia. Anterior consultada: deshabilitada, último intento completado 15:59:37 UTC; sin avance concurrente ni reserva reciente ajena. Ventana conservadora 17:29:20–22:29:20 UTC: seis llamadas (Dédalo/Dido, Dioniso/Hestia, Jasón/Medea); margen para dos, máximo ocho. Cupo real desconocido.
+
+| Personaje | Ejecución | Inicio UTC | Estado | Ruta |
+|---|---|---|---|---|
+| medusa | recuperacion-20261102T222626Z | 2026-11-02T22:29:20Z | reservado; intento 1 pre-registrado | imagenes/medusa.png |
+| midas | recuperacion-20261102T222626Z | 2026-11-02T22:29:20Z | reservado; sin intento | imagenes/midas.png |
+
+Preflight interno preautorizado: Medusa madura, rostro fuerte angular humano, piel oliva media, ojos ámbar, serpientes de varios volúmenes/direcciones en lugar de pelo. Tres cuartos lateral quieta, mirada fuera del espectador. Piedras y efecto petrificante sin víctimas. Túnica lisa berenjena y sandalias, suelo pedregoso sobrio derivado de piedras; serpientes verde apagado como decisión provisional. Efecto frío mineral que nace de la mirada hacia piedras inertes, sin víctimas ni rayo ofensivo. Diferente de Dafne por quietud/madurez sin ramas/raíces, Aracne por contorno capilar sin telar, Sif por masas pequeñas divergentes sin cascada de pelo.
+
+Midas maduro, rostro ancho, castaño ceniza corto con barba breve, oliva media y ojos grises, cuerpo medio sin gimnasio. Tres cuartos hacia mano separada del torso que transforma comida/agua; sorpresa comprensiva cálida. Objetos simples parcialmente dorados, pan y recipiente de agua sobre soporte funcional mínimo. Túnica lisa verde petróleo y sandalias, sin corona porque icono de carta no autoriza objeto. Fenómeno de oro avanza desde contacto hacia pan/agua, ilumina mano y paño, fondo doméstico neutro subordinado. Diferente de Jasón por gesto corto hacia objetos sin rumbo ni vellocino, Paris por varios objetos en transformación sin manzana aislada, Héctor por masa/acción sin escudo. Colores y soporte son decisiones de diseño provisionales, no datos mitológicos. Órdenes, estilo y método leídos completos; dudas a archivo único.
