@@ -358,3 +358,20 @@ Campaña NO completa: 27 imágenes más auditoría integral y prueba visual publ
 Commit de imágenes/integración/evidencias confirmado en remoto: `4b845884fcba73badc20143d2907ae045e12bea6`. Recuperado mediante fetch: 13/13 archivos idénticos byte por byte a los probados. Ese SHA corresponde a las tres filas de la tanda. PNG completos: Narciso 1918575 bytes, Nausícaa 2165833 bytes, Nike 1805402 bytes. **Tres personajes generados, subidos y verificados visualmente en juego local**, con dudas de diseño registradas. Evidencia: transferencia_tanda13.json.
 
 El intento de cartas publicadas falló por ERR_CERT_AUTHORITY_INVALID, sin desactivar TLS. La primera consulta de los tres PNG devolvió HTTP 404; resultado y relectura se conservan en resultado_tanda13_publicado.json. No se acredita visualización publicada. La campaña sigue activa y NO completa: 58/85, 27 imágenes pendientes y auditoría final. No regenerar esta tanda en recuperación.
+
+
+### Recuperación de tanda 5 — 2026-11-02, ejecución programada 12:35 -03
+
+Tanda 13 ya completa al inicio; HEAD observado 0c9518036ab0764837fdc30344fbc02db06848b4, sin cambios concurrentes observados. Recuperados los primeros tres pendientes reales: circe, cronos, dafne. Estado previo 58/85; posterior 61/85, 24 pendientes. Se leyeron completas órdenes, estilo y método; preflight interno preautorizado. Herramienta imagegen real, una llamada por personaje, cero reintentos; ningún indicador de cuota ni 429 recibido. Prompts exactos en recuperacion5_produccion.json. No se abrieron ilustraciones ajenas como referencia.
+
+| Personaje | Estado | Ruta | Llamadas/reintentos | Commit | Prueba/fecha |
+|---|---|---|---|---|---|
+| circe | generado, subido y verificado local | imagenes/circe.png | 1/0 | commit que incorpora esta sección; SHA confirmado en cierre siguiente | click real, decode y captura inspeccionada; 2026-11-02 |
+| cronos | generado, subido y verificado local | imagenes/cronos.png | 1/0 | mismo commit | click real, decode y captura inspeccionada; 2026-11-02 |
+| dafne | generado, subido y verificado local | imagenes/dafne.png | 1/0 | mismo commit | click real, decode y captura inspeccionada; 2026-11-02 |
+
+Prueba concreta: servidor local Node y Chromium/Playwright móvil 390×844; tres cartas abiertas por click, imágenes decodificadas 1086×1448 (3:4), caja 352.5×470, cero errores JS/HTTP. Las tres capturas abiertas e inspeccionadas: vara/manos/sandalias de Circe, hoz/sandalias de Cronos y ramas/raíces de Dafne visibles; sin recorte CSS adicional. Evidencia en pruebas_imagenes_2026-11-02/{circe,cronos,dafne}.png y resultado_recuperacion5_local.json. JSON 85 personajes, 61 referencias existentes completamente decodificables; sólo campos imagen de objetivos alterados. sw.js 3.5.20.
+
+Control posterior de inventario y gate 12 puntos: acabado 3D familiar, sin foto/óleo/2D, proporciones estilizadas; Cronos mantiene masa monumental autorizada. No se acredita comparación visual de identidades contra roster ajeno. Fondos subordinados aunque Circe presenta arquitectura inventada; transformación vegetal abstracta de Circe es decisión provisional, no hecho mitológico. Cronos agregó barba no especificada, textura algo realista; Dafne presenta raíces/ramas completas, vestido conservado, materiales con microtextura y margen justo arriba. No hay omisiones de identificadores principales ni añadidos de joyería/runas/halos. Expresiones accesibles; Cronos severo. Desviaciones registradas en archivo único sin afirmar aprobación editorial.
+
+Prueba publicada intentada: navegación HTTPS falló ERR_CERT_AUTHORITY_INVALID, sin desactivar TLS. No se acredita visualización publicada. Campaña NO completa: pendientes dedalo, thor, tyr, poseidon, hestia, dioniso, selene, pan, prometeo, jason, orfeo, midas, pegaso, quiron, medusa, minotauro, njord, skadi, ratatosk, medea, dido, pentesilea, paris, orion; más auditoría integral y verificación visual publicada. No regenerar estas tres imágenes por falla de publicación.

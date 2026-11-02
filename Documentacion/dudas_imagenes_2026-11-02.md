@@ -95,3 +95,12 @@ Tres cartas inspeccionadas en el juego local; ninguna entrada acredita aprobaci�
 | Narciso | Extremo del pelo toca/corta borde alto; trama de tela y piedra con microdetalle, edad muy juvenil y reflejo idealizado | Conservar por reflejo invertido del propio rostro legible, flor, figura agachada y pies presentes. Azul grisáceo es diseño provisional, no hecho mitológico. Sin nuevos poderes; ondas por contacto del dedo | imagenes/narciso.png |
 | Nausícaa | Fondo costero más detallado y cielo con nubes pese a pedido de fondo subordinado; rostro juvenil y trama de tela | Conservar ayuda activa, paño, vasija, costa y pies completos. Verde salvia es diseño, no atestación. Sin regalia ni poder inventado. Contextura de §4 prevalece sobre descripción media de §1 | imagenes/nausicaa.png |
 | Nike | Figura/alas ocupan más del 80% del cuadro, ala derecha muy cerca del borde y rostro juvenil; tela y sandalias estilizadas | Conservar ambas alas y pies enteros, nacimiento de alas visible, llegada diagonal y gesto de coronación con manos vacías. Azul petróleo, plumas blancas y estelas blancas son decisiones visuales del vuelo, no datos mitológicos. No se agrega corona material al inventario | imagenes/nike.png |
+
+
+### Recuperación tanda 5 — 2026-11-02
+
+| Personaje | Duda | Decisión provisional | Ruta |
+|---|---|---|---|
+| Circe | No se fija objetivo de transformación ni color de ropa. Salida incorpora arquitectura lejana no autorizada, edad aparente más joven, figura >80% | Transformación vegetal abstracta y túnica ciruela elegidas como adaptación visual, no hechos mitológicos. Conservar resultado funcional y registrar arquitectura/edad/encuadre para revisión, sin aprobación del usuario | imagenes/circe.png |
+| Cronos | Orden impide símbolos temporales aunque JSON conserva don temporal; barba no definida y tela con microtextura; severidad | Seguir identificador de hoz corta en reposo y escala monumental. Sin magia temporal inventada; reacción del suelo al peso como recurso visual. Conservar barba/gris violáceo como decisiones provisionales de diseño, no canon | imagenes/cronos.png |
+| Dafne | Color no fijado; edad juvenil, tela/madera con microtextura y hojas cerca del borde superior | Túnica verde grisácea, transformación suave completamente vestida; conservar raíces y ramas visibles, sin calzado; registrar desviaciones de acabado/encuadre | imagenes/dafne.png |

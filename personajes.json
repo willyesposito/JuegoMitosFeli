@@ -4919,6 +4919,7 @@
   },
   {
     "id": "cronos",
+    "imagen": "imagenes/cronos.png",
     "nombre": "Cronos",
     "mitologia": "griega",
     "titulo": "El titán que temía ser reemplazado",
@@ -5466,6 +5467,7 @@
   },
   {
     "id": "circe",
+    "imagen": "imagenes/circe.png",
     "nombre": "Circe",
     "mitologia": "griega",
     "titulo": "La maga de la isla",
@@ -6116,6 +6118,7 @@
   },
   {
     "id": "dafne",
+    "imagen": "imagenes/dafne.png",
     "nombre": "Dafne",
     "mitologia": "griega",
     "titulo": "La ninfa que se volvió laurel",
