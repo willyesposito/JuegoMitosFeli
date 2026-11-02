@@ -3334,6 +3334,7 @@
   },
   {
     "id": "ariadna",
+    "imagen": "imagenes/ariadna.png",
     "nombre": "Ariadna",
     "mitologia": "griega",
     "titulo": "La princesa del hilo",
@@ -3409,6 +3410,7 @@
   },
   {
     "id": "atalanta",
+    "imagen": "imagenes/atalanta.png",
     "nombre": "Atalanta",
     "mitologia": "griega",
     "titulo": "La corredora más veloz de Grecia",
@@ -4359,6 +4361,7 @@
   },
   {
     "id": "balder",
+    "imagen": "imagenes/balder.png",
     "nombre": "Balder",
     "mitologia": "nordica",
     "titulo": "El dios más querido de Asgard",

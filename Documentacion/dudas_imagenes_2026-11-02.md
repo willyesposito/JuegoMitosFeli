@@ -22,3 +22,13 @@ Las entradas iniciales se conservan como historial; las siguientes describen las
 | Ares | Armadura genérica y aspecto estático; imagen existente sin aprobación estética acreditada | Enlazar sin reemplazo: casco, escudo y lanza reconocibles, sin violencia | imagenes/ares.png |
 
 Todas las decisiones anteriores son de representación visual, no hechos mitológicos nuevos. Las seis cartas se comprobaron visualmente en el juego local.
+
+## Tanda 2 — 2026-11-02
+
+| Personaje | Duda/desviación | Decisión provisional | Ruta |
+|---|---|---|---|
+| Ariadna | Figura mayor que 80%, textura de tela/piedra detallada; corona celeste ilustrativa sin exactitud astronómica verificada | Conservar figura completa, hilo legible y guía desde solución; azul petróleo y estrellas son representación visual, no afirmación histórica | imagenes/ariadna.png |
+| Atalanta | Carrera diagonal hacia cámara en vez de lateral; broche de hombro y cinturón decorado no autorizados | Conservar carrera, arco bajo y tres manzanas; registrar accesorios como desviación sin atribuirlos al mito. Verde bosque es decisión visual | imagenes/atalanta.png |
+| Balder | Paisaje y cielo más presentes; brillo concentrado en manos, protección universal no explícita | Conservar luz propia y muérdago; azul grisáceo es decisión visual. No inventar un escudo protector como hecho mitológico | imagenes/balder.png |
+
+Inspección visual de archivos realizada; pruebas en las cartas del juego pendientes por indisponibilidad del entorno de ejecución. Ninguna entrada implica aprobación del usuario.

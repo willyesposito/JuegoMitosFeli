@@ -1,0 +1,73 @@
+{
+  "fecha": "2026-11-02",
+  "base": "d726a690bdcd4afbf4c4c802d4ac56a2106dcc30",
+  "json_valido": true,
+  "total_personajes": 85,
+  "referencias_antes": 34,
+  "referencias_despues": 37,
+  "rutas_preexistentes_rotas": [],
+  "prueba_navegador": "NO REALIZADA: exec_command devuelve No usable execution environment is available en dos intentos; sin navegador alternativo disponible.",
+  "decodificacion_png_completa": "NO REALIZADA: se comprobó firma y cabecera IHDR; no equivale a img.decode()",
+  "imagenes": {
+    "ariadna": {
+      "ruta": "imagenes/ariadna.png",
+      "blob_sha": "e1aa9dbe02fbac5148b51dde36e2a2a753fcf0d0",
+      "firma": [
+        137,
+        80,
+        78,
+        71,
+        13,
+        10,
+        26,
+        10
+      ],
+      "ancho": 1086,
+      "alto": 1448,
+      "llamadas": 1,
+      "reintentos": 0,
+      "inspeccion_visual_archivo": true,
+      "prueba_carta": false
+    },
+    "atalanta": {
+      "ruta": "imagenes/atalanta.png",
+      "blob_sha": "d922de963d866640d98cebc2aed5186d66bb752e",
+      "firma": [
+        137,
+        80,
+        78,
+        71,
+        13,
+        10,
+        26,
+        10
+      ],
+      "ancho": 1086,
+      "alto": 1448,
+      "llamadas": 1,
+      "reintentos": 0,
+      "inspeccion_visual_archivo": true,
+      "prueba_carta": false
+    },
+    "balder": {
+      "ruta": "imagenes/balder.png",
+      "blob_sha": "013cac486edbc8d794e55de8263b19e514920c29",
+      "firma": [
+        137,
+        80,
+        78,
+        71,
+        13,
+        10,
+        26,
+        10
+      ],
+      "ancho": 1086,
+      "alto": 1448,
+      "llamadas": 1,
+      "reintentos": 0,
+      "inspeccion_visual_archivo": true,
+      "prueba_carta": false
+    }
+  }
+}
