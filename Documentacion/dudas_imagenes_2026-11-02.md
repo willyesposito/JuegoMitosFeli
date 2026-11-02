@@ -119,3 +119,8 @@ Ruta: imagenes/dido.png. Contradicción romano/fenicio resuelta con base funcion
 ## 2026-11-02 — Dioniso — recuperación 16:26
 
 Ruta imagenes/dioniso.png. Decisiones provisionales: túnica lisa verde oscuro, tela teatral bordó y crecimiento de brote verde luminoso como interpretación visual de viñas/fiesta, no afirmación de episodio mitológico. Cara redondeada de ficha resuelta con proporción adulta. Dudas: barba incipiente no especificada, microtextura de tela y piel, figura algo mayor al 80%, tarima incidental. Máscara, racimos, hojas, gesto y calzado presentes. No se regenera por cosmética ni se afirma aprobación estética.
+
+
+## 2026-11-02 — Hestia — recuperación 16:26
+
+Ruta imagenes/hestia.png. Decisión provisional: túnica terracota, hogar doméstico pétreo y llama que se curva hacia las manos; resolución visual del don, sin atribuir episodio mitológico específico. Dudas: figura casi llena altura en vez de 70–80%, hogar lateral al borde, textura de piel/tela/piedra más realista que pulida; edad madura se conserva con cabello entrecano. Sin objetos extra destacados ni omisiones de llama/hogar/sandalias. Se conserva una variante, no aprobación estética.

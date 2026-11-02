@@ -1,0 +1,563 @@
+{
+  "fecha_utc": "2026-11-02 19:32:34 UTC",
+  "total": 85,
+  "referencias": 65,
+  "imagenes": [
+    {
+      "id": "teseo",
+      "ruta": "imagenes/teseo.jpg",
+      "dimensiones": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "id": "heracles",
+      "ruta": "imagenes/heracles.jpg",
+      "dimensiones": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "id": "penelope",
+      "ruta": "imagenes/penelope.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "atlas",
+      "ruta": "imagenes/atlas.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "odiseo",
+      "ruta": "imagenes/odiseo.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "atenea",
+      "ruta": "imagenes/atenea.jpg",
+      "dimensiones": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "id": "perseo",
+      "ruta": "imagenes/perseo.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "dedalo",
+      "ruta": "imagenes/dedalo.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "loki",
+      "ruta": "imagenes/loki.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "odin",
+      "ruta": "imagenes/odin.jpg",
+      "dimensiones": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "id": "freya",
+      "ruta": "imagenes/freya.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "heimdall",
+      "ruta": "imagenes/heimdall.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "sif",
+      "ruta": "imagenes/sif.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "zeus",
+      "ruta": "imagenes/zeus.jpg",
+      "dimensiones": [
+        780,
+        1040
+      ]
+    },
+    {
+      "id": "hera",
+      "ruta": "imagenes/hera.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "hades",
+      "ruta": "imagenes/hades.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "demeter",
+      "ruta": "imagenes/demeter.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "persefone",
+      "ruta": "imagenes/persefone.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "hestia",
+      "ruta": "imagenes/hestia.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "apolo",
+      "ruta": "imagenes/apolo.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "artemisa",
+      "ruta": "imagenes/artemisa.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "ares",
+      "ruta": "imagenes/ares.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "afrodita",
+      "ruta": "imagenes/afrodita.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "hefesto",
+      "ruta": "imagenes/hefesto.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "hermes",
+      "ruta": "imagenes/hermes.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "dioniso",
+      "ruta": "imagenes/dioniso.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "nike",
+      "ruta": "imagenes/nike.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "iris",
+      "ruta": "imagenes/iris.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "helios",
+      "ruta": "imagenes/helios.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "aquiles",
+      "ruta": "imagenes/aquiles.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "hector",
+      "ruta": "imagenes/hector.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "ariadna",
+      "ruta": "imagenes/ariadna.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "atalanta",
+      "ruta": "imagenes/atalanta.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "belerofonte",
+      "ruta": "imagenes/belerofonte.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "pandora",
+      "ruta": "imagenes/pandora.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "aracne",
+      "ruta": "imagenes/aracne.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "fenix",
+      "ruta": "imagenes/fenix.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "cerbero",
+      "ruta": "imagenes/cerbero.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "esfinge",
+      "ruta": "imagenes/esfinge.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "frigg",
+      "ruta": "imagenes/frigg.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "balder",
+      "ruta": "imagenes/balder.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "sigurd",
+      "ruta": "imagenes/sigurd.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "valquirias",
+      "ruta": "imagenes/valquirias.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "fenrir",
+      "ruta": "imagenes/fenrir.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "cronos",
+      "ruta": "imagenes/cronos.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "hel",
+      "ruta": "imagenes/hel.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "eneas",
+      "ruta": "imagenes/eneas.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "edipo",
+      "ruta": "imagenes/edipo.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "helena",
+      "ruta": "imagenes/helena.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "casandra",
+      "ruta": "imagenes/casandra.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "circe",
+      "ruta": "imagenes/circe.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "romulo_remo",
+      "ruta": "imagenes/romulo_remo.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "agamenon",
+      "ruta": "imagenes/agamenon.jpg",
+      "dimensiones": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "id": "eros",
+      "ruta": "imagenes/eros.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "dido",
+      "ruta": "imagenes/dido.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "andromeda",
+      "ruta": "imagenes/andromeda.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "nausicaa",
+      "ruta": "imagenes/nausicaa.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "calipso",
+      "ruta": "imagenes/calipso.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "psique",
+      "ruta": "imagenes/psique.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "dafne",
+      "ruta": "imagenes/dafne.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "eco",
+      "ruta": "imagenes/eco.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "narciso",
+      "ruta": "imagenes/narciso.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "calisto",
+      "ruta": "imagenes/calisto.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "casiopea",
+      "ruta": "imagenes/casiopea.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "castor_polux",
+      "ruta": "imagenes/castor_polux.png",
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    }
+  ],
+  "pendientes": [
+    "thor",
+    "tyr",
+    "poseidon",
+    "selene",
+    "pan",
+    "prometeo",
+    "jason",
+    "orfeo",
+    "midas",
+    "pegaso",
+    "quiron",
+    "medusa",
+    "minotauro",
+    "njord",
+    "skadi",
+    "ratatosk",
+    "medea",
+    "pentesilea",
+    "paris",
+    "orion"
+  ],
+  "cambios_desde_base": [
+    {
+      "id": "hestia",
+      "campos": [
+        "imagen"
+      ]
+    },
+    {
+      "id": "dioniso",
+      "campos": [
+        "imagen"
+      ]
+    }
+  ]
+}

@@ -493,3 +493,9 @@ Dioniso: carta local abierta por click real y img.decode(), captura local_1626_d
 ### Hestia — intento 2 pre-registrado — 2026-11-02 19:30:11 UTC
 
 Segunda y última llamada de esta ejecución prevista, cero reintentos. Ventana conservadora previa nueve, posterior máximo diez. Reserva propia vigente; no se genera otra variante.
+
+### Hestia — intento 2 — resultado 2026-11-02 19:32:01 UTC
+
+Una llamada image_gen generó PNG real 1086×1448, completamente decodificado. Segunda y última de ejecución; total conservador diez en ventana incluyendo ocho previas. Cero reintentos/rechazos/429; no hay más generaciones en esta ejecución. Inspección: figura arrodillada, ambas sandalias, manos cuidando llama, hogar de piedra y fondo doméstico presentes. Encuadre mucho más cerrado que 75%, textura de piel/ropa/piedra más realista y parte lateral del hogar queda al borde. Se conserva provisionalmente sin cosmética; no se afirma aprobación estética. Integración sólo imagen de Hestia y sw v3.5.24, prueba local siguiente.
+
+Dioniso subido confirmado en 2582be32fbae906959a64bbf2319e34c8746b812, imagen y evidencias en rama. Hestia: carta local abierta por click real e img.decode(), captura local_1626_hestia.png abierta e inspeccionada; imagen 1086×1448, caja 352.5×470, cero errores JS/HTTP. Auditoría completa 85 personajes, 65 referencias existentes y completamente decodificadas, cero rutas rotas, 20 pendientes. Sólo campos imagen de dioniso/hestia y sw v3.5.24 cambiados desde base; historias y módulos intactos. Hestia generada/verificada local, subida a confirmar. Prueba publicada pendiente de ambas.

@@ -1,0 +1,63 @@
+{
+  "ejecucion": "recuperacion-20261102T192626Z",
+  "herramienta": "image_gen integrada",
+  "intentos": [
+    {
+      "id": "dioniso",
+      "antes": "2026-11-02 19:28:32 UTC",
+      "despues": "2026-11-02 19:29:46 UTC",
+      "resultado": "generado",
+      "reintento": 0,
+      "prompt": "Use case: stylized-concept. Una ilustración única vertical 3:4, carta mitológica sin texto ni marco. Fotograma de animación 3D familiar: volúmenes pulidos, pelo en mechones agrupados, superficies estilizadas, ojos expresivos y cejas actuadas, sin microtextura fotográfica. Dioniso, adulto joven-maduro de contextura media y hombros medios sin musculatura marcada, piel oliva media, ojos marrón cálido, cabello negro largo rizado suelto y rostro ligeramente redondo expresivo con proporciones adultas creíbles. Anfitrión cálido de postura abierta en diagonal suave: una mano invita lateralmente y la otra sostiene baja una máscara teatral sonriente, sin tapar su cara. Figura completa incluidas sandalias simples, ocupa 75% de altura y deja margen amplio sobre cabeza y bajo pies. Túnica griega lisa verde oscuro sin adornos. Teatro y viñas se leen juntos: tela teatral lateral, máscara, racimos violetas y hojas de vid formando contorno orgánico abierto sin envolverlo. La vid a su lado crece y se curva visiblemente hacia su gesto, hojas responden con brisa, un resplandor verde tenue sale sólo de los brotes y toca la tela cercana; rostro e identificador limpios. Escena sencilla de viña junto a un espacio teatral, fondo suave subordinado, luz lateral fresca y sombras de color. Sin copas ni bebidas, sin coronas ni joyas, sin lira/flauta, sin aura/halo/runas, sin templo decorativo. No fotografía, óleo ni 2D plano."
+    },
+    {
+      "id": "hestia",
+      "antes": "2026-11-02 19:30:11 UTC",
+      "despues": "2026-11-02 19:32:01 UTC",
+      "resultado": "generado",
+      "reintento": 0,
+      "prompt": "Use case: stylized-concept. Una ilustración única vertical 3:4 para carta mitológica, sin texto ni marco. Fotograma de cine de animación 3D familiar: volumen pulido, telas con pliegues grandes simplificados, pelo en mechones, cejas actuadas y mirada expresiva; nada de fotografía, óleo ni 2D. Hestia, mujer adulta madura de unos cincuenta años, compacta delgada y liviana, hombros medios, piel dorada media, ojos marrón cálido, rostro suavemente redondo y sereno con proporciones adultas moderadas, cabello castaño ceniza recogido simple. Arrodillada, cuerpo completo y ambas sandalias simples visibles, frontal ligeramente lateral hacia una pequeña llama de hogar a un costado. Composición baja contenida, sin agacharla tanto que pierda presencia: conjunto personaje y llama ocupa 75% de alto dejando margen en los cuatro bordes. Cuida la llama en calma con las manos abiertas próximas pero sin tocar el fuego. Túnica griega lisa terracota, tela suave sin adornos ni objetos de poder. El hogar es sencillo de piedra baja dentro de una casa humilde apenas sugerida y desenfocada. La llama doméstica se curva mansamente hacia sus manos, luz propia naranja cálida ilumina sus dedos y borde de túnica, aire tibio ondula cerca del fuego; fenómeno localizado que nace de la llama, no aura corporal. Escena acogedora y luminosa con rebote azul suave, cara despejada y expresión atenta tranquila. Sólo Hestia, vestimenta y hogar con fuego doméstico, sin utensilios adicionales. Sin trono, coronas ni broches; sin antorcha transportada; sin halo ni runas; sin paisaje épico ni templo decorativo."
+    }
+  ],
+  "historial_conservador": 8,
+  "nuevas": 2,
+  "total_conservador": 10,
+  "cupo_real": "desconocido",
+  "gate": {
+    "criterios_comunes": [
+      "Animación 3D, no foto de actor",
+      "Sin óleo/pincelada",
+      "Volumen, no 2D plano",
+      "Proporciones adultas; redondez de ficha específica",
+      "Sin gimnasio ni gravedad monumental",
+      "Separación textual revisada; no se certifica comparación contra imágenes ajenas",
+      "Fondos subordinados, con textura superior a deseada",
+      "Identificador en actividad y entorno reactivo",
+      "Pistas exigidas presentes",
+      "Sin aura/halo/runas; efectos de brote/llama localizados",
+      "Expresiones cálida/serena accesibles",
+      "Sin brillo dorado genérico; naranja de llama justificado"
+    ],
+    "dioniso": {
+      "excesos": [
+        "barba incipiente",
+        "tarima teatral funcional"
+      ],
+      "omisiones": [],
+      "dudas": [
+        "figura mayor al 80%",
+        "microtextura"
+      ]
+    },
+    "hestia": {
+      "excesos": [],
+      "omisiones": [],
+      "dudas": [
+        "figura muy cerrada",
+        "hogar lateral al borde",
+        "microtextura realista"
+      ]
+    },
+    "aprobacion_estetica": "no atribuida; entrega provisional autorizada"
+  }
+}
