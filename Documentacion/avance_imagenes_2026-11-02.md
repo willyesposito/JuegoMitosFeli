@@ -433,6 +433,6 @@ Preflight interno preautorizado, órdenes completas/estilo/método leídos. Déd
 
 Dido: adulta madura alta de contextura media, rostro largo decidido, piel castaña media, ojos marrón muy oscuro y pelo negro recogido de volumen controlado; tres cuartos señalando trazado de Cartago, manto púrpura de Tiro, muralla en construcción y puerto mediterráneo. Capas de actividad/entorno por viento en manto, polvo de obra y movimiento de agua, sin inventar telequinesis. Separada de Hera/Casiopea por acción en pie sin trono ni regalia y de Atenea por fundación civil sin armas. Se resuelve contradicción romano/fenicio priorizando la base funcional subordinada al vocabulario fenicio, conforme §5 de la orden. Decisiones y dudas se registran en archivo único.
 
-### Intento 1 — Dédalo — inicio UTC 2026-11-02T18:31:30Z
+### Intento 1 — Dédalo — pre-registro UTC 2026-11-02 18:31:32 UTC
 
 Una llamada image_gen prevista; resultado pendiente. Primera llamada de esta ejecución, cero reintentos. Reserva vigente en fda9c5667cdebb16db61d80de754aa89e6f450ca.
