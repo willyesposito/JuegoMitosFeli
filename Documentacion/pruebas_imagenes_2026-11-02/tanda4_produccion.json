@@ -1,0 +1,24 @@
+{
+  "fecha": "2026-11-02",
+  "metodo": "image_gen incorporado, tres llamadas secuenciales, cero reintentos, sin 429 ni indicador de cuota",
+  "personajes": [
+    {
+      "id": "casiopea",
+      "prompt": "Use case: stylized-concept. Una sola ilustración vertical 3:4 para carta mitológica, sin texto ni marcos. Fotograma de animación 3D familiar, superficies pulidas simplificadas, cabello en masas sólidas, ojos expresivos y cejas actuadas, iluminación cinematográfica y fondo desenfocado; no fotografía ni pintura. Casiopea: mujer madura alta, delgada, piel castaña media, rostro estrecho anguloso, ojos ámbar, cabello negro estructurado en recogido alto. Sentada con torso apenas girado, orgullosa pero accesible y despierta, ambas manos descansando. Túnica lisa azul petróleo y sandalias simples de cuero. Trono sencillo de piedra cuyo respaldo y brazos crean una silueta quebrada en zigzag, separado del pelo; trono, figura y pies enteros ocupan 75% de la altura con margen. Contexto celeste nocturno: cinco estrellas en zigzag de su constelación brillan sobre un lateral del trono y su luz fría roza piedra y tela; estrellas alrededor sugieren rotación suave. Rostro limpio sin estrellas detrás de la cabeza. Sin corona, joyas, adornos, letras visibles, templos ni pedestal.",
+      "llamadas": 1,
+      "reintentos": 0
+    },
+    {
+      "id": "castor_polux",
+      "prompt": "Use case: stylized-concept. Una sola ilustración vertical 3:4 sin textos ni marcos para carta mitológica. Fotograma de animación 3D familiar, volúmenes pulidos, materiales simplificados sin microtextura, ojos expresivos y cejas actuadas, luz cinematográfica y profundidad de campo. Cástor y Pólux, dos hermanos adultos jóvenes de piel oliva clara, proporciones creíbles y atléticas sin músculos marcados: Cástor tiene pelo negro lacio, ojos grises y cara algo más ancha; Pólux pelo negro rizado abierto, ojos marrones cálidos y rostro más estrecho y luminoso. Ambos de pie con hombros tocándose, inclinaciones opuestas suaves, gestos fraternales distintos y sonrisas despiertas; nunca copias espejadas. Túnicas griegas sencillas lisas azul grisáceo, sandalias de cuero simples. Figuras completas con pies, ocupando 75% del alto, dos rostros separados con aire propio. Arriba dos estrellas brillantes separadas, una sobre cada sujeto, integradas en la constelación de Géminis sugerida con pequeños puntos estelares y trazos de luz plateada; luz estelar roza sus hombros, sin halos de cabeza ni aura corporal. Suelo simple y cielo nocturno subordinado, sin edificios. Sin armas, joyas, animales, broches ni inscripciones.",
+      "llamadas": 1,
+      "reintentos": 0
+    },
+    {
+      "id": "cerbero",
+      "prompt": "Use case: stylized-concept. Ilustración única vertical 3:4 sin textos ni marcos. Fotograma de película de animación 3D familiar con formas sólidas pulidas, pelaje en mechones agrupados estilizados, ojos y cejas expresivos, materiales limpios no fotográficos, iluminación cinematográfica fría con rebote violeta y fondo desenfocado. Cerbero: un único perro adulto gigantesco de cuerpo muy ancho y pesado, patas enormes, exactamente tres cabezas caninas sobre tres cuellos que nacen del mismo pecho, escalonadas en altura y claramente separadas. Cabezas de hocico ancho, orejas naturales, expresiones distintas compatibles: una atenta mirando al frente, otra curiosa de costado, otra serena con boca cerrada; amigable guardián, sin agresividad. Pelaje carbón azulado de grandes masas, anatomía canina completa, sentado en tres cuartos, las patas y cola visibles, cuerpo entero ocupa 75–80% de altura. Guarda una entrada al inframundo, abertura natural oscura en piedra lisa detrás; luz fría del umbral perfila sus tres cuellos, polvo bajo las patas acusa su peso. Lo fantástico está en las tres cabezas, no agregar poderes. Sin collares, cadenas, ropa, cuernos, serpientes, dientes amenazantes, castillos ni parecido a Fluffy de Harry Potter.",
+      "llamadas": 1,
+      "reintentos": 0
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "fecha": "2026-11-02T06:37:31Z",
+  "total": 85,
+  "imagenes": 43,
+  "faltantes": [
+    "dedalo",
+    "thor",
+    "tyr",
+    "poseidon",
+    "hestia",
+    "hefesto",
+    "dioniso",
+    "nike",
+    "helios",
+    "selene",
+    "pan",
+    "prometeo",
+    "hector",
+    "jason",
+    "orfeo",
+    "midas",
+    "pegaso",
+    "quiron",
+    "fenix",
+    "medusa",
+    "esfinge",
+    "minotauro",
+    "frigg",
+    "njord",
+    "skadi",
+    "ratatosk",
+    "fenrir",
+    "cronos",
+    "medea",
+    "hel",
+    "eneas",
+    "edipo",
+    "circe",
+    "eros",
+    "dido",
+    "nausicaa",
+    "dafne",
+    "eco",
+    "narciso",
+    "pentesilea",
+    "paris",
+    "orion"
+  ],
+  "rutas_rotas": [],
+  "decodificacion": "Pillow load completo",
+  "datos": "solo imagen cambia en tres personajes",
+  "archivos": [
+    {
+      "id": "teseo",
+      "ruta": "imagenes/teseo.jpg",
+      "dimensiones": [
+        1152,
+        1536
+      ],
+      "blob_sha": "da0963ae1a550b8ef0f3b9878f5ec2008f63cb57"
+    },
+    {
+      "id": "heracles",
+      "ruta": "imagenes/heracles.jpg",
+      "dimensiones": [
+        1152,
+        1536
+      ],
+      "blob_sha": "0aac49060adf259b6d4652ae02f810a9bfb284b3"
+    },
+    {
+      "id": "penelope",
+      "ruta": "imagenes/penelope.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "5f0f2e970273baf832d09e2a3dfec66e617cd2b2"
+    },
+    {
+      "id": "atlas",
+      "ruta": "imagenes/atlas.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "f791eabf7d92a8834d884eb2f94774f5beaf273d"
+    },
+    {
+      "id": "odiseo",
+      "ruta": "imagenes/odiseo.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "2a1a6ac4c0f0d6609deecd417f2f0f2be3381d6b"
+    },
+    {
+      "id": "atenea",
+      "ruta": "imagenes/atenea.jpg",
+      "dimensiones": [
+        1152,
+        1536
+      ],
+      "blob_sha": "45248cc32b7828eb65ba9147a1a68b801d079f35"
+    },
+    {
+      "id": "perseo",
+      "ruta": "imagenes/perseo.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "dfce7b63fe4c64a56c9fc9616fb25702f0610832"
+    },
+    {
+      "id": "loki",
+      "ruta": "imagenes/loki.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "6f0ac88b5cdd81bce8bbdca3812bc8fb5bbc45b9"
+    },
+    {
+      "id": "odin",
+      "ruta": "imagenes/odin.jpg",
+      "dimensiones": [
+        1152,
+        1536
+      ],
+      "blob_sha": "e359126aa7ffad60741865e4f12e6a2ea53f7dd7"
+    },
+    {
+      "id": "freya",
+      "ruta": "imagenes/freya.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "78bc705b26829e7a31282511c01c5e722b0d16bf"
+    },
+    {
+      "id": "heimdall",
+      "ruta": "imagenes/heimdall.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "9a43fb1bdf09b403acb54cb1dd5dc076d5a15716"
+    },
+    {
+      "id": "sif",
+      "ruta": "imagenes/sif.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "dee3f95cbd0654311b8975393856c1163f8c2beb"
+    },
+    {
+      "id": "zeus",
+      "ruta": "imagenes/zeus.jpg",
+      "dimensiones": [
+        780,
+        1040
+      ],
+      "blob_sha": "37bb22d23f88983b521aa86e8dc74d465a8ef4a1"
+    },
+    {
+      "id": "hera",
+      "ruta": "imagenes/hera.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "6b3723a378f31c72aba8161add635a37036d0d0a"
+    },
+    {
+      "id": "hades",
+      "ruta": "imagenes/hades.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "7d0a9a99302584cef21843591dfe8b04019df48a"
+    },
+    {
+      "id": "demeter",
+      "ruta": "imagenes/demeter.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "81f66a09a0c51574ce8a9973e03661e1437835df"
+    },
+    {
+      "id": "persefone",
+      "ruta": "imagenes/persefone.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "edabcc32432913c8d3a7f15d4944b55849766679"
+    },
+    {
+      "id": "apolo",
+      "ruta": "imagenes/apolo.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "5d26376528e428118b96a6cbf4d9fcfe6e95c5b2"
+    },
+    {
+      "id": "artemisa",
+      "ruta": "imagenes/artemisa.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "25b5973767334bc19e3ea5d0677bb92c1f228304"
+    },
+    {
+      "id": "ares",
+      "ruta": "imagenes/ares.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "8f387fbcf32290cbda48e9afdcc715185afb8186"
+    },
+    {
+      "id": "afrodita",
+      "ruta": "imagenes/afrodita.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "67acecac869c856dddfa92d8b984be9fbe0f71eb"
+    },
+    {
+      "id": "hermes",
+      "ruta": "imagenes/hermes.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "ada1637f3d682e910ce66677b2add701d7cdad04"
+    },
+    {
+      "id": "iris",
+      "ruta": "imagenes/iris.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "fa1d16155ac069ea773992be32ff6c75d28d43ee"
+    },
+    {
+      "id": "aquiles",
+      "ruta": "imagenes/aquiles.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "e70f49288d1583e0516169392f3e88c4ae67f700"
+    },
+    {
+      "id": "ariadna",
+      "ruta": "imagenes/ariadna.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "e1aa9dbe02fbac5148b51dde36e2a2a753fcf0d0"
+    },
+    {
+      "id": "atalanta",
+      "ruta": "imagenes/atalanta.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "d922de963d866640d98cebc2aed5186d66bb752e"
+    },
+    {
+      "id": "belerofonte",
+      "ruta": "imagenes/belerofonte.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "3a92d0ef7c9444b86fb9a2cdbfa433cdcf47851f"
+    },
+    {
+      "id": "pandora",
+      "ruta": "imagenes/pandora.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "2b65e43ae690c8d4c0c84f750a5c2c7e46a6a00e"
+    },
+    {
+      "id": "aracne",
+      "ruta": "imagenes/aracne.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "e6aa1c4f17c77cc20d43e1ea0138d6910a4cb658"
+    },
+    {
+      "id": "cerbero",
+      "ruta": "imagenes/cerbero.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "7657f35222f7ef11cc9773717ec4677313781fd6"
+    },
+    {
+      "id": "balder",
+      "ruta": "imagenes/balder.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "013cac486edbc8d794e55de8263b19e514920c29"
+    },
+    {
+      "id": "sigurd",
+      "ruta": "imagenes/sigurd.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "157fa8d67f8c039ae5cca14c2edd7d4f00b08630"
+    },
+    {
+      "id": "valquirias",
+      "ruta": "imagenes/valquirias.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "606137a2ee6865d16a883b3aa9a6a6f3b11705a0"
+    },
+    {
+      "id": "helena",
+      "ruta": "imagenes/helena.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "3206679461dde6783d983e7aa35b3ba56374593b"
+    },
+    {
+      "id": "casandra",
+      "ruta": "imagenes/casandra.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "ce1e6c18137e0e375155a5abdcdaa469aaa77ab7"
+    },
+    {
+      "id": "romulo_remo",
+      "ruta": "imagenes/romulo_remo.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "65f633b889bfca48461b0e4b0402a569e1ba0227"
+    },
+    {
+      "id": "agamenon",
+      "ruta": "imagenes/agamenon.jpg",
+      "dimensiones": [
+        1152,
+        1536
+      ],
+      "blob_sha": "04dc7315ee68f19f3f895c357413f84c412e0781"
+    },
+    {
+      "id": "andromeda",
+      "ruta": "imagenes/andromeda.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "8c6a092ec2b514104c09ea32ba717607e33302ac"
+    },
+    {
+      "id": "calipso",
+      "ruta": "imagenes/calipso.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "b19a1cc4f7b6a54d6c8a52bf8c8e4df2e9afbb6f"
+    },
+    {
+      "id": "psique",
+      "ruta": "imagenes/psique.jpg",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "7d17d071074022480bb4b4088a6f0e82f35da9e2"
+    },
+    {
+      "id": "calisto",
+      "ruta": "imagenes/calisto.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "094c7e939c26707447934efb53b0ae9c5ab926dd"
+    },
+    {
+      "id": "casiopea",
+      "ruta": "imagenes/casiopea.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "d44942853b20594d1ac81d5f727596972374c10a"
+    },
+    {
+      "id": "castor_polux",
+      "ruta": "imagenes/castor_polux.png",
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "blob_sha": "077b8c51606e2cde1a8b512cc4b0b7c1c9741209"
+    }
+  ]
+}

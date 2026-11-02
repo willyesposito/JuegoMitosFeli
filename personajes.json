@@ -3994,6 +3994,7 @@
   },
   {
     "id": "cerbero",
+    "imagen": "imagenes/cerbero.png",
     "nombre": "Cerbero",
     "mitologia": "griega",
     "titulo": "El guardián de tres cabezas",
@@ -6495,6 +6496,7 @@
   },
   {
     "id": "casiopea",
+    "imagen": "imagenes/casiopea.png",
     "nombre": "Casiopea",
     "mitologia": "griega",
     "titulo": "La reina en su trono",
@@ -6601,6 +6603,7 @@
   },
   {
     "id": "castor_polux",
+    "imagen": "imagenes/castor_polux.png",
     "nombre": "Cástor y Pólux",
     "mitologia": "griega",
     "titulo": "Los gemelos inseparables",

@@ -42,3 +42,11 @@ Inspección visual de archivos realizada; pruebas en las cartas del juego pendie
 | Casandra | Figura mayor al 80%, murallas con aspecto almenado genérico y trama de tela detallada; se ve una tira funcional en hombro | Conservar gesto, mirada, figura completa y contexto urbano subordinado; arquitectura es interpretación visual de Troya, no reconstrucción histórica. Sin fenómeno mágico inventado porque la orden prohíbe magia lanzada | imagenes/casandra.png |
 
 Las tres decisiones son provisionales de representación, no aprobación estética del usuario ni datos mitológicos nuevos. No se hicieron reintentos cosméticos. Tanda 2 recuperada: sus tres cartas ya fueron verificadas visualmente en el juego local, sin modificar sus imágenes.
+
+## Tanda 4 — 2026-11-02
+
+| Personaje | Duda o desviación observada | Decisión provisional de diseño | Ruta |
+|---|---|---|---|
+| Casiopea | Galaxias espirales modernas no autorizadas, piedra/tela microtexturadas, rostro más joven que la madurez pedida, cuerpo y trono por encima del 80%, respaldo quebrado sin W inequívoca; cinco estrellas identificables pero geometría no auditada astronómicamente | Conservar provisionalmente por campaña, sin regeneración cosmética; trono y contexto celeste legibles, pies completos. Azul petróleo y soporte pétreo son decisiones visuales, no hechos mitológicos | imagenes/casiopea.png |
+| Cástor y Pólux | Más musculatura y microtextura de la pedida, ceñidores de tela funcionales, paisaje costero no exigido; geometría estelar interpretativa sin validación astronómica | Conservar provisionalmente: dos caras, cabellos y poses distintas, gesto fraternal y dos estrellas legibles; el paisaje es diseño, no atribución del mito | imagenes/castor_polux.png |
+| Cerbero | Pelaje más detallado que la superficie pulida pedida; encuadre mayor al 80% y entrada cercana al borde. Central más aprehensivo que sereno | Conservar: tres cabezas separadas, un cuerpo canino, patas completas, sin horror ni ataque. La luz violeta pertenece al escenario diseñado, no se atribuye como poder del personaje | imagenes/cerbero.png |
