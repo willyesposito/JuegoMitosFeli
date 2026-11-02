@@ -295,3 +295,10 @@ Prueba concreta local: servidor Node y Chromium/Playwright, móvil 390×844, per
 | hector | generado y verificado local, subida en este commit | imagenes/hector.png | 1 / 0 | confirmar en cierre | click, decode y captura inspeccionada; 2026-11-02 |
 
 Publicación remota por confirmar en cierre. Verificación visual publicada pendiente: no confundir con prueba local. Campaña NO completa; restan 33 imágenes y auditoría final. Próxima tanda: hefesto, hel, helios.
+
+
+### Cierre confirmado de tanda 9 — 2026-11-02
+
+Commit de imágenes/integración/evidencia confirmado en remoto: `bb575837c92ec12bd5be17d5f556a13754603c16`. Recuperado mediante git fetch; 13/13 archivos comparados byte por byte, todos idénticos. Ese SHA corresponde a las tres filas anteriores. PNG completos: Fenrir 2480420 bytes, Frigg 2291400 y Héctor 2236474. Los tres están generados, subidos y verificados visualmente en el juego local, con desviaciones editoriales explícitas. Evidencia: transferencia_tanda9.json. Campaña NO completa: 52/85, restan 33 imágenes y auditoría integral final.
+
+El navegador del sitio publicado falló con ERR_CERT_AUTHORITY_INVALID, sin desactivar TLS. Primer intento de archivos publicados dio 404 durante actualización; resultado de relectura en resultado_tanda9_publicado.json. No se acredita apertura visual de las cartas publicadas. Mantener campaña activa y recuperar esa comprobación para el cierre; no duplicar generación de las imágenes existentes.

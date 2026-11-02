@@ -1,0 +1,70 @@
+{
+  "commit": "bb575837c92ec12bd5be17d5f556a13754603c16",
+  "archivos": [
+    {
+      "path": "Documentacion/avance_imagenes_2026-11-02.md",
+      "bytes": 44797,
+      "identico": true
+    },
+    {
+      "path": "Documentacion/dudas_imagenes_2026-11-02.md",
+      "bytes": 10556,
+      "identico": true
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_tanda9.json",
+      "bytes": 7342,
+      "identico": true
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/fenrir.png",
+      "bytes": 321876,
+      "identico": true
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/frigg.png",
+      "bytes": 300326,
+      "identico": true
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/hector.png",
+      "bytes": 318060,
+      "identico": true
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/resultado_tanda9_local.json",
+      "bytes": 869,
+      "identico": true
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/tanda9_produccion.json",
+      "bytes": 7081,
+      "identico": true
+    },
+    {
+      "path": "imagenes/fenrir.png",
+      "bytes": 2480420,
+      "identico": true
+    },
+    {
+      "path": "imagenes/frigg.png",
+      "bytes": 2291400,
+      "identico": true
+    },
+    {
+      "path": "imagenes/hector.png",
+      "bytes": 2236474,
+      "identico": true
+    },
+    {
+      "path": "personajes.json",
+      "bytes": 335256,
+      "identico": true
+    },
+    {
+      "path": "sw.js",
+      "bytes": 2195,
+      "identico": true
+    }
+  ]
+}

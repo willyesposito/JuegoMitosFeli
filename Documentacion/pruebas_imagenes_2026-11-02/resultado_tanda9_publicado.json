@@ -1,0 +1,20 @@
+{
+  "fecha_real": "2026-11-02",
+  "archivos": [
+    {
+      "id": "fenrir",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "frigg",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "hector",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "visual_publicada": false,
+  "primer_intento": "404 durante actualizaci\u00f3n",
+  "error_navegador": "ERR_CERT_AUTHORITY_INVALID; no se desactiv\u00f3 TLS"
+}
