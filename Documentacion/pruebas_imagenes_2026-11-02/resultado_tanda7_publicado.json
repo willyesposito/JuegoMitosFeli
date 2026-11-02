@@ -1,0 +1,40 @@
+{
+  "fecha_real": "2026-11-02",
+  "archivos_publicados": [
+    {
+      "id": "eco",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/eco.png?v=e372b3d-cierre-final",
+      "status": 200,
+      "bytes": 2500979,
+      "identico_local": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "edipo",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/edipo.png?v=e372b3d-cierre-final",
+      "status": 200,
+      "bytes": 2510872,
+      "identico_local": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "eneas",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/eneas.png?v=e372b3d-cierre",
+      "status": 200,
+      "bytes": 2491867,
+      "identico_local": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    }
+  ],
+  "visual_publicado": "No acreditada: Chromium rechaza certificado con ERR_CERT_AUTHORITY_INVALID; validación TLS no desactivada.",
+  "primer_intento": "404 durante despliegue en curso"
+}

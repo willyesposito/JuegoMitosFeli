@@ -1,0 +1,72 @@
+{
+  "commit": "e372b3d9d8056cba9bab1756ff69b436fed7a7aa",
+  "fecha_real": "2026-11-02",
+  "verificacion": "13/13 archivos recuperados mediante git show coinciden byte por byte con locales",
+  "archivos": [
+    {
+      "path": "imagenes/eco.png",
+      "size": 2500979,
+      "sha": "a194d8dc5d7f2e7a3be30e6e5584b90f5c0905ab"
+    },
+    {
+      "path": "imagenes/edipo.png",
+      "size": 2510872,
+      "sha": "b6dc98bd1773c6519e95332f0d76420488e1b970"
+    },
+    {
+      "path": "imagenes/eneas.png",
+      "size": 2491867,
+      "sha": "05a5ea7b4d1da8b38404f57a6e21718e00b351b2"
+    },
+    {
+      "path": "personajes.json",
+      "size": 335037,
+      "sha": "09f97278d9df962f7ceeb63096995b706137a10f"
+    },
+    {
+      "path": "sw.js",
+      "size": 2195,
+      "sha": "ff879200da6adf4bfae22995f677d74306e69be0"
+    },
+    {
+      "path": "Documentacion/avance_imagenes_2026-11-02.md",
+      "size": 35250,
+      "sha": "3c55eaee78d996c8b26fdcda1e05532fa85e079e"
+    },
+    {
+      "path": "Documentacion/dudas_imagenes_2026-11-02.md",
+      "size": 8158,
+      "sha": "d6e19784c09cad80da6e2aae9065b2a7b8bab9c6"
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/eco.png",
+      "size": 373541,
+      "sha": "0941d98bbd0c18d4e582210c818fece994385cde"
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/edipo.png",
+      "size": 349456,
+      "sha": "73a6f496d37d337532faaf8e0c7b0dd8b5dbf1f0"
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/eneas.png",
+      "size": 348764,
+      "sha": "daf2916574bc6079e8d384777babd3b7e7d7af25"
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_tanda7.json",
+      "size": 6705,
+      "sha": "d3cbca20e2596882b4f80177e2ee063e2fba30ff"
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/tanda7_produccion.json",
+      "size": 5753,
+      "sha": "5d1c989013aa722990bed5cb8adb68a6cc1ee4d0"
+    },
+    {
+      "path": "Documentacion/pruebas_imagenes_2026-11-02/resultado_tanda7_local.json",
+      "size": 920,
+      "sha": "13bdb6aa9cf03637a494d70e50da9fb0f7cc5bc7"
+    }
+  ]
+}

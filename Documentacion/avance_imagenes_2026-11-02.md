@@ -239,3 +239,10 @@ Prueba concreta local con servidor Node y Chromium/Playwright, móvil 390×844 y
 | eneas | generado y verificado local, subida en este commit | imagenes/eneas.png | 1/0 | confirmar en cierre | click, decode y captura inspeccionada; 2026-11-02 |
 
 Subida mediante blobs base64, árbol con base remoto y actualización de referencia con expected_sha y force=false. No dar por subida hasta contrastar SHA de blob y commit remoto. Publicación visual pendiente; la campaña no está completa. Próxima tanda asignada: eros, esfinge, fenix; recuperación además de tandas 5/6.
+
+
+### Cierre confirmado de tanda 7 — 2026-11-02
+
+Commit de imágenes, integración y pruebas confirmado en remoto: `e372b3d9d8056cba9bab1756ff69b436fed7a7aa`. Recuperado mediante git fetch; los 13 archivos coinciden byte por byte con los locales, incluidos los tres PNG completos de 2500979, 2510872 y 2491867 bytes. Ese SHA corresponde al commit de las tres filas de esta tanda. Estados definitivos: **Eco, Edipo y Eneas generados, subidos y verificados visualmente en el juego local**. Evidencia de transferencia: transferencia_tanda7.json. Tanda 7 completa en local; campaña NO completa: 46/85, restan 39 imágenes y auditoría final. Las tandas 5 y 6 siguen pendientes, sin duplicar las existentes.
+
+Los tres PNG publicados responden HTTP 200, son idénticos byte por byte y se decodifican a 1086×1448; primer intento devolvió 404 mientras el despliegue estaba en curso y se releyó con versión de cierre. Evidencia en resultado_tanda7_publicado.json. Chromium rechazó navegación por ERR_CERT_AUTHORITY_INVALID del proxy, sin desactivar validación TLS. **No se acredita apertura visual de cartas publicadas**. No confundir verificación HTTP de archivos con prueba visual del sitio. Recuperar esa comprobación para cierre integral; no regenerar esta tanda.
