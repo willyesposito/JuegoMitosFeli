@@ -483,3 +483,13 @@ Ventana móvil conservadora: ocho llamadas previas (tanda13 tres, recuperación5
 Preflight interno autorizado, órdenes y estilo/método leídos. Dioniso: adulto de contextura media sin músculos de gimnasio, oliva media, pelo negro largo rizado, rostro expresivo y ojos marrón cálido; diagonal abierta, una mano invita y la otra máscara teatral. Teatro y viñas juntos: máscara, racimos, hojas y tela teatral. Túnica lisa verde oscuro y sandalias simples como decisión provisional; vegetación reacciona al gesto desde la vid, no aura. Se separa de Apolo/Orfeo por energía social sin lira ni pose íntima, de Pan por postura abierta de anfitrión y máscara sin flauta. Escenario derivado de teatro y viña, sin templo genérico. Redondez facial específica de ficha resuelta moderada, sin cabeza de muñeco.
 
 Hestia: adulta madura compacta y liviana, piel dorada media, ojos marrón cálido, pelo castaño ceniza recogido simple; arrodillada levemente lateral cuidando llama doméstica a un costado, telas simples y hogar contenido. Túnica lisa terracota y sandalias como decisión provisional; fuego ilumina manos/tela y curva su llama suavemente desde el hogar. Se separa de Prometeo porque conserva fuego sin ofrecerlo/transportarlo, de Penélope sin telar y de Frigg por composición baja sin manto vertical. La decisión de color y matices de madurez no se presentan como atestación mitológica. Dudas a archivo único.
+
+### Dioniso — intento 1 — resultado 2026-11-02 19:29:46 UTC
+
+Una llamada image_gen generó PNG real 1086×1448, decodificado con Pillow. Cero reintentos/rechazos/429; ventana conservadora nueve llamadas. Inspección: máscara sonriente, vid/racimos/hojas, tela teatral y gesto abierto presentes; pies enteros. Aparecen tarima funcional, barba incipiente y microtextura, encuadre algo mayor al 80%; quedan como dudas sin variante cosmética. Se conserva provisionalmente, sin aprobación estética atribuida. Integración sólo campo imagen de dioniso y sw v3.5.23. Prueba local a continuación; publicación pendiente.
+
+Dioniso: carta local abierta por click real y img.decode(), captura local_1626_dioniso.png abierta e inspeccionada; 1086×1448 en caja 352.5×470, cero errores JS/HTTP. Estado generado/verificado local; subida a confirmar en commit siguiente.
+
+### Hestia — intento 2 pre-registrado — 2026-11-02 19:30:11 UTC
+
+Segunda y última llamada de esta ejecución prevista, cero reintentos. Ventana conservadora previa nueve, posterior máximo diez. Reserva propia vigente; no se genera otra variante.

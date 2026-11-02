@@ -1,0 +1,22 @@
+{
+  "fecha": "2026-11-02T19:29:51.028Z",
+  "viewport": "390x844",
+  "prueba": "Cartas reales abiertas mediante click; decode de imagen y captura individual",
+  "results": [
+    {
+      "id": "dioniso",
+      "src": "imagenes/dioniso.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    }
+  ],
+  "errors": [],
+  "fecha_utc_control": "2026-11-02 19:30:11 UTC",
+  "nota_fecha": "Control posterior con clock; fecha original del script pertenece al reloj del host."
+}

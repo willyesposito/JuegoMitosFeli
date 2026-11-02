@@ -114,3 +114,8 @@ Ruta: imagenes/dedalo.png. Decisiones provisionales: túnica azul grisáceo lisa
 ## 2026-11-02 — Dido — recuperación 15:26
 
 Ruta: imagenes/dido.png. Contradicción romano/fenicio resuelta con base funcional lisa subordinada al manto púrpura y a la obra civil; no regalia imperial. La brisa, agua y polvo representan actividad de fundación, sin telequinesis inventada. Dudas: edad aparente juvenil respecto a madura, figura mayor al 80%, fondo más detallado, microtextura, obreros/barcos/andamios incidentales no enumerados como inventario individual. Muralla, puerto, gesto y manto presentes, pies enteros. Decisión provisional: conservar una sola variante; no se afirma aprobación estética ni atestación arqueológica.
+
+
+## 2026-11-02 — Dioniso — recuperación 16:26
+
+Ruta imagenes/dioniso.png. Decisiones provisionales: túnica lisa verde oscuro, tela teatral bordó y crecimiento de brote verde luminoso como interpretación visual de viñas/fiesta, no afirmación de episodio mitológico. Cara redondeada de ficha resuelta con proporción adulta. Dudas: barba incipiente no especificada, microtextura de tela y piel, figura algo mayor al 80%, tarima incidental. Máscara, racimos, hojas, gesto y calzado presentes. No se regenera por cosmética ni se afirma aprobación estética.
