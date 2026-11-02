@@ -1,0 +1,41 @@
+{
+  "fecha": "2026-11-02",
+  "prueba": "HTTP con validación TLS y comparación de bytes; no apertura visual de cartas publicadas",
+  "navegador": "ERR_CERT_AUTHORITY_INVALID; no se desactivó TLS",
+  "resultados": [
+    {
+      "id": "casiopea",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/casiopea.png?v=1209ee7-cierre",
+      "status": 200,
+      "bytes": 2503660,
+      "coincide": true,
+      "dimensiones": [
+        1086,
+        1448
+      ],
+      "nota": "primera lectura dio 404 durante despliegue; relectura de cierre"
+    },
+    {
+      "id": "castor_polux",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/castor_polux.png?v=1209ee7",
+      "status": 200,
+      "bytes": 2358655,
+      "coincide": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "id": "cerbero",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/cerbero.png?v=1209ee7",
+      "status": 200,
+      "bytes": 2501379,
+      "coincide": true,
+      "dimensiones": [
+        1086,
+        1448
+      ]
+    }
+  ]
+}

@@ -212,3 +212,9 @@ Prueba local concreta: servidor Node, Chromium con Playwright, móvil 390×844 y
 | cerbero | generado, verificado local; subida en este commit | imagenes/cerbero.png | 1/0 | confirmar en cierre | click, decode y captura inspeccionada; 2026-11-02 |
 
 Pendientes exactos de generación y datos de los 43 archivos: `auditoria_tanda4.json`. Las entradas históricas pendientes quedan superadas por las secciones posteriores. Próxima tanda: circe, cronos, dafne. Publicación visual de campaña pendiente, sin confundir las capturas locales con el sitio publicado. Se confirma transferencia y SHA en el cierre siguiente.
+
+### Cierre confirmado de tanda 4 — 2026-11-02
+
+Commit de imágenes, integración y pruebas confirmado en remoto: `1209ee7e4fd4d0b93c501806284561d29a3342d5`. Recuperado mediante git fetch; comparación de los 13 blobs publicados contra los SHA locales: 13/13 coinciden. Los tres PNG son completos y decodificables. Ese SHA es el commit de las tres filas anteriores. Estado definitivo: **Casiopea, Cástor y Pólux y Cerbero generados, subidos y verificados visualmente en el juego local**. Tanda 4 completa en local, campaña NO completa: 43/85, restan 42 imágenes nuevas y auditoría integral final.
+
+Prueba publicada con validación TLS: los tres PNG responden HTTP 200, sus bytes coinciden exactamente con los locales y se decodifican a 1086×1448. Primera consulta de Casiopea devolvió 404 durante despliegue; relectura con versión de cierre devolvió el archivo completo. Evidencia en `resultado_tanda4_publicado.json`. Chromium volvió a rechazar navegación con `ERR_CERT_AUTHORITY_INVALID` del proxy; no se desactivó TLS. **No se acredita apertura visual de cartas publicadas**, sólo inspección visual en juego local y comprobación de archivos publicados. Recuperar esa prueba para cierre de campaña; no regenerar imágenes existentes.
