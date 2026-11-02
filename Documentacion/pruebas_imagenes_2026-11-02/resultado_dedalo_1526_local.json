@@ -17,6 +17,6 @@
     }
   ],
   "errors": [],
-  "fecha_utc_control": "2026-11-02T18:33:00Z",
-  "nota_fecha": "La fecha original corresponde al reloj del host; usar el intervalo UTC de generación registrado en avance para trazabilidad."
+  "fecha_utc_control": "2026-11-02 18:34:22 UTC",
+  "nota_fecha": "Control posterior consultado con clock; fecha original del script corresponde al reloj del host."
 }

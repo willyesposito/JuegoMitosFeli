@@ -442,3 +442,9 @@ Una llamada image_gen prevista; resultado pendiente. Primera llamada de esta eje
 image_gen generó PNG real 1086×1448, decodificado completamente. Una llamada, cero reintentos; ventana conservadora siete llamadas. Figura de anciano y ambos pies, herramientas, ala fabricada, laberinto y aire reactivo reconocibles. Desviaciones: figura supera 80% y extremo lateral del ala queda cortado; aparece soporte funcional de madera y pelo más ondulado que corto desordenado. Se conserva provisionalmente sin regenerar por cosmética; no se afirma aprobación estética ni cumplimiento pleno. Dudas en archivo único. Integración preparada sólo campo imagen de dedalo y sw v3.5.21; prueba local a continuación.
 
 Dédalo: prueba local realizada con herramienta de captura existente adaptada, servidor estático y Chromium móvil 390×844, perfil sintético. Click real, img.decode(), captura abierta e inspeccionada: imagen 1086×1448, caja 352.5×470, cero errores JS/HTTP. Evidencias local_1526_dedalo.png y resultado_dedalo_1526_local.json. Sólo campo imagen de Dédalo cambiado; prueba publicada pendiente. Reserva pasa a generado y verificado local, subida a confirmar en commit siguiente.
+
+Dédalo subido confirmado en fdd66077b4b330cbb27d2128b9ccc18788481eed; blob coincide con git hash-object de los bytes originales. Estado: generado/subido/verificado local; publicado pendiente. El campo fecha_utc_control de su JSON se corrige con hora real de clock en esta entrada, en lugar de la hora estimada anterior; no modifica el intervalo de generación.
+
+### Intento 2 — Dido — pre-registro UTC 2026-11-02 18:34:22 UTC
+
+Segunda y última llamada prevista de esta ejecución, cero reintentos. Ventana previa siete llamadas; máximo posterior ocho. Reserva vigente y HEAD fdd66077b4b330cbb27d2128b9ccc18788481eed. Resultado pendiente.
