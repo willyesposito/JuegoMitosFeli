@@ -218,3 +218,24 @@ Pendientes exactos de generación y datos de los 43 archivos: `auditoria_tanda4.
 Commit de imágenes, integración y pruebas confirmado en remoto: `1209ee7e4fd4d0b93c501806284561d29a3342d5`. Recuperado mediante git fetch; comparación de los 13 blobs publicados contra los SHA locales: 13/13 coinciden. Los tres PNG son completos y decodificables. Ese SHA es el commit de las tres filas anteriores. Estado definitivo: **Casiopea, Cástor y Pólux y Cerbero generados, subidos y verificados visualmente en el juego local**. Tanda 4 completa en local, campaña NO completa: 43/85, restan 42 imágenes nuevas y auditoría integral final.
 
 Prueba publicada con validación TLS: los tres PNG responden HTTP 200, sus bytes coinciden exactamente con los locales y se decodifican a 1086×1448. Primera consulta de Casiopea devolvió 404 durante despliegue; relectura con versión de cierre devolvió el archivo completo. Evidencia en `resultado_tanda4_publicado.json`. Chromium volvió a rechazar navegación con `ERR_CERT_AUTHORITY_INVALID` del proxy; no se desactivó TLS. **No se acredita apertura visual de cartas publicadas**, sólo inspección visual en juego local y comprobación de archivos publicados. Recuperar esa prueba para cierre de campaña; no regenerar imágenes existentes.
+
+
+## Tanda 7 — 2026-11-02 06:35 -03:00
+
+Base remota preservada: `77ffbb31c6c6e313225b1d0dc1782dafe8de2b8b`, confirmada mediante fetch y conector. n=7 desde hora actual contrastada 09:37 UTC, al no disponer de marca programada exacta. No se detectó otro avance remoto concurrente. Las tandas 5 y 6 siguen sin imágenes en el remoto: circe, cronos, dafne, dedalo, dido, dioniso. No se inventa su finalización; recuperar en ejecuciones de recuperación.
+
+Leídos completos MEMORY.md, CLAUDE.md, estilo aprobado, método y órdenes de Eco, Edipo y Eneas. Preflight interno autorizado y prompts preservados en `Documentacion/pruebas_imagenes_2026-11-02/tanda7_produccion.json`. No se abrió ninguna imagen de otro personaje como referencia estética. Se eligió la contextura de §4 de cada orden ante contradicción, sin cambiar historias ni fuentes.
+
+Tres llamadas reales secuenciales a image_gen integrada, una por personaje; cero reintentos, cero HTTP 429 y sin indicador de cuota disponible. Total documentado de campaña: 18 llamadas, incluidas las 15 registradas antes de esta tanda. Las dudas editoriales y el gate de 12 puntos se revisaron visualmente y quedaron documentados en archivo único y JSON de producción. Entrega provisional, no aprobación estética del usuario.
+
+PNG reales completos 1086×1448, proporción 3:4. Auditoría de las 85 cartas con Pillow: 46 referencias existentes y completamente decodificables, cero rutas rotas, 39 imágenes pendientes. Pendientes exactos y dimensiones en `auditoria_tanda7.json`. Comparación de personajes.json contra base: sólo se añade imagen a eco, edipo y eneas; resto de campos conservado. sw.js v3.5.15.
+
+Prueba concreta local con servidor Node y Chromium/Playwright, móvil 390×844 y perfil sintético aislado: click real en cada carta, img.decode(), captura individual inspeccionada. Las tres imágenes cargan en caja 352.5×470, sin recorte CSS adicional, pies e identificadores visibles; cero errores JS/HTTP. El recorte del ala derecha de Esfinge ya existe en el archivo, documentado. Evidencias: eco.png, edipo.png, eneas.png y resultado_tanda7_local.json en carpeta de pruebas. Reloj del host desfasado, se conserva como diagnóstico; fecha real contrastada mediante reloj UTC.
+
+| Personaje | Estado | Ruta | Llamadas/reintentos | Commit | Prueba y fecha |
+|---|---|---|---|---|---|
+| eco | generado y verificado local, subida en este commit | imagenes/eco.png | 1/0 | confirmar en cierre | click, decode y captura inspeccionada; 2026-11-02 |
+| edipo | generado y verificado local, subida en este commit | imagenes/edipo.png | 1/0 | confirmar en cierre | click, decode y captura inspeccionada; 2026-11-02 |
+| eneas | generado y verificado local, subida en este commit | imagenes/eneas.png | 1/0 | confirmar en cierre | click, decode y captura inspeccionada; 2026-11-02 |
+
+Subida mediante blobs base64, árbol con base remoto y actualización de referencia con expected_sha y force=false. No dar por subida hasta contrastar SHA de blob y commit remoto. Publicación visual pendiente; la campaña no está completa. Próxima tanda asignada: eros, esfinge, fenix; recuperación además de tandas 5/6.

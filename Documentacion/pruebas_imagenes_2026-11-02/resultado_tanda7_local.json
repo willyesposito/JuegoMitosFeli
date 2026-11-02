@@ -1,0 +1,45 @@
+{
+  "viewport": "390x844",
+  "prueba": "Cartas reales abiertas mediante click; decode de imagen y captura individual",
+  "results": [
+    {
+      "id": "eco",
+      "src": "imagenes/eco.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "edipo",
+      "src": "imagenes/edipo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "eneas",
+      "src": "imagenes/eneas.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    }
+  ],
+  "errors": [],
+  "fecha_host_diagnostico": "2026-11-02T09:40:07.228Z",
+  "fecha_real_contrastada": "2026-11-02"
+}

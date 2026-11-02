@@ -50,3 +50,14 @@ Las tres decisiones son provisionales de representación, no aprobación estéti
 | Casiopea | Galaxias espirales modernas no autorizadas, piedra/tela microtexturadas, rostro más joven que la madurez pedida, cuerpo y trono por encima del 80%, respaldo quebrado sin W inequívoca; cinco estrellas identificables pero geometría no auditada astronómicamente | Conservar provisionalmente por campaña, sin regeneración cosmética; trono y contexto celeste legibles, pies completos. Azul petróleo y soporte pétreo son decisiones visuales, no hechos mitológicos | imagenes/casiopea.png |
 | Cástor y Pólux | Más musculatura y microtextura de la pedida, ceñidores de tela funcionales, paisaje costero no exigido; geometría estelar interpretativa sin validación astronómica | Conservar provisionalmente: dos caras, cabellos y poses distintas, gesto fraternal y dos estrellas legibles; el paisaje es diseño, no atribución del mito | imagenes/castor_polux.png |
 | Cerbero | Pelaje más detallado que la superficie pulida pedida; encuadre mayor al 80% y entrada cercana al borde. Central más aprehensivo que sereno | Conservar: tres cabezas separadas, un cuerpo canino, patas completas, sin horror ni ataque. La luz violeta pertenece al escenario diseñado, no se atribuye como poder del personaje | imagenes/cerbero.png |
+
+
+## Tanda 7 — 2026-11-02
+
+| Personaje | Duda o desviación | Decisión provisional de diseño | Ruta |
+|---|---|---|---|
+| Eco | Microtextura de vegetación/tela, figura mayor al 80%, rostro más angular y ondas a distinta escala | Conservar perfil quieto, voz visible y valle; verde musgo y ondas azul gris son representación visual, no atestación mitológica | imagenes/eco.png |
+| Edipo | Se lee joven en vez de maduro, pelo ondulado y alas de Esfinge salen del borde; roca alta de apoyo | Conservar diálogo con Esfinge y mano al mentón; interpretación anatómica y escenario como decisiones visuales. Bastón opcional omitido por no necesitarlo; sin fenómeno mágico agregado | imagenes/edipo.png |
+| Eneas | Microtextura y anatomía más realistas de lo pedido; capa, broche y ceñidor no autorizados; no hay coraza preimperial explícita; figura mayor al 80% | Conservar marcha corpulenta, escudo de bronce y costa/barco; registrar accesorios como desviación, sin atribución al mito. Óxido es decisión de paleta | imagenes/eneas.png |
+
+Tres cartas inspeccionadas en el juego local; ninguna entrada acredita aprobación estética del usuario ni exactitud histórica del equipo. Sin reintentos cosméticos.

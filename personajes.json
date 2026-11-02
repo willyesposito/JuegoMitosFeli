@@ -5145,6 +5145,7 @@
   },
   {
     "id": "eneas",
+    "imagen": "imagenes/eneas.png",
     "nombre": "Eneas",
     "mitologia": "romana",
     "titulo": "El puente entre Troya y Roma",
@@ -5228,6 +5229,7 @@
   },
   {
     "id": "edipo",
+    "imagen": "imagenes/edipo.png",
     "nombre": "Edipo",
     "mitologia": "griega",
     "titulo": "El que resolvió el acertijo de la Esfinge",
@@ -6170,6 +6172,7 @@
   },
   {
     "id": "eco",
+    "imagen": "imagenes/eco.png",
     "nombre": "Eco",
     "mitologia": "griega",
     "titulo": "La ninfa que solo podía repetir palabras",
