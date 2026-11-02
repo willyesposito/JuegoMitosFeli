@@ -4071,6 +4071,7 @@
   },
   {
     "id": "medusa",
+    "imagen": "imagenes/medusa.png",
     "nombre": "Medusa",
     "mitologia": "griega",
     "titulo": "El desafío del espejo",

@@ -130,3 +130,6 @@ Ruta imagenes/jason.png. Color azul profundo de túnica y bolsa funcional: decis
 
 ## Medea — recuperacion-20261102T212626Z
 Ruta imagenes/medea.png. Túnica ciruela, magia verde controlada, claro nocturno: decisiones de diseño provisionales. Resultado: luna incidental, rodete voluminoso, microtextura de tela/pelo y encuadre mayor al 80%; cuello redondo menos cerrado. Conservar sin cosmética; identidad baja, manos/solución y sueño del dragón presentes. Sin aprobación estética atribuida.
+
+## Medusa — recuperacion-20261102T222626Z
+Ruta imagenes/medusa.png. Túnica berenjena, serpientes verde apagado y efecto mineral frío: decisiones provisionales de diseño. Resultado: encuadre cerrado, serpiente cerca del borde superior, base gris parece pelo humano y cristalización parece hielo; microtexturas. Conservar sin cosmética, sin aprobación estética ni afirmación de atestación del color. No víctimas ni amenaza a cámara.
