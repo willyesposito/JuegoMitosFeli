@@ -1,0 +1,68 @@
+{
+  "ejecucion": "recuperacion-20261102T182626Z",
+  "herramienta": "image_gen integrada",
+  "intentos": [
+    {
+      "personaje": "dedalo",
+      "antes": "2026-11-02 18:31:32 UTC",
+      "despues": "2026-11-02 18:32:42 UTC",
+      "resultado": "generado; subido; verificado local y publicado",
+      "reintento": 0,
+      "commit_imagen": "fdd66077b4b330cbb27d2128b9ccc18788481eed"
+    },
+    {
+      "personaje": "dido",
+      "antes": "2026-11-02 18:34:22 UTC",
+      "despues": "2026-11-02 18:35:32 UTC",
+      "resultado": "generado; subido; verificado local y publicado",
+      "reintento": 0,
+      "commit_imagen": "ed64e11676b6bd3b2ed6ec3fd1c25363e898291d",
+      "prompt": "Use case: stylized-concept. Una ilustración única vertical 3:4 para carta mitológica, sin texto ni marco. Fotograma de película de animación 3D familiar: formas sólidas pulidas y simplificadas, pelo en mechones agrupados, pliegues grandes, ojos expresivos y cejas actuadas. Dido fundadora de Cartago, mujer madura alta de contextura media, hombros medios, rostro largo decidido, piel castaña media, ojos marrón muy oscuro y pelo negro recogido de volumen controlado. Está de pie en tres cuartos, ocupa sólo 75% de la altura del cuadro, figura completa y sandalias simples con espacio bajo pies y sobre cabeza. Gesto abierto de planificación: señala hacia el trazado de una muralla en construcción que continúa al puerto mediterráneo. Actitud despierta y constructiva, nunca retrato regia frontal. Manto púrpura de Tiro sobre una base funcional lisa de vocabulario fenicio, sin ornamentos. La muralla baja incompleta, sus bloques colocados y el puerto son las pistas secundarias reconocibles, subordinadas a la figura, con aire en dirección del gesto. La brisa marina mueve el borde púrpura, el agua responde en remolinos y el polvo de obra se eleva junto al trazado; son actividad y entorno de la fundación, no telequinesis ni magia inventada. Arquitectura de obra sencilla mediterránea estilizada, luz diurna lateral con sombras azuladas y fondo con menor nitidez y contraste. Sólo personaje, vestimenta, construcción y puerto. No corona, trono ni joyas, no armas, no templo fantástico, no aura/halo/runas, no fotografía ni óleo."
+    }
+  ],
+  "presupuesto": {
+    "historial_conservador": 6,
+    "nuevas": 2,
+    "total_conservador": 8,
+    "cupo_real": "desconocido"
+  },
+  "revision": {
+    "dedalo": {
+      "excesos": [
+        "soporte de madera funcional del artefacto"
+      ],
+      "omisiones": [],
+      "desviaciones": [
+        "extremo lateral del ala cortado",
+        "figura mayor al 80%",
+        "microtextura y pelo más ondulado"
+      ]
+    },
+    "dido": {
+      "excesos": [
+        "obreros, barcos y soportes de obra incidentales"
+      ],
+      "omisiones": [],
+      "desviaciones": [
+        "edad aparente juvenil",
+        "figura mayor al 80%",
+        "microtextura y fondo detallado"
+      ]
+    },
+    "gate": [
+      "Se lee animación 3D, no foto de actor",
+      "Sin óleo",
+      "Volumen, no 2D plano",
+      "No gnomo; edad de Dido provisional",
+      "Sin musculatura de gimnasio; Dédalo delgado",
+      "Separación textual revisada; NO certificada contra imágenes ajenas",
+      "Fondos subordinados aunque con detalle superior al pedido",
+      "Actividad de alas/obra y entorno visible; sin inventar poderes",
+      "Identificadores y pistas exigidos presentes",
+      "Sin aura/halo/runas ni efecto genérico",
+      "Expresiones concentrada/constructiva accesibles",
+      "Dorado no aplicado como efecto genérico"
+    ],
+    "aprobacion_estetica": "no atribuida; entrega provisional bajo autorización de recuperación"
+  }
+}
