@@ -109,3 +109,8 @@ Tres cartas inspeccionadas en el juego local; ninguna entrada acredita aprobaci�
 ## 2026-11-02 — Dédalo — recuperación 15:26
 
 Ruta: imagenes/dedalo.png. Decisiones provisionales: túnica azul grisáceo lisa; artefacto en actividad con aire/plumas y sin luz inventada; soporte de madera interpretado funcional a las alas. Dudas tras inspección: figura mayor al 80%, extremo derecho del ala recortado, pelo más ondulado y microtextura de ropa/suelo. Alas, herramientas, laberinto y pies presentes. Se conserva el único resultado para integración; no equivale a aprobación estética.
+
+
+## 2026-11-02 — Dido — recuperación 15:26
+
+Ruta: imagenes/dido.png. Contradicción romano/fenicio resuelta con base funcional lisa subordinada al manto púrpura y a la obra civil; no regalia imperial. La brisa, agua y polvo representan actividad de fundación, sin telequinesis inventada. Dudas: edad aparente juvenil respecto a madura, figura mayor al 80%, fondo más detallado, microtextura, obreros/barcos/andamios incidentales no enumerados como inventario individual. Muralla, puerto, gesto y manto presentes, pies enteros. Decisión provisional: conservar una sola variante; no se afirma aprobación estética ni atestación arqueológica.

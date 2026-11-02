@@ -1,0 +1,22 @@
+{
+  "fecha": "2026-11-02T18:35:37.097Z",
+  "viewport": "390x844",
+  "prueba": "Cartas reales abiertas mediante click; decode de imagen y captura individual",
+  "results": [
+    {
+      "id": "dido",
+      "src": "imagenes/dido.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    }
+  ],
+  "errors": [],
+  "fecha_utc_control": "2026-11-02 18:36:15 UTC",
+  "nota_fecha": "Control posterior con clock; fecha original del script pertenece al host."
+}

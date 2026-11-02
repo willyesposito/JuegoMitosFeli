@@ -448,3 +448,9 @@ Dédalo subido confirmado en fdd66077b4b330cbb27d2128b9ccc18788481eed; blob coin
 ### Intento 2 — Dido — pre-registro UTC 2026-11-02 18:34:22 UTC
 
 Segunda y última llamada prevista de esta ejecución, cero reintentos. Ventana previa siete llamadas; máximo posterior ocho. Reserva vigente y HEAD fdd66077b4b330cbb27d2128b9ccc18788481eed. Resultado pendiente.
+
+### Dido — resultado del intento 2 — UTC 2026-11-02 18:35:32 UTC
+
+image_gen generó PNG real 1086×1448, decodificado completamente. Una llamada, cero reintentos; segunda y última de ejecución, ventana conservadora ocho llamadas contando seis anteriores. Sin rechazo ni 429. Figura completa, manto púrpura, gesto de planificación, muralla en construcción y puerto presentes; agua/brisa/polvo, sin poder inventado. Desviaciones: edad aparente más joven, manto más grande y fondo más detallado; aparecen obreros, soportes de obra y barcos como desarrollo incidental del puerto/obra. No se afirma exactitud histórica de arquitectura/embarcaciones ni aprobación estética. Se conserva el único resultado, sin regeneración cosmética.
+
+Dido: prueba local completada, captura local_1526_dido.png abierta e inspeccionada; click real e img.decode(), 1086×1448 en caja 352.5×470, cero errores. Sólo campos imagen de dedalo/dido cambiados desde base, sw v3.5.22. Auditoría completa: JSON válido, 85 personajes, 63 referencias existentes y decodificables, cero rutas rotas; quedan 22 imágenes. Resultado/auditoría en carpeta de pruebas. Estado Dido generado/verificado local; subida a confirmar en commit siguiente. Estado publicado de ambos pendiente, deuda previa 11/57 verificados.
