@@ -1,0 +1,40 @@
+{
+  "ejecucion": "recuperacion-20261102T222626Z",
+  "herramienta": "image_gen incorporada",
+  "intentos": [
+    {
+      "id": "medusa",
+      "inicio_utc": "2026-11-02 22:29:59 UTC",
+      "resultado_utc": "2026-11-02 22:30:37 UTC",
+      "ruta": "imagenes/medusa.png",
+      "commit": "8a21d53e395e95d30a5f8489a23a9b840d71c710",
+      "prompt": "Una sola ilustración vertical 3:4 para carta mitológica sin texto ni marco. Fotograma de película de animación 3D familiar, formas pulidas sólidas, piel y tela estilizadas sin poro ni trama fotográfica, cejas expresivas, manos legibles, proporciones moderadas sin muñeca. Medusa adulta madura de unos 55 años, contextura media y hombros medianos, rostro humano fuerte angular amable no monstruoso, piel oliva media, ojos ámbar. Su cabello está compuesto exclusivamente por serpientes verde apagado con cuerpos gruesos estilizados y cabezas completas en distintas direcciones, asimétricas y sin actitud agresiva. Figura completa con sandalias, ocupa 75% del alto, aire limpio alrededor de cabeza y serpientes y suelo visible bajo pies. Tres cuartos lateral, quietud controlada, mirada concentrada hacia piedras inertes a un costado y lejos del espectador, manos relajadas bajas. Túnica griega lisa berenjena, sin adornos, y sandalias sencillas de cuero. Un efecto mágico frío mineral sutil y claramente trazable a su mirada ondula el aire sólo en dirección a esas piedras, con polvo mineral y cristalización superficial que iluminan suavemente las piedras; ningún ser vivo afectado. Suelo pedregoso bajo, entorno simple gris violáceo desenfocado, luz lateral fría cinematográfica y rebote suave. La silueta de serpientes es el identificador central, fondo subordinado. Sin colmillos, cuerpo serpentino, víctimas, violencia ni horror; sin templos, pedestal, joyas, halo, aura corporal, runas o pseudoescritura.",
+      "reintento": false
+    },
+    {
+      "id": "midas",
+      "inicio_utc": "2026-11-02 22:33:12 UTC",
+      "resultado_utc": "2026-11-02 22:33:48 UTC",
+      "ruta": "imagenes/midas.png",
+      "commit": "eba17b2244e262a8a9e3298eb1bac04d6eb57481",
+      "prompt": "Una sola ilustración vertical 3:4 para carta de Midas, sin texto ni marco. Fotograma de película de animación 3D para toda la familia: formas sólidas pulidas, piel sin poros, pliegues simplificados sin trama fotográfica, cabello en mechones agrupados, ojos expresivos y cejas actuadas, proporciones moderadas. Hombre adulto maduro de 45-50 años, contextura media atlética sin volumen muscular, hombros medianos, rostro ancho con sorpresa contenida al comprender un problema, pelo castaño ceniza corto, barba breve, piel oliva media, ojos grises. Figura completa con ambas sandalias ocupa sólo 75% del alto, aire arriba y suelo abajo. Cuerpo en tres cuartos inclinado levemente hacia un lado, una mano extendida y separada del torso toca pan sobre una mesa de madera simple pequeña; su otra mano sostiene un cuenco sencillo inclinado con un hilo de agua. La mitad del pan permanece pan y la otra mitad se vuelve oro metálico desde el punto de contacto; en cuenco y gota de agua también hay transformación parcial claramente legible, oro problemático, no un tesoro decorativo. Mira esos objetos concentrado y sorprendido, sin dramatismo. Túnica griega lisa verde petróleo y sandalias simples de cuero, sin adornos. La onda de transformación dorada recorre sólo superficies tocadas, nace del dedo, ilumina la mano y el pan, sin chispas genéricas alrededor del cuerpo. Fondo doméstico neutro muy desenfocado de tonos fríos, luz lateral de ventana fuera de cuadro y reflejo dorado local. Jerarquía rostro, mano y objetos, fondo subordinado. Sin corona, joyas, vellocino, trono, manzana aislada, templo ni pedestal; sin aura, halo, runas o pseudoescritura.",
+      "reintento": false
+    }
+  ],
+  "gate_12": {
+    "fotografia": "no, lectura 3D animada; hay microtexturas a revisar",
+    "pintura": "no",
+    "plano_2d": "no",
+    "proporciones_muneco": "no",
+    "musculatura": "media conforme a órdenes",
+    "identidad": "separación textual inspeccionada; no comparación visual exhaustiva con roster",
+    "fondo": "subordinado",
+    "magia": "Medusa mirada mineral; Midas toque transforma pan/cuenco/agua",
+    "inventario": "identificadores y pistas presentes, mesa soporte funcional; pelo gris Medusa y objetos borrosos Midas como desviaciones",
+    "trazabilidad": "desde mirada y contacto; sin aura ni runas",
+    "expresion": "atenta lateral y sorpresa, sin amenaza",
+    "dorado": "sólo transformación Midas justificada"
+  },
+  "aceptacion": "provisional, dudas en archivo único; no aprobación estética",
+  "llamadas_en_ventana_conservadora": 8
+}
