@@ -2318,6 +2318,7 @@
   },
   {
     "id": "hefesto",
+    "imagen": "imagenes/hefesto.png",
     "nombre": "Hefesto",
     "mitologia": "griega",
     "titulo": "El herrero de los dioses",
@@ -2695,6 +2696,7 @@
   },
   {
     "id": "helios",
+    "imagen": "imagenes/helios.png",
     "nombre": "Helios",
     "mitologia": "griega",
     "titulo": "El dios que conduce el sol",
@@ -5066,6 +5068,7 @@
   },
   {
     "id": "hel",
+    "imagen": "imagenes/hel.png",
     "nombre": "Hel",
     "mitologia": "nordica",
     "titulo": "La administradora del inframundo",
