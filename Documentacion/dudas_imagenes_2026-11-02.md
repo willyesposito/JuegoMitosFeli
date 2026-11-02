@@ -127,3 +127,6 @@ Ruta imagenes/hestia.png. Decisión provisional: túnica terracota, hogar domés
 
 ## Jasón — recuperacion-20261102T212626Z
 Ruta imagenes/jason.png. Color azul profundo de túnica y bolsa funcional: decisión provisional de diseño, no dato histórico. Resultado: encuadre mayor a 80%, edad más juvenil, microtextura y cielo nuboso de fondo. Mantener sin regeneración cosmética. Identificador luminoso trazable al vellocino, pose abierta y pies enteros; no se afirma aprobación estética.
+
+## Medea — recuperacion-20261102T212626Z
+Ruta imagenes/medea.png. Túnica ciruela, magia verde controlada, claro nocturno: decisiones de diseño provisionales. Resultado: luna incidental, rodete voluminoso, microtextura de tela/pelo y encuadre mayor al 80%; cuello redondo menos cerrado. Conservar sin cosmética; identidad baja, manos/solución y sueño del dragón presentes. Sin aprobación estética atribuida.

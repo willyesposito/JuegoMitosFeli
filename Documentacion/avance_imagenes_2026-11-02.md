@@ -534,3 +534,10 @@ Jasón prueba local realizada: click real en carta, img.decode(), captura local_
 
 ### Medea — intento 2 pre-registro — 2026-11-02 21:32:13 UTC
 Segunda y última llamada de esta ejecución; cero reintentos. Cuatro previas más Jasón: cinco, máximo posterior seis. Reserva propia vigente.
+
+Jasón subido confirmado en 028593cde97b377f967a1263e47064169a076bd5; blob idéntico a bytes locales por hash-object.
+
+### Medea — intento 2 resultado 2026-11-02 21:33:48 UTC
+Una llamada image_gen, PNG real 1086×1448 completo; segunda y última de ejecución. Seis llamadas conservadoras en ventana, sin reintentos/rechazos/429. Pose baja, manos activas con brillo verde, dragón dormido subordinado, pies completos. Excesos/desviaciones: luna incidental, cabello más voluminoso y microtexturas, figura mayor al 80%, escote redondo más abierto que cuello cerrado. Se conserva sin regeneración cosmética, no aprobación estética. Magia trazable a manos/solución; no objetos de poción inventados. Prueba local siguiente.
+
+Medea prueba local completada: click real y img.decode(), captura local_1826_medea.png abierta e inspeccionada; 1086×1448 en caja 352.5×470, sin errores JS/HTTP. Auditoría 85 personajes, 67 imágenes existentes y completamente decodificadas, cero rutas rotas y 18 pendientes. Integración sólo campos imagen de Jasón/Medea y sw v3.5.26. Medea generado/verificado local, publicación a confirmar.
