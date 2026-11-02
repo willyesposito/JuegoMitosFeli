@@ -599,3 +599,17 @@ Intentos reales secuenciales: **DOS**, sin reintentos, rechazos ni 429. Medusa i
 Auditoría: **69/85 imágenes integradas**, JSON válido, rutas existentes y todas completamente decodificadas, 16 pendientes. Comparación contra base confirma que personajes.json sólo cambió en imagen de Medusa y Midas, sw v3.5.28; historias, módulos y sources intactos. **31/57 cartas verificadas publicadas**, 26 pendientes; lista exacta en resultado_1926_publicado.json, objetivo de 57 heredado sin redefinir. Dudas nuevas en archivo único: encuadre/pelo/cristalización de Medusa; texturas, dedos dorados y pie parcialmente oculto de Midas. Sin regeneración cosmética ni aprobación estética atribuida.
 
 Siguientes dos por prioridad: minotauro y njord. Pendientes exactos: minotauro, njord, orfeo, orion, pan, paris, pegaso, pentesilea, poseidon, prometeo, quiron, ratatosk, selene, skadi, thor, tyr. Anterior confirmada deshabilitada y completada sin actividad nueva; actual continúa. Campaña NO completa.
+
+
+## Reserva — recuperacion-20261102T232626Z — 2026-11-02 23:26:17 UTC
+HEAD base 35636fa2eebd10e748e91b19ebcae907851e641f; árbol completo reconstruido, 85 personajes, 69 referencias, sin imágenes sueltas. Minotauro y Njörd sin archivo ni referencia. Anterior confirmada deshabilitada, último intento completado 15:59:37 UTC, sin actividad nueva ni reservas ajenas abiertas. Presupuesto conservador ocho llamadas recientes (Dédalo/Dido, Dioniso/Hestia, Jasón/Medea, Medusa/Midas); margen para dos, máximo diez. Cupo real desconocido.
+
+| Personaje | Ejecución | Inicio UTC | Estado | Ruta |
+|---|---|---|---|---|
+| minotauro | recuperacion-20261102T232626Z | 2026-11-02 23:26:17 UTC | reservado; intento 1 pre-registrado | imagenes/minotauro.png |
+| njord | recuperacion-20261102T232626Z | 2026-11-02 23:26:17 UTC | reservado; sin intento | imagenes/njord.png |
+
+Preflight preautorizado: Minotauro adulto híbrido enorme, cabeza taurina completa, cuernos largos con aire alrededor, torso humanoide muy ancho, piernas taurinas y pezuñas completas. Tres cuartos detenido y algo encorvado decidiendo bifurcación; faldellín liso terracota y torso descubierto conforme orden. Laberinto subordinado, polvo leve junto a pezuñas por peso sin inventar resplandor sobrenatural. Colores de pelaje pardo/negro como decisión prudente. Diferente de Pan por escala y anatomía sin flauta, Quirón por dos patas taurinas sin cuerpo equino, Cerbero por único torso bípedo y cabeza taurina. No armas ni amenaza.
+
+Njörd mayor alto de anchura moderada, rostro abierto y barba gris corta, pelo gris barrido por viento, piel clara curtida y ojos azul gris. Tres cuartos hacia mar calmo, brazos bajos abiertos y capa horizontal al viento. Horizonte esencial; corriente de viento y agua que se alisa desde su gesto, luz de agua fría sin aura. Túnica lisa azul gris, pantalón oscuro, capa azul gris y botas simples; capa requerida prevalece sobre límite genérico de dos prendas. Playa baja sin pedestal. Diferente de Poseidón por edad y calma sin tridente, Jasón por brazos bajos sin vellocino/rumbo, Odín por silueta horizontal y barba corta sin cuervos. Colores/provisionalidad de fenómeno a dudas únicas; no hechos mitológicos ni aprobación estética.
+
