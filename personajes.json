@@ -2562,6 +2562,7 @@
   },
   {
     "id": "nike",
+    "imagen": "imagenes/nike.png",
     "nombre": "Nike",
     "mitologia": "griega",
     "titulo": "La victoria alada",
@@ -5911,6 +5912,7 @@
   },
   {
     "id": "nausicaa",
+    "imagen": "imagenes/nausicaa.png",
     "nombre": "Nausícaa",
     "mitologia": "griega",
     "titulo": "La princesa que ayudó a un náufrago",
@@ -6249,6 +6251,7 @@
   },
   {
     "id": "narciso",
+    "imagen": "imagenes/narciso.png",
     "nombre": "Narciso",
     "mitologia": "griega",
     "titulo": "El joven que no podía dejar de mirar su reflejo",
