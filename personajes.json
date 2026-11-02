@@ -3556,7 +3556,8 @@
       "No vuela con sus propias alas, pero venció a un monstruo imposible desde las alturas.",
       "Su valentía es tres veces su magia.",
       "Domó a un caballo alado con una brida de oro para enfrentar a un monstruo combinado."
-    ]
+    ],
+    "imagen": "imagenes/belerofonte.png"
   },
   {
     "id": "pandora",
@@ -5448,7 +5449,8 @@
       "No es nórdica: recibió de un dios el don de conocer lo que va a pasar.",
       "Su astucia, su valentía y su magia son exactamente iguales.",
       "Nadie le creyó jamás, aunque todo lo que anunciaba se cumplía tal cual."
-    ]
+    ],
+    "imagen": "imagenes/casandra.png"
   },
   {
     "id": "circe",
@@ -6488,7 +6490,8 @@
       "El Bifröst nunca formó parte de su cielo.",
       "Su astucia es el doble de su liderazgo.",
       "Un hechizo injusto la convirtió en la osa que vigila el cielo sin ponerse nunca."
-    ]
+    ],
+    "imagen": "imagenes/calisto.png"
   },
   {
     "id": "casiopea",

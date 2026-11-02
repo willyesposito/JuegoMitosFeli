@@ -32,3 +32,13 @@ Todas las decisiones anteriores son de representación visual, no hechos mitoló
 | Balder | Paisaje y cielo más presentes; brillo concentrado en manos, protección universal no explícita | Conservar luz propia y muérdago; azul grisáceo es decisión visual. No inventar un escudo protector como hecho mitológico | imagenes/balder.png |
 
 Inspección visual de archivos realizada; pruebas en las cartas del juego pendientes por indisponibilidad del entorno de ejecución. Ninguna entrada implica aprobación del usuario.
+
+## Tanda 3 — 2026-11-02
+
+| Personaje | Duda/desviación | Decisión provisional | Ruta |
+|---|---|---|---|
+| Belerofonte | Las puntas de ambas alas salen del encuadre; plumas y pelo más detallados que superficie pulida; aparecen nubes violetas y mayor masa de brazos que lo pedido | Conservar el conjunto legible jinete-montura, brida de oro y vuelo; registrar encuadre sin afirmar cumplimiento íntegro. Túnica azul gris es diseño, no hecho mitológico | imagenes/belerofonte.png |
+| Calisto | Pelaje con microdetalle; Osa Mayor representada como siete estrellas unidas, sin validación astronómica de posiciones exactas; fuente cálida frontal secundaria | Conservar osa completa, estable, sin rasgos humanos, mirando el carro estelar. Diagrama ilustrativo, no mapa astronómico preciso; no hay accesorios nuevos | imagenes/calisto.png |
+| Casandra | Figura mayor al 80%, murallas con aspecto almenado genérico y trama de tela detallada; se ve una tira funcional en hombro | Conservar gesto, mirada, figura completa y contexto urbano subordinado; arquitectura es interpretación visual de Troya, no reconstrucción histórica. Sin fenómeno mágico inventado porque la orden prohíbe magia lanzada | imagenes/casandra.png |
+
+Las tres decisiones son provisionales de representación, no aprobación estética del usuario ni datos mitológicos nuevos. No se hicieron reintentos cosméticos. Tanda 2 recuperada: sus tres cartas ya fueron verificadas visualmente en el juego local, sin modificar sus imágenes.

@@ -1,0 +1,46 @@
+{
+  "viewport": "390x844",
+  "prueba": "Cartas reales abiertas mediante click; decode de imagen y captura individual",
+  "results": [
+    {
+      "id": "ariadna",
+      "src": "imagenes/ariadna.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "atalanta",
+      "src": "imagenes/atalanta.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "balder",
+      "src": "imagenes/balder.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    }
+  ],
+  "errors": [],
+  "fecha_reloj_host": "2026-11-02T05:41:19.881Z",
+  "fecha": "2026-11-02T05:43:31Z",
+  "nota_fecha": "Fecha de ejecución contrastada con reloj UTC de herramienta; reloj del host desfasado."
+}
