@@ -639,3 +639,10 @@ Minotauro: carta local abierta con click real e img.decode(), captura local_2326
 ### Njörd — intento 2 pre-registro — 2026-11-03 02:32:43 UTC
 Segunda y última llamada de ejecución prevista, cero reintentos. Presupuesto conservador retiene ahora Medea, Medusa, Midas, Minotauro perdido y recuperación de Minotauro: cinco; Jasón ya fuera después de 02:31:13. Medea sale después de 02:33:48. Margen para Njörd sin superar diez. Reserva propia recuperada vigente; publicado sigue bloqueado, pruebas locales permitidas.
 
+
+Minotauro subido confirmado en 5844724c0eb9ef01c5e9fccb4ef8e783c8b38f47, PNG y captura local idénticos a bytes originales por hash-object. Reserva cerrada en generado/subido/local, publicado pendiente.
+
+### Njörd — resultado intento 2 — 2026-11-03 02:34:12 UTC
+Segunda y última llamada image_gen de ejecución, cero reintentos/rechazos/429. PNG real 1086×1448, completamente decodificable. Rostro mayor, barba gris corta, brazos bajos abiertos, capa horizontal, botas completas y mar calmo presentes. Desviaciones: pelo más largo, microtextura de tela, corriente pasa delante del torso sin disolver silueta; encuadre mayor a 80%, extremo de capa muy cercano al borde. Sin objetos extra reconocibles salvo cintura funcional de tela. Conservar provisionalmente sin cosmética; no aprobación estética. Integración sólo imagen de njord y sw v3.5.30. Prueba local siguiente, publicado sigue pendiente por bloqueo del navegador.
+
+Njörd: prueba local completada con click real e img.decode(), captura local_2326_njord.png abierta e inspeccionada. PNG 1086×1448, caja 352.5×470, cero errores JS/HTTP. Auditoría completa: 85 personajes, 71 referencias existentes y completamente decodificadas, 14 pendientes. Generado/verificado local, subida siguiente; publicado pendiente.

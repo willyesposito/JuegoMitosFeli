@@ -139,3 +139,6 @@ Ruta imagenes/midas.png. Túnica verde petróleo, mesa/cuenco/pan como concreci�
 
 ## Minotauro — recuperación 20261103T022626Z
 Ruta imagenes/minotauro.png. Bytes de intento anterior perdidos antes de subir; nueva generación de recuperación. Pelaje pardo/faldellín terracota son diseño provisional. Desviaciones de resultado: encuadre más cerrado, microtextura y músculos marcados, cielo y luz cálida incidental. Cuernos y pezuñas completos, sin armas ni amenaza. Conservar sin cosmética y sin aprobación estética atribuida.
+
+## Njörd — recuperacion-20261103T022626Z
+Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso son decisiones provisionales basadas en mar/viento de ficha, no atestación histórica. Resultado: pelo más largo, tela con microtextura, extremo de capa cercano al borde, corriente delante de cintura sin borrar figura. Mantener sin variante cosmética ni aprobación estética. Sin tridente, broche, pieles o cuervos.

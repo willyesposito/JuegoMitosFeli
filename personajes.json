@@ -4462,6 +4462,7 @@
   },
   {
     "id": "njord",
+    "imagen": "imagenes/njord.png",
     "nombre": "Njörd",
     "mitologia": "nordica",
     "titulo": "El dios del mar calmo",
