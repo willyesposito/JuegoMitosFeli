@@ -694,3 +694,7 @@ Llamadas nuevas: **DOS**, secuenciales, una recuperación de bytes perdidos y un
 
 Siguientes dos de cola: **orfeo y orion**. Pendientes exactos de generación en prioridad: orfeo, orion, pan, paris, pegaso, pentesilea, poseidon, prometeo, quiron, ratatosk, selene, skadi, thor, tyr. Campaña NO completa; anterior permanece deshabilitada y actual continúa sin ampliar cronograma.
 
+
+
+### Orfeo — intento 1 recuperación — inicio 2026-11-03 07:32:41 UTC
+Pre-registro antes de llamada real. Reserva vigente 046584f, máximo dos llamadas de ejecución, presupuesto conservador con margen; sin generación simultánea.
