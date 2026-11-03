@@ -705,3 +705,5 @@ Orfeo — 2026-11-03 07:35:00 UTC: subido PNG en dfbcdece1dc2d8849321050f72d25ec
 
 ### Orión — intento2 de ejecución — inicio 2026-11-03 07:36:14 UTC
 Pre-registro antes de segunda y última llamada. Una variante sin reintentos. Presupuesto ahora sólo Orfeo perdido03:25:50 y recuperación propia; tras Orión máximo3 en ventana5h. Reserva recuperada vigente; resolución provisional de cinturón oblicuo pecho ya documentada.
+
+Orión: resultado real image_gen 2026-11-03 07:37:21 UTC; PNG real copiado a imagenes/orion.png y decodificado completamente. Preservación inmediata antes de integración; inspección y pruebas pendientes. Dos llamadas consumidas de ejecución, sin reintentos/rechazos/429; tres conservadoras en5h incluyendo Orfeo perdido.
