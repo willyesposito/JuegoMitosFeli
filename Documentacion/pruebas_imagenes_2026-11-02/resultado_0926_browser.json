@@ -1,0 +1,30 @@
+[
+  {
+    "id": "poseidon",
+    "fecha": "2026-11-03T12:36:08.019Z",
+    "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=poseidon",
+    "box": {
+      "h": 470,
+      "w": 352.5
+    },
+    "complete": true,
+    "h": 1448,
+    "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/poseidon.png",
+    "w": 1086,
+    "evidencia": "publicado_0926_poseidon.jpg"
+  },
+  {
+    "id": "prometeo",
+    "fecha": "2026-11-03T12:37:04.466Z",
+    "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=prometeo",
+    "box": {
+      "h": 470,
+      "w": 352.5
+    },
+    "complete": true,
+    "h": 1448,
+    "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/prometeo.png",
+    "w": 1086,
+    "evidencia": "publicado_0926_prometeo.jpg"
+  }
+]
