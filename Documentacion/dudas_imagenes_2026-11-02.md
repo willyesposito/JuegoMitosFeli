@@ -180,3 +180,5 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 - Skadi, Produccion/skadi.md: ropa invernal general se resuelve túnica larga de manga lisa ciruelaoscura+pantalón neutro y botas simples compatiblesesquí,sinpiel/broche/kit nórdico ni equipomoderno; arcoreposo sinflecha/carcaj adicionales. Edad mayor madura porEV7. Nieve/aire desde frenada como fenómeno propio, no poderinventado. Ruta imagenes/skadi.png.
 
 2026-11-03T13:38:07.899861+00:00 Selene imagenes/selene.png: edadvisual joven,extremo de tela cortado,ruedas longitudinales de carro estilizado. Conservar provisionalmente por identidad/conducción lunar legibles en carta local; no cosmética niaprobaciónestética.
+
+2026-11-03T13:41:38.982326+00:00 Skadi imagenes/skadi.png: trenzarecogidaenrodete,sujeciónesquíabrazadera simple algomodernizada, microtexturatela; conservar provisionalmente por acción/equipo completo legible en carta local sinregeneracióncosmética/aprobaciónestética.

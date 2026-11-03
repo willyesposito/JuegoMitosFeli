@@ -4554,6 +4554,7 @@
   },
   {
     "id": "skadi",
+    "imagen": "imagenes/skadi.png",
     "nombre": "Skadi",
     "mitologia": "nordica",
     "titulo": "La giganta de las montañas",
