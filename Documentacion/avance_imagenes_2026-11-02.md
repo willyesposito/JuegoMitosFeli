@@ -2,6 +2,21 @@
 
 
 
+## Recuperación de reservas — recuperacion-20261103T072626Z — 2026-11-03 07:29:18 UTC
+
+HEAD base f195779064bd9c701e2cc152d32b6e245940b30f; árbol completo y personajes reconstruidos: 85 personajes, 71 imágenes referenciadas, Orfeo/Orión sin archivo ni referencia y cero imágenes sueltas. La ejecución anterior dejó sólo reserva: historial visible acredita Orfeo generado 03:25:09–03:25:50 UTC y preparación de prueba local, sin subida ni evidencia preservada; archivo temporal eliminado por mantenimiento. Búsqueda en archivos persistentes después de 03:20 UTC sin resultados. Se recupera reserva de cuatro horas sin commits ni actividad verificable; Orión no registra intento. Tarea anterior confirmada deshabilitada y completada. No reemplazo cosmético: Orfeo requiere recuperar bytes perdidos. Guardar PNG crudo en rama inmediatamente al generar, antes de integrar/probar, para preservar resultado ante interrupciones.
+
+Presupuesto conservador: tres intentos previos retenidos (Minotauro 02:31:59 hasta07:31:59, Njörd02:34:12 hasta07:34:12, Orfeo perdido03:25:50 hasta08:25:50 UTC); margen dos, máximo cinco. No se conocen intentos de otras ejecuciones sin evidencia; no se inventan. Cupo real desconocido.
+
+| Personaje | Ejecución | Inicio UTC | Estado | Ruta |
+|---|---|---|---|---|
+| orfeo | recuperacion-20261103T072626Z | 2026-11-03 07:29:18 UTC | reserva recuperada; intento1 pre-registrado | imagenes/orfeo.png |
+| orion | recuperacion-20261103T072626Z | 2026-11-03 07:29:18 UTC | reserva recuperada; sin intento | imagenes/orion.png |
+
+Preflight interno autorizado revalidado desde órdenes y estilo completos: mismas decisiones de la reserva 03:24:16. Orfeo delgado joven, castaño muy oscuro ondulado, oliva clara y avellana; sentado bajo, lira diagonal y manos activas, túnica azul apagado/sandalias, asiento mínimo; hojas/piedras responden a resonancia de cuerdas sin animales ni notas escritas. Separado de Apolo por intimidad/silueta baja, Dioniso por cierre corporal, Narciso por no reflejo. Orión maduro corpulento muy alto, negro corto áspero, piel castaña media, ojos grises, perfil mirando cielo opuesto a Escorpio; tres luces en banda sencilla oblicua al torso como resolución provisional de cinturón/pecho, maza de madera baja necesaria para cazador, túnica gris rojizo y sandalias, sin arco/escudo/piel de león. Diferente de Atlas por no cargar cielo, Héctor por escala sin escudo, Eneas por quietud. Escorpio pequeño en cielo opuesto sin precisión astronómica atribuida. Decisiones provisionales, no aprobación estética. Dudas en archivo único. Deuda publicada31/57; revisar disponibilidad después de preservar resultados.
+
+
+
 ## Reserva — recuperacion-20261103T032626Z — 2026-11-03 03:24:16 UTC
 
 HEAD base 2babea683c853dfdebe228846ed2ccefefce035e; árbol completo reconstruido, 85 personajes y 71 referencias válidas, sin imágenes sueltas. Orfeo y Orión no tienen archivo ni referencia. Reservas anteriores cerradas, sin commits concurrentes nuevos. Tarea anterior confirmada deshabilitada y último intento completado 15:59:37 UTC del 2/11. Presupuesto conservador cinco previas en ventana: Medusa, Midas, Minotauro perdido, Minotauro recuperado y Njörd; margen dos, máximo siete. Liberaciones antiguas seguras 03:30:37/03:33:48/04:27:35 UTC y nuevas 07:31:59/07:34:12 UTC. No se conoce cuota real.
