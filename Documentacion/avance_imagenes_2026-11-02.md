@@ -882,3 +882,5 @@ Preflight Skadi: mujer madura mayoralta atlética masa6 sinvolumen,rostroangular
 
 ### Selene intento1 — preregistro 2026-11-03T13:34:44.092078+00:00
 Primera llamada nueva siguiente bajo reserva071120e, una variante sinreintento. No comenzar hasta13:34:45Z, cota conservadora entonces9/10 conesta.
+
+Selene resultado 2026-11-03T13:36:36.694729+00:00 — PNG real en imagenes/selene.png, decodificación completa (1086, 1448). Primera llamada nueva sin reintento/rechazo/429. Preservación inmediata antes de integración/gate/local/publicado.
