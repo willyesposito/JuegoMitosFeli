@@ -1,0 +1,34 @@
+{
+  "ejecucion": "recuperacion-20261103T092626Z",
+  "herramienta": "image_gen built-in",
+  "llamadas": [
+    {
+      "id": "pegaso",
+      "inicio_utc": "2026-11-03 09:29:11 UTC",
+      "fin_utc": "2026-11-03 09:30:08 UTC",
+      "commit_png": "556d9b88eb2721404dd5c466520944323157a423",
+      "commit_integracion": "208cecb8376d2b9437989bf150d5482a8eeeb3f9",
+      "prompt": "Ilustración individual vertical 3:4 sin texto ni marco. Fotograma de animación 3D familiar de volumen sólido pulido y materiales simplificados, plumas agrupadas legibles y crin en mechones, ojos equinos expresivos de tamaño moderado. Pegaso, caballo adulto elegante atlético de proporciones equinas creíbles, pelaje blanco marfil, crin gris muy clara, cabeza larga limpia de caballo y cuello arqueado. Sólo el caballo alado, cuerpo completo y cuatro patas visibles recogidas en elevación controlada de diagonal ascendente suave hacia derecha; dos alas grandes abiertas a alturas diferentes con plumas diferenciadas, ambas completas dentro del cuadro y aire entre puntas y bordes. Animal incluyendo alas ocupa 75% del alto, sin picada heroica. Cabeza y nacimiento de ala cercanos y claros. Se eleva sobre un manantial natural pequeño a ras de suelo, pista baja de agua entre hierba; batido de las alas produce arcos blancos translúcidos de aire que nacen de las plumas, curvan hierba y levantan suavemente gotas del manantial, sin envolver el cuerpo. Iluminación lateral fresca de mañana, rebote blanco de las plumas y reflejo turquesa del agua, fondo verde azulado desenfocado mínimo subordinado. Sin jinete ni brida ni silla, sin cuernos ni ropa, sin pedestal ni templo, sin cara de cachorro, sin halo ni runas.",
+      "reintentos": 0,
+      "resultado": "PNG real generado, preservado, inspeccionado e integrado; local y visual publicado comprobados",
+      "nota_inicio": "Registro UTC inmediatamente anterior a llamada real; sin reintentos."
+    },
+    {
+      "id": "pentesilea",
+      "inicio_utc": "2026-11-03 09:32:20 UTC",
+      "fin_utc": "2026-11-03 09:33:21 UTC",
+      "commit_png": "ca7c9edb54b84d7ef1d3e31911a07c37a1742577",
+      "commit_integracion": "8c7d844bd71698ec023934e9000e59860795e8e2",
+      "prompt": "Ilustración individual vertical 3:4 sin texto ni marco. Fotograma de animación 3D familiar, volumen sólido pulido, materiales simplificados sin poros ni trama fotográfica, pelo en mechones y trenzas compactas, ojos expresivos moderados y cejas actuadas. Pentesilea reina de las amazonas: mujer adulta mayor madura de rostro cuadrado firme y cálido, corpulenta atlética fuerte con masa evidente y hombros anchos, piel oliva media, ojos gris oscuro, cabello negro en trenzado corto recogido sin adornos. Figura completa ocupa 75% del alto con aire sobre cabeza y suelo bajo ambos pies. Postura amplia de campo, tres cuartos defensiva mirando atentamente fuera del cuadro hacia derecha, expresión despierta sin amenaza, no combate. Brazo izquierdo sostiene escudo sencillo de amazona liso ligeramente cóncavo de borde recortado semicircular, a un lateral separado del torso para leer rostro y escudo; mano libre baja relajada sin arma. Armadura de campo lisa en placas amplias de bronce mate sobre túnica lisa berenjena apagada, cuerpo completamente vestido y sandalias simples. Un impulso visible de aire sale del borde del escudo adelantado como arco transparente corto, curva sólo polvo y hierba delante del escudo; reflejo cobrizo localizado del metal, nada envuelve cuerpo ni ilumina gratuitamente. Campo raso verde seco de fondo mínimo desenfocado, luz lateral fresca bajo cielo gris suave, sin arquitectura ni simetría de estatua. Sin casco, lanza, espada ni arco, sin emblemas joyas o adornos, sin enemigos ni violencia, sin halo ni runas, sin pedestal.",
+      "reintentos": 0,
+      "resultado": "PNG real generado, preservado, inspeccionado e integrado; local y visual publicado comprobados",
+      "nota_inicio": "Registro UTC inmediatamente anterior a llamada real; sin reintentos."
+    }
+  ],
+  "presupuesto": {
+    "previos": 4,
+    "nuevos": 2,
+    "total_conservador": 6,
+    "ventana_horas": 5
+  }
+}
