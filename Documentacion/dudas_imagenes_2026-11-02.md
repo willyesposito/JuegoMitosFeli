@@ -142,3 +142,5 @@ Ruta imagenes/minotauro.png. Bytes de intento anterior perdidos antes de subir; 
 
 ## Njörd — recuperacion-20261103T022626Z
 Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso son decisiones provisionales basadas en mar/viento de ficha, no atestación histórica. Resultado: pelo más largo, tela con microtextura, extremo de capa cercano al borde, corriente delante de cintura sin borrar figura. Mantener sin variante cosmética ni aprobación estética. Sin tridente, broche, pieles o cuervos.
+
+- 2026-11-03 07:35:00 UTC — Orfeo, imagenes/orfeo.png: encuadre cercano (~90%) y microtextura de tela; conserva pies/rostro/lira legibles, decisión provisional conservar sin regenerar por cosmética. No aprobación estética.

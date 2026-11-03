@@ -3268,6 +3268,7 @@
   },
   {
     "id": "orfeo",
+    "imagen": "imagenes/orfeo.png",
     "nombre": "Orfeo",
     "mitologia": "griega",
     "titulo": "El músico que encantaba al mundo",
