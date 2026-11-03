@@ -1,0 +1,34 @@
+{
+  "pruebas": [
+    {
+      "id": "selene",
+      "fecha": "2026-11-03T13:44:05.154Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=selene",
+      "box": {
+        "h": 470,
+        "w": 352.5
+      },
+      "complete": true,
+      "h": 1448,
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/selene.png",
+      "w": 1086,
+      "evidencia": "publicado_1026_selene.jpg"
+    },
+    {
+      "id": "skadi",
+      "fecha": "2026-11-03T13:45:31.747Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=skadi",
+      "box": {
+        "h": 470,
+        "w": 352.5
+      },
+      "complete": true,
+      "h": 1448,
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/skadi.png",
+      "w": 1086,
+      "evidencia": "publicado_1026_skadi.jpg"
+    }
+  ],
+  "logs_juego": [],
+  "excluidos_extension": 40
+}
