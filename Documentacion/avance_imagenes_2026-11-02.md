@@ -698,3 +698,5 @@ Siguientes dos de cola: **orfeo y orion**. Pendientes exactos de generación en 
 
 ### Orfeo — intento 1 recuperación — inicio 2026-11-03 07:32:41 UTC
 Pre-registro antes de llamada real. Reserva vigente 046584f, máximo dos llamadas de ejecución, presupuesto conservador con margen; sin generación simultánea.
+
+Orfeo: resultado real image_gen 2026-11-03 07:33:54 UTC; PNG copiado a imagenes/orfeo.png, decodificación completa. Se preservan bytes antes de integrar; inspección/gate y prueba local/publicada pendientes. Una llamada nueva, sin reintento.
