@@ -916,3 +916,5 @@ PreflightTyr: madurofuerte seco,rostrocuadrado,pelocortorubiooscuro/barbabreve,p
 
 ### Thor intento1 — preregistro 2026-11-03T14:29:10.442324+00:00
 Reserva a4ec406, primera llamada nueva siguiente. Guardar hora real conclock inmediatamente antes/después; noantes14:30:09UTC. Una variante,sinreintento,7previasconocidas+2inciertas+esta<=10.
+
+Thor resultado 2026-11-03T14:31:38.935994+00:00 — PNGreal copiado a imagenes/thor.png, decodificacióncompleta (1086, 1448). Primera llamada nueva,sinreintento/rechazo/429. Preservacióninmediata antesdeintegración/gate/local/publicado.
