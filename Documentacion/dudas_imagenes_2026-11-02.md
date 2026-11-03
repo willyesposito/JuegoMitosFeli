@@ -182,3 +182,8 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 2026-11-03T13:38:07.899861+00:00 Selene imagenes/selene.png: edadvisual joven,extremo de tela cortado,ruedas longitudinales de carro estilizado. Conservar provisionalmente por identidad/conducción lunar legibles en carta local; no cosmética niaprobaciónestética.
 
 2026-11-03T13:41:38.982326+00:00 Skadi imagenes/skadi.png: trenzarecogidaenrodete,sujeciónesquíabrazadera simple algomodernizada, microtexturatela; conservar provisionalmente por acción/equipo completo legible en carta local sinregeneracióncosmética/aprobaciónestética.
+
+
+### 2026-11-03T14:27:42.091892+00:00 — Thor / Tyr, ejecución142626Z
+- Thor, Produccion/thor.md: firma§4 permitecapa corta o pieles peseinventario§5general; usarcapa corta lisagrafito comoalternativaexpresa,sinpielesniadornos. Túnicaverdebosque,pantalónneutroybotassimples: coloresdecisiónprovisional,nohechosmíticos. Cabeza demartillobloquehierrocortosinrunas,pistasrayos/cabrasambaspresentes. Ruta imagenes/thor.png.
+- Tyr, Produccion/tyr.md: asimetríabrazos sinviolentarmito familiar porposicionesdiferentes antesdeheridanoexplícita; manoofrecidacercademorrocerrado,nodentroboca,sinrepresentarlesión. Cintafina grisplata en curvaimposible comoidentificador, noeslabones; tonosropazulgrissobrio ylobogris como diseño, noatestación. Ruta imagenes/tyr.png.
