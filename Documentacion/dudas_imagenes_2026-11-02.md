@@ -146,3 +146,5 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 - 2026-11-03 07:35:00 UTC — Orfeo, imagenes/orfeo.png: encuadre cercano (~90%) y microtextura de tela; conserva pies/rostro/lira legibles, decisión provisional conservar sin regenerar por cosmética. No aprobación estética.
 
 - 2026-11-03 07:38:26 UTC — Orión, imagenes/orion.png: cinturón vs estrellas pecho superior resuelto en banda lisa oblicua como diseño provisional; figura~90%, musculatura marcada y mirada ligeramente ascendente, conservar sin regenerar cosmética. Sin nueva afirmación mitológica ni aprobación estética.
+
+- 2026-11-03 08:30:16 UTC — Paris, imagenes/paris.png: avatar pide rostro+manzana pero acción exige manzana baja; priorizar acción y figura completa, no acercar fruto a cara ni inventar segundo retrato. Tres diosas condicionales omitidas para jerarquía. Pan, imagenes/pan.png: conservar anatomía humana de orden sin añadir rasgos caprinos; asiento tronco funcional, pastores subordinados autorizados sin animales nuevos. Decisiones de diseño provisionales, no aprobación estética.
