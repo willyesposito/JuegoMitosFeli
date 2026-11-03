@@ -164,3 +164,8 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 - 2026-11-03 10:28:36 UTC — Poseidón, imagenes/poseidon.png: manto al borde, tridente alto~92%, brazo abierto/pose majestuosa y microtexturas; conservar provisionalmente sin regeneración cosmética, figura/pies/tridente/caballo legibles. Sin aprobación estética.
 
 - 2026-11-03 10:31:21 UTC — Prometeo, imagenes/prometeo.png: barba corta no especificada, brazos más definidos que objetivo, pelo ondulado y figura~92%/fuego al borde, microtextura tela. Conservar provisionalmente sin regeneración cosmética, sin aprobación estética ni atestación de rasgos.
+
+
+### 2026-11-03T12:35:23.185159+00:00 — Quirón / Ratatosk, ejecución122626Z
+- Quirón, Produccion/quiron.md: §4 robusto prevalece sobre moderado introductorio; humano anciano de pelo corto gris/piel oliva y equino castaño son elecciones prudentes de diseño donde color no definido, no hechos míticos. Túnica azulgris corta sólo torso; arco docente sin flechas. Magia sin poder añadido: anatomía centauro y capas1–2 de cuerda/aire, estilo§7 permite no inventar capa3. Ruta imagenes/quiron.png.
+- Ratatosk, Produccion/ratatosk.md: pelaje rojizo y vientre neutro como diseño provisional no atestación; águila/dragón condicionales omitidos para conservar ardilla protagonista. Fenómeno desde velocidad mensajera en contactos con tronco, aire/hojas sin resplandor gratuito. Ruta imagenes/ratatosk.png.
