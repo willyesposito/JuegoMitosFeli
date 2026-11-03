@@ -173,3 +173,8 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 2026-11-03T12:41:30.162140+00:00 Quirón imagenes/quiron.png: figura~88% y arcovertical/microtexturas y brazo definido; anatomía/docencia legibles en carta local. Conservar provisionalmente sin cosmética ni aprobación estética.
 
 2026-11-03T12:44:47.137226+00:00 Ratatosk imagenes/ratatosk.png: trepa diagonal y pelaje detallado; figura/cola completas y mensaje por giro/movimiento. Conservar provisionalmente sin regeneración cosmética ni aprobación estética.
+
+
+### 2026-11-03T13:33:52.838327+00:00 — Selene / Skadi, ejecución132626Z
+- Selene, Produccion/selene.md: edad madura vs EV7 entradoenaños se resuelve mayor~55–60 años esbelta; color túnica nofijado ciruelaapagada; telas horizontales desde faldón de misma túnica,sinprenda extra. Carroceleste mágico sinanimales porque inventariocerrado noautoriza tiro animal. Creciente desplazado atrásizquierda sinhalo. Ruta imagenes/selene.png, diseño provisional,nohechomítico.
+- Skadi, Produccion/skadi.md: ropa invernal general se resuelve túnica larga de manga lisa ciruelaoscura+pantalón neutro y botas simples compatiblesesquí,sinpiel/broche/kit nórdico ni equipomoderno; arcoreposo sinflecha/carcaj adicionales. Edad mayor madura porEV7. Nieve/aire desde frenada como fenómeno propio, no poderinventado. Ruta imagenes/skadi.png.
