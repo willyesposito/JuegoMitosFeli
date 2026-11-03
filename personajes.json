@@ -3867,6 +3867,7 @@
   },
   {
     "id": "quiron",
+    "imagen": "imagenes/quiron.png",
     "nombre": "Quirón",
     "mitologia": "griega",
     "titulo": "El centauro sabio",

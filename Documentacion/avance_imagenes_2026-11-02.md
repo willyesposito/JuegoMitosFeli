@@ -848,3 +848,7 @@ Recuperación publicada 2026-11-03 12:37 UTC: Poseidón y Prometeo abiertos real
 Reserva5bdc659, primera llamada nueva siguiente;6previas conocidas+2margen incertidumbre+esta=9 conservador en5h; una variante,sin reintento.
 
 Quirón resultado 2026-11-03T12:39:50.875784+00:00 — PNG real copiado a imagenes/quiron.png, decodificado completo (1086, 1448). Una llamada nueva sin reintento/rechazo; preservación inmediata antes de integración.
+
+Quirón — 2026-11-03T12:41:30.162140+00:00: PNG subido6b47e5363506611dcc53c60397cb3da9341b65c1. Inspección real y local click+img.decode():1086×1448,caja352.5×470,ceroerrores; local_0926_quiron.png abierta. Inventario completo centauro/arco/túnica torso,sin extras; cuatro cascos/cola visibles, docente lateral. Sin omisiones. Desvíos: figura~88% y arco más vertical que diagonal baja; microtextura piel/tela/pelaje y brazo definido, permitido volumen7; no regenerar cosmética. Gate12:3D nofoto/óleo/plano, rostro mayor sin muñeco, masa/hombros autorizados, rostro afeitado/corto gris, fondo suave, fantasía anatómica y cuerda/hojas activas según capas1–2 sin inventar poder, inventario completo, sin aura/halo/runas, expresión amable, luz natural nooro automático. Sin aprobación estética. Integración sólo imagenquiron y swv3.5.39; publicado pendiente.
+### Ratatosk intento2 — inicio 2026-11-03T12:41:30.162140+00:00
+Segunda y última llamada nueva siguiente bajo reserva5bdc659. Una variante,sinreintento;6conocidasprevias+1nueva+2margenincierto+esta=10 conservador en5h.

@@ -169,3 +169,5 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 ### 2026-11-03T12:35:23.185159+00:00 — Quirón / Ratatosk, ejecución122626Z
 - Quirón, Produccion/quiron.md: §4 robusto prevalece sobre moderado introductorio; humano anciano de pelo corto gris/piel oliva y equino castaño son elecciones prudentes de diseño donde color no definido, no hechos míticos. Túnica azulgris corta sólo torso; arco docente sin flechas. Magia sin poder añadido: anatomía centauro y capas1–2 de cuerda/aire, estilo§7 permite no inventar capa3. Ruta imagenes/quiron.png.
 - Ratatosk, Produccion/ratatosk.md: pelaje rojizo y vientre neutro como diseño provisional no atestación; águila/dragón condicionales omitidos para conservar ardilla protagonista. Fenómeno desde velocidad mensajera en contactos con tronco, aire/hojas sin resplandor gratuito. Ruta imagenes/ratatosk.png.
+
+2026-11-03T12:41:30.162140+00:00 Quirón imagenes/quiron.png: figura~88% y arcovertical/microtexturas y brazo definido; anatomía/docencia legibles en carta local. Conservar provisionalmente sin cosmética ni aprobación estética.
