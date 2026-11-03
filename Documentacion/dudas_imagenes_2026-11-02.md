@@ -150,3 +150,5 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 - 2026-11-03 08:30:16 UTC — Paris, imagenes/paris.png: avatar pide rostro+manzana pero acción exige manzana baja; priorizar acción y figura completa, no acercar fruto a cara ni inventar segundo retrato. Tres diosas condicionales omitidas para jerarquía. Pan, imagenes/pan.png: conservar anatomía humana de orden sin añadir rasgos caprinos; asiento tronco funcional, pastores subordinados autorizados sin animales nuevos. Decisiones de diseño provisionales, no aprobación estética.
 
 - 2026-11-03 08:33:04 UTC — Pan, imagenes/pan.png: edad más joven que adulto maduro y ojos grandes, encuadre~85%, microtexturas; decisión provisional conservar sin regeneración cosmética, mantiene identidad/instrumento/pose y carta cargable. No aprobación estética.
+
+- 2026-11-03 08:35:52 UTC — Paris, imagenes/paris.png: encuadre~89%, onda leve del pelo y microtextura tela; manzana baja no entra en avatar junto al rostro. Conservar provisionalmente por lectura de acción y pies completos, sin regenerar cosmética ni atribuir aprobación estética.

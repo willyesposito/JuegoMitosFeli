@@ -6401,6 +6401,7 @@
   },
   {
     "id": "paris",
+    "imagen": "imagenes/paris.png",
     "nombre": "Paris",
     "mitologia": "griega",
     "titulo": "El juez de las tres diosas",
