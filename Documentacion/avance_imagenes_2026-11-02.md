@@ -613,3 +613,20 @@ Preflight preautorizado: Minotauro adulto híbrido enorme, cabeza taurina comple
 
 Njörd mayor alto de anchura moderada, rostro abierto y barba gris corta, pelo gris barrido por viento, piel clara curtida y ojos azul gris. Tres cuartos hacia mar calmo, brazos bajos abiertos y capa horizontal al viento. Horizonte esencial; corriente de viento y agua que se alisa desde su gesto, luz de agua fría sin aura. Túnica lisa azul gris, pantalón oscuro, capa azul gris y botas simples; capa requerida prevalece sobre límite genérico de dos prendas. Playa baja sin pedestal. Diferente de Poseidón por edad y calma sin tridente, Jasón por brazos bajos sin vellocino/rumbo, Odín por silueta horizontal y barba corta sin cuervos. Colores/provisionalidad de fenómeno a dudas únicas; no hechos mitológicos ni aprobación estética.
 
+
+## Recuperación de reserva interrumpida — recuperacion-20261103T022626Z — 2026-11-03 02:30:45 UTC
+
+HEAD remoto 31e6e657521f496c881a2922938a19a40ae65fef; árbol completo y personajes.json reconstruidos: 85 personajes, 69 referencias, sin imágenes sueltas. La reserva de 23:26:17 UTC del 2/11 no publicó resultados. Historial visible acredita un intento Minotauro 23:27:01–23:27:35 UTC y preparación local posterior, pero no commit de imagen. Archivo temporal perdido por mantenimiento de workspace; búsqueda de recuperación en archivos persistentes no encontró el resultado. No se afirma subida/prueba local preservada. Njörd no registra intento. No hay commits desde aquella reserva ni actividad verificable por tres horas; se recuperan ambas reservas sin bloquear indefinidamente. Tarea anterior consultada: deshabilitada y completada 15:59:37 UTC, sin liveness.
+
+Presupuesto a esta reserva: conservar cinco intentos seguros en ventana de cinco horas (Jasón, Medea, Medusa, Midas y Minotauro perdido); Dédalo/Dido y Dioniso/Hestia fuera. Jasón/Medea salen después de 02:31:13/02:33:48 UTC del 3/11. Margen dos llamadas, máximo conservador siete antes de liberaciones. Cupo real desconocido. Nueva generación Minotauro sería recuperación de bytes perdidos, no reemplazo cosmético.
+
+| Personaje | Ejecución | Inicio UTC | Estado | Ruta |
+|---|---|---|---|---|
+| minotauro | recuperacion-20261103T022626Z | 2026-11-03 02:30:45 UTC | reserva recuperada; intento 1 pre-registrado | imagenes/minotauro.png |
+| njord | recuperacion-20261103T022626Z | 2026-11-03 02:30:45 UTC | reserva recuperada; sin intento | imagenes/njord.png |
+
+Preflight autorizado revalidado leyendo órdenes completas y estilo: se conservan las decisiones de reserva 23:26:17. Minotauro toro-humano masivo, cuernos/pezuñas enteros, bifurcación, faldellín terracota, torso descubierto; peso/polvo sin brillo inventado, no armas. Separación Pan/Quirón/Cerbero por anatomía y pose. Njörd mayor de barba gris corta, ojos azul gris, claro curtido, capa horizontal y brazos bajos hacia mar calmo; túnica lisa azul gris, pantalón y botas simples, capa necesaria priorizada sobre límite de prendas. Playa baja, viento/agua en respuesta suave, no tridente ni cuervos; separación Poseidón/Jasón/Odín. No hechos mitológicos inventados ni aprobación estética.
+
+QA publicado: apertura del navegador rechazada por revisión automática debido a límite de uso; indicó reintentar después del 3/11 01:58 AM sin zona horaria explícita. No se intentan vías alternativas para eludir esa revisión. Conservar deuda de 31/57 comprobadas y 26 pendientes; no es evidencia de rotura del sitio. Priorizar integración/local y registrar bloqueo transitorio.
+
+
