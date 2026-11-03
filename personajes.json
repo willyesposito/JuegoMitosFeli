@@ -6575,6 +6575,7 @@
   },
   {
     "id": "orion",
+    "imagen": "imagenes/orion.png",
     "nombre": "Orión",
     "mitologia": "griega",
     "titulo": "El cazador del cielo",
