@@ -1,0 +1,49 @@
+{
+  "ejecucion": "recuperacion-20261103T022626Z",
+  "herramienta": "image_gen incorporada",
+  "intentos": [
+    {
+      "id": "minotauro",
+      "inicio_utc": "2026-11-03 02:31:26 UTC",
+      "resultado_utc": "2026-11-03 02:31:59 UTC",
+      "tipo": "recuperación por pérdida de bytes de intento anterior",
+      "ruta": "imagenes/minotauro.png",
+      "commit": "5844724c0eb9ef01c5e9fccb4ef8e783c8b38f47",
+      "prompt": "Una sola ilustración vertical 3:4 sin texto ni marco. Fotograma de película de animación 3D familiar, formas sólidas pulidas y materiales simplificados, expresividad cálida sin fotografía ni pintura. Minotauro adulto híbrido enorme y pesado: cabeza completa de toro pardo oscuro, hocico ancho, ojos bovinos atentos, dos cuernos largos completos, torso humanoide muy ancho y hombros enormes, ligeramente encorvado; brazos grandes relajados y piernas taurinas con corvejones y pezuñas hendidas, nunca pies humanos. Figura completa ocupa 75% del alto, mucho aire sobre cuernos y suelo bajo ambas pezuñas. Tres cuartos quieto en bifurcación del laberinto mirando hacia un camino para decidir, curioso y concentrado sin agresión. Faldellín liso terracota hasta medio muslo y torso descubierto propio de criatura familiar; sin accesorios. Laberinto de muros bajos de piedra marca dos caminos y queda desenfocado detrás, no oculta piernas. Peso sobrenatural visible por polvo y granitos desplazados alrededor de pezuñas, tela responde a brisa sin inventar brillo. Luz lateral cinematográfica con contraste cálido/frío, escenario subordinado. Anatomía toro-humano y escala distinguen la carta. Sin armas, anillo nasal, joyas, violencia, amenaza, templo, pedestal, aura ni letras."
+    },
+    {
+      "id": "njord",
+      "inicio_utc": "2026-11-03 02:33:39 UTC",
+      "resultado_utc": "2026-11-03 02:34:12 UTC",
+      "tipo": "primera generación",
+      "ruta": "imagenes/njord.png",
+      "commit": "544e3cdd5fb98e3f0804016c698384225ae109be",
+      "prompt": "Una sola ilustración vertical 3:4 sin texto ni marco, carta mitológica de Njörd. Fotograma de cine de animación 3D familiar, volumen sólido pulido, piel y materiales estilizados sin poros ni tela fotográfica, pelo en mechones agrupados, cejas expresivas, anatomía de adulto mayor legible. Hombre mayor alto, cuerpo medio de anchura moderada sin musculatura marcada, rostro abierto y amable con pómulos suaves, barba corta gris, cabello gris barrido por viento, piel clara curtida, ojos azul gris. Figura completa incluyendo botas ocupa 70-75% del alto, mucho aire por arriba y a los lados de la capa, suelo bajo pies. Tres cuartos hacia un mar calmo, brazos bajos abiertos con manos relajadas, quietud receptiva y leve sonrisa atenta; no pose de comandante. Capa lisa azul gris extendida horizontalmente por viento, túnica nórdica lisa azul gris de manga larga, pantalón oscuro sencillo y botas simples de cuero, sin ornamento ni pieles. Playa baja al nivel del mar sin rocas elevadas. Horizonte marino esencial detrás, agua verde azul tranquila y brisa suave empujando capa y pelo; la magia de viento favorable se ve en curvas transparentes de aire que parten cerca de sus manos bajas y acompañan capa hacia el mar, donde pequeñas ondas se alisan dejando una franja de agua serena luminosa por reflejo propio del agua. Efecto discreto pero visible y trazable al dominio del viento/mar, sin envolver cuerpo ni tapar rostro. Luz costera de mañana fría con contraste cinematográfico, fondo marino desenfocado subordinado. Sin tridente ni arma, barcos o animales, cuervos, broches, joyas, runas, halo, aura, templo o pedestal."
+    }
+  ],
+  "llamadas_nuevas": 2,
+  "llamadas_actuales_ventana_conservadora": 5,
+  "maximo_durante_ejecucion": 6,
+  "cupo_real": "desconocido",
+  "gate_12": {
+    "fotografia": "ambos lectura de animación, microtexturas como desviación",
+    "pintura": "no",
+    "plano2d": "no",
+    "muneco": "no; Minotauro geometría masiva autorizada",
+    "musculatura": "Minotauro masa enorme autorizada pero músculos marcados; Njörd moderado",
+    "identidad": "control textual contra pares; no se abrieron imágenes ajenas como referencia",
+    "fondo": "subordinado",
+    "magia": "Minotauro anatomía/peso/polvo sin luz inventada; Njörd viento/mar en respuesta",
+    "inventario": "identificadores y pistas presentes, sin armas/adornos; cintura de tela funcional Njörd",
+    "trazabilidad": "efectos desde peso y viento, Njörd corriente delante de torso sin disolver silueta",
+    "expresion": "curiosidad y calma sin amenaza",
+    "dorado": "luz cálida Minotauro incidental; no oro mágico genérico"
+  },
+  "aceptacion": "provisional de campaña; no aprobación estética",
+  "publicado": {
+    "verificadas_acumuladas": 31,
+    "objetivo": 57,
+    "pruebas_nuevas": 0,
+    "bloqueo": "Revisión automática del navegador rechazó apertura de origen por límite de uso; no se intentan rutas de evasión."
+  }
+}
