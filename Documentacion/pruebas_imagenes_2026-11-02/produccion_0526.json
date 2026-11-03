@@ -1,0 +1,34 @@
+{
+  "ejecucion": "recuperacion-20261103T082626Z",
+  "herramienta": "image_gen built-in",
+  "llamadas": [
+    {
+      "id": "pan",
+      "inicio_utc": "2026-11-03 08:31:20 UTC",
+      "fin_utc": "2026-11-03 08:31:59 UTC",
+      "commit_png": "871508864855698fe0c5868c5d17e266f0a22a78",
+      "commit_integracion": "a8a70740b99c791da83c9430cad368c9899e1bf2",
+      "prompt": "Una sola ilustración vertical 3:4 para carta, sin texto ni marco. Fotograma de animación 3D familiar de volumen sólido pulido, ojos expresivos y cejas actuadas, materiales estilizados lisos sin poros ni trama fotográfica, cabello en mechones agrupados. Pan adulto maduro, bajo y compacto, contextura media atlética sin músculos definidos, hombros medios; rostro ancho vivaz, cabello castaño muy oscuro rizado abundante, piel canela y ojos ámbar. Figura humana completa con ambas sandalias, sentada lateral y baja en un tronco sencillo del bosque, ocupa 75% del alto con aire arriba y suelo debajo. Toca una flauta de varias cañas ordenadas de modo que su borde superior sea horizontal, ante la boca y separada del perfil para leer rostro y cañas; manos activas, expresión alegre concentrada. Túnica griega lisa verde grisácea y sandalias simples de cuero. Ondas translúcidas verde caña nacen del soplo entre los tubos y recorren sólo el aire delante del instrumento, inclinan hojas y hierbas del bosque lateral; dos siluetas diminutas de pastores humanos completamente vestidos, distantes y desenfocados, escuchan junto a vegetación. Luz lateral filtrada fresca y profundidad de campo con fondo suave subordinado. Anatomía enteramente humana, pies humanos; sin cuernos ni patas de cabra, sin animales acompañantes, sin notas musicales ni runas, sin halo ni aura corporal, sin templo o pedestal.",
+      "reintentos": 0,
+      "resultado": "PNG generado, preservado, inspeccionado, integrado, local y visual publicado comprobados",
+      "nota_inicio": "Registro UTC inmediatamente anterior a llamada real; sin reintentos."
+    },
+    {
+      "id": "paris",
+      "inicio_utc": "2026-11-03 08:33:56 UTC",
+      "fin_utc": "2026-11-03 08:34:44 UTC",
+      "commit_png": "6ae125b48f872bb58c51cbd7e9e412f8583748cb",
+      "commit_integracion": "adc698625b5d74b066f7268693b80c569c1f8f0d",
+      "prompt": "Una sola ilustración vertical 3:4 para carta, sin texto ni marco. Fotograma de animación 3D familiar, formas sólidas pulidas, materiales estilizados sin poros ni textura fotográfica, pelo en mechones, ojos expresivos moderados y cejas actuadas; cabeza adulta de proporción creíble. Paris adulto joven de cuerpo delgado liviano, hombros medios sin músculos marcados, rostro oval de expresión indecisa despierta; cabello castaño medio lacio corto-medio, piel oliva media y ojos verde gris. Figura completa ocupa 75% del alto, aire sobre cabeza y suelo bajo ambas sandalias. De pie tres cuartos en un claro de bosque con camino sencillo que se bifurca: torso orientado a derecha mientras cabeza mira lateralmente a izquierda, duda cálida de elección, sin victoria ni amenaza. Una mano sostiene UNA manzana de oro baja junto a la cadera, extendida sólo lo suficiente para que el fruto se vea aislado del torso; mano libre relajada a su lado. La manzana emite luz propia dorada localizada y pequeñas refracciones curvadas de aire luminoso nacidas en su superficie, iluminan dedos y borde de tela cercano sin cubrir cara ni envolver cuerpo. Túnica griega lisa azul pizarra y sandalias sencillas de cuero. Fondo de vegetación suave desenfocado, bifurcación subordinada al personaje y fruto; luz lateral fresca de mañana y rebote cálido sólo del oro. Sin figuras adicionales, sin armas ni corona ni joyas, sin arquitectura ni pedestal, sin halo ni runas.",
+      "reintentos": 0,
+      "resultado": "PNG generado, preservado, inspeccionado, integrado, local y visual publicado comprobados",
+      "nota_inicio": "Registro UTC inmediatamente anterior a llamada real; sin reintentos."
+    }
+  ],
+  "presupuesto": {
+    "previos": 2,
+    "nuevos": 2,
+    "total_conservador": 4,
+    "ventana_horas": 5
+  }
+}
