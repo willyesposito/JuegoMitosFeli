@@ -26,5 +26,33 @@
     "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/prometeo.png",
     "w": 1086,
     "evidencia": "publicado_0926_prometeo.jpg"
+  },
+  {
+    "id": "eneas",
+    "fecha": "2026-11-03T12:45:33.648Z",
+    "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=eneas",
+    "box": {
+      "h": 470,
+      "w": 352.5
+    },
+    "complete": true,
+    "h": 1448,
+    "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/eneas.png",
+    "w": 1086,
+    "evidencia": "publicado_0926_eneas.jpg"
+  },
+  {
+    "id": "narciso",
+    "fecha": "2026-11-03T12:47:06.376Z",
+    "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=narciso",
+    "box": {
+      "h": 470,
+      "w": 352.5
+    },
+    "complete": true,
+    "h": 1448,
+    "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/narciso.png",
+    "w": 1086,
+    "evidencia": "publicado_0926_narciso.jpg"
   }
 ]
