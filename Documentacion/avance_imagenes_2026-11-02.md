@@ -843,3 +843,6 @@ Preflight Ratatosk: ardilla pequeña adulta esbelta cabeza pequeña, cola enorme
 Órdenes completas/estilo/método leídos; operación CLAUDE/MEMORY revalidada sin cambios. Autorización explícita sustituye espera OK. Decisiones provisionales en archivo único, sin atribuir aprobación estética.
 
 Recuperación publicada 2026-11-03 12:37 UTC: Poseidón y Prometeo abiertos realmente mediante juego Oráculo y Ver su carta; imagen complete=true1086×1448,caja352.5×470, capturas publicado_0926_poseidon.jpg/prometeo.jpg inspeccionadas y resultado_0926_browser.json. Subidas/integraciones previas152696bc/ff226441 y8a8e0579/4e1df779; reservas102626 cerradas sin regeneración. Acumulado49/57; Eneas/Narciso aún por recuperar, además de seis faltantes.
+
+### Quirón intento1 — inicio 2026-11-03T12:38:13.160763+00:00
+Reserva5bdc659, primera llamada nueva siguiente;6previas conocidas+2margen incertidumbre+esta=9 conservador en5h; una variante,sin reintento.
