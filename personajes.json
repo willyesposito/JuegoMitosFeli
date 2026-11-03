@@ -3789,6 +3789,7 @@
   },
   {
     "id": "pegaso",
+    "imagen": "imagenes/pegaso.png",
     "nombre": "Pegaso",
     "mitologia": "griega",
     "titulo": "El caballo alado",
