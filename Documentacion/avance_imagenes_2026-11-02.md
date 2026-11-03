@@ -846,3 +846,5 @@ Recuperación publicada 2026-11-03 12:37 UTC: Poseidón y Prometeo abiertos real
 
 ### Quirón intento1 — inicio 2026-11-03T12:38:13.160763+00:00
 Reserva5bdc659, primera llamada nueva siguiente;6previas conocidas+2margen incertidumbre+esta=9 conservador en5h; una variante,sin reintento.
+
+Quirón resultado 2026-11-03T12:39:50.875784+00:00 — PNG real copiado a imagenes/quiron.png, decodificado completo (1086, 1448). Una llamada nueva sin reintento/rechazo; preservación inmediata antes de integración.
