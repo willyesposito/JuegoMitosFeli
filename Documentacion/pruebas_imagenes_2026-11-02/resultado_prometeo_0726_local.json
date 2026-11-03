@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-11-03T10:31:00.946Z",
+  "viewport": "390x844",
+  "prueba": "Cartas reales abiertas mediante click; decode de imagen y captura individual",
+  "results": [
+    {
+      "id": "prometeo",
+      "src": "imagenes/prometeo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    }
+  ],
+  "errors": []
+}

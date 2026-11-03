@@ -2902,6 +2902,7 @@
   },
   {
     "id": "prometeo",
+    "imagen": "imagenes/prometeo.png",
     "nombre": "Prometeo",
     "mitologia": "griega",
     "titulo": "El titán que regaló el fuego",
