@@ -148,3 +148,5 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 - 2026-11-03 07:38:26 UTC — Orión, imagenes/orion.png: cinturón vs estrellas pecho superior resuelto en banda lisa oblicua como diseño provisional; figura~90%, musculatura marcada y mirada ligeramente ascendente, conservar sin regenerar cosmética. Sin nueva afirmación mitológica ni aprobación estética.
 
 - 2026-11-03 08:30:16 UTC — Paris, imagenes/paris.png: avatar pide rostro+manzana pero acción exige manzana baja; priorizar acción y figura completa, no acercar fruto a cara ni inventar segundo retrato. Tres diosas condicionales omitidas para jerarquía. Pan, imagenes/pan.png: conservar anatomía humana de orden sin añadir rasgos caprinos; asiento tronco funcional, pastores subordinados autorizados sin animales nuevos. Decisiones de diseño provisionales, no aprobación estética.
+
+- 2026-11-03 08:33:04 UTC — Pan, imagenes/pan.png: edad más joven que adulto maduro y ojos grandes, encuadre~85%, microtexturas; decisión provisional conservar sin regeneración cosmética, mantiene identidad/instrumento/pose y carta cargable. No aprobación estética.
