@@ -4790,6 +4790,7 @@
   },
   {
     "id": "ratatosk",
+    "imagen": "imagenes/ratatosk.png",
     "nombre": "Ratatosk",
     "mitologia": "nordica",
     "titulo": "La ardilla mensajera",

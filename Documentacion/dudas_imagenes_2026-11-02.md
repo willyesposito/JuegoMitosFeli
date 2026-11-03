@@ -171,3 +171,5 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 - Ratatosk, Produccion/ratatosk.md: pelaje rojizo y vientre neutro como diseño provisional no atestación; águila/dragón condicionales omitidos para conservar ardilla protagonista. Fenómeno desde velocidad mensajera en contactos con tronco, aire/hojas sin resplandor gratuito. Ruta imagenes/ratatosk.png.
 
 2026-11-03T12:41:30.162140+00:00 Quirón imagenes/quiron.png: figura~88% y arcovertical/microtexturas y brazo definido; anatomía/docencia legibles en carta local. Conservar provisionalmente sin cosmética ni aprobación estética.
+
+2026-11-03T12:44:47.137226+00:00 Ratatosk imagenes/ratatosk.png: trepa diagonal y pelaje detallado; figura/cola completas y mensaje por giro/movimiento. Conservar provisionalmente sin regeneración cosmética ni aprobación estética.
