@@ -136,3 +136,6 @@ Ruta imagenes/medusa.png. Túnica berenjena, serpientes verde apagado y efecto m
 
 ## Midas — recuperacion-20261102T222626Z
 Ruta imagenes/midas.png. Túnica verde petróleo, mesa/cuenco/pan como concreción funcional de comida/agua autorizadas; no dato histórico. Resultado: dedos también dorados, pie parcialmente oculto por mesa, barba algo abundante, figura grande y microtexturas; objetos incidentales de fondo ilegibles. Conservar sin cosmética ni aprobación estética atribuida; transformación parcial de varios objetos inequívoca.
+
+## Minotauro — recuperación 20261103T022626Z
+Ruta imagenes/minotauro.png. Bytes de intento anterior perdidos antes de subir; nueva generación de recuperación. Pelaje pardo/faldellín terracota son diseño provisional. Desviaciones de resultado: encuadre más cerrado, microtextura y músculos marcados, cielo y luz cálida incidental. Cuernos y pezuñas completos, sin armas ni amenaza. Conservar sin cosmética y sin aprobación estética atribuida.

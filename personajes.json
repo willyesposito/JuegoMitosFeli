@@ -4216,6 +4216,7 @@
   },
   {
     "id": "minotauro",
+    "imagen": "imagenes/minotauro.png",
     "nombre": "Minotauro",
     "mitologia": "griega",
     "titulo": "El habitante del laberinto",

@@ -630,3 +630,12 @@ Preflight autorizado revalidado leyendo órdenes completas y estilo: se conserva
 QA publicado: apertura del navegador rechazada por revisión automática debido a límite de uso; indicó reintentar después del 3/11 01:58 AM sin zona horaria explícita. No se intentan vías alternativas para eludir esa revisión. Conservar deuda de 31/57 comprobadas y 26 pendientes; no es evidencia de rotura del sitio. Priorizar integración/local y registrar bloqueo transitorio.
 
 
+
+### Minotauro — recuperación de bytes, resultado — 2026-11-03 02:31:59 UTC
+Una llamada image_gen nueva de recuperación, no variante cosmética, sin rechazo/429. PNG real completo 1086×1448. Inspección: cabeza de toro, ambos cuernos, torso muy ancho, piernas taurinas y pezuñas, bifurcación y peso/polvo presentes. Desviaciones: figura mayor a 80%, microtextura del pelaje, definición muscular marcada aunque masa enorme autorizada, cielo/luz de tarde incidentales. Se conserva provisionalmente, sin aprobación estética. Prueba local siguiente, publicado bloqueado por revisión automática de navegador.
+
+Minotauro: carta local abierta con click real e img.decode(), captura local_2326_minotauro.png abierta e inspeccionada. 1086×1448 en caja 352.5×470, cero errores JS/HTTP. Generado/verificado local; subida siguiente. Hora real herramienta inicio 2026-11-03 02:31:26 UTC y resultado 02:31:59 UTC.
+
+### Njörd — intento 2 pre-registro — 2026-11-03 02:32:43 UTC
+Segunda y última llamada de ejecución prevista, cero reintentos. Presupuesto conservador retiene ahora Medea, Medusa, Midas, Minotauro perdido y recuperación de Minotauro: cinco; Jasón ya fuera después de 02:31:13. Medea sale después de 02:33:48. Margen para Njörd sin superar diez. Reserva propia recuperada vigente; publicado sigue bloqueado, pruebas locales permitidas.
+
