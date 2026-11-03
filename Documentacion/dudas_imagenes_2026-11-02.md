@@ -160,3 +160,5 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 - 2026-11-03 09:34:40 UTC — Pentesilea, imagenes/pentesilea.png: encuadre~88%,microtextura tela/metal, postura másfrontal y trenzadocompacto; conservaciónprovisional sinregenerarcosmética. Escudo resuelto comobordecreciente liso,sin dato mitológicoatribuido. Sinaprobaciónestética.
 
 - 2026-11-03 10:25:55 UTC — Poseidón, imagenes/poseidon.png: barba no fijada; resolver rostro afeitado provisional, manto autorizado por firma pese inventario genérico; caballo natural pequeño en playa subordinado sin rasgos inventados. Prometeo, imagenes/prometeo.png: fuego entregado sin portador exacto; llama separada sobre palma por fenómeno autorizado, manto corto de firma conservado, cocina/herramientas condicionales innecesarias. Decisiones visuales prudentes, sin hechos míticos nuevos ni aprobación estética.
+
+- 2026-11-03 10:28:36 UTC — Poseidón, imagenes/poseidon.png: manto al borde, tridente alto~92%, brazo abierto/pose majestuosa y microtexturas; conservar provisionalmente sin regeneración cosmética, figura/pies/tridente/caballo legibles. Sin aprobación estética.

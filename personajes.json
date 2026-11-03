@@ -1548,6 +1548,7 @@
   },
   {
     "id": "poseidon",
+    "imagen": "imagenes/poseidon.png",
     "nombre": "Poseidón",
     "mitologia": "griega",
     "titulo": "El señor del mar",
