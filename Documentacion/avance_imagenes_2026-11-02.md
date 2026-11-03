@@ -1,5 +1,22 @@
 # Avance de imágenes — 2026-11-02
 
+
+
+## Reserva — recuperacion-20261103T032626Z — 2026-11-03 03:24:16 UTC
+
+HEAD base 2babea683c853dfdebe228846ed2ccefefce035e; árbol completo reconstruido, 85 personajes y 71 referencias válidas, sin imágenes sueltas. Orfeo y Orión no tienen archivo ni referencia. Reservas anteriores cerradas, sin commits concurrentes nuevos. Tarea anterior confirmada deshabilitada y último intento completado 15:59:37 UTC del 2/11. Presupuesto conservador cinco previas en ventana: Medusa, Midas, Minotauro perdido, Minotauro recuperado y Njörd; margen dos, máximo siete. Liberaciones antiguas seguras 03:30:37/03:33:48/04:27:35 UTC y nuevas 07:31:59/07:34:12 UTC. No se conoce cuota real.
+
+| Personaje | Ejecución | Inicio UTC | Estado | Ruta |
+|---|---|---|---|---|
+| orfeo | recuperacion-20261103T032626Z | 2026-11-03 03:24:16 UTC | reservado; intento 1 pre-registrado | imagenes/orfeo.png |
+| orion | recuperacion-20261103T032626Z | 2026-11-03 03:24:16 UTC | reservado; sin intento | imagenes/orion.png |
+
+Preflight interno preautorizado: Orfeo adulto joven delgado y hombros estrechos, oliva clara, avellana, pelo castaño muy oscuro medio ondulado, rostro oval suave sin redondez de muñeco. Sentado tres cuartos bajo tocando lira amplia diagonal con manos finas activas, túnica lisa azul apagado y sandalias. Asiento simple funcional como resolución de sentado; claro íntimo y piedras/hojas responden a vibración de cuerdas sin agregar animales. Magia de resonancia cálida de madera, sin notas escritas. Separado de Apolo por pose baja/intimidad, Dioniso por cierre corporal/sin escena teatral, Narciso por manos en lira sin reflejo. Color/asiento decisiones provisionales, no canon histórico.
+
+Orión adulto maduro corpulento alto de escala sobrehumana, rostro ancho, negro corto áspero, piel castaña media y ojos grises. Perfil tres cuartos lateral mirando cielo opuesto a pequeño Escorpio, cinturón de tres luces a la parte alta del torso. Se resuelve contradicción entre cinturón anatómico y pecho con banda sencilla oblicua que porta tres estrellas visibles; decisión provisional de diseño. Maza simple de madera baja junto al muslo necesaria para leer cazador sin competir con estrellas; no arco/piel de león. Túnica lisa gris rojizo y sandalias, suelo bajo sin pedestal. Cielo nocturno subordinado y efecto de tres luces que ilumina tela/mano, sin galaxias ni runas. Escorpio se representa pequeño e indirecto en cielo opuesto, sin exactitud astronómica atribuida. Diferente de Atlas por no cargar bóveda, Héctor por escala/gesto sin escudo y Eneas por quietud sin avance. Dudas en archivo único.
+
+Publicado: se conserva deuda 31/57 y 26 pendientes. Bloqueo temporal de navegador por revisión automática de uso registrado en ejecución anterior; no hay señal de resolución y no se intenta evadirlo. Pruebas locales/remotas de integración independientes continúan.
+
 ## Tanda 1 — INCOMPLETA
 
 Tres llamadas de generación, cero reintentos. No se modificaron personajes.json ni historias. No hay imágenes nuevas subidas ni pruebas visuales del juego realizadas.
