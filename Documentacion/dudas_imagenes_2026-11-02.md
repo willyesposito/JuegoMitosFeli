@@ -178,3 +178,5 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 ### 2026-11-03T13:33:52.838327+00:00 — Selene / Skadi, ejecución132626Z
 - Selene, Produccion/selene.md: edad madura vs EV7 entradoenaños se resuelve mayor~55–60 años esbelta; color túnica nofijado ciruelaapagada; telas horizontales desde faldón de misma túnica,sinprenda extra. Carroceleste mágico sinanimales porque inventariocerrado noautoriza tiro animal. Creciente desplazado atrásizquierda sinhalo. Ruta imagenes/selene.png, diseño provisional,nohechomítico.
 - Skadi, Produccion/skadi.md: ropa invernal general se resuelve túnica larga de manga lisa ciruelaoscura+pantalón neutro y botas simples compatiblesesquí,sinpiel/broche/kit nórdico ni equipomoderno; arcoreposo sinflecha/carcaj adicionales. Edad mayor madura porEV7. Nieve/aire desde frenada como fenómeno propio, no poderinventado. Ruta imagenes/skadi.png.
+
+2026-11-03T13:38:07.899861+00:00 Selene imagenes/selene.png: edadvisual joven,extremo de tela cortado,ruedas longitudinales de carro estilizado. Conservar provisionalmente por identidad/conducción lunar legibles en carta local; no cosmética niaprobaciónestética.

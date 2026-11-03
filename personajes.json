@@ -2768,6 +2768,7 @@
   },
   {
     "id": "selene",
+    "imagen": "imagenes/selene.png",
     "nombre": "Selene",
     "mitologia": "griega",
     "titulo": "La diosa que conduce la luna",
