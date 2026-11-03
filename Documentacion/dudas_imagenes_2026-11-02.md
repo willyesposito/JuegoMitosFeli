@@ -152,3 +152,5 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 - 2026-11-03 08:33:04 UTC — Pan, imagenes/pan.png: edad más joven que adulto maduro y ojos grandes, encuadre~85%, microtexturas; decisión provisional conservar sin regeneración cosmética, mantiene identidad/instrumento/pose y carta cargable. No aprobación estética.
 
 - 2026-11-03 08:35:52 UTC — Paris, imagenes/paris.png: encuadre~89%, onda leve del pelo y microtextura tela; manzana baja no entra en avatar junto al rostro. Conservar provisionalmente por lectura de acción y pies completos, sin regenerar cosmética ni atribuir aprobación estética.
+
+- 2026-11-03 09:28:27 UTC — Pegaso, imagenes/pegaso.png: color equino no fijado en orden; blanco marfil/crin grisclara como decisión visual provisional, sin atestación atribuida. Pentesilea, imagenes/pentesilea.png: escudo/armadura sin geometría concreta y edad adulta madura vs entrado en años; resolver mayor madura corpulenta, escudo recortado sencillo y placas lisas funcionales sin iconos ni adornos. Fenómeno de defensa como aire/polvo que responde, sin nuevo hecho mítico. No aprobación estética.
