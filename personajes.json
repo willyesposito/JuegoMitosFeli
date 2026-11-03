@@ -6335,6 +6335,7 @@
   },
   {
     "id": "pentesilea",
+    "imagen": "imagenes/pentesilea.png",
     "nombre": "Pentesilea",
     "mitologia": "griega",
     "titulo": "La reina guerrera de las amazonas",
