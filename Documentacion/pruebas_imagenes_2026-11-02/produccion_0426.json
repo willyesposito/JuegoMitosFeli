@@ -1,0 +1,37 @@
+{
+  "ejecucion": "recuperacion-20261103T072626Z",
+  "herramienta": "image_gen built-in",
+  "llamadas": [
+    {
+      "id": "orfeo",
+      "inicio_utc": "2026-11-03 07:32:41 UTC",
+      "fin_utc": "2026-11-03 07:33:54 UTC",
+      "prompt": "Una sola ilustración vertical 3:4 sin texto ni marco. Fotograma de cine de animación 3D familiar, volumen sólido pulido, materiales simplificados sin poros ni trama fotográfica, cabello en mechones agrupados, ojos expresivos y cejas actuadas, proporciones moderadas sin muñeco. Orfeo adulto joven delgado y liviano, hombros estrechos, rostro oval suave de mandíbula limpia, piel oliva clara, ojos avellana, cabello castaño muy oscuro de longitud media con ondas marcadas. Figura completa con ambas sandalias ocupa 70-75% de altura, aire sobre cabeza y suelo bajo pies. Sentado tres cuartos bajo sobre asiento sencillo de madera, hombros relajados, ambas manos finas tocando una lira amplia de madera cruzada en diagonal baja. Mira cuerdas con concentración cálida, pose íntima y contenida. Túnica griega lisa azul apagado sin adornos y sandalias simples de cuero. Vibraciones mágicas visibles nacen de las cuerdas de la lira como ondas transparentes color madera cálida, iluminan apenas dedos y borde de túnica; hojas y pequeñas piedras del suelo se orientan y algunas se levantan suavemente hacia la música, fenómeno localizado sin envolver cuerpo. Claro íntimo tranquilo con vegetación muy sencilla y fondo desenfocado subordinado; luz lateral fresca filtrada y rebote cálido sólo del instrumento. Sin animales ni figuras extra, sin corona, joyas, templo, pedestal, notas musicales dibujadas, letras, runas o halo.",
+      "resultado": "PNG real preservado, inspeccionado, integrado, prueba local y visual publicada completadas",
+      "reintento": false,
+      "commit_png": "dfbcdece1dc2d8849321050f72d25ec5fda9edc3",
+      "inicio_es": "fecha UTC del preregistro anterior a llamada; incluye intervalo de commit previo"
+    },
+    {
+      "id": "orion",
+      "inicio_utc": "2026-11-03 07:36:14 UTC",
+      "fin_utc": "2026-11-03 07:37:21 UTC",
+      "prompt": "Una ilustración individual vertical 3:4 para carta familiar, sin texto ni marco. Fotograma de animación 3D de volúmenes sólidos estilizados pulidos, ojos expresivos cejas actuadas sin proporciones de muñeco, materiales simplificados sin poros ni trama fotográfica. Orión adulto maduro gigante claramente sobrehumano, muy alto de cuerpo largo corpulento con hombros anchos, rostro ancho y mandíbula marcada, piel castaña media, ojos grises y cabello negro corto áspero en mechones. Figura completa con ambas sandalias, ocupa 75% de altura con aire arriba y suelo visible debajo. Está quieto de perfil lateral, cuerpo vertical y mirada concentrada cálida horizontal hacia cielo a izquierda, sin cazar activamente. Túnica griega lisa gris rojiza y sandalias sencillas de cuero. Cinturón funcional de tela lisa sube oblicuo desde cintura hasta pecho superior: sobre esa misma banda EXACTAMENTE TRES puntos de luz estelar blanco azulada alineados, separados del torso por su brillo, identificador inequívoco, iluminan realmente tela y mano cercana con pequeñas refracciones que nacen sólo de esos tres puntos. Una mano baja sostiene una maza de madera sencilla en reposo junto al muslo, no amenaza; otra relajada, sin escudo ni arco ni espada. Noche sobre llanura de hierba baja, una escala de vegetación pequeña sugiere su enormidad, suelo plano sin pedestal. Cielo nocturno profundo ocupa aire delante de mirada, pequeño trazado distante de Escorpio arriba a derecha detrás del personaje en dirección opuesta a su mirada, sin etiquetas ni pretensión de mapa astronómico exacto. Fondo con profundidad de campo menos nítido y contrastado que rostro y tres luces; iluminación lateral azul noche y rebote frío de tres estrellas. No bóveda sostenida ni carga, no piel de león, joyas, broches, adornos, runas, aura corporal, halo o chispas genéricas. Magia localizada exclusivamente en tres luces del cinturón.",
+      "resultado": "PNG real preservado, inspeccionado, integrado, prueba local y visual publicada completadas",
+      "reintento": false,
+      "commit_png": "17b377a603568bd08100186d6875392597c6c750",
+      "inicio_es": "fecha UTC del preregistro anterior a llamada; incluye intervalo de commit previo"
+    }
+  ],
+  "presupuesto": {
+    "nuevas": 2,
+    "anteriores_en_ventana": [
+      {
+        "id": "orfeo perdido",
+        "fin_utc": "2026-11-03 03:25:50 UTC",
+        "retener_hasta": "2026-11-03 08:25:50 UTC"
+      }
+    ],
+    "conservador_actual": 3
+  }
+}
