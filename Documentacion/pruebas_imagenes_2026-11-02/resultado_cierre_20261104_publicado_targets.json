@@ -1,0 +1,41 @@
+{
+  "fecha": "2026-11-04T11:01:01.260Z",
+  "viewport": "390x844",
+  "base": "https://willyesposito.github.io/JuegoMitosFeli/",
+  "prueba": "Cartas reales abiertas mediante click e img.decode(); capturas de Thor/Tyr. Perfil sintético en contexto aislado, sin modificar datos del usuario.",
+  "results": [
+    {
+      "id": "thor",
+      "fecha": "2026-11-04T11:00:58.394Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/thor.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      },
+      "evidencia": "publicado_cierre_20261104_thor.jpg",
+      "sha256_captura": "460fb003df06316ef19ce5ec5182e65bff6eea3860de8f122a32fed65242db6b"
+    },
+    {
+      "id": "tyr",
+      "fecha": "2026-11-04T11:01:00.112Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/tyr.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      },
+      "evidencia": "publicado_cierre_20261104_tyr.jpg",
+      "sha256_captura": "b57dc6dd2a0178014aba46b70f82d3d470b16f38e7b68ba7fb35e63eab4de2fc"
+    }
+  ],
+  "errors": []
+}

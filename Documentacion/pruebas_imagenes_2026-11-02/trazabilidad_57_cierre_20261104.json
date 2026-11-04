@@ -1,0 +1,1305 @@
+{
+  "fecha_utc": "2026-11-04T11:01:35.760418+00:00",
+  "objetivo_57": [
+    "andromeda",
+    "apolo",
+    "aquiles",
+    "aracne",
+    "ares",
+    "ariadna",
+    "atalanta",
+    "balder",
+    "belerofonte",
+    "calisto",
+    "casandra",
+    "casiopea",
+    "castor_polux",
+    "cerbero",
+    "circe",
+    "cronos",
+    "dafne",
+    "dedalo",
+    "dido",
+    "dioniso",
+    "eco",
+    "edipo",
+    "eneas",
+    "eros",
+    "esfinge",
+    "fenix",
+    "fenrir",
+    "frigg",
+    "hector",
+    "hefesto",
+    "hel",
+    "helios",
+    "hestia",
+    "jason",
+    "medea",
+    "medusa",
+    "midas",
+    "minotauro",
+    "narciso",
+    "nausicaa",
+    "nike",
+    "njord",
+    "odiseo",
+    "orfeo",
+    "orion",
+    "pan",
+    "paris",
+    "pegaso",
+    "pentesilea",
+    "poseidon",
+    "prometeo",
+    "quiron",
+    "ratatosk",
+    "selene",
+    "skadi",
+    "thor",
+    "tyr"
+  ],
+  "verificadas_con_evidencia": [
+    {
+      "id": "odiseo",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1326.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1326_odiseo.jpg",
+      "sha256_captura": "550dfc90ace79513e46cb62418effe66753ceccf4b16d8e6309a83846e1d3598",
+      "fecha_registro": "2026-11-02T16:34:49Z",
+      "prueba_original": {
+        "id": "odiseo",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/odiseo.png",
+        "imagen_completa": true,
+        "natural": [
+          1086,
+          1448
+        ],
+        "caja_css": [
+          352.5,
+          470
+        ],
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1326_odiseo.jpg",
+        "captura_sha256": "550dfc90ace79513e46cb62418effe66753ceccf4b16d8e6309a83846e1d3598",
+        "revision_visual": "carta abierta mediante click real; figura/identificador visibles; sin recorte CSS adicional; Fénix conserva el recorte original de punta de ala ya documentado"
+      }
+    },
+    {
+      "id": "apolo",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1326.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1326_apolo.jpg",
+      "sha256_captura": "ee3fd9b90d0bdf4e42d4f85b751403394d516dc4ba3c9322759306947547342d",
+      "fecha_registro": "2026-11-02T16:34:49Z",
+      "prueba_original": {
+        "id": "apolo",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/apolo.png",
+        "imagen_completa": true,
+        "natural": [
+          1086,
+          1448
+        ],
+        "caja_css": [
+          352.5,
+          470
+        ],
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1326_apolo.jpg",
+        "captura_sha256": "ee3fd9b90d0bdf4e42d4f85b751403394d516dc4ba3c9322759306947547342d",
+        "revision_visual": "carta abierta mediante click real; figura/identificador visibles; sin recorte CSS adicional; Fénix conserva el recorte original de punta de ala ya documentado"
+      }
+    },
+    {
+      "id": "ares",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1326.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1326_ares.jpg",
+      "sha256_captura": "41f99fd78539c9dadcea8cca14d9ba9c5f2f89a4959bee11025fa7f5c5b98796",
+      "fecha_registro": "2026-11-02T16:34:49Z",
+      "prueba_original": {
+        "id": "ares",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/ares.png",
+        "imagen_completa": true,
+        "natural": [
+          1086,
+          1448
+        ],
+        "caja_css": [
+          352.5,
+          470
+        ],
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1326_ares.jpg",
+        "captura_sha256": "41f99fd78539c9dadcea8cca14d9ba9c5f2f89a4959bee11025fa7f5c5b98796",
+        "revision_visual": "carta abierta mediante click real; figura/identificador visibles; sin recorte CSS adicional; Fénix conserva el recorte original de punta de ala ya documentado"
+      }
+    },
+    {
+      "id": "fenix",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1326.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1326_fenix.jpg",
+      "sha256_captura": "7ae4379c2e7bcf2bd69d41dce60a56edd1ee91ebe176c12d87ba04ce4da85a74",
+      "fecha_registro": "2026-11-02T16:34:49Z",
+      "prueba_original": {
+        "id": "fenix",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/fenix.png",
+        "imagen_completa": true,
+        "natural": [
+          1086,
+          1448
+        ],
+        "caja_css": [
+          352.5,
+          470
+        ],
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1326_fenix.jpg",
+        "captura_sha256": "7ae4379c2e7bcf2bd69d41dce60a56edd1ee91ebe176c12d87ba04ce4da85a74",
+        "revision_visual": "carta abierta mediante click real; figura/identificador visibles; sin recorte CSS adicional; Fénix conserva el recorte original de punta de ala ya documentado"
+      }
+    },
+    {
+      "id": "nike",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1326.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1326_nike.jpg",
+      "sha256_captura": "8bd1a3cf83ea79b2eeb86a8b74b37a8006c561222e1f0f2f12a142bd71a123c8",
+      "fecha_registro": "2026-11-02T16:34:49Z",
+      "prueba_original": {
+        "id": "nike",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/nike.png",
+        "imagen_completa": true,
+        "natural": [
+          1086,
+          1448
+        ],
+        "caja_css": [
+          352.5,
+          470
+        ],
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1326_nike.jpg",
+        "captura_sha256": "8bd1a3cf83ea79b2eeb86a8b74b37a8006c561222e1f0f2f12a142bd71a123c8",
+        "revision_visual": "carta abierta mediante click real; figura/identificador visibles; sin recorte CSS adicional; Fénix conserva el recorte original de punta de ala ya documentado"
+      }
+    },
+    {
+      "id": "casandra",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1426.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_casandra.jpg",
+      "sha256_captura": "1ec4c0f3fc3003ca00843f576a344f723694b86f54e0f80bcd46aa8867cacf45",
+      "fecha_registro": "2026-11-02T17:31:24Z",
+      "prueba_original": {
+        "id": "casandra",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/casandra.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_casandra.jpg",
+        "captura_sha256": "1ec4c0f3fc3003ca00843f576a344f723694b86f54e0f80bcd46aa8867cacf45",
+        "inspeccion_visual": "imagen y carta abiertas en sitio publicado; figura/identificador visibles, sin recorte CSS adicional; se conservan dudas estéticas históricas"
+      }
+    },
+    {
+      "id": "aquiles",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1426.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_aquiles.jpg",
+      "sha256_captura": "ec6c70838ac896731be09499ace6a1e706087800b59cd1b88a9511fe7e3a836a",
+      "fecha_registro": "2026-11-02T17:31:24Z",
+      "prueba_original": {
+        "id": "aquiles",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/aquiles.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_aquiles.jpg",
+        "captura_sha256": "ec6c70838ac896731be09499ace6a1e706087800b59cd1b88a9511fe7e3a836a",
+        "inspeccion_visual": "imagen y carta abiertas en sitio publicado; figura/identificador visibles, sin recorte CSS adicional; se conservan dudas estéticas históricas"
+      }
+    },
+    {
+      "id": "circe",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1426.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_circe.jpg",
+      "sha256_captura": "badeb07818556bc2c3ecbaa98474aa4ddbfb36939654d911896f58fab303550f",
+      "fecha_registro": "2026-11-02T17:31:24Z",
+      "prueba_original": {
+        "id": "circe",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/circe.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_circe.jpg",
+        "captura_sha256": "badeb07818556bc2c3ecbaa98474aa4ddbfb36939654d911896f58fab303550f",
+        "inspeccion_visual": "imagen y carta abiertas en sitio publicado; figura/identificador visibles, sin recorte CSS adicional; se conservan dudas estéticas históricas"
+      }
+    },
+    {
+      "id": "helios",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1426.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_helios.jpg",
+      "sha256_captura": "d34ddc0cfb111b62222f51def260b51837a2a4c7869caf14abc413a58f48390a",
+      "fecha_registro": "2026-11-02T17:31:24Z",
+      "prueba_original": {
+        "id": "helios",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/helios.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_helios.jpg",
+        "captura_sha256": "d34ddc0cfb111b62222f51def260b51837a2a4c7869caf14abc413a58f48390a",
+        "inspeccion_visual": "imagen y carta abiertas en sitio publicado; figura/identificador visibles, sin recorte CSS adicional; se conservan dudas estéticas históricas"
+      }
+    },
+    {
+      "id": "dafne",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1426.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_dafne.jpg",
+      "sha256_captura": "41241518af1fe8629cac56321a751c75615949b0359790dc2ae9dd1451e65bb3",
+      "fecha_registro": "2026-11-02T17:31:24Z",
+      "prueba_original": {
+        "id": "dafne",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/dafne.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_dafne.jpg",
+        "captura_sha256": "41241518af1fe8629cac56321a751c75615949b0359790dc2ae9dd1451e65bb3",
+        "inspeccion_visual": "imagen y carta abiertas en sitio publicado; figura/identificador visibles, sin recorte CSS adicional; se conservan dudas estéticas históricas"
+      }
+    },
+    {
+      "id": "castor_polux",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/auditoria_recuperacion_1426.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_castor_polux.jpg",
+      "sha256_captura": "54c45a85de61bce613b8c4d167055c9ff3871effd81c2ea179ed20506edd6dde",
+      "fecha_registro": "2026-11-02T17:31:24Z",
+      "prueba_original": {
+        "id": "castor_polux",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/castor_polux.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1426_castor_polux.jpg",
+        "captura_sha256": "54c45a85de61bce613b8c4d167055c9ff3871effd81c2ea179ed20506edd6dde",
+        "inspeccion_visual": "imagen y carta abiertas en sitio publicado; figura/identificador visibles, sin recorte CSS adicional; se conservan dudas estéticas históricas"
+      }
+    },
+    {
+      "id": "dedalo",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1526_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1526_dedalo.jpg",
+      "sha256_captura": "0e874c36a59d11f654e3394827ff44ccc14274c379c44112c6bcd05c0ca0bc5d",
+      "fecha_registro": "2026-11-02 18:42:36 UTC",
+      "prueba_original": {
+        "id": "dedalo",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/dedalo.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1526_dedalo.jpg",
+        "sha256": "0e874c36a59d11f654e3394827ff44ccc14274c379c44112c6bcd05c0ca0bc5d"
+      }
+    },
+    {
+      "id": "hefesto",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1526_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1526_hefesto.jpg",
+      "sha256_captura": "934e2e33f9b708cba07175982140115de6972f6ce2ddc7ea91ddcbbe2d4b36e6",
+      "fecha_registro": "2026-11-02 18:42:36 UTC",
+      "prueba_original": {
+        "id": "hefesto",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hefesto.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1526_hefesto.jpg",
+        "sha256": "934e2e33f9b708cba07175982140115de6972f6ce2ddc7ea91ddcbbe2d4b36e6"
+      }
+    },
+    {
+      "id": "dido",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1526_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1526_dido.jpg",
+      "sha256_captura": "4dca32a0b2320d9ee81ac8e6a7f5883989efde506657fbb8c39a2191b07bb046",
+      "fecha_registro": "2026-11-02 18:42:36 UTC",
+      "prueba_original": {
+        "id": "dido",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/dido.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1526_dido.jpg",
+        "sha256": "4dca32a0b2320d9ee81ac8e6a7f5883989efde506657fbb8c39a2191b07bb046"
+      }
+    },
+    {
+      "id": "nausicaa",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1526_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1526_nausicaa.jpg",
+      "sha256_captura": "d7f62f9a2fb02c6239a9e31cb6d020cadf928758b5503f552857818b9a3f7151",
+      "fecha_registro": "2026-11-02 18:42:36 UTC",
+      "prueba_original": {
+        "id": "nausicaa",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/nausicaa.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1526_nausicaa.jpg",
+        "sha256": "d7f62f9a2fb02c6239a9e31cb6d020cadf928758b5503f552857818b9a3f7151"
+      }
+    },
+    {
+      "id": "hel",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1526_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1526_hel.jpg",
+      "sha256_captura": "878ecca8cc9e5fca9088040d0c5b34429fd92c692c196b50ec6fe24f79c3ef89",
+      "fecha_registro": "2026-11-02 18:42:36 UTC",
+      "prueba_original": {
+        "id": "hel",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hel.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1526_hel.jpg",
+        "sha256": "878ecca8cc9e5fca9088040d0c5b34429fd92c692c196b50ec6fe24f79c3ef89"
+      }
+    },
+    {
+      "id": "dioniso",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1626_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1626_dioniso.jpg",
+      "sha256_captura": "fe6dc3787043331793a075b919c6d275c38a658b6652b446b03461028cd70629",
+      "fecha_registro": "2026-11-02 19:37:33 UTC",
+      "prueba_original": {
+        "id": "dioniso",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/dioniso.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1626_dioniso.jpg",
+        "sha256": "fe6dc3787043331793a075b919c6d275c38a658b6652b446b03461028cd70629"
+      }
+    },
+    {
+      "id": "eros",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1626_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1626_eros.jpg",
+      "sha256_captura": "2e4c14faaa9c37257d95189dfde82ad4d4fcfc61906bcdd2c5ca3953514c7eb2",
+      "fecha_registro": "2026-11-02 19:37:33 UTC",
+      "prueba_original": {
+        "id": "eros",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/eros.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1626_eros.jpg",
+        "sha256": "2e4c14faaa9c37257d95189dfde82ad4d4fcfc61906bcdd2c5ca3953514c7eb2"
+      }
+    },
+    {
+      "id": "hestia",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1626_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1626_hestia.jpg",
+      "sha256_captura": "b0e55750d060ee7e91dcbc2d618ff2e31fdd1945f9ab7769cfefc23bfec3ff0a",
+      "fecha_registro": "2026-11-02 19:37:33 UTC",
+      "prueba_original": {
+        "id": "hestia",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hestia.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1626_hestia.jpg",
+        "sha256": "b0e55750d060ee7e91dcbc2d618ff2e31fdd1945f9ab7769cfefc23bfec3ff0a"
+      }
+    },
+    {
+      "id": "eco",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1626_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1626_eco.jpg",
+      "sha256_captura": "0471d4691b4b60b2eb9dc1bee2332b027e42ec3a2b59e7aa25f75597bff63d9e",
+      "fecha_registro": "2026-11-02 19:37:33 UTC",
+      "prueba_original": {
+        "id": "eco",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/eco.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1626_eco.jpg",
+        "sha256": "0471d4691b4b60b2eb9dc1bee2332b027e42ec3a2b59e7aa25f75597bff63d9e"
+      }
+    },
+    {
+      "id": "aracne",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1626_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1626_aracne.jpg",
+      "sha256_captura": "8761e1fb7d675e2c2232b4245767f1fc634527339183fbe7b9a6aad26aa781c0",
+      "fecha_registro": "2026-11-02 19:37:33 UTC",
+      "prueba_original": {
+        "id": "aracne",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/aracne.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1626_aracne.jpg",
+        "sha256": "8761e1fb7d675e2c2232b4245767f1fc634527339183fbe7b9a6aad26aa781c0"
+      }
+    },
+    {
+      "id": "hector",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1826_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1826_hector.jpg",
+      "sha256_captura": "3a174750259d5bbf3824c07175e454a9ee5217b3e9318e5599a96870ccfebfed",
+      "fecha_registro": "2026-11-02T21:39:05Z",
+      "prueba_original": {
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "id": "hector",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hector.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1826_hector.jpg",
+        "sha256_captura": "3a174750259d5bbf3824c07175e454a9ee5217b3e9318e5599a96870ccfebfed"
+      }
+    },
+    {
+      "id": "jason",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1826_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1826_jason.jpg",
+      "sha256_captura": "a08ee5c36525cf23978d554b8b85786539221a7fc6d245227a253de66a51693f",
+      "fecha_registro": "2026-11-02T21:39:05Z",
+      "prueba_original": {
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "id": "jason",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/jason.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1826_jason.jpg",
+        "sha256_captura": "a08ee5c36525cf23978d554b8b85786539221a7fc6d245227a253de66a51693f"
+      }
+    },
+    {
+      "id": "ariadna",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1826_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1826_ariadna.jpg",
+      "sha256_captura": "8c4daa2b62fbc968686724a71ffcda5b4391653c1f26ae5984dc8e1fbd4b60b6",
+      "fecha_registro": "2026-11-02T21:39:05Z",
+      "prueba_original": {
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "id": "ariadna",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/ariadna.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1826_ariadna.jpg",
+        "sha256_captura": "8c4daa2b62fbc968686724a71ffcda5b4391653c1f26ae5984dc8e1fbd4b60b6"
+      }
+    },
+    {
+      "id": "andromeda",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1826_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1826_andromeda.jpg",
+      "sha256_captura": "be5f918a00b5dbb984497b8881c357c312b64560f879604b427b29d73794b09c",
+      "fecha_registro": "2026-11-02T21:39:05Z",
+      "prueba_original": {
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "id": "andromeda",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/andromeda.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1826_andromeda.jpg",
+        "sha256_captura": "be5f918a00b5dbb984497b8881c357c312b64560f879604b427b29d73794b09c"
+      }
+    },
+    {
+      "id": "medea",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1826_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1826_medea.jpg",
+      "sha256_captura": "f5c665bc315f0c91ab8431759a22e84c3fc40a03555fff52aa001ba1f87512fe",
+      "fecha_registro": "2026-11-02T21:39:05Z",
+      "prueba_original": {
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "id": "medea",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/medea.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1826_medea.jpg",
+        "sha256_captura": "f5c665bc315f0c91ab8431759a22e84c3fc40a03555fff52aa001ba1f87512fe"
+      }
+    },
+    {
+      "id": "fenrir",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1926_fenrir.jpg",
+      "sha256_captura": "987b46d5ebb8d3c5ec7d7aa21ae188942cab1ae3324d0dd1ed46699320c443df",
+      "fecha_registro": "2026-11-02T22:40:05Z",
+      "prueba_original": {
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "id": "fenrir",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/fenrir.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1926_fenrir.jpg",
+        "sha256_captura": "987b46d5ebb8d3c5ec7d7aa21ae188942cab1ae3324d0dd1ed46699320c443df"
+      }
+    },
+    {
+      "id": "medusa",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1926_medusa.jpg",
+      "sha256_captura": "9082441de936b4daa6b08c0b876cd8b88780e84c4ef44a52306555834a6c9a54",
+      "fecha_registro": "2026-11-02T22:40:05Z",
+      "prueba_original": {
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "id": "medusa",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/medusa.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1926_medusa.jpg",
+        "sha256_captura": "9082441de936b4daa6b08c0b876cd8b88780e84c4ef44a52306555834a6c9a54"
+      }
+    },
+    {
+      "id": "midas",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1926_midas.jpg",
+      "sha256_captura": "8f9287a92880a3e7f7e7bcafb71c86c41ce0282a501ccd0e4b96d274b97a40df",
+      "fecha_registro": "2026-11-02T22:40:05Z",
+      "prueba_original": {
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "id": "midas",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/midas.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1926_midas.jpg",
+        "sha256_captura": "8f9287a92880a3e7f7e7bcafb71c86c41ce0282a501ccd0e4b96d274b97a40df"
+      }
+    },
+    {
+      "id": "edipo",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1926_edipo.jpg",
+      "sha256_captura": "44dc9811d97b82b793d9fd8873d58c8055df048fda332daa50b51513d6dd5761",
+      "fecha_registro": "2026-11-02T22:40:05Z",
+      "prueba_original": {
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "id": "edipo",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/edipo.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1926_edipo.jpg",
+        "sha256_captura": "44dc9811d97b82b793d9fd8873d58c8055df048fda332daa50b51513d6dd5761"
+      }
+    },
+    {
+      "id": "balder",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1926_balder.jpg",
+      "sha256_captura": "e27856b53f45b524f89447e88274ced6d7bbff6d33f97ac236c16cb34a346b76",
+      "fecha_registro": "2026-11-02T22:40:05Z",
+      "prueba_original": {
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "id": "balder",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/balder.png",
+        "w": 1086,
+        "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1926_balder.jpg",
+        "sha256_captura": "e27856b53f45b524f89447e88274ced6d7bbff6d33f97ac236c16cb34a346b76"
+      }
+    },
+    {
+      "id": "orfeo",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0426_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0426_orfeo.jpg",
+      "sha256_captura": "aad242fb801f8825ba9d51b3d5e76ffca3c5a7fe315e8f581691ec6a99fc1585",
+      "fecha_registro": "2026-11-03T07:39:53.564Z",
+      "prueba_original": {
+        "id": "orfeo",
+        "fecha": "2026-11-03T07:39:53.564Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=orfeo",
+        "src": "imagenes/orfeo.png",
+        "w": 1086,
+        "h": 1448,
+        "evidencia": "publicado_0426_orfeo.jpg",
+        "complete": true,
+        "box": {
+          "w": 352.5,
+          "h": 470
+        },
+        "sha256_captura": "aad242fb801f8825ba9d51b3d5e76ffca3c5a7fe315e8f581691ec6a99fc1585",
+        "sha_remoto_referencia": "c502d7d6da5bb738ea2f2c4dcea68479a98e49bf"
+      }
+    },
+    {
+      "id": "orion",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0426_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0426_orion.jpg",
+      "sha256_captura": "fcf2b3d2d74565408aa8e86dd93bbfca9f02ec36dfd4166980b03ebbd587bc83",
+      "fecha_registro": "2026-11-03T07:41:04.066Z",
+      "prueba_original": {
+        "id": "orion",
+        "fecha": "2026-11-03T07:41:04.066Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=orion",
+        "src": "imagenes/orion.png",
+        "w": 1086,
+        "h": 1448,
+        "evidencia": "publicado_0426_orion.jpg",
+        "complete": true,
+        "box": {
+          "w": 352.5,
+          "h": 470
+        },
+        "sha256_captura": "fcf2b3d2d74565408aa8e86dd93bbfca9f02ec36dfd4166980b03ebbd587bc83",
+        "sha_remoto_referencia": "c502d7d6da5bb738ea2f2c4dcea68479a98e49bf"
+      }
+    },
+    {
+      "id": "frigg",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0426_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0426_frigg.jpg",
+      "sha256_captura": "907f74f6a177a969ab36ca44ca54bfe660de8bfc2a013ef3cb931073453d152e",
+      "fecha_registro": "2026-11-03T07:41:52.785Z",
+      "prueba_original": {
+        "id": "frigg",
+        "fecha": "2026-11-03T07:41:52.785Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=frigg",
+        "src": "imagenes/frigg.png",
+        "w": 1086,
+        "h": 1448,
+        "evidencia": "publicado_0426_frigg.jpg",
+        "complete": true,
+        "box": {
+          "w": 352.5,
+          "h": 470
+        },
+        "sha256_captura": "907f74f6a177a969ab36ca44ca54bfe660de8bfc2a013ef3cb931073453d152e",
+        "sha_remoto_referencia": "c502d7d6da5bb738ea2f2c4dcea68479a98e49bf"
+      }
+    },
+    {
+      "id": "minotauro",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0426_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0426_minotauro.jpg",
+      "sha256_captura": "457168d1c85ab9a1a7a349dd11e1a0eab9458cc8779ff6c7619fcf2af87f32ec",
+      "fecha_registro": "2026-11-03T07:42:36.983Z",
+      "prueba_original": {
+        "id": "minotauro",
+        "fecha": "2026-11-03T07:42:36.983Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=minotauro",
+        "src": "imagenes/minotauro.png",
+        "w": 1086,
+        "h": 1448,
+        "evidencia": "publicado_0426_minotauro.jpg",
+        "complete": true,
+        "box": {
+          "w": 352.5,
+          "h": 470
+        },
+        "sha256_captura": "457168d1c85ab9a1a7a349dd11e1a0eab9458cc8779ff6c7619fcf2af87f32ec",
+        "sha_remoto_referencia": "c502d7d6da5bb738ea2f2c4dcea68479a98e49bf"
+      }
+    },
+    {
+      "id": "njord",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0426_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0426_njord.jpg",
+      "sha256_captura": "a9f4a6f0a406cbdaf85ba420df7ba94646969330fbc520dbf03cbb69dc0b10b9",
+      "fecha_registro": "2026-11-03T07:43:30.691Z",
+      "prueba_original": {
+        "id": "njord",
+        "fecha": "2026-11-03T07:43:30.691Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=njord",
+        "src": "imagenes/njord.png",
+        "w": 1086,
+        "h": 1448,
+        "evidencia": "publicado_0426_njord.jpg",
+        "complete": true,
+        "box": {
+          "w": 352.5,
+          "h": 470
+        },
+        "sha256_captura": "a9f4a6f0a406cbdaf85ba420df7ba94646969330fbc520dbf03cbb69dc0b10b9",
+        "sha_remoto_referencia": "c502d7d6da5bb738ea2f2c4dcea68479a98e49bf"
+      }
+    },
+    {
+      "id": "cerbero",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0426_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0426_cerbero.jpg",
+      "sha256_captura": "f1962799673e0e38a4a0dfd4caef24649d019f5bf8316808ca36bc7dd3585673",
+      "fecha_registro": "2026-11-03T07:44:44.651Z",
+      "prueba_original": {
+        "id": "cerbero",
+        "fecha": "2026-11-03T07:44:44.651Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=cerbero",
+        "src": "imagenes/cerbero.png",
+        "w": 1086,
+        "h": 1448,
+        "evidencia": "publicado_0426_cerbero.jpg",
+        "complete": true,
+        "box": {
+          "w": 352.5,
+          "h": 470
+        },
+        "sha256_captura": "f1962799673e0e38a4a0dfd4caef24649d019f5bf8316808ca36bc7dd3585673",
+        "sha_remoto_referencia": "c502d7d6da5bb738ea2f2c4dcea68479a98e49bf"
+      }
+    },
+    {
+      "id": "pan",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0526_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0526_pan.jpg",
+      "sha256_captura": "0638a9580de587922c4e068b758dc00e0a4e91a302050e88ff742ef0933ced58",
+      "fecha_registro": "2026-11-03T08:37:49.151Z",
+      "prueba_original": {
+        "id": "pan",
+        "fecha": "2026-11-03T08:37:49.151Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=pan",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "imagenes/pan.png",
+        "w": 1086,
+        "evidencia": "publicado_0526_pan.jpg",
+        "sha256_captura": "0638a9580de587922c4e068b758dc00e0a4e91a302050e88ff742ef0933ced58",
+        "sha_remoto_referencia": "adc698625b5d74b066f7268693b80c569c1f8f0d"
+      }
+    },
+    {
+      "id": "paris",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0526_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0526_paris.jpg",
+      "sha256_captura": "6a0ed5208226761dc6beaa12fb8c87d803991e271d1338a2baffe8fd9b236acf",
+      "fecha_registro": "2026-11-03T08:38:52.079Z",
+      "prueba_original": {
+        "id": "paris",
+        "fecha": "2026-11-03T08:38:52.079Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=paris",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "imagenes/paris.png",
+        "w": 1086,
+        "evidencia": "publicado_0526_paris.jpg",
+        "sha256_captura": "6a0ed5208226761dc6beaa12fb8c87d803991e271d1338a2baffe8fd9b236acf",
+        "sha_remoto_referencia": "adc698625b5d74b066f7268693b80c569c1f8f0d"
+      }
+    },
+    {
+      "id": "atalanta",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0526_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0526_atalanta.jpg",
+      "sha256_captura": "56a979347c7a4f9c499f75eec96667137e4e80cfb2d4268787c9802e25d0b2ad",
+      "fecha_registro": "2026-11-03T08:39:45.091Z",
+      "prueba_original": {
+        "id": "atalanta",
+        "fecha": "2026-11-03T08:39:45.091Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=atalanta",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "imagenes/atalanta.png",
+        "w": 1086,
+        "evidencia": "publicado_0526_atalanta.jpg",
+        "sha256_captura": "56a979347c7a4f9c499f75eec96667137e4e80cfb2d4268787c9802e25d0b2ad",
+        "sha_remoto_referencia": "adc698625b5d74b066f7268693b80c569c1f8f0d"
+      }
+    },
+    {
+      "id": "belerofonte",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0526_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0526_belerofonte.jpg",
+      "sha256_captura": "10f83d7e7976350f483574f7ca8741712c1a54c205cb47728647198e1b3560b8",
+      "fecha_registro": "2026-11-03T08:40:31.589Z",
+      "prueba_original": {
+        "id": "belerofonte",
+        "fecha": "2026-11-03T08:40:31.589Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=belerofonte",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "imagenes/belerofonte.png",
+        "w": 1086,
+        "evidencia": "publicado_0526_belerofonte.jpg",
+        "sha256_captura": "10f83d7e7976350f483574f7ca8741712c1a54c205cb47728647198e1b3560b8",
+        "sha_remoto_referencia": "adc698625b5d74b066f7268693b80c569c1f8f0d"
+      }
+    },
+    {
+      "id": "calisto",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0526_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0526_calisto.jpg",
+      "sha256_captura": "ac61846711ac3519eab54724841430451052cc1e6b4d2abe9ced3e9df8628d8f",
+      "fecha_registro": "2026-11-03T08:41:56.409Z",
+      "prueba_original": {
+        "id": "calisto",
+        "fecha": "2026-11-03T08:41:56.409Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=calisto",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "imagenes/calisto.png",
+        "w": 1086,
+        "evidencia": "publicado_0526_calisto.jpg",
+        "sha256_captura": "ac61846711ac3519eab54724841430451052cc1e6b4d2abe9ced3e9df8628d8f",
+        "sha_remoto_referencia": "adc698625b5d74b066f7268693b80c569c1f8f0d"
+      }
+    },
+    {
+      "id": "pegaso",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0626_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0626_pegaso.jpg",
+      "sha256_captura": "f497e4d418ad667b287c4f90a94be73456066d4426e95a888c18407b67a430b7",
+      "fecha_registro": "2026-11-03T09:36:53.269Z",
+      "prueba_original": {
+        "id": "pegaso",
+        "fecha": "2026-11-03T09:36:53.269Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=pegaso",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "imagenes/pegaso.png",
+        "w": 1086,
+        "evidencia": "publicado_0626_pegaso.jpg",
+        "sha256_captura": "f497e4d418ad667b287c4f90a94be73456066d4426e95a888c18407b67a430b7",
+        "sha_remoto_referencia": "8c7d844bd71698ec023934e9000e59860795e8e2"
+      }
+    },
+    {
+      "id": "cronos",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0626_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0626_cronos.jpg",
+      "sha256_captura": "c02e386e08afe55ccabe10467a9f2dd251d11d034eef4d1186aa303556d8965f",
+      "fecha_registro": "2026-11-03T09:38:11.160Z",
+      "prueba_original": {
+        "id": "cronos",
+        "fecha": "2026-11-03T09:38:11.160Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=cronos",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "imagenes/cronos.png",
+        "w": 1086,
+        "evidencia": "publicado_0626_cronos.jpg",
+        "sha256_captura": "c02e386e08afe55ccabe10467a9f2dd251d11d034eef4d1186aa303556d8965f",
+        "sha_remoto_referencia": "8c7d844bd71698ec023934e9000e59860795e8e2"
+      }
+    },
+    {
+      "id": "pentesilea",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0626_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0626_pentesilea.jpg",
+      "sha256_captura": "f5d0a8410c19c59784c6581c8f961729c6cb16ee0452c449d51665e06d6696eb",
+      "fecha_registro": "2026-11-03T09:39:02.338Z",
+      "prueba_original": {
+        "id": "pentesilea",
+        "fecha": "2026-11-03T09:39:02.338Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=pentesilea",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "imagenes/pentesilea.png",
+        "w": 1086,
+        "evidencia": "publicado_0626_pentesilea.jpg",
+        "sha256_captura": "f5d0a8410c19c59784c6581c8f961729c6cb16ee0452c449d51665e06d6696eb",
+        "sha_remoto_referencia": "8c7d844bd71698ec023934e9000e59860795e8e2"
+      }
+    },
+    {
+      "id": "esfinge",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0626_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0626_esfinge.jpg",
+      "sha256_captura": "e8a0409379bc25117230f7a1eb6bc505f2c5651b06fe0c07a157f114c011a7fc",
+      "fecha_registro": "2026-11-03T09:39:42.707Z",
+      "prueba_original": {
+        "id": "esfinge",
+        "fecha": "2026-11-03T09:39:42.707Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=esfinge",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "imagenes/esfinge.png",
+        "w": 1086,
+        "evidencia": "publicado_0626_esfinge.jpg",
+        "sha256_captura": "e8a0409379bc25117230f7a1eb6bc505f2c5651b06fe0c07a157f114c011a7fc",
+        "sha_remoto_referencia": "8c7d844bd71698ec023934e9000e59860795e8e2"
+      }
+    },
+    {
+      "id": "casiopea",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0626_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0626_casiopea.jpg",
+      "sha256_captura": "41974d19cc17934890bfb007b1e91cd44f9bb0b439390e3e05a5962da97cc46f",
+      "fecha_registro": "2026-11-03T09:40:34.547Z",
+      "prueba_original": {
+        "id": "casiopea",
+        "fecha": "2026-11-03T09:40:34.547Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=casiopea",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "imagenes/casiopea.png",
+        "w": 1086,
+        "evidencia": "publicado_0626_casiopea.jpg",
+        "sha256_captura": "41974d19cc17934890bfb007b1e91cd44f9bb0b439390e3e05a5962da97cc46f",
+        "sha_remoto_referencia": "8c7d844bd71698ec023934e9000e59860795e8e2"
+      }
+    },
+    {
+      "id": "poseidon",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0926_poseidon.jpg",
+      "sha256_captura": "dcf67847e3518a08e29a42c6bde9c2e0fc05be11c83a72790fb4a33ee7f15ad4",
+      "fecha_registro": "2026-11-03T12:36:08.019Z",
+      "prueba_original": {
+        "id": "poseidon",
+        "fecha": "2026-11-03T12:36:08.019Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=poseidon",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/poseidon.png",
+        "w": 1086,
+        "evidencia": "publicado_0926_poseidon.jpg",
+        "sha256_captura": "dcf67847e3518a08e29a42c6bde9c2e0fc05be11c83a72790fb4a33ee7f15ad4",
+        "sha_remoto_referencia": "8d36f4ca321cf2ab37f211f2bbb41dddafdf8fc7"
+      }
+    },
+    {
+      "id": "prometeo",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0926_prometeo.jpg",
+      "sha256_captura": "3722101a840b19b63ca885784db67d4caca6511745efc3a85729cc894a8abae0",
+      "fecha_registro": "2026-11-03T12:37:04.466Z",
+      "prueba_original": {
+        "id": "prometeo",
+        "fecha": "2026-11-03T12:37:04.466Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=prometeo",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/prometeo.png",
+        "w": 1086,
+        "evidencia": "publicado_0926_prometeo.jpg",
+        "sha256_captura": "3722101a840b19b63ca885784db67d4caca6511745efc3a85729cc894a8abae0",
+        "sha_remoto_referencia": "8d36f4ca321cf2ab37f211f2bbb41dddafdf8fc7"
+      }
+    },
+    {
+      "id": "eneas",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0926_eneas.jpg",
+      "sha256_captura": "95f85393b5ff4cffa8c3baf80e1971028b6579e2d352e954d7561a7158feaacc",
+      "fecha_registro": "2026-11-03T12:45:33.648Z",
+      "prueba_original": {
+        "id": "eneas",
+        "fecha": "2026-11-03T12:45:33.648Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=eneas",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/eneas.png",
+        "w": 1086,
+        "evidencia": "publicado_0926_eneas.jpg",
+        "sha256_captura": "95f85393b5ff4cffa8c3baf80e1971028b6579e2d352e954d7561a7158feaacc",
+        "sha_remoto_referencia": "8d36f4ca321cf2ab37f211f2bbb41dddafdf8fc7"
+      }
+    },
+    {
+      "id": "narciso",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0926_narciso.jpg",
+      "sha256_captura": "41aced9e935040a10a22e5093aa2cd77c2f91c627dc911d317126f38cb662be6",
+      "fecha_registro": "2026-11-03T12:47:06.376Z",
+      "prueba_original": {
+        "id": "narciso",
+        "fecha": "2026-11-03T12:47:06.376Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=narciso",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/narciso.png",
+        "w": 1086,
+        "evidencia": "publicado_0926_narciso.jpg",
+        "sha256_captura": "41aced9e935040a10a22e5093aa2cd77c2f91c627dc911d317126f38cb662be6",
+        "sha_remoto_referencia": "8d36f4ca321cf2ab37f211f2bbb41dddafdf8fc7"
+      }
+    },
+    {
+      "id": "quiron",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0926_quiron.jpg",
+      "sha256_captura": "efd378a7cf6b9a597827ee0892e23cdba52322102b65e58985a3a006ff574cec",
+      "fecha_registro": "2026-11-03T12:48:44.193Z",
+      "prueba_original": {
+        "id": "quiron",
+        "fecha": "2026-11-03T12:48:44.193Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=quiron",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/quiron.png",
+        "w": 1086,
+        "evidencia": "publicado_0926_quiron.jpg",
+        "sha256_captura": "efd378a7cf6b9a597827ee0892e23cdba52322102b65e58985a3a006ff574cec",
+        "sha_remoto_referencia": "8d36f4ca321cf2ab37f211f2bbb41dddafdf8fc7"
+      }
+    },
+    {
+      "id": "ratatosk",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_0926_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_0926_ratatosk.jpg",
+      "sha256_captura": "f83a9dd4830debcefe9f8889e1b4368d96b52608b541160438f17f8663420d07",
+      "fecha_registro": "2026-11-03T12:49:36.996Z",
+      "prueba_original": {
+        "id": "ratatosk",
+        "fecha": "2026-11-03T12:49:36.996Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=ratatosk",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/ratatosk.png",
+        "w": 1086,
+        "evidencia": "publicado_0926_ratatosk.jpg",
+        "sha256_captura": "f83a9dd4830debcefe9f8889e1b4368d96b52608b541160438f17f8663420d07",
+        "sha_remoto_referencia": "8d36f4ca321cf2ab37f211f2bbb41dddafdf8fc7"
+      }
+    },
+    {
+      "id": "selene",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1026_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1026_selene.jpg",
+      "sha256_captura": "16f03e043765245fc8df5802a14c470307a55be9ea2a1fe7734f3660f3c21dad",
+      "fecha_registro": "2026-11-03T13:44:05.154Z",
+      "prueba_original": {
+        "id": "selene",
+        "fecha": "2026-11-03T13:44:05.154Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=selene",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/selene.png",
+        "w": 1086,
+        "evidencia": "publicado_1026_selene.jpg",
+        "sha256_captura": "16f03e043765245fc8df5802a14c470307a55be9ea2a1fe7734f3660f3c21dad",
+        "sha_remoto_referencia": "840219547f0e12d5ca1c367700615176d115259b"
+      }
+    },
+    {
+      "id": "skadi",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_1026_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_1026_skadi.jpg",
+      "sha256_captura": "7e08a46b8443d5a3b0e76f952152b5321c73d3431df29d28c49495d660b86cb3",
+      "fecha_registro": "2026-11-03T13:45:31.747Z",
+      "prueba_original": {
+        "id": "skadi",
+        "fecha": "2026-11-03T13:45:31.747Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html?ver=skadi",
+        "box": {
+          "h": 470,
+          "w": 352.5
+        },
+        "complete": true,
+        "h": 1448,
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/skadi.png",
+        "w": 1086,
+        "evidencia": "publicado_1026_skadi.jpg",
+        "sha256_captura": "7e08a46b8443d5a3b0e76f952152b5321c73d3431df29d28c49495d660b86cb3",
+        "sha_remoto_referencia": "840219547f0e12d5ca1c367700615176d115259b"
+      }
+    },
+    {
+      "id": "thor",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_cierre_20261104_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_cierre_20261104_thor.jpg",
+      "sha256_captura": "460fb003df06316ef19ce5ec5182e65bff6eea3860de8f122a32fed65242db6b",
+      "fecha_registro": "2026-11-04T11:00:58.394Z",
+      "prueba_original": {
+        "id": "thor",
+        "fecha": "2026-11-04T11:00:58.394Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/thor.png",
+        "complete": true,
+        "width": 1086,
+        "height": 1448,
+        "objectFit": "cover",
+        "box": {
+          "w": 352.5,
+          "h": 470
+        },
+        "evidencia": "publicado_cierre_20261104_thor.jpg",
+        "sha256_captura": "460fb003df06316ef19ce5ec5182e65bff6eea3860de8f122a32fed65242db6b"
+      }
+    },
+    {
+      "id": "tyr",
+      "registro": "Documentacion/pruebas_imagenes_2026-11-02/resultado_cierre_20261104_publicado.json",
+      "captura": "Documentacion/pruebas_imagenes_2026-11-02/publicado_cierre_20261104_tyr.jpg",
+      "sha256_captura": "b57dc6dd2a0178014aba46b70f82d3d470b16f38e7b68ba7fb35e63eab4de2fc",
+      "fecha_registro": "2026-11-04T11:01:00.112Z",
+      "prueba_original": {
+        "id": "tyr",
+        "fecha": "2026-11-04T11:01:00.112Z",
+        "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+        "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/tyr.png",
+        "complete": true,
+        "width": 1086,
+        "height": 1448,
+        "objectFit": "cover",
+        "box": {
+          "w": 352.5,
+          "h": 470
+        },
+        "evidencia": "publicado_cierre_20261104_tyr.jpg",
+        "sha256_captura": "b57dc6dd2a0178014aba46b70f82d3d470b16f38e7b68ba7fb35e63eab4de2fc"
+      }
+    }
+  ],
+  "pendientes": [],
+  "nota": "55 evidencias históricas verificadas por existencia y hash; dos cartas nuevas abiertas e inspeccionadas visualmente en sitio publicado el 4/11. Además se abrieron y decodificaron las 85 cartas en local y publicado en esta recuperación."
+}

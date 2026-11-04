@@ -930,3 +930,15 @@ Auditoría integral: 85/85 referencias a archivos existentes y completamente dec
 
 ### Prueba local final
 Las 85 cartas se abrieron por click real en Chromium, en perfil sintético aislado y viewport 390×844. Las 85 imágenes completaron `img.decode()` sin errores JavaScript ni HTTP. Thor/Tyr: 1086×1448, caja 352,5×470 y `object-fit: contain`; capturas `local_cierre_20261104_thor.jpg` y `local_cierre_20261104_tyr.jpg` abiertas e inspeccionadas. Resultado detallado: `resultado_cierre_20261104_local.json`. Las 55 evidencias publicadas previas de `trazabilidad_55_1026.json` existen y sus hashes coinciden. Quedan únicamente las dos verificaciones visuales publicadas de Thor/Tyr para declarar cierre.
+
+
+## CIERRE COMPLETO — 2026-11-04
+**85/85 imágenes incorporadas e integradas; 57/57 verificaciones visuales de la campaña acreditadas; cero pendientes de generación, subida, integración o pruebas.**
+
+Integración final confirmada en rama remota `claude/game-setup-v98pr1`, commit `0acf962c54b03dbcfc940bffadfcd19b72b68476`. GitHub Pages publicó ese SHA con éxito (workflow `41817704514`, estado completed/success). Sitio: https://willyesposito.github.io/JuegoMitosFeli/ .
+
+En esta recuperación se abrieron por click real **las 85 cartas tanto en local como en el sitio publicado**, con perfil sintético en contexto aislado, sin alterar progreso de usuarios. Las 85 imágenes se decodificaron correctamente; cero errores JavaScript/HTTP. Viewport 390×844. Thor y Tyr: PNG 1086×1448, caja 352,5×470, `object-fit: contain`. Se inspeccionaron sus dos capturas publicadas estables `publicado_cierre_20261104_thor.jpg` y `publicado_cierre_20261104_tyr.jpg`; se repitió la captura de Thor para evitar guardar un fotograma intermedio de View Transitions. Esta repetición es una prueba, no generación. TLS validado con las CA instaladas del entorno; no se deshabilitó validación.
+
+Evidencias: `auditoria_cierre_2026-11-04.json`, `resultado_cierre_20261104_local.json`, `resultado_cierre_20261104_publicado.json`, `resultado_cierre_20261104_publicado_targets.json` y `trazabilidad_57_cierre_20261104.json`, bajo `Documentacion/pruebas_imagenes_2026-11-02/`. Trazabilidad: 55 capturas históricas con hashes comprobados y 2 nuevas; objetivo exacto de 57 IDs sin duplicados ni pendientes. No se afirma haber inspeccionado visualmente las otras 55 hoy.
+
+Cero llamadas de generación nuevas. Thor/Tyr reutilizados de sus PNG preservados. Diferencia de personajes.json contra el comienzo: únicamente los dos campos imagen agregados; historias, capítulos, módulos y demás datos intactos. SW v3.5.43. Desviaciones editoriales de encuadre/textura documentadas como provisionales, sin atribuir aprobación estética. Automatizaciones de imágenes y recuperación comprobadas deshabilitadas; no se creó ni reactivó ninguna. El plazo original no se cumplió; el trabajo se cierra efectivamente el 4/11.

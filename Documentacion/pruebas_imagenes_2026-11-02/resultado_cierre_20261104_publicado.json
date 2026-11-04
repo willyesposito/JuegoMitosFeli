@@ -1,0 +1,1210 @@
+{
+  "fecha": "2026-11-04T11:00:39.722Z",
+  "viewport": "390x844",
+  "base": "https://willyesposito.github.io/JuegoMitosFeli/",
+  "prueba": "85 cartas reales abiertas mediante click e img.decode(); capturas de Thor/Tyr. Perfil sintético en contexto aislado, sin modificar datos del usuario.",
+  "results": [
+    {
+      "id": "teseo",
+      "fecha": "2026-11-04T10:59:48.276Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/teseo.jpg",
+      "complete": true,
+      "width": 1152,
+      "height": 1536,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "heracles",
+      "fecha": "2026-11-04T10:59:48.544Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/heracles.jpg",
+      "complete": true,
+      "width": 1152,
+      "height": 1536,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "penelope",
+      "fecha": "2026-11-04T10:59:48.762Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/penelope.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "atlas",
+      "fecha": "2026-11-04T10:59:49.041Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/atlas.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "odiseo",
+      "fecha": "2026-11-04T10:59:49.555Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/odiseo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "atenea",
+      "fecha": "2026-11-04T10:59:49.916Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/atenea.jpg",
+      "complete": true,
+      "width": 1152,
+      "height": 1536,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "perseo",
+      "fecha": "2026-11-04T10:59:50.238Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/perseo.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "dedalo",
+      "fecha": "2026-11-04T10:59:50.601Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/dedalo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "thor",
+      "fecha": "2026-11-04T11:00:58.394Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/thor.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      },
+      "evidencia": "publicado_cierre_20261104_thor.jpg",
+      "sha256_captura": "460fb003df06316ef19ce5ec5182e65bff6eea3860de8f122a32fed65242db6b"
+    },
+    {
+      "id": "loki",
+      "fecha": "2026-11-04T10:59:59.893Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/loki.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "odin",
+      "fecha": "2026-11-04T11:00:00.235Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/odin.jpg",
+      "complete": true,
+      "width": 1152,
+      "height": 1536,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "freya",
+      "fecha": "2026-11-04T11:00:00.459Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/freya.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "heimdall",
+      "fecha": "2026-11-04T11:00:00.702Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/heimdall.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "sif",
+      "fecha": "2026-11-04T11:00:00.900Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/sif.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "tyr",
+      "fecha": "2026-11-04T11:01:00.112Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/tyr.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      },
+      "evidencia": "publicado_cierre_20261104_tyr.jpg",
+      "sha256_captura": "b57dc6dd2a0178014aba46b70f82d3d470b16f38e7b68ba7fb35e63eab4de2fc"
+    },
+    {
+      "id": "zeus",
+      "fecha": "2026-11-04T11:00:06.626Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/zeus.jpg",
+      "complete": true,
+      "width": 780,
+      "height": 1040,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hera",
+      "fecha": "2026-11-04T11:00:06.835Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hera.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "poseidon",
+      "fecha": "2026-11-04T11:00:07.173Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/poseidon.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hades",
+      "fecha": "2026-11-04T11:00:07.384Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hades.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "demeter",
+      "fecha": "2026-11-04T11:00:07.597Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/demeter.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "persefone",
+      "fecha": "2026-11-04T11:00:07.948Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/persefone.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hestia",
+      "fecha": "2026-11-04T11:00:08.306Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hestia.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "apolo",
+      "fecha": "2026-11-04T11:00:08.611Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/apolo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "artemisa",
+      "fecha": "2026-11-04T11:00:08.914Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/artemisa.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "ares",
+      "fecha": "2026-11-04T11:00:09.292Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/ares.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "afrodita",
+      "fecha": "2026-11-04T11:00:10.117Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/afrodita.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hefesto",
+      "fecha": "2026-11-04T11:00:11.192Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hefesto.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hermes",
+      "fecha": "2026-11-04T11:00:11.567Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hermes.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "dioniso",
+      "fecha": "2026-11-04T11:00:11.865Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/dioniso.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "nike",
+      "fecha": "2026-11-04T11:00:12.157Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/nike.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "iris",
+      "fecha": "2026-11-04T11:00:13.094Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/iris.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "helios",
+      "fecha": "2026-11-04T11:00:13.776Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/helios.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "selene",
+      "fecha": "2026-11-04T11:00:14.800Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/selene.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "pan",
+      "fecha": "2026-11-04T11:00:15.220Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/pan.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "prometeo",
+      "fecha": "2026-11-04T11:00:15.975Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/prometeo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "aquiles",
+      "fecha": "2026-11-04T11:00:16.379Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/aquiles.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hector",
+      "fecha": "2026-11-04T11:00:17.137Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hector.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "jason",
+      "fecha": "2026-11-04T11:00:17.652Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/jason.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "orfeo",
+      "fecha": "2026-11-04T11:00:18.241Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/orfeo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "ariadna",
+      "fecha": "2026-11-04T11:00:18.824Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/ariadna.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "atalanta",
+      "fecha": "2026-11-04T11:00:20.279Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/atalanta.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "belerofonte",
+      "fecha": "2026-11-04T11:00:20.879Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/belerofonte.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "pandora",
+      "fecha": "2026-11-04T11:00:21.340Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/pandora.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "aracne",
+      "fecha": "2026-11-04T11:00:21.764Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/aracne.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "midas",
+      "fecha": "2026-11-04T11:00:22.091Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/midas.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "pegaso",
+      "fecha": "2026-11-04T11:00:22.795Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/pegaso.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "quiron",
+      "fecha": "2026-11-04T11:00:23.189Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/quiron.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "fenix",
+      "fecha": "2026-11-04T11:00:23.551Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/fenix.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "cerbero",
+      "fecha": "2026-11-04T11:00:23.928Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/cerbero.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "medusa",
+      "fecha": "2026-11-04T11:00:24.373Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/medusa.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "esfinge",
+      "fecha": "2026-11-04T11:00:24.726Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/esfinge.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "minotauro",
+      "fecha": "2026-11-04T11:00:25.329Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/minotauro.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "frigg",
+      "fecha": "2026-11-04T11:00:25.767Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/frigg.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "balder",
+      "fecha": "2026-11-04T11:00:26.218Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/balder.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "njord",
+      "fecha": "2026-11-04T11:00:26.577Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/njord.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "skadi",
+      "fecha": "2026-11-04T11:00:27.009Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/skadi.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "sigurd",
+      "fecha": "2026-11-04T11:00:27.494Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/sigurd.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "valquirias",
+      "fecha": "2026-11-04T11:00:27.994Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/valquirias.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "ratatosk",
+      "fecha": "2026-11-04T11:00:28.769Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/ratatosk.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "fenrir",
+      "fecha": "2026-11-04T11:00:29.068Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/fenrir.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "cronos",
+      "fecha": "2026-11-04T11:00:29.452Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/cronos.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "medea",
+      "fecha": "2026-11-04T11:00:29.903Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/medea.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hel",
+      "fecha": "2026-11-04T11:00:30.396Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/hel.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "eneas",
+      "fecha": "2026-11-04T11:00:30.734Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/eneas.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "edipo",
+      "fecha": "2026-11-04T11:00:31.826Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/edipo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "helena",
+      "fecha": "2026-11-04T11:00:32.064Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/helena.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "casandra",
+      "fecha": "2026-11-04T11:00:32.510Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/casandra.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "circe",
+      "fecha": "2026-11-04T11:00:32.865Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/circe.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "romulo_remo",
+      "fecha": "2026-11-04T11:00:33.427Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/romulo_remo.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "agamenon",
+      "fecha": "2026-11-04T11:00:33.666Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/agamenon.jpg",
+      "complete": true,
+      "width": 1152,
+      "height": 1536,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "eros",
+      "fecha": "2026-11-04T11:00:33.968Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/eros.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "dido",
+      "fecha": "2026-11-04T11:00:34.463Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/dido.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "andromeda",
+      "fecha": "2026-11-04T11:00:34.890Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/andromeda.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "nausicaa",
+      "fecha": "2026-11-04T11:00:35.224Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/nausicaa.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "calipso",
+      "fecha": "2026-11-04T11:00:35.687Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/calipso.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "psique",
+      "fecha": "2026-11-04T11:00:36.010Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/psique.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "dafne",
+      "fecha": "2026-11-04T11:00:36.526Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/dafne.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "eco",
+      "fecha": "2026-11-04T11:00:36.994Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/eco.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "narciso",
+      "fecha": "2026-11-04T11:00:37.343Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/narciso.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "pentesilea",
+      "fecha": "2026-11-04T11:00:37.777Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/pentesilea.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "paris",
+      "fecha": "2026-11-04T11:00:38.177Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/paris.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "calisto",
+      "fecha": "2026-11-04T11:00:38.642Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/calisto.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "casiopea",
+      "fecha": "2026-11-04T11:00:38.925Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/casiopea.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "orion",
+      "fecha": "2026-11-04T11:00:39.344Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/orion.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "castor_polux",
+      "fecha": "2026-11-04T11:00:39.722Z",
+      "url": "https://willyesposito.github.io/JuegoMitosFeli/coleccion.html",
+      "src": "https://willyesposito.github.io/JuegoMitosFeli/imagenes/castor_polux.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    }
+  ],
+  "errors": [],
+  "sha_desplegado_verificado": "0acf962c54b03dbcfc940bffadfcd19b72b68476",
+  "workflow_pages": {
+    "id": 41817704514,
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "nota_capturas": "Thor/Tyr capturados de nuevo con View Transitions desactivado sólo en el navegador de prueba para documentar estado estable; sin cambios al juego."
+}
