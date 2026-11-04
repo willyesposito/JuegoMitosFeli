@@ -1,5 +1,30 @@
 # Dudas visuales — campaña 2026-11-02
 
+## Priorización inicial para revisión y reconstrucción — 2026-11-04
+
+Esta tabla reúne recomendaciones preliminares basadas en las observaciones registradas más abajo. **No constituye una comparación visual nueva de las imágenes actuales con sus órdenes, un ranking completo de los 85 personajes ni una aprobación estética de Willy.** La disponibilidad de una imagen en el juego acredita su integración, no su fidelidad. Los cinco primeros son candidatos para elegir en conjunto; no se han seleccionado ni regenerado todavía.
+
+| Prioridad de revisión | Personaje | Cercanía estimada según registros | Motivo registrado | Imagen actual | Evaluación de Willy |
+|---|---|---|---|---|---|
+| Primera selección propuesta | Frigg | Posiblemente alejada | Acabado demasiado fotográfico y paisaje excesivo; dos intentos de corrección rechazados. | [Ver imagen](../imagenes/frigg.png) | Pendiente |
+| Primera selección propuesta | Casiopea | Posiblemente alejada | Rostro más joven, galaxias no autorizadas y respaldo sin W inequívoca; también hay dudas de encuadre y textura. | [Ver imagen](../imagenes/casiopea.png) | Pendiente |
+| Primera selección propuesta | Andrómeda | Posiblemente alejada | La alternativa integrada omitió cadenas y criatura marina previstas; incluye un templo incidental. | [Ver imagen](../imagenes/andromeda.png) | Pendiente |
+| Primera selección propuesta | Selene | Posiblemente alejada | Edad aparente más joven que la solicitada, tela recortada y disposición estilizada de las ruedas. | [Ver imagen](../imagenes/selene.png) | Pendiente |
+| Primera selección propuesta | Eneas | Posiblemente alejada | Anatomía y acabado más realistas, accesorios no autorizados y coraza preimperial no explícita. | [Ver imagen](../imagenes/eneas.png) | Pendiente |
+| Alternativa prioritaria | Edipo | A confirmar | Edad aparente más joven y alas de la Esfinge fuera del encuadre. | [Ver imagen](../imagenes/edipo.png) | Pendiente |
+| Alternativa prioritaria | Belerofonte | A confirmar | Puntas de alas recortadas y brazos más musculosos de lo pedido; textura detallada. | [Ver imagen](../imagenes/belerofonte.png) | Pendiente |
+| Alternativa prioritaria | Medusa | A confirmar | La cristalización puede leerse como hielo y la base gris como pelo humano; encuadre cerrado. | [Ver imagen](../imagenes/medusa.png) | Pendiente |
+| Alternativa prioritaria | Ares | A confirmar | La imagen existente se describió con armadura genérica y aspecto estático. | [Ver imagen](../imagenes/ares.png) | Pendiente |
+| Revisión posterior | Thor | A confirmar; desvíos registrados de encuadre y acabado | Figura cercana, capa más amplia y microtexturas; inventario completo según revisión previa. | [Ver imagen](../imagenes/thor.png) | Pendiente |
+| Revisión posterior | Tyr | A confirmar; desvíos registrados de encuadre y acabado | Pelo más ondulado y largo, encuadre cercano y microtexturas; inventario completo según revisión previa. | [Ver imagen](../imagenes/tyr.png) | Pendiente |
+| Revisión posterior | Orfeo | A confirmar; desvíos registrados de encuadre y acabado | Encuadre cercano y microtextura; lira, rostro y pies legibles según revisión previa. | [Ver imagen](../imagenes/orfeo.png) | Pendiente |
+| Revisión posterior | Quirón | A confirmar; desvíos registrados de encuadre y acabado | Encuadre cercano, microtexturas y brazo definido; anatomía y docencia legibles según revisión previa. | [Ver imagen](../imagenes/quiron.png) | Pendiente |
+| Revisión posterior | Hestia | A confirmar; desvíos registrados de encuadre y acabado | Figura casi completa en altura y texturas realistas; llama, hogar y sandalias presentes según revisión previa. | [Ver imagen](../imagenes/hestia.png) | Pendiente |
+
+**Resto de personajes:** [FALTA: comparación sistemática de la imagen vigente con su orden y evaluación de Willy]. La ausencia en esta tabla no significa que estén aprobados ni que hayan quedado más cerca de lo pedido. Para establecer el orden definitivo, revisar imagen y orden de cada personaje, conservar la evidencia de desvíos y registrar la decisión de Willy. Las notas siguientes son históricas; sus estados de integración pueden haber cambiado en entradas posteriores.
+
+## Historial de dudas y decisiones provisionales
+
 | Personaje | Duda | Decisión provisional | Ruta prevista |
 |---|---|---|---|
 | Andrómeda | Roca exigida en identidad y prohibición genérica de pedestal; rechazo técnico de generación | Usar roca costera narrativa, no pedestal heroico. No hay imagen producida ni aprobación | imagenes/andromeda.png |
