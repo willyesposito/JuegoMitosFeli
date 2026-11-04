@@ -1,0 +1,6 @@
+# andromeda — 2026-11-04
+Pendiente de aprobación. Fuente: Produccion/andromeda.md y criterio_riqueza_narrativa_2026-11-04.md. Prendas y detalles concretos son interpretación artística autorizada, no hechos míticos nuevos.
+Presentes roca, cadenas abiertas separadas, vestido, sobrecapa, estrellas y reflejos. Desvíos: descalza, joyas y broches incidentales; Cetus no inequívoco, diagrama estelar sin validación astronómica; figura grande y brazos más abiertos. No poderes nuevos.
+No se inspeccionó imagen anterior; conservación exacta no acreditada. Sin reemplazo de imagen vigente.
+Prompt completo:
+Una sola ilustración vertical 3:4, figura completa al 75%, aire alrededor. Cine animación 3D familiar pulido, proporciones creíbles, cejas expresivas, formas suaves. Joven adulta esbelta de piel castaña oscura, ojos oscuros, pelo negro crespo largo. Erguida libre y aliviada mirando arriba lateral tras liberación. Cadenas abiertas depositadas sobre roca costera separadas de muñecas; vestido y sobrecapa ligera al viento. Reflejos marinos y estrellas intensos como poesía ambiental; pequeña evocación estelar lejana de Cetus, sin monstruo vivo ni amenaza. Fondo subordinado desenfocado. Sin texto, marco ni halo.
