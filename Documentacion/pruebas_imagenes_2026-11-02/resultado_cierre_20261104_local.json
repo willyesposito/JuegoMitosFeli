@@ -1,0 +1,1203 @@
+{
+  "fecha": "2026-11-04T10:56:57.557Z",
+  "viewport": "390x844",
+  "base": "http://127.0.0.1:37911/",
+  "prueba": "85 cartas reales abiertas mediante click e img.decode(); capturas de Thor/Tyr. Perfil sintético en contexto aislado, sin modificar datos del usuario.",
+  "results": [
+    {
+      "id": "teseo",
+      "fecha": "2026-11-04T10:56:19.093Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/teseo.jpg",
+      "complete": true,
+      "width": 1152,
+      "height": 1536,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "heracles",
+      "fecha": "2026-11-04T10:56:19.281Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/heracles.jpg",
+      "complete": true,
+      "width": 1152,
+      "height": 1536,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "penelope",
+      "fecha": "2026-11-04T10:56:19.429Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/penelope.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "atlas",
+      "fecha": "2026-11-04T10:56:19.766Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/atlas.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "odiseo",
+      "fecha": "2026-11-04T10:56:20.012Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/odiseo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "atenea",
+      "fecha": "2026-11-04T10:56:20.188Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/atenea.jpg",
+      "complete": true,
+      "width": 1152,
+      "height": 1536,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "perseo",
+      "fecha": "2026-11-04T10:56:20.502Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/perseo.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "dedalo",
+      "fecha": "2026-11-04T10:56:20.749Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/dedalo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "thor",
+      "fecha": "2026-11-04T10:56:20.995Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/thor.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      },
+      "evidencia": "local_cierre_20261104_thor.jpg",
+      "sha256_captura": "fb3c0f47fcc1813865eb87f66100c1db7c1ebacdb2122d22bda2215037acdb04"
+    },
+    {
+      "id": "loki",
+      "fecha": "2026-11-04T10:56:28.635Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/loki.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "odin",
+      "fecha": "2026-11-04T10:56:28.989Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/odin.jpg",
+      "complete": true,
+      "width": 1152,
+      "height": 1536,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "freya",
+      "fecha": "2026-11-04T10:56:29.122Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/freya.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "heimdall",
+      "fecha": "2026-11-04T10:56:29.234Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/heimdall.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "sif",
+      "fecha": "2026-11-04T10:56:29.383Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/sif.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "tyr",
+      "fecha": "2026-11-04T10:56:29.604Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/tyr.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      },
+      "evidencia": "local_cierre_20261104_tyr.jpg",
+      "sha256_captura": "07db54d98c316b0d8b4d4226436402170b40e465e680430d87ef205792a97a32"
+    },
+    {
+      "id": "zeus",
+      "fecha": "2026-11-04T10:56:33.262Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/zeus.jpg",
+      "complete": true,
+      "width": 780,
+      "height": 1040,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hera",
+      "fecha": "2026-11-04T10:56:33.397Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/hera.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "poseidon",
+      "fecha": "2026-11-04T10:56:33.550Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/poseidon.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hades",
+      "fecha": "2026-11-04T10:56:33.664Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/hades.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "demeter",
+      "fecha": "2026-11-04T10:56:33.771Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/demeter.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "persefone",
+      "fecha": "2026-11-04T10:56:33.918Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/persefone.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hestia",
+      "fecha": "2026-11-04T10:56:34.142Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/hestia.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "apolo",
+      "fecha": "2026-11-04T10:56:34.422Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/apolo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "artemisa",
+      "fecha": "2026-11-04T10:56:34.552Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/artemisa.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "ares",
+      "fecha": "2026-11-04T10:56:34.829Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/ares.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "afrodita",
+      "fecha": "2026-11-04T10:56:35.012Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/afrodita.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hefesto",
+      "fecha": "2026-11-04T10:56:35.206Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/hefesto.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hermes",
+      "fecha": "2026-11-04T10:56:35.618Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/hermes.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "dioniso",
+      "fecha": "2026-11-04T10:56:35.784Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/dioniso.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "nike",
+      "fecha": "2026-11-04T10:56:36.014Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/nike.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "iris",
+      "fecha": "2026-11-04T10:56:36.312Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/iris.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "helios",
+      "fecha": "2026-11-04T10:56:36.467Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/helios.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "selene",
+      "fecha": "2026-11-04T10:56:37.463Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/selene.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "pan",
+      "fecha": "2026-11-04T10:56:37.834Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/pan.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "prometeo",
+      "fecha": "2026-11-04T10:56:38.262Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/prometeo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "aquiles",
+      "fecha": "2026-11-04T10:56:38.928Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/aquiles.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hector",
+      "fecha": "2026-11-04T10:56:39.378Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/hector.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "jason",
+      "fecha": "2026-11-04T10:56:40.618Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/jason.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "orfeo",
+      "fecha": "2026-11-04T10:56:40.851Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/orfeo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "ariadna",
+      "fecha": "2026-11-04T10:56:41.748Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/ariadna.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "atalanta",
+      "fecha": "2026-11-04T10:56:41.899Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/atalanta.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "belerofonte",
+      "fecha": "2026-11-04T10:56:42.249Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/belerofonte.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "pandora",
+      "fecha": "2026-11-04T10:56:42.410Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/pandora.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "aracne",
+      "fecha": "2026-11-04T10:56:43.030Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/aracne.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "midas",
+      "fecha": "2026-11-04T10:56:43.153Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/midas.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "pegaso",
+      "fecha": "2026-11-04T10:56:44.247Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/pegaso.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "quiron",
+      "fecha": "2026-11-04T10:56:44.393Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/quiron.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "fenix",
+      "fecha": "2026-11-04T10:56:45.218Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/fenix.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "cerbero",
+      "fecha": "2026-11-04T10:56:45.349Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/cerbero.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "medusa",
+      "fecha": "2026-11-04T10:56:45.576Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/medusa.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "esfinge",
+      "fecha": "2026-11-04T10:56:46.279Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/esfinge.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "minotauro",
+      "fecha": "2026-11-04T10:56:46.754Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/minotauro.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "frigg",
+      "fecha": "2026-11-04T10:56:46.971Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/frigg.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "balder",
+      "fecha": "2026-11-04T10:56:47.216Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/balder.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "njord",
+      "fecha": "2026-11-04T10:56:47.580Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/njord.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "skadi",
+      "fecha": "2026-11-04T10:56:47.791Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/skadi.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "sigurd",
+      "fecha": "2026-11-04T10:56:48.002Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/sigurd.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "valquirias",
+      "fecha": "2026-11-04T10:56:48.315Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/valquirias.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "ratatosk",
+      "fecha": "2026-11-04T10:56:48.691Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/ratatosk.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "fenrir",
+      "fecha": "2026-11-04T10:56:48.797Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/fenrir.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "cronos",
+      "fecha": "2026-11-04T10:56:49.362Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/cronos.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "medea",
+      "fecha": "2026-11-04T10:56:50.004Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/medea.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "hel",
+      "fecha": "2026-11-04T10:56:50.273Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/hel.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "eneas",
+      "fecha": "2026-11-04T10:56:50.460Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/eneas.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "edipo",
+      "fecha": "2026-11-04T10:56:50.678Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/edipo.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "helena",
+      "fecha": "2026-11-04T10:56:50.813Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/helena.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "casandra",
+      "fecha": "2026-11-04T10:56:51.239Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/casandra.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "circe",
+      "fecha": "2026-11-04T10:56:51.439Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/circe.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "romulo_remo",
+      "fecha": "2026-11-04T10:56:52.180Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/romulo_remo.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "agamenon",
+      "fecha": "2026-11-04T10:56:52.399Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/agamenon.jpg",
+      "complete": true,
+      "width": 1152,
+      "height": 1536,
+      "objectFit": "cover",
+      "box": {
+        "w": 346.5,
+        "h": 464
+      }
+    },
+    {
+      "id": "eros",
+      "fecha": "2026-11-04T10:56:52.993Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/eros.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "dido",
+      "fecha": "2026-11-04T10:56:53.129Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/dido.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "andromeda",
+      "fecha": "2026-11-04T10:56:53.671Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/andromeda.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "nausicaa",
+      "fecha": "2026-11-04T10:56:54.017Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/nausicaa.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "calipso",
+      "fecha": "2026-11-04T10:56:54.321Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/calipso.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "psique",
+      "fecha": "2026-11-04T10:56:54.892Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/psique.jpg",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "dafne",
+      "fecha": "2026-11-04T10:56:55.118Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/dafne.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "eco",
+      "fecha": "2026-11-04T10:56:55.397Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/eco.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "narciso",
+      "fecha": "2026-11-04T10:56:55.624Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/narciso.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "pentesilea",
+      "fecha": "2026-11-04T10:56:55.944Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/pentesilea.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "paris",
+      "fecha": "2026-11-04T10:56:56.215Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/paris.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "calisto",
+      "fecha": "2026-11-04T10:56:56.896Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/calisto.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "casiopea",
+      "fecha": "2026-11-04T10:56:57.051Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/casiopea.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "orion",
+      "fecha": "2026-11-04T10:56:57.211Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/orion.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    },
+    {
+      "id": "castor_polux",
+      "fecha": "2026-11-04T10:56:57.555Z",
+      "url": "http://127.0.0.1:37911/coleccion.html",
+      "src": "http://127.0.0.1:37911/imagenes/castor_polux.png",
+      "complete": true,
+      "width": 1086,
+      "height": 1448,
+      "objectFit": "cover",
+      "box": {
+        "w": 352.5,
+        "h": 470
+      }
+    }
+  ],
+  "errors": []
+}

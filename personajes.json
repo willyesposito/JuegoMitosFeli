@@ -747,6 +747,7 @@
   },
   {
     "id": "thor",
+    "imagen": "imagenes/thor.png",
     "nombre": "Thor",
     "mitologia": "nordica",
     "titulo": "El dios del trueno",
@@ -1278,6 +1279,7 @@
   },
   {
     "id": "tyr",
+    "imagen": "imagenes/tyr.png",
     "nombre": "Tyr",
     "mitologia": "nordica",
     "titulo": "El más valiente de los dioses",

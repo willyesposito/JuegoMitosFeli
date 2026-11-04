@@ -922,3 +922,11 @@ Thor resultado 2026-11-03T14:31:38.935994+00:00 — PNGreal copiado a imagenes/t
 
 ## Recuperación manual 2026-11-04
 Reserva de Tyr para esta sesión; reserva anterior del 3/11 recuperada sin actividad posterior acreditada. Thor PNG ya existe y debe reutilizarse; ambos faltan en personajes.json. Tareas anteriores deshabilitadas. Intento Tyr 1 preregistrado 2026-11-04T10:40:59.868Z. Sin llamadas conocidas de esta campaña en las últimas cinco horas. Preflight: adulto maduro atlético seco, rostro cuadrado rubio oscuro corto/barba breve; postura voluntaria junto a Fenrir tranquilo, brazos asimétricos y cinta imposible en curva externa. Vestimenta nórdica lisa manga larga/pantalón/botas; sin ornamentos ni armas. Claro forestal difuso, figura completa 70–80%, cinta activa mueve hojas; sin amenaza ni heridas. Se separa por menor masa que Thor, sin armadura de Ares, sin gesto de Sigurd. Autorización de continuidad vigente.
+
+
+## Recuperación final — 2026-11-04
+Thor y Tyr recuperados de los PNG originales ya subidos (`29e8c79` y `d2bffdb`). Cero llamadas de generación en esta recuperación; no se duplicaron resultados. Se inspeccionaron ambas imágenes, con inventario/gate/desviaciones registrados en el archivo único de dudas. Se agregan únicamente los campos `imagen` de ambos personajes y se actualiza `sw.js` a v3.5.43.
+Auditoría integral: 85/85 referencias a archivos existentes y completamente decodificables; todos los demás campos de personajes.json preservados. Prueba local/publicada y cierre definitivo se registran a continuación después de ejecutarlos; esta entrada no declara aún verificación publicada.
+
+### Prueba local final
+Las 85 cartas se abrieron por click real en Chromium, en perfil sintético aislado y viewport 390×844. Las 85 imágenes completaron `img.decode()` sin errores JavaScript ni HTTP. Thor/Tyr: 1086×1448, caja 352,5×470 y `object-fit: contain`; capturas `local_cierre_20261104_thor.jpg` y `local_cierre_20261104_tyr.jpg` abiertas e inspeccionadas. Resultado detallado: `resultado_cierre_20261104_local.json`. Las 55 evidencias publicadas previas de `trazabilidad_55_1026.json` existen y sus hashes coinciden. Quedan únicamente las dos verificaciones visuales publicadas de Thor/Tyr para declarar cierre.
