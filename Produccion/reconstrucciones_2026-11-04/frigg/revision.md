@@ -1,0 +1,7 @@
+# Frigg — 2026-11-04
+Estado: pendiente de aprobación.
+Fuente: Produccion/frigg.md y criterio_riqueza_narrativa_2026-11-04.md. Tejido, borde y manto son interpretación artística autorizada.
+Inventario presente: vestido grueso, manto asimétrico, borde tejido, sandalias, manos superpuestas, mirada lateral. Sin objetos proféticos.
+Desvíos: figura mayor al 80%; encuadre no respeta exactamente 3:4. Fondo simple. Acabado fotográfico autorizado. No se inspeccionó imagen anterior. No acredita conservación facial exacta.
+Prompt:
+Imagen individual vertical 3:4 de Frigg, reina de Asgard mayor madura, alta esbelta, rostro largo sereno, piel clara rosada, ojos azul gris, cabello rubio ceniza con canas recogido en trenzas simples. Figura completa al 75% del alto, sandalias completas. Porte regio cerrado en tres cuartos, boca cerrada, mirada lateral atenta como quien conoce algo que no revela, manos juntas una cubriendo la otra. Vestido azul pizarra de tejido grueso, manto asimétrico sobre un hombro y borde tejido discreto. Acabado fotográfico fantástico aceptable, luz suave, fondo muy simple desenfocado con mucho aire. La brisa mueve borde del manto; sin objetos proféticos, corona, halo, texto ni marcos. Identidad silenciosa, sin poderes inventados. Una sola imagen.
