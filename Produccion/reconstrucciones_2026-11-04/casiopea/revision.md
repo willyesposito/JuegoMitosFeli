@@ -1,0 +1,6 @@
+# casiopea — 2026-11-04
+Pendiente de aprobación. Fuente: Produccion/casiopea.md y criterio_riqueza_narrativa_2026-11-04.md. Prendas y detalles concretos son interpretación artística autorizada, no hechos míticos nuevos.
+Inventario: trono, vestido, cinco estrellas presentes. Desvíos: respaldo tiene más de cinco vértices y geometría no es W limpia; corona, joyas y salón incidentales. Pies ocultos, figura grande, edad juvenil. No se declara cumplimiento.
+No se inspeccionó imagen anterior; conservación exacta no acreditada. Sin reemplazo de imagen vigente.
+Prompt completo:
+Una imagen individual vertical 3:4, figura y equipo completos al 75% del alto con aire en bordes. Cine de animación 3D familiar, volumen sólido pulido, rasgos adultos simplificados, cejas expresivas, anatomía creíble, sin microtextura dominante. Reina madura de piel castaña media, ojos ámbar, pelo negro alto estructurado. Sentada orgullosa en trono completo con asiento y apoyabrazos coherentes. Respaldo con cinco vértices inequívocos alto-bajo-alto-bajo-alto formando W; cinco estrellas repiten esa W separadas del cabello. Vestido regio azul petróleo con pliegues amplios y borde geométrico. Estrellas en movimiento sutil, sin galaxias. Fondo desenfocado subordinado, rostro libre, sin texto ni marco ni halo.
