@@ -918,3 +918,7 @@ PreflightTyr: madurofuerte seco,rostrocuadrado,pelocortorubiooscuro/barbabreve,p
 Reserva a4ec406, primera llamada nueva siguiente. Guardar hora real conclock inmediatamente antes/después; noantes14:30:09UTC. Una variante,sinreintento,7previasconocidas+2inciertas+esta<=10.
 
 Thor resultado 2026-11-03T14:31:38.935994+00:00 — PNGreal copiado a imagenes/thor.png, decodificacióncompleta (1086, 1448). Primera llamada nueva,sinreintento/rechazo/429. Preservacióninmediata antesdeintegración/gate/local/publicado.
+
+
+## Recuperación manual 2026-11-04
+Reserva de Tyr para esta sesión; reserva anterior del 3/11 recuperada sin actividad posterior acreditada. Thor PNG ya existe y debe reutilizarse; ambos faltan en personajes.json. Tareas anteriores deshabilitadas. Intento Tyr 1 preregistrado 2026-11-04T10:40:59.868Z. Sin llamadas conocidas de esta campaña en las últimas cinco horas. Preflight: adulto maduro atlético seco, rostro cuadrado rubio oscuro corto/barba breve; postura voluntaria junto a Fenrir tranquilo, brazos asimétricos y cinta imposible en curva externa. Vestimenta nórdica lisa manga larga/pantalón/botas; sin ornamentos ni armas. Claro forestal difuso, figura completa 70–80%, cinta activa mueve hojas; sin amenaza ni heridas. Se separa por menor masa que Thor, sin armadura de Ares, sin gesto de Sigurd. Autorización de continuidad vigente.
