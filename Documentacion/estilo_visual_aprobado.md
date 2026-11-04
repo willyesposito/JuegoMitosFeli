@@ -1,5 +1,9 @@
 # Estilo visual aprobado — Mundo de Mitos
 
+**Regla vigente — 2026-11-04: riqueza narrativa e identidad mítica.** Priorizar que se entienda quién es el personaje y qué episodio representa. Se permiten prendas de cortes distintos, capas, tejidos, bordados, cierres, equipo, desgaste y objetos narrativos cuando aporten identidad o sentido a la escena; no hay un máximo fijo de prendas ni de detalles. Antes de generar, registrar los detalles elegidos en la ficha o el preflight y distinguir: (a) atributo o episodio respaldado, citando fuente; (b) interpretación artística autorizada, sin presentarla como dato del mito. La autorización general de Willy permite estas decisiones de diseño sin pedir aprobación por cada cierre o material. Para nuevos poderes, animales, símbolos de identidad o hechos narrativos, verificar la fuente y actualizar la ficha antes de dibujarlos. No agregar por rutina ni copiar el mismo kit entre personajes. Mantener rostro, identificador, acción, silueta y jerarquía legibles. Revisar también las omisiones de elementos exigidos; respetar condiciones y alternativas. Esta regla reemplaza las prohibiciones generales de adornos, el inventario cerrado absoluto y la base lisa obligatoria. Las exclusiones específicas contra errores míticos, anacronismos y clones siguen vigentes salvo decisión posterior expresa. Frigg puede conservar el acabado fotográfico aceptado por Willy; esta excepción no cambia el estilo general de la colección.
+
+Detalle y decisiones individuales: `Documentacion/criterio_riqueza_narrativa_2026-11-04.md`. Ante contradicción con restricciones anteriores de detalle, rige esta decisión.
+
 **Decisión de Willy, 2026-09-14 (tercera y vigente).** La colección es **cine de animación 3D
 familiar**, calibrada por `imagenes/teseo.jpg` en el acabado y por `imagenes/hermes.jpg` en el
 registro emocional.
@@ -41,7 +45,7 @@ pausar en el cine, funciona. Ese es el criterio.
 
 - **Volumen, no pincelada.** Las formas son sólidas, tridimensionales, con superficie pulida de
   animación. No es pintura al óleo, no es acuarela, no es pincelada visible.
-- **No es fotografía.** Nunca. La piel, la tela y la piedra son versiones estilizadas y
+- **Estilo general: no fotografía**, salvo excepción individual aprobada, como Frigg (2026-11-04). La piel, la tela y la piedra son versiones estilizadas y
   legibles, no capturas de materiales reales.
 - **No es 2D plano.** Sin contorno negro de dibujo animado, sin cel shading de color plano, sin
   aspecto vectorial.
@@ -130,12 +134,7 @@ La magia **sale siempre del don del personaje**, nunca de un efecto genérico pe
 identificador principal que la orden declara en su §2 es la fuente. Eso no agrega ningún objeto
 al inventario cerrado: lo que se enciende es lo que el personaje ya tiene.
 
-**Y lo característico se muestra, no sólo se permite.** El inventario de la §5 de cada orden está
-cerrado hacia arriba y no hacia abajo: lo que no figura no entra, y lo que figura tiene que
-entrar. Un personaje que llega a la imagen sin ninguno de sus atributos reconocibles es una carta
-fallada aunque no haya inventado nada, y **entre una carta pelada y una con tres objetos
-autorizados, van los tres**. El único límite es la jerarquía: el identificador manda, las pistas
-acompañan, y nada tapa la cara ni el identificador.
+**Lo característico se muestra.** Revisar las omisiones de elementos exigidos, respetando condiciones y alternativas. El inventario de base admite enriquecimiento narrativo documentado conforme a la decisión del 2026-11-04; ningún detalle debe tapar rostro, acción o identificador.
 
 ### Las tres capas
 
@@ -203,10 +202,10 @@ Dicho eso: antes de concluir que un personaje no tiene magia, mirar bien. La may
 > `CLAUDE.md` §2.2 y por la §10 de la guía maestra sin ninguna flexibilización: sin violencia
 > explícita, sin sangre, sin heridas, sin cadáveres, sin sexualización, sin amenaza dirigida.
 
-Tampoco se flexibiliza nada de la auditoría del 14/9, que es independiente del estilo y sigue
-entera: inventario cerrado por personaje, separación obligatoria contra los clones comprobados,
+La auditoría del 14/9 conserva sus controles de identidad y separación contra clones; el
+inventario se rige por el enriquecimiento narrativo del 2026-11-04. Se mantienen los controles:
 sin pedestal de roca, sin templo griego de decoración, sin Olimpo, sin cielo azul con nubes por
-defecto, y sin adornos, broches ni emblemas que la ficha no autorice.
+defecto, y con detalles narrativos documentados según la regla del 2026-11-04.
 
 `hermes.jpg` tiene templo al fondo, cielo azul de default y un broche inventado en el hombro.
 **Nada de eso vuelve.** De esa imagen vuelve el registro y nada más.
@@ -215,7 +214,7 @@ defecto, y sin adornos, broches ni emblemas que la ficha no autorice.
 
 Se rechaza la imagen, aunque el contenido mitológico sea correcto, si:
 
-1. **parece una fotografía** o una captura de actor real;
+1. **parece una fotografía** o una captura de actor real sin excepción individual aprobada;
 2. **parece pintura tradicional:** óleo, pincelada visible, empaste, aspecto de cuadro de museo;
 3. **parece 2D plano:** contorno negro de dibujo animado, cel shading de color plano, vectorial;
 4. tiene cara redondeada, cabeza de gnomo o proporciones de muñeco;
@@ -226,7 +225,7 @@ Se rechaza la imagen, aunque el contenido mitológico sea correcto, si:
 8. **no hay magia:** el personaje se lee como una persona común con un objeto, sin el fenómeno
    que su don sostiene (§7). Una carta sobria es una carta fallada;
 9. **la carta está pelada:** falta sin explicación un elemento que la §5 de la orden
-   autorizaba. El inventario cerrado se incumple por omisión igual que por exceso;
+   exige, respetando condiciones y alternativas; registrar las omisiones y el diseño añadido;
 10. **la magia no se puede trazar al don:** chispas genéricas, aura que envuelve el cuerpo y
    disuelve la silueta, halo detrás de la cabeza, runas o pseudo-texto flotando, o un efecto que
    tapa la cara o el identificador;

@@ -446,13 +446,13 @@ def orden(nombre, adn, mat, pj):
              'avatar ni colisión; tampoco aprueba identidad, inventario o separación.')
     L.append('')
     if img:
-        L.append(f'**Imagen actual:** `{img}`, **a reemplazar.** Es de un estilo anterior: la '
-                 'colección quedó en cine de animación 3D el 2026-09-14, con el acabado calibrado '
-                 'por `imagenes/teseo.jpg` y el registro emocional por `imagenes/hermes.jpg`.')
+        L.append(f'**Imagen actual:** `{img}`. Su existencia no implica aprobación ni reemplazo automático; consultar la evaluación vigente.')
     else:
         L.append('**Imagen actual:** ninguna. La carta funciona igual, mostrando el nombre con el '
                  'tratamiento de su mitología.')
     L.append('')
+    if f.get('acabado'):
+        L.append('**Acabado específico vigente:** ' + f['acabado'])
     L.append('**Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.')
     L.append('')
     L.append('> Generada por `herramientas/generar-ordenes.py`. Para cambiarla, editar la fuente '
@@ -523,7 +523,7 @@ def orden(nombre, adn, mat, pj):
     L.append(f"Dirección corporal: {may(limpiar_fuente(f['direccion']))}")
     L.append('')
     L.append('Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin '
-             'agregar un objeto que no está en el inventario de la §5, frenar y avisar.')
+             'agregar un detalle, aplicar la regla narrativa de la §5 y documentarlo en el preflight; verificar fuentes para nuevos atributos míticos.')
     L.append('')
     L.append('**Y al revés, que es el caso que falló tres veces:** si un objeto exigido de la §5 '
              'no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta '
@@ -566,9 +566,9 @@ def orden(nombre, adn, mat, pj):
     L.append('')
 
     # 5. Inventario
-    L.append('## 5. Inventario cerrado')
+    L.append('## 5. Inventario narrativo y detalles trazables')
     L.append('')
-    L.append('Lo único que puede verse:')
+    L.append('Elementos de base; completar con detalles narrativos trazables según la regla siguiente:')
     L.append('')
     L.append(f"1. **{may(idt).rstrip('.')}** — identificador principal. ADN.")
     pistas = limpiar_fuente(f['pistas'])
@@ -584,28 +584,13 @@ def orden(nombre, adn, mat, pj):
         vest = limpiar_fuente(f.get('vestimenta', ''))
         if vest:
             L.append(f'3. **Vestimenta autorizada:** {may(vest)} ADN. Sin adornos más allá de lo que '
-                     'dice esa línea.')
+                     'autoriza la regla narrativa del 2026-11-04; documentar los detalles adicionales en el preflight.')
         else:
-            L.append(f"3. **Vestimenta lisa del vocabulario {GENTILICIO.get(c['mitologia'], c['mitologia'])}**, sin ornamento. Necesaria para "
-                     'vestir al personaje; sin autorización de ningún adorno concreto, va lisa.')
+            L.append(f"3. **Vestimenta del vocabulario {GENTILICIO.get(c['mitologia'], c['mitologia'])}:** resolver cortes, capas, tejidos y detalles según identidad y episodio; documentar decisiones artísticas en el preflight.")
     L.extend(vestimenta_funcional(f, c, es_nh))
     L.append('')
-    L.append('Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** '
-             'medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, '
-             '**sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no '
-             'pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo '
-             'agregado por fuera del identificador, **sin** runas, '
-             '**sin** pseudo-texto, **sin** calzado con decisión no trazada.')
+    L.append('**Regla vigente — 2026-11-04: riqueza narrativa e identidad mítica.** Priorizar que se entienda quién es el personaje y qué episodio representa. Se permiten prendas de cortes distintos, capas, tejidos, bordados, cierres, equipo, desgaste y objetos narrativos cuando aporten identidad o sentido a la escena; no hay un máximo fijo de prendas ni de detalles. Antes de generar, registrar los detalles elegidos en la ficha o el preflight y distinguir: (a) atributo o episodio respaldado, citando fuente; (b) interpretación artística autorizada, sin presentarla como dato del mito. La autorización general de Willy permite estas decisiones de diseño sin pedir aprobación por cada cierre o material. Para nuevos poderes, animales, símbolos de identidad o hechos narrativos, verificar la fuente y actualizar la ficha antes de dibujarlos. No agregar por rutina ni copiar el mismo kit entre personajes. Mantener rostro, identificador, acción, silueta y jerarquía legibles. Revisar también las omisiones de elementos exigidos; respetar condiciones y alternativas. Esta regla reemplaza las prohibiciones generales de adornos, el inventario cerrado absoluto y la base lisa obligatoria. Las exclusiones específicas contra errores míticos, anacronismos y clones siguen vigentes salvo decisión posterior expresa. Frigg puede conservar el acabado fotográfico aceptado por Willy; esta excepción no cambia el estilo general de la colección.')
     L.append('')
-    if hay_pistas:
-        L.append('**Inventario por exceso y por omisión.** Lo que no figura no entra. '
-                 'Mostrar los elementos exigidos por el ADN, aplicar las pistas condicionales '
-                 'sólo cuando se cumpla su condición y conservar las alternativas como tales. '
-                 'El identificador principal manda, las pistas acompañan y nada tapa la cara '
-                 'ni el identificador. En el preflight, declarar qué condiciones se cumplen '
-                 'y qué alternativa se usa, sin agregar decisiones ajenas a la fuente.')
-        L.append('')
-
     L.append('**La magia es obligatoria y sale del identificador.** El detalle reconocible de la '
              '§2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el '
              'don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina '
@@ -623,7 +608,7 @@ def orden(nombre, adn, mat, pj):
              'objeto en actividad y el entorno reaccionando, y no se inventa uno.')
     L.append('')
     if c['mitologia'] == 'nordica':
-        L.append(f'**Kit nórdico prohibido:** {KIT_NORDICO}. Ese conjunto se repitió en seis cartas '
+        L.append(f'**Evitar kit nórdico repetido:** {KIT_NORDICO}. Sus piezas no se prohíben por sí mismas si tienen sentido documentado; ese conjunto se repitió en seis cartas '
                  'nórdicas y es la razón por la que parecen del mismo disfraz. Una mitología aporta '
                  'vocabulario, no uniforme.')
         L.append('')
@@ -806,7 +791,7 @@ def indice(adn, mat, pj):
             notas.append('contaminación pop pendiente'); n_pop += 1
         if nombre in IV.RIESGOS_OBSERVADOS:
             notas.append('clon comprobado')
-        img = 'sí, a reemplazar' if c.get('imagen') else 'no'
+        img = 'sí, evaluación individual' if c.get('imagen') else 'no'
         L.append(f"| [{nombre}](../Produccion/{sid}.md) | {c['tier']} | {c['mitologia']} | {col} | "
                  f"{tex} | {piel} | {ojos} | {org} | {img} | {'; '.join(notas) or '—'} |")
     L += ['', '---', '',

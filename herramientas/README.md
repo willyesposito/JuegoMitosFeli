@@ -1,5 +1,7 @@
 # Herramientas
 
+> Actualización 2026-11-04: para riqueza de detalle y próximos diseños, rige `Documentacion/criterio_riqueza_narrativa_2026-11-04.md`. Los resultados históricos no equivalen a aprobación estética.
+
 Scripts de apoyo para el desarrollo del juego. No son parte del juego en sí
 (no se sirven ni se cargan desde `index.html` ni ningún módulo): corren
 aparte, dentro de una sesión de Claude Code, para ayudar a revisar o probar

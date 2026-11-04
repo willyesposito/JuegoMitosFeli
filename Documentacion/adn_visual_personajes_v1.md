@@ -6,7 +6,7 @@ Documento de preproducción visual gobernado por `Documentacion/guia_visual_maes
 
 **Fuente narrativa auxiliar:** `Documentacion/roster_personajes.md` para fichas heredadas y las fichas ya integradas en `personajes.json` para personajes posteriores.
 
-Este documento no agrega canon mitológico. Las decisiones de rostro, cuerpo, cabello, silueta, pose y composición son **decisiones de diseño visual**, no afirmaciones históricas o mitológicas. Objetos, poderes, animales, transformaciones y hechos narrativos solo se usan cuando ya existen en el repo.
+Este documento no agrega canon mitológico. Las decisiones de rostro, cuerpo, cabello, silueta, pose y composición son **decisiones de diseño visual**, no afirmaciones históricas o mitológicas. Los detalles se documentan según la regla del 2026-11-04; verificar fuentes antes de incorporar nuevos atributos o hechos míticos.
 
 ## Estado de producción
 
@@ -36,13 +36,9 @@ busca literalmente para armar las 85 órdenes: cambiar "Pistas secundarias autor
 cualquier variante hace que el generador falle con un `KeyError`. Las aclaraciones van dentro del
 valor del campo, nunca en su nombre.
 
-**Campo 13, opcional, agregado el 2026-09-14: vestimenta autorizada.** Cuando una prenda concreta
-es parte de cómo se reconoce al personaje (una clámide al viento, un manto que cae en bloque, una
-piel echada al hombro), la ficha la declara acá. Si el campo no está, el personaje va con
-vestimenta lisa del vocabulario de su mitología y sin ornamento, que es el default de siempre.
-El campo existe para autorizar la prenda, nunca para agregarle adornos: broches, medallones,
-insignias y emblemas siguen prohibidos salvo que la ficha los nombre uno por uno.
+**Campo 13, opcional: vestimenta autorizada.** Registrar prendas y detalles que expresen identidad, episodio y función. La regla del 2026-11-04 permite resolver cortes, capas, tejidos, bordados y equipo narrativo en el preflight, distinguiendo diseño artístico de atestación. La base funcional siguiente es un respaldo cuando falte una decisión concreta, no un uniforme obligatorio.
 
+**Regla vigente — 2026-11-04: riqueza narrativa e identidad mítica.** Priorizar que se entienda quién es el personaje y qué episodio representa. Se permiten prendas de cortes distintos, capas, tejidos, bordados, cierres, equipo, desgaste y objetos narrativos cuando aporten identidad o sentido a la escena; no hay un máximo fijo de prendas ni de detalles. Antes de generar, registrar los detalles elegidos en la ficha o el preflight y distinguir: (a) atributo o episodio respaldado, citando fuente; (b) interpretación artística autorizada, sin presentarla como dato del mito. La autorización general de Willy permite estas decisiones de diseño sin pedir aprobación por cada cierre o material. Para nuevos poderes, animales, símbolos de identidad o hechos narrativos, verificar la fuente y actualizar la ficha antes de dibujarlos. No agregar por rutina ni copiar el mismo kit entre personajes. Mantener rostro, identificador, acción, silueta y jerarquía legibles. Revisar también las omisiones de elementos exigidos; respetar condiciones y alternativas. Esta regla reemplaza las prohibiciones generales de adornos, el inventario cerrado absoluto y la base lisa obligatoria. Las exclusiones específicas contra errores míticos, anacronismos y clones siguen vigentes salvo decisión posterior expresa. Frigg puede conservar el acabado fotográfico aceptado por Willy; esta excepción no cambia el estilo general de la colección.
 
 ## Regla común de vestimenta funcional y calzado — lote del 2026-09-28
 
@@ -116,7 +112,7 @@ conservan los pendientes indicados; no se resuelven por defecto. El generador le
     "orion",
     "castor_polux"
   ],
-  "comun": "Conservar prendas y armaduras expresamente autorizadas; la base lisa sólo completa las partes que requieren vestimenta funcional, sin reemplazar ni tapar la firma de silueta. No imponer un color común: conservar los colores autorizados. Cierres funcionales discretos, sin broches, emblemas, joyas ni adornos nuevos.",
+  "comun": "Base funcional de respaldo: las prendas y los detalles específicos de la ficha o del preflight narrativo del 2026-11-04 tienen prioridad. Variar cortes, capas, tejidos y materiales según personaje; no imponer uniforme ni prohibición general de adornos. Mantener anatomía, acción e identificador legibles.",
   "bases": {
     "griega": {
       "vestimenta": "Túnica lisa de corte sencillo, ajustada a la acción y a la silueta.",
@@ -783,7 +779,7 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Riesgos de parecido:** Sif. Diferenciar por volumen de capa y magia; el cabello no debe convertirse en protagonista absoluto.
 
 ### Frigg
-- **Firma de silueta:** figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.
+- **Firma de silueta:** figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso.
 - **Familia de encuadre:** figura humana.
 - **Densidad visual:** baja-media.
 - **Edad aparente y contextura:** adulta madura; alta y de presencia serena.
@@ -794,7 +790,9 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Identificador principal:** conocimiento del destino expresado por comportamiento.
 - **Pistas secundarias autorizadas:** manto y gesto silencioso; no inventar objetos de adivinación.
 - **Avatar circular:** rostro + mirada lateral claramente legible.
-- **Riesgos de parecido:** Hera. Diferenciar por ausencia de animal/regalia, menor densidad y energía silenciosa.
+- **Riesgos de parecido:** Hera y Casiopea. Diferenciar por manos juntas, mirada lateral silenciosa, tejido grueso y ausencia de trono o animal.
+- **Vestimenta autorizada:** vestido de tejido grueso, manto asimétrico sobre un hombro y borde tejido discreto, decisiones artísticas aprobadas el 2026-11-04; porte de reina sin corona obligatoria.
+- **Controles de acabado:** acabado fotográfico de la imagen actual aceptado por Willy el 2026-11-04; no constituye por sí solo motivo de rechazo.
 
 ### Tyr
 - **Firma de silueta:** asimetría clara de brazos sin detalle gráfico + cinta de Fenrir formando una curva externa.
@@ -917,12 +915,13 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Edad aparente y contextura:** adulto maduro; atlético de viaje.
 - **Geometría general de rostro y cabello:** rostro largo cansado pero firme; cabello corto.
 - **Dirección corporal:** diagonal de marcha hacia un destino fuera de cuadro.
-- **Acción y pose:** camina o avanza como viajero fundador, no combate.
+- **Acción y pose:** avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante.
 - **Composición y espacio negativo:** costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial.
 - **Identificador principal:** viaje de Troya hacia Italia expresado mediante equipamiento y dirección.
-- **Pistas secundarias autorizadas:** escudo de bronce, costa/barco y materiales preimperiales definidos por la guía.
+- **Pistas secundarias autorizadas:** escudo de bronce gastado, costa/barco subordinados, protección de torso bronce/cuero inspirada en Edad del Bronce, bolsa de viaje y pequeño bulto de provisiones sujeto a ella; equipaje concreto como diseño narrativo, no atribución literal a Virgilio.
 - **Avatar circular:** rostro + borde del escudo de bronce.
 - **Riesgos de parecido:** Héctor y Agamenón. Diferenciar por condición de viajero fundador, eje de marcha y vocabulario romano preimperial.
+- **Vestimenta autorizada:** protección de torso en bronce y cuero, manto corto usado y sandalias; desgaste y equipo de viaje como diseño aprobado el 2026-11-04; sin uniforme imperial.
 
 ### Rómulo y Remo
 - **Firma de silueta:** dos ejes corporales distintos + loba baja entre ambos o detrás; uno más ancho/frontal y el otro más delgado/lateral.
@@ -945,18 +944,19 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 ## Griega
 
 ### Andrómeda
-- **Firma de silueta:** cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada.
+- **Firma de silueta:** cuerpo erguido libre sobre roca costera, sobrecapa ligera al viento y cadenas abiertas depositadas en la roca, separadas de brazos y muñecas.
 - **Familia de encuadre:** figura humana.
 - **Densidad visual:** media.
 - **Edad aparente y contextura:** adulta joven; esbelta.
 - **Geometría general de rostro y cabello:** rostro oval suave y cabello largo movido por viento marino.
 - **Dirección corporal:** tres cuartos orientada hacia arriba/lateral.
-- **Acción y pose:** tensión contenida sobre la roca; mirada activa, no terror.
-- **Composición y espacio negativo:** mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura.
-- **Identificador principal:** cadenas + roca.
-- **Pistas secundarias autorizadas:** constelación y monstruo marino sólo como pista pequeña y no terrorífica.
-- **Avatar circular:** rostro + fragmento de cadena + estrellas.
+- **Acción y pose:** después de la liberación, erguida y aliviada con valentía, mirada activa hacia arriba/lateral; no atada ni aterrada.
+- **Composición y espacio negativo:** roca y cadenas abiertas visibles; mar subordinado, aire alrededor de cabeza y brazos, estrellas y reflejos intensos como recurso poético de la escena.
+- **Identificador principal:** cadenas abiertas + roca costera en el momento posterior a la liberación.
+- **Pistas secundarias autorizadas:** estrellas y reflejos marinos como evocación narrativa, sin poder propio nuevo; Cetus como pequeña evocación celeste lejana no terrorífica, no monstruo vivo tras la derrota.
+- **Avatar circular:** rostro libre + estrellas; cadenas abiertas se leen en imagen completa, sin forzarlas junto al rostro.
 - **Riesgos de parecido:** Helena. Diferenciar por tensión física, cadenas y contexto celeste-marino, no quietud austera.
+- **Vestimenta autorizada:** vestido y sobrecapa corta ligera al viento; diseño aprobado el 2026-11-04.
 
 ### Aracne
 - **Firma de silueta:** telar diagonal + hilos saliendo del marco corporal + pequeña araña/patrón radial rompiendo el contorno.
@@ -1099,18 +1099,19 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Riesgos de parecido:** Circe y Helena. Diferenciar de Circe por ausencia de magia activa; de Helena por ambiente insular y mayor serenidad contemplativa.
 
 ### Casiopea
-- **Firma de silueta:** trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles.
+- **Firma de silueta:** trono de asiento y brazos coherentes, con respaldo que forme una W inequívoca mediante cinco puntos; geometría artística aprobada, sin letras escritas.
 - **Familia de encuadre:** figura humana.
 - **Densidad visual:** media.
 - **Edad aparente y contextura:** adulta madura; alta.
-- **Geometría general de rostro y cabello:** rostro estrecho orgulloso y cabello estructurado alto.
+- **Geometría general de rostro y cabello:** rostro estrecho orgulloso y maduro; conservar cabello estructurado alto, con ajustes menores sin rediseño innecesario.
 - **Dirección corporal:** frontal sentada con ligera rotación de torso.
 - **Acción y pose:** quietud orgullosa sobre el trono.
 - **Composición y espacio negativo:** estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello.
-- **Identificador principal:** trono + constelación en W sugerida gráficamente.
-- **Pistas secundarias autorizadas:** estrellas alrededor.
+- **Identificador principal:** trono + constelación en W inequívoca, con cinco puntos reconocibles.
+- **Pistas secundarias autorizadas:** cinco estrellas en W acompañando la geometría del trono; no galaxias espirales.
 - **Avatar circular:** rostro + parte alta inequívoca del trono + estrellas.
 - **Riesgos de parecido:** Hera. Diferenciar por postura sentada y geometría de constelación, no manto vertical ni pavo real.
+- **Vestimenta autorizada:** vestido regio de pliegues amplios y borde geométrico; diseño artístico aprobado el 2026-11-04, sin atribución histórica del motivo.
 
 ### Cerbero
 - **Firma de silueta:** tres perfiles de cabeza escalonados en altura + cuerpo único ancho.
@@ -1372,11 +1373,12 @@ caduceo, sin petaso y sin lira, teniendo los tres disponibles.
 - **Geometría general de rostro y cabello:** rostro oval largo y cabello oscuro largo empujado hacia atrás.
 - **Dirección corporal:** movimiento lateral nocturno, más lento que Helios.
 - **Acción y pose:** conduce el carro con ritmo elegante y silencioso.
-- **Composición y espacio negativo:** creciente desplazado y telas horizontales; aire delante del carro y temperatura fría coherente.
+- **Composición y espacio negativo:** carro lunar fantástico suspendido, creciente desplazado y telas horizontales; dos ruedas enteras en un mismo eje transversal y perspectiva coherente; aire delante del carro, luz fría localizada y espacio para las telas completas.
 - **Identificador principal:** carro de la luna.
-- **Pistas secundarias autorizadas:** creciente lunar y luz plateada.
+- **Pistas secundarias autorizadas:** creciente lunar, luz plateada que ilumina carro/manos/ropa y barandas curvas de motivo creciente como diseño; no agregar animales de tiro en esta variante.
 - **Avatar circular:** rostro + creciente lunar plateado.
 - **Riesgos de parecido:** Artemisa y Helios. Diferenciar de Artemisa por carro; de Helios por luz fría y ritmo pausado.
+- **Vestimenta autorizada:** vestido de mangas amplias, estola al viento y bordados plateados pequeños en puños; diseño aprobado el 2026-11-04.
 
 ## Nórdica
 

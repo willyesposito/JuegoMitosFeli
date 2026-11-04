@@ -1,27 +1,20 @@
 # Dudas visuales — campaña 2026-11-02
 
-## Priorización inicial para revisión y reconstrucción — 2026-11-04
+## Decisiones de revisión confirmadas por Willy — 2026-11-04
 
-Esta tabla reúne recomendaciones preliminares basadas en las observaciones registradas más abajo. **No constituye una comparación visual nueva de las imágenes actuales con sus órdenes, un ranking completo de los 85 personajes ni una aprobación estética de Willy.** La disponibilidad de una imagen en el juego acredita su integración, no su fidelidad. Los cinco primeros son candidatos para elegir en conjunto; no se han seleccionado ni regenerado todavía.
+Esta tabla reemplaza la recomendación preliminar. Aceptar el diseño propuesto no aprueba una imagen nueva. Reconstrucción pendiente, de a un personaje. La integración de las imágenes actuales ya fue comprobada; las notas históricas de abajo no describen necesariamente el estado vigente.
 
-| Prioridad de revisión | Personaje | Cercanía estimada según registros | Motivo registrado | Imagen actual | Evaluación de Willy |
-|---|---|---|---|---|---|
-| Primera selección propuesta | Frigg | Posiblemente alejada | Acabado demasiado fotográfico y paisaje excesivo; dos intentos de corrección rechazados. | [Ver imagen](../imagenes/frigg.png) | Pendiente |
-| Primera selección propuesta | Casiopea | Posiblemente alejada | Rostro más joven, galaxias no autorizadas y respaldo sin W inequívoca; también hay dudas de encuadre y textura. | [Ver imagen](../imagenes/casiopea.png) | Pendiente |
-| Primera selección propuesta | Andrómeda | Posiblemente alejada | La alternativa integrada omitió cadenas y criatura marina previstas; incluye un templo incidental. | [Ver imagen](../imagenes/andromeda.png) | Pendiente |
-| Primera selección propuesta | Selene | Posiblemente alejada | Edad aparente más joven que la solicitada, tela recortada y disposición estilizada de las ruedas. | [Ver imagen](../imagenes/selene.png) | Pendiente |
-| Primera selección propuesta | Eneas | Posiblemente alejada | Anatomía y acabado más realistas, accesorios no autorizados y coraza preimperial no explícita. | [Ver imagen](../imagenes/eneas.png) | Pendiente |
-| Alternativa prioritaria | Edipo | A confirmar | Edad aparente más joven y alas de la Esfinge fuera del encuadre. | [Ver imagen](../imagenes/edipo.png) | Pendiente |
-| Alternativa prioritaria | Belerofonte | A confirmar | Puntas de alas recortadas y brazos más musculosos de lo pedido; textura detallada. | [Ver imagen](../imagenes/belerofonte.png) | Pendiente |
-| Alternativa prioritaria | Medusa | A confirmar | La cristalización puede leerse como hielo y la base gris como pelo humano; encuadre cerrado. | [Ver imagen](../imagenes/medusa.png) | Pendiente |
-| Alternativa prioritaria | Ares | A confirmar | La imagen existente se describió con armadura genérica y aspecto estático. | [Ver imagen](../imagenes/ares.png) | Pendiente |
-| Revisión posterior | Thor | A confirmar; desvíos registrados de encuadre y acabado | Figura cercana, capa más amplia y microtexturas; inventario completo según revisión previa. | [Ver imagen](../imagenes/thor.png) | Pendiente |
-| Revisión posterior | Tyr | A confirmar; desvíos registrados de encuadre y acabado | Pelo más ondulado y largo, encuadre cercano y microtexturas; inventario completo según revisión previa. | [Ver imagen](../imagenes/tyr.png) | Pendiente |
-| Revisión posterior | Orfeo | A confirmar; desvíos registrados de encuadre y acabado | Encuadre cercano y microtextura; lira, rostro y pies legibles según revisión previa. | [Ver imagen](../imagenes/orfeo.png) | Pendiente |
-| Revisión posterior | Quirón | A confirmar; desvíos registrados de encuadre y acabado | Encuadre cercano, microtexturas y brazo definido; anatomía y docencia legibles según revisión previa. | [Ver imagen](../imagenes/quiron.png) | Pendiente |
-| Revisión posterior | Hestia | A confirmar; desvíos registrados de encuadre y acabado | Figura casi completa en altura y texturas realistas; llama, hogar y sandalias presentes según revisión previa. | [Ver imagen](../imagenes/hestia.png) | Pendiente |
+| Personaje | Evaluación de Willy | Corrección/diseño confirmado | Estado |
+|---|---|---|---|
+| Frigg | La imagen se ve bien; el acabado fotográfico es aceptable. | Probar vestido de tejido grueso y mayor presencia de reina; manto asimétrico y borde tejido discreto como diseño. No reemplazar sólo por acabado. | Mejora propuesta aceptada; nueva imagen pendiente |
+| Casiopea | W importante y obligatoria; peinado actual bien valorado. | Mejorar trono coherente con escena mítica y W inequívoca; conservar peinado alto con ajustes menores, vestido regio con pliegues y borde geométrico. | Reconstrucción pendiente |
+| Andrómeda | Acepta escena posterior a liberación y pide más fuerza fantástica. | Cadenas abiertas sobre roca; sobrecapa al viento, estrellas/reflejos más intensos sin poderes nuevos. Cetus como evocación celeste lejana para no mostrarlo vivo después de su derrota. | Reconstrucción pendiente |
+| Selene | Prefiere versión más fantástica; acepta corregir carro, ruedas y vestido. | Carro suspendido con eje transversal y ruedas completas; barandas curvas, mangas amplias, estola y bordados plateados pequeños. | Reconstrucción pendiente |
+| Eneas | Viajero resistente marcado por recorrido; sumar bolsa y detalles narrativos. | Protección bronce/cuero, escudo gastado, manto corto usado, bolsa y provisiones; marcha por costa con barco detrás. | Reconstrucción pendiente |
 
-**Resto de personajes:** [FALTA: comparación sistemática de la imagen vigente con su orden y evaluación de Willy]. La ausencia en esta tabla no significa que estén aprobados ni que hayan quedado más cerca de lo pedido. Para establecer el orden definitivo, revisar imagen y orden de cada personaje, conservar la evidencia de desvíos y registrar la decisión de Willy. Las notas siguientes son históricas; sus estados de integración pueden haber cambiado en entradas posteriores.
+Decisión general: enriquecer identidad y episodio mediante detalles con sentido, sin máximo arbitrario. Distinguir atributos respaldados de decisiones artísticas. Fuentes, límites y diseños concretos: [criterio de riqueza narrativa](criterio_riqueza_narrativa_2026-11-04.md).
+
+Las alternativas anteriores —Edipo, Belerofonte, Medusa y Ares— siguen para revisión posterior, sin selección nueva. Thor, Tyr, Orfeo, Quirón y Hestia conservan sus observaciones históricas. **Resto del roster:** [FALTA: comparación sistemática de cada imagen vigente con su orden y evaluación de Willy]. No se consideran aprobados por ausencia en la tabla.
 
 ## Historial de dudas y decisiones provisionales
 
@@ -211,10 +204,4 @@ Ruta imagenes/njord.png. Azul gris de ropa/capa, playa baja y viento luminoso so
 
 ### 2026-11-03T14:27:42.091892+00:00 — Thor / Tyr, ejecución142626Z
 - Thor, Produccion/thor.md: firma§4 permitecapa corta o pieles peseinventario§5general; usarcapa corta lisagrafito comoalternativaexpresa,sinpielesniadornos. Túnicaverdebosque,pantalónneutroybotassimples: coloresdecisiónprovisional,nohechosmíticos. Cabeza demartillobloquehierrocortosinrunas,pistasrayos/cabrasambaspresentes. Ruta imagenes/thor.png.
-- Tyr, Produccion/tyr.md: asimetríabrazos sinviolentarmito familiar porposicionesdiferentes antesdeheridanoexplícita; manoofrecidacercademorrocerrado,nodentroboca,sinrepresentarlesión. Cintafina grisplata en curvaimposible comoidentificador, noeslabones; tonosropazulgrissobrio ylobogris como diseño, noatestación. Ruta imagenes/tyr.png.
-
-
-### Revisión de resultados recuperados — 2026-11-04
-- Thor (`imagenes/thor.png`): PNG original recuperado del commit `29e8c79`, sin regenerar. Martillo bajo separado, rayos que iluminan manga/suelo y dos cabras presentes; ropa lisa verde y capa grafito. Desvíos conservados provisionalmente: figura ocupa alrededor del 90% del alto, capa más amplia que corta, tela y hierba con microtextura. Sin objetos no autorizados, sin omisiones de inventario.
-- Tyr (`imagenes/tyr.png`): PNG original recuperado del commit `d2bffdb`, sin regenerar. Fenrir tranquilo, brazos asimétricos, palma cerca del morro y cinta plateada en curva externa que mueve hojas; túnica, pantalón y botas lisos. Desvíos conservados provisionalmente: cabello más ondulado/medio que corto, encuadre cercano y microtextura de tela/pelaje. Sin armas, heridas ni objetos adicionales; inventario completo.
-- Revisión del gate de doce puntos en ambas imágenes: lectura de animación 3D, sin fotografía/óleo/2D; caras angulares sin muñeco; masas alta (Thor) y media (Tyr) diferenciadas conforme a sus órdenes; separación textual de poses/identidades, sin abrir comparadores. Fondo subordinado; magia trazable a martillo y cinta; inventario íntegro; sin aura, halo, runas, amenaza ni dorado automático. Las desviaciones de acabado/encuadre se conservan por la autorización de esta campaña; esta entrega no implica aprobación estética del usuario.
+- Tyr, Produccion/tyr.md: asimetríabrazos sinviolentarmito familiar porposicionesdiferentes antesdeheridanoexplícita; manoofrecidacercademorrocerrado,node

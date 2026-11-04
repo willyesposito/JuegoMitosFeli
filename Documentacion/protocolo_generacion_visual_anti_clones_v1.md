@@ -1,5 +1,9 @@
 # PROTOCOLO DE GENERACIÓN VISUAL ANTI-CLONES v1
 
+**Regla vigente — 2026-11-04: riqueza narrativa e identidad mítica.** Priorizar que se entienda quién es el personaje y qué episodio representa. Se permiten prendas de cortes distintos, capas, tejidos, bordados, cierres, equipo, desgaste y objetos narrativos cuando aporten identidad o sentido a la escena; no hay un máximo fijo de prendas ni de detalles. Antes de generar, registrar los detalles elegidos en la ficha o el preflight y distinguir: (a) atributo o episodio respaldado, citando fuente; (b) interpretación artística autorizada, sin presentarla como dato del mito. La autorización general de Willy permite estas decisiones de diseño sin pedir aprobación por cada cierre o material. Para nuevos poderes, animales, símbolos de identidad o hechos narrativos, verificar la fuente y actualizar la ficha antes de dibujarlos. No agregar por rutina ni copiar el mismo kit entre personajes. Mantener rostro, identificador, acción, silueta y jerarquía legibles. Revisar también las omisiones de elementos exigidos; respetar condiciones y alternativas. Esta regla reemplaza las prohibiciones generales de adornos, el inventario cerrado absoluto y la base lisa obligatoria. Las exclusiones específicas contra errores míticos, anacronismos y clones siguen vigentes salvo decisión posterior expresa. Frigg puede conservar el acabado fotográfico aceptado por Willy; esta excepción no cambia el estilo general de la colección.
+
+Detalle y decisiones individuales: `Documentacion/criterio_riqueza_narrativa_2026-11-04.md`. Ante contradicción con restricciones anteriores de detalle, rige esta decisión.
+
 Documento operativo de producción para las ilustraciones del juego.
 
 **Gobierna toda futura generación visual de personajes.** Complementa `guia_visual_maestra_v2_1.md`, `adn_visual_personajes_v1.md`, `matriz_adn_visual_numerica_v1.md` y las referencias visuales aprobadas.

@@ -3,7 +3,7 @@
 **Completitud mecánica: COMPLETA.** Campos obligatorios y referencias comprobados; vestimenta opcional con alternativa general cuando falta.
 **Validación visual: PENDIENTE.** Compilar no acredita silueta, pose, composición, avatar ni colisión; tampoco aprueba identidad, inventario o separación.
 
-**Imagen actual:** ninguna. La carta funciona igual, mostrando el nombre con el tratamiento de su mitología.
+**Imagen actual:** `imagenes/hefesto.png`. Su existencia no implica aprobación ni reemplazo automático; consultar la evaluación vigente.
 
 **Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.
 
@@ -39,7 +39,7 @@ Trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la 
 
 Dirección corporal: Lateral orientado hacia la pieza de trabajo.
 
-Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
+Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un detalle, aplicar la regla narrativa de la §5 y documentarlo en el preflight; verificar fuentes para nuevos atributos míticos.
 
 **Y al revés, que es el caso que falló tres veces:** si un objeto exigido de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight. Una pista condicional sólo se exige si se cumple su condición; las alternativas con «o» se conservan como alternativas, sin exigir todas a la vez.
 
@@ -61,21 +61,19 @@ Los quince ejes completos, como límites de diseño y no como sugerencia (EV eda
 
 Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de los personajes de la §7.
 
-## 5. Inventario cerrado
+## 5. Inventario narrativo y detalles trazables
 
-Lo único que puede verse:
+Elementos de base; completar con detalles narrativos trazables según la regla siguiente:
 
 1. **Fragua y metal trabajado** — identificador principal. ADN.
 2. **Pistas secundarias autorizadas:** autómata de bronce, martillo de forja simple, pinzas, yunque liso y banco de trabajo. Martillo, pinzas y yunque son una decisión de diseño de Willy aprobada el 2026-09-28, no una atestación histórica. El banco ya estaba autorizado en la composición. Todo el equipo es liso y sin adornos, emblemas ni inscripciones nuevos. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
-3. **Vestimenta autorizada:** Delantal/tela pesada lisa ya prevista en la firma de silueta, sobre la vestimenta funcional vigente; sin adornos ni cierres decorativos nuevos. ADN. Sin adornos más allá de lo que dice esa línea.
+3. **Vestimenta autorizada:** Delantal/tela pesada lisa ya prevista en la firma de silueta, sobre la vestimenta funcional vigente; sin adornos ni cierres decorativos nuevos. ADN. Sin adornos más allá de lo que autoriza la regla narrativa del 2026-11-04; documentar los detalles adicionales en el preflight.
 4. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
    - **Vestimenta funcional:** Túnica lisa de corte sencillo, ajustada a la acción y a la silueta.
    - **Calzado:** Sandalias simples de cuero, sin motivos ornamentales.
-   - **Alcance:** Conservar prendas y armaduras expresamente autorizadas; la base lisa sólo completa las partes que requieren vestimenta funcional, sin reemplazar ni tapar la firma de silueta. No imponer un color común: conservar los colores autorizados. Cierres funcionales discretos, sin broches, emblemas, joyas ni adornos nuevos.
+   - **Alcance:** Base funcional de respaldo: las prendas y los detalles específicos de la ficha o del preflight narrativo del 2026-11-04 tienen prioridad. Variar cortes, capas, tejidos y materiales según personaje; no imponer uniforme ni prohibición general de adornos. Mantener anatomía, acción e identificador legibles.
 
-Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
-
-**Inventario por exceso y por omisión.** Lo que no figura no entra. Mostrar los elementos exigidos por el ADN, aplicar las pistas condicionales sólo cuando se cumpla su condición y conservar las alternativas como tales. El identificador principal manda, las pistas acompañan y nada tapa la cara ni el identificador. En el preflight, declarar qué condiciones se cumplen y qué alternativa se usa, sin agregar decisiones ajenas a la fuente.
+**Regla vigente — 2026-11-04: riqueza narrativa e identidad mítica.** Priorizar que se entienda quién es el personaje y qué episodio representa. Se permiten prendas de cortes distintos, capas, tejidos, bordados, cierres, equipo, desgaste y objetos narrativos cuando aporten identidad o sentido a la escena; no hay un máximo fijo de prendas ni de detalles. Antes de generar, registrar los detalles elegidos en la ficha o el preflight y distinguir: (a) atributo o episodio respaldado, citando fuente; (b) interpretación artística autorizada, sin presentarla como dato del mito. La autorización general de Willy permite estas decisiones de diseño sin pedir aprobación por cada cierre o material. Para nuevos poderes, animales, símbolos de identidad o hechos narrativos, verificar la fuente y actualizar la ficha antes de dibujarlos. No agregar por rutina ni copiar el mismo kit entre personajes. Mantener rostro, identificador, acción, silueta y jerarquía legibles. Revisar también las omisiones de elementos exigidos; respetar condiciones y alternativas. Esta regla reemplaza las prohibiciones generales de adornos, el inventario cerrado absoluto y la base lisa obligatoria. Las exclusiones específicas contra errores míticos, anacronismos y clones siguen vigentes salvo decisión posterior expresa. Frigg puede conservar el acabado fotográfico aceptado por Willy; esta excepción no cambia el estilo general de la colección.
 
 **La magia es obligatoria y sale del identificador.** El detalle reconocible de la §2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina de verdad, deformación del aire, materia que responde: todo eso está autorizado y va sin timidez. Esto no agrega ningún objeto al inventario de arriba, porque lo que se enciende es lo que el personaje ya tiene.
 
@@ -130,7 +128,7 @@ Ejes numéricos que ya los separan: contorno superior 3 contra 7, protagonismo d
 
 Silueta de Eneas, para no repetirla: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero.
 
-Pose de Eneas, para no repetirla: camina o avanza como viajero fundador, no combate.
+Pose de Eneas, para no repetirla: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante.
 
 Ejes numéricos que ya los separan: oscuridad 6 contra 4, dependencia del identificador 7 contra 5.
 
@@ -139,9 +137,9 @@ Ejes numéricos que ya los separan: oscuridad 6 contra 4, dependencia del identi
 **Por qué se controla este par:** adultos robustos con materiales rígidos; par de riesgo alto.
 **Filtro numérico:** distancia ponderada 0.821; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
 
-- **Separador de silueta:** Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Cuerpo: adulto maduro; torso robusto y brazos de trabajador. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. Frente a Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo hefesto, comparación Eneas; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 

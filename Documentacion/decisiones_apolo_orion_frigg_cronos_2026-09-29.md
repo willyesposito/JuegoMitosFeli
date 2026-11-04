@@ -1,4 +1,6 @@
 # Decisiones delegadas — Apolo, Orión, Frigg y Cronos
+
+> Actualización 2026-11-04: para riqueza de detalle y próximos diseños, rige `Documentacion/criterio_riqueza_narrativa_2026-11-04.md`. Los resultados históricos no equivalen a aprobación estética.
 Fecha: 2026-09-29. Rama: claude/game-setup-v98pr1. Base: 1d42cc1c75e48dd5d0353b0b764fc8a29f2dc2c1.
 
 Willy autorizó buscar fuentes y decidir estos cuatro puntos. Esta autorización permite actualizar el ADN; no modifica estados del control ni automatizaciones y no aprueba imágenes.

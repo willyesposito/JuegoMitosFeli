@@ -6,6 +6,10 @@ description: Genera una única ilustración de personaje de Mundo de Mitos estri
 
 # Skill — Nuevo personaje Mitos
 
+**Regla vigente — 2026-11-04: riqueza narrativa e identidad mítica.** Priorizar que se entienda quién es el personaje y qué episodio representa. Se permiten prendas de cortes distintos, capas, tejidos, bordados, cierres, equipo, desgaste y objetos narrativos cuando aporten identidad o sentido a la escena; no hay un máximo fijo de prendas ni de detalles. Antes de generar, registrar los detalles elegidos en la ficha o el preflight y distinguir: (a) atributo o episodio respaldado, citando fuente; (b) interpretación artística autorizada, sin presentarla como dato del mito. La autorización general de Willy permite estas decisiones de diseño sin pedir aprobación por cada cierre o material. Para nuevos poderes, animales, símbolos de identidad o hechos narrativos, verificar la fuente y actualizar la ficha antes de dibujarlos. No agregar por rutina ni copiar el mismo kit entre personajes. Mantener rostro, identificador, acción, silueta y jerarquía legibles. Revisar también las omisiones de elementos exigidos; respetar condiciones y alternativas. Esta regla reemplaza las prohibiciones generales de adornos, el inventario cerrado absoluto y la base lisa obligatoria. Las exclusiones específicas contra errores míticos, anacronismos y clones siguen vigentes salvo decisión posterior expresa. Frigg puede conservar el acabado fotográfico aceptado por Willy; esta excepción no cambia el estilo general de la colección.
+
+Detalle y decisiones individuales: `Documentacion/criterio_riqueza_narrativa_2026-11-04.md`. Ante contradicción con restricciones anteriores de detalle, rige esta decisión.
+
 ## 0. Primer paso operativo obligatorio — historial de fallas
 
 Antes de extraer fichas, diseñar, redactar un prompt, preparar el preflight o llamar al generador, **leer completo** [Documentacion/memoria_fallas_generacion_imagenes.md](../../Documentacion/memoria_fallas_generacion_imagenes.md) desde la rama solicitada. Esta lectura también es obligatoria antes de modificar esta skill.
@@ -166,18 +170,19 @@ No completar campos ausentes por intuición. Usar `[FALTA: ...]` y frenar si el 
 
 ## 4. Whitelist: qué SÍ puede entrar en la imagen
 
-Antes de generar, convertir la ficha en una **lista positiva cerrada**.
+Antes de generar, convertir la ficha y las decisiones narrativas en una **lista positiva trazable**, abierta al enriquecimiento documentado del 2026-11-04.
 
 El prompt de imagen sólo puede contener elementos derivados de:
 
 1. rasgos obligatorios de la ficha individual;
 2. pistas secundarias expresamente autorizadas;
 3. ambiente necesario para la acción definida;
-4. lenguaje general de acabado de la guía maestra.
+4. lenguaje general de acabado de la guía maestra;
+5. detalles de diseño narrativo autorizados por la regla del 2026-11-04 y declarados en el preflight.
 
 Todo objeto, animal, símbolo, arma, tatuaje, tocado, color de cabello, efecto mágico, edificio, vehículo, criatura o decoración debe poder rastrearse a una fuente del repo.
 
-Si no puede rastrearse, se excluye. Esta trazabilidad también alcanza a broches, cierres visibles, remaches ornamentales, insignias, joyas, calzado y dibujos del objeto principal. Un detalle funcional sin contenido identificatorio puede simplificarse; no inventar motivos ni transformar esa simplificación en nuevo canon. Mostrar una lista objeto/detalle → fuente; si falta una decisión material que no pueda omitirse, marcar `[FALTA: ...]` y frenar.
+Si falta traza, documentar el diseño funcional o artístico bajo la autorización general; para un nuevo atributo mítico, investigar y registrar la fuente antes de incorporarlo. Esta trazabilidad también alcanza a broches, cierres visibles, remaches ornamentales, insignias, joyas, calzado y dibujos del objeto principal. Un detalle funcional sin contenido identificatorio puede simplificarse; no inventar motivos ni transformar esa simplificación en nuevo canon. Mostrar una lista objeto/detalle → fuente; si falta una decisión material que no pueda omitirse, marcar `[FALTA: ...]` y frenar.
 
 ---
 
@@ -351,7 +356,7 @@ Quedan derogadas las instrucciones anteriores de esta skill sobre lectura de ave
 con cabeza agrandada y rasgos redondeados, la calibración derivada de Odín, y también la
 calibración semirrealista con pintura visible que la reemplazó por unas horas el 2026-09-14.
 
-Ordenar el prompt: estilo de animación 3D → identidad → acción/silueta → inventario cerrado →
+Ordenar el prompt: estilo de animación 3D → identidad → acción/silueta → inventario narrativo trazable →
 manifestación del don → encuadre/contexto → exclusiones breves.
 
 ---

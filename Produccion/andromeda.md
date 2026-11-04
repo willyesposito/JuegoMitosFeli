@@ -3,7 +3,7 @@
 **Completitud mecánica: COMPLETA.** Campos obligatorios y referencias comprobados; vestimenta opcional con alternativa general cuando falta.
 **Validación visual: PENDIENTE.** Compilar no acredita silueta, pose, composición, avatar ni colisión; tampoco aprueba identidad, inventario o separación.
 
-**Imagen actual:** ninguna. La carta funciona igual, mostrando el nombre con el tratamiento de su mitología.
+**Imagen actual:** `imagenes/andromeda.png`. Su existencia no implica aprobación ni reemplazo automático; consultar la evaluación vigente.
 
 **Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.
 
@@ -27,7 +27,7 @@
 
 ## 2. Detalle reconocible
 
-**Cadenas + roca.**
+**Cadenas abiertas + roca costera en el momento posterior a la liberación.**
 
 Dones declarados en `personajes.json`: Valentía frente a lo desconocido; Su historia quedó escrita entre las estrellas.
 
@@ -35,18 +35,18 @@ Dones declarados en `personajes.json`: Valentía frente a lo desconocido; Su his
 
 ## 3. Acción y pose
 
-Tensión contenida sobre la roca; mirada activa, no terror.
+Después de la liberación, erguida y aliviada con valentía, mirada activa hacia arriba/lateral; no atada ni aterrada.
 
 Dirección corporal: Tres cuartos orientada hacia arriba/lateral.
 
-Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
+Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un detalle, aplicar la regla narrativa de la §5 y documentarlo en el preflight; verificar fuentes para nuevos atributos míticos.
 
 **Y al revés, que es el caso que falló tres veces:** si un objeto exigido de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight. Una pista condicional sólo se exige si se cumple su condición; las alternativas con «o» se conservan como alternativas, sin exigir todas a la vez.
 
 ## 4. Silueta y composición
 
-- **Firma de silueta:** Cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada.
-- **Composición:** Mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura.
+- **Firma de silueta:** Cuerpo erguido libre sobre roca costera, sobrecapa ligera al viento y cadenas abiertas depositadas en la roca, separadas de brazos y muñecas.
+- **Composición:** Roca y cadenas abiertas visibles; mar subordinado, aire alrededor de cabeza y brazos, estrellas y reflejos intensos como recurso poético de la escena.
 - **Densidad visual:** media (matriz: 5 de 10).
 
 - **Cuerpo, y esto manda sobre cualquier intuición:** joven, delgado y liviano, sin masa muscular marcada, hombros estrechos, de escala humana.
@@ -61,21 +61,19 @@ Los quince ejes completos, como límites de diseño y no como sugerencia (EV eda
 
 Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de los personajes de la §7.
 
-## 5. Inventario cerrado
+## 5. Inventario narrativo y detalles trazables
 
-Lo único que puede verse:
+Elementos de base; completar con detalles narrativos trazables según la regla siguiente:
 
-1. **Cadenas + roca** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas:** constelación y monstruo marino sólo como pista pequeña y no terrorífica. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
-3. **Vestimenta lisa del vocabulario griego**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
+1. **Cadenas abiertas + roca costera en el momento posterior a la liberación** — identificador principal. ADN.
+2. **Pistas secundarias autorizadas:** estrellas y reflejos marinos como evocación narrativa, sin poder propio nuevo; Cetus como pequeña evocación celeste lejana no terrorífica, no monstruo vivo tras la derrota. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
+3. **Vestimenta autorizada:** Vestido y sobrecapa corta ligera al viento; diseño aprobado el 2026-11-04. ADN. Sin adornos más allá de lo que autoriza la regla narrativa del 2026-11-04; documentar los detalles adicionales en el preflight.
 4. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
    - **Vestimenta funcional:** Túnica lisa de corte sencillo, ajustada a la acción y a la silueta.
    - **Calzado:** Sandalias simples de cuero, sin motivos ornamentales.
-   - **Alcance:** Conservar prendas y armaduras expresamente autorizadas; la base lisa sólo completa las partes que requieren vestimenta funcional, sin reemplazar ni tapar la firma de silueta. No imponer un color común: conservar los colores autorizados. Cierres funcionales discretos, sin broches, emblemas, joyas ni adornos nuevos.
+   - **Alcance:** Base funcional de respaldo: las prendas y los detalles específicos de la ficha o del preflight narrativo del 2026-11-04 tienen prioridad. Variar cortes, capas, tejidos y materiales según personaje; no imponer uniforme ni prohibición general de adornos. Mantener anatomía, acción e identificador legibles.
 
-Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
-
-**Inventario por exceso y por omisión.** Lo que no figura no entra. Mostrar los elementos exigidos por el ADN, aplicar las pistas condicionales sólo cuando se cumpla su condición y conservar las alternativas como tales. El identificador principal manda, las pistas acompañan y nada tapa la cara ni el identificador. En el preflight, declarar qué condiciones se cumplen y qué alternativa se usa, sin agregar decisiones ajenas a la fuente.
+**Regla vigente — 2026-11-04: riqueza narrativa e identidad mítica.** Priorizar que se entienda quién es el personaje y qué episodio representa. Se permiten prendas de cortes distintos, capas, tejidos, bordados, cierres, equipo, desgaste y objetos narrativos cuando aporten identidad o sentido a la escena; no hay un máximo fijo de prendas ni de detalles. Antes de generar, registrar los detalles elegidos en la ficha o el preflight y distinguir: (a) atributo o episodio respaldado, citando fuente; (b) interpretación artística autorizada, sin presentarla como dato del mito. La autorización general de Willy permite estas decisiones de diseño sin pedir aprobación por cada cierre o material. Para nuevos poderes, animales, símbolos de identidad o hechos narrativos, verificar la fuente y actualizar la ficha antes de dibujarlos. No agregar por rutina ni copiar el mismo kit entre personajes. Mantener rostro, identificador, acción, silueta y jerarquía legibles. Revisar también las omisiones de elementos exigidos; respetar condiciones y alternativas. Esta regla reemplaza las prohibiciones generales de adornos, el inventario cerrado absoluto y la base lisa obligatoria. Las exclusiones específicas contra errores míticos, anacronismos y clones siguen vigentes salvo decisión posterior expresa. Frigg puede conservar el acabado fotográfico aceptado por Willy; esta excepción no cambia el estilo general de la colección.
 
 **La magia es obligatoria y sale del identificador.** El detalle reconocible de la §2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina de verdad, deformación del aire, materia que responde: todo eso está autorizado y va sin timidez. Esto no agrega ningún objeto al inventario de arriba, porque lo que se enciende es lo que el personaje ya tiene.
 
@@ -115,9 +113,9 @@ Ejes numéricos que ya los separan: dependencia del identificador 8 contra 3, co
 **Por qué se controla este par:** mujeres jóvenes de postura contenida.
 **Filtro numérico:** distancia ponderada 1.218; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Andrómeda: cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada. Cuerpo: adulta joven; esbelta. Frente a Helena: telas amplias y verticales + postura casi inmóvil; sin depender de accesorios de belleza. Cuerpo: adulta joven-madura; alta y esbelta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Andrómeda: tensión contenida sobre la roca; mirada activa, no terror. Frente a Helena: quietud contemplativa con mirada lejana; atmósfera de consecuencia, no romance. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Andrómeda: mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura. Frente a Helena: velas o arquitectura de Troya muy subordinadas; mucho aire alrededor de una figura austera. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Andrómeda: cuerpo erguido libre sobre roca costera, sobrecapa ligera al viento y cadenas abiertas depositadas en la roca, separadas de brazos y muñecas. Frente a Helena: telas amplias y verticales + postura casi inmóvil; sin depender de accesorios de belleza. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Andrómeda: después de la liberación, erguida y aliviada con valentía, mirada activa hacia arriba/lateral; no atada ni aterrada. Frente a Helena: quietud contemplativa con mirada lejana; atmósfera de consecuencia, no romance. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Andrómeda: roca y cadenas abiertas visibles; mar subordinado, aire alrededor de cabeza y brazos, estrellas y reflejos intensos como recurso poético de la escena. Frente a Helena: velas o arquitectura de Troya muy subordinadas; mucho aire alrededor de una figura austera. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo andromeda, comparación Helena; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -141,9 +139,9 @@ Ejes numéricos que ya los separan: contorno superior 9 contra 6, oscuridad 5 co
 **Por qué se controla este par:** mujeres ligeras de lectura aérea; par de riesgo alto.
 **Filtro numérico:** distancia ponderada 0.888; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
 
-- **Separador de silueta:** Andrómeda: cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada. Cuerpo: adulta joven; esbelta. Frente a Psique: mariposa o motivo de mariposa cerca del hombro + postura de avance cauteloso. Cuerpo: adulta joven; delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Andrómeda: tensión contenida sobre la roca; mirada activa, no terror. Frente a Psique: avanza entre pruebas con cautela y perseverancia. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Andrómeda: mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura. Frente a Psique: dejar aire en la dirección de avance; pruebas se sugieren de forma abstracta y no saturan el fondo. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Andrómeda: cuerpo erguido libre sobre roca costera, sobrecapa ligera al viento y cadenas abiertas depositadas en la roca, separadas de brazos y muñecas. Frente a Psique: mariposa o motivo de mariposa cerca del hombro + postura de avance cauteloso. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Andrómeda: después de la liberación, erguida y aliviada con valentía, mirada activa hacia arriba/lateral; no atada ni aterrada. Frente a Psique: avanza entre pruebas con cautela y perseverancia. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Andrómeda: roca y cadenas abiertas visibles; mar subordinado, aire alrededor de cabeza y brazos, estrellas y reflejos intensos como recurso poético de la escena. Frente a Psique: dejar aire en la dirección de avance; pruebas se sugieren de forma abstracta y no saturan el fondo. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo andromeda, comparación Psique; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -167,9 +165,9 @@ Ejes numéricos que ya los separan: dependencia del identificador 8 contra 2, ed
 **Por qué se controla este par:** mujer de contorno largo en ambiente marino.
 **Filtro numérico:** distancia ponderada 1.184; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Andrómeda: cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada. Cuerpo: adulta joven; esbelta. Frente a Calipso: figura aislada + telas largas verticales + vegetación insular lateral; sin objeto mágico inventado. Cuerpo: adulta madura; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Andrómeda: tensión contenida sobre la roca; mirada activa, no terror. Frente a Calipso: contemplación inmóvil desde la isla. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Andrómeda: mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura. Frente a Calipso: mucho espacio negativo de mar; vegetación insular sólo rompe un lateral. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Andrómeda: cuerpo erguido libre sobre roca costera, sobrecapa ligera al viento y cadenas abiertas depositadas en la roca, separadas de brazos y muñecas. Frente a Calipso: figura aislada + telas largas verticales + vegetación insular lateral; sin objeto mágico inventado. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Andrómeda: después de la liberación, erguida y aliviada con valentía, mirada activa hacia arriba/lateral; no atada ni aterrada. Frente a Calipso: contemplación inmóvil desde la isla. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Andrómeda: roca y cadenas abiertas visibles; mar subordinado, aire alrededor de cabeza y brazos, estrellas y reflejos intensos como recurso poético de la escena. Frente a Calipso: mucho espacio negativo de mar; vegetación insular sólo rompe un lateral. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo andromeda, comparación Calipso; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -181,7 +179,7 @@ La diferencia no puede depender sólo del color, del fondo, del objeto sostenido
 
 Vertical 3:4. Figura al 70–80% del alto del cuadro. Zona limpia detrás de la cabeza o del foco principal.
 
-Avatar circular, como restricción invisible: Rostro + fragmento de cadena + estrellas. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
+Avatar circular, como restricción invisible: Rostro libre + estrellas; cadenas abiertas se leen en imagen completa, sin forzarlas junto al rostro. No se dibuja ningún círculo, medallón, marco, inset ni retrato secundario.
 
 ## 9. Registro
 

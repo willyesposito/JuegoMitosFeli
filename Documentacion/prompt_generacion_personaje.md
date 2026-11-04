@@ -1,5 +1,9 @@
 # Instrucciones de generación de imagen por personaje
 
+**Regla vigente — 2026-11-04: riqueza narrativa e identidad mítica.** Priorizar que se entienda quién es el personaje y qué episodio representa. Se permiten prendas de cortes distintos, capas, tejidos, bordados, cierres, equipo, desgaste y objetos narrativos cuando aporten identidad o sentido a la escena; no hay un máximo fijo de prendas ni de detalles. Antes de generar, registrar los detalles elegidos en la ficha o el preflight y distinguir: (a) atributo o episodio respaldado, citando fuente; (b) interpretación artística autorizada, sin presentarla como dato del mito. La autorización general de Willy permite estas decisiones de diseño sin pedir aprobación por cada cierre o material. Para nuevos poderes, animales, símbolos de identidad o hechos narrativos, verificar la fuente y actualizar la ficha antes de dibujarlos. No agregar por rutina ni copiar el mismo kit entre personajes. Mantener rostro, identificador, acción, silueta y jerarquía legibles. Revisar también las omisiones de elementos exigidos; respetar condiciones y alternativas. Esta regla reemplaza las prohibiciones generales de adornos, el inventario cerrado absoluto y la base lisa obligatoria. Las exclusiones específicas contra errores míticos, anacronismos y clones siguen vigentes salvo decisión posterior expresa. Frigg puede conservar el acabado fotográfico aceptado por Willy; esta excepción no cambia el estilo general de la colección.
+
+Detalle y decisiones individuales: `Documentacion/criterio_riqueza_narrativa_2026-11-04.md`. Ante contradicción con restricciones anteriores de detalle, rige esta decisión.
+
 **Reescrito 2026-09-14.** Reemplaza la versión anterior, cuyo punto 6 mandaba usar las
 imágenes aprobadas de Zeus, Atenea, Iris y Teseo como referencia visual. Esa instrucción
 produjo el clon Teseo → Hermes → Perseo y queda derogada. Ver `memoria_fallas_generacion_imagenes.md`.
@@ -78,27 +82,9 @@ No volcar al prompt tablas, historia del método, comparaciones numéricas, list
 prohibiciones ni explicaciones de por qué existe una regla. Eso sirve para decidir y auditar,
 no para dibujar.
 
-### 3.2. Vestimenta: mínima, concreta y no uniforme
+### 3.2. Vestimenta con identidad y función
 
-La vestimenta es secundaria salvo que la orden la declare parte del identificador o de la firma
-de silueta.
-
-- Si la orden trae una prenda concreta, usarla y describirla en una sola frase.
-- Si la vestimenta está vacía o sólo trae una base funcional genérica, **no es un [FALTA]**:
-  resolver una vestimenta simple y funcional, subordinada a la acción y a la silueta.
-- No convertir por defecto «griego» en **túnica blanca**, «nórdico» en túnica con piel ni
-  «romano» en uniforme imperial.
-- **Blanco o crema no son el color por defecto.** Sólo usarlos cuando la orden los fije o cuando
-  sean necesarios para una decisión visual ya trazada. Si el color no está fijado, elegir un
-  único color dominante sobrio compatible con la escena y mantenerlo sin adornos.
-- Máximo dos prendas principales visibles y un color dominante más un neutro. Sin capas,
-  broches, cinturones ornamentales, joyas o accesorios salvo autorización explícita.
-- La ropa no debe convertirse en el rasgo que hace reconocible al personaje si la orden no lo
-  dice. Su trabajo es vestir, ayudar a la silueta y dejar respirar al identificador.
-
-La frase de vestimenta del prompt debe ser concreta y corta. Ejemplo de nivel de detalle:
-«ropa griega simple azul grisáceo, sin adornos, adaptada al movimiento». No describir costuras,
-cierres, pliegues, materiales y accesorios salvo que sean parte de la identidad.
+Aplicar la regla narrativa vigente. Definir prendas, cortes, tejidos, desgaste, cierres y detalles por personaje; evitar repetir la misma túnica cambiando el color. No hay máximo fijo de prendas ni accesorios. Conservar jerarquía visual y explicar qué aporta cada detalle. Registrar en el preflight cuáles provienen de fuentes y cuáles son diseño artístico autorizado. Nuevos poderes, animales o episodios requieren verificación e incorporación a la ficha. La ropa puede contribuir al reconocimiento sin sustituir rostro, pose y acción propios.
 
 ## 4. Generación
 
@@ -162,7 +148,7 @@ valquiria como Merida de *Valiente*. Nada de Marvel, Disney, DC, anime conocido 
 **Invenciones**
 
 - objetos, animales, símbolos, armas, tatuajes, cuernos, alas, tocados, joyas, broches,
-  emblemas, remaches o calzado que no estén en el inventario de la orden;
+  emblemas, remaches o calzado sin traza a la ficha o al diseño narrativo documentado en el preflight;
 - alas anatómicas cuando la ficha dice capa de plumas (Freya);
 - iconografía moderna o anacrónica: galaxias espirales, Vía Láctea de astrofotografía,
   mapas del tesoro con rosa de los vientos y una X;

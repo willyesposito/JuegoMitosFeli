@@ -3,7 +3,7 @@
 **Completitud mecánica: COMPLETA.** Campos obligatorios y referencias comprobados; vestimenta opcional con alternativa general cuando falta.
 **Validación visual: PENDIENTE.** Compilar no acredita silueta, pose, composición, avatar ni colisión; tampoco aprueba identidad, inventario o separación.
 
-**Imagen actual:** ninguna. La carta funciona igual, mostrando el nombre con el tratamiento de su mitología.
+**Imagen actual:** `imagenes/eneas.png`. Su existencia no implica aprobación ni reemplazo automático; consultar la evaluación vigente.
 
 **Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.
 
@@ -33,16 +33,16 @@ Dones declarados en `personajes.json`: Guerrero troyano sobreviviente; Fundador 
 
 Ícono de la carta en la colección: `padre_hombros`. Dependencia del identificador en la matriz: 5 de 10.
 
-> **Reconocimiento textual: DOCUMENTADO.** Marcha de viajero fundador, escudo de bronce y costa/barco concretan la acción. El equipo preimperial y el avatar con escudo ya tienen respaldo; el ícono de la carta no autoriza agregar otro sujeto. La validación visual sigue pendiente.
+> **Reconocimiento textual: DOCUMENTADO.** Actualización textual 2026-11-04: acción, silueta, pistas y avatar alineados con las decisiones narrativas de Willy; consultar criterio_riqueza_narrativa_2026-11-04.md para fuentes y decisiones artísticas. No acredita la nueva imagen. La validación visual sigue pendiente.
 > Fuente de la revisión: `Documentacion/revision_identificadores_lote_2026-09-28.json`, objetivo `eneas`. Evidencia de acción, silueta, composición, pistas y avatar del ADN.
 
 ## 3. Acción y pose
 
-Camina o avanza como viajero fundador, no combate.
+Avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante.
 
 Dirección corporal: Diagonal de marcha hacia un destino fuera de cuadro.
 
-Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
+Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un detalle, aplicar la regla narrativa de la §5 y documentarlo en el preflight; verificar fuentes para nuevos atributos míticos.
 
 **Y al revés, que es el caso que falló tres veces:** si un objeto exigido de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight. Una pista condicional sólo se exige si se cumple su condición; las alternativas con «o» se conservan como alternativas, sin exigir todas a la vez.
 
@@ -64,21 +64,19 @@ Los quince ejes completos, como límites de diseño y no como sugerencia (EV eda
 
 Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de los personajes de la §7.
 
-## 5. Inventario cerrado
+## 5. Inventario narrativo y detalles trazables
 
-Lo único que puede verse:
+Elementos de base; completar con detalles narrativos trazables según la regla siguiente:
 
 1. **Viaje de Troya hacia Italia expresado mediante equipamiento y dirección** — identificador principal. ADN.
-2. **Pistas secundarias autorizadas:** escudo de bronce, costa/barco y materiales preimperiales definidos por la guía. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
-3. **Vestimenta lisa del vocabulario romano**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
+2. **Pistas secundarias autorizadas:** escudo de bronce gastado, costa/barco subordinados, protección de torso bronce/cuero inspirada en Edad del Bronce, bolsa de viaje y pequeño bulto de provisiones sujeto a ella; equipaje concreto como diseño narrativo, no atribución literal a Virgilio. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
+3. **Vestimenta autorizada:** Protección de torso en bronce y cuero, manto corto usado y sandalias; desgaste y equipo de viaje como diseño aprobado el 2026-11-04; sin uniforme imperial. ADN. Sin adornos más allá de lo que autoriza la regla narrativa del 2026-11-04; documentar los detalles adicionales en el preflight.
 4. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
    - **Vestimenta funcional:** Base funcional lisa subordinada al equipamiento preimperial y de tradición de Edad del Bronce; no introducir coraza segmentada ni estética legionaria imperial.
    - **Calzado:** Sandalias simples de cuero, sin motivos ornamentales.
-   - **Alcance:** Conservar prendas y armaduras expresamente autorizadas; la base lisa sólo completa las partes que requieren vestimenta funcional, sin reemplazar ni tapar la firma de silueta. No imponer un color común: conservar los colores autorizados. Cierres funcionales discretos, sin broches, emblemas, joyas ni adornos nuevos.
+   - **Alcance:** Base funcional de respaldo: las prendas y los detalles específicos de la ficha o del preflight narrativo del 2026-11-04 tienen prioridad. Variar cortes, capas, tejidos y materiales según personaje; no imponer uniforme ni prohibición general de adornos. Mantener anatomía, acción e identificador legibles.
 
-Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
-
-**Inventario por exceso y por omisión.** Lo que no figura no entra. Mostrar los elementos exigidos por el ADN, aplicar las pistas condicionales sólo cuando se cumpla su condición y conservar las alternativas como tales. El identificador principal manda, las pistas acompañan y nada tapa la cara ni el identificador. En el preflight, declarar qué condiciones se cumplen y qué alternativa se usa, sin agregar decisiones ajenas a la fuente.
+**Regla vigente — 2026-11-04: riqueza narrativa e identidad mítica.** Priorizar que se entienda quién es el personaje y qué episodio representa. Se permiten prendas de cortes distintos, capas, tejidos, bordados, cierres, equipo, desgaste y objetos narrativos cuando aporten identidad o sentido a la escena; no hay un máximo fijo de prendas ni de detalles. Antes de generar, registrar los detalles elegidos en la ficha o el preflight y distinguir: (a) atributo o episodio respaldado, citando fuente; (b) interpretación artística autorizada, sin presentarla como dato del mito. La autorización general de Willy permite estas decisiones de diseño sin pedir aprobación por cada cierre o material. Para nuevos poderes, animales, símbolos de identidad o hechos narrativos, verificar la fuente y actualizar la ficha antes de dibujarlos. No agregar por rutina ni copiar el mismo kit entre personajes. Mantener rostro, identificador, acción, silueta y jerarquía legibles. Revisar también las omisiones de elementos exigidos; respetar condiciones y alternativas. Esta regla reemplaza las prohibiciones generales de adornos, el inventario cerrado absoluto y la base lisa obligatoria. Las exclusiones específicas contra errores míticos, anacronismos y clones siguen vigentes salvo decisión posterior expresa. Frigg puede conservar el acabado fotográfico aceptado por Willy; esta excepción no cambia el estilo general de la colección.
 
 **La magia es obligatoria y sale del identificador.** El detalle reconocible de la §2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina de verdad, deformación del aire, materia que responde: todo eso está autorizado y va sin timidez. Esto no agrega ningún objeto al inventario de arriba, porque lo que se enciende es lo que el personaje ya tiene.
 
@@ -118,9 +116,9 @@ Ejes numéricos que ya los separan: angulosidad facial 7 contra 4, dinamismo de 
 **Por qué se controla este par:** adultos fuertes con equipo antiguo; par de riesgo alto.
 **Filtro numérico:** distancia ponderada 0.844; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
 
-- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Eneas: camina o avanza como viajero fundador, no combate. Frente a Héctor: protege y contiene, no avanza ni ataca. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Frente a Héctor: protege y contiene, no avanza ni ataca. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eneas, comparación Héctor; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -144,9 +142,9 @@ Ejes numéricos que ya los separan: dinamismo de pose 6 contra 3, verticalidad 5
 **Por qué se controla este par:** adultos con equipo antiguo y contexto de expedición.
 **Filtro numérico:** distancia ponderada 1.117; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Agamenón: cetro vertical + capa pesada + pecho ancho, con composición de comandante. Cuerpo: adulto maduro; robusto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Eneas: camina o avanza como viajero fundador, no combate. Frente a Agamenón: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Agamenón: flota en segundo plano y aire hacia la mano que dirige; evitar que el cetro quede al pecho como plantilla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Frente a Agamenón: cetro vertical + capa pesada + pecho ancho, con composición de comandante. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Frente a Agamenón: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Agamenón: flota en segundo plano y aire hacia la mano que dirige; evitar que el cetro quede al pecho como plantilla. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eneas, comparación Agamenón; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -170,9 +168,9 @@ Ejes numéricos que ya los separan: oscuridad 4 contra 6, dependencia del identi
 **Por qué se controla este par:** adultos robustos y materiales rígidos; par de riesgo alto.
 **Filtro numérico:** distancia ponderada 0.821; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
 
-- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Cuerpo: adulto maduro; torso robusto y brazos de trabajador. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Eneas: camina o avanza como viajero fundador, no combate. Frente a Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Frente a Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Frente a Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eneas, comparación Hefesto; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -196,9 +194,9 @@ Ejes numéricos que ya los separan: contorno superior 2 contra 6, protagonismo d
 **Por qué se controla este par:** atléticos equipados; par de riesgo alto.
 **Filtro numérico:** distancia ponderada 0.894; misma morfología y lectura; riesgo numérico alto. No sustituye la comparación textual.
 
-- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Aquiles: escudo grande desplazado + piernas largas + torso inclinado hacia adelante, con sensación de velocidad incluso quieto. Cuerpo: adulto joven; musculatura definida pero más estilizada que Heracles. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Eneas: camina o avanza como viajero fundador, no combate. Frente a Aquiles: pausa tensa como a punto de moverse; evitar combate directo. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Aquiles: mantener visible el talón en la imagen completa sin convertirlo en único foco; aire delante del eje corporal para sostener la sensación de impulso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Frente a Aquiles: escudo grande desplazado + piernas largas + torso inclinado hacia adelante, con sensación de velocidad incluso quieto. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Frente a Aquiles: pausa tensa como a punto de moverse; evitar combate directo. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Aquiles: mantener visible el talón en la imagen completa sin convertirlo en único foco; aire delante del eje corporal para sostener la sensación de impulso. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo eneas, comparación Aquiles; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 

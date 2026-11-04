@@ -1292,7 +1292,7 @@
         "composicion": 793
       },
       "campos": {
-        "silueta": "figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.",
+        "silueta": "figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso.",
         "edad": "adulta madura; alta y de presencia serena.",
         "accion": "parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético.",
         "composicion": "fondo muy simple y amplio alrededor del eje vertical."
@@ -1313,7 +1313,8 @@
         "PF": 2,
         "RM": 5,
         "RA": 1
-      }
+      },
+      "revision_2026_11_04": "Decisiones narrativas de Willy incorporadas. Preparación textual actualizada; validación visual pendiente."
     },
     "Tyr": {
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
@@ -1591,7 +1592,7 @@
       "campos": {
         "silueta": "equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero.",
         "edad": "adulto maduro; atlético de viaje.",
-        "accion": "camina o avanza como viajero fundador, no combate.",
+        "accion": "avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante.",
         "composicion": "costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial."
       },
       "matriz": {
@@ -1610,7 +1611,8 @@
         "PF": 8,
         "RM": 8,
         "RA": 1
-      }
+      },
+      "revision_2026_11_04": "Decisiones narrativas de Willy incorporadas. Preparación textual actualizada; validación visual pendiente."
     },
     "Rómulo y Remo": {
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
@@ -1655,10 +1657,10 @@
         "composicion": 955
       },
       "campos": {
-        "silueta": "cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada.",
+        "silueta": "cuerpo erguido libre sobre roca costera, sobrecapa ligera al viento y cadenas abiertas depositadas en la roca, separadas de brazos y muñecas.",
         "edad": "adulta joven; esbelta.",
-        "accion": "tensión contenida sobre la roca; mirada activa, no terror.",
-        "composicion": "mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura."
+        "accion": "después de la liberación, erguida y aliviada con valentía, mirada activa hacia arriba/lateral; no atada ni aterrada.",
+        "composicion": "roca y cadenas abiertas visibles; mar subordinado, aire alrededor de cabeza y brazos, estrellas y reflejos intensos como recurso poético de la escena."
       },
       "matriz": {
         "EV": 4,
@@ -1676,7 +1678,8 @@
         "PF": 9,
         "RM": 2,
         "RA": 1
-      }
+      },
+      "revision_2026_11_04": "Decisiones narrativas de Willy incorporadas. Preparación textual actualizada; validación visual pendiente."
     },
     "Aracne": {
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
@@ -2018,7 +2021,7 @@
         "composicion": 1109
       },
       "campos": {
-        "silueta": "trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles.",
+        "silueta": "trono de asiento y brazos coherentes, con respaldo que forme una W inequívoca mediante cinco puntos; geometría artística aprobada, sin letras escritas.",
         "edad": "adulta madura; alta.",
         "accion": "quietud orgullosa sobre el trono.",
         "composicion": "estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello."
@@ -2039,7 +2042,8 @@
         "PF": 9,
         "RM": 6,
         "RA": 1
-      }
+      },
+      "revision_2026_11_04": "Decisiones narrativas de Willy incorporadas. Preparación textual actualizada; validación visual pendiente."
     },
     "Cerbero": {
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
@@ -2648,7 +2652,7 @@
         "silueta": "carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas.",
         "edad": "adulta madura; alta y esbelta.",
         "accion": "conduce el carro con ritmo elegante y silencioso.",
-        "composicion": "creciente desplazado y telas horizontales; aire delante del carro y temperatura fría coherente."
+        "composicion": "carro lunar fantástico suspendido, creciente desplazado y telas horizontales; dos ruedas enteras en un mismo eje transversal y perspectiva coherente; aire delante del carro, luz fría localizada y espacio para las telas completas."
       },
       "matriz": {
         "EV": 7,
@@ -2666,7 +2670,8 @@
         "PF": 6,
         "RM": 4,
         "RA": 5
-      }
+      },
+      "revision_2026_11_04": "Decisiones narrativas de Willy incorporadas. Preparación textual actualizada; validación visual pendiente."
     },
     "Fenrir": {
       "fuente": "Documentacion/adn_visual_personajes_v1.md",
@@ -3058,9 +3063,9 @@
           "distancia": 1.75419,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Hestia: cuerpo compacto sentado o arrodillado + llama del hogar a un costado + telas suaves sin objetos de poder. Cuerpo: adulta madura; contextura media-pequeña. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Hestia: cuida la llama en calma. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Hestia: composición baja y contenida, con aire cálido alrededor de la llama y fondo doméstico simple. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Hestia: cuerpo compacto sentado o arrodillado + llama del hogar a un costado + telas suaves sin objetos de poder. Frente a Frigg: figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Hestia: cuida la llama en calma. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Hestia: composición baja y contenida, con aire cálido alrededor de la llama y fondo doméstico simple. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         }
       ]
@@ -3206,9 +3211,9 @@
           "distancia": 0.821229,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico alto",
           "separadores": {
-            "silueta": "Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Cuerpo: adulto maduro; torso robusto y brazos de trabajador. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. Frente a Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -3332,9 +3337,9 @@
           "distancia": 1.100559,
           "lectura_filtro": "morfología o lectura distinta: control semántico/compositivo, no colisión anatómica",
           "separadores": {
-            "silueta": "Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Frente a Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Cuerpo: adulta madura; alta y esbelta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Helios: conduce el carro, erguido y estable. Frente a Selene: conduce el carro con ritmo elegante y silencioso. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Frente a Selene: creciente desplazado y telas horizontales; aire delante del carro y temperatura fría coherente. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Frente a Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Helios: conduce el carro, erguido y estable. Frente a Selene: conduce el carro con ritmo elegante y silencioso. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Frente a Selene: carro lunar fantástico suspendido, creciente desplazado y telas horizontales; dos ruedas enteras en un mismo eje transversal y perspectiva coherente; aire delante del carro, luz fría localizada y espacio para las telas completas. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -3363,9 +3368,9 @@
           "distancia": 1.988827,
           "lectura_filtro": "morfología o lectura distinta: control semántico/compositivo, no colisión anatómica",
           "separadores": {
-            "silueta": "Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Cuerpo: adulta madura; alta y esbelta. Frente a Artemisa: arco largo rompiendo un lateral + cuerpo de cazadora en eje diagonal + capa corta o faldón práctico. Cuerpo: adulta joven; atlética ligera. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Selene: conduce el carro con ritmo elegante y silencioso. Frente a Artemisa: arco en reposo hacia abajo; calma vigilante, no disparo ni combate. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Selene: creciente desplazado y telas horizontales; aire delante del carro y temperatura fría coherente. Frente a Artemisa: espacio negativo claro delante de la mirada; el arco debe romper el contorno sin encerrarla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Frente a Artemisa: arco largo rompiendo un lateral + cuerpo de cazadora en eje diagonal + capa corta o faldón práctico. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Selene: conduce el carro con ritmo elegante y silencioso. Frente a Artemisa: arco en reposo hacia abajo; calma vigilante, no disparo ni combate. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Selene: carro lunar fantástico suspendido, creciente desplazado y telas horizontales; dos ruedas enteras en un mismo eje transversal y perspectiva coherente; aire delante del carro, luz fría localizada y espacio para las telas completas. Frente a Artemisa: espacio negativo claro delante de la mirada; el arco debe romper el contorno sin encerrarla. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -3374,9 +3379,9 @@
           "distancia": 1.100559,
           "lectura_filtro": "morfología o lectura distinta: control semántico/compositivo, no colisión anatómica",
           "separadores": {
-            "silueta": "Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Cuerpo: adulta madura; alta y esbelta. Frente a Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Cuerpo: adulto maduro; atlético medio. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Selene: conduce el carro con ritmo elegante y silencioso. Frente a Helios: conduce el carro, erguido y estable. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Selene: creciente desplazado y telas horizontales; aire delante del carro y temperatura fría coherente. Frente a Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Frente a Helios: carro y ruedas formando base curva + líneas de movimiento horizontales + cuerpo erguido sobre el carro. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Selene: conduce el carro con ritmo elegante y silencioso. Frente a Helios: conduce el carro, erguido y estable. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Selene: carro lunar fantástico suspendido, creciente desplazado y telas horizontales; dos ruedas enteras en un mismo eje transversal y perspectiva coherente; aire delante del carro, luz fría localizada y espacio para las telas completas. Frente a Helios: sol grande detrás pero subordinado al rostro; aire delante del carro y ruedas completas cuando sean relevantes. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -3385,9 +3390,9 @@
           "distancia": 1.324022,
           "lectura_filtro": "morfología o lectura distinta: control semántico/compositivo, no colisión anatómica",
           "separadores": {
-            "silueta": "Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Cuerpo: adulta madura; alta y esbelta. Frente a Circe: vara mágica fuera del eje + manto amplio + mano libre en gesto de transformación. Cuerpo: adulta madura; alta y esbelta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Selene: conduce el carro con ritmo elegante y silencioso. Frente a Circe: cuerpo casi quieto mientras la magia produce cambio alrededor. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Selene: creciente desplazado y telas horizontales; aire delante del carro y temperatura fría coherente. Frente a Circe: isla remota en fondo; espacio alrededor de la vara y de la mano libre para sostener la teatralidad sin saturar. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Selene: carro plateado + creciente lunar grande desplazado + telas horizontales nocturnas. Frente a Circe: vara mágica fuera del eje + manto amplio + mano libre en gesto de transformación. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Selene: conduce el carro con ritmo elegante y silencioso. Frente a Circe: cuerpo casi quieto mientras la magia produce cambio alrededor. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Selene: carro lunar fantástico suspendido, creciente desplazado y telas horizontales; dos ruedas enteras en un mismo eje transversal y perspectiva coherente; aire delante del carro, luz fría localizada y espacio para las telas completas. Frente a Circe: isla remota en fondo; espacio alrededor de la vara y de la mano libre para sostener la teatralidad sin saturar. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         }
       ]
@@ -3522,9 +3527,9 @@
           "distancia": 0.893855,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico alto",
           "separadores": {
-            "silueta": "Aquiles: escudo grande desplazado + piernas largas + torso inclinado hacia adelante, con sensación de velocidad incluso quieto. Cuerpo: adulto joven; musculatura definida pero más estilizada que Heracles. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Aquiles: pausa tensa como a punto de moverse; evitar combate directo. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Aquiles: mantener visible el talón en la imagen completa sin convertirlo en único foco; aire delante del eje corporal para sostener la sensación de impulso. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Aquiles: escudo grande desplazado + piernas largas + torso inclinado hacia adelante, con sensación de velocidad incluso quieto. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Aquiles: pausa tensa como a punto de moverse; evitar combate directo. Frente a Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Aquiles: mantener visible el talón en la imagen completa sin convertirlo en único foco; aire delante del eje corporal para sostener la sensación de impulso. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         }
       ]
@@ -3575,9 +3580,9 @@
           "distancia": 0.843575,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico alto",
           "separadores": {
-            "silueta": "Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Héctor: protege y contiene, no avanza ni ataca. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Héctor: protege y contiene, no avanza ni ataca. Frente a Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -4216,9 +4221,9 @@
           "distancia": 1.340782,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Hera: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno. Cuerpo: adulta madura; alta y de postura regia. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hera: pavo real lateral para quebrar la verticalidad sin competir con el rostro; fondo contenido. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Frigg: figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso. Frente a Hera: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hera: pavo real lateral para quebrar la verticalidad sin competir con el rostro; fondo contenido. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -4227,9 +4232,9 @@
           "distancia": 1.167598,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Casiopea: quietud orgullosa sobre el trono. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Frigg: figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso. Frente a Casiopea: trono de asiento y brazos coherentes, con respaldo que forme una W inequívoca mediante cinco puntos; geometría artística aprobada, sin letras escritas. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Casiopea: quietud orgullosa sobre el trono. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -4238,9 +4243,9 @@
           "distancia": 1.27933,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Cuerpo: adulta madura; alta y muy delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Frigg: figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso. Frente a Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         }
       ]
@@ -4574,9 +4579,9 @@
           "distancia": 1.27933,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Cuerpo: adulta madura; alta y muy delgada. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Frente a Frigg: figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         }
       ]
@@ -4594,9 +4599,9 @@
           "distancia": 1.117318,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Agamenón: cetro vertical + capa pesada + pecho ancho, con composición de comandante. Cuerpo: adulto maduro; robusto. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Eneas: camina o avanza como viajero fundador, no combate. Frente a Agamenón: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Agamenón: flota en segundo plano y aire hacia la mano que dirige; evitar que el cetro quede al pecho como plantilla. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Frente a Agamenón: cetro vertical + capa pesada + pecho ancho, con composición de comandante. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Frente a Agamenón: cetro bajo y mano extendida hacia una flota; liderazgo antes que combate. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Agamenón: flota en segundo plano y aire hacia la mano que dirige; evitar que el cetro quede al pecho como plantilla. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -4605,9 +4610,9 @@
           "distancia": 0.843575,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico alto",
           "separadores": {
-            "silueta": "Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Cuerpo: adulto maduro; atlético fuerte pero no enorme. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Eneas: camina o avanza como viajero fundador, no combate. Frente a Héctor: protege y contiene, no avanza ni ataca. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Frente a Héctor: gran escudo defensivo hacia un lateral + cuerpo colocado entre ciudad y exterior. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Frente a Héctor: protege y contiene, no avanza ni ataca. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Héctor: murallas de Troya subordinadas detrás; el escudo ocupa un lateral y el cuerpo cierra visualmente el paso. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -4616,9 +4621,9 @@
           "distancia": 0.821229,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico alto",
           "separadores": {
-            "silueta": "Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Cuerpo: adulto maduro; torso robusto y brazos de trabajador. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Eneas: camina o avanza como viajero fundador, no combate. Frente a Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Frente a Hefesto: hombro adelantado + martillo de forja simple mantenido bajo + delantal/tela pesada; cuerpo deliberadamente no simétrico. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Frente a Hefesto: trabajando sobre metal; una mano mantiene bajo el martillo de forja simple y la otra sujeta con pinzas la pieza sobre el yunque liso apoyado en el banco de trabajo; ambas manos ocupadas en construir. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Hefesto: banco de trabajo subordinado, con el yunque liso y la pieza de metal apoyados, y chispas controladas; dejar aire suficiente para leer el martillo bajo, las pinzas y el hombro adelantado. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -4627,9 +4632,9 @@
           "distancia": 0.893855,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico alto",
           "separadores": {
-            "silueta": "Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Frente a Aquiles: escudo grande desplazado + piernas largas + torso inclinado hacia adelante, con sensación de velocidad incluso quieto. Cuerpo: adulto joven; musculatura definida pero más estilizada que Heracles. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Eneas: camina o avanza como viajero fundador, no combate. Frente a Aquiles: pausa tensa como a punto de moverse; evitar combate directo. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Aquiles: mantener visible el talón en la imagen completa sin convertirlo en único foco; aire delante del eje corporal para sostener la sensación de impulso. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Frente a Aquiles: escudo grande desplazado + piernas largas + torso inclinado hacia adelante, con sensación de velocidad incluso quieto. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Frente a Aquiles: pausa tensa como a punto de moverse; evitar combate directo. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Frente a Aquiles: mantener visible el talón en la imagen completa sin convertirlo en único foco; aire delante del eje corporal para sostener la sensación de impulso. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         }
       ]
@@ -4837,9 +4842,9 @@
           "distancia": 1.273743,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Dido: manto/púrpura de Tiro + gesto de planificación + muralla en construcción como forma secundaria; evitar estética de emperatriz romana. Cuerpo: adulta madura; alta y de contextura media. Frente a Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Dido: señala el trazado de Cartago o supervisa obra; actividad fundadora, no pose regia estática. Frente a Casiopea: quietud orgullosa sobre el trono. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Dido: muralla/puerto mediterráneo subordinados; aire en la dirección del gesto de planificación. Frente a Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Dido: manto/púrpura de Tiro + gesto de planificación + muralla en construcción como forma secundaria; evitar estética de emperatriz romana. Frente a Casiopea: trono de asiento y brazos coherentes, con respaldo que forme una W inequívoca mediante cinco puntos; geometría artística aprobada, sin letras escritas. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Dido: señala el trazado de Cartago o supervisa obra; actividad fundadora, no pose regia estática. Frente a Casiopea: quietud orgullosa sobre el trono. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Dido: muralla/puerto mediterráneo subordinados; aire en la dirección del gesto de planificación. Frente a Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         }
       ]
@@ -4857,9 +4862,9 @@
           "distancia": 1.217877,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Andrómeda: cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada. Cuerpo: adulta joven; esbelta. Frente a Helena: telas amplias y verticales + postura casi inmóvil; sin depender de accesorios de belleza. Cuerpo: adulta joven-madura; alta y esbelta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Andrómeda: tensión contenida sobre la roca; mirada activa, no terror. Frente a Helena: quietud contemplativa con mirada lejana; atmósfera de consecuencia, no romance. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Andrómeda: mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura. Frente a Helena: velas o arquitectura de Troya muy subordinadas; mucho aire alrededor de una figura austera. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Andrómeda: cuerpo erguido libre sobre roca costera, sobrecapa ligera al viento y cadenas abiertas depositadas en la roca, separadas de brazos y muñecas. Frente a Helena: telas amplias y verticales + postura casi inmóvil; sin depender de accesorios de belleza. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Andrómeda: después de la liberación, erguida y aliviada con valentía, mirada activa hacia arriba/lateral; no atada ni aterrada. Frente a Helena: quietud contemplativa con mirada lejana; atmósfera de consecuencia, no romance. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Andrómeda: roca y cadenas abiertas visibles; mar subordinado, aire alrededor de cabeza y brazos, estrellas y reflejos intensos como recurso poético de la escena. Frente a Helena: velas o arquitectura de Troya muy subordinadas; mucho aire alrededor de una figura austera. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -4868,9 +4873,9 @@
           "distancia": 0.888268,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico alto",
           "separadores": {
-            "silueta": "Andrómeda: cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada. Cuerpo: adulta joven; esbelta. Frente a Psique: mariposa o motivo de mariposa cerca del hombro + postura de avance cauteloso. Cuerpo: adulta joven; delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Andrómeda: tensión contenida sobre la roca; mirada activa, no terror. Frente a Psique: avanza entre pruebas con cautela y perseverancia. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Andrómeda: mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura. Frente a Psique: dejar aire en la dirección de avance; pruebas se sugieren de forma abstracta y no saturan el fondo. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Andrómeda: cuerpo erguido libre sobre roca costera, sobrecapa ligera al viento y cadenas abiertas depositadas en la roca, separadas de brazos y muñecas. Frente a Psique: mariposa o motivo de mariposa cerca del hombro + postura de avance cauteloso. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Andrómeda: después de la liberación, erguida y aliviada con valentía, mirada activa hacia arriba/lateral; no atada ni aterrada. Frente a Psique: avanza entre pruebas con cautela y perseverancia. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Andrómeda: roca y cadenas abiertas visibles; mar subordinado, aire alrededor de cabeza y brazos, estrellas y reflejos intensos como recurso poético de la escena. Frente a Psique: dejar aire en la dirección de avance; pruebas se sugieren de forma abstracta y no saturan el fondo. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -4879,9 +4884,9 @@
           "distancia": 1.184358,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Andrómeda: cadenas visibles rompiendo el contorno lateral + cuerpo erguido sobre roca, sin postura de víctima aterrada. Cuerpo: adulta joven; esbelta. Frente a Calipso: figura aislada + telas largas verticales + vegetación insular lateral; sin objeto mágico inventado. Cuerpo: adulta madura; contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Andrómeda: tensión contenida sobre la roca; mirada activa, no terror. Frente a Calipso: contemplación inmóvil desde la isla. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Andrómeda: mar y peligro muy subordinados; aire alrededor de cadenas y cabeza para no encerrar la figura. Frente a Calipso: mucho espacio negativo de mar; vegetación insular sólo rompe un lateral. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Andrómeda: cuerpo erguido libre sobre roca costera, sobrecapa ligera al viento y cadenas abiertas depositadas en la roca, separadas de brazos y muñecas. Frente a Calipso: figura aislada + telas largas verticales + vegetación insular lateral; sin objeto mágico inventado. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Andrómeda: después de la liberación, erguida y aliviada con valentía, mirada activa hacia arriba/lateral; no atada ni aterrada. Frente a Calipso: contemplación inmóvil desde la isla. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Andrómeda: roca y cadenas abiertas visibles; mar subordinado, aire alrededor de cabeza y brazos, estrellas y reflejos intensos como recurso poético de la escena. Frente a Calipso: mucho espacio negativo de mar; vegetación insular sólo rompe un lateral. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         }
       ]
@@ -5193,9 +5198,9 @@
           "distancia": 1.055866,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Frente a Hera: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno. Cuerpo: adulta madura; alta y de postura regia. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Casiopea: quietud orgullosa sobre el trono. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Hera: pavo real lateral para quebrar la verticalidad sin competir con el rostro; fondo contenido. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Casiopea: trono de asiento y brazos coherentes, con respaldo que forme una W inequívoca mediante cinco puntos; geometría artística aprobada, sin letras escritas. Frente a Hera: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Casiopea: quietud orgullosa sobre el trono. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Hera: pavo real lateral para quebrar la verticalidad sin competir con el rostro; fondo contenido. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -5204,9 +5209,9 @@
           "distancia": 1.167598,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Frente a Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Casiopea: quietud orgullosa sobre el trono. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Casiopea: trono de asiento y brazos coherentes, con respaldo que forme una W inequívoca mediante cinco puntos; geometría artística aprobada, sin letras escritas. Frente a Frigg: figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Casiopea: quietud orgullosa sobre el trono. Frente a Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Frigg: fondo muy simple y amplio alrededor del eje vertical. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         },
         {
@@ -5215,9 +5220,9 @@
           "distancia": 1.273743,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Frente a Dido: manto/púrpura de Tiro + gesto de planificación + muralla en construcción como forma secundaria; evitar estética de emperatriz romana. Cuerpo: adulta madura; alta y de contextura media. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Casiopea: quietud orgullosa sobre el trono. Frente a Dido: señala el trazado de Cartago o supervisa obra; actividad fundadora, no pose regia estática. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Dido: muralla/puerto mediterráneo subordinados; aire en la dirección del gesto de planificación. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Casiopea: trono de asiento y brazos coherentes, con respaldo que forme una W inequívoca mediante cinco puntos; geometría artística aprobada, sin letras escritas. Frente a Dido: manto/púrpura de Tiro + gesto de planificación + muralla en construcción como forma secundaria; evitar estética de emperatriz romana. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Casiopea: quietud orgullosa sobre el trono. Frente a Dido: señala el trazado de Cartago o supervisa obra; actividad fundadora, no pose regia estática. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Frente a Dido: muralla/puerto mediterráneo subordinados; aire en la dirección del gesto de planificación. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         }
       ]
@@ -5257,9 +5262,9 @@
           "distancia": 1.094972,
           "lectura_filtro": "misma morfología y lectura; riesgo numérico bajo",
           "separadores": {
-            "silueta": "Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta. Cuerpo: adulto maduro; muy alto y atlético. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Cuerpo: adulto maduro; atlético de viaje. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.",
-            "pose": "Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar. Frente a Eneas: camina o avanza como viajero fundador, no combate. No sustituir la acción del objetivo por la del comparador.",
-            "composicion": "Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador."
+            "silueta": "Orión: cuerpo largo de cazador + cinturón de tres puntos luminosos separado visualmente del torso + maza de caza de madera en reposo si hace falta. Frente a Eneas: equipo de tradición de Edad del Bronce + escudo antiguo + cuerpo inclinado hacia adelante como viajero. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "pose": "Orión: mira el cielo en dirección opuesta al escorpión; no caza activamente; si aparece la maza, una mano baja la sostiene junto al muslo, sin levantarla ni amenazar. Frente a Eneas: avanza como viajero resistente marcado por el recorrido, cansado pero firme; no combate ni posa como comandante. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.",
+            "composicion": "Orión: reservar cielo en la dirección de la mirada; las tres estrellas deben quedar legibles cerca de la parte alta del torso. Frente a Eneas: costa/barco subordinados y aire delante del recorrido; evitar coraza segmentada o estética legionaria imperial. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente."
           }
         }
       ]

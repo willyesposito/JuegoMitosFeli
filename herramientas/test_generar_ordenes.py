@@ -24,6 +24,27 @@ class CompilacionTest(unittest.TestCase):
     def orden(self):
         return g.orden('Thor', self.adn, self.mat, self.pj)[1]
 
+    def test_regla_narrativa_en_humanos_y_criaturas(self):
+        for nombre in ('Thor', 'Pegaso', 'Eneas'):
+            texto = g.orden(nombre, self.adn, self.mat, self.pj)[1]
+            self.assertIn('no hay un máximo fijo de prendas ni de detalles', texto)
+            self.assertIn('verificar la fuente y actualizar la ficha', texto)
+            self.assertNotIn('Lo que no figura no entra', texto)
+            self.assertNotIn('**a reemplazar.**', texto)
+
+    def test_decisiones_confirmadas_llegan_a_las_ordenes(self):
+        frigg = g.orden('Frigg', self.adn, self.mat, self.pj)[1]
+        self.assertIn('**Acabado específico vigente:** acabado fotográfico', frigg)
+        self.assertIn('vestido de tejido grueso', frigg.lower())
+        self.assertIn('W inequívoca', g.orden('Casiopea', self.adn, self.mat, self.pj)[1])
+        andromeda = g.orden('Andrómeda', self.adn, self.mat, self.pj)[1]
+        self.assertIn('después de la liberación', andromeda.lower())
+        self.assertIn('no monstruo vivo tras la derrota', andromeda)
+        self.assertIn('eje transversal', g.orden('Selene', self.adn, self.mat, self.pj)[1])
+        eneas = g.orden('Eneas', self.adn, self.mat, self.pj)[1]
+        self.assertIn('bolsa de viaje', eneas)
+        self.assertIn('no atribución literal a Virgilio', eneas)
+
     def test_vacio_no_se_convierte_en_punto(self):
         for texto in ('', '   ', '.', '**Criterio de fuente:** nota sin contenido'):
             self.assertEqual(g.limpiar_fuente(texto), '')
@@ -36,13 +57,13 @@ class CompilacionTest(unittest.TestCase):
             else:
                 self.adn['Thor']['vestimenta'] = valor
             texto = self.orden()
-            self.assertIn('Vestimenta lisa del vocabulario nórdico', texto)
+            self.assertIn('Vestimenta del vocabulario nórdico', texto)
             self.assertNotIn('Vestimenta autorizada:** .', texto)
             self.assertIn('Completitud mecánica: COMPLETA', texto)
         self.adn['Thor']['vestimenta'] = 'prenda de prueba sin ornamento'
         texto = self.orden()
         self.assertIn('Vestimenta autorizada:** Prenda de prueba sin ornamento.', texto)
-        self.assertNotIn('Vestimenta lisa del vocabulario', texto)
+        self.assertNotIn('Vestimenta del vocabulario', texto)
 
     def test_condiciones_y_alternativas_no_se_imponen(self):
         for pistas in ('cabras si hace falta', 'rayos cuando corresponda', 'capa corta o pieles'):

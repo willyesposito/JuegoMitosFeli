@@ -3,8 +3,9 @@
 **Completitud mecánica: COMPLETA.** Campos obligatorios y referencias comprobados; vestimenta opcional con alternativa general cuando falta.
 **Validación visual: PENDIENTE.** Compilar no acredita silueta, pose, composición, avatar ni colisión; tampoco aprueba identidad, inventario o separación.
 
-**Imagen actual:** ninguna. La carta funciona igual, mostrando el nombre con el tratamiento de su mitología.
+**Imagen actual:** `imagenes/frigg.png`. Su existencia no implica aprobación ni reemplazo automático; consultar la evaluación vigente.
 
+**Acabado específico vigente:** acabado fotográfico de la imagen actual aceptado por Willy el 2026-11-04; no constituye por sí solo motivo de rechazo.
 **Se lee junto con:** `Documentacion/estilo_visual_aprobado.md`. Nada más.
 
 > Generada por `herramientas/generar-ordenes.py`. Para cambiarla, editar la fuente (el ADN, la matriz, `personajes.json` o `herramientas/identidad_visual.py`) y volver a generar. Editar este archivo a mano se pierde.
@@ -33,7 +34,7 @@ Dones declarados en `personajes.json`: Reina de Asgard; Conoce el destino de tod
 
 Ícono de la carta en la colección: `rueca`. Dependencia del identificador en la matriz: 2 de 10.
 
-> **Reconocimiento textual: DOCUMENTADO.** El conocimiento silencioso está respaldado por Gylfaginning XX. Boca cerrada, mirada lateral y manos juntas concretan la decisión delegada; no se agrega objeto profético. Reconocimiento en imagen pendiente. La validación visual sigue pendiente.
+> **[REVISAR] Control de reconocimiento pendiente.** Cambió el diseño de vestimenta y porte regio el 2026-11-04. Reconocimiento silencioso por mirada y gesto: repetir control textual antes de generar; acabado fotográfico aceptado por Willy. La validación visual sigue pendiente.
 > Fuente de la revisión: `Documentacion/revision_identificadores_lote_2026-09-28.json`, objetivo `frigg`. Evidencia de acción, silueta, composición, pistas y avatar del ADN.
 
 ## 3. Acción y pose
@@ -42,13 +43,13 @@ Parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos
 
 Dirección corporal: Frontal tres cuartos con mirada lateral.
 
-Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un objeto que no está en el inventario de la §5, frenar y avisar.
+Es la acción de la ficha y no se cambia. Si la acción no se puede representar sin agregar un detalle, aplicar la regla narrativa de la §5 y documentarlo en el preflight; verificar fuentes para nuevos atributos míticos.
 
 **Y al revés, que es el caso que falló tres veces:** si un objeto exigido de la §5 no entra en la pose tal como está descripta, **el objeto no se descarta**. Se ajusta la pose lo mínimo para que entre, conservando la dirección corporal y la diagonal. Una silueta de carrera con los dos puños cerrados no deja mano para un bastón, y la salida no es correr sin el bastón: es que una mano lo lleve. Declarar el ajuste en el preflight. Una pista condicional sólo se exige si se cumple su condición; las alternativas con «o» se conservan como alternativas, sin exigir todas a la vez.
 
 ## 4. Silueta y composición
 
-- **Firma de silueta:** Figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio.
+- **Firma de silueta:** Figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso.
 - **Composición:** Fondo muy simple y amplio alrededor del eje vertical.
 - **Densidad visual:** baja-media (matriz: 3 de 10).
 
@@ -64,27 +65,25 @@ Los quince ejes completos, como límites de diseño y no como sugerencia (EV eda
 
 Prueba de silueta: reducida a mancha negra, tiene que seguir distinguiéndose de los personajes de la §7.
 
-## 5. Inventario cerrado
+## 5. Inventario narrativo y detalles trazables
 
-Lo único que puede verse:
+Elementos de base; completar con detalles narrativos trazables según la regla siguiente:
 
 1. **Conocimiento del destino expresado por comportamiento** — identificador principal. ADN.
 2. **Pistas secundarias autorizadas:** manto y gesto silencioso; no inventar objetos de adivinación. ADN. Subordinadas al identificador. Respetar las condiciones y alternativas del texto: «si hace falta» y «cuando corresponda» no exigen presencia incondicional; «o» no exige ambas opciones.
-3. **Vestimenta lisa del vocabulario nórdico**, sin ornamento. Necesaria para vestir al personaje; sin autorización de ningún adorno concreto, va lisa.
+3. **Vestimenta autorizada:** Vestido de tejido grueso, manto asimétrico sobre un hombro y borde tejido discreto, decisiones artísticas aprobadas el 2026-11-04; porte de reina sin corona obligatoria. ADN. Sin adornos más allá de lo que autoriza la regla narrativa del 2026-11-04; documentar los detalles adicionales en el preflight.
 4. **Resolución funcional de vestimenta y calzado:** `Documentacion/adn_visual_personajes_v1.md`, sección «Regla común de vestimenta funcional y calzado — lote del 2026-09-28». Decisión de diseño de Willy aprobada el 2026-09-28; no es una atestación histórica.
    - **Vestimenta funcional:** Túnica lisa de manga larga y pantalón sencillo.
    - **Calzado:** Botas simples de cuero, sin pieles, tiras envolventes ni herrajes decorativos agregados.
-   - **Alcance:** Conservar prendas y armaduras expresamente autorizadas; la base lisa sólo completa las partes que requieren vestimenta funcional, sin reemplazar ni tapar la firma de silueta. No imponer un color común: conservar los colores autorizados. Cierres funcionales discretos, sin broches, emblemas, joyas ni adornos nuevos.
+   - **Alcance:** Base funcional de respaldo: las prendas y los detalles específicos de la ficha o del preflight narrativo del 2026-11-04 tienen prioridad. Variar cortes, capas, tejidos y materiales según personaje; no imponer uniforme ni prohibición general de adornos. Mantener anatomía, acción e identificador legibles.
 
-Nada más. En particular, y porque ya pasó en la tanda anterior: **sin** broche, **sin** medallón, **sin** insignia, **sin** emblema, **sin** remaches decorativos, **sin** joyas, **sin** flores en el pelo, **sin** tatuajes, **sin** cuernos, **sin** alas que la ficha no pida, **sin** animal acompañante que no esté arriba, **sin** efecto mágico decorativo agregado por fuera del identificador, **sin** runas, **sin** pseudo-texto, **sin** calzado con decisión no trazada.
-
-**Inventario por exceso y por omisión.** Lo que no figura no entra. Mostrar los elementos exigidos por el ADN, aplicar las pistas condicionales sólo cuando se cumpla su condición y conservar las alternativas como tales. El identificador principal manda, las pistas acompañan y nada tapa la cara ni el identificador. En el preflight, declarar qué condiciones se cumplen y qué alternativa se usa, sin agregar decisiones ajenas a la fuente.
+**Regla vigente — 2026-11-04: riqueza narrativa e identidad mítica.** Priorizar que se entienda quién es el personaje y qué episodio representa. Se permiten prendas de cortes distintos, capas, tejidos, bordados, cierres, equipo, desgaste y objetos narrativos cuando aporten identidad o sentido a la escena; no hay un máximo fijo de prendas ni de detalles. Antes de generar, registrar los detalles elegidos en la ficha o el preflight y distinguir: (a) atributo o episodio respaldado, citando fuente; (b) interpretación artística autorizada, sin presentarla como dato del mito. La autorización general de Willy permite estas decisiones de diseño sin pedir aprobación por cada cierre o material. Para nuevos poderes, animales, símbolos de identidad o hechos narrativos, verificar la fuente y actualizar la ficha antes de dibujarlos. No agregar por rutina ni copiar el mismo kit entre personajes. Mantener rostro, identificador, acción, silueta y jerarquía legibles. Revisar también las omisiones de elementos exigidos; respetar condiciones y alternativas. Esta regla reemplaza las prohibiciones generales de adornos, el inventario cerrado absoluto y la base lisa obligatoria. Las exclusiones específicas contra errores míticos, anacronismos y clones siguen vigentes salvo decisión posterior expresa. Frigg puede conservar el acabado fotográfico aceptado por Willy; esta excepción no cambia el estilo general de la colección.
 
 **La magia es obligatoria y sale del identificador.** El detalle reconocible de la §2 no se muestra apoyado y quieto: se muestra funcionando, el entorno reacciona, y el don produce su fenómeno visible. Estela, chispas, partículas, luz propia que ilumina de verdad, deformación del aire, materia que responde: todo eso está autorizado y va sin timidez. Esto no agrega ningún objeto al inventario de arriba, porque lo que se enciende es lo que el personaje ya tiene.
 
 Las tres capas y las cuatro reglas están en `estilo_visual_aprobado.md` §7, que gobierna. En resumen: el efecto nace del don y se puede señalar de dónde salió; no tapa la cara ni el identificador; el color sale del don o del material y nunca es el dorado por default; y el fenómeno es propio de este personaje y no el mismo de las otras 84. Queda afuera el aura que envuelve el cuerpo y disuelve la silueta, el halo detrás de la cabeza, las runas o pseudo-texto flotando, y cualquier efecto que no se pueda trazar al don. Si el identificador no da para un fenómeno, la carta va con el objeto en actividad y el entorno reaccionando, y no se inventa uno.
 
-**Kit nórdico prohibido:** nudo celta, cuello o ribete de piel, broche redondo, medallón, botas envueltas con tiras, cinturón de hebilla decorada, trenzas con anillos de metal. Ese conjunto se repitió en seis cartas nórdicas y es la razón por la que parecen del mismo disfraz. Una mitología aporta vocabulario, no uniforme.
+**Evitar kit nórdico repetido:** nudo celta, cuello o ribete de piel, broche redondo, medallón, botas envueltas con tiras, cinturón de hebilla decorada, trenzas con anillos de metal. Sus piezas no se prohíben por sí mismas si tienen sentido documentado; ese conjunto se repitió en seis cartas nórdicas y es la razón por la que parecen del mismo disfraz. Una mitología aporta vocabulario, no uniforme.
 
 ## 6. Escenario
 
@@ -122,9 +121,9 @@ Ejes numéricos que ya los separan: densidad visual 3 contra 8, dependencia del 
 **Por qué se controla este par:** autoridad femenina madura de eje vertical.
 **Filtro numérico:** distancia ponderada 1.341; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Hera: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno. Cuerpo: adulta madura; alta y de postura regia. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hera: pavo real lateral para quebrar la verticalidad sin competir con el rostro; fondo contenido. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Frigg: figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso. Frente a Hera: tocado o peinado elevado + manto vertical + pavo real rompiendo un lateral del contorno. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Hera: una mano relajada y otra sobre el manto; cero gesto de combate. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hera: pavo real lateral para quebrar la verticalidad sin competir con el rostro; fondo contenido. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo frigg, comparación Hera; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -137,7 +136,7 @@ Ejes numéricos que ya los separan: densidad visual 3 contra 8, dependencia del 
 | Piel | clara rosada | castaña media |
 | Ojos | azul gris | ámbar |
 
-Silueta de Casiopea, para no repetirla: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles.
+Silueta de Casiopea, para no repetirla: trono de asiento y brazos coherentes, con respaldo que forme una W inequívoca mediante cinco puntos; geometría artística aprobada, sin letras escritas.
 
 Pose de Casiopea, para no repetirla: quietud orgullosa sobre el trono.
 
@@ -148,9 +147,9 @@ Ejes numéricos que ya los separan: protagonismo de fondo 2 contra 9, dependenci
 **Por qué se controla este par:** mujeres maduras contenidas; cercanía numérica.
 **Filtro numérico:** distancia ponderada 1.168; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Casiopea: trono dominando la forma exterior y sugiriendo una W con respaldo/brazos, sin letras visibles. Cuerpo: adulta madura; alta. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Casiopea: quietud orgullosa sobre el trono. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Frigg: figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso. Frente a Casiopea: trono de asiento y brazos coherentes, con respaldo que forme una W inequívoca mediante cinco puntos; geometría artística aprobada, sin letras escritas. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Casiopea: quietud orgullosa sobre el trono. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Casiopea: estrellas giran alrededor como contexto; el trono crea la geometría principal y debe quedar separado del contorno del cabello. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo frigg, comparación Casiopea; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
@@ -174,13 +173,13 @@ Ejes numéricos que ya los separan: oscuridad 4 contra 9, protagonismo de fondo 
 **Por qué se controla este par:** mujeres maduras cerradas y verticales; cercanía numérica.
 **Filtro numérico:** distancia ponderada 1.279; misma morfología y lectura; riesgo numérico bajo. No sustituye la comparación textual.
 
-- **Separador de silueta:** Frigg: figura vertical cerrada + manos juntas o una cubriendo parcialmente la otra + manto largo limpio. Cuerpo: adulta madura; alta y de presencia serena. Frente a Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Cuerpo: adulta madura; alta y muy delgada. Conservar este contraste anatómico/corporal además del atributo; no resolverlo sólo por color u objeto.
-- **Separador de pose:** Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. No sustituir la acción del objetivo por la del comparador.
-- **Separador de composición:** Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Conservar la distribución y el espacio negativo del objetivo, no copiar los del comparador.
+- **Separador de silueta:** Frigg: figura vertical regia y cerrada, manos juntas y manto de caída asimétrica sobre un hombro; vestido de tejido grueso. Frente a Hel: cuerpo vertical casi inmóvil + manto oscuro cerrado + arquitectura del salón como marco. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de pose:** Frigg: parece saber algo que no va a decir; boca cerrada, mirada lateral atenta y manos juntas, una cubriendo parcialmente la otra; ausencia de objeto profético. Frente a Hel: manos bajas y ordenadas; sensación administrativa y justa, no siniestra. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
+- **Separador de composición:** Frigg: fondo muy simple y amplio alrededor del eje vertical. Frente a Hel: arquitectura del salón estructura sin aprisionar; sombras funcionan como lenguaje gráfico, nunca horror. Conservar identidades, acción y jerarquía distintas; revisión visual pendiente.
 
 **Fuente de los separadores:** `Documentacion/anti_clonacion_lote_2026-09-28.json`, objetivo frigg, comparación Hel; contrastes derivados del ADN y la matriz, sin nuevo diseño.
 
-Criterio de la ficha: Hera. Diferenciar por ausencia de animal/regalia, menor densidad y energía silenciosa.
+Criterio de la ficha: Hera y Casiopea. Diferenciar por manos juntas, mirada lateral silenciosa, tejido grueso y ausencia de trono o animal.
 
 La diferencia no puede depender sólo del color, del fondo, del objeto sostenido, del peinado ni de una prenda. Matriz §4.1: el objeto no salva un clon.
 
@@ -193,6 +192,8 @@ Avatar circular, como restricción invisible: Rostro + mirada lateral claramente
 ## 9. Registro
 
 Cálido, despierto, concentrado. No hace falta que sonría. Sin amenaza, sin crueldad, sin solemnidad genérica repetida de otra carta. La emoción sale de la historia del personaje y de lo que está haciendo.
+
+**Controles de acabado documentados:** acabado fotográfico de la imagen actual aceptado por Willy el 2026-11-04; no constituye por sí solo motivo de rechazo.
 
 ## 10. Contaminación a evitar
 

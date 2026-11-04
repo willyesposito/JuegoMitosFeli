@@ -48,7 +48,7 @@ class ControlesAres(unittest.TestCase):
         salida = compilador.orden("Ares", adn, self.matriz, self.personajes)[1]
         self.assertNotIn("Separadores documentados", salida)
         self.assertNotIn("Controles de acabado documentados", salida)
-        self.assertIn("Pendiente de la investigación", salida)
+        self.assertIn("Investigación externa pendiente", salida)
 
     def test_salida_no_acredita_un_resultado_visual(self):
         self.assertIn("Validación visual: PENDIENTE", self.orden)
