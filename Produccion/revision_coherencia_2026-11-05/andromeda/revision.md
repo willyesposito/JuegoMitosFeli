@@ -1,0 +1,15 @@
+# andromeda — revisión 2026-11-05
+
+Estado: PENDIENTE DE APROBACIÓN DE WILLY.
+
+Fuente inspeccionada: `Produccion/reconstrucciones_2026-11-04/andromeda/propuesta.png`, commit `360a043c33dc92e1e1aa67276feacd26c6850ae1`, blob `83e3f5c50825ba9c2f2306159c2e7e5d8851adb8`.
+
+Referencia común inspeccionada y proporcionada a la edición: `Produccion/reconstrucciones_2026-11-04/frigg/propuesta.png`.
+
+Rostro, ojos, manos, pies, piel y pelo traducidos a realismo humano; se conservan mujer joven adulta de piel oscura, rizos negros, blanco/azul, gesto de alivio y costa nocturna. Sandalias visibles. Cadenas y grilletes abiertos sobre roca y separados de extremidades. Magia ambiental en reflejos y cielo, sin poderes nuevos. Queda una pequeña figura de estrellas evocativa; no se acredita su identificación inequívoca como Cetus ni exactitud astronómica. Algunas telas se acercan al borde izquierdo. Pendiente de aprobación.
+
+No se reemplazó la imagen del juego. `antes.png` preserva exactamente el blob inspeccionado. La identidad traducida a rostro humano está sujeta a revisión estética; no se promete coincidencia facial pixel a pixel.
+
+## Instrucción de edición
+
+Edit the recent image of ANDROMEDA, the young dark-skinned curly-haired woman on the seashore in white dress and blue cape. Other recent image FRIGG (older woman in blue wool) is ONLY the realism reference. One single vertical 3:4 full-figure composition. Retain Andromeda's distinctive identity and recognizable facial structure: young ADULT woman, dark brown skin, very dark brown natural-sized eyes, long abundant black curls moved by sea wind, slim natural adult build. Preserve the relieved brave upward/lateral gaze and softly open arms, white draped opaque dress and pale blue lightweight overcape moving with wind, golden rope belt and modest functional cloak fastenings. Her own face must become a plausible real human face while still recognizably her: natural eye size, real eyelids, subtle skin pores, non-toy nose and cheek anatomy, restrained smile, natural teeth, individual hairs and realistic fabric fibers in balanced amount, natural hand/foot anatomy. Same degree of realism in ALL materials and lighting as Frigg; not animation, not doll, no exaggerated huge eyes. Do not copy Frigg's face, age, hair or skin tone. Keep beautiful magical ocean and starry night, star reflections on water and wet coastal stone, but remove elaborate unverified constellation line diagram and astrophyoto spiral galaxy. A small distant subtle star-evocation of a sea creature may appear, nonthreatening and subordinate; no live monster. Narrative moment is AFTER liberation: opened iron shackles and loose chain resting ONLY ON THE ROCK beside her, fully separated from wrists and ankles; she is free, calm, safe. Fit whole figure, cape and natural coastal rock in frame with breathing room; simple leather sandals if visible. Magic belongs to wondrous sky and sea reflections, not new powers emitted by her. Physically credible soft moonlight and reflected sea light on skin and dress, depth, family-friendly magical wonder. No text, no border, no additional people.

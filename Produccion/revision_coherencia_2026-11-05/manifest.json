@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-05",
+  "base_commit": "360a043c33dc92e1e1aa67276feacd26c6850ae1",
+  "branch": "claude/game-setup-v98pr1",
+  "approval_status": "pendiente_de_aprobacion_de_Willy",
+  "game_images_replaced": false,
+  "reference": {
+    "path": "Produccion/reconstrucciones_2026-11-04/frigg/propuesta.png",
+    "blob_sha": "79d292653813b81bde3b35724215010eddb36797"
+  },
+  "characters": [
+    {
+      "id": "frigg",
+      "source_path": "Produccion/reconstrucciones_2026-11-04/frigg/propuesta.png",
+      "source_blob_sha": "79d292653813b81bde3b35724215010eddb36797",
+      "result_path": "Produccion/revision_coherencia_2026-11-05/frigg/referencia.png",
+      "result_blob_sha": "79d292653813b81bde3b35724215010eddb36797",
+      "regenerated": false,
+      "status": "referencia_de_estilo_sin_regenerar"
+    },
+    {
+      "id": "casiopea",
+      "source_path": "Produccion/reconstrucciones_2026-11-04/casiopea/propuesta.png",
+      "source_blob_sha": "8f0a8efea4ebc3e8a073d1c233154be0e1176679",
+      "result_path": "Produccion/revision_coherencia_2026-11-05/casiopea/propuesta.png",
+      "result_blob_sha": "a87fceb21ddbaef1130a559937f8c357eb21938a",
+      "regenerated": true,
+      "status": "pendiente_de_aprobacion"
+    },
+    {
+      "id": "andromeda",
+      "source_path": "Produccion/reconstrucciones_2026-11-04/andromeda/propuesta.png",
+      "source_blob_sha": "83e3f5c50825ba9c2f2306159c2e7e5d8851adb8",
+      "result_path": "Produccion/revision_coherencia_2026-11-05/andromeda/propuesta.png",
+      "result_blob_sha": "256ccdc9e16d86faa775cfd1e465589e6596a06c",
+      "regenerated": true,
+      "status": "pendiente_de_aprobacion"
+    },
+    {
+      "id": "selene",
+      "source_path": "imagenes/selene.png",
+      "source_blob_sha": "e655dc5116e9d10538ef4e524d19c05a7c154c3e",
+      "result_path": "Produccion/revision_coherencia_2026-11-05/selene/propuesta.png",
+      "result_blob_sha": "2d5eab642daa86e6232166209bea0c2b0d9cf9d6",
+      "regenerated": true,
+      "status": "pendiente_de_aprobacion"
+    },
+    {
+      "id": "eneas",
+      "source_path": "imagenes/eneas.png",
+      "source_blob_sha": "05a5ea7b4d1da8b38404f57a6e21718e00b351b2",
+      "result_path": "Produccion/revision_coherencia_2026-11-05/eneas/propuesta.png",
+      "result_blob_sha": "070d9b7f4ab1233d1c946dc77935e85625308dab",
+      "regenerated": true,
+      "status": "pendiente_de_aprobacion"
+    }
+  ]
+}
