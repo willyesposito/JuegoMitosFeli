@@ -1,12 +1,16 @@
 # Seguimiento de imágenes de personajes
 
-Actualizado: **2026-11-07** (America/Buenos_Aires).
+Actualizado: **2026-11-27** (America/Buenos_Aires).
 Rama de referencia: `claude/game-setup-v98pr1`.
 Inventario contrastado con el árbol y `personajes.json` del commit [`bc4d3e4`](https://github.com/willyesposito/JuegoMitosFeli/commit/bc4d3e4208f0e5309ecdd1cf3fdf954debd6345d).
 
 Este es el punto de entrada para retomar la producción visual en un chat nuevo. Reúne la imagen integrada, la última propuesta localizada y la aprobación registrada de cada personaje. Las rutas son relativas a la raíz del repo; los enlaces se pueden abrir desde este documento.
 
-## Estado general
+## Actualización del 27/11/2026
+
+[Teseo, candidata de Zeus y revisión visual](atlas_visual/README.md). La candidata del Egeo sigue pendiente. El [elenco visual](atlas_visual/elenco.md) identifica las 40 imágenes integradas como aprobadas por el [PR #59](https://github.com/willyesposito/JuegoMitosFeli/pull/59), posterior al inventario individual de abajo. Para esas versiones prevalece el registro de ese PR. Teseo fija el acabado de toda la colección.
+
+## Inventario histórico del 7/11/2026
 
 - **85/85 personajes tienen imagen integrada y archivo existente.** El cierre del 2026-11-04 acredita carga y decodificación de las 85 cartas en local y en el sitio publicado, y 57/57 verificaciones visuales de la campaña. Esta reconciliación comprobó rutas y registros; no repitió aquellas pruebas.
 - **Dos aprobaciones con fecha documentada:** Zeus y Apolo. En Apolo, el blob actual coincide exactamente con el aprobado.
@@ -14,7 +18,7 @@ Este es el punto de entrada para retomar la producción visual en un chat nuevo.
 - **Cinco personajes tienen propuestas pendientes:** Andrómeda, Casiopea, Eneas, Frigg y Selene. Sus imágenes del juego siguen siendo las anteriores.
 - El resto tiene imagen integrada, pero no se encontró aprobación estética explícita en las fuentes revisadas. **Integrada no equivale a aprobada ni a terminada.**
 
-El acabado vigente desde el 2026-11-05 es el de [Frigg como referencia común](estilo_visual_aprobado.md). La aprobación histórica de una imagen no certifica su adecuación a este criterio posterior. No dar por terminada la revisión de estilo del resto del roster.
+El acabado que se aplicó en ese inventario fue el de [Frigg como referencia común](estilo_visual_aprobado.md). La aprobación histórica de una imagen no certifica su adecuación a este criterio posterior. No dar por terminada la revisión de estilo del resto del roster.
 
 ## Cómo leer los estados
 
